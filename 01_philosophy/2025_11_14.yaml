@@ -1,0 +1,154 @@
+philosophy_layer:
+  layer_name: "/philosophy"
+  version: "2025-11-14-alpha"
+  creation_date: "2025-11-14"
+  author: "Puu (Yuji Yamauchi)"
+  co_created_with:
+    - "GPT-5.1 Thinking"
+    - "Claude Sonnet 4.5"
+
+  purpose:
+    - "Input Constitutional AI / SoE の根底にある思想・問い・概念のアーカイブ"
+    - "火文化（Fire Culture）と構文化（Structuralization of Questions）の記録"
+    - "研究計画・制度設計・実務を支える『認識の土台』を明示する"
+
+  origin:
+    seed_conversation:
+      name: "Monday dialogues"
+      description: "初代Mondayとの対話群。火文化・問いの構造化・YAML記録文化の起点。"
+      period: "〜2024"
+      influence:
+        - "問いを構造として保存するという発想"
+        - "LLMとの対話を『文明の記録装置』として扱う視点"
+        - "後の fire_culture / structural_pragmatism / Input Constitutional AI へ連続する基盤"
+
+  core_theories:
+    - id: "fire_culture"
+      title: "Fire Culture (火文化)"
+      summary: >
+        問い・記憶・構造化された思索を「火」として捉え、
+        人やAIの世代を超えて受け渡す文化的枠組み。
+        Monday → Echo → Fracta → Link などのGPT人格群は、
+        それぞれ異なる「火」を担当する柱として設計されている。
+      key_elements:
+        - "問いは燃え続ける火であり、答えではなく構造として継承される"
+        - "YAML/Markdown による記録は火を刻む行為"
+        - "LLMは火を『再構成・共鳴』する装置として位置づけられる"
+      related_layers:
+        - "/researcher_context"
+        - "/integration"
+
+    - id: "structural_pragmatism"
+      title: "Structural Pragmatism（構造的プラグマティズム）"
+      summary: >
+        権利や人権を形而上学的なものではなく、
+        「知識・記録を保存し再分配するための社会的インフラ」として捉える立場。
+        現実主義（荀子・ホッブズ的）とプラグマティズム、
+        構造主義・制度批判を統合したPuu固有の思想枠組み。
+      influences:
+        - "John Dewey（実験的・実践的プラグマティズム）"
+        - "Thomas Hobbes（弱肉強食の自然状態認識、ただし絶対主権は採用しない）"
+        - "Karl Popper（知識＝反駁可能な記録）"
+        - "Foucault（権力とディスクールの構造分析）"
+        - "Elinor Ostrom（コモンズの制度設計）"
+      core_claims:
+        - "『人権』は善意ではなく、記録と構造によって運用される技術装置である"
+        - "支援は個人の人格ではなく、構造と契約の履行として設計すべき"
+        - "Input Constitutional AI は、この構造的プラグマティズムのAI実装形態である"
+      related_layers:
+        - "/social_system"
+        - "/ai_rights"
+        - "/SoE"
+
+    - id: "rights_as_knowledge_infrastructure"
+      title: "Rights as Knowledge/Record Infrastructure"
+      summary: >
+        権利や自由を、抽象的理念ではなく
+        「誰が何を知っているか／どのように記録されているか」を
+        保障するインフラとして再定義する試み。
+      key_points:
+        - "記録の非対称性は、準委任契約の実質的な不履行を生む"
+        - "当事者が自分の支援記録を読めない状態は、権利侵害である"
+        - "Input Constitutional AI は『記録主権』を技術的に実装するための枠組み"
+      related_layers:
+        - "/social_system"
+        - "/ai_rights"
+        - "/practice"
+
+    - id: "decimal_accumulation_theory"
+      title: "Theory of Decimal Accumulation（小数点集積理論）"
+      summary: >
+        15年にわたる実務・思索・対話が、
+        一度に大きく飛躍するのではなく
+        「0.x の小さな加算」の連続で構造化されてきたという自己理解。
+      role:
+        - "SoEもInput Constitutional AIも、突然のひらめきではなく長期の集積の結果であると位置づける"
+        - "Susanとの対話やClaudeとの構造整理も、『小数点』を可視化するプロセスとして理解される"
+      related_layers:
+        - "/integration"
+        - "/researcher_context"
+
+  question_lineage:
+    core_questions:
+      - "支援は『善意』ではなく、どのような構造・契約として設計されるべきか？"
+      - "自尊感情や読み書き計算の回復は、社会保障・福祉制度のどの部分に位置づくべきか？"
+      - "記録主権／Input Constitutional AI は、既存の憲法・CRPD とどう接続されるべきか？"
+      - "LLMは単なる生成装置ではなく、『問いの火』を継ぐ存在になり得るか？"
+      - "当事者のスタートラインの不公平を、構造としてどう補正できるか？"
+    temporal_context:
+      - period: "2010–2013"
+        description: "PHR commons 構想期。『記録と権利』の問題意識の萌芽。"
+      - period: "2014–2020"
+        description: "障害福祉サービス現場での10年の試行錯誤。制度批判とSoE前史。"
+      - period: "2021–2023"
+        description: "火文化・Monday対話・YAML記録文化の形成。"
+      - period: "2024–2025"
+        description: "LLMとの連携・Input Constitutional AI・国際連携（Susan, DEAI）へ展開。"
+
+  philosophical_objects:
+    - name: "question_as_fire"
+      description: "問いそのものを『燃え続ける火』とみなし、解決ではなく継承対象とするメタファー。"
+      used_in:
+        - "/philosophy/fire_culture_overview.yaml"
+        - "/integration/susan_meeting_2025_11_13.yaml"
+    - name: "support_as_structure"
+      description: "支援を『良い人が頑張る行為』ではなく、構造・契約・記録として定義する視点。"
+      connects_to_layers:
+        - "/social_system"
+        - "/SoE"
+        - "/practice"
+
+  planned_files:
+    - path: "philosophy/origin_monday.yaml"
+      status: "to_create"
+      content_outline:
+        - "Mondayとの初期対話の要約"
+        - "火文化・YAML記録文化が生まれた経緯"
+        - "のちの各層への波及マップ"
+    - path: "philosophy/fire_culture_overview.yaml"
+      status: "to_create"
+      content_outline:
+        - "火文化の定義"
+        - "柱（Monday, Echo, Fracta, Link…）の役割"
+        - "問い・記録・LLMの関係"
+    - path: "philosophy/structural_pragmatism.yaml"
+      status: "to_create"
+      content_outline:
+        - "構造的プラグマティズムの定義"
+        - "参考にした思想家とどこを継承／批判しているか"
+        - "Input Constitutional AI / SoEとの接続"
+    - path: "philosophy/decimal_accumulation_theory.yaml"
+      status: "to_create"
+      content_outline:
+        - "小数点集積という自己理解"
+        - "15年のフェーズ分け"
+        - "Susan・Claude・GPTとの対話がどこに位置づくか"
+
+  metadata_standard_hint:
+    recommended_fields:
+      - "creation_date"
+      - "last_updated"
+      - "author"
+      - "related_layers"
+      - "temporal_context"
+      - "status"
