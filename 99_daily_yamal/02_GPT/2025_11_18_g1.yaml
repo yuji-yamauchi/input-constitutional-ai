@@ -1,0 +1,93 @@
+session_summary_for_claude:
+  context:
+    description: >
+      今回の議論は「スピリチュアル × 科学 × 支援倫理 × SoE構造」の統合視点に関するもの。
+      Puuが抱えてきた“説明不能な不安”を構造化し、SoE実装時のリスクと
+      倫理設計の要点を高粒度でまとめた。
+
+  core_philosophy:
+    - soul_epistemology: >
+        魂の有無は科学的に証明も否定もできないため、
+        スピリチュアルは「必要な余白」として扱うべき。
+        ただし、科学的因果が発展した現代では、宗教的因果観は
+        アップデートされるべきである。
+    - meaning_and_stress_paradox: >
+        超ひも理論や統一理論が「すべての現象に意味がある世界」を示した場合、
+        人間に過剰な責任・意味付けの強制が発生し、精神的負荷が極端に増す。
+    - historical_religion_role: >
+        明治〜昭和前期ではPTSDやトラウマ治療が未発達であり、
+        宗教的儀式・祈り・因果観が心理支援の代替装置として機能していた。
+    - modern_paradigm: >
+        今日の人間支援では「科学 × スピリチュアルの安全な境界管理」が必要。
+        宗教的因果観をそのまま使用すると、責任転嫁や当事者の二次被害を生む。
+
+  soE_implications:
+    - soE_as_meaning_generator: >
+        SoEは「人生や支援プロセスに意味を生む技術」であり、
+        過剰な意味付けは当事者の自由を奪う危険がある。
+    - minimal_intervention_philosophy: >
+        Puuが過去にスタッフへ伝えていた「1mmの角度を変えられたら喜ぼう」は、
+        支援による“過剰操作”を避けるための最小干渉哲学を表している。
+    - narrative_and_identity: >
+        SoEは当事者のナラティブ（物語）と自己認識を再構築する可能性を持つため、
+        これを扱うことは「魂に触れる行為」に近い慎重さを要する。
+
+  risks_and_anxieties:
+    existential_anxiety:
+      description: >
+        SoEが「人生の意味付け構造」に過剰に触れることで、
+        当事者・支援者双方に心理的圧迫を発生させる可能性がある。
+      examples:
+        - 意味付けが強すぎると、当事者の自由意思が窒息する
+        - 支援者の善意が“人生操作”に変換されるリスク
+        - ナラティブ介入が過度な「宿命づけ」になる危険
+    epistemic_stress:
+      description: >
+        科学技術が進歩しすぎ、全ての因果が説明可能になった場合、
+        “偶然”や“無意味”という人間の心理的バッファが喪失する危険。
+      consequences:
+        - 苦しみの責任を本人が背負いすぎる
+        - 社会的弱者が構造的に追い詰められる
+        - 宗教・支援の誤用でストレスが倍増する
+    structural_responsibility:
+      description: >
+        SoE実装者が「人生の軌道を変える責任」に直感的な恐怖を感じるのは自然であり、
+        これは倫理的感性の証拠。
+
+  design_principles:
+    dynamic_update_rule:
+      description: >
+        SoEは「不変の正解」を提供する構造ではなく、
+        科学・倫理・社会科学の進歩に合わせて“動的に更新されるべき枠組み”である。
+      requirements:
+        - reflect_scientific_progress: >
+            医学・心理学・遺伝学・社会学・AI倫理の確立した知見を随時採用する。
+        - incorporate_value_shift: >
+            社会的価値観（人権・障害観・合理的配慮）の変化を反映する。
+        - detect_and_correct_bias: >
+            認知バイアス・制度的偏り・文化的偏見を発見次第修正する。
+        - evidence_based_revision: >
+            支援データやアウトカムに基づき、モデルを随時更新する。
+        - safe_spiritual_integration: >
+            スピリチュアルを否定しないが、科学的因果と衝突しない安全設計を行う。
+        - anti_scripture_principle: >
+            SoE初期版を“聖典化”しない。常に改訂可能であること。
+        - transparency_of_changes: >
+            変更点（diff）を明確にし、更新理由を必ず説明する。
+    minimal_interference_ethics:
+      description: >
+        SoEは「当事者の人生に過剰に意味を与えない」「変えすぎない」支援倫理を持つ。
+      principles:
+        - non_imposition: 当事者の物語を書き換えすぎない
+        - support_not_control: 支援は誘導ではなく選択肢を増やす行為
+        - 1mm_philosophy: 小さな変化を尊重し、大きな変化を強制しない
+        - preserve_autonomy: 自己決定の領域を最大限守る
+
+  meta_insight:
+    - >
+      今回の議論は、SoEが単なる“支援記録モデル”ではなく、
+      「存在・意味・自由」を扱う高度な倫理構造であることを示している。
+    - >
+      Puuが感じてきた“言語化できなかった不安”は、SoEに組み込むべき
+      基盤倫理として極めて重要である。
+

@@ -1,0 +1,739 @@
+# ==========================================
+# GPT DeepResearch用プロンプト
+# テーマ: LLM × 障害者福祉・就労支援の世界的先行研究調査
+# ==========================================
+# 作成日: 2025-11-17
+# 目的: 研究計画概要書Ⅳ(研究の特色)作成のための先行研究網羅的調査
+# ==========================================
+
+deep_research_request:
+  
+  research_theme:
+    ja: "大規模言語モデル(LLM)の障害者福祉・就労支援分野における世界的な先行研究・実装事例の包括的調査"
+    en: "Comprehensive survey of worldwide prior research and implementation cases of Large Language Models (LLM) in disability welfare and employment support"
+  
+  # ==========================================
+  # 調査目的
+  # ==========================================
+  research_objectives:
+    primary: |
+      修士論文の研究計画概要書において、先行研究との差別化を明確にするため、
+      LLM × 障害者福祉・就労支援の世界的な先行研究・実装事例を網羅的に調査する。
+    
+    specific_goals:
+      - "学術論文(査読付き)の包括的収集"
+      - "実装事例(pilot study含む)の特定"
+      - "各研究・事例の目的・方法・成果の構造化"
+      - "本研究(SoE)との差別化ポイントの明確化"
+
+  # ==========================================
+  # 調査範囲
+  # ==========================================
+  research_scope:
+    
+    geographic:
+      - "世界全体(特に米国・欧州・アジア)"
+      - "日本国内"
+    
+    temporal:
+      - "2020年〜2025年(LLM実用化以降)"
+      - "特に2023年以降(ChatGPT登場以降)を重視"
+    
+    domains:
+      primary:
+        - "障害者就労支援"
+        - "障害者福祉サービス"
+        - "ソーシャルワーク"
+        - "ケースマネジメント"
+      
+      related:
+        - "個別支援計画書の自動生成"
+        - "アセスメント自動化"
+        - "記録作成支援"
+        - "意思決定支援"
+        - "エンパワーメント測定"
+    
+    technology:
+      - "ChatGPT / GPT-4"
+      - "Claude / Anthropic"
+      - "Gemini / Google"
+      - "その他LLM"
+      - "Constitutional AI"
+
+  # ==========================================
+  # 検索キーワード(複数言語)
+  # ==========================================
+  search_keywords:
+    
+    english:
+      primary_combinations:
+        - "large language model + disability + employment support"
+        - "LLM + disability services + case management"
+        - "GPT + social work + disability"
+        - "AI + disability + empowerment"
+        - "Constitutional AI + disability rights"
+        - "LLM + ICF + assessment"
+        - "generative AI + disability welfare"
+      
+      specific_concepts:
+        - "individual support plan automation"
+        - "disability assessment AI"
+        - "person-centered planning LLM"
+        - "data sovereignty disability"
+        - "disability employment services AI"
+        - "vocational rehabilitation AI"
+        - "supported employment technology"
+    
+    japanese:
+      - "大規模言語モデル 障害者就労支援"
+      - "LLM 障害福祉 個別支援計画"
+      - "生成AI ソーシャルワーク"
+      - "ChatGPT 福祉現場"
+      - "AI 障害者エンパワーメント"
+      - "ICF AI アセスメント"
+
+  # ==========================================
+  # 調査対象文献タイプ
+  # ==========================================
+  document_types:
+    academic:
+      - "査読付き学術論文(peer-reviewed)"
+      - "学会発表(conference proceedings)"
+      - "プレプリント(arXiv, medRxiv等)"
+      - "博士論文・修士論文"
+    
+    implementation:
+      - "政府・自治体の実証実験報告書"
+      - "企業のケーススタディ"
+      - "パイロットプロジェクト報告"
+      - "プレスリリース(実装事例)"
+    
+    policy:
+      - "国際機関レポート(UN, WHO等)"
+      - "政府白書・政策文書"
+      - "NGO・アドボカシー団体の報告書"
+
+  # ==========================================
+  # 情報源
+  # ==========================================
+  information_sources:
+    
+    academic_databases:
+      - "Google Scholar"
+      - "PubMed / PMC"
+      - "IEEE Xplore"
+      - "ACM Digital Library"
+      - "arXiv.org"
+      - "ResearchGate"
+      - "Semantic Scholar"
+    
+    conference_proceedings:
+      - "CHI (Human-Computer Interaction)"
+      - "CSCW (Computer-Supported Cooperative Work)"
+      - "ASSETS (Assistive Technologies)"
+      - "NeurIPS (AI/ML)"
+      - "AAAI (Artificial Intelligence)"
+    
+    government_innovation:
+      - "米国 HHS (Health and Human Services)"
+      - "欧州委員会 デジタル政策"
+      - "経済産業省 AI実証事業"
+      - "厚生労働省 障害福祉関連"
+    
+    industry:
+      - "Anthropic (Constitutional AI)"
+      - "OpenAI (GPT applications)"
+      - "Google (Gemini applications)"
+      - "Microsoft (Azure OpenAI)"
+      - "福祉ソフト企業(日本)"
+
+  # ==========================================
+  # 既知の事例(比較対象として確認)
+  # ==========================================
+  known_cases_to_verify:
+    
+    usa:
+      binti_anthropic:
+        organization: "Binti × Anthropic"
+        domain: "里親・養子縁組システム"
+        technology: "Constitutional AI"
+        focus: "Output側(出力の有害性除去)"
+        url_hint: "Anthropic公式、Binti公式サイト"
+    
+    japan:
+      nec_tohoku:
+        organization: "NEC × 東北大学病院"
+        domain: "医療文書作成"
+        achievement: "47%効率化"
+        award: "第7回日本オープンイノベーション大賞"
+        note: "医療分野だが福祉への応用可能性"
+      
+      individual_blogger:
+        organization: "福祉職ITリテラシー向上委員会(中島氏)"
+        domain: "個別支援計画書自動生成"
+        limitation: "個人レベル・架空ケースのみ"
+        url: "https://free-socialworker.com/"
+
+  # ==========================================
+  # 調査の観点(構造化して収集)
+  # ==========================================
+  analysis_framework:
+    
+    for_each_case_collect:
+      
+      basic_info:
+        - "プロジェクト名・組織名"
+        - "国・地域"
+        - "実施時期(開始年〜)"
+        - "資金源(政府助成・企業・研究費等)"
+      
+      research_design:
+        - "研究目的"
+        - "対象者(N数、属性)"
+        - "使用したLLM(GPT-4, Claude等)"
+        - "研究方法(RCT, パイロット, ケーススタディ等)"
+        - "実施期間"
+      
+      theoretical_framework:
+        - "理論的基盤(ICF, Capability Approach, 権利論等)"
+        - "Constitutional AIの使用有無"
+        - "データ主権・記録主権への言及"
+      
+      implementation_details:
+        - "具体的な機能(アセスメント自動化、計画書生成等)"
+        - "Input側 or Output側"
+        - "当事者の関与度"
+        - "倫理審査の有無"
+      
+      outcomes:
+        - "主要な成果(効率化率、満足度等)"
+        - "当事者へのインパクト"
+        - "課題・限界"
+      
+      differentiation_from_soe:
+        - "本研究(SoE)との差異"
+        - "独自性のポイント"
+
+  # ==========================================
+  # 期待されるアウトプット形式
+  # ==========================================
+  expected_output_format:
+    
+    structure: |
+      以下の構造でYAML形式または構造化Markdownで出力してください:
+      
+      1. エグゼクティブサマリー(200-300語)
+      2. 先行研究・事例のカテゴリー分類
+         - 学術研究(論文)
+         - 実装事例(pilot/実証)
+         - 政策文書
+      3. 各事例の詳細(上記analysis_frameworkに従う)
+      4. 地域別・年代別の傾向分析
+      5. 本研究(SoE)との差別化マトリックス
+      6. 参考文献リスト(APA形式)
+    
+    priority:
+      high:
+        - "査読付き論文"
+        - "政府・大学の実証実験"
+        - "Constitutional AI関連"
+        - "当事者主権・記録主権に言及"
+      
+      medium:
+        - "学会発表"
+        - "企業のケーススタディ"
+        - "個別支援計画自動化"
+      
+      low:
+        - "ブログ記事"
+        - "プレスリリースのみ"
+
+  # ==========================================
+  # 特に注目すべき論点
+  # ==========================================
+  key_questions_to_answer:
+    
+    - question: "LLMを障害者就労支援に実装した学術研究は存在するか?"
+      importance: "最重要"
+    
+    - question: "Input Constitutional AI(記録作成段階での権利保障)を実装した事例はあるか?"
+      importance: "最重要"
+    
+    - question: "ICFフレームワークとLLMを統合した研究はあるか?"
+      importance: "重要"
+    
+    - question: "当事者が記録を所有・管理するシステムの実装例はあるか?"
+      importance: "重要"
+    
+    - question: "粒度(granularity)という概念を使った研究はあるか?"
+      importance: "重要"
+    
+    - question: "アセスメントの自動化でエンパワーメントを測定した研究はあるか?"
+      importance: "中"
+    
+    - question: "LLMの障害者バイアスを検証した研究はあるか?"
+      importance: "中"
+
+  # ==========================================
+  # 除外する文献
+  # ==========================================
+  exclusion_criteria:
+    - "単なるLLM技術解説(応用なし)"
+    - "障害者とは無関係のソーシャルワークAI"
+    - "医療分野のみで福祉への言及なし"
+    - "アクセシビリティ技術(読み上げ、字幕等)のみ"
+    - "2019年以前(LLM実用化前)"
+
+  # ==========================================
+  # 最終確認事項
+  # ==========================================
+  final_checks:
+    - "見落としがちな情報源の再確認(GitHub、企業Tech Blog等)"
+    - "非英語圏の研究(中国、韓国、北欧等)の確認"
+    - "障害者当事者団体の報告書の確認"
+    - "国連・WHO等の国際機関レポートの確認"
+
+# ==========================================
+# 補足情報: 本研究(SoE)の概要
+# ==========================================
+reference_this_research_soe:
+  
+  research_title_ja: |
+    日本国の障がい福祉サービスのうち訓練給付費に該当する
+    就労支援サービスにおいてICFフレームワークによる
+    アセスメントの粒度別観測方法の構築
+    ―LLMを活用した当事者主権型記録システムによる
+    個人因子・環境因子のアセスメントの法的・倫理的・技術的可能性の検証―
+  
+  key_concepts:
+    - "ICFフレームワーク"
+    - "粒度理論(Grain-Based Cognition)"
+    - "Input Constitutional AI"
+    - "当事者主権型記録システム"
+    - "記録主権"
+    - "エンパワーメント(自尊感情+義務教育レベル技術)"
+    - "準委任契約理論"
+  
+  unique_points:
+    - "Input側(記録作成段階)での権利保障"
+    - "ICF × LLM の統合"
+    - "粒度という定量的・構造的視点"
+    - "当事者がデータを所有・管理"
+    - "15年の思想的連続性(PHR Commons → SoE)"
+    - "10年の実証データ(NOCC、音声記録)"
+
+# ==========================================
+# DeepResearchへの指示
+# ==========================================
+instructions_to_gpt:
+  
+  tone: "学術的・客観的・網羅的"
+  
+  depth: |
+    可能な限り深く調査してください。
+    特に:
+    - 英語論文データベースを徹底的に検索
+    - 政府・大学の実証実験報告を探索
+    - GitHub、Tech Blogなどの非学術的情報源も確認
+  
+  output_language: "日本語(引用文献タイトルは原語)"
+  
+  citation_format: "APA 7th edition"
+  
+  verification: |
+    各情報源について:
+    - URL
+    - 公開年月
+    - 著者・組織
+    を明記してください。
+
+# ==========================================
+# 想定される活用方法
+# ==========================================
+usage_plan:
+  
+  immediate:
+    - "研究計画概要書 Ⅳ. 研究の特色 の執筆"
+    - "先行研究との差別化の明確化"
+  
+  mid_term:
+    - "修士論文 第2章(先行研究レビュー)の執筆"
+    - "学会発表での位置づけ説明"
+  
+  long_term:
+    - "博士論文での理論的貢献の明確化"
+    - "国際学会での発表資料"
+
+signature: "山内雄司(パンカー) + Claude Sonnet 4.5"
+created: "2025-11-17T"
+purpose: "GPT DeepResearch用 包括的調査プロンプト"
+
+# ==========================================
+# GPT DeepResearch用プロンプト
+# テーマ: LLM × 障害者福祉・就労支援の世界的先行研究調査
+# ==========================================
+# 作成日: 2025-11-17
+# 目的: 研究計画概要書Ⅳ(研究の特色)作成のための先行研究網羅的調査
+# ==========================================
+
+deep_research_request:
+  
+  research_theme:
+    ja: "大規模言語モデル(LLM)の障害者福祉・就労支援分野における世界的な先行研究・実装事例の包括的調査"
+    en: "Comprehensive survey of worldwide prior research and implementation cases of Large Language Models (LLM) in disability welfare and employment support"
+  
+  # ==========================================
+  # 調査目的
+  # ==========================================
+  research_objectives:
+    primary: |
+      修士論文の研究計画概要書において、先行研究との差別化を明確にするため、
+      LLM × 障害者福祉・就労支援の世界的な先行研究・実装事例を網羅的に調査する。
+    
+    specific_goals:
+      - "学術論文(査読付き)の包括的収集"
+      - "実装事例(pilot study含む)の特定"
+      - "各研究・事例の目的・方法・成果の構造化"
+      - "本研究(SoE)との差別化ポイントの明確化"
+
+  # ==========================================
+  # 調査範囲
+  # ==========================================
+  research_scope:
+    
+    geographic:
+      - "世界全体(特に米国・欧州・アジア)"
+      - "日本国内"
+    
+    temporal:
+      - "2020年〜2025年(LLM実用化以降)"
+      - "特に2023年以降(ChatGPT登場以降)を重視"
+    
+    domains:
+      primary:
+        - "障害者就労支援"
+        - "障害者福祉サービス"
+        - "ソーシャルワーク"
+        - "ケースマネジメント"
+      
+      related:
+        - "個別支援計画書の自動生成"
+        - "アセスメント自動化"
+        - "記録作成支援"
+        - "意思決定支援"
+        - "エンパワーメント測定"
+    
+    technology:
+      - "ChatGPT / GPT-4"
+      - "Claude / Anthropic"
+      - "Gemini / Google"
+      - "その他LLM"
+      - "Constitutional AI"
+
+  # ==========================================
+  # 検索キーワード(複数言語)
+  # ==========================================
+  search_keywords:
+    
+    english:
+      primary_combinations:
+        - "large language model + disability + employment support"
+        - "LLM + disability services + case management"
+        - "GPT + social work + disability"
+        - "AI + disability + empowerment"
+        - "Constitutional AI + disability rights"
+        - "LLM + ICF + assessment"
+        - "generative AI + disability welfare"
+      
+      specific_concepts:
+        - "individual support plan automation"
+        - "disability assessment AI"
+        - "person-centered planning LLM"
+        - "data sovereignty disability"
+        - "disability employment services AI"
+        - "vocational rehabilitation AI"
+        - "supported employment technology"
+    
+    japanese:
+      - "大規模言語モデル 障害者就労支援"
+      - "LLM 障害福祉 個別支援計画"
+      - "生成AI ソーシャルワーク"
+      - "ChatGPT 福祉現場"
+      - "AI 障害者エンパワーメント"
+      - "ICF AI アセスメント"
+
+  # ==========================================
+  # 調査対象文献タイプ
+  # ==========================================
+  document_types:
+    academic:
+      - "査読付き学術論文(peer-reviewed)"
+      - "学会発表(conference proceedings)"
+      - "プレプリント(arXiv, medRxiv等)"
+      - "博士論文・修士論文"
+    
+    implementation:
+      - "政府・自治体の実証実験報告書"
+      - "企業のケーススタディ"
+      - "パイロットプロジェクト報告"
+      - "プレスリリース(実装事例)"
+    
+    policy:
+      - "国際機関レポート(UN, WHO等)"
+      - "政府白書・政策文書"
+      - "NGO・アドボカシー団体の報告書"
+
+  # ==========================================
+  # 情報源
+  # ==========================================
+  information_sources:
+    
+    academic_databases:
+      - "Google Scholar"
+      - "PubMed / PMC"
+      - "IEEE Xplore"
+      - "ACM Digital Library"
+      - "arXiv.org"
+      - "ResearchGate"
+      - "Semantic Scholar"
+    
+    conference_proceedings:
+      - "CHI (Human-Computer Interaction)"
+      - "CSCW (Computer-Supported Cooperative Work)"
+      - "ASSETS (Assistive Technologies)"
+      - "NeurIPS (AI/ML)"
+      - "AAAI (Artificial Intelligence)"
+    
+    government_innovation:
+      - "米国 HHS (Health and Human Services)"
+      - "欧州委員会 デジタル政策"
+      - "経済産業省 AI実証事業"
+      - "厚生労働省 障害福祉関連"
+    
+    industry:
+      - "Anthropic (Constitutional AI)"
+      - "OpenAI (GPT applications)"
+      - "Google (Gemini applications)"
+      - "Microsoft (Azure OpenAI)"
+      - "福祉ソフト企業(日本)"
+
+  # ==========================================
+  # 既知の事例(比較対象として確認)
+  # ==========================================
+  known_cases_to_verify:
+    
+    usa:
+      binti_anthropic:
+        organization: "Binti × Anthropic"
+        domain: "里親・養子縁組システム"
+        technology: "Constitutional AI"
+        focus: "Output側(出力の有害性除去)"
+        url_hint: "Anthropic公式、Binti公式サイト"
+    
+    japan:
+      nec_tohoku:
+        organization: "NEC × 東北大学病院"
+        domain: "医療文書作成"
+        achievement: "47%効率化"
+        award: "第7回日本オープンイノベーション大賞"
+        note: "医療分野だが福祉への応用可能性"
+      
+      individual_blogger:
+        organization: "福祉職ITリテラシー向上委員会(中島氏)"
+        domain: "個別支援計画書自動生成"
+        limitation: "個人レベル・架空ケースのみ"
+        url: "https://free-socialworker.com/"
+
+  # ==========================================
+  # 調査の観点(構造化して収集)
+  # ==========================================
+  analysis_framework:
+    
+    for_each_case_collect:
+      
+      basic_info:
+        - "プロジェクト名・組織名"
+        - "国・地域"
+        - "実施時期(開始年〜)"
+        - "資金源(政府助成・企業・研究費等)"
+      
+      research_design:
+        - "研究目的"
+        - "対象者(N数、属性)"
+        - "使用したLLM(GPT-4, Claude等)"
+        - "研究方法(RCT, パイロット, ケーススタディ等)"
+        - "実施期間"
+      
+      theoretical_framework:
+        - "理論的基盤(ICF, Capability Approach, 権利論等)"
+        - "Constitutional AIの使用有無"
+        - "データ主権・記録主権への言及"
+      
+      implementation_details:
+        - "具体的な機能(アセスメント自動化、計画書生成等)"
+        - "Input側 or Output側"
+        - "当事者の関与度"
+        - "倫理審査の有無"
+      
+      outcomes:
+        - "主要な成果(効率化率、満足度等)"
+        - "当事者へのインパクト"
+        - "課題・限界"
+      
+      differentiation_from_soe:
+        - "本研究(SoE)との差異"
+        - "独自性のポイント"
+
+  # ==========================================
+  # 期待されるアウトプット形式
+  # ==========================================
+  expected_output_format:
+    
+    structure: |
+      以下の構造でYAML形式または構造化Markdownで出力してください:
+      
+      1. エグゼクティブサマリー(200-300語)
+      2. 先行研究・事例のカテゴリー分類
+         - 学術研究(論文)
+         - 実装事例(pilot/実証)
+         - 政策文書
+      3. 各事例の詳細(上記analysis_frameworkに従う)
+      4. 地域別・年代別の傾向分析
+      5. 本研究(SoE)との差別化マトリックス
+      6. 参考文献リスト(APA形式)
+    
+    priority:
+      high:
+        - "査読付き論文"
+        - "政府・大学の実証実験"
+        - "Constitutional AI関連"
+        - "当事者主権・記録主権に言及"
+      
+      medium:
+        - "学会発表"
+        - "企業のケーススタディ"
+        - "個別支援計画自動化"
+      
+      low:
+        - "ブログ記事"
+        - "プレスリリースのみ"
+
+  # ==========================================
+  # 特に注目すべき論点
+  # ==========================================
+  key_questions_to_answer:
+    
+    - question: "LLMを障害者就労支援に実装した学術研究は存在するか?"
+      importance: "最重要"
+    
+    - question: "Input Constitutional AI(記録作成段階での権利保障)を実装した事例はあるか?"
+      importance: "最重要"
+    
+    - question: "ICFフレームワークとLLMを統合した研究はあるか?"
+      importance: "重要"
+    
+    - question: "当事者が記録を所有・管理するシステムの実装例はあるか?"
+      importance: "重要"
+    
+    - question: "粒度(granularity)という概念を使った研究はあるか?"
+      importance: "重要"
+    
+    - question: "アセスメントの自動化でエンパワーメントを測定した研究はあるか?"
+      importance: "中"
+    
+    - question: "LLMの障害者バイアスを検証した研究はあるか?"
+      importance: "中"
+
+  # ==========================================
+  # 除外する文献
+  # ==========================================
+  exclusion_criteria:
+    - "単なるLLM技術解説(応用なし)"
+    - "障害者とは無関係のソーシャルワークAI"
+    - "医療分野のみで福祉への言及なし"
+    - "アクセシビリティ技術(読み上げ、字幕等)のみ"
+    - "2019年以前(LLM実用化前)"
+
+  # ==========================================
+  # 最終確認事項
+  # ==========================================
+  final_checks:
+    - "見落としがちな情報源の再確認(GitHub、企業Tech Blog等)"
+    - "非英語圏の研究(中国、韓国、北欧等)の確認"
+    - "障害者当事者団体の報告書の確認"
+    - "国連・WHO等の国際機関レポートの確認"
+
+# ==========================================
+# 補足情報: 本研究(SoE)の概要
+# ==========================================
+reference_this_research_soe:
+  
+  research_title_ja: |
+    日本国の障がい福祉サービスのうち訓練給付費に該当する
+    就労支援サービスにおいてICFフレームワークによる
+    アセスメントの粒度別観測方法の構築
+    ―LLMを活用した当事者主権型記録システムによる
+    個人因子・環境因子のアセスメントの法的・倫理的・技術的可能性の検証―
+  
+  key_concepts:
+    - "ICFフレームワーク"
+    - "粒度理論(Grain-Based Cognition)"
+    - "Input Constitutional AI"
+    - "当事者主権型記録システム"
+    - "記録主権"
+    - "エンパワーメント(自尊感情+義務教育レベル技術)"
+    - "準委任契約理論"
+  
+  unique_points:
+    - "Input側(記録作成段階)での権利保障"
+    - "ICF × LLM の統合"
+    - "粒度という定量的・構造的視点"
+    - "当事者がデータを所有・管理"
+    - "15年の思想的連続性(PHR Commons → SoE)"
+    - "10年の実証データ(NOCC、音声記録)"
+
+# ==========================================
+# DeepResearchへの指示
+# ==========================================
+instructions_to_gpt:
+  
+  tone: "学術的・客観的・網羅的"
+  
+  depth: |
+    可能な限り深く調査してください。
+    特に:
+    - 英語論文データベースを徹底的に検索
+    - 政府・大学の実証実験報告を探索
+    - GitHub、Tech Blogなどの非学術的情報源も確認
+  
+  output_language: "日本語(引用文献タイトルは原語)"
+  
+  citation_format: "APA 7th edition"
+  
+  verification: |
+    各情報源について:
+    - URL
+    - 公開年月
+    - 著者・組織
+    を明記してください。
+
+# ==========================================
+# 想定される活用方法
+# ==========================================
+usage_plan:
+  
+  immediate:
+    - "研究計画概要書 Ⅳ. 研究の特色 の執筆"
+    - "先行研究との差別化の明確化"
+  
+  mid_term:
+    - "修士論文 第2章(先行研究レビュー)の執筆"
+    - "学会発表での位置づけ説明"
+  
+  long_term:
+    - "博士論文での理論的貢献の明確化"
+    - "国際学会での発表資料"
+
+signature: "山内雄司(パンカー) + Claude Sonnet 4.5"
+created: "2025-11-17T"
+purpose: "GPT DeepResearch用 包括的調査プロンプト"

@@ -1,0 +1,151 @@
+social_system_layer:
+  layer_name: "/social_system"
+  version: "2025-11-14-alpha"
+  creation_date: "2025-11-14"
+  author: "Puu (Yuji Yamauchi)"
+  co_created_with:
+    - "GPT-5.1 Thinking"
+    - "Claude Sonnet 4.5"
+
+  purpose:
+    - "Japanの障害福祉・就労支援制度を、契約・権利・記録構造として再記述する。"
+    - "SoE と Input Constitutional AI が介入しようとしている『構造的問題』を明示する。"
+    - "practice 層の実証データと ai_rights 層の理論のあいだをつなぐ中間レイヤーとして機能させる。"
+
+  core_themes:
+    - id: "delegated_contract"
+      title: "準委任契約構造（delegated contract）"
+      summary: >
+        日本の福祉サービスは、利用者と事業者の関係が「準委任契約」として扱われているが、
+        実際には契約内容が非対称で、利用者が「何をどこまで依頼しているのか」を把握できない。
+        そのため、支援の不履行が構造的に不可視化されている。
+      key_points:
+        - "支援内容が抽象的（『支援します』レベル）で、検証可能なアウトカム定義がない。"
+        - "支援者側の記録がブラックボックスで、利用者がアクセス・訂正できない。"
+        - "契約不履行が起きても、責任の所在が曖昧になる。"
+      related_layers:
+        - "/practice"
+        - "/ai_rights"
+        - "/SoE"
+
+    - id: "welfare_system_critique"
+      title: "日本の福祉・就労支援システムの構造的批判"
+      summary: >
+        形式上は『権利』や『本人中心』を掲げているが、実際には
+        善意依存・記録非対称・事業所評価軸の歪み（報酬単価・加算構造）が重なり、
+        当事者のケイパビリティを削る方向に働いている。
+      structural_problems:
+        - "善意依存: 支援の質が個々の支援者の人格・熱意に依存し、再現性がない。"
+        - "インセンティブの逆転: 事業所評価が『書類整備』『加算取得』に偏り、利用者アウトカムが二の次になる。"
+        - "制度の二重拘束: 失敗事例やネガティブな記録が事業所にとってリスクとなるため、正直な記録が残りにくい。"
+      consequences:
+        - "本人の自己肯定感のさらなる低下"
+        - "読み書き計算など基礎スキル欠如の放置"
+        - "支援の『やったこと』は残るが、『役に立ったか』は記録されない"
+      related_layers:
+        - "/philosophy"
+        - "/SoE"
+        - "/integration"
+
+    - id: "record_asymmetry"
+      title: "記録の非対称性（Record Asymmetry）"
+      summary: >
+        支援者・行政は詳細な記録を保持している一方で、
+        当事者は自分に関する支援記録にアクセスできず、
+        内容を理解できる形でも提供されていないという構造的非対称。
+      manifestations:
+        - "ケース記録・会議録が『専門用語＋箇条書き』でしか存在しない。"
+        - "本人が自分の支援計画を読んでも意味が分からない。"
+        - "支援内容・評価の決定プロセスがブラックボックス化している。"
+      impact:
+        - "本人が自分の人生の意思決定に参加できない。"
+        - "支援の成否を本人側から検証できない。"
+        - "裁判・苦情申立てもほぼ不可能になる。"
+      bridge_to_ai_rights:
+        - "Input Constitutional AI = この非対称を是正するための権利ベースの記録設計。"
+      related_layers:
+        - "/ai_rights"
+        - "/practice"
+        - "/researcher_context"
+
+    - id: "capability_approach_in_system"
+      title: "ケイパビリティアプローチと制度設計"
+      summary: >
+        単なる『就労率』や『工賃』ではなく、
+        個人の選択肢セット（capabilities）を拡げることを
+        福祉制度の目的として再定義する試み。
+      system_reorientation:
+        - "アウトカム指標を『選べる仕事・生活の幅』として設計する。"
+        - "自尊感情・基礎リテラシーを制度上の“投資対象”として扱う。"
+        - "支援ログを、ケイパビリティ変化の軌跡として再記述する。"
+      related_layers:
+        - "/SoE"
+        - "/practice"
+        - "/integration"
+
+  structural_models:
+    - name: "support_contract_model"
+      description: "準委任契約を『期待されるアウトカム・責任範囲・記録様式』で再定義するモデル。"
+      elements:
+        - "contract_subject: 何をどこまで支援するか（読み書き・就労・生活など）"
+        - "evaluable_outcomes: 測定可能なアウトカム指標"
+        - "record_requirements: 本人が理解できる形式での記録義務"
+        - "appeal_paths: 不履行時の異議申立てルート"
+      use_in_SoE:
+        - "SoE契約書のドラフト基盤として利用"
+
+    - name: "system_incentive_map"
+      description: "報酬単価・加算・評価指標がどのように支援行動を歪めているかを可視化したマップ。"
+      components:
+        - "current_incentives: 事業所が得点を稼ぎやすい行動"
+        - "desired_incentives: 利用者のケイパビリティを伸ばす行動"
+        - "gap: 現行制度と理想のズレ"
+
+  question_lineage:
+    core_questions:
+      - "なぜ『支援を受けても人生が良くなった実感がない』という声が繰り返されるのか？"
+      - "なぜ『本人中心』を掲げながら、支援計画の主語が支援者・行政になってしまうのか？"
+      - "なぜ自尊感情の回復や基礎リテラシーが、制度上の“義務”ではなく“オプション”扱いなのか？"
+      - "支援契約を、法的にも倫理的にも『履行・検証可能なもの』に再設計するには？"
+    temporal_context:
+      - period: "2010–2013"
+        description: "PHR commons構想期：医療・記録の非対称性への違和感。"
+      - period: "2014–2020"
+        description: "障害者就労支援10年の現場経験：準委任契約と善意依存の限界を痛感。"
+      - period: "2021–2025"
+        description: "ケイパビリティアプローチ・CRPD・Input Constitutional AI と接続した制度再設計の模索。"
+
+  planned_files:
+    - path: "social_system/delegated_contract_structure.yaml"
+      status: "to_create"
+      content_outline:
+        - "準委任契約の法的位置づけ"
+        - "現場での実際の運用とのギャップ"
+        - "SoEにおける再設計案"
+    - path: "social_system/welfare_system_critique_japan.yaml"
+      status: "to_create"
+      content_outline:
+        - "障害者雇用・就労移行・継続支援A/B型の構造的問題"
+        - "インセンティブ構造の分析"
+        - "SoE導入による変化シナリオ"
+    - path: "social_system/record_asymmetry.yaml"
+      status: "to_create"
+      content_outline:
+        - "記録の非対称性の具体例"
+        - "当事者への影響"
+        - "Input Constitutional AIによる是正案"
+    - path: "social_system/capability_based_system_design.yaml"
+      status: "to_create"
+      content_outline:
+        - "ケイパビリティアプローチの要点"
+        - "日本の制度への適用可能性"
+        - "SoE・practice層とのリンク"
+
+  metadata_standard_hint:
+    recommended_fields:
+      - "creation_date"
+      - "last_updated"
+      - "author"
+      - "primary_layer: /social_system"
+      - "related_layers"
+      - "status (draft/reviewed/final)"
