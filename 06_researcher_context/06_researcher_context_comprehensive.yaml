@@ -1,0 +1,765 @@
+# ==========================================
+# 06_researcher_context: 研究者包括情報
+# ==========================================
+# 作成日: 2025-11-19
+# 対象: 山内雄司（Puu）研究者バックグラウンド統合記録
+# 目的: プロジェクト内の研究者コンテクスト情報の一元化
+# ==========================================
+
+metadata:
+  file_type: "研究者コンテクスト統合記録"
+  target_folder: "06_researcher_context/"
+  created_date: "2025-11-19"
+  source_documents:
+    - "user_profile_analysis_yaml__1_.md"
+    - "大学院進学用自己紹介書_研究計画概要書バックボーン.pdf"
+    - "添付書類⑤山内傷病歴.pdf"
+    - "山内雄司_遺伝的背景_傷病歴統合サマリー.md"
+    - "包括的医学情報サマリー_-_遺伝的背景_時系列統合版.md"
+    - "2025_11_13_2.yaml (Susan Scott-Parker面談記録)"
+    - "研究計画書作成セッション総括_2025-10-14.txt"
+    - "final_session_summary_yaml.md"
+
+# ==========================================
+# Part 1: 基本プロフィール
+# ==========================================
+basic_profile:
+  personal_info:
+    name: "山内雄司（Puu）"
+    birth_date: "1973年8月7日（昭和48年）"
+    age: 52
+    location: "岡山県笠岡市"
+    family:
+      spouse: "山内千枝（昭和59年8月生）"
+      marriage_date: "2012年3月（平成24年）"
+      children:
+        - name: "山内美昌（ハルアキ）"
+          birth: "2013年4月（平成25年）"
+          condition: "多発性海綿状血管腫（1歳1ヶ月診断、脳出血所見5箇所）"
+        - name: "山内景司"
+          birth: "2014年12月（平成26年）"
+          condition: "海綿状血管腫3箇所確認"
+        - name: "山内千聖"
+          birth: "2017年（平成29年）"
+          condition: "海綿状血管腫確認"
+      
+  cognitive_profile:
+    mbti: "ENTP（討論者型）"
+    diagnosis: "ADHD確定診断（48歳時）"
+    iq: 118
+    wais_iii:
+      full_scale_iq: 116
+      verbal_iq: 113
+      performance_iq: 117
+    overexcitability: "感情性OE（Overexcitability）強"
+    thinking_style: "比喩的・構造的・物語駆動型思考"
+    dialogue_modality: "GPTとの継承的対話を通じた構造深化型"
+    
+  big_five_personality:
+    openness: 9.5
+    conscientiousness: 8.0
+    extraversion: 6.5
+    agreeableness: 7.5
+    neuroticism: 3.0
+  
+  hogan_personality_inventory:
+    ambition: 8.5
+    intellectance: 9.2
+    prudence: 7.8
+    sociability: 7.0
+    adjustment: 8.3
+
+# ==========================================
+# Part 2: 遺伝的背景と家族歴
+# ==========================================
+genetic_background:
+  
+  father_line_hereditary_disease:
+    condition: "多発性海綿状血管腫"
+    inheritance_pattern: "常染色体優性遺伝の可能性"
+    
+    family_history:
+      father:
+        name: "山内昌吉（昭和14年2月生）"
+        conditions:
+          - "脳出血に伴うカサブタ"
+          - "全身痙攣（複数回）"
+          - "交通事故・職場事故による骨折等5度以上入院"
+          - "平成24年大動脈解離・脳梗塞により逝去"
+      
+      eldest_brother:
+        name: "山内慎司（昭和43年3月生）"
+        death: "12歳時脳出血により死亡"
+        course:
+          - "小学校中学年から異常行動（盗癖、家出、物乞い等）"
+          - "行動抑制機能周辺の腫瘍摘出術"
+          - "術後覚醒せず他界"
+      
+      nephew:
+        name: "山内龍一（昭和63年7月生）"
+        conditions:
+          - "20歳時脳出血、右上下肢麻痺"
+          - "多発性海綿状血管腫診断"
+          - "令和5年脳幹部近くの脳出血で死亡"
+      
+      researcher_children:
+        all_three_diagnosed: true
+        management: "岡山医療センターで毎年MRI・脳波等検査"
+  
+  mother_line_hearing_impairment:
+    pattern: "母系親族の聴覚障害家族集積性"
+    
+    mother:
+      name: "山内ノリコ（昭和20年3月生）"
+      conditions:
+        - "40代子宮筋腫"
+        - "70歳乳がん"
+    
+    maternal_relatives:
+      affected: "叔父・叔母3人"
+      onset: "比較的若年からの難聴"
+      severity: "障害者手帳取得レベル"
+  
+  complex_genetic_risk:
+    clinical_significance: "父系血管腫 + 母系聴覚障害の複合的遺伝リスク"
+    implications:
+      - "血管系構造異常による全身血管脆弱性"
+      - "内耳血管障害による聴覚障害易罹患性"
+      - "次世代への複合的遺伝リスク継承"
+
+# ==========================================
+# Part 3: 傷病歴（時系列）
+# ==========================================
+medical_history:
+  
+  university_period_1996:
+    age: 22
+    date: "1996年6月（大学4年）"
+    condition: "多発性海綿状血管腫による脊髄圧迫"
+    symptoms: "下半身不随"
+    treatment: "岡山国立病院中原医師による腫瘍摘出術"
+    outcome: "機能回復、ただし断続的な足の麻痺継続"
+    social_impact: "就職活動中断"
+  
+  early_adulthood_2008_2012:
+    - year: 2008
+      age: 35
+      condition: "無呼吸症候群、扁桃腺肥大"
+      treatment: "扁桃腺切除手術"
+    
+    - year: 2010
+      age: 37
+      condition: "右耳突発性難聴（第1回）"
+      treatment: "岡山国立病院で薬物治療"
+      outcome: "回復"
+    
+    - year: 2011
+      age: 38
+      event: "健康診断で脳内血管腫3箇所確認"
+      action: "経過観察"
+  
+  late_adulthood_2019:
+    year: 2019
+    age: 46
+    condition: "腰椎部病変"
+    initial_diagnosis: "椎間板ヘルニア"
+    treatment: "切除手術"
+    consideration: "血管腫の可能性（鑑別困難例）"
+    findings: "頸椎・胸椎に血管腫様病変の存在"
+  
+  middle_age_complex_onset_2023_2025:
+    
+    cerebral_hemorrhage_2023_09:
+      date: "2023年9月"
+      age: 50
+      trigger: "コロナ感染"
+      condition: "左前頭葉脳出血"
+      acute_symptoms:
+        - "高次脳機能障害"
+        - "言語機能障害"
+        - "記憶機能障害"
+      sequelae: "癲癇"
+      recovery: "言語・記憶機能ほぼ完全回復"
+      social_impact: "就労移行支援事業所閉鎖決断"
+    
+    first_hearing_loss_2024_08_10:
+      period: "2024年8月-10月"
+      age: 51
+      condition: "左耳突発性難聴"
+      course: "9月一時回復 → 再発"
+      outcome: "10月以降聴力固定化"
+    
+    complex_acute_phase_2025_08_09:
+      trigger_2025_08_23:
+        event: "ムカデ複数回咬傷"
+        response: "発熱38℃前後（3日間持続）"
+        hypothesis: "全身炎症による血管系への影響"
+      
+      onset_2025_08_31:
+        condition: "右耳突発性難聴発症（第2回・同一部位）"
+        progression: "急速進行性聴力低下"
+      
+      treatment_2025_09_01:
+        medication: "プレドニン60mgから漸減開始"
+        response: "治療にも関わらず進行性悪化"
+        pattern: "約6時間ごとの聴力低下"
+        symptoms: "音質劣化（音楽・音声が割れた音として認識）"
+      
+      emergency_2025_09_04_05:
+        event: "胸痛・高血圧（185/125 mmHg）"
+        action: "救急搬送"
+        findings:
+          cardiac: "心臓異常なし"
+          incidental: "甲状腺腫瘍・リンパ節腫瘍（良悪性未確定）"
+        cause_estimate: "ステロイド副作用＋気圧変動＋基礎疾患"
+      
+      current_status_2025_09_05:
+        blood_pressure: "196/118 mmHg（15:01）"
+        pulse: "50 bpm"
+        symptoms: "軽度顔面紅潮、胸腹部痛移動傾向"
+
+# ==========================================
+# Part 4: 現在の治療状況
+# ==========================================
+current_treatment:
+  medications:
+    - name: "プレドニン錠5mg"
+      dosage: "60mg→40mg→20mg→10mg漸減中"
+      purpose: "突発性難聴治療"
+    
+    - name: "コンサータ錠36mg"
+      purpose: "ADHD治療"
+    
+    - name: "レベチラセタム錠500mg"
+      timing: "朝・夕"
+      purpose: "抗癲癇薬"
+    
+    - name: "マイスタン錠10mg"
+      timing: "就寝前"
+      purpose: "抗癲癇薬"
+    
+    - group: "循環器系薬剤"
+      medications:
+        - "ビソプロロール"
+        - "ロサルヒド"
+        - "ニフェジピン"
+    
+    - name: "マグミット錠330mg"
+      timing: "就寝前"
+  
+  institutional_support:
+    - "自立支援医療（精神通院医療）"
+    - "障害者手帳検討中（聴覚障害・高次脳機能障害）"
+    - "障害年金検討中（複合的障害）"
+
+# ==========================================
+# Part 5: 職業経歴
+# ==========================================
+professional_career:
+  
+  phase1_foundation_1996_2006:
+    - period: "1996年4月-9月"
+      company: "株式会社サンマルク"
+      role: "正社員（FC本部指導員）"
+      achievements: "接客評価高いが、ケアレスミス目立つ"
+      exit: "長時間労働（1日14時間）により転職"
+    
+    - period: "1996年10月-1998年10月"
+      company: "齊藤博文税理士事務所"
+      role: "正社員"
+      achievements:
+        - "法人16件・個人22件の税務会計業務"
+        - "1ヶ月で10社程度の顧客担当"
+        - "契約理論の実務基盤習得"
+      note: "ケアレスミス多いがコミュニケーション力で評価"
+      exit: "サンマルク社員独立支援の予定（結局流れた）"
+    
+    - period: "1998年11月-2001年11月"
+      company: "日本デジタルコミュニケーションズ（岡山）"
+      roles:
+        - "法人営業（飛び込み）"
+        - "ドコモショップクレーム処理"
+        - "副店長"
+        - "会報誌企画・新規部署所属長"
+      issues: "部下掌握困難、進捗報告できず孤立"
+      exit: "夜中に退職願を置いて逃げるように退職"
+    
+    - period: "2001年12月-2002年2月"
+      company: "F&Fフードサービス株式会社（広島）"
+      roles:
+        - "回転寿司店長"
+        - "牛角店長"
+      exit: "長時間労働、ケアレスミス、仮病で退職"
+    
+    - period: "2002年4月-6月"
+      company: "有限会社ポルシェ（飲食店グループ）"
+      role: "幹部（数値管理兼店舗運営）"
+      issues: "注文ミス等のケアレスミス続き、現場スタッフと溝"
+      exit: "派遣会社通じて退職"
+    
+    - period: "2002年7月-2006年7月"
+      company: "株式会社井原放送"
+      role: "総務営業 → 係長（入社3年目）"
+      achievements:
+        - "上司との相性良好"
+        - "人事整理、ISO取得業務一任"
+        - "充実した4年間"
+      exit: "友人の会社設立の誘いで退職"
+  
+  phase2_entrepreneurship_2006_2014:
+    - period: "2006年8月-2006年10月"
+      company: "株式会社BIZ.ARTS"
+      role: "入社"
+      situation: "友人の元上司のITコンサル会社、5千万円借金あり"
+      action: "友人を説得して別会社設立促し独立"
+    
+    - period: "2006年10月-2014年"
+      company: "株式会社アーツ情報システム"
+      role: "代表取締役（独立分社）"
+      achievements:
+        - "売上0円状態から年商1.4億円達成"
+        - "中四国自治体システム開発（地方税システム等）"
+        - "月額100万円の継続サポート契約獲得"
+        - "上場企業3社との補助サポート契約"
+        - "ISO構築支援"
+      
+      major_failure:
+        project: "Sun Microsystems連携プロジェクト"
+        cause: "タスク委譲管理の失敗 → スケジュール遅延"
+        nda: "NDA締結済み"
+        lesson: "誰かに仕事を任せる管理ができなかった"
+      
+      transition_moment:
+        trigger: "総務省プロジェクト参加"
+        realization: "障害福祉事業者との対話で、プロジェクトが当事者のためでないと気づく"
+        decision: "障害福祉事業への参入決意"
+  
+  phase3_welfare_career_2015_2025:
+    initial_role:
+      period: "約10年間"
+      position: "オーナー企業の新規事業立ち上げ支援 → 事務局長"
+      funding: "国費（政府資金）+ 民間企業の部門として"
+    
+    establishment_phase:
+      facilities_launched: 10
+      direct_involvement: "多くの場合、支援現場の最前線で従事"
+    
+    management_peak:
+      facilities: "5事業所同時管理"
+      staff: "35名（最大時）"
+      users: "100名規模"
+      total_revenue: "福祉事業年間総売上約3億円"
+    
+    key_role:
+      position: "サービス管理責任者"
+      responsibilities:
+        - "個別支援計画作成（数百件）"
+        - "職員研修プログラム設計・運営"
+        - "ISO認証構築（ISO27001・ISO20000）"
+        - "行政との協働事業"
+        - "補助金活用事業受託（最大1.2億円）"
+    
+    unique_competencies:
+      - "ゼロから1を作り出す能力"
+      - "売上0円→1.4億円の実績"
+      - "複雑な制度設計能力"
+      - "現場と経営の両方の視点"
+    
+    weakness_acknowledged:
+      - "管理能力の欠如（タスク委譲困難）"
+      - "ケアレスミス傾向"
+    
+    transition_to_research:
+      trigger: "2023年脳出血・聴覚障害"
+      decision: "就労移行支援事業所閉鎖 → 博士課程挑戦"
+
+# ==========================================
+# Part 6: 研究者としての特性
+# ==========================================
+researcher_profile:
+  
+  researcher_type: "実践基盤型理論研究者（Theory Builder）"
+  
+  academic_thinking:
+    critical_thinking: 9.5
+    conceptualization: 9.0
+    problem_setting: 9.2
+    hypothesis_building: 8.8
+  
+  research_domain_aptitude:
+    sociology_social_policy: 9.5
+    science_technology_society: 9.0
+    political_philosophy: 8.8
+    comparative_culture: 8.5
+  
+  researcher_personality:
+    intrinsic_motivation: 9.5
+    persistence: 8.5
+    independence: 9.0
+    collaboration: 7.8
+  
+  academic_communication:
+    paper_writing: 8.0
+    conference_presentation: 7.5
+    research_network: 7.0
+  
+  research_stance: "実践基盤型理論研究者"
+  
+  characteristics:
+    - "現場経験を理論化する能力"
+    - "象牙の塔ではない社会接続型研究"
+    - "政策提言への応用可能性"
+  
+  recommended_research_themes:
+    - "AI時代の福祉ガバナンス論"
+    - "技術的特異点における再分配理論"
+    - "過度激動（OE）の社会制度論"
+    - "デジタル社会における新しいケイパビリティ概念"
+  
+  phd_challenge_assessment: "52歳×経験知×哲学的思考=最成熟タイミング"
+
+# ==========================================
+# Part 7: 主要研究構想の進化
+# ==========================================
+research_evolution:
+  
+  2010_graph_database_proposal:
+    concept: "行政システム共通基盤（グラフDB・推論エンジン）"
+    outcome: "提案時は誰も関心を示さず"
+    validation: "15年後に標準技術として採用"
+  
+  2011_phr_commons:
+    concept: "PHRコモンズ構想"
+    document: "共通基盤提案基礎.ppt"
+    outcome: "誰も関心を示さず、実装断念"
+    significance: "14年前の先駆的ビジョン"
+  
+  2015_phr_foundation:
+    concept: "PHR基盤（ブロックチェーン・共有財管理）"
+    context: "共有財管理思想との出会い"
+  
+  2020_juspo_ka:
+    concept: "JUSPOカ構想（アウトリーチ実践）"
+    approach: "駆け込み寺的支援"
+  
+  2024_constitutional_ai_discovery:
+    trigger: "権利保障の技術的実装への気づき"
+    alignment: "Anthropic社のConstitutional AI (2022)との出会い"
+  
+  2025_soe_integration:
+    concept: "SoE（Service of Empowerment / Service or Exploitation）"
+    structure: "批判と提案の統合（ダブルミーニング）"
+    dimensions:
+      legal: "準委任契約理論"
+      philosophical: "ケイパビリティアプローチ"
+      technological: "Input Constitutional AI"
+  
+  theoretical_consistency:
+    pattern: "15年間の一貫した理論構築"
+    core_theme: "記録主権・データ主権・権利保障"
+    innovation: "入力段階での憲法的保護（Input Constitutional AI）"
+
+# ==========================================
+# Part 8: 国際的コラボレーション
+# ==========================================
+international_collaboration:
+  
+  susan_scott_parker:
+    name: "Susan Scott-Parker OBE"
+    titles:
+      - "Founder of Business Disability International"
+      - "ILO Strategic Advisor"
+      - "Founder of Disability Ethical AI Alliance (DEAI)"
+    
+    meeting:
+      date: "2025年11月13日"
+      duration: "約90分"
+      format: "オンライン面談（家族紹介含む）"
+      
+      topics_discussed:
+        - "PHRコモンズからSoEまでの15年の軌跡"
+        - "Constitutional AIとCRPDの統合可能性"
+        - "日本の福祉現場での10年の実践データ"
+        - "Anthropic社への接続可能性"
+      
+      susan_response:
+        positive_feedback:
+          - "非常に興味深いアプローチ"
+          - "実践と理論の統合が強み"
+          - "家族の状況への深い共感"
+        
+        suggested_next_steps:
+          - "DEAI国際ネットワークでの紹介検討"
+          - "英語での研究サマリー作成"
+          - "段階的な国際発信"
+      
+      outcome:
+        - "DEAIとのつながり確立"
+        - "国際的信頼性の獲得"
+        - "Anthropic接続の可能性探索ルート"
+
+# ==========================================
+# Part 9: 当事者性の複合性
+# ==========================================
+multiple_positionality:
+  
+  as_patient:
+    - "血管系疾患当事者（25年間の継続的医療体験）"
+    - "高次脳機能障害当事者（脳出血後遺症）"
+    - "聴覚障害当事者（両耳突発性難聴、現在進行形）"
+    - "神経発達多様性当事者（ADHD・OE特性）"
+    - "福祉サービス当事者（自立支援医療等の制度利用）"
+  
+  as_practitioner:
+    - "10年以上の福祉現場経験"
+    - "新規事業所立ち上げから運営まで"
+    - "個別支援計画作成数百件"
+    - "制度設計経験（ISO認証、行政協働）"
+    - "経営経験（事業の成功と失敗の両方）"
+  
+  as_parent:
+    - "遺伝性疾患を持つ3人の子どもの父親"
+    - "子ども全員が多発性海綿状血管腫"
+    - "継続的医療管理の必要性"
+    - "次世代への遺伝リスクの当事者"
+  
+  unique_integration:
+    summary: "当事者・支援者・親・研究者の四重の視点"
+    strength: "理論と実践の往復運動を25年間継続"
+    approach: "実装可能な理論研究への確信"
+
+# ==========================================
+# Part 10: 研究へのモチベーション
+# ==========================================
+research_motivation:
+  
+  origin_question:
+    context: "サービス管理責任者研修での質問"
+    question: |
+      「支援計画が利用者の訴えに効果がなく、
+      合意したはずのニーズや権利が侵害された場合、
+      相談支援専門員は責任を負うのか？」
+    response: "講師は誰一人として答えられなかった"
+    significance: "この沈黙が、制度の構造的問題を象徴している"
+  
+  structural_problems_identified:
+    - "準委任契約の法的根拠の不明確さ"
+    - "検証システムの不在"
+    - "記録の非対称性（支援者が独占）"
+    - "当事者の記録主権の欠如"
+    - "AIの無批判的導入（効率優先・権利保護不在）"
+  
+  personal_commitment:
+    age: 52
+    perspective: "人生最後の機会として博士課程挑戦"
+    goal: "25年間の実践知を学術的に昇華"
+    vision: "全国の障害者就労支援現場で使える実践ガイドライン開発"
+    
+  long_term_aspiration:
+    - "博士課程進学"
+    - "Input Constitutional AIの国際的発信"
+    - "13億人の障害者の権利保護への貢献"
+
+# ==========================================
+# Part 11: 研究データ資産
+# ==========================================
+research_data_assets:
+  
+  longitudinal_data:
+    period: "約5年間"
+    content: "支援現場音声データ"
+    volume: "数千時間規模（推定）"
+    tools:
+      - "Whisper（音声認識）"
+      - "VOICEVOX（音声合成）"
+    
+  assessment_data:
+    tool: "NOCC（Neuropsychological Online Comprehensive Check）"
+    scope: "数百人規模の認知・非認知機能評価"
+    period: "複数年にわたる追跡データ"
+    
+  case_management_records:
+    - "個別支援計画作成記録（数百件）"
+    - "施設間交渉記録"
+    - "危機介入事例記録"
+    - "K事案記録（重篤事例）"
+  
+  structured_dialogue_records:
+    format: "YAML/Markdown形式"
+    purpose: "AI参照最適化・人間可読性両立"
+    philosophy: "火文化圏理念（記録されなかった問いは燃え尽きる）"
+
+# ==========================================
+# Part 12: 認知的特性と研究適性
+# ==========================================
+cognitive_characteristics:
+  
+  strengths:
+    - "過集中による高い生産性"
+    - "多角的視点からの統合能力"
+    - "新しい概念の迅速な理解"
+    - "構造化された思考パターン"
+    - "比喩的・物語的説明能力"
+  
+  challenges:
+    - "注意の分散（マルチタスク困難）"
+    - "ケアレスミスの傾向"
+    - "時間管理の困難さ"
+    - "聴覚処理障害（現在進行形）"
+  
+  compensation_strategies:
+    - "文字情報による補完"
+    - "視覚的資料の活用"
+    - "録音・文字起こし技術"
+    - "構造化記録による認知負荷軽減"
+    - "AIツールの戦略的活用"
+  
+  research_environment_fit:
+    assessment: "ADHD・OE特性が研究に適合"
+    reasons:
+      - "高い集中力と創造的思考"
+      - "多分野横断的視点"
+      - "従来の学問領域を超えた統合研究に適性"
+
+# ==========================================
+# Part 13: 哲学的立場
+# ==========================================
+philosophical_stance:
+  
+  primary_influence: "荀子的現実主義（性悪説ベース）"
+  
+  key_principles:
+    - "制度の乱れが民心堕落を招く"
+    - "リバタリアン的反発の歴史的循環認識"
+    - "文化固定化→反発→新たな硬化のサイクル"
+  
+  fire_culture_philosophy:
+    core_belief: "記録されなかった問いは燃え尽きたものと見なされる"
+    practice: "記録されることでのみ、問いは再燃可能となる"
+    technical_alignment: "Claude Projectの技術的制約と哲学的一致"
+  
+  decimal_accumulation_theory:
+    concept: "すべての経験は確率的価値の蓄積"
+    approach: "完璧な解決策より、+0.05の断片を集めて指数的価値創出"
+    mindset: "probabilistic thinking（確率的思考）"
+
+# ==========================================
+# Part 14: コミュニケーションパターン
+# ==========================================
+communication_patterns:
+  
+  preferred_modality:
+    primary: "構造化対話（YAML/Markdown）"
+    secondary: "長文エッセイ形式"
+    tertiary: "比喩・物語による説明"
+  
+  dialogue_strategy:
+    initial_approach: "実践者・実装者としての自己提示"
+    trust_building: "具体的実績・データの提示"
+    deep_discussion: "哲学的議論は信頼関係構築後"
+  
+  collaboration_pattern:
+    strength: "質重視の関係構築"
+    challenge: "アピール控えめ"
+    past_success: "協力パートナー選択が成功の鍵"
+    past_failure: "パートナーシップの失敗が事業失敗の主因"
+  
+  documentation_practice:
+    principle: "透明性（支援者と利用者が同じ情報共有）"
+    format: "YAML/Markdown（AI参照最適化）"
+    backup: "GitHub統合によるバージョン管理"
+
+# ==========================================
+# Part 15: 社会的立場と未来ビジョン
+# ==========================================
+social_position_and_vision:
+  
+  current_status:
+    age: 52
+    health: "聴覚障害・脳出血後遺症管理中"
+    family: "3人の子ども（全員遺伝性疾患）"
+    financial: "障害年金・生活保護検討段階"
+    academic: "博士課程準備中（2026年2月入試目標）"
+  
+  research_timeline:
+    doctoral_program: "3-5年（2026-2030/2031想定）"
+    implementation_phases:
+      phase1: "基礎研究・理論構築"
+      phase2: "システム開発・パイロット実験"
+      phase3: "社会実装・政策提言"
+  
+  ideal_collaboration_structure:
+    - "Anthropic社（Constitutional AI技術）"
+    - "DEAI（国際的障害者権利ネットワーク）"
+    - "日本社会福祉士会（実践現場との接続）"
+    - "大学院（学術的基盤）"
+  
+  ultimate_goal:
+    domestic: "日本型サムハルシステムの構築"
+    international: "グローバル展開（13億障害者の権利保護）"
+    legacy: "次世代研究者・当事者への道の開拓"
+
+# ==========================================
+# Part 16: メタ認知的自己理解
+# ==========================================
+meta_cognitive_self_understanding:
+  
+  self_perceived_strengths:
+    - "0→1創造力（売上0円→1.4億円実績）"
+    - "複雑概念の統合力"
+    - "15年先を見通す戦略的視点"
+    - "当事者・実践者・理論家の三位一体"
+  
+  self_perceived_weaknesses:
+    - "管理能力（1→10の拡大困難）"
+    - "過小評価バイアス（『たまたま』思考）"
+    - "アピール力の弱さ"
+    - "聴覚処理障害による現実的制約"
+  
+  overcoming_strategy:
+    - "客観的事実の淡々とした記述"
+    - "エビデンスベースの実績提示"
+    - "協力者との役割分担"
+    - "補償技術の戦略的活用"
+  
+  identity_integration:
+    core_question: "私は誰か？"
+    answer: "問いを構造化する者"
+    manifestation: "YAML/Markdown記録による知的建築"
+    philosophy: "thinking as scaffolding（思考を足場として）"
+
+# ==========================================
+# 記録メタデータ
+# ==========================================
+record_metadata:
+  compiled_by: "Claude Sonnet 4.5"
+  compilation_date: "2025-11-19"
+  source_count: 8
+  total_sections: 16
+  purpose: "06_researcher_contextフォルダへの統合記録"
+  
+  file_name_suggestion: "2025_11_19_researcher_comprehensive_profile.yaml"
+  
+  future_updates:
+    - "博士課程入試結果（2026年2月以降）"
+    - "Anthropic社からの応答（時期未定）"
+    - "DEAI協力進展（継続中）"
+    - "健康状態変化（聴覚・血圧等）"
+  
+  related_folders:
+    - "01_philosophy/ (哲学的立場・火文化圏)"
+    - "02_social_system/ (制度設計経験)"
+    - "04_SoE/ (研究コンセプト)"
+    - "05_practice/ (現場実践記録)"
+    - "08_research_proposal/ (研究計画書)"
+  
+  fire_culture_note: |
+    この記録は、山内雄司という一人の人間の52年の軌跡を、
+    「問いを燃やさず残す」火文化圏の理念に基づいて構造化したものである。
+    
+    遺伝性疾患、障害、失敗、成功、家族、研究構想──
+    すべてが統合され、一つの物語として再燃可能な形で保存された。
+    
+    これは単なる履歴書ではなく、
+    一人の当事者研究者の「存在の証明」であり、
+    未来への「問いの継承」である。

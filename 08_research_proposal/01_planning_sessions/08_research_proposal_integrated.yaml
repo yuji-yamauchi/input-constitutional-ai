@@ -1,0 +1,849 @@
+# ==========================================
+# 08_research_proposal: 大学院入試研究計画書統合記録
+# ==========================================
+# 作成日: 2025-11-19
+# 目的: 博士前期課程入試用研究計画書類の統合
+# 対象機関: 日本社会事業大学大学院
+# ==========================================
+
+metadata:
+  title: "大学院入試研究計画書統合記録"
+  created: "2025-11-19"
+  target_institution: "日本社会事業大学大学院 博士前期課程"
+  application_year: "2026年度"
+  applicant:
+    name: "山内雄司（パンカー）"
+    age: 52
+    background:
+      - "IT企業経営（総務省事業等1億円規模プロジェクト）"
+      - "ISO27001内部統制構築"
+      - "障害福祉サービス就労支援従事者（10年以上）"
+      - "サービス管理責任者・事務局長"
+      - "10事業所立ち上げ、最大利用者100名"
+  
+  source_sessions:
+    - "2025_11_18_c1.yaml (研究計画概要書Ⅳ・Ⅴ完成)"
+    - "2025_10_28_02.yaml (贄川先生へのメール)"
+    - "2025_10_25.yaml (説明会報告・財団構想)"
+    - "2025_10_23_1.yaml (Susan Scott-Parker氏連携)"
+    - "2025_10_14_3.md (研究計画概要書初稿)"
+    - "research_plan_overview.md (研究計画概要書)"
+    - "研究計画概要書_2026年度_山内雄司_修正版.md"
+    - "大学院進学用自己紹介書.pdf"
+  
+  purpose: "入試用研究計画書類の全体像を体系的に記録"
+  folder_destination: "08_research_proposal/"
+
+# ==========================================
+# Part 1: 研究課題
+# ==========================================
+research_title:
+  
+  final_version:
+    title: "障害者就労支援における権利保障型システム設計の研究"
+    subtitle: "対話型AI技術の倫理的活用に関する実践指針の開発"
+  
+  alternative_versions:
+    version_1:
+      title: "障害者就労支援における準委任契約・ケイパビリティ統合モデルの構築"
+      subtitle: "SoE（Service of Empowerment）システムの開発と社会実装"
+    
+    version_2:
+      title: "障害者就労支援における4つの構造的課題への統合的アプローチ"
+      subtitle: "権利回復・支援者倫理・地域人材開発・科学的アセスメントを統合する当事者主権型システムの設計"
+  
+  core_concept:
+    soe_double_meaning:
+      meaning_1: "Service of Empowerment（エンパワメント支援システム）"
+      meaning_2: "Service or Exploitation（支援か搾取かの診断機能）"
+      
+      philosophical_foundation: "全てのサービスは、自らが搾取でないことを証明しなければならない"
+
+# ==========================================
+# Part 2: 研究背景と問題意識
+# ==========================================
+research_background:
+  
+  global_context:
+    disability_data_exclusion:
+      problem: "世界13億人の障害者は「データベースから排除」されている"
+      consequence: "AIバイアス検出ツールすら障害者差別を検知できない"
+      source: "Disability Ethical AI Alliance, 2024"
+      root_cause: "AI訓練データの収集段階における体系的排除"
+  
+  japanese_context:
+    structural_issues:
+      issue_1:
+        name: "当事者の権利毀損"
+        description: >
+          多くの利用者は、義務教育レベルの読書算盤（基礎リテラシー）や
+          自尊感情を習得・育成する機会を毀損されたまま成人している
+        evidence: "自尊感情が健常者平均の10〜20パーセンタイル台"
+        legal_interpretation: "国家の教育義務不履行に起因する権利侵害の可能性"
+      
+      issue_2:
+        name: "支援者・経営者のモラル問題"
+        description: >
+          準委任契約としての善管注意義務が曖昧なまま、
+          「善意の支援」という名目で質の低いサービスが提供される
+        problem: "搾取構造的な視点でのチェックがなされていない"
+        need: "支援者・経営者の行動が当事者の意思決定支援に資するかの可視化"
+      
+      issue_3:
+        name: "地方人材リソースの未開発"
+        description: >
+          障害者を「支援の受け手」とのみ捉え、
+          地域社会の人材リソースとして育成・活用する視点が欠如
+        opportunity: "「無敵の人因子」を地方の人材不足解消のリソースに変える"
+      
+      issue_4:
+        name: "アセスメントの不備"
+        description: >
+          先天的・器質的障害に起因する困難性（ICFでいう個人因子）と、
+          ACEs等の環境因子による困難性が混同され、
+          適切な支援設計ができていない
+        distinction: "医療視点（治療目的）vs 社会福祉視点（健康的で文化的な生活のサポート）"
+  
+  existing_approach_limitations:
+    constitutional_ai:
+      strength: "AI出力段階で有害性を除去する革新的手法"
+      limitation: "データ収集段階（Input側）での排除問題には対応していない"
+      citation: "Bai et al., 2022; Anthropic"
+      
+      fundamental_problem: >
+        データベースに障害者が含まれなければ、
+        Output側での権利保障も機能しない
+    
+    capability_approach:
+      strength: "Sen/Nussbaum理論による自由と機能の哲学的基盤"
+      limitation: "理論的考察が中心で、障害者支援への体系的実装例は限定的"
+      gap: "実践への橋渡しが不足"
+
+# ==========================================
+# Part 3: 研究目的
+# ==========================================
+research_objectives:
+  
+  core_innovation:
+    input_constitutional_ai:
+      description: >
+        Constitutional AIの概念を**Input側（データ収集・記録段階）**に適用し、
+        データベース構築時の権利保障を実現する世界初の試み
+      
+      difference_from_existing:
+        existing: "Output側（AI出力の有害性除去）"
+        proposed: "Input側（記録作成時点での権利埋め込み）"
+      
+      mechanism: "CRPD原則を「記録作成時の憲法」として機能させる"
+  
+  specific_objectives:
+    objective_1:
+      title: "Input Constitutional AIの理論的枠組み構築"
+      components:
+        - "CRPD原則の記録作成プロセスへの翻訳"
+        - "準委任契約理論との統合（善管注意義務の明確化）"
+        - "ケイパビリティ測定指標の選定（ICECAP-A、RSES-J等）"
+    
+    objective_2:
+      title: "実践的ガイドライン策定"
+      deliverables:
+        - "支援現場で使える記録作成指針"
+        - "当事者の記録主権保障手順"
+        - "対話型AI活用時の倫理的配慮事項の体系化"
+    
+    objective_3:
+      title: "実証的検証"
+      data_sources:
+        - "10年以上蓄積した障害者就労支援データ"
+        - "NOCCデータ（自尊感情測定）"
+        - "音声記録（Whisper変換済）"
+        - "詳細ケース記録"
+      
+      validation_focus: "Input Constitutional AIの実装可能性と有効性"
+    
+    objective_4:
+      title: "支援倫理の最小干渉原則確立"
+      philosophy: "1mmの角度を変える哲学"
+      elements:
+        - "スピリチュアルと科学の安全な境界管理"
+        - "意味を強制しない設計"
+        - "非賦課原則"
+  
+  明らかにしたい事柄:
+    - "義務教育未達成者の実態と、権利回復プログラムの効果"
+    - "準委任契約における善管注意義務の具体的内容と測定方法"
+    - "支援者行動の「意思決定支援度」の評価指標"
+    - "障害者人材の地域活用による経済効果と社会的インパクト"
+    - "医療アセスメントと福祉アセスメントの統合手法"
+    - "当事者主権型データ管理が当事者のエンパワメントに与える影響"
+    - "データコモンズとしての支援情報の活用可能性"
+
+# ==========================================
+# Part 4: 研究方法
+# ==========================================
+research_methodology:
+  
+  timeframe:
+    year_1:
+      period: "2026年4月〜2027年3月"
+      
+      theory_construction:
+        - "CRPD原則の記録作成プロセスへの翻訳"
+        - "準委任契約理論との統合（善管注意義務の明確化）"
+        - "ケイパビリティ測定指標の選定"
+        - "先行研究レビュー（Constitutional AI、障害者AI倫理、福祉記録論）"
+      
+      guideline_design:
+        - "Input Constitutional AIチェックリスト作成"
+        - "記録主権プロトコルの設計"
+        - "対話型AI活用時の倫理的配慮事項の明文化"
+      
+      empirical_preparation:
+        - "倫理審査申請・承認取得"
+        - "10年分NOCCデータの再分析設計"
+        - "パイロット研究計画（N=20-30）"
+    
+    year_2:
+      period: "2027年4月〜2028年3月"
+      
+      pilot_study:
+        - "ガイドライン試行（協力事業所2-3箇所）"
+        - "支援者トレーニング"
+        - "記録の質的評価"
+        - "当事者フィードバック収集"
+      
+      effect_measurement:
+        - "ケイパビリティ指標の前後比較"
+        - "記録の権利保障度評価"
+        - "当事者の記録主権行使状況分析"
+      
+      deliverables:
+        - "ガイドライン最終版作成"
+        - "学会発表・論文投稿"
+        - "修士論文執筆"
+  
+  measurement_battery:
+    quantitative:
+      - name: "RSES-J"
+        purpose: "自尊感情測定"
+      - name: "ICECAP-A"
+        purpose: "ケイパビリティ測定"
+      - name: "WHODAS 2.0"
+        purpose: "機能評価"
+      - name: "GSE"
+        purpose: "自己効力感測定"
+    
+    qualitative:
+      - "半構造化インタビュー"
+      - "ライフストーリー・ワーク"
+      - "支援記録ログ分析"
+    
+    innovative:
+      llm_based_adaptive_assessment:
+        description: "Claude API等を用いた対話型測定"
+        advantage: "個別性と標準化の両立"
+        validation: "既存尺度との併存的妥当性検証"
+  
+  data_management_ethics:
+    consent:
+      - "SDM支援付き同意（わかりやすい同意書・再同意フロー）"
+    
+    privacy:
+      - "仮名化ID"
+      - "暗号化ストレージ"
+      - "アクセス権限分離"
+      - "監査ログ記録"
+    
+    record_sovereignty:
+      - "MySupport.yamlによる閲覧履歴可視化"
+      - "当事者が自身の記録を完全所有"
+    
+    risk_management:
+      - "心理的負荷モニタリング"
+      - "自傷・希死念慮兆候の即応プロトコル"
+      - "医療機関連携体制"
+  
+  analysis_methods:
+    quantitative:
+      - "線形混合効果モデル"
+      - "効果量算出（Hedges g）"
+      - "予測因子分析"
+      - "多重代入法"
+    
+    qualitative:
+      - "テーマ分析（CHIMEフレームワーク）"
+      - "ナラティブ分析"
+    
+    integration:
+      - "収束的統合による三角検証"
+
+# ==========================================
+# Part 5: 研究の特色（学術的新規性）
+# ==========================================
+research_uniqueness:
+  
+  methodological_novelty:
+    input_side_focus:
+      description: >
+        既存のConstitutional AI研究はすべてOutput側
+        （AI出力の有害性除去）に焦点を当てているが、
+        本研究は**Input側（データ収集・記録作成段階）**に
+        Constitutional AIの概念を初めて適用する
+      
+      significance: "「データベースからの排除」という構造的問題に直接対応"
+  
+  theoretical_uniqueness:
+    three_dimensional_integration:
+      dimension_1:
+        theory: "CRPD（障害者権利条約）"
+        role: "権利保障の基盤"
+      
+      dimension_2:
+        theory: "準委任契約理論"
+        role: "支援者の善管注意義務の明確化"
+      
+      dimension_3:
+        theory: "ケイパビリティアプローチ"
+        role: "エンパワーメント測定"
+      
+      synthesis: >
+        この三次元統合により、単なる効率化や倫理配慮を超えた、
+        構造的権利保障を実現する
+  
+  empirical_strength:
+    ten_year_data_foundation:
+      description: "10年以上の現場実践による実証的基盤"
+      data_types:
+        - "NOCCデータ（自尊感情測定）"
+        - "音声記録（約5年分）"
+        - "詳細ケース記録（重度ケース含む）"
+      
+      advantage: "理論と実践の完全な統合が可能"
+  
+  ethical_innovation:
+    record_sovereignty:
+      description: >
+        当事者を単なる「データ源」ではなく
+        「データベース設計者」として位置づける
+      
+      mechanism: "記録主権を構造的に保障"
+      
+      differentiation: "既存の福祉AI研究と一線を画す"
+  
+  implementation_feasibility:
+    guideline_format:
+      description: "成果物はガイドライン形式"
+      advantage: "現場への即座の導入が可能"
+      
+      strategy: "技術開発ではなく実践指針という形態"
+      
+      scalability: "全国の障害者就労支援事業所で活用できる"
+  
+  comparison_with_existing:
+    binti_vs_soe:
+      binti:
+        location: "米国"
+        target: "児童福祉"
+        purpose: "事務効率化"
+      
+      soe:
+        location: "日本"
+        target: "障害者就労支援"
+        purpose: "アセスメントの粒度向上＋権利保障＋運用コスト削減"
+      
+      key_difference: >
+        Bintiが効率化に焦点を当てる一方、
+        SoEはICFモデル背景因子アセスメントの粒度向上に特化し、
+        LLM活用により支援記録作成時点での権利保障を実現する
+  
+  llm_innovation:
+    true_value_of_llm:
+      description: "従来の固定質問紙や標準化検定の限界を克服"
+      
+      limitations_of_existing:
+        - "ライセンス依存"
+        - "高コスト"
+        - "個別性捨象"
+      
+      llm_approach:
+        - "適応的対話評価"
+        - "標準化と個別最適化の両立"
+        - "自然言語パターン学習による測定効率化"
+      
+      potential: "MBTI・NOCC・日本語能力検定等の代替手法としての可能性"
+
+# ==========================================
+# Part 6: これまでの活動（実践的基盤）
+# ==========================================
+practical_foundation:
+  
+  career_overview:
+    it_business:
+      role: "IT企業経営者"
+      achievements:
+        - "総務省事業等1億円規模プロジェクト遂行"
+        - "情報セキュリティマネジメント（ISO27001）内部統制構築"
+        - "年間売上140万円→1億4000万円へ成長"
+    
+    welfare_practice:
+      duration: "10年以上"
+      role: "事務局長及びサービス管理責任者"
+      achievements:
+        - "10事業所の立ち上げ"
+        - "最大利用者約100名の運営支援"
+        - "最大5事業所・職員35名の管理"
+        - "福祉事業年間総売上約3億円規模の運営"
+  
+  critical_cases:
+    kiura_incident:
+      year: "2015年頃"
+      description: "入所1ヶ月の利用者が関与した傷害致死事件"
+      
+      challenge: "警察が「自転車があったから事故」と判断し捜査打ち切り"
+      
+      action:
+        - "単独で証拠を構築"
+        - "関係者を調整"
+        - "事件化に成功"
+      
+      impact:
+        learning: "構造的問題の解決には個人の英雄性ではなくシステムが必要"
+        emotional_turning_point: "Train Trainの涙 - 社会変革への使命感の原点"
+  
+  data_assets:
+    accumulated_data:
+      - type: "NOCCデータ"
+        duration: "10年分"
+        purpose: "自尊感情測定"
+        kpi: "自尊感情50%以下を50%以上に引き上げる"
+      
+      - type: "音声記録"
+        duration: "約5年分"
+        processing: "Whisper変換済"
+      
+      - type: "詳細ケース記録"
+        cases:
+          - "木浦氏事件"
+          - "薬物依存"
+          - "精神疾患"
+        depth: "重度ケースの構造的分析"
+      
+      - type: "事業所運営記録"
+        content: "制度課題の体系的記録"
+
+# ==========================================
+# Part 7: 15年の思想的連続性
+# ==========================================
+ideological_continuity:
+  
+  timeline:
+    phase_1:
+      period: "〜2010年（IT業界時代）"
+      concept: "PHR共有財管理者構想"
+      
+      core_ideas:
+        - "PHRビッグデータは共有財（コモンズ）もしくは社会関係資本である"
+        - "個人がデータを投資し、運用益（健康情報可視化、社会関係資本向上）を得る"
+        - "データ主権論の15年先駆的提唱"
+      
+      influences:
+        - "デンマークモデル（社会関係資本→国民幸福度）"
+        - "サンディスプリングスモデル（地域自治→行政効率化）"
+        - "エコノミックガーデニング（地域人材育成）"
+    
+    phase_2:
+      period: "〜2018年（福祉実践期）"
+      concept: "発達障害支援プラットフォーム構想"
+      
+      analysis:
+        - "市場分析：18歳未満135万人、18歳以上213万人"
+        - "PHR・業務データ統合による当事者主導型情報管理"
+        - "新連携事業としてのコンソーシアム形成（未実装）"
+    
+    phase_3:
+      period: "現在（権利論的福祉転換期）"
+      concept: "コーリングサポ笠岡事業理念（2020-2023）"
+      
+      paradigm_shift:
+        from: "無敵の人因子を減らす"
+        to: "基本的権利毀損への補償"
+      
+      implementation:
+        - "自尊感情50%以下を50%以上に引き上げるKPI設定"
+        - "木浦氏事件の教訓を制度化する試み"
+    
+    phase_4:
+      period: "現在（SoE構想）"
+      milestones:
+        - "ケイパビリティアプローチへの独自到達（理論を知らずに核心に到達）"
+        - "Constitutional AIとの出会い（2024年）"
+        - "当事者主権型データコモンズの具体化"
+  
+  philosophical_consistency:
+    core_theme: "データ主権とコモンズ"
+    
+    evolution:
+      - "PHR共有財（2010年）"
+      - "発達障害支援（〜2018年）"
+      - "障害者就労支援（現在）"
+    
+    significance: "15年の思想的連続性が研究の独自性を支える"
+  
+  unique_theoretical_arrival:
+    phenomenon: "理論への独自到達"
+    
+    examples:
+      - "ケイパビリティアプローチを知る前に核心に到達"
+      - "ICFモデルを学ぶ前に背景因子の重要性を認識"
+      - "当事者主権概念を理論化する前に実践で構築"
+    
+    significance: "理論と実践の真の統合"
+  
+  personal_motivation:
+    disability_experience:
+      - "2023年脳出血経験"
+      - "後天的聴覚障害"
+      - "子ども3人への遺伝性疾患継承"
+    
+    emotional_core:
+      - "目黒区児童虐待死事件の衝撃"
+      - "「もうおねがい ゆるして」という日記"
+      - "Train Trainの涙"
+    
+    mission: "子どもたちに顔向けできる仕事として、構造的問題を解決するシステムの構築"
+
+# ==========================================
+# Part 8: 志望理由
+# ==========================================
+motivation_for_application:
+  
+  age_and_timing:
+    current_age: 52
+    perspective: "52歳での挑戦は「今しかない」タイミング"
+    
+    rationale: >
+      25年間の多分野経験（IT、経営、福祉、法学、哲学）が
+      収束する知的集大成として、また、
+      AI時代の福祉ガバナンスという時代的必然性に応える研究として、
+      博士課程への進学を強く希望する
+  
+  why_japan_college_of_social_work:
+    reason_1:
+      principle: "「実践的研究者及び研究的実践者」の養成"
+      alignment: "研究者の目指す方向性と完全に一致"
+    
+    reason_2:
+      environment: "社会福祉理論・政策・実践を統合的に研究できる環境"
+      uniqueness: "日本で数少ない教育機関"
+    
+    reason_3:
+      format: "通信制による現場実践との両立可能性"
+    
+    reason_4:
+      aspiration: "10年の実践知を学術的に昇華し、社会変革ツールとして還元できる場"
+  
+  mission_statement:
+    core_belief: "制度に救われるべき仲間を見捨てず、制度の構造的問題を解決する"
+    
+    sustainability_concern: >
+      木浦氏事件で私が単独で動いたように、
+      「英雄的個人」に依存するシステムは持続可能ではない。
+      私自身も脳出血で倒れた。システム化しなければ、問題は繰り返される。
+    
+    personal_responsibility: >
+      子どもたちに顔向けできる仕事として、
+      構造的問題を解決するシステムの構築を目指す
+
+# ==========================================
+# Part 9: 将来展望
+# ==========================================
+future_prospects:
+  
+  doctoral_course:
+    advancement: "博士後期課程への進学"
+    
+    development:
+      - "修士課程で構築した4本柱統合モデルをさらに発展"
+      - "大規模実証研究（N=100以上）"
+      - "4つの構造的課題の完全統合"
+    
+    international_dissemination:
+      partner: "Susan Scott-Parker OBE / Disability Ethical AI Alliance"
+      goal: "世界13億人の障害者の権利保障に貢献"
+  
+  social_implementation:
+    mechanism:
+      - "NPO法人設立によるSoE社会実装"
+      - "就労支援事業運営を通じた継続的研究"
+    
+    philosophy: "学術研究と現場実践の永続的循環による、持続可能な社会変革の実現"
+  
+  data_commons_realization:
+    origin: "15年前に提唱したPHR共有財理論"
+    
+    implementation:
+      - "障害者就労支援の領域で実証"
+      - "他の福祉分野・医療分野への展開"
+    
+    goal: "個人情報保護とデータ活用を両立する世界標準モデルの構築"
+  
+  foundation_scheme:
+    concept: "SoEピアサポート財団（仮称）"
+    
+    advantages:
+      ethics_efficiency:
+        before: "N事業所 × 3ヶ月（倫理審査）"
+        after: "1財団 × 3ヶ月"
+        improvement: "劇的な効率化"
+      
+      opt_in_clarity:
+        mechanism: "事業所経由ではなく当事者が直接会員登録"
+        effect: "本人同意が完全に明確"
+        legal_benefit: "個人情報保護法の第三者提供制約を回避"
+
+# ==========================================
+# Part 10: 研究範囲の明確化（修士2年間）
+# ==========================================
+scope_definition_for_masters:
+  
+  realistic_scope:
+    year_1_focus:
+      - "粒度理論の定義と測定方法"
+      - "Input Constitutional AIの理論化"
+      - "記録主権の法的根拠整理"
+    
+    year_2_focus:
+      - "SoEプロトタイプ(MVP)開発"
+      - "協力事業所での試行（N=10-20、期間6ヶ月）"
+      - "効果測定と修士論文執筆"
+  
+  deferred_to_doctoral:
+    - "大規模実証研究"
+    - "4本柱（権利回復・支援者倫理・地域人材開発・アセスメント）の完全統合"
+    - "データコモンズの本格運用"
+    - "国際的な社会実装"
+  
+  achievable_contribution:
+    - "理論的貢献"
+    - "実装可能性の実証"
+    - "博士課程での本格展開への確実な基盤構築"
+
+# ==========================================
+# Part 11: 国際連携
+# ==========================================
+international_collaboration:
+  
+  susan_scott_parker:
+    title: "OBE (Order of the British Empire)"
+    role: "Founder, Disability Ethical AI Alliance"
+    location: "London, UK"
+    
+    initial_contact:
+      date: "2025-10-23"
+      method: "Email via website contact form"
+      response: "肯定的返信あり"
+      status: "November 13, 2025 meeting scheduled"
+    
+    research_alignment:
+      common_ground:
+        - "AI時代の障害者権利保障"
+        - "データベースからの排除問題"
+        - "Input側の権利保障"
+      
+      complementarity:
+        susan_focus: "国際的アドボカシー・政策提言"
+        puu_focus: "現場実践・システム実装・実証研究"
+    
+    communication_preference:
+      format: "テキストベースのコミュニケーション（メールまたは文書）"
+      reason: "後天的聴覚障害と言語の壁"
+      tool: "AI翻訳ツールを活用"
+
+# ==========================================
+# Part 12: 提出書類の構成
+# ==========================================
+submission_documents:
+  
+  document_1:
+    title: "研究計画概要書"
+    format: "指定フォーマット"
+    
+    sections:
+      section_1:
+        title: "Ⅰ. 研究課題"
+        status: "完成"
+      
+      section_2:
+        title: "Ⅱ. 目的・内容"
+        status: "完成"
+      
+      section_3:
+        title: "Ⅲ. 計画・方法"
+        status: "完成"
+      
+      section_4:
+        title: "Ⅳ. 研究の特色"
+        character_limit: "126文字"
+        final_count: "152文字（フォーム許容範囲内）"
+        status: "完成（2025-11-18）"
+        
+        final_text: |
+          米国Binti社の児童福祉AI支援が事務効率化を目的とする一方、
+          本研究は障害者就労支援におけるアセスメントの粒度向上に特化。
+          LLM活用により支援記録作成時点での権利保障を実現し、
+          当事者が自身の記録を主体的に管理できる仕組みを構築する設計により
+          個人情報保護法等の個人の権利の保護や運営コストの最適化を
+          実現できる点が独創的。
+      
+      section_5:
+        title: "Ⅴ. これまでの活動との関連（志望理由を含める）"
+        character_limit: "295文字"
+        final_count: "295文字（ぴったり）"
+        status: "完成（2025-11-18）"
+        
+        final_text: |
+          IT企業経営者として総務省事業等1億円規模プロジェクトの遂行や
+          情報セキュリティマネジメント（ISO27001）の内部統制構築に従事後、
+          障害福祉サービス就労支援分野に転じ10年以上、
+          事務局長及びサービス管理責任者として10事業所の立ち上げ、
+          最大利用者約100名の運営支援に従事。
+          現場で直面した構造的課題—記録の非対称性、権利保障の曖昧さ—に対し
+          非認知機能測定等による継続的データ蓄積で実践的対応を重ねた。
+          この実践知をLLM技術と統合し社会実装可能なガイドラインとして
+          体系化するには学術的基盤が不可欠と認識し、
+          貴学の実践と研究の統合理念に共感し志望する。
+  
+  document_2:
+    title: "研究計画書"
+    format: "A4版、3,000字程度"
+    copies: "4部"
+    status: "構造案完成、本文修正中（2025-11-18時点）"
+    
+    remaining_work:
+      - "Section IV（研究方法）の最終修正"
+      - "LLMの真価（対話型アセスメント）の全面展開"
+      - "測定の信頼性検証を研究目的に追加"
+      - "音声記録関連の記述を削除・置換"
+
+# ==========================================
+# Part 13: 大学とのコミュニケーション
+# ==========================================
+university_communication:
+  
+  graduate_school_meeting:
+    date: "2025-10-26"
+    type: "説明会・個別相談会"
+    
+    feedback:
+      positive:
+        - "研究に値する内容である"
+        - "質の高さが認められた"
+      
+      concerns:
+        - "博士前期2年では量が多すぎる"
+        - "スコープの調整が必要"
+      
+      action:
+        - "最適な教授に繋げることを約束"
+        - "メール待ち"
+  
+  email_to_niekawa_sensei:
+    date: "2025-10-28"
+    recipient: "niekawa@jcsw.ac.jp"
+    cc: "pr@jcsw.ac.jp（広報室）"
+    
+    subject: "研究計画概要書についてのご相談（山内雄司）"
+    
+    attachments:
+      - "研究計画概要書（2026年度）"
+      - "職務経歴書202501.pdf"
+      - "コーリングサポ笠岡事業説明書"
+    
+    key_points:
+      - "説明会での面談に基づく相談"
+      - "ヴィラーク先生への感謝"
+      - "倫理審査規定の把握中"
+      - "研究範囲の練り直し中"
+
+# ==========================================
+# Part 14: 重要な発見と調整
+# ==========================================
+critical_discoveries:
+  
+  ethics_review_constraint:
+    problem: "各事業所・団体ごとに倫理審査が必要"
+    timeline: "1組織あたり約3ヶ月"
+    impact: "複数事業所での研究が時間的に困難"
+    calculation: "N事業所 × 3ヶ月 = 博士前期2年では不可能"
+    
+    solution: "ピアサポート財団スキーム"
+  
+  conceptual_refinements:
+    soe_definition:
+      initial: "Constitutional AI × 準委任契約 × ケイパビリティの統合"
+      interim: "権利保障型アセスメントシステム"
+      final: "ICFモデル背景因子アセスメントの粒度向上＋運用コスト削減"
+      
+      significance: "福祉の共通言語（ICF）への接地で伝達可能性が飛躍的に向上"
+  
+  language_adjustments:
+    philosophical_to_welfare:
+      - from: "スピリチュアル"
+        to: "意思決定支援フレームワーク"
+      
+      - from: "魂に触れる"
+        to: "過度な介入の防止"
+      
+      - from: "1mm哲学"
+        to: "最小干渉原則"
+      
+      - from: "聖典化防止"
+        to: "動的更新原則"
+    
+    technical_to_welfare:
+      - from: "Input/Output側"
+        to: "記録作成段階/出力段階"
+      
+      - from: "Constitutional AI"
+        to: "権利保障の仕組み"
+      
+      - from: "Resolution Enhancement Cycle"
+        to: "粒度向上プロセス"
+
+# ==========================================
+# Part 15: セッション特性
+# ==========================================
+session_characteristics:
+  
+  collaboration_pattern:
+    - "対話的修正"
+    - "反復的洗練"
+    - "福祉分野への言語翻訳"
+  
+  key_moments:
+    - "『福祉の先生がわかるか？』という本質的問い"
+    - "ICFモデルを冒頭に配置する発見"
+    - "LLMの真価（自然言語パターン学習）の言語化"
+    - "音声記録の位置づけ再整理"
+  
+  token_management:
+    efficient_usage: "大規模文書作成×反復修正を余裕を持って遂行"
+
+# ==========================================
+# 作成メタデータ
+# ==========================================
+creation_metadata:
+  compiled_by: "Claude Sonnet 4.5"
+  source_material_date_range: "2025-10-13 to 2025-11-18"
+  integration_date: "2025-11-19"
+  total_source_sessions: 8
+  focus: "大学院入試用研究計画書類"
+  
+  target_folder: "08_research_proposal/"
+  file_name_suggestion: "08_research_proposal_integrated_2025_11_19.yaml"
+  
+  notes: >
+    このファイルは、日本社会事業大学大学院博士前期課程入試用の
+    研究計画書類作成プロセスを網羅的に記録したものである。
+    研究課題、背景、目的、方法、独自性、実践基盤、思想的連続性、
+    志望理由、将来展望、そして書類作成の実務プロセスを包含している。

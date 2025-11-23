@@ -1,0 +1,533 @@
+# ==========================================
+# 05_practice: 現場実践記録・事例研究統合記録
+# ==========================================
+# 作成日: 2025-11-19
+# 目的: 10年以上の現場実践とデータ資産の記録
+# ==========================================
+
+metadata:
+  title: "現場実践記録・事例研究統合記録"
+  created: "2025-11-19"
+  source_sessions:
+    - "職務経歴書202501.pdf"
+    - "R５年度就労移行支援コーリングサポ笠岡事業説明書20230531.pdf"
+    - "大学院進学用自己紹介書_研究計画概要書バックボーン.pdf"
+    - "博士論文構成_自己肯定感を核とした障害者就労支援システム.md"
+    - "研究計画概要書_2026年度_山内雄司_修正版.md"
+    - "【参考資料11】福祉スキーム説明資料.pdf"
+    - "2025_10_14_2.md"
+    - "session_2025_10_23.yaml"
+  
+  purpose: "10年以上の現場実践経験、事例研究、データ資産の体系的記録"
+  folder_destination: "05_practice/"
+
+# ==========================================
+# Part 1: 事業所運営実績（10年間）
+# ==========================================
+business_operation_record:
+  
+  overview:
+    period: "2014年 - 現在"
+    total_facilities: "10事業所立ち上げ"
+    breakdown:
+      就労継続支援B型: 6
+      就労移行支援: 2
+      多機能型: 2
+    
+    peak_management:
+      facilities: "5事業所同時運営"
+      staff: "35名"
+      users: "100名"
+      annual_revenue: "約3億円"
+  
+  chronological_record:
+    phase_1_challenged_onomichi:
+      period: "2014年 - 2016年"
+      role: "統括責任者"
+      achievements:
+        - "新規事業所立ち上げ複数"
+        - "YouTube記録: 尾道ケーブルテレビニュース"
+        - "5事業所・利用者約100名・スタッフ約35名（平成27年時点）"
+      
+      video_reference: "https://www.youtube.com/watch?v=e7X70PsGuLI"
+    
+    phase_2_anmar:
+      period: "2016年 - 2021年5月"
+      organization: "一般社団法人アンマー"
+      role: "事務局長"
+      
+      key_positions:
+        - "井笠自立支援協議会就労部会責任者"
+        - "岡山県セルプセンター営業責任者"
+        - "岡山県農福連携推進担当"
+      
+      business_achievements:
+        共同受注実績:
+          - "岡山県庁・笠岡市等から業務受託"
+          - "岡山県井笠保健所 アンケート調査（5万円）"
+          - "笠岡市農政課 農業土木事業（60万円）"
+          - "笠岡市地域福祉課 マスク作成事業（300万円）"
+          - "笠岡市社会福祉協議会 新1年生向け手提げ袋作成（120万円）"
+          - "岡山県医療課 アンケート調査（60万円）"
+        
+        dx_consulting:
+          client: "地元社会福祉協議会（社員400名・年商40億円）"
+          contract: "30万円/月の業務委託"
+          projects:
+            - "パソコン100台の入れ替え（予算1,000万円）"
+            - "グループウェア（Teams）導入"
+        
+        new_facility:
+          location: "神奈川県川崎市"
+          name: "就労移行支援ACT01"
+          opening: "令和3年6月"
+          funding:
+            - "金融機関: 1,500万円"
+            - "私募債: 1,500万円"
+      
+      resignation: "令和3年5月（福祉事業責任者を取締役会議外の協議で外されたため）"
+    
+    phase_3_dug_laboratory:
+      period: "2021年7月 - 2023年11月"
+      organization: "合同会社DUG研究所"
+      role: "代表社員"
+      
+      background: "アンマー退職後、部下2名が依願退職となったため受け皿として設立"
+      
+      facility:
+        name: "就労移行支援コーリングサポ笠岡"
+        opening: "令和3年12月"
+        position: "管理者およびサービス管理責任者"
+        
+        closure:
+          date: "令和5年11月"
+          reason: >
+            代表（山内）が令和5年9月にコロナ感染からの左前頭葉脳出血で倒れ、
+            その時点では高次脳機能障害や言語・記憶機能の回復の見通しが立っていなかったため
+          
+          post_closure: "閉所後のサポート受け皿として自助会を設立"
+    
+    phase_4_crossfarm:
+      period: "2024年5月 - 2024年12月"
+      organization: "一般社団法人クロスファーム"
+      facility: "就労継続支援A型クロスファーム東岡山（後にB型に変更）"
+      role: "管理者およびサービス管理責任者"
+      users: "45名"
+      
+      timeline:
+        2024_05_07: "就労継続支援A型 管理者およびサービス管理責任者拝命"
+        2024_05_16: "代表者より6月30日にB型に変更する旨伝えられる"
+        2024_05_31: "代表者に経営理念が合わないため長期間務めるつもりはない旨伝える"
+        2024_06_30: "45名分の会社都合書類整備、35名分のB型移行受給者証申請、個別支援計画作成"
+        2024_07_01: "就労継続支援B型 管理者およびサービス管理責任者拝命"
+        2024_07_19: "サービス管理責任者実践研修修了"
+        2024_12_31: "退職"
+
+# ==========================================
+# Part 2: コーリングサポ笠岡の実践モデル
+# ==========================================
+calling_support_kasaoka_model:
+  
+  service_philosophy:
+    basic_stance:
+      - "海外の先進的事例をエビデンスに基づき、ICT/DXを活用して積極的に取り入れる"
+      - "サービス産業化して先進的日本版就労支援サービスを構築する"
+    
+    reference_models:
+      sweden_samhall: "スウェーデン『サムハル』"
+      usa_ips: "アメリカ『IPS就労支援』"
+      
+      common_policy:
+        - "当事者のやりたいことを基軸に"
+        - "科学的なアセスメントを実施"
+        - "障害を理由に就職できないことはない"
+  
+  four_promises_to_users:
+    promise_1_self_determination:
+      title: "意思決定支援"
+      content: >
+        利用者であるあなた自身が舵を握り、自分の進む方向を決めるスキルの向上に注力します。
+        ともに努力し、自信をもって進むために悩みや問題を共有しましょう。
+        あなたにとって大切なものを尊重し、共に歩んでいきます
+    
+    promise_2_loneliness_support:
+      title: "孤独感のサポート"
+      content: >
+        あなたが眠れないほどの孤独感や苦しみを、私たちは共感しサポートします。
+        あなたが絶望している状況を把握できる環境を構築し、
+        毎晩床に就くとき、一人で抱え込まずに、解決策を模索する環境をつくります
+    
+    promise_3_scientific_assessment:
+      title: "科学的根拠に基づくアセスメントと法令順守"
+      content: >
+        私たちスタッフは科学的根拠となるアセスメントを実施し、
+        皆さん自身が自己理解を深める素材として活用できる情報に整理し、
+        より適切な意思決定環境を構築します。
+        また法律や法令などを理解し順守するなかで手段を選択します
+    
+    promise_4_community_collaboration:
+      title: "地域社会との連携"
+      content: >
+        1対1の関係性ではなくあなたを中心としたコミュニティを構築するために、
+        地域企業や団体と連携し、就労や生活スキル向上に役立つ情報や機会を提供します。
+        また、地域イベントへの参加や交流を通じて、
+        利用者が地域社会に根ざした生活を送れるようサポートします
+  
+  support_service_structure:
+    phase_1_assessment:
+      duration: "1ヶ月 - 2ヶ月"
+      
+      icf_personal_factors:
+        - "生活習慣（特に睡眠）の把握"
+        - "障がい特性の確定診断と処方薬などの把握"
+        - "認知/非認知機能アセスメント【NOCC診断】"
+        - "読解力聴解力アセスメント【日本語能力検定】"
+        - "職能スキルアセスメント【GATB一般職業適性検査】"
+        - "コミュニケーション状況の把握"
+      
+      icf_environmental_factors:
+        - "促進因子と疎外因子の把握"
+        - "疎外因子については積極的に介入するための詳細な情報の収集を実施"
+      
+      support_system_visualization:
+        note: "暫定利用期間の2カ月以内に2年間での支援が当事業所で可能か文書にて報告します"
+    
+    phase_2_self_acceptance:
+      duration: "1ヶ月 - 3ヶ月"
+      
+      environmental_factor_setup:
+        - "疎外因子については積極的に介入し、個人では解決が難しい事案について関係者に情報共有のうえ対処"
+        - "家庭環境については促進要因にも疎外因子にもなりやすいので、慎重に判断しこのフェーズにおいては特にアプローチしないことも選択"
+      
+      occupational_readiness:
+        - "職業準備性ピラミッドについて、本人が自己評価できるよう、慎重に時間をかけて周囲とのギャップなども合意していく"
+      
+      self_care_and_interpersonal_skills:
+        - "義務教育範囲の読解力/聴解力の獲得（障害特性そのものが阻害要因の場合は代替方法を検討）"
+        - "認知行動療法 SSTの実施"
+        - "時間制約下の持続的行動習慣"
+        - "意思決定能力の向上"
+      
+      employment_passport:
+        note: "就労パスポートの記載欄を埋めていきながら、必要な合理的配慮についても可視化していく"
+    
+    phase_3_skill_development:
+      duration: "3ヶ月 - 1年"
+      
+      ict_remote_work_course:
+        description: "三菱商事太陽様の在宅就労に向けたコース（毎年4-5月募集）"
+        requirement: "応募要件に「システム構築の経験」が要求されるため、支援期間内にシステム構築を実施"
+        reference: "YouTube講義動画あり"
+      
+      ict_backoffice_course:
+        description: "企業で重宝されやすい、業務アプリケーション/プラットフォーム（Microsoft365等）の習得"
+
+# ==========================================
+# Part 3: 重度ケース事例研究
+# ==========================================
+severe_case_studies:
+  
+  kiura_incident:
+    period: "2015年頃"
+    case_type: "傷害致死事件"
+    
+    background:
+      - "入所1ヶ月の利用者が関与"
+      - "警察は「自転車があったから事故」と判断し捜査打ち切り"
+    
+    intervention:
+      actions:
+        - "単独で証拠を構築"
+        - "関係者を調整"
+        - "事件化に成功"
+      
+      emotional_impact:
+        event: "警察に追い返された夜、被害者の絶望的な丸坊主写真を見て大泣き"
+        song: "ブルーハーツ『Train Train』: 弱い者たちが夕暮れ、さらに弱いものをたたく"
+        significance: "社会変革への使命感の原点"
+    
+    lesson_learned:
+      insight: "構造的問題の解決には個人の英雄性ではなくシステムが必要"
+      evidence: "私自身も脳出血で倒れた。システム化しなければ、問題は繰り返される"
+  
+  meguro_child_abuse_case:
+    case: "目黒区児童虐待死事件"
+    diary: "もうおねがい ゆるして"
+    
+    recognition:
+      statement: "木浦氏事件と同じ構造的問題"
+      conclusion: "これらの悲劇は、個人の善意や努力では防げない"
+  
+  welfare_is_profitable_manager:
+    setting: "事業者中心のセミナー"
+    
+    statement: >
+      福祉は儲かる。利用者は文句を言わないし、行政監督も甘い。
+      見せかけの支援計画さえ作っておけばいい
+    
+    observed_reality:
+      - "最小限の支援で報酬を最大化する経営戦略"
+      - "個別支援計画は形式的作成のみ（利用者の訴えやニーズを無視）"
+      - "就労成果よりも『利用日数の確保』を優先"
+      - "支援者は低賃金・長時間労働で疲弊"
+      - "利用者のエンパワメントよりも事業者の利益優先"
+      - "プロセス検証システムの不在により搾取が可視化されない"
+    
+    concrete_example: >
+      ある施設で個別支援計画に「パソコンスキル習得」と記載されていたが、
+      実際は単純作業のみを割り当て、パソコン訓練は一切なし。
+      利用者が質問すると「基礎訓練段階です」と説明され、2年間放置された
+    
+    research_relevance:
+      - "SoEシステムの二重の意味『Service of Empowerment』vs『Service or Exploitation』判定機能の必要性"
+      - "Constitutional AI × CRPD による支援記録の自動分析で、合意されたプロセスが実施されているかを可視化"
+      - "搾取パターンの検出と早期警告システム"
+
+# ==========================================
+# Part 4: データ資産
+# ==========================================
+data_assets:
+  
+  nocc_data:
+    description: "NOCC教育検査を活用した当事者の自尊感情測定"
+    period: "10年分"
+    
+    implementation:
+      target: "自尊感情50%以下の場合、50%以上に引き上げる"
+      kpi: "スタッフKPIとして設定"
+      
+      measurement_interval: "入所時 → 2ヶ月後"
+      expected_improvement: "著しい自己肯定感格差の改善"
+    
+    baseline_findings:
+      average: "10-20パーセンタイル台"
+      comparison: "一般平均（約50）との乖離: -30～-40ポイント"
+      interpretation: "障害者就労支援利用者の自己肯定感は著しく低い"
+    
+    value:
+      academic: "10年間の実践データは、研究の実証基盤となる貴重な資源"
+      practical: "準委任契約履行の具体的指標"
+  
+  audio_records:
+    description: "支援音声記録"
+    period: "5年分"
+    technology: "Whisper変換済み"
+    
+    origin:
+      event: "2023年9月の脳出血経験後"
+      recovery: "高次脳機能・言語機能の回復過程でAI音声技術を活用"
+    
+    insight:
+      realization: "当事者の記録負担軽減と記録主権確立の両立可能性"
+      innovation: "福祉研究手法の革新志向"
+    
+    application:
+      - "ナラティブ分析"
+      - "エンパワーメント測定"
+      - "Constitutional AIによる権利侵害検出"
+  
+  detailed_case_records:
+    categories:
+      - "木浦氏事件（傷害致死）"
+      - "薬物依存ケース"
+      - "精神疾患ケース"
+      - "複合的困難ケース"
+    
+    documentation:
+      - "生活歴詳細記録"
+      - "医療機関向けヒアリングシート"
+      - "自殺行動時の電話記録"
+      - "関係機関との調整記録"
+    
+    structural_problems_identified:
+      - "詳細情報提供 → 活用されず"
+      - "ACEs-PTSD仮説 → 二次情報扱い"
+      - "自殺行動記録 → 入院措置なし"
+      - "支援者過重負担 → 脳出血"
+    
+    ethical_status: "当事者同意済（録音・活用の明示許可）"
+  
+  operational_records:
+    description: "事業所運営における制度課題の記録"
+    
+    areas:
+      - "行政閉庁時間の相談空白（JUSPOカ設立の背景）"
+      - "準委任契約の形骸化事例"
+      - "個別支援計画の形式化"
+      - "報酬制度のインセンティブ歪み"
+      - "多機関連携の困難"
+
+# ==========================================
+# Part 5: 市場環境分析
+# ==========================================
+market_environment:
+  
+  okayama_prefecture_2017:
+    total_facilities: 348
+    total_capacity: "7,024名"
+    total_wages: "約31億円"
+    total_staff: "1,633名"
+    
+    breakdown:
+      就労継続支援A型:
+        facilities: 161
+        capacity: "3,066名"
+        average_wage: "約7.5万円/月"
+        total_wages: "約25億円/年"
+        staff: "731名"
+        basic_benefits: "約42億円/年"
+        incentive_bonus: "約6.5億円/年（目標工賃達成加算）"
+        total_benefits: "約49億円/年"
+        capacity_75pct: "約36.8億円/年"
+      
+      就労継続支援B型:
+        facilities: 187
+        capacity: "3,958名"
+        average_wage: "約1.4万円/月"
+        total_wages: "約6.2億円/年"
+        staff: "902名"
+        basic_benefits: "約58億円/年"
+        incentive_bonus: "約8.8億円/年（目標工賃達成加算）"
+        total_benefits: "約67億円/年"
+        capacity_75pct: "約50億円/年"
+  
+  national_scale_2024:
+    total_disability_services: "4.18兆円（令和6年度）"
+    employment_support_services: "約9,000億円"
+    
+    breakdown:
+      就労継続支援B型:
+        budget: "6,294億円"
+        growth: "+20.1%"
+      就労継続支援A型:
+        budget: "1,875億円"
+        growth: "+4.6%"
+      就労移行支援:
+        budget: "858億円"
+        growth: "+7.2%"
+    
+    total_users: "163万人（障害者107万人、障害児56万人）"
+    overall_growth: "12.1%（予算想定5-6%を大幅超過）"
+    
+    sustainability_crisis:
+      observation: "厚労省が『制度の持続可能性確保の観点から検討が必要』と公式に認めている"
+      urgency: "特にB型の20.1%増は異常値であり、制度設計の欠陥を示唆"
+
+# ==========================================
+# Part 6: 社会的インパクト評価
+# ==========================================
+social_impact_assessment:
+  
+  framework: "SROI (Social Return on Investment)"
+  
+  paradigm_shift:
+    from: "かわいそうな弱者への支援（コスト）"
+    to: "地域人材育成への投資（資産形成）"
+  
+  economic_impact:
+    annual_return:
+      employment_income: "326億円"
+      tax_revenue: "32.6億円"
+      service_optimization: "180億円"
+      crisis_prevention: "10億円"
+      regional_contribution: "200億円"
+      total: "748.6億円"
+    
+    investment_required: "約255億円（5年間）"
+    
+    sroi_ratio: "29.4:1"
+    interpretation: "1円投資するごとに、社会は29.4円のリターンを得る"
+  
+  global_impact:
+    target_population: "世界13億人の障害者"
+    potential_economic_activity: "975億ドル（10%の雇用率改善時）"
+    
+    sdgs_contribution:
+      - "SDG 1: 貧困をなくそう"
+      - "SDG 8: 働きがいも経済成長も"
+      - "SDG 10: 人や国の不平等をなくそう"
+      - "SDG 11: 住み続けられるまちづくりを"
+
+# ==========================================
+# Part 7: 実践から理論への到達
+# ==========================================
+practice_to_theory:
+  
+  independent_discovery:
+    statement: "理論を学ぶ前に、現場経験から核心概念に独自に到達"
+    
+    key_concepts:
+      record_sovereignty: "記録主権（15年前のPHR共有財構想から）"
+      environmental_factors: "環境因子重視（ICFを知る前から実践）"
+      capability_approach: "ケイパビリティアプローチの本質（理論に出会う前に到達）"
+  
+  theoretical_continuity:
+    timeline:
+      2010: "PHR共有財管理者構想（IT業界時代）"
+      2018: "発達障害支援プラットフォーム構想"
+      2020: "コーリングサポ笠岡『無敵の人因子を減らす』"
+      2025: "SoE『基本的権利毀損への補償』"
+    
+    significance: "15年間の思想的一貫性が研究の強固な基盤となっている"
+  
+  commercial_perspective:
+    background: "商学部出身"
+    
+    insights:
+      - "民法の準委任契約に着目"
+      - "福祉サービスの契約化による権利保障の可能性"
+      - "サービス産業としての品質管理"
+      - "データコモンズとしての収益モデル"
+
+# ==========================================
+# Part 8: 実践的イノベーション
+# ==========================================
+practical_innovations:
+  
+  juspo_ka:
+    full_name: "18-8時の駆け込み寺サービス"
+    period: "2020年代初頭（コロナ禍）"
+    problem: "行政閉庁時間の相談空白"
+    solution: "夜間・休日対応の相談支援"
+    
+    significance: "制度の狭間で支援が届かない層への実践的対応"
+  
+  dx_implementation:
+    社会福祉協議会_dx:
+      scale: "社員400名・年商40億円"
+      contract: "30万円/月"
+      projects:
+        - "パソコン100台入れ替え（1,000万円）"
+        - "Teams導入"
+    
+    significance: "福祉セクターのDX先駆的事例"
+  
+  collaborative_ordering:
+    role: "井笠自立支援協議会就労部会責任者・岡山県セルプセンター営業責任者"
+    
+    achievements:
+      - "岡山県庁・笠岡市等から業務受託"
+      - "岡山県・笠岡市との共同事業開発"
+      - "総額600万円超の受注実績"
+    
+    significance: "B型事業所の工賃向上と地域貢献の両立"
+
+# ==========================================
+# 作成メタデータ
+# ==========================================
+creation_metadata:
+  compiled_by: "Claude Sonnet 4.5"
+  source_material_date_range: "2014 to 2024"
+  integration_date: "2025-11-19"
+  practice_period: "10年以上"
+  data_assets: "NOCC 10年分、音声記録5年分、詳細事例記録"
+  
+  target_folder: "05_practice/"
+  file_name_suggestion: "05_practice_integrated_2025_11_19.yaml"
+  
+  notes: >
+    このファイルは、10年以上の現場実践経験、事業所運営実績、
+    重度ケース事例研究、データ資産、市場環境分析、
+    社会的インパクト評価、実践から理論への到達過程、
+    実践的イノベーションを包含している。
+    理論と実践の完全な統合を示す実証的基盤の記録。

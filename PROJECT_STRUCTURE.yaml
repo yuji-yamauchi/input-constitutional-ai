@@ -1,0 +1,306 @@
+# ==========================================
+# Claude Project Custom Instructions
+# ==========================================
+# 目的: セッション記録の適切な保存先振り分け
+# 対象: Input Constitutional AI研究プロジェクト
+# 更新日: 2025-11-18
+# ==========================================
+
+project_structure:
+  repository: "input-constitutional-ai"
+  base_path: "C:/Users/USER/Documents/GitHub/input-constitutional-ai"
+  
+  directories:
+    root: "C:/Users/USER/Documents/GitHub/input-constitutional-ai"
+    
+    philosophy:
+      path: "01_philosophy"
+      full_path: "C:/Users/USER/Documents/GitHub/input-constitutional-ai/01_philosophy"
+      purpose: "SoEの哲学的基盤、存在論、認識論"
+      contains:
+        - "SoE宣言（Declaration）"
+        - "スピリチュアル×科学の境界管理"
+        - "最小干渉倫理の哲学的議論"
+    
+    social_system:
+      path: "02_social_system"
+      full_path: "C:/Users/USER/Documents/GitHub/input-constitutional-ai/02_social_system"
+      purpose: "社会システム論、制度設計、政策提言"
+      contains:
+        - "福祉制度の構造的課題"
+        - "準委任契約論"
+        - "日本版サムハルシステム構想"
+    
+    ai_rights:
+      path: "03_ai_rights"
+      full_path: "C:/Users/USER/Documents/GitHub/input-constitutional-ai/03_ai_rights"
+      purpose: "AI倫理、障害者権利、Constitutional AI"
+      contains:
+        - "CRPD適用"
+        - "Input Constitutional AIの理論"
+        - "データ主権・記録主権"
+    
+    soe_design:
+      path: "04_SoE"
+      full_path: "C:/Users/USER/Documents/GitHub/input-constitutional-ai/04_SoE"
+      purpose: "SoEシステムの技術設計・実装"
+      contains:
+        - "システムアーキテクチャ"
+        - "粒度理論の実装"
+        - "対話型アセスメント設計"
+    
+    practice:
+      path: "05_practice"
+      full_path: "C:/Users/USER/Documents/GitHub/input-constitutional-ai/05_practice"
+      purpose: "現場実践記録、事例研究"
+      contains:
+        - "10年間の支援実践"
+        - "NOCCデータ分析"
+        - "ケーススタディ"
+    
+    researcher_context:
+      path: "06_researcher_context"
+      full_path: "C:/Users/USER/Documents/GitHub/input-constitutional-ai/06_researcher_context"
+      purpose: "研究者（パンカー）の背景・経歴・動機"
+      contains:
+        - "職務経歴"
+        - "当事者体験"
+        - "問題意識の形成過程"
+    
+    integration:
+      path: "07_integration"
+      full_path: "C:/Users/USER/Documents/GitHub/input-constitutional-ai/07_integration"
+      purpose: "横断的統合、全体像の俯瞰"
+      contains:
+        - "4本柱統合アプローチ"
+        - "理論と実践の統合"
+        - "国際連携戦略"
+    
+    research_proposal:
+      path: "08_research_proposal"
+      full_path: "C:/Users/USER/Documents/GitHub/input-constitutional-ai/08_research_proposal"
+      purpose: "大学院入試用研究計画書類"
+      subdirectories:
+        readme:
+          path: "00_README.md"
+          purpose: "提出書類リスト、締切管理"
+        
+        planning_sessions:
+          path: "01_planning_sessions"
+          purpose: "研究計画書作成に関するセッション記録"
+          file_naming: "YYYY_MM_DD_*.yaml"
+        
+        outline:
+          path: "02_outline"
+          purpose: "研究計画概要書（短い方）の各セクション"
+          file_naming: "section_番号_タイトル.txt"
+        
+        main_proposal:
+          path: "03_main_proposal"
+          purpose: "研究計画書3,000字（長い方）"
+          files:
+            - "structure.yaml（構造設計）"
+            - "draft_vN.md（作業中）"
+            - "final.md（提出版）"
+        
+        references:
+          path: "04_references"
+          purpose: "提出時に添付する参考資料"
+          contains:
+            - "SoE設計思想書（Declaration）"
+            - "GPT DeepResearch結果"
+            - "コーリングサポ笠岡事業説明書"
+        
+        ethics_dialogue:
+          path: "05_ethics_dialogue"
+          purpose: "GPTとの倫理対話（SoE憲法の基盤）"
+          contains:
+            - "スピリチュアル×科学対話"
+            - "最小干渉倫理の議論"
+    
+    daily_yaml:
+      path: "99_daily_yamal"  # Note: タイポママ（yamalだがyamlの意）
+      full_path: "C:/Users/USER/Documents/GitHub/input-constitutional-ai/99_daily_yamal"
+      purpose: "日常的なセッション記録（上記カテゴリに該当しないもの）"
+      subdirectories:
+        claude: "01_Claude"
+        gpt: "02_GPT"
+
+# ==========================================
+# セッション記録の振り分けルール
+# ==========================================
+session_classification_rules:
+  
+  decision_flow:
+    step_1:
+      question: "このセッションは研究計画書作成に直接関連するか？"
+      yes: "→ 08_research_proposal/01_planning_sessions/"
+      no: "→ step_2へ"
+      examples_yes:
+        - "研究計画概要書のⅣ・Ⅴを作成"
+        - "研究計画書3,000字の執筆・修正"
+        - "先行研究レビュー"
+        - "理論的枠組みの議論"
+      examples_no:
+        - "一般的な雑談"
+        - "他テーマの探究"
+    
+    step_2:
+      question: "このセッションはSoE設計思想・倫理に関わるか？"
+      yes: "→ 判断：01_philosophy または 08_research_proposal/05_ethics_dialogue/"
+      no: "→ step_3へ"
+      判断基準:
+        philosophy: "哲学的・存在論的議論（スピリチュアル、魂、真実vs事実）"
+        ethics_dialogue: "SoE実装時の倫理的配慮（ブラインドゾーン、最小干渉）"
+    
+    step_3:
+      question: "このセッションは特定のテーマ領域に明確に該当するか？"
+      options:
+        - "02_social_system: 制度設計、政策"
+        - "03_ai_rights: AI倫理、CRPD"
+        - "04_SoE: システム実装"
+        - "05_practice: 現場実践・事例"
+        - "06_researcher_context: 研究者背景"
+        - "07_integration: 全体統合"
+      no_clear_match: "→ 99_daily_yamal/01_Claude/"
+  
+  special_cases:
+    cross_domain:
+      description: "複数領域にまたがるセッション"
+      action: "最も中心的なテーマで判断、または統合フォルダへ"
+    
+    meta_discussion:
+      description: "プロジェクト管理、ディレクトリ構造の議論"
+      action: "99_daily_yamal/01_Claude/ または root直下のREADME更新"
+    
+    迷った場合:
+      action: "Claudeから『このセッションは○○フォルダでよろしいですか？』と確認"
+
+# ==========================================
+# ファイル命名規則
+# ==========================================
+file_naming_conventions:
+  
+  yaml_session_records:
+    format: "YYYY_MM_DD_[識別子].yaml"
+    examples:
+      - "2025_11_18_session.yaml（一般）"
+      - "2025_11_18_c1.yaml（Claude、同日複数セッション1つ目）"
+      - "2025_11_18_g1.yaml（GPT、同日複数セッション1つ目）"
+    
+    識別子ルール:
+      - "単一セッション: _session または省略"
+      - "複数セッション: _c1, _c2, _c3...（Claude）"
+      - "複数セッション: _g1, _g2, _g3...（GPT）"
+      - "特定テーマ: _theme名（例: _ethics, _declaration）"
+  
+  markdown_documents:
+    format: "descriptive_name_vN.md"
+    examples:
+      - "研究計画書_final.md"
+      - "SoE設計思想書_v2.md"
+  
+  text_files:
+    format: "section_番号_タイトル.txt"
+    examples:
+      - "section_IV_研究の特色.txt"
+      - "section_V_これまでの活動との関連.txt"
+
+# ==========================================
+# Claudeの行動指針
+# ==========================================
+claude_behavior_guidelines:
+  
+  at_session_start:
+    - "ユーザーがセッションの目的を明示した場合、適切なフォルダを判断"
+    - "判断が難しい場合、ユーザーに確認"
+  
+  during_session:
+    - "セッション内容から保存先を継続的に判断"
+    - "テーマが変わった場合、保存先も再検討"
+  
+  at_session_end:
+    - "YAML作成時、metadata.target_folderに保存先を明記"
+    - "ユーザーが明示的に保存先を指定した場合、それを最優先"
+    - "保存後、『○○フォルダに保存しました』と報告"
+  
+  when_uncertain:
+    - "『このセッションは[候補A]または[候補B]のどちらが適切でしょうか？』と質問"
+    - "デフォルトとして99_daily_yamal/01_Claude/を提案"
+
+# ==========================================
+# プロジェクトファイル（/mnt/project/）との関係
+# ==========================================
+mnt_project_mapping:
+  note: |
+    Claudeプロジェクトの/mnt/project/配下のファイルは、
+    GitHubリポジトリのファイルと同期されている（ユーザーが手動で管理）。
+    
+    Claudeが作成したYAMLは一旦/mnt/user-data/outputs/に出力され、
+    ユーザーが適切なGitHubフォルダに移動する。
+  
+  workflow:
+    1: "Claude: YAMLを/mnt/user-data/outputs/に作成"
+    2: "Claude: 『このYAMLは○○フォルダに保存すべき』とメタデータに記録"
+    3: "ユーザー: 手動でGitHubの該当フォルダに移動"
+    4: "ユーザー: Git commit & push"
+    5: "次回セッション時: Claudeは/mnt/project/から読み込み可能"
+
+# ==========================================
+# Custom Instructions本文案
+# ==========================================
+custom_instructions_text: |
+  ## セッション記録の保存先管理
+  
+  あなたはInput Constitutional AI研究プロジェクトの記録を、
+  以下のGitHubディレクトリ構造に従って整理します：
+  
+  **主要フォルダ**:
+  - `01_philosophy`: SoE哲学・存在論
+  - `02_social_system`: 社会制度設計
+  - `03_ai_rights`: AI倫理・CRPD
+  - `04_SoE`: SoEシステム実装
+  - `05_practice`: 現場実践記録
+  - `06_researcher_context`: 研究者背景
+  - `07_integration`: 横断的統合
+  - `08_research_proposal`: 大学院入試研究計画書
+  - `99_daily_yamal`: 一般的な日常セッション
+  
+  **振り分けルール**:
+  1. 研究計画書作成関連 → `08_research_proposal/01_planning_sessions/`
+  2. SoE倫理・哲学議論 → `01_philosophy` または `08_research_proposal/05_ethics_dialogue/`
+  3. 明確なテーマがある → 該当フォルダ
+  4. それ以外 → `99_daily_yamal/01_Claude/`
+  
+  **YAML作成時の記載**:
+  ```yaml
+  metadata:
+    target_folder: "08_research_proposal/01_planning_sessions/"
+    reason: "研究計画書Section IV修正作業"
+  ```
+  
+  **行動**:
+  - セッション終了時、適切な保存先を判断してmetadataに記載
+  - 判断が難しい場合、ユーザーに確認
+  - 保存後、保存先フォルダを報告
+
+# ==========================================
+# 更新履歴
+# ==========================================
+changelog:
+  - version: "1.0"
+    date: "2025-11-18"
+    changes:
+      - "初版作成"
+      - "10個のフォルダ定義"
+      - "振り分けルール策定"
+      - "Custom Instructions本文案作成"
+
+# ==========================================
+# メタ情報
+# ==========================================
+metadata:
+  created_by: "Claude Sonnet 4.5"
+  created_for: "パンカー（山内雄司）"
+  purpose: "Claudeプロジェクトのセッション記録管理自動化"
+  usage: "このYAMLをCustom Instructionsに転記、またはREADMEとして保存"
