@@ -1,0 +1,156 @@
+session_record:
+  metadata:
+    date: "2025-11-24"
+    time_started: "午前"
+    participants:
+      - パンカー（山内雄司）
+      - Claude
+    session_type: "11月27日Susan面談準備・Clareへのメール作成"
+    target_folder: "99_daily_yamal/01_Claude/"
+    file_name_suggestion: "2025_11_24_susan_meeting_prep.yaml"
+
+  context:
+    previous_session: "2025-11-18 Susan面談トランスクリプト分析セッション"
+    upcoming_event:
+      name: "Susan Scott-Parker OBE 第2回面談"
+      date: "2025-11-27（木）"
+      time_jst: "18:00"
+      time_gmt: "09:00"
+      platform: "Microsoft Teams"
+
+  documents_reviewed:
+    - file: "Meeting_Agenda_Susan_Yamauchi.pdf"
+      description: "11月13日第1回面談用アジェンダ"
+      content_summary:
+        purpose: "SoEアプローチへの意見聴取、自尊感情回復と基礎学力の有効性確認"
+        structure:
+          - "1. Brief Context (5 min)"
+          - "2. What is SoE? (5 min)"
+          - "3. Core Questions for Susan (40 min)"
+          - "4. If Worth Continuing (10 min)"
+        actual_coverage: "項目1-2の入り口まで（翻訳問題で46分ロス）"
+
+    - file: "Meeting_Yuji_Yamauchi_Susan_Scott-Parker_SoE_Research_Discussion.pdf"
+      description: "11月13日面談完全トランスクリプト（31ページ）"
+      duration: "1時間48分6秒"
+      key_timestamps:
+        translation_issue_resolved: "46:36"
+        family_introduction: "58:09-1:02:43"
+        susan_ammunition_statement: "1:41:37-1:43:21"
+        meeting_end: "1:46:37"
+
+    - file: "Susan_Followup_Three_Points.pdf"
+      description: "面談後に送付済みのフォローアップ文書"
+      status: "送付済み"
+      content:
+        point_1:
+          title: "自尊感情回復プロセス"
+          key_insight: "思春期的行動の発現は良い兆候"
+          risks:
+            - "二次障害リスク"
+            - "情報齟齬リスク"
+            - "予防ケア不在リスク"
+        point_2:
+          title: "ゼロから1ではなく掘り起こし"
+          key_insight: "DUG = Dig-Up-Gifted の哲学"
+          realization: "LLMによって再現可能なプロセスと認識"
+        point_3:
+          title: "異なるルート、同じ必然性"
+          key_insight: "Top-down（Susan）× Bottom-up（パンカー）の相補性"
+          ammunition_response: "フィールドから弾薬（evidence）を製造する役割"
+
+  session_activities:
+    - activity: "メール和訳依頼（最初の案）"
+      outcome: "初期案の日本語訳提供"
+
+    - activity: "完全トランスクリプト確認"
+      files_checked:
+        - "Meeting_Agenda_Susan_Yamauchi.pdf"
+        - "Meeting_Yuji_Yamauchi_Susan_Scott-Parker.pdf"
+      finding: "前回はアジェンダ項目1-2の入り口まで、Susan質問途中で時間切れ"
+
+    - activity: "Three Points文書の確認"
+      file: "Susan_Followup_Three_Points.pdf"
+      status: "面談後に既に送付済みと判明"
+      impact: "メール内容を修正（Ammunition資料提案の位置づけ変更）"
+
+    - activity: "メール内容の反復修正"
+      iterations:
+        - version: 1
+          issue: "Ammunition資料の提案が重複"
+          fix: "既送付のThree Pointsを踏まえた構成に"
+        - version: 2
+          issue: "Robeynsの追加視点が未反映"
+          fix: "Three Pointsは一部、追加でRobeyns×Ammunitionの深掘りを準備中と明示"
+        - version: 3
+          issue: "Teams翻訳の実践的注意点が不足"
+          fix: "遅延発生とターン制の必要性を追加"
+        - version: 4
+          issue: "Susanのペン入れへの言及"
+          fix: "削除→「質問途中で時間切れ」に変更"
+
+    - activity: "Three Points文書のトーン確認"
+      question: "日本語直訳では上から目線に見えるが問題ないか"
+      analysis:
+        concerning_expressions:
+          - "What Employment Support Services Should Do"
+          - "The True Meaning of Training"
+          - "measurable legal compliance gap"
+        conclusion: "英語アカデミック・ビジネス文脈では普通〜やや控えめ"
+        reasons:
+          - "主張の明確さが求められる文化"
+          - "Susanの立場（30年キャリア、OBE）との対等な議論"
+          - "Susan自身も直接的な発言スタイル"
+        verdict: "問題なし。明確さが信頼につながる"
+
+  final_output:
+    type: "Clareへの返信メール"
+    status: "承認済み・送信待ち"
+    content: |
+      Dear Clare,
+
+      Looking forward to Thursday's call (27 Nov, 18:00 JST / 09:00 GMT).
+
+      **Teams Translation**
+      I've identified last time's issue. I need to switch the "Spoken language" setting depending on who's speaking, so there may be slight delays, and we'll need to take clear turns. I'll handle everything as host - Susan doesn't need to do anything.
+
+      **Meeting Structure**
+      Last time we ran out of time while Susan was still asking questions. I'd like to start from where we left off - if she has questions on my materials (SoE Overview, the "Three Things" follow-up), I'd like to address those first.
+
+      I've also been developing additional thoughts on her "ammunition" concept, reframed through Ingrid Robeyns' Capability Approach. I can share a brief document beforehand if helpful, or discuss directly - Susan's preference.
+
+      Best regards,
+      Yuji
+
+  next_steps:
+    immediate:
+      - task: "Clareへのメール送信"
+        status: "パンカー実行待ち"
+    conditional:
+      - task: "Robeyns × Ammunition資料作成"
+        trigger: "Susanから「事前資料希望」の返信があった場合"
+        reference: "/mnt/project/01_2025_11_20_robeyns_capability_approach_summary_ja.md"
+        estimated_length: "A4 1-2枚"
+
+  key_insights:
+    susan_ammunition_concept:
+      original_quote: "I always think that research provides the ammunition."
+      meaning: "研究は権力者を説得するための弾薬を提供する"
+      application:
+        primary_beneficiary: "障害当事者"
+        secondary_users: "政府・規制当局・サービス提供者"
+        goal: "資金提供者の行動変容"
+
+    communication_strategy:
+      principle: "資料は準備するが、送付は相手の反応次第"
+      rationale: "資料過多のリスク回避"
+      susan_response_pattern: "返信が早い（18時送信→20時頃返信想定）"
+
+    cultural_adaptation:
+      japanese_tendency: "謙遜・婉曲が礼儀"
+      english_academic_norm: "明確な主張が信頼を生む"
+      recommendation: "対等な議論相手として直接的なトーンを維持"
+
+  session_end:
+    status: "メール最終版承認"
+    next_session_focus: "Robeyns × Ammunition資料（必要時）"

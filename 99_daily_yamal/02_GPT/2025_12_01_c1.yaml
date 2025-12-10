@@ -1,0 +1,128 @@
+metadata:
+  source: "Everyone Wins a Balloon – Workplace Adjustment Playbook 2025"
+  created_for: "Puu’s SoE (Sphere of Empowerment) research integration"
+  version: "1.0"
+  note: "Fit for Purpose Adjustment Management の全体要旨を統合した要約"
+
+core_problem:
+  - 多くの企業では、障害・健康状態に関する職場調整（adjustments）が
+    即興対応（improv）・属人化・不信・コンプライアンス文化により機能不全。
+  - 管理職の裁量に依存しすぎ、データ化されず、体系的な管理がない。
+  - 調整拒否・遅延・不明確なルートが、欠勤・苦情・離職・訴訟リスクを生む。
+  - 企業の上層部は「現場で何が起こっているか」を把握できていない。
+
+key_insights:
+  - 職場調整は「医療判断」ではなく「業務生産性の課題」であり、
+    医療・HRに丸投げするのは非効率で有害。
+  - 調整を適切に提供すると、従業員の生産性・エンゲージメント・信頼が改善し、
+    欠勤と法律リスクも減少する。
+  - 約25%の労働者は障害/健康状態を持ち、毎年3〜5%が調整を必要とする。
+  - 調整は高額ではなく、英国平均 £900〜1200 程度。
+  - 企業の属人文化は“沈黙”“自己検閲”“不信”を生むため、
+    トラウマインフォームドアプローチと高い整合性を持つ。
+
+fit_for_purpose_definition:
+  concept: "Fit for Purpose Adjustment Management"
+  meaning:
+    - 調整プロセスが可視化され、効率的で信頼を基盤にし、
+      全従業員の公平な活躍を可能にすること。
+    - 医療判断依存・属人化・即興を排し、
+      ビジネス成果（生産性・信頼・リスク低減）に直結した仕組み。
+
+12_critical_success_factors:
+  - 経営層による責任と説明責任
+  - 調整専任マネージャーの配置
+  - 明確な単一の入口（single door of entry）
+  - 20営業日以内の標準的な処理スピード
+  - 管理職に調整費用を負担させない
+  - 自己申告を信頼し、障害証明を過剰に求めない
+  - 公開されたハード調整カタログ
+  - 公開されたソフト調整カタログ
+  - Adjustment Passport（調整パスポート）の運用
+  - 施設管理・ITなど関連部門の協働
+  - プロセス・影響の定期的なデータ化・測定
+  - 医療化せず、マネジメント責務として扱う
+
+evidence_data_points:
+  disability_stats:
+    disability_in_workforce: "25%"
+    adjustment_requests_when_publicised: "3-5% per year"
+    invisible_disabilities: "80%"
+    non-wheelchair_users: "92%"
+
+  cost_effectiveness:
+    avg_adjustment_cost: "£900–£1200"
+    mental_health_ROI: "£1 投資で £4.70 の改善効果"
+    reduction_absenteeism: "70〜83% 改善例あり"
+
+  behavioural_risks:
+    canada_survey_denied_adjustment:
+      "44%: 苦情しても意味がない"
+      "32%: 不利益を恐れる"
+      "28%: 上司との関係が壊れる懸念"
+
+seven_types_of_adjustments:
+  - マインドセットの転換（Think Differently）
+  - アクセシブルな環境整備
+  - 個別最適のプロセス調整
+  - 柔軟な勤務制度・異動支援
+  - マネージャーと部門のスキル向上
+  - ICTとデジタル政策の整備
+  - ヒューマンエイド（ジョブコーチ・手話通訳・PA）
+
+fit_vs_not_fit_gap_analysis:
+  themes:
+    trust_vs_distrust:
+      fit: "自己申告を信頼し、医療化しない"
+      not_fit: "証明書の要求・医療化・不信"
+
+    speed_and_process:
+      fit: "20営業日スピード、明確なルート"
+      not_fit: "遅延・属人化・情報非対称"
+
+    data_and_visibility:
+      fit: "データ収集と可視化"
+      not_fit: "誰も全体像を把握しない"
+
+    manager_burden:
+      fit: "管理職は調整配送を担わない"
+      not_fit: "管理職が調整の“交通整理役”で疲弊"
+
+    adjustment_passports:
+      fit: "異動後も調整が維持される"
+      not_fit: "上司交代で調整がリセットされる"
+
+systemic_transformation:
+  emerging_role:
+    chief_productivity_officer:
+      purpose:
+        - 部門横断の生産性向上
+        - 調整を“ビジネス価値の創出”として扱う
+        - IT・法務・FM・HRを統合する
+  principle:
+    - 調整は福利厚生ではなく生産性インフラである
+    - データ主導の継続改善が必要
+    - 即興文化を捨て、サービスライン化する
+
+alignment_with_SoE:
+  matches:
+    - 準委任契約モデル（non-medical, non-HR）
+    - 入力主権（本人申告の信頼）
+    - YAMLベースの調整パスポート
+    - TRI（トラウマインフォームド）との一致
+    - 支援の非属人化と継続性
+    - データ・評価・標準化（ICF/IPSと互換）
+    - 企業文化・学習する組織モデル
+  gaps_SoE_can_fill:
+    - 日本では「場当たり調整文化」が依然強い
+    - 医療化・証明主義が強く、信頼が弱い
+    - 透明な調整プロセスの欠如
+    - “上司ガチャ”依存
+    - 支援データが収集されない
+
+takeaways_for_research:
+  - SoEは英国の“Fit for Purpose”モデルの  
+    **デジタル・AI拡張版** を構築できる。
+  - 研究計画書の「先行研究」「国際比較」「課題背景」に直結。
+  - SoEの主張（合理的配慮の事前構造化、標準化されたアセスメント、
+    トラウマインフォームド）に強い国際的根拠を与える。

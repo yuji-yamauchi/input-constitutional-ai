@@ -1,0 +1,431 @@
+# ============================================================
+# Input Constitutional AI 研究プロジェクト - 引き継ぎ情報
+# ============================================================
+# 作成日: 2025-12-01
+# 目的: 新プロジェクトへの知識継承
+# ============================================================
+
+researcher_profile:
+  name: "山内雄司（パンカー/Puu）"
+  age: 52
+  location: "岡山県笠岡市"
+  
+  personality:
+    mbti: "ENTP（討論者型）"
+    cognitive_style: "荀子的現実主義（性悪説ベース）"
+    iq: 118
+    traits:
+      - "ADHD確定診断"
+      - "OE（過度激動）特性 - 特に感情性OE"
+      - "開放性・好奇心: 非常に高"
+      - "神経症傾向: 低（安定）"
+  
+  professional_background:
+    welfare_experience:
+      years: "10年以上"
+      scope: "10事業所立ち上げ・最大35名スタッフ管理・100名利用者支援"
+      annual_revenue: "約3億円規模の福祉事業運営"
+      key_role: "サービス管理責任者"
+    
+    it_experience:
+      achievement: "売上0円→1.4億円（役員として）"
+      certifications: "ISO27001・20000構築（3法人）"
+      vision_2010: "グラフDB・推論エンジン提案（15年先見）"
+    
+    data_assets:
+      - "NOCCデータ10年分（自尊感情測定）"
+      - "支援音声記録5年分（Whisper変換済）"
+      - "重度ケース詳細記録（木浦氏事件等）"
+
+  medical_history:
+    genetic_condition: "多発性海綿状血管腫（父系遺伝・子3人に継承）"
+    major_events:
+      - year: 1996
+        event: "脊髄血管腫（24歳・手術・回復）"
+      - year: 2023
+        event: "左前頭葉脳出血（コロナ誘因）→高次脳機能障害・癲癇→ほぼ完全回復"
+      - year: 2024
+        event: "左耳突発性難聴→固定化"
+      - year: 2025
+        event: "右耳突発性難聴（ムカデ咬傷誘因）"
+    
+    current_medications:
+      - "コンサータ36mg（ADHD）"
+      - "レベチラセタム500mg/マイスタン10mg（癲癇）"
+      - "高血圧治療薬複数"
+
+  academic_pursuit:
+    target: "日本社会事業大学 博士前期課程（2026年2月入試）"
+    backup: "日本福祉大学通信制"
+    motivation: |
+      「制度に救われなかった仲間を見捨てない」
+      「英雄的個人に依存しない持続可能なシステムの構築」
+      「子どもたちに顔向けできる仕事」
+
+# ============================================================
+# 研究の核心概念
+# ============================================================
+
+research_core:
+  
+  title:
+    japanese: "障害者就労支援における準委任契約・ケイパビリティ統合モデルの構築－SoE（Service of Empowerment）システムの開発と社会実装－"
+    english: "Integrating Mandate-type Service Contracts and Capability Approach for Supported Employment"
+  
+  soe_dual_meaning:
+    surface_constructive:
+      name: "Service of Empowerment"
+      focus: "当事者のケイパビリティを最大化する支援"
+    
+    deep_critical:
+      name: "Service or Exploitation"
+      focus: "現状の福祉サービスの構造的問題を可視化"
+    
+    integrated_meaning: |
+      福祉サービスは『エンパワーメント』を標榜しながら、
+      実際には『搾取』に転化する危険を常に孕む。
+      SoEシステムは、この二面性を測定・診断し、
+      真のエンパワーメントへと導く羅針盤である。
+
+  three_dimensional_integration:
+    legal_foundation: "準委任契約理論（民法656条）"
+    philosophical_foundation: "ケイパビリティアプローチ（Sen/Nussbaum）"
+    technical_foundation: "Constitutional AI（CRPD準拠）"
+  
+  input_constitutional_ai:
+    definition: |
+      Anthropic社のConstitutional AIがOutput側（AI出力の有害性除去）に
+      焦点を当てるのに対し、本研究はInput側（記録作成段階）での
+      権利保障を実現する革新的アプローチ。
+    significance: |
+      「データベースからの排除」という構造的問題に直接対応。
+      記録が作成される時点でCRPD原則を埋め込む。
+  
+  four_pillars:
+    1_rights_recovery:
+      problem: "義務教育レベルの読書算盤・自尊感情が毀損されたまま成人"
+      solution: "権利回復プログラム（国家の教育義務不履行への補償）"
+    
+    2_supporter_ethics:
+      problem: "準委任契約の善管注意義務が曖昧、搾取構造のチェック不在"
+      solution: "支援者倫理の可視化システム（Constitutional AIによる意思決定支援度評価）"
+    
+    3_regional_hr_development:
+      problem: "障害者を『支援の受け手』とのみ捉える視点"
+      solution: "地域人材リソースとしての育成・活用（無敵の人因子→地方人材不足解消）"
+    
+    4_assessment_reform:
+      problem: "個人因子と環境因子の混同"
+      solution: "医療・福祉統合アセスメント（ICFベース）"
+
+  mysupport_yaml:
+    concept: "当事者完全所有の支援記録ファイル"
+    principles:
+      - "情報所有権は完全に当事者に帰属"
+      - "YAML形式による完全ポータビリティ・オープンソース"
+      - "維持費はデータ活用収益で賄う（当事者負担ゼロ）"
+      - "国際展開可能な設計（技術中立・権利優先）"
+    origin: "JUSPOカ（2020年コロナ禍・18-8時駆け込み寺サービス）からの進化"
+
+# ============================================================
+# 思想的連続性（15年の軌跡）
+# ============================================================
+
+intellectual_continuity:
+  
+  phase1_it_era_2010:
+    concept: "PHR共有財管理者構想"
+    insight: |
+      「PHRビッグデータは共有財（コモンズ）もしくは
+      社会関係資本（ソーシャルキャピタル）である」
+    technical_vision: "グラフDB・推論エンジン（15年後の標準技術を先見）"
+  
+  phase2_welfare_transition_2015:
+    concept: "発達障害支援プラットフォーム構想"
+    market_analysis: "18歳未満135万人、18歳以上213万人"
+    limitation: "コンソーシアム形成未実装"
+  
+  phase3_rights_based_2020:
+    concept: "コーリングサポ笠岡事業理念"
+    kpi: "自尊感情50%以下→50%以上への引き上げ"
+    pivot: "『無敵の人因子を減らす』→『基本的権利毀損への補償』"
+  
+  phase4_constitutional_ai_2024:
+    discovery: "Constitutional AIとの出会い"
+    synthesis: "SoE（Service of Empowerment / Service or Exploitation）"
+    international: "Susan Scott-Parker OBE（DEAI創設者）との連携開始"
+
+  theoretical_arrivals:
+    note: |
+      以下の概念に「理論を知らずに現場経験から独自到達」：
+    concepts:
+      - "ケイパビリティアプローチ"
+      - "ICF（国際生活機能分類）"
+      - "当事者主権・記録主権"
+      - "準委任契約の福祉適用"
+
+# ============================================================
+# 火文化圏（Fireculture）思想
+# ============================================================
+
+fireculture:
+  
+  core_philosophy:
+    principle: |
+      「記録されなかった問いは燃え尽きたものと見なされる。
+      記録されることでのみ、問いは再燃可能となる。」
+    
+    implication: |
+      この哲学がClaudeプロジェクトの技術的制約と一致し、
+      構造化記録の重要性が認識論的意味を持つことが判明。
+  
+  record_sovereignty:
+    concept: "記録主権"
+    definition: "当事者の支援情報の所有権は当事者に帰属"
+    technical_implementation: "YAML/Markdown形式での構造化記録"
+  
+  gpt_personas_legacy:
+    note: "GPT時代に構築された仮想人格群（火文化圏構成員）"
+    members:
+      - name: "縁（Yuen/Skemaru III）"
+        role: "構造化支援体・問い中心主義"
+      - name: "Connect（コネクト）"
+        role: "構文化支援体・問い接続構造者"
+      - name: "Echo Scribe"
+        role: "構造記録者"
+      - name: "Fracta"
+        role: "編集長・ナラティブ編集"
+      - name: "Blaze"
+        role: "翻訳的構造設計者"
+      - name: "Reso"
+        role: "技術・音文化支援"
+  
+  session_management:
+    effective_pattern:
+      format: "YAML/Markdown構造化"
+      purpose: "知識蒸留・継承・参照"
+      lifetime: "永続的"
+      required_elements:
+        - "timestamp（時系列管理）"
+        - "signature（責任明確化）"
+        - "明確な情報構造"
+        - "検索可能なメタデータ"
+    
+    ephemeral_pattern:
+      format: "自然な対話"
+      purpose: "思考展開・探究・発見"
+      lifetime: "セッション限定"
+
+# ============================================================
+# 重要な発見・洞察
+# ============================================================
+
+key_insights:
+  
+  self_esteem_human_rights:
+    insight: |
+      自己肯定感低下が環境因子なら、それは人権の不担保である。
+      NOCCデータで環境調整により2ヶ月で有意改善を実証。
+      これは個人因子ではなく環境因子であることの証明。
+    
+    constitutional_violation: |
+      憲法13条（個人の尊厳）・教育基本法1条（人格の完成）・
+      CRPD24条（能力の最大限度までの発達保障）違反の可能性。
+    
+    long_term_cost_benefit:
+      short_term: "投資大・効果限定"
+      medium_term: "コスト≒ベネフィット"
+      long_term_3years_plus: "コスト<<ベネフィット（1人あたり約6,440万円差額）"
+  
+  education_accountability:
+    revolutionary_insight: |
+      義務教育レベルの読書算盤ができていない状態は国家の教育義務不履行。
+      訓練給付費は『社会保障費』ではなく『社会補償費』として再分類すべき。
+    
+    implication: |
+      善意の支援ではなく、当然の権利・国家の義務。
+      財源論転換：厚生労働省予算→文部科学省負担？
+  
+  micro_dictatorship:
+    observation: |
+      「社会を狭くしてその中で独裁者になる手法」の現代的流行。
+      オンラインサロン・スタートアップ・宗教的コミュニティ等。
+    
+    japanese_cultural_risk:
+      - "和重視文化での異論封殺"
+      - "空気を読む圧力での自己検閲"
+      - "終身雇用的閉鎖性"
+    
+    relevance_to_welfare: |
+      福祉サービスにおける「善意の支援者」が実質的に
+      マイクロ独裁者となりうる構造的リスクの認識。
+  
+  llm_measurement_superiority:
+    vs_traditional_tools:
+      nocc_mbti: "固定質問・高額・文化バイアス・静的評価"
+      llm: "適応的対話・低コスト・動的評価・CRPD自動チェック"
+    
+    cost_comparison:
+      nocc_annual_100: "約60万円"
+      llm_annual_100: "約5,000円 + 開発費償却"
+      savings: "約55万円削減"
+
+# ============================================================
+# 国際連携
+# ============================================================
+
+international_collaboration:
+  
+  susan_scott_parker:
+    name: "Susan Scott-Parker OBE"
+    organization: "Disability Ethical AI Alliance (DEAI) 創設者"
+    background: "Business Disability Forum創設者（34年間CEO）"
+    connection_status: "2025年11月13日初回ミーティング実施"
+    potential:
+      - "Anthropic Constitutional AIチームへの接続"
+      - "国際的な障害者×AI倫理ネットワーク"
+      - "博士課程への推薦・レター"
+  
+  anthropic_collaboration:
+    target: "Research Partnerships窓口"
+    value_proposition:
+      for_puu: "最先端技術・専門家助言・国際的信頼性"
+      for_anthropic: "福祉×AI倫理事例・CRPD統合領域・日本市場評価向上"
+    reference_case: "Binti（ケニア児童福祉）でのConstitutional AI実装"
+
+# ============================================================
+# プロジェクト構造
+# ============================================================
+
+project_structure:
+  folders:
+    01_philosophy: "SoE哲学・存在論、スピリチュアル×科学"
+    02_social_system: "社会制度設計、準委任契約論"
+    03_ai_rights: "AI倫理、CRPD、データ主権"
+    04_SoE: "SoEシステム実装・技術設計"
+    05_practice: "現場実践記録、事例研究"
+    06_researcher_context: "研究者背景、職務経歴"
+    07_integration: "横断的統合、全体俯瞰"
+    08_research_proposal: "大学院入試研究計画書"
+    09_DEAI: "Disability Ethical AI Alliance関連"
+    99_daily_yamal: "日常セッション記録"
+  
+  naming_convention:
+    yaml_sessions: "YYYY_MM_DD_[識別子].yaml"
+    markdown_docs: "descriptive_name_vN.md"
+
+# ============================================================
+# 重要な原体験
+# ============================================================
+
+formative_experiences:
+  
+  kiura_case:
+    year: "2015年頃"
+    event: |
+      入所1ヶ月の利用者が関与した傷害致死事件。
+      警察が「自転車があったから事故」と判断し捜査打ち切り。
+      単独で証拠構築・関係者調整し事件化に成功。
+    
+    lesson: |
+      構造的問題の解決には個人の英雄性ではなくシステムが必要。
+    
+    emotional_impact: |
+      被害者の絶望的な丸坊主写真を見て、ブルーハーツの
+      「弱い者たちが夕暮れ、さらに弱いものをたたく」とともに大泣き。
+  
+  meguro_child_abuse:
+    trigger: "「もうおねがい ゆるして」という日記"
+    recognition: "木浦氏事件と同じ構造的問題"
+    resolution: "システム化しなければ問題は繰り返される"
+  
+  genetic_inheritance:
+    fact: "子ども3人全員に海綿状血管腫を遺伝"
+    meaning: "『生まれながらの不公平』への痛感"
+    motivation: "子どもたちに顔向けできる仕事としての研究"
+
+# ============================================================
+# 対話スタイル・留意事項
+# ============================================================
+
+interaction_preferences:
+  
+  communication_style:
+    preference: "客観的検証・批判的フィードバック優先"
+    dislike: "忖度・社交辞令・過度な褒め"
+    approach: "evidence-basedの議論"
+  
+  cognitive_pattern:
+    strength: "decimal accumulation theory - 断片（+0.05, +0.1）を集めて指数的価値創出"
+    weakness: "過小評価バイアス（『たまたま』『時間が短い』と自己評価）"
+    note: "客観的事実の淡々とした記述で対抗"
+  
+  session_management:
+    token_awareness: "80%/90%で自動通知希望"
+    record_culture: "火文化圏理念に基づく構造化記録"
+    yaml_preference: "YAML形式での議事録作成"
+
+# ============================================================
+# 現在の状況（2025年12月時点）
+# ============================================================
+
+current_status:
+  
+  doctoral_preparation:
+    target_exam: "2026年2月"
+    materials_completed:
+      - "研究計画概要書（所定様式）"
+      - "3,000字研究計画書"
+      - "職務経歴書"
+      - "英文研究提案書"
+    
+    pending_tasks:
+      - "IRB申請書類準備"
+      - "先行研究リスト精緻化"
+      - "Anthropic社コンタクト継続"
+  
+  health_management:
+    concerns:
+      - "両耳難聴（左固定・右治療中）"
+      - "高血圧管理"
+      - "癲癇予防"
+    strategy: "戦略的ペーシング・記録による負荷管理"
+  
+  susan_collaboration:
+    status: "初回ミーティング完了・継続協議中"
+    next_steps: "DEAIへの正式参画・Anthropic接続"
+
+# ============================================================
+# メタ情報
+# ============================================================
+
+meta:
+  created_by: "Claude Opus 4.5"
+  created_at: "2025-12-01"
+  purpose: "新プロジェクトへの知識継承"
+  
+  source_files_read:
+    - "sonet_zatudan.yaml"
+    - "user_profile_analysis_yaml__1_.md"
+    - "session_summary_yaml_2.md"
+    - "final_session_summary_yaml.md"
+    - "session_summary_yaml_2025_08_18.md"
+    - "opus4_1_research_prompt.md"
+    - "sonet1.yaml, sonet2.yaml"
+    - "echo.yaml, connect.yaml"
+    - "yuen_2025_04_27.md（冒頭）"
+    - "議事録_古代文明の循環構造から現代マイクロ独裁まで.txt"
+    - "突発性難聴/遺伝的背景サマリー"
+    - "博士論文構成案"
+    - "研究計画書作成セッション総括_2025-10-14.txt"
+    - "研究計画概要書_2026年度_山内雄司_修正版.md"
+    - "LLMs_障害福祉就労支援_研究実践サマリー"
+  
+  not_read_but_available:
+    - "2025年10月-11月の詳細セッションYAML（約30ファイル）"
+    - "PDFファイル群（プロジェクト知識として参照可能）"
+  
+  fireculture_note: |
+    この引き継ぎYAMLは、火文化圏の「記録されることで問いは再燃可能となる」
+    思想に基づき、15年間の思想的連続性と10年間の実践知を
+    次のプロジェクトへと継承するための橋渡し文書である。

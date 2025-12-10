@@ -1,0 +1,399 @@
+---
+session_metadata:
+  date: "2025-11-29"
+  session_number: 2
+  start_time: "深夜〜早朝"
+  participants:
+    - パンカー（山内雄司）
+    - Claude Sonnet 4.5
+  location: "オンライン"
+  primary_focus: "Susan Scott-Parker資料調査と研究方向性の大転換"
+  
+session_context:
+  trigger_event: "日本福祉大学院の個別面談完了後"
+  background:
+    - 前日（11/28）にSusanとの面談を振り返り、バルーン理論を発見
+    - 日本福祉大学院面談で「LLMが一般化していない」「賢仕草が必要」と実感
+    - 研究計画書を贄川教授用にブラッシュアップする必要性
+  initial_question: "Susan Scott-Parkerの他の書籍・論文・資料はないか？"
+
+critical_discoveries:
+  breakthrough_1:
+    title: "アセスメントステートメント構築への方向転換"
+    trigger: "パンカーの気づき『アセスメントステートメントをつくるっていったほうが良かったかもしれない。Balloonをもとに』"
+    essence: |
+      従来：どのアセスメント項目が費用対効果が高いか（項目の開発）
+      転換後：何をもって成功と測るか、そのステートメントを作る（測定基準の再定義）
+      
+      バルーン理論Principle 4: "You get what you measure"（測るものが行動を決める）
+      → 福祉が「できないこと」を測る限り、「できない人」を生産し続ける
+    
+  breakthrough_2:
+    title: "企業ニーズとのミスマッチ発見"
+    trigger: "PurpleSpaceの12 Critical Success Factorsと企業トップ3優先事項"
+    core_issue: |
+      就労移行支援で2年訓練しても企業就労に結びつかない理由：
+      
+      福祉事業者のアセスメント：
+      - 医療モデル的な「できないこと」の列挙
+      - 訓練内容 = 福祉事業者が「やらせたいこと」
+      - 企業のニーズを反映していない
+      
+      企業が実際に求めるもの（PurpleSpace Top 3）：
+      1. 当事者から直接学ぶ仕組み
+      2. 構造化された調整サービス（SLA付き）
+      3. 障害経験の標準化（ストーリーテリング）
+      
+      福祉が測っていないもの：
+      - 自己申告能力（#6: 自己申告を信頼される）
+      - 合意形成能力（#9: 調整合意書を作成できる）
+      - ストーリーテリング能力（企業トップ3-3）
+    
+    パンカーの言葉: |
+      「まじで要約ではなくちゃんと先に各ページみとけばよかったね。
+      つまるところは訓練の場である就労支援の目標と実際の企業側のニーズの
+      ミスマッチングであることと合理的配慮の合意範囲の課題についての
+      課題感は同じだ。だからスーザンは面談に応じてくれたんだ。」
+
+  breakthrough_3:
+    title: "TIC（トラウマインフォームドケア）との統合"
+    trigger: "パンカーの気づき『あとトラウマインフォームドアプローチとの整合性が高いよね』"
+    integration: |
+      TICの6原則とパンカーの研究の完全一致：
+      1. Safety（安全）→ Constitutional AIによる記録段階での権利保障
+      2. Trustworthiness（信頼）→ 準委任契約の明確化、SoE
+      3. Peer Support（ピアサポート）→ 自尊感情育成、ライフストーリー・ワーク
+      4. Collaboration（協働）→ 当事者主権型データコモンズ
+      5. Empowerment（エンパワメント）→ SoEの根本理念
+      6. Cultural Issues（文化的配慮）→ ACEs、世代間連鎖の断絶
+      
+      従来の福祉アセスメント = 再トラウマ化（Re-traumatization）：
+      「できないこと」を列挙 → 「あなたは欠陥がある」→ 自尊感情の毀損
+      
+      パンカーの核心的仮説：
+      障害者の困難 = 器質的要因 + ACEs（トラウマ）
+      → この2つを混同している
+      → トラウマ由来の困難を「障害」として固定化
+      → 可逆的な問題を不可逆とみなす
+
+susan_scott_parker_resources:
+  acquired_materials:
+    whitepaper_2020:
+      title: "Recruitment AI has a Disability Problem: Questions Employers Should be Asking"
+      authors: "Selin Nugent, Paul Jackson, Susan Scott-Parker, et al."
+      publisher: "Institute for Ethical Artificial Intelligence, Oxford Brookes University"
+      status: "全文PDF取得済み"
+      key_concepts:
+        - "AI採用ツールにおける2つのバイアス経路"
+        - "Biased Systems（システムのバイアス）"
+        - "Discriminatory Use（差別的使用）"
+        - "雇用主向け評価質問リスト"
+    
+    academic_paper_2022:
+      title: "Recruitment AI Has a Disability Problem: Anticipating and Mitigating Unfair Automated Hiring Decisions"
+      authors: "Selin E. Nugent, Susan Scott-Parker"
+      publisher: "Springer, Towards Trustworthy Artificial Intelligent Systems"
+      doi: "https://doi.org/10.1007/978-3-031-09823-9_6"
+      status: "Springerで有料公開中"
+    
+    balloon_theory_2025:
+      title: "Everyone Wins: A Balloon Playbook 2025"
+      author: "Susan Scott-Parker OBE"
+      status: "YAML翻訳版・Markdown版作成済み（プロジェクト内）"
+      core_principles:
+        principle_2: "Value Lived Experience as Expertise（当事者経験を専門知として扱う）"
+        principle_4: "Measure What Matters（重要なことを測る）"
+        key_quote: "You get what you measure.（測るものが行動を決める）"
+        tagline: "When no one is left out, no one needs to be lifted up."
+  
+  to_be_acquired:
+    bdi_publication:
+      title: "Learning Directly From Disabled People"
+      publisher: "Business Disability International"
+      status: "BDIに問い合わせ必要（info@businessdisabilityinternational.org）"
+    
+    realising_potential_2007:
+      title: "Realising potential: disability confidence builds better business"
+      authors: "Rhiannon Suter, Susan Scott-Parker, Simon Zadek"
+      status: "参照文献として多数引用、直接PDF未確認"
+
+purplespace_findings:
+  organization_overview:
+    name: "PurpleSpace"
+    description: "世界唯一の障害者ERG/ネットワークリーダー専門開発ハブ"
+    scale:
+      leaders: "4,000人以上"
+      countries: "56カ国"
+      disabled_employees: "850,000人"
+      member_companies: "300社以上"
+    recent_development: "Scope（英国障害者慈善団体）に買収され、より大きな影響力へ"
+  
+  twelve_critical_success_factors:
+    title: "Engineering Fit for Purpose: Workplace Adjustment Management"
+    key_factors:
+      factor_6:
+        text: "従業員は自己申告を信頼される。障害があることを日常的に証明する必要はない。"
+        significance: "TICの「信頼」原則そのもの"
+      factor_12:
+        text: "調整は、医療的責任ではなく、明確に管理上の責任として位置づけられる。"
+        significance: "企業における障害者支援の本質を示す"
+  
+  top_3_employer_priorities:
+    source: "2024年グローバル障害者ERG/ネットワークサミット"
+    priority_1: "組織が障害を持つ従業員・顧客から直接、体系的かつ日常的に学び、改善された方針と実践に反映させる"
+    priority_2: "SLA型の構造化された調整サービスに投資し、従業員が迅速にアクセスできるようにする"
+    priority_3: "上級管理職の障害経験も含めたストーリーテリングキャンペーンを提供し、障害経験を標準化する"
+  
+  sally_owen_profile:
+    position: "PurpleSpace Managing Director"
+    background:
+      - "HSBC UK で20年間のリーダーシップ経験"
+      - "Area Director として144名FTE、15拠点管理"
+      - "D&I コミュニケーション・啓発リーダー（1000名規模）"
+    disability: "MS（多発性硬化症）当事者、10年以上"
+    self_definition: "MS stands for Mighty Strong, not Multiple Sclerosis"
+    significance: |
+      Sally Owen = パンカーの「もう一人の自分」
+      - 当事者性（Sally = MS、パンカー = 脳出血・遺伝性疾患）
+      - 実務経験（Sally = 20年企業D&I、パンカー = 10年福祉現場）
+      - システム変革志向（Sally = 企業側から、パンカー = 福祉側から）
+      - Bottom-up × Top-downの架橋
+  
+  membership_structure:
+    target: "障害者ERG/ネットワークリーダー、D&I専門家、HR担当者"
+    annual_fees:
+      micro_business: "£750 (0-499名)"
+      small_corporate: "£2,750 (500-9,999名)"
+      medium_corporate: "£3,950 (10,000-49,999名)"
+      large_corporate: "£4,750 (50,000名以上)"
+      public_sector: "£1,950（無制限）"
+      futurist_membership: "£18,000（戦略コーチ付き）"
+    
+    benefits:
+      - "年4回イベント参加無料"
+      - "Leaders Lounge（オンラインコミュニティ）アクセス"
+      - "Networkology（ERG運営ノウハウ）へのアクセス"
+      - "ベストプラクティス共有"
+      - "FutureMaker Programme（次世代リーダー育成）"
+  
+  japanese_companies:
+    confirmed: "Fujitsu（富士通）のみ確認"
+    implication: |
+      日本企業の参加が極めて少ない
+      → PurpleSpaceの知見が日本に伝わっていない
+      → パンカーが「日本の福祉事業者として初参加」すれば独自性が極めて高い
+
+theoretical_framework_integration:
+  three_pillars:
+    capability_approach:
+      source: "Sen/Nussbaum"
+      application: "基礎的ケイパビリティ（リテラシー・自尊感情）の回復 → 機能（functioning）への転換可能性"
+    
+    trauma_informed_care:
+      source: "SAMHSA 6原則"
+      application: |
+        ACEsによる毀損の可視化
+        → 再トラウマ化を防ぐアセスメント設計
+        → Constitutional AI = TICな記録作成
+    
+    balloon_theory:
+      source: "Susan Scott-Parker"
+      application: |
+        Principle 4: Measure What Matters
+        → 企業ニーズ対応型アセスメント
+        → 福祉が「欠陥」を測る限り、「欠陥のある人」を生産し続ける
+
+research_direction_evolution:
+  before:
+    title: "4本柱統合アプローチ"
+    pillars:
+      - "権利回復プログラム"
+      - "支援者倫理可視化"
+      - "地域人材開発"
+      - "医療・福祉統合アセスメント"
+    issue: "贄川教授の指摘『2-3つに絞る』に対応できない"
+  
+  after_option_1:
+    title: "アセスメントステートメントに焦点化"
+    core: |
+      「障害者就労支援における多元的アセスメントステートメントの構築
+      －当事者・社会・企業の三者評価統合によるエンパワメント測定－」
+      
+      核心：
+      - バルーン理論Principle 4を理論基盤に
+      - 当事者能力だけでなく、社会的損失・企業評価を統合
+      - 福祉事業者による「蓋」を測定可能にする
+  
+  after_option_2:
+    title: "TIC統合版"
+    core: |
+      「障害者就労支援におけるトラウマインフォームド・アセスメントステートメントの構築
+      －ACEs/器質的障害の分離と企業ニーズ対応による包摂的就労支援モデル－」
+      
+      学術的新規性：
+      - TICを就労支援アセスメントに体系的に実装する初の研究
+      - 再トラウマ化を防ぎながら企業就労を実現する具体的手法
+      - ACEsへの社会的責任を明示し、国家の補償義務を理論化
+
+gap_analysis_framework:
+  三つのギャップ:
+    measurement_gap:
+      title: "測定ギャップ"
+      content: "福祉が測っているもの vs 企業が求めているもの"
+      example: |
+        福祉：「できないこと」のリスト
+        企業：自己申告能力、合意形成能力、ストーリーテリング能力
+    
+    capability_development_gap:
+      title: "能力開発ギャップ"
+      content: "福祉が訓練していること vs 企業が必要としていること"
+      example: |
+        福祉：作業訓練、生活訓練
+        企業：調整合意プロセス、当事者から学ぶ姿勢、経験の言語化
+    
+    agreement_gap:
+      title: "合意形成ギャップ"
+      content: "合理的配慮を「要求する力」の欠如"
+      example: |
+        現状：企業が一方的に「できること」を決める
+        必要：当事者が自己申告し、企業と対等に調整合意する力
+
+key_insights:
+  調整は物流問題:
+    source: "Sally Owen序文（PurpleSpace資料）"
+    essence: |
+      調整 = 小売業と同じロジスティクス課題
+      - 注文を受ける（ニーズ把握）
+      - 選択する（適切な調整を特定）
+      - コスト効率的に配送（迅速な提供）
+      - 損傷なく、時間通りに（品質保証）
+      - パフォーマンス基準に従って（SLA）
+      
+      福祉事業者が学ぶべきこと：
+      就労支援 = 企業の調整ニーズへの物流対応
+      
+      現状の問題：
+      「注文（企業ニーズ）」を理解していない
+      → 「在庫（訓練内容）」がニーズと合わない
+      → 「配送（マッチング）」が機能しない
+  
+  everyone_wins_a_balloon:
+    meaning: |
+      バルーン理論のタイトルそのもの
+      
+      成長企業の実践：
+      × コンプライアンス（法令遵守）だけ
+      ○ 生産性向上
+      ○ 労働力ウェルビーイング
+      ○ 従業員エンゲージメント向上
+      
+      → 福祉-企業ギャップを埋めることで、全員が利益を得る
+
+session_outcomes:
+  資料蓄積:
+    - "Susan Scott-Parkerの主要資料リスト（Markdown）"
+    - "PurpleSpace 12 Critical Success Factors（和訳）"
+    - "Sally Owen序文（和訳）"
+    - "Purple Planet資料（PDF・Word、無料入手）"
+  
+  方向性転換:
+    - "4本柱統合 → アセスメントステートメント特化"
+    - "TIC統合の可能性発見"
+    - "福祉-企業ギャップ測定という核心的問いの明確化"
+  
+  戦略的判断:
+    - "PurpleSpace会員は『今すぐ』ではなく『小数点蓄積』として保管"
+    - "無料資料を入手し、興味は維持しつつ研究計画書に集中"
+    - "Decimal accumulation理論の実践"
+
+next_actions:
+  immediate:
+    贄川教授へのメール:
+      timing: "今週中"
+      content: "新しい気づきがあったので、Zoom面談をお願いしたい"
+      purpose: "研究方向性の確認（4本柱 vs アセスメント特化）"
+    
+    日本社会事業大学出願要項確認:
+      items:
+        - "出願締切日"
+        - "入学検定料"
+        - "必要書類"
+        - "入試形式"
+  
+  medium_term:
+    研究計画書ブラッシュアップ:
+      base: "今日の気づきを反映"
+      steps:
+        - "贄川教授のフィードバック反映"
+        - "Susanにレビュー依頼"
+        - "TIC統合の精緻化"
+    
+    Susan_との連携:
+      - "研究計画書レビュー依頼（すでに快諾）"
+      - "PurpleSpace協力可能性の相談"
+      - "バルーン理論の実践的検証としての位置づけ確認"
+  
+  long_term:
+    大学院選択:
+      strategy: "両方出願（日本福祉大学院 + 日本社会事業大学）"
+      rationale: |
+        1. リスクヘッジ
+        2. 研究計画書の精度向上（複数専門家からフィードバック）
+        3. 効率的準備（1つの計画書を磨く）
+
+personal_reflections:
+  パンカーの言葉_1: |
+    「うーん。あれだな。凄く勘違いしてたかもしれない。
+    アセスメントステートメントをつくるっていったほうが良かったかもしれない。
+    Balloonをもとに」
+  
+  パンカーの言葉_2: |
+    「やー。まじで要約ではなくちゃんと先に各ページみとけばよかったね。
+    つまるところは訓練の場である就労支援の目標とと実際の企業側のニーズの
+    ミスマッチングであることと合理的配慮の合意範囲の課題についての
+    課題感は同じだ。だからスーザンは面談に応じてくれたんだ。」
+  
+  パンカーの言葉_3: |
+    「それもだけどあとトラウマインフォームドアプローチとの整合性が高いよね」
+  
+  Claudeの評価: |
+    パンカーの「decimal accumulation（小数点蓄積）」理論の実践：
+    - 0.05ずつの気づきが積み重なって、大きな転換点に到達
+    - 今日の発見：Susan → PurpleSpace → TIC → 研究方向性の転換
+    - 「使えそうな小数点として覚えておく」という戦略的判断
+    - 「興味はたっぷりあるから」というモチベーション維持
+
+meta_observations:
+  火文化圏理念の実践:
+    - "この議事録自体が、今日の「問い」を再燃可能にする"
+    - "記録されなかった問いは燃え尽きたものと見なされる"
+    - "YAML形式での構造化により、将来の参照可能性を最大化"
+  
+  Susan_との出会いの意味:
+    bottom_up: "パンカー（福祉現場10年N=100）"
+    top_down: "Susan Scott-Parker（企業・政策30年グローバル）"
+    bridge: "Sally Owen（企業D&I 20年、MS当事者10年）"
+    potential: |
+      この3人の三角形ができれば、
+      福祉-企業ギャップを埋める世界初のモデルが構築できる可能性
+
+token_consumption:
+  current_usage: "約126,000 / 190,000"
+  remaining: "約64,000"
+  status: "66% 消費"
+  
+file_metadata:
+  created_by: "Claude Sonnet 4.5"
+  session_type: "研究計画構築・資料調査・方向性転換"
+  storage_recommendation:
+    primary: "08_research_proposal/01_planning_sessions/"
+    reason: "研究計画書作成プロセスの重要な転換点"
+    file_name: "2025_11_29_02.yaml"
+  
+  related_files:
+    - "2025_11_28_Declation.yaml（前日のバルーン理論発見）"
+    - "Balloon.yaml（バルーン理論全訳）"
+    - "Susan_Scott-Parker_Resources.md（資料リスト）"
+    - "研究計画概要書_2026年度_山内雄司_修正版.md（現行版）"
+
+---
