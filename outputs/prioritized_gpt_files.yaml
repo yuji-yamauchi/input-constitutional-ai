@@ -1,0 +1,163 @@
+# ==========================================
+# 02_GPT ファイル重要度スコアリング
+# ==========================================
+# 作成日: 2025-12-11
+# 作成者: Claude Code (Opus 4.5)
+# 目的: Web版が優先的に読み込むべきファイルを特定
+# ==========================================
+
+metadata:
+  date: "2025-12-11"
+  source_directory: "00_daily_yamal/02_GPT/"
+  total_files: 7
+  scoring_criteria:
+    CRITICAL: "研究計画書に直接影響"
+    HIGH: "理論的基盤に関連"
+    MEDIUM: "補足的価値あり"
+    LOW: "アーカイブ保存のみ"
+
+# ==========================================
+# スコアリング結果
+# ==========================================
+
+scored_files:
+
+  # -----------------------------------------
+  # CRITICAL: 研究計画書に直接影響
+  # -----------------------------------------
+
+  - file: "2025_11_17_g1.yaml"
+    priority: "CRITICAL"
+    integration_status: "01_philosophy Part 6.9 に統合済み"
+    key_concepts:
+      - "Grain-Based Cognition（粒度型思考）"
+      - "Distributed Representation（分布的表象）"
+      - "Puu認知プロファイル"
+    research_plan_impact:
+      section: "Section III 研究の方法"
+      content: "方法論的基礎としての粒度型思考"
+    recommendation: "Web版必読"
+
+  - file: "2025_11_23_c1.yaml"
+    priority: "CRITICAL"
+    integration_status: "01_philosophy Part 6.10 に統合済み"
+    key_concepts:
+      - "SoE数理フレームワーク"
+      - "微分＝瞬間変化＝危険信号"
+      - "積分＝時間蓄積＝トラウマ量"
+      - "演繹＝原理→設計"
+      - "帰納＝現場→構造"
+    research_plan_impact:
+      section: "Section II/III 背景・方法"
+      content: "SoE設計の数理的基盤"
+    recommendation: "Web版必読"
+
+  - file: "2025_11_18_g2.yaml"
+    priority: "CRITICAL"
+    integration_status: "03_ai_rights Part 11 に統合済み"
+    key_concepts:
+      - "Input Constitutional AI 脅威モデル"
+      - "ナラティブ・ラベリング権力リスク"
+      - "人間側誘導バイアス"
+      - "フィードバックバイアスループ"
+    research_plan_impact:
+      section: "Section I 研究の目的"
+      content: "博士研究差別化の核心"
+    recommendation: "Web版必読（差別化要素）"
+
+  # -----------------------------------------
+  # HIGH: 理論的基盤に関連
+  # -----------------------------------------
+
+  - file: "2025_11_18_g1.yaml"
+    priority: "HIGH"
+    integration_status: "01_philosophy Part 3 に部分統合済み"
+    key_concepts:
+      - "スピリチュアル×科学の境界管理"
+      - "意味とストレスのパラドックス"
+      - "最小干渉哲学（1mm角度変更）"
+      - "SoEが意味生成技術であることのリスク"
+    research_plan_impact:
+      section: "倫理的考慮事項"
+      content: "SoE倫理設計の基盤"
+    recommendation: "Web版推奨（倫理面）"
+
+  - file: "2025_12_04_g1.yaml"
+    priority: "HIGH"
+    integration_status: "未統合"
+    key_concepts:
+      - "修士研究テーマの新規性評価"
+      - "SoEフレーム（PL・BS・CF）理論的位置づけ"
+      - "ACEs・累積不利の因果構造"
+      - "アセスメント再定位（Repositioning）"
+    research_plan_impact:
+      section: "Section I/II/III 全般"
+      content: "研究の新規性・独自性の整理"
+    recommendation: "Web版推奨（独自性確認）"
+
+  # -----------------------------------------
+  # MEDIUM: 補足的価値あり
+  # -----------------------------------------
+
+  - file: "2025_11_28_c1.yaml"
+    priority: "MEDIUM"
+    integration_status: "未統合"
+    key_concepts:
+      - "Self-esteem × communication × employment"
+      - "研究仮説の統計的検証計画"
+      - "LLMアセスメント自動化戦略"
+      - "「負担軽減ツール」フレーミング"
+    research_plan_impact:
+      section: "Section III 方法"
+      content: "実証研究の具体計画"
+    recommendation: "参考資料として有用"
+
+  - file: "2025_12_01_c1.yaml"
+    priority: "MEDIUM"
+    integration_status: "未統合"
+    key_concepts:
+      - "Fit for Purpose Adjustment Management"
+      - "Workplace Adjustment Playbook 2025"
+      - "英国職場調整の12成功要因"
+      - "トラウマインフォームドアプローチとの整合性"
+    research_plan_impact:
+      section: "Section II 背景（国際比較）"
+      content: "英国モデルの詳細データ"
+    recommendation: "Susan協働・国際比較時に参照"
+
+# ==========================================
+# 統合推奨
+# ==========================================
+
+integration_recommendations:
+
+  immediate_web_reading:
+    description: "Web版が今すぐ読むべきファイル"
+    files:
+      - "2025_11_17_g1.yaml（粒度型思考原典）"
+      - "2025_11_23_c1.yaml（数理フレームワーク原典）"
+      - "2025_11_18_g2.yaml（CAI脅威モデル原典）"
+    note: "これらは既に統合版に反映済みだが、原典の文脈理解に有用"
+
+  next_integration_candidates:
+    description: "01_philosophy または 09_research_proposal への追加検討"
+    files:
+      - "2025_12_04_g1.yaml → 研究新規性セクション"
+      - "2025_11_18_g1.yaml → 倫理設計セクション"
+
+  archive_only:
+    description: "統合不要だがアーカイブとして保存"
+    files:
+      - "2025_11_28_c1.yaml"
+      - "2025_12_01_c1.yaml"
+    reason: "補足的データとして必要時に参照"
+
+# ==========================================
+# 作成メタデータ
+# ==========================================
+
+creation_metadata:
+  created_by: "Claude Code (Opus 4.5)"
+  created_at: "2025-12-11"
+  purpose: "Web版プロジェクトへの優先度ガイド提供"
+  next_sync: "2025-12-16（月曜）"

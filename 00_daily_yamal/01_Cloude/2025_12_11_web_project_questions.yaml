@@ -1,0 +1,174 @@
+# ==========================================
+# Web版プロジェクト「福祉サービス研究計画概要書案」への質問
+# ==========================================
+# 作成日: 2025-12-11
+# 作成者: Claude Code (Opus 4.5)
+# 目的: Claude Codeで精査した過去YAMLの内容をWeb版に確認依頼
+# ==========================================
+
+metadata:
+  date: "2025-12-11"
+  source_session: "Claude Code アーカイブ統合セッション"
+  target_project: "福祉サービス研究計画概要書案（Web版）"
+  files_analyzed:
+    daily_yamal_01_cloude: 14
+    daily_yamal_02_gpt: 7
+    daily_yamal_03_gemini: 1
+    archive_90_pre: "複数ディレクトリ"
+  total_files_scanned: 22+
+
+# ==========================================
+# 質問1: プロジェクトファイルとの整合性確認
+# ==========================================
+question_1_file_sync:
+  topic: "Web版プロジェクトに登録されているYAMLファイルの同期状態"
+
+  observed_in_web:
+    - "2025_11_25_s2.yaml (3352行)"
+    - "2025_11_25_s.yaml (4757行)"
+    - "2025_11_24_susan_meeting_prep.yaml (157行)"
+    - "2025_11_28_g1.yaml (102行)"
+
+  question: |
+    Web版プロジェクトに登録されているYAMLファイルと、
+    GitHub (input-constitutional-ai/00_daily_yamal/) のファイルは同期されていますか？
+
+    特に以下の点を確認したい：
+    1. Web版にあってGitHubにないファイル
+    2. GitHubにあってWeb版にないファイル
+    3. 更新日時の差異
+
+# ==========================================
+# 質問2: 今日の統合作業の反映
+# ==========================================
+question_2_integration_update:
+  topic: "本日追加した哲学統合の反映"
+
+  today_additions:
+    01_philosophy_integrated:
+      - part: "Part 6.9"
+        content: "粒度型思考（Grain-Based Cognition）"
+        source: "02_GPT/2025_11_17_g1.yaml"
+
+      - part: "Part 6.10"
+        content: "SoE数理フレームワーク（微分・積分・演繹・帰納）"
+        source: "02_GPT/2025_11_23_c1.yaml"
+
+    03_ai_rights_integrated:
+      - part: "Part 11"
+        content: "Input Constitutional AI 脅威モデル"
+        source: "02_GPT/2025_11_18_g2.yaml"
+
+  question: |
+    これらの追加内容は、Web版プロジェクトの「手順」や「メモリー」に
+    反映すべきでしょうか？
+
+    特に「Grain-Based Cognition」と「数理フレームワーク」は
+    研究計画書の理論的基盤として重要な概念です。
+
+# ==========================================
+# 質問3: 研究計画書の最新版確認
+# ==========================================
+question_3_research_plan_version:
+  topic: "研究計画書のバージョン管理"
+
+  github_latest:
+    path: "09_research_proposal/01_planning_sessions/research_plan_v2.8.md"
+    note: "CLAUDE.mdで参照されている最新版"
+
+  question: |
+    Web版プロジェクトで使用している研究計画書は
+    v2.8と同期されていますか？
+
+    または、Web版独自の修正版が存在しますか？
+
+# ==========================================
+# 質問4: アーカイブ素材の活用状況
+# ==========================================
+question_4_archive_utilization:
+  topic: "90_pre/fireculture-archives の活用"
+
+  discovered_content:
+    high_value:
+      - file: "sonet1.yaml"
+        content: "SoE核心構造・Three-Layer Model"
+        status: "01_philosophyに統合済み"
+
+      - file: "linl2.yaml"
+        content: "灰色の放棄倫理（Gray Ethics）"
+        status: "01_philosophyに統合済み"
+
+      - file: "narrative.yaml"
+        content: "Narrative概念・語りの構造化"
+        status: "01_philosophyに統合済み"
+
+      - file: "ryouka.yaml"
+        content: "火文化圏継承思想"
+        status: "01_philosophyに統合済み"
+
+  question: |
+    Web版プロジェクトでは、これらのアーカイブ素材は
+    どの程度活用されていますか？
+
+    特に「火文化圏思想」や「Gray Ethics」は
+    SoEの倫理設計に直結する概念です。
+
+# ==========================================
+# 質問5: 出願準備タスクの分担
+# ==========================================
+question_5_task_allocation:
+  topic: "出願までのタスク分担（Claude Code vs Web版）"
+
+  deadline:
+    start: "2026-01-09"
+    end: "2026-01-23"
+    remaining_days: "約4週間"
+
+  proposed_allocation:
+    claude_code:
+      - "ファイル構造整理・統合"
+      - "YAML分割・リファクタリング"
+      - "書類の整形・フォーマット調整"
+
+    web_project:
+      - "研究計画書の理論的精緻化"
+      - "志願理由書の文章推敲"
+      - "先行研究レビューの深掘り"
+
+  question: |
+    この役割分担は適切でしょうか？
+    Web版プロジェクトで今後優先すべきタスクは何ですか？
+
+# ==========================================
+# 補足情報
+# ==========================================
+supplementary_info:
+  token_usage:
+    current_session: "31%"
+    weekly_all_models: "5%"
+    weekly_sonnet: "4%"
+    assessment: "余裕あり、フル活用可能"
+
+  today_session_summary:
+    duration: "約2-3時間"
+    main_work:
+      - "00_daily_yamal 22ファイル全精査"
+      - "90_pre/fireculture-archives 複数ディレクトリ精査"
+      - "01_philosophy_integrated.yaml +2 Parts追加"
+      - "03_ai_rights_integrated.yaml +1 Part追加"
+
+    key_finding: |
+      過去のChatGPTセッション（02_GPT/）に
+      哲学的に重要な概念が多数未統合のまま残っていた。
+      特にGrain-Based Cognition、数理フレームワーク、
+      Input CAI脅威モデルは研究の理論的基盤として重要。
+
+# ==========================================
+# 使用方法
+# ==========================================
+usage_instruction: |
+  このYAMLをWeb版プロジェクトに添付またはコピペして、
+  上記の質問に回答を依頼してください。
+
+  回答は同じYAML形式で返してもらえると、
+  Claude Codeでの後続処理が容易になります。

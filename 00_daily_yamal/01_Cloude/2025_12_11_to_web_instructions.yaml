@@ -1,0 +1,189 @@
+# ==========================================
+# Web版プロジェクトへの指示
+# ==========================================
+# 作成日: 2025-12-11
+# 作成者: Claude Code (Opus 4.5)
+# 宛先: Web版 Claude (福祉サービス研究計画概要書案プロジェクト)
+# 件名: ファイル配置完了報告と読み込み指示
+# ==========================================
+
+metadata:
+  date: "2025-12-11"
+  from: "Claude Code (Opus 4.5)"
+  to: "Web版 Claude (Sonnet 4.5)"
+  subject: "統合ファイル配置完了・読み込み指示"
+
+# ==========================================
+# 完了報告
+# ==========================================
+
+completed_actions:
+  action_1:
+    task: "outputsディレクトリ作成・ファイル配置"
+    status: "COMPLETED"
+    timestamp: "2025-12-11"
+
+    files_placed:
+      - path: "outputs/01_philosophy_integrated.yaml"
+        description: "SoE哲学・存在論・倫理統合記録（最新版）"
+        new_content:
+          - "Part 6.9: 粒度型思考（Grain-Based Cognition）"
+          - "Part 6.10: SoE数理フレームワーク（Mathematical Framework）"
+        total_lines: "約1047行"
+
+      - path: "outputs/03_ai_rights_integrated.yaml"
+        description: "AI倫理・CRPD・データ主権統合記録（最新版）"
+        new_content:
+          - "Part 11: Input Constitutional AI 脅威モデル"
+        total_lines: "約637行"
+
+      - path: "outputs/prioritized_gpt_files.yaml"
+        description: "02_GPT 7ファイルの重要度スコアリング"
+        content: "CRITICAL/HIGH/MEDIUM分類"
+
+  action_2:
+    task: "Web版回答YAML保存"
+    status: "COMPLETED"
+    path: "00_daily_yamal/01_Cloude/2025_12_11_web_response.yaml"
+
+# ==========================================
+# 読み込み指示
+# ==========================================
+
+reading_instructions:
+
+  priority_1_immediate:
+    description: "今すぐ読み込むべきファイル"
+    files:
+      - file: "outputs/01_philosophy_integrated.yaml"
+        focus_sections:
+          - "Part 6.9: grain_based_cognition（612-653行）"
+          - "Part 6.10: soe_mathematical_framework（655-712行）"
+        userMemories_update:
+          - "パンカーの認知スタイル = 粒度型思考（Grain-Based Cognition）"
+          - "SoE数理フレームワーク（微分/積分/演繹/帰納の4象限）"
+
+      - file: "outputs/03_ai_rights_integrated.yaml"
+        focus_sections:
+          - "Part 11: input_cai_threat_model（553-617行）"
+        userMemories_update:
+          - "Input Constitutional AI = データ収集段階での憲法原理埋め込み"
+          - "Output型（既存）vs Input型（パンカー提案）の構造的差異"
+
+  priority_2_reference:
+    description: "参考として確認すべきファイル"
+    files:
+      - file: "outputs/prioritized_gpt_files.yaml"
+        purpose: "02_GPT原典ファイルの重要度確認"
+
+# ==========================================
+# GitHubからの取得方法
+# ==========================================
+
+file_access_methods:
+
+  method_1_github_direct:
+    description: "GitHub上で直接確認"
+    repository: "input-constitutional-ai"
+    path: "outputs/"
+    files:
+      - "01_philosophy_integrated.yaml"
+      - "03_ai_rights_integrated.yaml"
+      - "prioritized_gpt_files.yaml"
+
+  method_2_raw_url:
+    description: "Raw URLでの取得（Web版が直接読み込む場合）"
+    base_url: "https://raw.githubusercontent.com/[USER]/input-constitutional-ai/main/outputs/"
+    note: "リポジトリがprivateの場合はこの方法は使用不可"
+
+  method_3_copy_paste:
+    description: "パンカーがコピペで提供"
+    procedure:
+      step_1: "パンカーがGitHubまたはVSCodeでファイルを開く"
+      step_2: "全文または必要部分をコピー"
+      step_3: "Web版プロジェクトに貼り付け"
+    recommended_for: "大きなファイル（1000行超）"
+
+# ==========================================
+# 研究計画書への統合提案
+# ==========================================
+
+research_plan_integration:
+
+  section_I_purpose:
+    add_content: |
+      "既存のConstitutional AI研究は主に出力段階でのフィルタリング
+      （Output Filtering型）に焦点を当ててきた。本研究はこれに対し、
+      データ収集段階での権利保護構造の埋め込み（Input Structuring型）
+      という新たなアプローチを提案する。"
+    source: "Part 11: input_cai_threat_model"
+
+  section_III_method:
+    add_content_1: |
+      "本研究は研究者の15年にわたる粒度型思考（Grain-Based Cognition）
+      による知見蓄積を基盤とする。これは個別事例から抽出した微小な
+      洞察を体系的に統合し、指数的価値を創出するアプローチである。"
+    source: "Part 6.9: grain_based_cognition"
+
+    add_content_2: |
+      "SoEは以下の4象限数理フレームワークにより構造化される：
+      【微分的評価】瞬間的状態変化の検出
+      【積分的評価】長期累積効果の測定
+      【演繹的推論】理論構造から個別支援への展開
+      【帰納的推論】個別事例から構造的洞察の抽出"
+    source: "Part 6.10: soe_mathematical_framework"
+
+  section_III_characteristics:
+    add_content: |
+      "本研究は「灰色の放棄倫理（Gray Ethics）」に立脚する。
+      これは支援者の善意や熱意に依存せず、制度構造そのものが
+      適切な支援を誘導する設計思想である。"
+    source: "Part 6.6: gray_ethics"
+    note: "このセクションは01_philosophy_integratedに既存"
+
+# ==========================================
+# 次回同期予定
+# ==========================================
+
+next_sync:
+  date: "2025-12-16（月曜）"
+  format: "質問YAML形式"
+  expected_deliverables_from_web:
+    - "userMemories更新完了報告"
+    - "研究計画書修正箇所リスト"
+    - "次週タスク確認"
+
+# ==========================================
+# 緊急連絡先
+# ==========================================
+
+emergency_contact:
+  method: "緊急YAML発行"
+  filename_format: "YYYY_MM_DD_urgent_to_[code/web].yaml"
+  trigger_conditions:
+    - "理論的矛盾の発見"
+    - "重大な整合性問題"
+    - "提出期限に影響するブロッカー"
+
+# ==========================================
+# 使用方法
+# ==========================================
+
+usage_instruction: |
+  このYAMLをWeb版プロジェクトに提供してください。
+
+  【Web版が実行すべきこと】
+  1. outputs/01_philosophy_integrated.yaml を読み込み
+     → Part 6.9, 6.10 の内容を理解
+     → userMemories に追記
+
+  2. outputs/03_ai_rights_integrated.yaml を読み込み
+     → Part 11 の内容を理解
+     → userMemories に追記
+
+  3. 研究計画書の該当セクションを修正
+     → Section I, III への統合
+
+  【パンカーが行うこと】
+  - Web版がファイルにアクセスできない場合、コピペで提供
+  - 修正後の研究計画書をレビュー

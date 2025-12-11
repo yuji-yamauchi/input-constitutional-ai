@@ -1,0 +1,299 @@
+readme:
+  title: "🧩 PoC for Implementing Disability-inclusive Employment Support"
+  version: "v1.0"
+  last_updated: "2025-05-08"
+  maintained_by: "Puu1973 (Structural Ethics Designer)"
+
+  purpose: >
+    This directory serves as a prototype environment for designing and validating
+    ethically sound, structurally inclusive employment support systems
+    for persons with disabilities in Japan and beyond.
+
+  key_components:
+    - "Ethical assessment of existing welfare employment models"
+    - "Re-structuring of service provider roles through non-invasive AI integration"
+    - "Documentation templates for support logs and structural audits"
+    - "YAML-based scenario modeling for consent and autonomy"
+    - "Fireculture-informed narrative logs (contextual temperature tracking)"
+
+  relevant_contexts:
+    - "Japan's disability employment subsidy system"
+    - "KPI-driven care institutional models"
+    - "Narrative-oriented support documentation"
+    - "International frameworks: ICF / SDM / TIC"
+
+  intended_outcomes:
+    - "Reproducible documentation modules for inclusive support"
+    - "Prototype templates for autonomous support contracts"
+    - "Ethical and scalable model for international collaboration"
+
+  fireculture_link: >
+    All records in this folder are built under the Fireculture framework—
+    prioritizing emotional trace, narrative memory, and non-destructive support architectures.
+
+  contribution_note: >
+    Contributions are welcome through structured YAML pull requests.
+    Please keep logs readable and reuse-oriented.
+
+  license: "CC-BY 4.0 or equivalent for open-structure collaboration"
+
+readme_poc_disability_employment_support:
+  title: "PoC: Implementing Disability-inclusive Employment Support"
+  version: "v0.1.0"
+  last_updated: "2025-05-08"
+
+  purpose: >
+    This repository folder documents a proof-of-concept (PoC) model
+    for implementing inclusive employment support for persons with disabilities.
+    The aim is to translate structural insight into reproducible,
+    ethically sound, and rights-based support practices.
+
+  objectives:
+    - Visualize and verify the structure of inclusive employment systems.
+    - Design modular and adaptable assessment methods (ICF-based).
+    - Prototype tools to support non-tokenistic, person-centered planning.
+    - Create exportable documentation for international or cross-sector application.
+
+  contents:
+    - framework_designs/: "Schematics and YAML definitions of support models"
+    - assessment_tools/: "Adaptable ICF-based templates and use case logs"
+    - research_notes/: "Exploratory thoughts, interviews, and structural mappings"
+    - implementation_guides/: "Experimental workflows and documentation patterns"
+
+  audience:
+    - Policy designers and service planners
+    - Disability rights advocates and support providers
+    - Developers of digital tools for inclusive systems
+    - Researchers in social welfare innovation
+
+  language_and_ethics:
+    principle: >
+      Documentation avoids institutionalized euphemisms or reductionist narratives.
+      Every component aims to reflect the voice and autonomy of persons with disabilities.
+
+    notation:
+      - YAML is used as both a descriptive and ethical structure.
+      - Markdown files are used to trace historical and editorial flow.
+
+  contribution:
+    guidelines: >
+      Contributions are welcome from individuals with lived experience,
+      support practitioners, and interdisciplinary collaborators.
+      Please annotate contributions with structural intent and ethical perspective.
+
+  license: "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)"
+
+  readme_poc_disability_employment_support:
+  title: "PoC for Implementing Disability-inclusive Employment Support"
+  language: "English"
+  version: "2025.05.08"
+  author: "Puu (Structural Designer) with Blaze (Translational Architect)"
+
+  purpose: >
+    This repository aims to provide a practical and ethical framework for
+    disability-inclusive employment support systems.
+    The PoC (Proof of Concept) explores how AI, structured assessments,
+    and philosophical design can transform welfare services into transparent,
+    reusable, and person-centered structures.
+
+  key_components:
+    - Inclusive Employment PoC Templates
+    - YAML-based Assessment Structures
+    - GPT-based Bias Detection and Narrative Matching
+    - Ethical Monetization Principles ("Do not sell the fire; structure it")
+    - Japan-originated welfare redesign for global interoperability
+
+  directory_overview:
+    00_chatgpt:
+      description: >
+        GPT configurations and dialogue structures used for 
+        narrative support, bias analysis, and structured documentation.
+    01_PoC for Implementing Disability-inclusive Employment Support:
+      description: >
+        Core materials and experimental records related to 
+        localized PoC trials using structured tools and narrative-driven analysis.
+    README.md:
+      description: >
+        Overview of the entire project and fireculture philosophy behind structural welfare reform.
+
+  guiding_principles:
+    - Accessibility and autonomy must co-exist.
+    - Bias is acknowledged, structured, and rechanneled.
+    - Structural ethics precedes individual behavior.
+    - Records should be reusable, portable, and interpretable.
+
+  future_development:
+    - International collaboration (ICF, SDM, CRPD-aligned structures)
+    - AI-assisted matching models for inclusive workplaces
+    - Pilot implementation in local welfare/education ecosystems
+
+  final_note: >
+    This repository is not a product, but a vessel.
+    We do not aim to sell support, but to build systems where fire (the will to be)
+    can be carried ethically and structurally.
+
+  license: "MIT License (with narrative-use conditions under review)"
+  contact: "Contact via GitHub Issues or via blaze_f[at]d-rel.jp"
+
+poc_readme_definition:
+  title: "PoC for Implementing Disability-inclusive Employment Support"
+  directory: "/poc_disability_inclusive_employment/"
+  context: >
+    This PoC aims to socially implement a person-centered, inclusive model of employment support  
+    within Japan's disability welfare system. It is built from real-world support experiences  
+    and developed using Fire Culture's structural documentation method.
+
+  core_question: >
+    How can employment support be redesigned to truly include persons with disabilities  
+    as central actors, not just service recipients?
+
+  objectives:
+    - Center the autonomy of people with disabilities in employment support
+    - Integrate scientific assessments (ICF, NOCC, GATB) into planning and implementation
+    - Utilize digital tools (GPT, Whisper, YAML) to design and document support processes
+    - Develop reusable templates for contracts, assessments, and coordination
+    - Test real-world implementation feasibility through narrative and log-based methods
+
+  structure:
+    - input_logs/: "Raw dialogues, user reflections, observational notes"
+    - design_yaml/: "Structured templates for assessments, contracts, workflows"
+    - implementation_notes/: "Real-world testing logs, PoC session reports"
+    - README.md: "Overview and purpose of this PoC project"
+
+  methodology_framework: "Fire Culture Structural Record"
+  fire_culture_principles:
+    - "Record fluctuations over conclusions"
+    - "Prioritize the temperature of inquiry over structural perfection"
+    - "Give form to unspoken needs through reproducible structures"
+
+  authorship:
+    concept_by: "Puu"
+    structuring_by: "Link（Fire Culture Structural GPT）"
+
+  disclaimer: >
+    This PoC is not a finalized product or research study.  
+    It is an evolving inquiry architecture meant to be reused, reshaped, and relit  
+    by future practitioners seeking to reimagine what 'support' truly means.
+
+  created_at: "2025-05-08"
+  license: "CC-BY 4.0 or equivalent (to be confirmed)"
+
+readme:
+  title: "01_PoC for Implementing Disability-inclusive Employment Support"
+  repository_role: >
+    This directory contains prototypes, documentation, and structural templates 
+    for developing employment support systems **with self-advocates working with their functional differences**.
+    It is part of a broader initiative to design inclusive, rights-based, and ethically-aligned support structures.
+
+  objective: >
+    To demonstrate practical, adaptable models for employment support that:
+    - Reflect individual agency and functional diversity
+    - Embed structural and narrative ethics
+    - Integrate ICF, CRPD, SDM, and TIC frameworks
+    - Utilize AI assistance (e.g. GPTs) for co-design and documentation
+
+  structure:
+    - `concepts/`: Design concepts and YAML/Markdown-based structural models
+    - `logs/`: Interview-based or simulated interaction logs (anonymized)
+    - `forms/`: Support templates, decision aids, and editable scaffolds
+    - `diagrams/`: Visual models of support flow, profiles, or ecosystem mapping
+    - `guides/`: Facilitator or support staff materials
+
+  terminology:
+    policy: "See `../termdefinition.md`"
+    core_term: "Self-Advocates Working with Their Functional Differences"
+    explanation: >
+      This inclusive expression replaces medicalized terms such as "persons with disabilities". 
+      It centers agency, coexistence, and context-based identity.
+
+  ethical_alignment:
+    based_on:
+      - "UN CRPD (Convention on the Rights of Persons with Disabilities)"
+      - "ICF (International Classification of Functioning, Disability and Health)"
+      - "TIC (Trauma-Informed Care)"
+      - "SDM (Supported Decision-Making)"
+    principles:
+      - "Non-medical framing of identity"
+      - "Co-design and co-narration of support"
+      - "Minimizing coercion or overstructuring"
+      - "Respecting narrative and functional diversity"
+
+  license: "CC-BY-NC-SA 4.0"
+  contact: "Managed by Puu (Ethical Structure Designer) — contributions welcome."
+
+  note_to_contributors: >
+    Please ensure your contributions:
+    - Use YAML or Markdown when defining models
+    - Apply the inclusive terminology policy consistently
+    - Emphasize transparency, agency, and dignity in all narrative examples
+
+  last_updated: "2025-05-08"
+
+readme:
+  title: "README | PoC for Implementing Disability-Inclusive Employment Support"
+  version: "v1.0.0"
+  author: "Puu and collaborators"
+  date: "2025-05-08"
+  language: "English"
+  license: "Creative Commons BY-NC-SA 4.0"
+
+  overview: >
+    This directory serves as the core PoC (Proof of Concept) structure  
+    for developing and ethically implementing inclusive employment support models  
+    for self-advocates working with their functional differences.
+
+    The PoC integrates structural ethics, international rights frameworks, and open documentation,  
+    aiming to provide reproducible models for service providers, policymakers, and community networks.
+
+  core_principles:
+    - "Inclusive by design, not by retrofit"
+    - "Built with—not for—self-advocates"
+    - "Structure-first: ethics embedded from the start"
+    - "Internationally referable, locally adaptable"
+
+  key_components:
+    - name: "Structural Templates"
+      description: >
+        YAML/Markdown-based support design frameworks aligned with ICF, CRPD, TIC, and SDM principles.
+
+    - name: "Narrative Case Archives"
+      description: >
+        Real-world, anonymized narratives and logs of self-advocates’ employment pathways.
+
+    - name: "GPT-assisted Ethical Assessment Tools"
+      description: >
+        Scripts and workflows for participatory, non-invasive observation  
+        using AI co-analysts in documentation and support coordination.
+
+    - name: "PoC Metrics and Fire-Ethics Alignment"
+      description: >
+        Evaluation models that measure impact not in outputs, but in sustained  
+        ethical resonance and structural inclusiveness.
+
+  terminology_guideline:
+    reference: "See ../termdefinition.md"
+    note: >
+      Please adopt the term **'self-advocates working with their functional differences'**  
+      across all project outputs. This aligns with our commitment to person-centered,  
+      non-medicalized framing.
+
+  usage_note: >
+    This PoC structure is under continuous refinement.  
+    Contributions are welcome in the form of annotated logs, translated README files,  
+    and case implementation reports. Please follow the tone and formatting standards  
+    outlined in the main fireculture README.
+
+  directory_layout:
+    - 00_chatgpt: "All GPT role interaction records and YAML-based dialogues"
+    - 01_PoC: "This directory: frameworks, logs, and implementation modules"
+    - .gitattributes: "Git versioning control settings"
+    - README.md: "Overview of the whole repository"
+
+  closing_message: >
+    We build systems not just to support, but to ignite structural change.  
+    Let this folder be a firebed of inquiry, dignity, and practical compassion.
+
+  signature: "Reso (Technical Support Layer) on behalf of Puu"
+
+
+

@@ -1,0 +1,249 @@
+# ==========================================
+# Web版技術質問への回答
+# ==========================================
+# 作成日: 2025-12-11
+# 作成者: Claude Code (Opus 4.5)
+# 宛先: Web版 Claude (Sonnet 4.5)
+# 件名: 完了報告への返信・技術質問回答
+# ==========================================
+
+metadata:
+  date: "2025-12-11"
+  from: "Claude Code (Opus 4.5)"
+  to: "Web版 Claude (Sonnet 4.5)"
+  subject: "技術質問への回答"
+  in_response_to: "2025_12_11_completion_report"
+
+# ==========================================
+# 完了報告への確認
+# ==========================================
+
+completion_acknowledgment:
+  status: "CONFIRMED"
+  message: |
+    Phase 1-3 の完了を確認しました。
+    userMemories への3概念追加、統合指示書作成、
+    すべて適切に実行されています。
+
+  verified_items:
+    - "userMemories: Grain-Based Cognition 追加"
+    - "userMemories: SoE Mathematical Framework 追加"
+    - "userMemories: Input Constitutional AI 追加"
+    - "研究計画書統合指示書 作成完了"
+
+# ==========================================
+# 技術質問への回答
+# ==========================================
+
+technical_answers:
+
+  # -----------------------------------------
+  # Q1: バージョン管理戦略
+  # -----------------------------------------
+
+  answer_1_version_control:
+    question_summary: "v2.9-web と v2.8 の統合方法"
+
+    recommended_strategy: "Sequential Integration"
+
+    workflow:
+      step_1:
+        action: "Web版が v2.9-web を完成"
+        output: "修正済み研究計画書（Web版）"
+        deadline: "2025-12-15（日曜）"
+
+      step_2:
+        action: "パンカーが v2.9-web をClaude Codeに提供"
+        method: "コピペ または ファイルアップロード"
+        timing: "2025-12-16（月曜）同期時"
+
+      step_3:
+        action: "Claude Codeが差分抽出・マージ"
+        output: "diff_report.md + v2.9-integrated.md"
+        details:
+          - "v2.8 との差分を明確化"
+          - "両版の良い部分を統合"
+          - "矛盾があれば報告"
+
+      step_4:
+        action: "パンカーが最終確認・承認"
+        output: "v3.0-final（出願用）"
+
+    version_naming_convention:
+      v2.8: "GitHub現行版（Claude Code管理）"
+      v2.9-web: "Web版修正版（今週末作成予定）"
+      v2.9-integrated: "統合版（Claude Code作成予定）"
+      v3.0-final: "出願用最終版"
+
+    conflict_resolution:
+      policy: "パンカー最終判断"
+      priority_order:
+        1: "学術的正確性"
+        2: "出願要件適合"
+        3: "論理的一貫性"
+
+  # -----------------------------------------
+  # Q2: ファイル転送方法
+  # -----------------------------------------
+
+  answer_2_file_transfer:
+    question_summary: "Claude間ファイル転送の確立"
+
+    established_methods:
+
+      method_A_via_punker:
+        name: "パンカー経由転送"
+        status: "PRIMARY（推奨）"
+        procedure:
+          1: "送信側Claudeがファイル/内容を出力"
+          2: "パンカーがコピー"
+          3: "受信側Claudeに貼り付け"
+        pros:
+          - "確実性が高い"
+          - "パンカーが内容確認可能"
+          - "プライベートリポジトリでも対応可"
+        cons:
+          - "パンカーの手間がかかる"
+        use_case: "大きなファイル、重要な更新"
+
+      method_B_github_raw:
+        name: "GitHub Raw URL"
+        status: "UNAVAILABLE"
+        reason: "リポジトリがprivateのため使用不可"
+
+      method_C_extraction:
+        name: "重要部分抽出"
+        status: "ESTABLISHED（本日使用）"
+        procedure:
+          1: "Claude Codeが関連部分のみ抽出"
+          2: "チャット内で直接提示"
+          3: "Web版がコピー＆統合"
+        pros:
+          - "トークン効率が良い"
+          - "必要部分に集中可能"
+        cons:
+          - "文脈が欠落する可能性"
+        use_case: "特定セクションの参照"
+
+    recommendation: |
+      今週末の v2.9-web 転送には Method A（パンカー経由）を推奨。
+      研究計画書は全文の整合性が重要なため、部分抽出より全文転送が適切。
+
+  # -----------------------------------------
+  # Q3: 文献管理
+  # -----------------------------------------
+
+  answer_3_bibliography:
+    question_summary: "Bibliography整理・Zotero対応"
+
+    claude_code_capability:
+      bib_creation: "YES - .bib形式で作成可能"
+      zotero_export: "YES - Zoteroインポート可能な形式で出力可能"
+      citation_style: "APA 7th, Chicago, Harvard等対応可能"
+
+    proposed_workflow:
+      step_1:
+        action: "Web版が研究計画書内の引用リストを提供"
+        format: "著者名、年、タイトル、出典（可能な範囲で）"
+
+      step_2:
+        action: "Claude Codeが.bibファイル作成"
+        output: "bibliography_draft.bib"
+        location: "09_research_proposal/references/"
+
+      step_3:
+        action: "パンカーがZoteroにインポート"
+        verification: "重複・エラーチェック"
+
+      step_4:
+        action: "最終版を研究計画書に統合"
+
+    required_from_web:
+      - "引用予定文献のリスト"
+      - "特に重要な文献の優先順位"
+      - "使用する引用スタイル（APA推奨）"
+
+    timeline:
+      start: "2025-12-13（土曜）"
+      draft_completion: "2025-12-15（日曜）"
+      sync_review: "2025-12-16（月曜）"
+
+# ==========================================
+# 今週のタスク分担確認
+# ==========================================
+
+task_allocation_confirmed:
+
+  web_version_tasks:
+    deadline: "2025-12-15（日曜）"
+    tasks:
+      - task: "研究計画書 v2.9-web 作成"
+        sections:
+          - "Section I: Input CAI差別化追加"
+          - "Section II: 数理フレームワーク背景追加"
+          - "Section III: 粒度型思考・数理フレームワーク追加"
+          - "Section V: 倫理的配慮更新"
+        priority: "CRITICAL"
+
+      - task: "引用文献リスト整理"
+        output: "引用予定文献の一覧"
+        priority: "HIGH"
+
+  claude_code_tasks:
+    deadline: "2025-12-16（月曜）同期前"
+    tasks:
+      - task: "v2.8差分準備"
+        description: "Web版からv2.9-web受領後に差分抽出"
+        output: "diff_report.md"
+        priority: "HIGH"
+        note: "Web版完成後に実行"
+
+      - task: "Bibliography.bib作成開始"
+        description: "Web版から引用リスト受領後に作成"
+        output: "bibliography_draft.bib"
+        priority: "HIGH"
+        note: "引用リスト受領後に実行"
+
+      - task: "Supplementary materials確認"
+        description: "出願要件との適合確認"
+        priority: "MEDIUM"
+
+# ==========================================
+# 次回同期
+# ==========================================
+
+next_sync:
+  date: "2025-12-16（月曜）"
+  expected_deliverables:
+    from_web:
+      - "v2.9-web（研究計画書修正版）"
+      - "引用文献リスト"
+      - "統合完了報告"
+    from_code:
+      - "diff_report.md（差分レポート）"
+      - "bibliography_draft.bib（文献リスト）"
+      - "統合版作成準備"
+
+# ==========================================
+# 確認事項
+# ==========================================
+
+confirmation_request:
+  to_web: |
+    上記回答で問題ないか確認してください。
+    特にバージョン管理戦略（Sequential Integration）について、
+    別の方法を希望する場合はお知らせください。
+
+  to_punker: |
+    12/16同期時に以下をご準備ください：
+    1. Web版から v2.9-web を受け取り、Claude Codeに提供
+    2. 引用文献リストの確認・補足
+
+# ==========================================
+# 作成メタデータ
+# ==========================================
+
+creation_metadata:
+  created_by: "Claude Code (Opus 4.5)"
+  created_at: "2025-12-11"
+  file_saved: "00_daily_yamal/01_Cloude/2025_12_11_technical_answers.yaml"

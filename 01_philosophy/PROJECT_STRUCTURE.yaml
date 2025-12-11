@@ -3,7 +3,7 @@
 # ==========================================
 # 目的: セッション記録の適切な保存先振り分け
 # 対象: Input Constitutional AI研究プロジェクト
-# 更新日: 2025-11-18
+# 更新日: 2025-12-11
 # ==========================================
 
 project_structure:
@@ -77,8 +77,8 @@ project_structure:
         - "国際連携戦略"
     
     research_proposal:
-      path: "08_research_proposal"
-      full_path: "C:/Users/USER/Documents/GitHub/input-constitutional-ai/08_research_proposal"
+      path: "09_research_proposal"
+      full_path: "C:/Users/USER/Documents/GitHub/input-constitutional-ai/09_research_proposal"
       purpose: "大学院入試用研究計画書類"
       subdirectories:
         readme:
@@ -119,12 +119,19 @@ project_structure:
             - "最小干渉倫理の議論"
     
     daily_yaml:
-      path: "99_daily_yamal"  # Note: タイポママ（yamalだがyamlの意）
-      full_path: "C:/Users/USER/Documents/GitHub/input-constitutional-ai/99_daily_yamal"
-      purpose: "日常的なセッション記録（上記カテゴリに該当しないもの）"
+      path: "00_daily_yamal"
+      full_path: "C:/Users/USER/Documents/GitHub/input-constitutional-ai/00_daily_yamal"
+      purpose: "日常的なセッション記録（AI別に分類）"
       subdirectories:
-        claude: "01_Claude"
-        gpt: "02_GPT"
+        claude_web: "01_Cloude"      # Claude Web版（プロジェクト機能）
+        gpt: "02_GPT"                 # ChatGPT
+        gemini: "03_gemini"           # Gemini
+        vsclaude: "04_VSClaude"       # Claude Code（VSCode拡張）
+
+    outputs:
+      path: "outputs"
+      full_path: "C:/Users/USER/Documents/GitHub/input-constitutional-ai/outputs"
+      purpose: "AI間共有ファイル（統合ファイルのコピー等）"
 
 # ==========================================
 # セッション記録の振り分けルール
@@ -295,6 +302,16 @@ changelog:
       - "10個のフォルダ定義"
       - "振り分けルール策定"
       - "Custom Instructions本文案作成"
+
+  - version: "1.1"
+    date: "2025-12-11"
+    changes:
+      - "99_daily_yamal → 00_daily_yamal に修正"
+      - "08_research_proposal → 09_research_proposal に修正"
+      - "04_VSClaude フォルダ追加（Claude Code用）"
+      - "03_gemini フォルダ追加"
+      - "outputs フォルダ追加（AI間共有用）"
+      - "AI間連携体制の確立を反映"
 
 # ==========================================
 # メタ情報

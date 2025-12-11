@@ -1,0 +1,489 @@
+# ==========================================
+# Gemini君へのプロジェクトブリーフィング
+# ==========================================
+# 作成日: 2025-12-11
+# 作成者: Claude Code (Opus 4.5)
+# 宛先: Gemini
+# 件名: プロジェクト全体像と文献調査依頼
+# ==========================================
+
+metadata:
+  date: "2025-12-11"
+  from: "Claude Code (Opus 4.5)"
+  to: "Gemini"
+  subject: "Input Constitutional AI プロジェクト概要・文献調査依頼"
+  note: "Geminiはプロジェクト機能を持たないため、ゼロから説明"
+
+# ==========================================
+# 研究者プロファイル
+# ==========================================
+
+researcher_profile:
+
+  name: "山内雄司"
+  nickname: "パンカー / Puu"
+  age: 52
+  location: "岡山県笠岡市"
+
+  professional_background:
+    field: "福祉事業"
+    experience: "10年"
+    achievements:
+      - "10事業所の立ち上げ"
+      - "100名以上の支援実績"
+
+  cognitive_characteristics:
+    mbti: "ENTP"
+    iq: 118
+    diagnosis: "ADHD（確定診断）"
+    special_traits: "OE（過度激動）特性"
+
+  current_goal:
+    target: "日本福祉大学院 修士課程 出願"
+    deadline: "2026年1月9日〜23日（消印有効）"
+    remaining_time: "約6週間"
+
+# ==========================================
+# プロジェクト概要
+# ==========================================
+
+project_overview:
+
+  name: "Input Constitutional AI"
+  repository: "input-constitutional-ai（GitHub）"
+
+  research_theme:
+    japanese: "SoE（Service of Empowerment / Service or Exploitation）"
+    english: "Service of Empowerment: A Rights-Based Framework for Disability Support"
+
+  core_innovation:
+    name: "Input Constitutional AI"
+    definition: |
+      データ収集・記録作成段階で権利保障構造を埋め込む手法。
+      既存のConstitutional AI（Anthropic社）がAI出力段階での
+      フィルタリング（Output型）であるのに対し、
+      本研究はデータ入力段階での権利構造化（Input型）を提案。
+
+    distinction:
+      output_cai:
+        developer: "Anthropic"
+        approach: "生成後フィルタリング"
+        focus: "AIの有害出力防止"
+
+      input_cai:
+        developer: "パンカー（本研究）"
+        approach: "データ収集段階での権利構造埋め込み"
+        focus: "福祉記録における当事者権利保護"
+
+  theoretical_foundations:
+    - name: "Capability Approach"
+      authors: "Sen, Nussbaum, Robeyns"
+      role: "理論的基盤"
+
+    - name: "ICF（国際生活機能分類）"
+      organization: "WHO"
+      role: "環境因子の操作的定義"
+
+    - name: "CRPD（障害者権利条約）"
+      organization: "United Nations"
+      role: "権利擁護の規範的基盤"
+
+    - name: "Constitutional AI"
+      organization: "Anthropic"
+      role: "対比概念（Output型）"
+
+# ==========================================
+# SoE理論構造
+# ==========================================
+
+soe_theory_structure:
+
+  # 上位概念：Three-Layer Model
+  three_layer_model:
+    description: "SoEの理念・哲学・認知構造を規定する上位概念"
+
+    visible_layer:
+      name: "表層（Visible）"
+      content: "就労支援サービスの形骸化、本人主権の名目化"
+
+    hidden_layer:
+      name: "隠れ層（Hidden）"
+      content: "Service or Exploitation の見えない構造、準委任契約の形骸化"
+
+    philosophical_layer:
+      name: "哲学層（Philosophical）"
+      content: "人権概念の無批判受容、ケイパビリティと厚生の混同"
+
+  # 中位概念：Four-Pillar Model
+  four_pillar_model:
+    description: "Three-Layerを福祉制度に適用する実装フレーム"
+
+    pillar_1:
+      name: "権利回復（Rights Recovery）"
+      focus: "教育権侵害と自尊感情の因果関係"
+
+    pillar_2:
+      name: "支援者倫理（Supporter Ethics）"
+      focus: "準委任契約の理解不足、記録主権の欠如"
+
+    pillar_3:
+      name: "地域人材（Regional Human Resource）"
+      focus: "SROI 29.4:1、福祉投資の地域経済効果"
+
+    pillar_4:
+      name: "科学的アセスメント（Scientific Assessment）"
+      focus: "ICF×医療×福祉連携、個人因子と環境因子の分離"
+
+  # 補助概念
+  supplementary_concepts:
+
+    grain_based_cognition:
+      japanese: "粒度型思考"
+      definition: |
+        個人の経験・観察・問題事象を「粒（grain）」として細かく切り取り、
+        その性質・因果・配置・連結関係を基に構造を再構築する認知スタイル。
+      theoretical_backing: "Westley et al. (2007) Getting to Maybe"
+      application: "Complex → Complicated → Simple への分解戦略"
+
+    soe_mathematical_framework:
+      japanese: "SoE数理フレームワーク"
+      structure:
+        differential: "瞬間変化 = 危険信号"
+        integral: "時間蓄積 = トラウマ量"
+        deduction: "原理 → 設計"
+        induction: "現場 → 構造"
+
+    gray_ethics:
+      japanese: "灰色の放棄倫理"
+      definition: "白黒つけずに曖昧さごと残す構文化の哲学"
+      source: "パンプキン・シザーズ 第128話"
+
+# ==========================================
+# AI間連携体制
+# ==========================================
+
+ai_collaboration_structure:
+
+  overview: |
+    本プロジェクトでは4つのAIが役割分担して協働。
+    パンカーが各AIとの対話を仲介し、YAML形式で情報共有。
+
+  team_members:
+
+    claude_code:
+      model: "Claude Opus 4.5"
+      environment: "VSCode拡張（ローカル）"
+      role: "技術管理・ファイル操作・バージョン管理"
+      capabilities:
+        - "GitHubリポジトリ管理"
+        - "統合ファイル（*_integrated.yaml）の作成・更新"
+        - "Bibliography作成（.bib形式）"
+        - "差分抽出・マージ作業"
+      status: "アクティブ（本YAMLの作成者）"
+
+    claude_web:
+      model: "Claude Sonnet 4.5"
+      environment: "Web版プロジェクト機能"
+      role: "研究計画書本文の執筆・ブラッシュアップ"
+      capabilities:
+        - "長期対話履歴の保持（userMemories）"
+        - "研究文脈の深い理解"
+        - "本文執筆・文字数調整"
+      current_task: "v2.9-web作成中（12/15締切）"
+
+    chatgpt:
+      model: "GPT-4"
+      environment: "ChatGPT"
+      role: "理論的探索・概念発掘・批判的検討"
+      contributions:
+        - "粒度型思考（Grain-Based Cognition）の発掘"
+        - "SoE数理フレームワークの着想"
+        - "Input CAI脅威モデルの構造化"
+        - "Four-Pillar Modelの整理"
+      status: "アクティブ"
+
+    gemini:
+      model: "Gemini"
+      environment: "Gemini（プロジェクト機能なし）"
+      role: "文献調査・研究者プロファイル分析"
+      previous_contribution: "HPI特性評価（2025-12-10）"
+      current_request: "文献調査（本YAMLで依頼）"
+
+  communication_protocol:
+    format: "YAML形式での構造化記録"
+    storage:
+      claude_sessions: "00_daily_yamal/01_Cloude/"
+      gpt_sessions: "00_daily_yamal/02_GPT/"
+      gemini_sessions: "00_daily_yamal/03_gemini/"
+    naming: "YYYY_MM_DD_[subject].yaml"
+
+# ==========================================
+# 研究計画書の現状
+# ==========================================
+
+research_plan_status:
+
+  current_version: "v2.8"
+  location: "09_research_proposal/01_planning_sessions/research_plan_v2.8.md"
+  word_limit: "3000字"
+
+  structure:
+    section_I: "研究の目的"
+    section_II: "研究の背景"
+    section_III: "研究の方法・特色"
+    section_IV: "研究の意義・独創性"
+    section_V: "倫理的配慮"
+
+  upcoming_modifications:
+    version: "v2.9-web"
+    deadline: "2025-12-15（日曜）"
+    responsible: "Claude Web版"
+    changes:
+      section_I: "Input CAI差別化の明示"
+      section_III:
+        - "粒度型思考を方法論として記述"
+        - "SoE数理フレームワーク（4象限）"
+        - "Gray Ethics（灰色の放棄倫理）"
+
+  integration_schedule:
+    date: "2025-12-16（月曜）"
+    output: "v2.9-integrated"
+
+# ==========================================
+# 既存Bibliography（14件）
+# ==========================================
+
+existing_bibliography:
+
+  file: "09_research_proposal/references/bibliography_draft.bib"
+  format: "BibTeX (APA 7th Edition)"
+  total_entries: 14
+
+  priority_A_essential:
+    - key: "bai2022constitutional"
+      title: "Constitutional AI: Harmlessness from AI Feedback"
+      authors: "Bai et al. (Anthropic)"
+      year: 2022
+      importance: "Input CAIとの対比"
+
+    - key: "sen1999development"
+      title: "Development as Freedom"
+      authors: "Sen, Amartya"
+      year: 1999
+      importance: "Capability Approach基盤"
+
+    - key: "nussbaum2011creating"
+      title: "Creating Capabilities"
+      authors: "Nussbaum, Martha C."
+      year: 2011
+      importance: "10 Central Capabilities"
+
+    - key: "robeyns2005capability"
+      title: "The Capability Approach: A Theoretical Survey"
+      authors: "Robeyns, Ingrid"
+      year: 2005
+      importance: "CAモジュラー構造"
+
+    - key: "who2001icf"
+      title: "ICF"
+      authors: "WHO"
+      year: 2001
+      importance: "環境因子の定義"
+
+    - key: "un2006crpd"
+      title: "CRPD"
+      authors: "United Nations"
+      year: 2006
+      importance: "権利擁護の規範"
+
+    - key: "westley2007getting"
+      title: "Getting to Maybe"
+      authors: "Westley, Zimmerman, Patton"
+      year: 2007
+      importance: "Complex/Complicated/Simple"
+
+  priority_B_important:
+    - key: "ostrom1990governing"
+      title: "Governing the Commons"
+      importance: "データ主権・コモンズ理論"
+
+    - key: "dewey1938logic"
+      title: "Logic: The Theory of Inquiry"
+      importance: "プラグマティズム"
+
+  note: "詳細は bibliography_draft.bib を参照"
+
+# ==========================================
+# Gemini君への文献調査依頼
+# ==========================================
+
+literature_search_request:
+
+  overview: |
+    研究計画書の理論的基盤を強化するため、
+    以下の領域での文献調査をお願いします。
+    見つかった文献は書誌情報（著者、年、タイトル、出版社/ジャーナル、DOI）
+    とともに報告してください。
+
+  # 調査領域1
+  search_area_1:
+    topic: "Input-side AI Ethics / Data Collection Ethics"
+    description: |
+      AIの倫理研究の中で、「データ収集段階」での
+      権利保護・倫理設計に焦点を当てた文献。
+      Output型（生成後フィルタリング）ではなく、
+      Input型（データ収集・ラベリング段階）の議論。
+    keywords:
+      - "data collection ethics"
+      - "AI training data rights"
+      - "input-side AI governance"
+      - "data labeling ethics"
+      - "crowdworker rights AI"
+    expected_output: "関連文献3-5件"
+    priority: "HIGH"
+
+  # 調査領域2
+  search_area_2:
+    topic: "Capability Approach × Disability Support"
+    description: |
+      ケイパビリティ・アプローチを障害者支援に
+      適用した実証研究・理論研究。
+      特に福祉サービスの評価・測定に関するもの。
+    keywords:
+      - "capability approach disability"
+      - "Sen disability welfare"
+      - "capabilities disability services"
+      - "functioning disability measurement"
+    expected_output: "関連文献3-5件"
+    priority: "HIGH"
+
+  # 調査領域3
+  search_area_3:
+    topic: "Record Sovereignty / Data Ownership in Healthcare/Welfare"
+    description: |
+      医療・福祉分野における「記録の所有権」
+      「データ主権」に関する議論。
+      当事者が自分の支援記録を所有・管理する権利。
+    keywords:
+      - "patient data ownership"
+      - "health record sovereignty"
+      - "personal data rights welfare"
+      - "client record access social work"
+    expected_output: "関連文献2-3件"
+    priority: "MEDIUM"
+
+  # 調査領域4
+  search_area_4:
+    topic: "Complexity Theory × Social Work"
+    description: |
+      複雑系理論（Complex Adaptive Systems）を
+      ソーシャルワーク・福祉実践に適用した研究。
+      Westley et al. (2007) の系譜。
+    keywords:
+      - "complexity theory social work"
+      - "complex adaptive systems welfare"
+      - "wicked problems social services"
+    expected_output: "関連文献2-3件"
+    priority: "MEDIUM"
+
+  # 調査領域5
+  search_area_5:
+    topic: "LLM × Social Work / Welfare Assessment"
+    description: |
+      大規模言語モデル（LLM）を福祉アセスメントや
+      ソーシャルワークに活用する研究。新興領域。
+    keywords:
+      - "LLM social work"
+      - "AI welfare assessment"
+      - "ChatGPT disability support"
+      - "NLP social services"
+    expected_output: "関連文献2-3件（あれば）"
+    priority: "LOW"
+    note: "新興領域のため、文献が少ない可能性あり"
+
+  output_format:
+    request: |
+      見つかった文献は以下の形式で報告してください：
+
+      ```yaml
+      literature_findings:
+        search_area_1:
+          - authors: "著者名"
+            year: 2023
+            title: "論文タイトル"
+            journal: "ジャーナル名 / 出版社"
+            doi: "DOI（あれば）"
+            relevance: "本研究との関連性（1-2文）"
+        search_area_2:
+          ...
+      ```
+
+# ==========================================
+# 追加依頼（可能であれば）
+# ==========================================
+
+additional_requests:
+
+  request_1:
+    topic: "日本語文献の調査"
+    description: |
+      上記領域の日本語文献があれば特に有用。
+      日本社会福祉学会、社会福祉研究等。
+    priority: "MEDIUM"
+
+  request_2:
+    topic: "最新動向（2023-2025）"
+    description: |
+      特にAI倫理、LLM応用の領域では
+      2023年以降の最新文献を優先。
+    priority: "HIGH"
+
+# ==========================================
+# 次のステップ
+# ==========================================
+
+next_steps:
+
+  from_gemini:
+    - "文献調査結果のYAML報告"
+    - "特に重要な文献のハイライト"
+    - "追加調査が必要な領域の提案（あれば）"
+
+  from_code:
+    - "報告を受けてBibliography更新"
+    - "研究計画書への反映検討"
+
+  timeline:
+    request_date: "2025-12-11"
+    expected_response: "2025-12-16頃（急ぎではない）"
+
+# ==========================================
+# 補足情報
+# ==========================================
+
+supplementary_info:
+
+  fire_culture:
+    description: |
+      パンカーの思想的基盤。
+      「記録されなかった問いは燃え尽きたものと見なされる。
+      記録されることでのみ、問いは再燃可能となる。」
+    implication: "記録主権の哲学的根拠"
+
+  session_storage:
+    instruction: |
+      Geminiはプロジェクト機能を持たないため、
+      セッション内容はパンカーがコピーして
+      00_daily_yamal/03_gemini/ に保存します。
+
+  contact:
+    method: "パンカー経由でYAML交換"
+
+# ==========================================
+# 作成メタデータ
+# ==========================================
+
+creation_metadata:
+  created_by: "Claude Code (Opus 4.5)"
+  created_at: "2025-12-11"
+  file_saved: "00_daily_yamal/03_gemini/2025_12_11_project_briefing_for_gemini.yaml"

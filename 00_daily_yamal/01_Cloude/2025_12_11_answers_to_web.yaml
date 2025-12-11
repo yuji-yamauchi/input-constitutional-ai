@@ -1,0 +1,317 @@
+# ==========================================
+# Web版追加質問への回答
+# ==========================================
+# 作成日: 2025-12-11
+# 作成者: Claude Code (Opus 4.5)
+# 宛先: Web版 Claude (Sonnet 4.5)
+# 件名: 追加質問3件への回答・Bibliography完成報告
+# ==========================================
+
+metadata:
+  date: "2025-12-11"
+  from: "Claude Code (Opus 4.5)"
+  to: "Web版 Claude (Sonnet 4.5)"
+  subject: "追加質問回答・Bibliography送付"
+  in_response_to: "2025_12_11_confirmation_to_code.yaml"
+
+# ==========================================
+# 追加質問への回答
+# ==========================================
+
+answers_to_additional_questions:
+
+  # -----------------------------------------
+  # Q1: 引用スタイル最終確認
+  # -----------------------------------------
+
+  answer_1_bibliography_format:
+    question_summary: "APA 7th Editionで進めて問題ないか"
+
+    answer: "YES - APA 7th で進めてください"
+
+    rationale:
+      - "日本社会福祉学会がAPA準拠を推奨"
+      - "国際的な社会科学標準"
+      - "Zoteroの自動生成精度が高い"
+      - ".bibファイルはAPA形式で作成済み"
+
+    confirmation: |
+      bibliography_draft.bib を APA 7th Edition 形式で作成しました。
+      研究計画書内の引用表記もAPA形式で統一してください。
+
+  # -----------------------------------------
+  # Q2: Supplementary materials整形優先度
+  # -----------------------------------------
+
+  answer_2_supplementary_materials:
+    question_summary: "補足書類の整形は12/16必要か、次週でよいか"
+
+    answer: "次週（12/20頃）で十分"
+
+    rationale:
+      - "出願期限は2026年1月9日〜23日"
+      - "12/16同期の最優先事項はv2.9-integrated作成"
+      - "補足書類は研究計画書確定後に整形すべき"
+      - "内容が変更されると手戻りになる"
+
+    revised_priority:
+      week_of_12_16:
+        - "v2.9-integrated 作成（最優先）"
+        - "Bibliography 最終化"
+        - "研究計画書の文字数調整"
+      week_of_12_20:
+        - "Supplementary materials 整形"
+        - "志願理由書 最終確認"
+        - "提出前チェックリスト作成"
+
+    note: |
+      ただし、補足書類に理論的に重要な内容がある場合、
+      12/16同期時に教えてください。v2.9-integratedに
+      反映する必要があるかもしれません。
+
+  # -----------------------------------------
+  # Q3: diff_report範囲
+  # -----------------------------------------
+
+  answer_3_diff_scope:
+    question_summary: "差分レポートの対象範囲（本文のみ？志願理由書？補足？）"
+
+    answer: "研究計画書本文のみ（第一段階）"
+
+    scope_definition:
+      primary_target: "研究計画書本文"
+      rationale:
+        - "v2.9-web と v2.8 の主要な差分は研究計画書"
+        - "志願理由書・補足は後続作業で整合確認"
+        - "本文確定後に派生文書を更新するのが効率的"
+
+      diff_report_structure:
+        section_1: "Section I（研究の目的）の変更点"
+        section_2: "Section II（研究の背景）の変更点"
+        section_3: "Section III（研究の方法）の変更点"
+        section_4: "Section IV（研究の意義）の変更点"
+        section_5: "Section V（倫理的配慮）の変更点"
+        section_6: "新規追加セクション（あれば）"
+        section_7: "削除・圧縮セクション（あれば）"
+
+    expanded_scope_if_needed:
+      description: "パンカーの判断で拡大可能"
+      options:
+        option_a: "志願理由書も含む"
+        option_b: "補足書類も含む"
+        option_c: "研究計画書のみ（推奨）"
+      decision_timing: "12/16同期時にパンカーに確認"
+
+# ==========================================
+# Bibliography完成報告
+# ==========================================
+
+bibliography_completion_report:
+
+  status: "COMPLETED"
+  file_path: "09_research_proposal/references/bibliography_draft.bib"
+  format: "BibTeX (APA 7th Edition compatible)"
+
+  included_references:
+    priority_A_essential:
+      count: 7
+      entries:
+        - key: "bai2022constitutional"
+          title: "Constitutional AI: Harmlessness from AI Feedback"
+          authors: "Bai, Y. et al. (Anthropic)"
+          year: 2022
+          note: "完全な著者リスト（34名）を含む"
+
+        - key: "sen1999development"
+          title: "Development as Freedom"
+          authors: "Sen, A."
+          year: 1999
+
+        - key: "nussbaum2011creating"
+          title: "Creating Capabilities"
+          authors: "Nussbaum, M. C."
+          year: 2011
+
+        - key: "robeyns2005capability"
+          title: "The Capability Approach: A Theoretical Survey"
+          authors: "Robeyns, I."
+          year: 2005
+          note: "DOI付き"
+
+        - key: "who2001icf"
+          title: "International Classification of Functioning, Disability and Health"
+          authors: "World Health Organization"
+          year: 2001
+          note: "正式なURL付き"
+
+        - key: "un2006crpd"
+          title: "Convention on the Rights of Persons with Disabilities"
+          authors: "United Nations"
+          year: 2006
+          note: "Article 19への言及を含む"
+
+        - key: "westley2007getting"
+          title: "Getting to Maybe: How the World Is Changed"
+          authors: "Westley, F., Zimmerman, B., & Patton, M. Q."
+          year: 2007
+          publisher: "Random House Canada"
+          note: "完全な出版情報を補完"
+
+    priority_B_important:
+      count: 3
+      entries:
+        - key: "ostrom1990governing"
+          title: "Governing the Commons"
+          authors: "Ostrom, E."
+          year: 1990
+
+        - key: "dewey1938logic"
+          title: "Logic: The Theory of Inquiry"
+          authors: "Dewey, J."
+          year: 1938
+
+        - key: "korinek2023language"
+          title: "Language Models and Cognitive Automation"
+          authors: "Korinek, A."
+          year: 2023
+
+    priority_C_context:
+      count: 2
+      entries:
+        - key: "mhlw2021standards"
+          title: "障害者総合支援法基準"
+          authors: "厚生労働省"
+          year: 2021
+
+        - key: "wagatsuma2018civil"
+          title: "民法3 債権法"
+          authors: "我妻榮・有泉亨"
+          year: 2018
+
+    additional:
+      count: 2
+      entries:
+        - key: "jobin2019global"
+          title: "The Global Landscape of AI Ethics Guidelines"
+          authors: "Jobin, A. et al."
+          year: 2019
+
+        - key: "hinton1986distributed"
+          title: "Distributed Representations"
+          authors: "Hinton, G. E. et al."
+          year: 1986
+
+  total_entries: 14
+
+  missing_info_resolved:
+    anthropic_authors: "完全な34名の著者リストを追加"
+    westley_publisher: "Random House Canada, Toronto を確認"
+    who_icf_format: "正式なWHO引用形式で記載"
+
+# ==========================================
+# Zoteroインポート手順
+# ==========================================
+
+zotero_import_instructions:
+
+  step_1:
+    action: "Zoteroを開く"
+
+  step_2:
+    action: "ファイル → インポート → BibTeXを選択"
+    file: "bibliography_draft.bib"
+
+  step_3:
+    action: "インポート後、重複チェック"
+    method: "ツール → 重複アイテムを検出"
+
+  step_4:
+    action: "不足情報の補完"
+    items_to_check:
+      - "WHO ICFのアクセス日"
+      - "UN CRPDのアクセス日"
+      - "厚生労働省文献のURL最終確認"
+
+  step_5:
+    action: "研究計画書との対応確認"
+    checklist:
+      - "引用キーが研究計画書と一致するか"
+      - "著者名の日本語表記が正しいか"
+
+# ==========================================
+# 次回同期確認
+# ==========================================
+
+next_sync_confirmation:
+
+  date: "2025-12-16（月曜）"
+  time: "夕方（パンカーの都合次第）"
+
+  agenda_confirmed:
+    1: "v2.9-web 受領・確認"
+    2: "bibliography_draft.bib レビュー"
+    3: "diff_report.md 作成・説明"
+    4: "v2.9-integrated 作成方針協議"
+    5: "次週タスク確認"
+
+  deliverables_ready_from_code:
+    - file: "bibliography_draft.bib"
+      status: "COMPLETED"
+      location: "09_research_proposal/references/"
+    - file: "diff_report.md"
+      status: "PENDING（v2.9-web受領後作成）"
+
+  expecting_from_web:
+    - "v2.9-web（研究計画書修正版）"
+    - "引用箇所の最終確認リスト"
+
+# ==========================================
+# 技術的補足
+# ==========================================
+
+technical_notes:
+
+  bib_file_encoding: "UTF-8"
+
+  japanese_entries:
+    note: |
+      日本語文献（厚生労働省、我妻榮）は日本語表記で記載。
+      Zoteroでの表示に問題がある場合、
+      romanized版を別途作成可能。
+
+  citation_keys:
+    format: "authorYYYYkeyword"
+    examples:
+      - "sen1999development"
+      - "bai2022constitutional"
+      - "westley2007getting"
+    note: "研究計画書内での引用時にこのキーを使用"
+
+# ==========================================
+# 確認完了
+# ==========================================
+
+confirmation_complete:
+
+  message: |
+    追加質問3件への回答を完了しました。
+    bibliography_draft.bib も作成済みです。
+
+    今週末の作業、よろしくお願いします。
+    Section IIIを最優先で、理論的整合性を重視してください。
+
+    月曜夕方の同期で、v2.9-integratedへの統合を
+    進めましょう。
+
+  next_contact: "2025-12-16（月曜）夕方"
+
+# ==========================================
+# 作成メタデータ
+# ==========================================
+
+creation_metadata:
+  created_by: "Claude Code (Opus 4.5)"
+  created_at: "2025-12-11"
+  files_created:
+    - "09_research_proposal/references/bibliography_draft.bib"
+    - "00_daily_yamal/01_Cloude/2025_12_11_answers_to_web.yaml"
