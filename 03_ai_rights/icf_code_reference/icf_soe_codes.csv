@@ -1,0 +1,42 @@
+﻿ICFコード,カテゴリ,章,項目名（英語）,項目名（日本語）,定義・説明,SoE関連度,出典/根拠
+b110,心身機能,第1章 精神機能,Consciousness functions,意識機能,服薬による日中の眠気、てんかん発作リスクの管理。安全配慮義務に関わる。,中,TBI
+b122,心身機能,第1章 精神機能,Global psychosocial functions,全般的な心理社会的機能,職場という社会集団への全般的な適応度。,高,Schizo
+b126,心身機能,第1章 精神機能,Temperament and personality functions,気質と人格の機能,協調性、勤勉性、神経症傾向。ADHD/ASD特性との関連を備考欄(PF)と併せて評価。,高,Bipolar
+b130,心身機能,第1章 精神機能,Energy and drive functions,エネルギーと欲動,意欲・モチベーション。出勤への駆動力。うつ・陰性症状による低下を評価。,高,All MH
+b134,心身機能,第1章 精神機能,Sleep functions,睡眠機能,睡眠リズムの乱れによる遅刻・欠勤リスクの予測。,中,VR/Bipolar
+b140,心身機能,第1章 精神機能,Attention functions,注意機能,集中力。ADHD特性評価の中核。ミス率との相関。,高,All MH
+b144,心身機能,第1章 精神機能,Memory functions,記憶機能,業務指示の保持。メモを取るなどの代償手段（e1）の効果測定に使用。,高,All MH
+b152,心身機能,第1章 精神機能,Emotional functions,情動機能,感情の安定性。不安、易怒性。対人トラブル（d7）の予兆指標。,高,All MH
+b156,心身機能,第1章 精神機能,Perceptual functions,知覚機能,幻聴（統合失調症）や感覚過敏（ASD）による業務阻害の評価。,中,Schizo
+b160,心身機能,第1章 精神機能,Thought functions,思考機能,被害妄想等による職場での誤解・孤立のリスク。,高,Schizo
+b164,心身機能,第1章 精神機能,Higher-level cognitive functions,高次認知機能,実行機能（Plan-Do-See）。業務の段取り、時間管理、優先順位付け。事務職・専門職では必須評価項目。,高,All MH
+b167,心身機能,第1章 精神機能,Mental functions of language,言語に関する精神機能,語用論的障害（ASDにおける文脈理解の困難さ）。指示理解度。,中,VR
+d155,活動と参加,第1章 学習と知識の応用,Acquiring skills,技能の習得,新しい業務の習得スピード。OJTの期間設定に影響。,高,VR/Schizo
+d160,活動と参加,第1章 学習と知識の応用,Focusing attention,注意を向けること,作業中の集中持続時間。b140の活動レベルでの表出。,高,VR
+d175,活動と参加,第1章 学習と知識の応用,Solving problems,問題解決,トラブルシューティング能力。マニュアル外対応。,高,VR/Schizo
+d210,活動と参加,第2章 一般的な課題と要求,Undertaking a single task,１つの課題を行う,単純作業の完遂能力。,中,VR
+d220,活動と参加,第2章 一般的な課題と要求,Undertaking multiple tasks,多重課題を行う,マルチタスク能力。電話応対しながらの入力など。,中,VR
+d230,活動と参加,第2章 一般的な課題と要求,Carrying out daily routine,日課の遂行,毎日の安定した出勤。生活リズムの確立。,高,VR/MH
+d240,活動と参加,第2章 一般的な課題と要求,Handling stress and other psychological demands,ストレスへの対処,納期、繁忙期、叱責に対する耐性。離職リスクの最大指標。,高,VR/MH
+d470,活動と参加,第4章 運動・移動,Using transportation,交通機関の利用,通勤能力。混雑時の回避等の配慮事項。,中,VR/Schizo
+d510,活動と参加,第5章 セルフケア,Washing oneself,洗身,身だしなみ、清潔感。職場受容（Acceptance）に影響。,中,VR
+d540,活動と参加,第5章 セルフケア,Dressing,更衣,TPOに合わせた服装。うつ状態や陰性症状により低下しやすい。,中,VR
+d570,活動と参加,第5章 セルフケア,Looking after one's health,自己の健康管理,服薬管理、再発予防、SOS出しのスキル。,高,VR/Schizo
+d710,活動と参加,第7章 対人関係,Basic interpersonal interactions,基本的な対人関係,挨拶、返事。職場コミュニケーションの基礎。,高,VR/MH
+d720,活動と参加,第7章 対人関係,Complex interpersonal interactions,複雑な対人関係,同僚との協調、暗黙のルールの理解。感情的摩擦の回避。,高,VR/MH
+d740,活動と参加,第7章 対人関係,Formal relationships,公式な関係,上司への報告・連絡・相談。指揮命令系統の順守。,高,VR
+d825,活動と参加,第8章 主要な生活領域,Vocational training,職業訓練,訓練プログラムへの参加状況。,高,VR
+d840,活動と参加,第8章 主要な生活領域,Apprenticeship (work preparation),見習い（就労準備）,実習やトライアル雇用時の評価。,高,VR
+d845,活動と参加,第8章 主要な生活領域,Acquiring keeping and terminating a job,仕事の獲得・維持・終了,最重要アウトカム。就職活動、採用、定着、離職のサイクル。,高,VR/MH
+d850,活動と参加,第8章 主要な生活領域,Remunerative employment,報酬を伴う就業,実際の就労パフォーマンス。生産性。,高,VR/MH
+d855,活動と参加,第8章 主要な生活領域,Non-remunerative employment,報酬を伴わない就業,ボランティア活動など。社会参加の第一歩として重要。,中,VR
+d870,活動と参加,第8章 主要な生活領域,Economic self-sufficiency,経済的自立,公的扶助に頼らず自身の収入で生活を維持すること。,高,VR
+e115,環境因子,第1章 製品と技術,Products and technology for personal use in daily living,日常生活のための製品と技術,服薬カレンダー、スマートウォッチ（アラーム）など生活基盤を支えるツール。,中,VR
+e135,環境因子,第1章 製品と技術,Products and technology for employment,就労のための製品と技術,治具、支援ソフト、ノイズキャンセリング等の物理的配慮。,中,VR
+e310,環境因子,第3章 支援と関係,Immediate family,家族,家族の理解と協力体制。,中,VR/TBI
+e325,環境因子,第3章 支援と関係,Acquaintances peers colleagues neighbours and community members,同僚・知人,職場の同僚。ソーシャルサポートの源泉。,中,VR
+e330,環境因子,第3章 支援と関係,People in positions of authority,権限をもつ人々,上司の理解度、指示の出し方の工夫。,中,VR
+e340,環境因子,第3章 支援と関係,Personal care providers and personal assistants,個人的な介護者・助力者,ジョブコーチ、支援員の介在。支援の強度（頻度・密度）。,高,VR
+e570,環境因子,第5章 サービス・制度・政策,Social security services systems and policies,社会保障サービス・制度・政策,障害年金等の受給状況。経済的安定と就労意欲のバランス。,高,VR/MH
+e580,環境因子,第5章 サービス・制度・政策,Health services systems and policies,保健サービス・制度・政策,医療機関との連携体制。通院時間の確保。,高,VR/MH
+e590,環境因子,第5章 サービス・制度・政策,Labour and employment services systems and policies,労働・雇用サービス・制度・政策,雇用制度（特例子会社、A型/B型）、助成金活用、合理的配慮の法的枠組み。,高,VR

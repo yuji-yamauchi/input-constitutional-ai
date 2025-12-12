@@ -1,0 +1,222 @@
+# GPTプロジェクト共有用コンテキスト
+# Created: 2025-12-12
+# Purpose: GPTに渡す前提情報・研究文脈
+
+---
+metadata:
+  project: "Input Constitutional AI"
+  researcher: "山内雄司（パンカー）"
+  created_by: "Claude Code (Opus 4.5)"
+  version: "1.0"
+
+---
+# ===========================
+# 1. 研究の核心
+# ===========================
+
+core_concept:
+  title: "Input Constitutional AI"
+
+  problem_statement: |
+    AnthropicのConstitutional AIは「AI出力」を制約する。
+    しかし、福祉現場では「データ入力段階」で既に人権侵害が起きている。
+    支援記録は支援者視点で書かれ、当事者の声は構造的に消される。
+
+  innovation: |
+    Input Constitutional AI = データ記録段階での権利保護
+
+    従来: 人間 → データ → AI処理 → [Constitutional AI] → 出力
+                                         ↑ Output側制約
+
+    提案: 人間 → [Input CAI] → データ → AI処理 → 出力
+                    ↑ Input側で権利保護
+
+  soe_definition:
+    dual_meaning:
+      - "Service of Empowerment: ケイパビリティを高める福祉サービス"
+      - "Service or Exploitation: 支援が搾取に転じる境界の批判的検討"
+
+---
+# ===========================
+# 2. 理論的枠組み
+# ===========================
+
+theoretical_framework:
+  three_layer_model:
+    description: "問題を3層で捉える上位概念"
+    layers:
+      visible: "表面的課題（就労支援の形骸化、低工賃問題）"
+      hidden: "不可視の構造（Service or Exploitationの力学）"
+      philosophical: "基盤的前提（人権概念の無批判的受容）"
+
+  four_pillar_model:
+    description: "SoE実装のための4つの柱"
+    pillars:
+      - name: "権利回復（Rights Recovery）"
+        focus: "当事者の主体性を取り戻す"
+      - name: "支援者倫理（Supporter Ethics）"
+        focus: "支援者のための倫理的枠組み"
+      - name: "地域人材（Regional Human Resource）"
+        focus: "コミュニティベースの人材育成"
+      - name: "科学的アセスメント（Scientific Assessment）"
+        focus: "エビデンスに基づく評価手法"
+
+  relationship: |
+    Three-Layer（哲学・認知構造）
+      ↓
+    Four-Pillar（実装フレーム）
+      ↓
+    SoEシステム（具体的な福祉サービス設計）
+
+---
+# ===========================
+# 3. 複式簿記アセスメント構想
+# ===========================
+
+double_entry_assessment:
+  concept: |
+    障がい福祉のアセスメントを「複式簿記」の原理で再設計する。
+
+    【従来のアセスメント問題】
+    - 支援者の一方的記録（単式簿記的）
+    - 当事者の声が記録されない
+    - 「できない」ことリストになりがち
+    - データが支援者・事業所に帰属
+
+  double_entry_principle: |
+    【複式簿記の原理を適用】
+
+    会計: 借方（資産増）= 貸方（負債増 or 資本増）
+          → すべての取引は2面で記録される
+
+    アセスメント:
+      当事者視点の記録 ⇔ 支援者視点の記録
+      ケイパビリティ（できること）⇔ バリア（阻害要因）
+      希望・目標 ⇔ 現状・課題
+
+    → 一方だけでは記録が成立しない構造にする
+
+  expected_effects:
+    - "当事者の声が構造的に記録される"
+    - "支援者の主観が相対化される"
+    - "「できない」だけでなく「できる」も必須記録に"
+    - "データの透明性・追跡可能性が向上"
+
+  connection_to_input_cai: |
+    複式簿記アセスメント = Input Constitutional AIの実装形態の一つ
+    データ入力段階で「当事者の権利」を構造的に保護する仕組み
+
+---
+# ===========================
+# 4. 関連する国際標準・フレームワーク
+# ===========================
+
+existing_frameworks:
+  icf:
+    name: "国際生活機能分類（ICF）"
+    org: "WHO"
+    relevance: |
+      - 障害を「医学モデル」から「社会モデル」へ
+      - 環境因子・個人因子を含む包括的分類
+      - SoEのアセスメント基盤として活用
+
+  crpd:
+    name: "障害者権利条約（CRPD）"
+    org: "国連"
+    relevance: |
+      - 「私たちのことを私たち抜きに決めるな」
+      - 自己決定権・法的能力の尊重
+      - Input CAIの権利論的根拠
+
+  capability_approach:
+    name: "ケイパビリティ・アプローチ"
+    theorists: "Sen, Nussbaum, Robeyns"
+    relevance: |
+      - 「何ができるか」に焦点
+      - functionings（機能）とcapabilities（潜在能力）
+      - SoEの理論的基盤
+
+  iso_series:
+    status: "調査依頼中"
+    question: |
+      以下のISO規格がSoE/複式簿記アセスメントに関連するか調査してほしい：
+      - ISO 9001（品質マネジメント）
+      - ISO 27001（情報セキュリティ）
+      - ISO 30414（人的資本報告）
+      - ISO 26000（社会的責任）
+      - その他、福祉・ヘルスケア関連ISO
+
+---
+# ===========================
+# 5. 今回の調査依頼
+# ===========================
+
+current_request:
+  topic: "ISOシリーズと複式簿記アセスメントの接続可能性"
+
+  background: |
+    複式簿記アセスメントを「福祉サービスの品質管理」として
+    国際標準に位置づけられないかを検討したい。
+
+    特に以下の観点：
+    1. データ品質・透明性（ISO 27001的観点）
+    2. 人的資本としての当事者データ（ISO 30414的観点）
+    3. サービス品質の継続的改善（ISO 9001的観点）
+    4. 社会的責任・倫理（ISO 26000的観点）
+
+  questions:
+    - "福祉・ヘルスケア分野に特化したISO規格は何があるか？"
+    - "アセスメント・評価プロセスに関するISO規格はあるか？"
+    - "複式簿記原理をマネジメントシステムに応用した事例はあるか？"
+    - "当事者参加・共同意思決定に関する国際標準はあるか？"
+    - "データ主権・個人情報の本人帰属に関する規格はあるか？"
+
+  output_format: |
+    調査結果は以下の形式で報告してほしい：
+    - 規格名、番号、発行機関
+    - 概要（1-2文）
+    - SoE/複式簿記アセスメントとの関連性
+    - 参照すべき条項（あれば）
+
+---
+# ===========================
+# 6. 研究者プロファイル
+# ===========================
+
+researcher_profile:
+  name: "山内雄司（パンカー/Puu）"
+  background:
+    - "福祉事業10年、10事業所立ち上げ"
+    - "100名以上の障がい者就労支援実績"
+    - "放送大学卒業"
+  cognitive:
+    - "ENTP（外向直観思考知覚）"
+    - "ADHD確定診断"
+    - "OE（過度激動）特性"
+  current_goal: "日本福祉大学 大学院 修士課程 2026年1月出願"
+
+---
+# ===========================
+# 7. AI連携体制
+# ===========================
+
+ai_collaboration:
+  claude_code:
+    role: "技術管理・ファイル操作・Bibliography"
+    note: "このYAMLを作成したAI"
+  claude_web:
+    role: "研究計画書執筆・理論的精緻化"
+  chatgpt:
+    role: "理論探索・批判的検討・ISO調査（今回の依頼）"
+  gemini:
+    role: "文献調査・ICFコード一覧作成中"
+
+  communication:
+    format: "YAML"
+    repository: "GitHub: input-constitutional-ai"
+
+---
+notes:
+  - "このYAMLはGPTプロジェクトに共有する前提情報"
+  - "ISO調査の結果はYAML形式で返信してもらえると統合しやすい"
+  - "質問があればこのYAMLを参照して文脈を確認してください"

@@ -1,0 +1,169 @@
+# VSCode Claude Code セッションサマリー
+# Date: 2025-12-12
+# Model: Claude Opus 4.5 (claude-opus-4-5-20251101)
+
+session_metadata:
+  date: "2025-12-12"
+  start_time: "午後"
+  token_reset: "17:00 JST"
+  researcher: "山内雄司（パンカー/Puu）"
+  ai_model: "Claude Opus 4.5"
+
+# =============================================================================
+# 主要タスク
+# =============================================================================
+main_tasks:
+  - task: "DACTS 28項目詳細のMarkdown変換"
+    status: "completed"
+    source: "GPT調査PDF"
+    output: "09_research_proposal/04_references/DACTS_28items_2025_12_12.md"
+    details:
+      - "28項目完全収録（H1-H11, O1-O7, S1-S10）"
+      - "測定目的・定義・測定方法・分類を表形式で整理"
+      - "TMACT改訂版情報、ライセンス条件、SoE関連性分析を追加"
+
+  - task: "TMACT調査報告確認"
+    status: "confirmed"
+    source: "Gemini調査"
+    file: "09_research_proposal/04_references/TMACT_summary_2025_12_12.yaml"
+    details:
+      - "47項目（6サブスケール: OS, CT, ST, CP, EP, PP）"
+      - "DACTSとの比較分析"
+      - "日本における実装課題"
+      - "YAML形式のまま保持（AI間共有に最適）"
+
+  - task: "FPE資料の整理"
+    status: "completed"
+    source: "Claude Web (Sonnet 4.5)"
+    actions:
+      - "タイポ修正: FPE_sumrry → FPE_summary"
+      - "フォルダ移動: icf_code_reference → 04_references"
+    output: "09_research_proposal/04_references/FPE_summary_2025_12_12.md"
+
+  - task: "ISO関連ファイルの命名規則統一"
+    status: "completed"
+    actions:
+      - "ISO31000_summry → ISO31000_summary（タイポ修正）"
+      - "ISO_SOE_report2025_12_12 → ISO_SOE_report_2025_12_12（日付形式統一）"
+      - "ISO26000_summary → ISO26000_summary_2025_12_12（日付追加）"
+
+# =============================================================================
+# ファイル構成（整理後）
+# =============================================================================
+file_structure:
+  iso_reference:
+    path: "03_ai_rights/iso_reference/"
+    files:
+      - name: "ISO26000_summary_2025_12_12.md"
+        content: "社会的責任（7中核主題）"
+      - name: "ISO30414_11categories_2025_12_12.yaml"
+        content: "人的資本報告（11カテゴリ・58指標）"
+      - name: "ISO31000_summary_2025_12_12.yaml"
+        content: "リスクマネジメント（8原則・プロセス）"
+      - name: "ISO_SOE_report_2025_12_12.yaml"
+        content: "ISO×SoE関連性分析（5規格比較）"
+
+  references:
+    path: "09_research_proposal/04_references/"
+    files:
+      - name: "DACTS_28items_2025_12_12.md"
+        content: "DACTS 28項目詳細（GPT調査）"
+        format: "Markdown"
+      - name: "DACTSの28項目詳細.pdf"
+        content: "DACTS原本（GPT調査）"
+        format: "PDF"
+      - name: "TMACT_summary_2025_12_12.yaml"
+        content: "TMACT 47項目詳細（Gemini調査）"
+        format: "YAML"
+      - name: "act_summary_2025_12_12.md"
+        content: "ACT包括的レポート"
+        format: "Markdown"
+      - name: "CD-TEP_summary_2025_11_12.md"
+        content: "CD-TEP法（贄川先生の方法論）"
+        format: "Markdown"
+      - name: "FPE_summary_2025_12_12.md"
+        content: "家族心理教育（Claude Web調査）"
+        format: "Markdown"
+
+# =============================================================================
+# AI間連携状況
+# =============================================================================
+ai_collaboration:
+  claude_code:
+    role: "技術管理・ファイル操作・バージョン管理"
+    tasks_today:
+      - "PDF→Markdown変換"
+      - "ファイル名修正・フォルダ移動"
+      - "命名規則統一"
+
+  claude_web:
+    role: "研究計画書本文執筆・ブラッシュアップ"
+    contributions:
+      - "FPE_summary_2025_12_12.md作成"
+
+  chatgpt:
+    role: "理論的探索・概念発掘・批判的検討"
+    contributions:
+      - "DACTS 28項目詳細PDF"
+      - "ISO31000_summary YAML"
+      - "ISO_SOE_report YAML"
+
+  gemini:
+    role: "文献調査・研究者プロファイル分析"
+    contributions:
+      - "TMACT_summary_2025_12_12.yaml（47項目）"
+      - "ICF_full_analysis_2025_12_12.md"
+
+# =============================================================================
+# 12/15 贄川先生面談準備状況
+# =============================================================================
+niekawa_meeting_prep:
+  date: "2025-12-15"
+  format: "オンライン面談"
+  materials_ready:
+    - category: "ACT/フィデリティ評価"
+      files:
+        - "act_summary_2025_12_12.md"
+        - "DACTS_28items_2025_12_12.md"
+        - "TMACT_summary_2025_12_12.yaml"
+    - category: "プログラム評価"
+      files:
+        - "CD-TEP_summary_2025_11_12.md"
+    - category: "家族支援"
+      files:
+        - "FPE_summary_2025_12_12.md"
+    - category: "国際標準"
+      files:
+        - "ISO26000_summary_2025_12_12.md"
+        - "ISO30414_11categories_2025_12_12.yaml"
+        - "ISO_SOE_report_2025_12_12.yaml"
+
+# =============================================================================
+# 出願関連
+# =============================================================================
+application_status:
+  deadline: "2026-01-09〜23（消印有効）"
+  days_remaining: 28
+  target: "日本福祉大学院 修士課程"
+  research_theme: "SoE（Service of Empowerment）"
+
+# =============================================================================
+# 明日以降の予定タスク
+# =============================================================================
+pending_tasks:
+  - "研究計画書本文のブラッシュアップ（Claude Web）"
+  - "贄川先生面談用の質問リスト作成"
+  - "Bibliography追加（ACT/DACTS/TMACT関連論文）"
+  - "ICFコード×SoE対応表の精緻化"
+
+# =============================================================================
+# 技術メモ
+# =============================================================================
+technical_notes:
+  naming_convention: "{規格名/内容}_{詳細}_2025_12_12.{ext}"
+  yaml_preference: "AI間共有はYAML形式を優先（構造化・解析しやすい）"
+  markdown_preference: "人間向け資料はMarkdown形式"
+  csv_encoding: "UTF-8 BOM（Excel日本語対応）"
+
+---
+# End of Session Summary

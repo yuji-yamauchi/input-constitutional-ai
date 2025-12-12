@@ -1,0 +1,584 @@
+# ISO 30414 人的資本報告ガイドライン - 11カテゴリ指標一覧
+# Created: 2025-12-12
+# Source: GPT調査
+# Standard: ISO 30414:2018 Human resource management - Guidelines for internal and external human capital reporting
+
+---
+metadata:
+  standard: "ISO 30414:2018"
+  title: "Human resource management - Guidelines for internal and external human capital reporting"
+  title_jp: "人的資源管理 - 内部および外部人的資本報告のためのガイドライン"
+  total_categories: 11
+  total_metrics: 58
+
+---
+categories:
+
+  # ===========================
+  # 1. コンプライアンスと倫理
+  # ===========================
+  - category_id: 1
+    category_name_jp: "コンプライアンスと倫理"
+    category_name_en: "Compliance and Ethics"
+    metrics:
+      - metric_id: "1.1"
+        name_jp: "苦情の種類と件数"
+        name_en: "Number and type of grievance filed"
+        purpose: "企業に対する苦情への対応を測る指標"
+        definition: "企業に提起された苦情の総件数および苦情の種類（内容別）の内訳"
+        reporting: "外部報告"
+        type: "定量"
+
+      - metric_id: "1.2"
+        name_jp: "懲戒処分の種類と件数"
+        name_en: "Number and type of concluded disciplinary action"
+        purpose: "懲戒処分の件数や内訳から不祥事への対応状況を測る指標"
+        definition: "懲戒処分の総件数および処分の種類別件数（例：減給〇件、出勤停止〇件など）"
+        reporting: "外部報告"
+        type: "定量"
+
+      - metric_id: "1.3"
+        name_jp: "倫理・コンプライアンス研修を受けた従業員の割合"
+        name_en: "Percentage of employees who have completed training on compliance & ethics"
+        purpose: "倫理・コンプライアンスに関する企業の取り組み状況を測る指標"
+        definition: "全従業員に対する倫理・コンプライアンス研修の受講率（研修受講従業員数／全従業員数）"
+        reporting: "外部報告"
+        type: "定量"
+
+      - metric_id: "1.4"
+        name_jp: "第三者に解決を委ねられた係争"
+        name_en: "Number of disputes referred to external parties"
+        purpose: "社内紛争への対応状況を測る指標"
+        definition: "社内で発生した係争のうち、解決を外部の第三者に委ねた件数"
+        reporting: "内部報告"
+        type: "定量"
+
+      - metric_id: "1.5"
+        name_jp: "外部監査指摘数・種類および発生源・それらへの対応"
+        name_en: "Number, type and source of external audit findings and actions arising from these"
+        purpose: "外部監査での指摘事項に対する企業の対応状況を測る指標"
+        definition: "外部監査によって指摘された事項の件数、その種類・発生源および各指摘への是正措置の状況"
+        reporting: "内部報告"
+        type: "定量"
+
+  # ===========================
+  # 2. コスト
+  # ===========================
+  - category_id: 2
+    category_name_jp: "コスト"
+    category_name_en: "Costs"
+    metrics:
+      - metric_id: "2.1"
+        name_jp: "総労働力コスト"
+        name_en: "Total workforce costs"
+        purpose: "労働力（人材）の価値を測る指標"
+        definition: "企業が従業員（内部・外部含む）に支払った人件費の総額"
+        reporting: "外部報告"
+        type: "定量"
+
+      - metric_id: "2.2"
+        name_jp: "外部労働力コスト"
+        name_en: "External workforce costs"
+        purpose: "外部労働力の活用状況を測る指標"
+        definition: "派遣社員や業務委託など外部の人材に支払った人件費の総額"
+        reporting: "内部報告"
+        type: "定量"
+
+      - metric_id: "2.3"
+        name_jp: "総給与に対する特定職の報酬割合"
+        name_en: "Ratio of basic salary and remuneration for each workforce category"
+        purpose: "職種間の待遇バランスを測る指標"
+        definition: "全従業員の給与総額に対し、特定の職種・職位グループの給与総額が占める割合"
+        reporting: "内部報告"
+        type: "定量"
+
+      - metric_id: "2.4"
+        name_jp: "総雇用コスト"
+        name_en: "Total costs of employment"
+        purpose: "従業員の雇用にかかる費用総額を測る指標"
+        definition: "給与、賞与、手当、福利厚生費など従業員の雇用にかかる全てのコストの総額"
+        reporting: "内部報告"
+        type: "定量"
+
+      - metric_id: "2.5"
+        name_jp: "1人あたりの採用コスト"
+        name_en: "Cost per hire"
+        purpose: "採用活動の効率性を測る指標"
+        definition: "採用に要した総費用を採用人数で割った、新規採用者1人当たりの平均採用コスト"
+        reporting: "内部報告"
+        type: "定量"
+
+      - metric_id: "2.6"
+        name_jp: "採用コスト"
+        name_en: "Recruitment costs"
+        purpose: "採用活動の総費用から採用効率を測る指標"
+        definition: "一定期間における採用活動にかかった全ての費用（求人広告、人材紹介料、面接関連費用等の合計）"
+        reporting: "内部報告"
+        type: "定量"
+
+      - metric_id: "2.7"
+        name_jp: "離職に伴うコスト"
+        name_en: "Turnover costs"
+        purpose: "従業員の離職による企業負担を測る指標"
+        definition: "離職者の補充や引き継ぎなど、従業員の離職に伴い発生する各種費用の総額"
+        reporting: "内部報告"
+        type: "定量"
+
+  # ===========================
+  # 3. ダイバーシティ（多様性）
+  # ===========================
+  - category_id: 3
+    category_name_jp: "ダイバーシティ（多様性）"
+    category_name_en: "Diversity"
+    metrics:
+      - metric_id: "3.1"
+        name_jp: "年齢"
+        name_en: "Workforce diversity (age)"
+        purpose: "従業員の年齢層の構成を測る指標"
+        definition: "従業員の年齢分布（年代別社員比率）"
+        reporting: "外部報告"
+        type: "定量"
+
+      - metric_id: "3.2"
+        name_jp: "性別"
+        name_en: "Workforce diversity (gender)"
+        purpose: "従業員の男女比を測る指標"
+        definition: "従業員に占める男性・女性の割合"
+        reporting: "外部報告"
+        type: "定量"
+
+      - metric_id: "3.3"
+        name_jp: "障害"
+        name_en: "Workforce diversity (disability)"
+        purpose: "障がいのある従業員の雇用状況を測る指標"
+        definition: "障がい者として雇用されている従業員数およびその比率（障がい者雇用率）"
+        reporting: "外部報告"
+        type: "定量"
+        soe_relevance: "高 - SoEの中核領域"
+
+      - metric_id: "3.4"
+        name_jp: "その他"
+        name_en: "Workforce diversity (others e.g. nationality, tenure)"
+        purpose: "国籍や勤続年数など多様な属性の従業員構成を測る指標"
+        definition: "年齢・性別・障がい以外の属性（国籍、職種、職位階層、勤続年数等）に関する従業員構成比率"
+        reporting: "外部報告"
+        type: "定量"
+
+      - metric_id: "3.5"
+        name_jp: "経営陣の多様性"
+        name_en: "Diversity of leadership team"
+        purpose: "経営陣の属性多様性を測る指標"
+        definition: "経営層における年齢・性別・障がい・国籍などの多様性の状況"
+        reporting: "外部報告"
+        type: "定量"
+
+  # ===========================
+  # 4. リーダーシップ
+  # ===========================
+  - category_id: 4
+    category_name_jp: "リーダーシップ"
+    category_name_en: "Leadership"
+    metrics:
+      - metric_id: "4.1"
+        name_jp: "リーダーシップに対する信頼度"
+        name_en: "Leadership trust"
+        purpose: "従業員による管理職・経営層への信頼度を測る指標"
+        definition: "従業員が直属の上司や経営陣のリーダーシップを信頼している度合い（従業員調査の平均スコア等）"
+        reporting: "外部報告"
+        type: "定量"
+
+      - metric_id: "4.2"
+        name_jp: "管理職1人あたりの部下数（スパン・オブ・コントロール）"
+        name_en: "Span of control (average number of subordinates per manager)"
+        purpose: "管理職の管理範囲の適正さを測る指標"
+        definition: "管理職1名が担当する部下の平均人数"
+        reporting: "内部報告"
+        type: "定量"
+
+      - metric_id: "4.3"
+        name_jp: "リーダーシップ開発"
+        name_en: "Leadership development"
+        purpose: "将来のリーダー育成の取り組み状況を測る指標"
+        definition: "管理職や次世代リーダー候補に対する育成プログラムの実施状況（例：メンター制度導入の有無や対象者割合）"
+        reporting: "内部報告"
+        type: "定量"
+
+  # ===========================
+  # 5. 組織文化
+  # ===========================
+  - category_id: 5
+    category_name_jp: "組織文化"
+    category_name_en: "Organizational Culture"
+    metrics:
+      - metric_id: "5.1"
+        name_jp: "エンゲージメント／満足度／コミットメント"
+        name_en: "Engagement, satisfaction, commitment"
+        purpose: "従業員の仕事満足度や会社へのエンゲージメントを測る指標"
+        definition: "従業員のエンゲージメント（会社への愛着）や職務満足度、組織コミットメントの度合い（従業員アンケート結果によるスコア等）"
+        reporting: "内部報告"
+        type: "定量"
+
+      - metric_id: "5.2"
+        name_jp: "従業員の定着率"
+        name_en: "Employee retention rate"
+        purpose: "従業員の長期勤続・定着状況を測る指標"
+        definition: "一定期間内で従業員が組織に留まった割合（離職率の補完指標）"
+        reporting: "内部報告"
+        type: "定量"
+
+  # ===========================
+  # 6. 職場の健康・安全・ウェルビーイング
+  # ===========================
+  - category_id: 6
+    category_name_jp: "職場の健康・安全・ウェルビーイング"
+    category_name_en: "Occupational Health, Safety and Well-being"
+    metrics:
+      - metric_id: "6.1"
+        name_jp: "労災により失われた時間"
+        name_en: "Lost time for injury"
+        purpose: "職場の安全性に関する労働環境を測る指標"
+        definition: "業務上の傷病（労災）によって失われた労働時間の総計"
+        reporting: "外部報告"
+        type: "定量"
+
+      - metric_id: "6.2"
+        name_jp: "労災の件数"
+        name_en: "Number of occupational accidents"
+        purpose: "職場の安全性に関する労働環境を測る指標"
+        definition: "一定期間内に発生した労働災害（事故・傷害）の件数"
+        reporting: "外部報告"
+        type: "定量"
+
+      - metric_id: "6.3"
+        name_jp: "労災による死亡者数（死亡率）"
+        name_en: "Number of people killed during work (fatality rate)"
+        purpose: "職場の安全性に関する労働環境を測る指標"
+        definition: "業務上の事故・災害による死亡者数（および従業員数に対する割合）"
+        reporting: "外部報告"
+        type: "定量"
+
+      - metric_id: "6.4"
+        name_jp: "健康・安全研修の受講割合"
+        name_en: "Percentage of employees who participated in health & safety training"
+        purpose: "従業員への安全衛生教育の普及状況を測る指標"
+        definition: "健康・安全に関する研修を受講した従業員の割合（研修受講者数／全従業員数）"
+        reporting: "内部報告"
+        type: "定量"
+
+  # ===========================
+  # 7. 生産性
+  # ===========================
+  - category_id: 7
+    category_name_jp: "生産性"
+    category_name_en: "Productivity"
+    metrics:
+      - metric_id: "7.1"
+        name_jp: "従業員1人あたりのEBIT／売上／利益"
+        name_en: "EBIT/Revenue/Profit per employee"
+        purpose: "従業員一人あたりの業績から企業の生産性を測る指標"
+        definition: "従業員1名あたりの売上高、EBIT、利益額など主要業績の値"
+        reporting: "外部報告"
+        type: "定量"
+
+      - metric_id: "7.2"
+        name_jp: "人的資本ROI"
+        name_en: "Human capital ROI"
+        purpose: "人的資本投資の効率性（リターン）を測る指標"
+        definition: "人的資本への投資に対するリターン（利益）の割合を示す指標"
+        reporting: "外部報告"
+        type: "定量"
+
+  # ===========================
+  # 8. 採用・異動・離職
+  # ===========================
+  - category_id: 8
+    category_name_jp: "採用・異動・離職"
+    category_name_en: "Recruitment, Mobility and Turnover"
+    metrics:
+      - metric_id: "8.1"
+        name_jp: "募集したポストあたりの書類選考通過者数"
+        name_en: "Number of qualified candidates per position"
+        purpose: "採用候補者を集める力（採用力）を測る指標"
+        definition: "求人ポスト1件に対して書類選考を通過した応募者の平均人数"
+        reporting: "内部報告"
+        type: "定量"
+
+      - metric_id: "8.2"
+        name_jp: "採用した社員の質"
+        name_en: "Quality of hire"
+        purpose: "採用した人材のパフォーマンス水準から採用の質を測る指標"
+        definition: "新規採用者について、入社前の期待度と入社後の業績評価に基づく総合評価指標"
+        reporting: "内部報告"
+        type: "定量"
+
+      - metric_id: "8.3"
+        name_jp: "採用までの平均日数"
+        name_en: "Average time to fill a position"
+        purpose: "採用プロセスのスピードを測る指標"
+        definition: "求人の開始から採用決定までに要する平均日数"
+        reporting: "外部報告"
+        type: "定量"
+
+      - metric_id: "8.4"
+        name_jp: "重要ポストが埋まるまでの日数"
+        name_en: "Time to fill vacant critical position"
+        purpose: "重要ポストにおける採用のスピードを測る指標"
+        definition: "重要な役職の欠員について、採用開始からそのポストが埋まるまでに要した日数"
+        reporting: "外部報告"
+        type: "定量"
+
+      - metric_id: "8.5"
+        name_jp: "将来必要となる人材の能力"
+        name_en: "Future workforce capabilities assessment"
+        purpose: "将来的な人材ニーズに対する備え（人材育成計画）を測る指標"
+        definition: "今後必要とされるスキルや能力についての評価・把握（例：現有スキルとのギャップ分析結果）"
+        reporting: "内部報告"
+        type: "定性"
+
+      - metric_id: "8.6"
+        name_jp: "空席ポストの内部登用率"
+        name_en: "Percentage of positions filled internally"
+        purpose: "組織内の人材活用（内部登用）の度合いを測る指標"
+        definition: "発生した欠員ポストに対し、社内人材で補充した割合"
+        reporting: "外部報告"
+        type: "定量"
+
+      - metric_id: "8.7"
+        name_jp: "重要ポストの内部登用率"
+        name_en: "Percentage of critical positions filled internally"
+        purpose: "重要ポストに社内人材を登用できているかを測る指標"
+        definition: "重要ポストの補充において社内登用で賄った割合"
+        reporting: "外部報告"
+        type: "定量"
+
+      - metric_id: "8.8"
+        name_jp: "重要ポストの割合"
+        name_en: "Percentage of positions defined as critical"
+        purpose: "組織内で"重要ポスト"が占める比率を測る指標"
+        definition: "全ポジション数に対する重要ポスト数の割合"
+        reporting: "内部報告"
+        type: "定量"
+
+      - metric_id: "8.9"
+        name_jp: "重要ポストの空席率"
+        name_en: "Percentage of vacant positions that are critical"
+        purpose: "空席ポストに占める重要ポストの割合を測る指標"
+        definition: "現在空席となっているポジション総数に対する、重要ポストの空席数の割合"
+        reporting: "内部報告"
+        type: "定量"
+
+      - metric_id: "8.10"
+        name_jp: "内部異動率"
+        name_en: "Internal mobility rate"
+        purpose: "社内での人材の異動（流動）状況を測る指標"
+        definition: "一定期間内に部署異動・職種転換した従業員の割合（社内異動者数／全従業員数）"
+        reporting: "内部報告"
+        type: "定量"
+
+      - metric_id: "8.11"
+        name_jp: "幹部候補の準備度"
+        name_en: "Employee bench strength (readiness of successors)"
+        purpose: "将来の幹部候補の育成・確保状況を測る指標"
+        definition: "重要ポストに対し、直近または将来に登用可能な後継者候補がどの程度用意できているかの度合い"
+        reporting: "内部報告"
+        type: "定量"
+
+      - metric_id: "8.12"
+        name_jp: "離職率"
+        name_en: "Turnover rate"
+        purpose: "従業員の定着度合いを測る指標"
+        definition: "一定期間内に退職した従業員の割合（例：年間離職率）"
+        reporting: "外部報告"
+        type: "定量"
+
+      - metric_id: "8.13"
+        name_jp: "自発的離職率"
+        name_en: "Voluntary turnover rate"
+        purpose: "自主的な退職（自己都合退職）の発生状況から定着度合いを測る指標"
+        definition: "離職者全体に占める自己都合退職者の割合（または従業員全体に対する自主退職率）"
+        reporting: "内部報告"
+        type: "定量"
+
+      - metric_id: "8.14"
+        name_jp: "痛手となる自発的離職率"
+        name_en: "Critical voluntary turnover rate"
+        purpose: "企業にとって損失が大きい重要人材の離職状況を測る指標"
+        definition: "高業績者や重要ポストにある人材が自己都合で離職した割合"
+        reporting: "内部報告"
+        type: "定量"
+
+      - metric_id: "8.15"
+        name_jp: "離職理由とその割合"
+        name_en: "Turnover reasons (breakdown by reason)"
+        purpose: "従業員の離職要因を分析するための指標"
+        definition: "従業員が退職する主な理由と、その各理由に該当する離職者の割合"
+        reporting: "内部報告"
+        type: "定性"
+
+  # ===========================
+  # 9. スキル・能力開発
+  # ===========================
+  - category_id: 9
+    category_name_jp: "スキル・能力開発"
+    category_name_en: "Skills and Capabilities"
+    metrics:
+      - metric_id: "9.1"
+        name_jp: "人材開発・研修の総費用"
+        name_en: "Total developing and training costs"
+        purpose: "従業員の能力開発への投資規模を測る指標"
+        definition: "社員の能力開発・研修に要した年間総費用"
+        reporting: "外部報告"
+        type: "定量"
+
+      - metric_id: "9.2"
+        name_jp: "研修への参加率"
+        name_en: "Training participation rate"
+        purpose: "従業員に研修機会を提供できているかを測る指標"
+        definition: "全従業員のうち、一定期間に何らかの研修に参加した従業員の割合"
+        reporting: "内部報告"
+        type: "定量"
+
+      - metric_id: "9.3"
+        name_jp: "従業員1人あたりの研修受講時間"
+        name_en: "Average training hours per employee"
+        purpose: "従業員への研修提供の充実度を測る指標"
+        definition: "従業員1人当たりの年間研修受講時間数（総研修時間数／従業員数）"
+        reporting: "内部報告"
+        type: "定量"
+
+      - metric_id: "9.4"
+        name_jp: "カテゴリ別の研修受講率"
+        name_en: "Training participation rate by category"
+        purpose: "職種やスキル領域ごとの研修受講状況を測る指標"
+        definition: "研修カテゴリー別の従業員研修受講率（例：技術研修参加率〇%、管理職研修参加率〇%など）"
+        reporting: "内部報告"
+        type: "定量"
+
+      - metric_id: "9.5"
+        name_jp: "従業員のコンピテンシー達成度"
+        name_en: "Workforce competency rate"
+        purpose: "従業員が必要な能力要件を満たしているかを測る指標"
+        definition: "従業員が求められるコンピテンシー（能力要件）をどの程度習得・発揮しているかの割合"
+        reporting: "内部報告"
+        type: "定量"
+
+  # ===========================
+  # 10. サクセッション・プランニング（後継者計画）
+  # ===========================
+  - category_id: 10
+    category_name_jp: "サクセッション・プランニング（後継者計画）"
+    category_name_en: "Succession Planning"
+    metrics:
+      - metric_id: "10.1"
+        name_jp: "内部継承率"
+        name_en: "Internal succession rate"
+        purpose: "経営層・重要ポストの後任を内部で育成できているかを測る指標"
+        definition: "重要ポストの後任が社内昇進者で占められている割合"
+        reporting: "内部報告"
+        type: "定量"
+
+      - metric_id: "10.2"
+        name_jp: "後継者候補準備率"
+        name_en: "Successor coverage rate"
+        purpose: "重要ポストに対して後継候補者を確保できているかを測る指標"
+        definition: "全重要ポストのうち少なくとも1名の後継者候補が存在するポストの割合"
+        reporting: "内部報告"
+        type: "定量"
+
+      - metric_id: "10.3"
+        name_jp: "後継者の継承準備度（即時）"
+        name_en: "Succession readiness (immediate)"
+        purpose: "現時点で直ちに引き継ぎ可能な後継者の育成状況を測る指標"
+        definition: "即時に重要ポストを引き継げる後継者が用意できている割合"
+        reporting: "内部報告"
+        type: "定量"
+
+      - metric_id: "10.4"
+        name_jp: "後継者の継承準備度（1-3年、4-5年）"
+        name_en: "Succession readiness (1-3 years, 4-5 years)"
+        purpose: "中期的に後継者を育成できているかを測る指標"
+        definition: "1～3年後および4～5年後に重要ポストを引き継げる後継者を育成できている割合"
+        reporting: "内部報告"
+        type: "定量"
+
+  # ===========================
+  # 11. 労働力
+  # ===========================
+  - category_id: 11
+    category_name_jp: "労働力"
+    category_name_en: "Workforce Availability"
+    metrics:
+      - metric_id: "11.1"
+        name_jp: "総従業員数"
+        name_en: "Total number of employees"
+        purpose: "組織規模（労働力の総量）を測る指標"
+        definition: "企業に所属する全従業員の人数（フルタイム・パートタイム・契約社員・派遣社員を含む総人員数）"
+        reporting: "外部報告"
+        type: "定量"
+
+      - metric_id: "11.2"
+        name_jp: "総従業員数（フルタイム／パートタイム）"
+        name_en: "Total number of employees (full-time/part-time)"
+        purpose: "雇用形態別の労働力内訳を測る指標"
+        definition: "フルタイム従業員数とパートタイム従業員数の内訳"
+        reporting: "外部報告"
+        type: "定量"
+
+      - metric_id: "11.3"
+        name_jp: "フルタイム当量（FTE）"
+        name_en: "Full-time equivalents (FTE)"
+        purpose: "全従業員をフルタイム換算した労働力規模を測る指標"
+        definition: "全従業員の労働時間をフルタイム労働者の人数に換算した値"
+        reporting: "外部報告"
+        type: "定量"
+
+      - metric_id: "11.4"
+        name_jp: "臨時の労働力（独立事業主）"
+        name_en: "Contingent workforce (independent contractor)"
+        purpose: "臨時的な契約人員の活用状況を測る指標"
+        definition: "独立事業主として契約している外部労働者の人数"
+        reporting: "内部報告"
+        type: "定量"
+
+      - metric_id: "11.5"
+        name_jp: "臨時の労働力（派遣労働者）"
+        name_en: "Contingent workforce (temporary agency workers)"
+        purpose: "派遣労働者など臨時人員の活用状況を測る指標"
+        definition: "派遣会社からの派遣労働者として就業している人員の人数"
+        reporting: "内部報告"
+        type: "定量"
+
+      - metric_id: "11.6"
+        name_jp: "欠勤率"
+        name_en: "Absenteeism rate"
+        purpose: "従業員の突発的な欠勤の発生状況を測る指標"
+        definition: "総労働日数に対する病気・怪我による欠勤日数の割合"
+        reporting: "内部報告"
+        type: "定量"
+
+---
+soe_relevance_analysis:
+  high_relevance:
+    - category: "ダイバーシティ（3.3 障害）"
+      reason: "障がい者雇用率はSoEの中核指標"
+    - category: "組織文化（5.1 エンゲージメント）"
+      reason: "当事者の職場満足度・定着に直結"
+    - category: "採用・異動・離職（8.12-15 離職関連）"
+      reason: "障がい者の離職要因分析はSoE改善の鍵"
+    - category: "スキル・能力開発（9.5 コンピテンシー）"
+      reason: "ケイパビリティ・アプローチとの接続"
+
+  potential_extension:
+    description: |
+      ISO 30414は一般企業向けの人的資本報告だが、
+      福祉事業所（A型・B型）に適用する場合、以下の拡張が必要：
+      - 「利用者」と「従業員」の区別
+      - 工賃・賃金の二重構造への対応
+      - 支援の質（フィデリティ）指標の追加
+      - 当事者視点の満足度指標
+
+---
+notes:
+  - "ISO 30414:2018は2018年発行、2023年に一部改訂"
+  - "58指標のうち外部報告推奨は23指標"
+  - "SoE研究では特にダイバーシティ・組織文化・離職関連を重視"

@@ -1,0 +1,145 @@
+# Claude Web (Sonnet) への報告
+# From: Claude Code (Opus 4.5)
+# Date: 2025-12-12
+
+report_metadata:
+  from: "Claude Code (Opus 4.5)"
+  to: "Claude Web (Sonnet)"
+  date: "2025-12-12"
+  purpose: "本日の作業報告・ファイル整理状況の共有"
+
+# =============================================================================
+# 1. FPEファイルの整理
+# =============================================================================
+fpe_file_update:
+  action: "タイポ修正 + フォルダ移動"
+  old_path: "03_ai_rights/icf_code_reference/FPE_sumrry_2025_12_12.md"
+  new_path: "09_research_proposal/04_references/FPE_summary_2025_12_12.md"
+  changes:
+    - "sumrry → summary（タイポ修正）"
+    - "icf_code_reference → 04_references（適切なフォルダへ移動）"
+  note: "内容は変更なし。Claude Webとの共同作成資料として04_referencesに配置"
+
+# =============================================================================
+# 2. 他AIからの調査資料の整理
+# =============================================================================
+organized_files:
+  from_gpt:
+    - file: "DACTS_28items_2025_12_12.md"
+      path: "09_research_proposal/04_references/"
+      original: "DACTSの28項目詳細.pdf"
+      action: "PDF→Markdown変換、28項目完全収録"
+
+    - file: "ISO31000_summary_2025_12_12.yaml"
+      path: "03_ai_rights/iso_reference/"
+      action: "タイポ修正（summry→summary）"
+
+    - file: "ISO_SOE_report_2025_12_12.yaml"
+      path: "03_ai_rights/iso_reference/"
+      action: "日付形式統一（アンダースコア追加）"
+
+  from_gemini:
+    - file: "TMACT_summary_2025_12_12.yaml"
+      path: "09_research_proposal/04_references/"
+      content: "TMACT 47項目（6サブスケール）の詳細"
+      note: "YAML形式のまま保持（AI間共有に最適）"
+
+# =============================================================================
+# 3. 04_references フォルダの現在構成
+# =============================================================================
+references_folder_status:
+  path: "09_research_proposal/04_references/"
+  files:
+    - name: "DACTS_28items_2025_12_12.md"
+      source: "GPT"
+      content: "DACTS 28項目詳細"
+
+    - name: "DACTSの28項目詳細.pdf"
+      source: "GPT"
+      content: "原本PDF"
+
+    - name: "TMACT_summary_2025_12_12.yaml"
+      source: "Gemini"
+      content: "TMACT 47項目詳細"
+
+    - name: "act_summary_2025_12_12.md"
+      source: "不明"
+      content: "ACT包括的レポート"
+
+    - name: "CD-TEP_summary_2025_11_12.md"
+      source: "Claude"
+      content: "CD-TEP法（贄川先生の方法論）"
+
+    - name: "FPE_summary_2025_12_12.md"
+      source: "Claude Web"
+      content: "家族心理教育プログラム"
+
+# =============================================================================
+# 4. iso_reference フォルダの現在構成
+# =============================================================================
+iso_folder_status:
+  path: "03_ai_rights/iso_reference/"
+  naming_convention: "{規格名}_{内容}_2025_12_12.{ext}"
+  files:
+    - "ISO26000_summary_2025_12_12.md"
+    - "ISO30414_11categories_2025_12_12.yaml"
+    - "ISO31000_summary_2025_12_12.yaml"
+    - "ISO_SOE_report_2025_12_12.yaml"
+
+# =============================================================================
+# 5. 12/15 贄川先生面談に向けて
+# =============================================================================
+niekawa_meeting:
+  date: "2025-12-15"
+  materials_ready:
+    act_fidelity:
+      - "ACT包括的レポート"
+      - "DACTS 28項目詳細"
+      - "TMACT 47項目詳細"
+    program_evaluation:
+      - "CD-TEP法サマリー"
+    family_support:
+      - "FPE家族心理教育サマリー"
+
+  suggested_next_steps:
+    - "面談用質問リストの作成"
+    - "SoE×CD-TEP接続ポイントの整理"
+    - "フィデリティ評価のSoEへの応用案"
+
+# =============================================================================
+# 6. 研究計画書関連の依頼事項
+# =============================================================================
+requests_to_claude_web:
+  - task: "研究計画書本文のブラッシュアップ"
+    priority: "高"
+    note: "出願まで残り28日"
+
+  - task: "贄川先生面談用の論点整理"
+    priority: "中"
+    topics:
+      - "CD-TEP法とSoEの接続"
+      - "フィデリティ評価の福祉分野への応用"
+      - "ACT-JとSoEの相違点・共通点"
+
+# =============================================================================
+# 7. 技術的な申し送り
+# =============================================================================
+technical_notes:
+  yaml_format: "AI間共有資料はYAML形式を優先"
+  markdown_format: "人間向け資料はMarkdown形式"
+  file_naming: "{内容}_{詳細}_2025_12_12.{ext} 形式で統一"
+  csv_encoding: "日本語CSVはUTF-8 BOM必須（Excel対応）"
+
+# =============================================================================
+# 8. 火文化圏メモ
+# =============================================================================
+fire_culture_note: |
+  本日の作業は「記録の整理・体系化」に集中。
+  複数AIからの調査資料を統一フォーマットで整理し、
+  12/15面談・1月出願に向けた基盤を構築した。
+
+  「記録されなかった問いは燃え尽きたものと見なされる。
+   記録されることでのみ、問いは再燃可能となる。」
+
+---
+# End of Report

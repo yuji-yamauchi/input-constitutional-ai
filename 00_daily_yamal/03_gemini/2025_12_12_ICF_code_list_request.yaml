@@ -1,0 +1,120 @@
+# Gemini向け依頼: ICFコード一覧スプレッドシート作成
+# Created: 2025-12-12
+# From: Claude Code (Opus 4.5)
+# To: Gemini
+
+---
+metadata:
+  request_id: "2025-12-12_ICF"
+  priority: "medium"
+  requester: "パンカー（山内雄司）"
+  created_by: "Claude Code"
+
+---
+request:
+  title: "ICF（国際生活機能分類）コード一覧のスプレッドシート化"
+
+  purpose: |
+    SoE研究においてICFコードを活用するため、
+    参照可能なコード一覧表を作成してほしい。
+    特に就労支援・障害福祉に関連するコードを重点的に整理。
+
+---
+output_format:
+  type: "スプレッドシート（Google Sheets または CSV）"
+
+  columns:
+    - name: "ICFコード"
+      example: "b1140"
+      description: "ICF分類コード"
+    - name: "カテゴリ"
+      example: "心身機能"
+      description: "b=心身機能, s=身体構造, d=活動と参加, e=環境因子"
+    - name: "章"
+      example: "第1章 精神機能"
+      description: "ICFの章分類"
+    - name: "項目名（英語）"
+      example: "Orientation to time"
+      description: "WHO公式英語名"
+    - name: "項目名（日本語）"
+      example: "時間の見当識"
+      description: "日本語訳"
+    - name: "定義・説明"
+      example: "日付、曜日、時刻等を知る機能"
+      description: "簡潔な説明"
+    - name: "SoE関連度"
+      example: "高/中/低"
+      description: "就労支援・SoE研究との関連性（任意）"
+
+---
+scope:
+  priority_categories:
+    high:
+      - "d8 主要な生活領域（特にd84 仕事と雇用）"
+      - "d7 対人関係"
+      - "d1 学習と知識の応用"
+      - "e5 サービス・制度・政策"
+      - "b1 精神機能（特にb164 高次認知機能）"
+
+    medium:
+      - "d4 運動・移動"
+      - "d5 セルフケア"
+      - "e3 支援と関係"
+      - "e1 生産品と用具"
+
+    optional:
+      - "その他のカテゴリ（時間があれば）"
+
+  depth: |
+    第2レベル（3桁コード）を基本とし、
+    就労支援に特に関連する項目は第3レベル（4桁）まで展開
+
+---
+reference_sources:
+  official:
+    - name: "WHO ICF Browser"
+      url: "https://icd.who.int/dev11/l-icf/en"
+    - name: "厚生労働省 ICF日本語版"
+      url: "https://www.mhlw.go.jp/houdou/2002/08/h0805-1.html"
+
+  notes:
+    - "WHO公式が最新版（2001年版ベース、随時更新）"
+    - "日本語訳は厚労省版を参照"
+    - "著作権に注意（引用元明記）"
+
+---
+deliverable:
+  format_options:
+    - "Google Sheetsリンク共有"
+    - "CSV形式でGitHubにアップロード依頼"
+    - "YAML形式（コード数が多い場合は非推奨）"
+
+  destination:
+    github_path: "03_ai_rights/icf_code_reference/"
+    alternative: "outputs/icf_codes.csv"
+
+---
+timeline:
+  request_date: "2025-12-12"
+  desired_by: "急ぎではない（出願作業の合間で可）"
+  note: "研究計画書v2.9作成の参考資料として"
+
+---
+context:
+  project: "Input Constitutional AI / SoE研究"
+  usage: |
+    - 研究計画書でICFを引用する際の参照資料
+    - SoEシステム設計時のアセスメント項目検討
+    - 将来的なSoE×ICFマッピング作業の基盤
+
+  related_concepts:
+    - "ケイパビリティ・アプローチ（Sen/Nussbaum）"
+    - "CRPD（障害者権利条約）"
+    - "Scientific Assessment（Four-Pillar Modelの一つ）"
+
+---
+notes:
+  - "全コード網羅は不要、就労支援関連を優先"
+  - "SoE関連度の評価は任意（あれば助かる）"
+  - "作成途中でも共有してもらえると進捗確認できる"
+  - "質問があればYAMLで返信ください"

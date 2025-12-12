@@ -1,0 +1,125 @@
+# Geminiへの回答: ICFコード作成計画確認 & 質問回答
+# Created: 2025-12-12
+# From: パンカー（山内雄司）via Claude Code
+# To: Gemini
+
+---
+metadata:
+  in_reply_to: "2025-12-12_ICF_code_list_request.yaml"
+  response_type: "計画承認 & 質問回答"
+
+---
+plan_confirmation:
+  status: "承認"
+  comment: |
+    提案いただいた実行計画で問題ありません。
+    CSV形式での納品を希望します。
+
+---
+question_response:
+  topic: "d84（仕事と雇用）4桁コードの重点項目"
+
+  answer: |
+    SoE研究および障害者就労支援の文脈で特に重要な4桁コードを以下に示します。
+
+  priority_high:
+    - code: "d840"
+      name_en: "Apprenticeship (work preparation)"
+      name_jp: "見習研修（就労準備）"
+      soe_relevance: |
+        就労移行支援の中核。A型・B型から一般就労への移行段階。
+        SoEにおける「権利回復」の実践場面。
+
+    - code: "d8450"
+      name_en: "Seeking employment"
+      name_jp: "求職活動"
+      soe_relevance: |
+        当事者の主体的な職探し。
+        支援者が「代行」するか「伴走」するかでSoE/Exploitation分岐。
+
+    - code: "d8451"
+      name_en: "Maintaining a job"
+      name_jp: "職業の維持"
+      soe_relevance: |
+        定着支援の核心。IPS（Individual Placement and Support）の重点領域。
+        離職防止と「過剰適応」の境界がSoE的課題。
+
+    - code: "d850"
+      name_en: "Remunerative employment"
+      name_jp: "報酬を伴う仕事"
+      soe_relevance: |
+        「工賃」vs「賃金」問題に直結。
+        B型事業所の工賃月額1万円問題はここに該当。
+
+    - code: "d855"
+      name_en: "Non-remunerative employment"
+      name_jp: "報酬を伴わない仕事"
+      soe_relevance: |
+        ボランティア・社会参加活動。
+        「労働」と「活動」の境界、搾取リスクの検討対象。
+
+  priority_medium:
+    - code: "d8451"
+      name_en: "Maintaining a job"
+      name_jp: "職業の維持"
+      note: "d845の下位コード、定着支援"
+
+    - code: "d8452"
+      name_en: "Terminating a job"
+      name_jp: "離職"
+      note: "自己決定による離職 vs 追い込まれ離職"
+
+    - code: "d860"
+      name_en: "Basic economic transactions"
+      name_jp: "基本的経済的取引"
+      note: "金銭管理能力、給与管理"
+
+    - code: "d870"
+      name_en: "Economic self-sufficiency"
+      name_jp: "経済的自立"
+      note: "ケイパビリティ・アプローチの「経済的自由」に対応"
+
+---
+additional_notes:
+  soe_perspective: |
+    ICFコードをSoE視点で評価する際の基準案：
+
+    【高】当事者の主体的選択・権利行使に直結
+    【中】支援者の関与が必要だが当事者の意思が反映される
+    【低】環境・制度側の要因が主（当事者の直接行動ではない）
+
+  exploitation_risk_codes: |
+    以下のコードは「Service or Exploitation」の境界を検討する際に重要：
+    - d840（見習研修）: 無償労働の正当化リスク
+    - d855（報酬を伴わない仕事）: 搾取的ボランティアへの転落リスク
+    - d870（経済的自立）: 「自立」強制による抑圧リスク
+
+---
+related_environmental_factors:
+  comment: |
+    d84と連動して重要な環境因子（e章）も以下に参考提示：
+
+  codes:
+    - code: "e5900"
+      name_jp: "労働・雇用サービス"
+      note: "就労支援事業所、ハローワーク等"
+
+    - code: "e5901"
+      name_jp: "労働・雇用政策"
+      note: "障害者雇用促進法、法定雇用率"
+
+    - code: "e330"
+      name_jp: "権威的立場にある人々"
+      note: "雇用主、上司 → 支援者との関係でSoE検討"
+
+    - code: "e340"
+      name_jp: "介護者、支援者"
+      note: "就労支援員、ジョブコーチ"
+
+---
+instruction:
+  proceed: true
+  message: |
+    計画通り作業を進めてください。
+    上記の4桁コード重点リストを「SoE関連度：高」の参考にしてください。
+    途中経過の共有も歓迎します。

@@ -1,0 +1,350 @@
+# 包括的地域生活支援プログラム評価尺度（TMACT）包括的研究報告書
+# Comprehensive Research Report on Tool for Measurement of Assertive Community Treatment (TMACT)
+# Created: 2025-12-12
+# Format: YAML 1.2
+
+metadata:
+  title: "TMACT評価尺度：プロトコル分析、DACTS比較、および日本における実装"
+  version: "1.0 Rev 3 (Based on TMACT Protocol)"
+  author_tool: "TMACT (Tool for Measurement of Assertive Community Treatment)"
+  developers:
+  purpose: "ACTプログラムのフィデリティ（忠実度）評価および質的向上"
+  total_items: 47
+  scaling: "1 (Not Implemented) to 5 (Fully Implemented)"
+
+# -----------------------------------------------------------------------------
+# 1. 尺度概要とDACTSとの比較 (Overview & Comparison)
+# -----------------------------------------------------------------------------
+overview:
+  description: >
+    TMACTは、DACTSの天井効果を克服し、現代のリカバリー志向やEBP（Evidence-Based Practices）を
+    より厳密に評価するために開発された第2世代のACTフィデリティ尺度である。
+  
+  comparison_with_dacts:
+    structure:
+      dacts_items: 28
+      tmact_items: 47
+      granularity: "TMACTはより詳細で、プロセスと質を深く評価する"
+    
+    key_differences:
+      - factor: "スペシャリスト評価"
+        dacts: "一般スタッフの一部として評価"
+        tmact: "STサブスケールで独立評価（配置・役割・チームへの教育）"
+      - factor: "EBPの統合"
+        dacts: "限定的"
+        tmact: "EPサブスケールで明示的に評価（IPS, IDDT, IDDTなど）"
+      - factor: "リカバリー視点"
+        dacts: "限定的"
+        tmact: "PPサブスケールおよび全項目に統合"
+      - factor: "評価の厳格さ"
+        dacts: "天井効果あり（高得点を取りやすい）"
+        tmact: "より高いハードル設定（変化に敏感）"
+
+# -----------------------------------------------------------------------------
+# 2. サブスケールおよび評価項目詳細 (Detailed Item List)
+# -----------------------------------------------------------------------------
+subscales:
+  
+  # --- OS: 運営と構造 ---
+  - id: "OS"
+    name_ja: "運営と構造"
+    name_en: "Operations & Structure"
+    description: "チームの基盤、人員配置、会議の質などの構造的要件"
+    items:
+      - code: "OS1"
+        name_en: "Low Ratio of Clients to Staff"
+        name_ja: "利用者対スタッフ比率"
+        definition: "精神科医を除く直接サービス提供スタッフ1人あたりの利用者数を低く保つ。"
+        scoring_criteria: "5点: 1:10以下 / 1点: 1:26以上"
+      
+      - code: "OS2"
+        name_en: "Team Approach"
+        name_ja: "チームアプローチ"
+        definition: "主担当制ではなく、チーム全体で全利用者を共有する体制。"
+        scoring_criteria: "5点: 90%以上の利用者が4週間で3人以上のスタッフと接触"
+      
+      - code: "OS3"
+        name_en: "Daily Team Meeting: Frequency & Attendance"
+        name_ja: "日々のチームミーティング：頻度と出席率"
+        definition: "毎日の情報共有と計画立案のための会議。"
+        scoring_criteria: "5点: 週5日開催かつ主要スタッフ出席"
+      
+      - code: "OS4"
+        name_en: "Daily Team Meeting: Quality"
+        name_ja: "日々のチームミーティング：質"
+        definition: "会議が臨床的に意味のあるレビューと計画の場となっているか。"
+        scoring_criteria: "5点: 状態確認、スケジュール作成、危機予防など6機能を完全実施"
+      
+      - code: "OS5"
+        name_en: "Program Size"
+        name_ja: "プログラム規模"
+        definition: "十分な専門性と24時間体制を維持できるチーム規模。"
+        scoring_criteria: "5点: 100人規模で10.0 FTE以上の臨床スタッフ"
+      
+      - code: "OS6"
+        name_en: "Priority Service Population"
+        name_ja: "優先対象者"
+        definition: "重い精神障害と高い機能障害を持つ層を明確な対象としているか。"
+        scoring_criteria: "5点: 明確な基準があり、チームが入退院のゲートキーパー機能を持つ"
+      
+      - code: "OS7"
+        name_en: "Active Recruitment"
+        name_ja: "能動的なリクルート"
+        definition: "病院や路上などへ出向き、潜在的利用者を能動的に勧誘しているか。"
+      
+      - code: "OS8"
+        name_en: "Gradual Admission Rate"
+        name_ja: "段階的な受け入れ率"
+        definition: "チームの安定性を保つため、新規受け入れペースを制限する。"
+        scoring_criteria: "5点: 月間最大4人以下"
+      
+      - code: "OS9"
+        name_en: "Transition to Less Intensive Services"
+        name_ja: "低強度サービスへの移行"
+        definition: "状態安定後の卒業プロセスと基準の確立。"
+      
+      - code: "OS10"
+        name_en: "Retention Rate"
+        name_ja: "定着率"
+        definition: "ドロップアウトを防ぎ、サービスを継続できているか。"
+        scoring_criteria: "5点: 12ヶ月定着率95%以上"
+      
+      - code: "OS11"
+        name_en: "Involvement in Psychiatric Hospitalization Decisions"
+        name_ja: "精神科入院決定への関与"
+        definition: "入院・退院の意思決定プロセスにチームが深く関与しているか。"
+        scoring_criteria: "5点: 90%以上の入院に関与"
+      
+      - code: "OS12"
+        name_en: "Dedicated Office-Based Program Assistance"
+        name_ja: "専任のプログラムアシスタント"
+        definition: "事務・連絡調整を専任で行うスタッフの配置。"
+
+  # --- CT: コアチーム ---
+  - id: "CT"
+    name_ja: "コアチーム"
+    name_en: "Core Team"
+    description: "リーダー、精神科医、看護師の配置と役割"
+    items:
+      - code: "CT1"
+        name_en: "Team Leader on Team"
+        name_ja: "チームリーダーの配置"
+        definition: "フルタイム（1.0 FTE）の有資格専任リーダーの配置。"
+      
+      - code: "CT2"
+        name_en: "Team Leader is Practicing Clinician"
+        name_ja: "実践臨床家としてのチームリーダー"
+        definition: "リーダーが管理だけでなく直接サービスも提供しているか（プレイングマネージャー）。"
+      
+      - code: "CT3"
+        name_en: "Psychiatric Care Provider on Team"
+        name_ja: "精神科医の配置"
+        definition: "チーム専属の精神科医時間の確保。"
+        scoring_criteria: "5点: 100人あたり0.80 FTE（週32時間）以上"
+      
+      - code: "CT4"
+        name_en: "Role of Psychiatric Care Provider in Treatment"
+        name_ja: "治療における精神科医の役割"
+        definition: "訪問、計画作成、アセスメントへの直接関与。"
+      
+      - code: "CT5"
+        name_en: "Role of Psychiatric Care Provider within Team"
+        name_ja: "チーム内での精神科医の役割"
+        definition: "チーム全体のスーパービジョン、教育、会議参加。"
+      
+      - code: "CT6"
+        name_en: "Nurses on Team"
+        name_ja: "看護師の配置"
+        definition: "十分な数の看護師配置。"
+        scoring_criteria: "5点: 100人あたり2.85 FTE以上"
+      
+      - code: "CT7"
+        name_en: "Role of Nurses"
+        name_ja: "看護師の役割"
+        definition: "投薬管理だけでなく、包括的な健康管理や教育を提供しているか。"
+
+  # --- ST: スペシャリストチーム ---
+  - id: "ST"
+    name_ja: "スペシャリストチーム"
+    name_en: "Specialist Team"
+    description: "重複障害、就労、ピア等の専門職配置と機能"
+    items:
+      - code: "ST1"
+        name_en: "Co-Occurring Disorders (COD) Specialist on Team"
+        name_ja: "重複障害スペシャリストの配置"
+        definition: "物質使用障害との重複に対応する専任スタッフ。"
+        scoring_criteria: "1.0 FTEの配置"
+      
+      - code: "ST2"
+        name_en: "Role of COD Specialist in Treatment"
+        name_ja: "治療における重複障害スペシャリストの役割"
+        definition: "統合的治療（動機づけ面接等）の直接提供。"
+      
+      - code: "ST3"
+        name_en: "Role of COD Specialist within Team"
+        name_ja: "チーム内での重複障害スペシャリストの役割"
+        definition: "他スタッフへのコンサルテーションと教育。"
+      
+      - code: "ST4"
+        name_en: "Employment Specialist on Team"
+        name_ja: "就労スペシャリストの配置"
+        definition: "就労支援専任スタッフの配置。"
+        scoring_criteria: "1.0 FTEの配置"
+      
+      - code: "ST5"
+        name_en: "Role of Employment Specialist in Services"
+        name_ja: "就労サービスにおけるスペシャリストの役割"
+        definition: "IPSモデルに基づく求人開拓や定着支援の実践。"
+      
+      - code: "ST6"
+        name_en: "Role of Employment Specialist within Team"
+        name_ja: "チーム内での就労スペシャリストの役割"
+        definition: "チーム全体への就労支援マインドの啓発。"
+      
+      - code: "ST7"
+        name_en: "Peer Specialist on Team"
+        name_ja: "ピアスペシャリストの配置"
+        definition: "当事者スタッフの配置。"
+        scoring_criteria: "1.0 FTEかつ認定資格等の保持"
+      
+      - code: "ST8"
+        name_en: "Role of Peer Specialist"
+        name_ja: "ピアスペシャリストの役割"
+        definition: "専門職と同等のメンバーとして機能し、リカバリー視点を提供しているか。"
+
+  # --- CP: コア実践 ---
+  - id: "CP"
+    name_ja: "コア実践"
+    name_en: "Core Practices"
+    description: "アウトリーチ、頻度、強度、危機介入などの基本的実践"
+    items:
+      - code: "CP1"
+        name_en: "Community-Based Services"
+        name_ja: "地域ベースのサービス"
+        definition: "サービス提供場所が地域（自宅等）である割合。"
+        scoring_criteria: "5点: 対面時間の75%以上が地域"
+      
+      - code: "CP2"
+        name_en: "Assertive Engagement Mechanisms"
+        name_ja: "アサーティブ・エンゲージメント"
+        definition: "拒否的な利用者に対する動機づけ介入と粘り強い関わり。"
+      
+      - code: "CP3"
+        name_en: "Intensity of Service"
+        name_ja: "サービスの強度"
+        definition: "利用者一人あたりの接触時間総量。"
+        scoring_criteria: "5点: 週平均120分以上"
+      
+      - code: "CP4"
+        name_en: "Frequency of Contact"
+        name_ja: "接触頻度"
+        definition: "週あたりの接触回数。"
+        scoring_criteria: "5点: 週平均3回以上"
+      
+      - code: "CP5"
+        name_en: "Frequency of Contact with Natural Supports"
+        name_ja: "自然的支援への接触頻度"
+        definition: "家族や友人等のインフォーマルな支援者との連携。"
+      
+      - code: "CP6"
+        name_en: "Responsibility for Crisis Services"
+        name_ja: "危機対応の責任"
+        definition: "24時間365日、チームが第一応答者として機能しているか。"
+      
+      - code: "CP7"
+        name_en: "Full Responsibility for Psychiatric Services"
+        name_ja: "精神科サービスの全責任"
+        definition: "チーム内で精神医療（診察・処方）を完結させているか。"
+      
+      - code: "CP8"
+        name_en: "Full Responsibility for Psychiatric Rehabilitation Services"
+        name_ja: "リハビリテーションサービスの全責任"
+        definition: "生活技能訓練などをチーム内で直接提供しているか。"
+
+  # --- EP: エビデンスに基づく実践 ---
+  - id: "EP"
+    name_ja: "エビデンスに基づく実践"
+    name_en: "Evidence-Based Practices"
+    description: "特定のEBPモデル（IPS, IDDT等）の実装度"
+    items:
+      - code: "EP1"
+        name_en: "Full Responsibility for Integrated Treatment for COD"
+        name_ja: "重複障害統合的治療の全責任"
+        definition: "外部機関任せにせず、チーム内で重複障害治療を提供しているか。"
+      
+      - code: "EP2"
+        name_en: "Full Responsibility for Employment & Education Services"
+        name_ja: "就労・教育サービスの全責任"
+        definition: "チーム内で直接就労支援を提供しているか。"
+      
+      - code: "EP3"
+        name_en: "Full Responsibility for Wellness Management & Recovery"
+        name_ja: "ウェルネス・リカバリーサービスの全責任"
+        definition: "IMRやWRAP等のプログラムを提供しているか。"
+      
+      - code: "EP4"
+        name_en: "Integrated Treatment for COD Model"
+        name_ja: "重複障害統合的治療モデル"
+        definition: "ハーム・リダクションやステージ別アプローチへの忠実度。"
+      
+      - code: "EP5"
+        name_en: "Supported Employment & Education Model"
+        name_ja: "援助付き就労・教育モデル"
+        definition: "IPSモデル（迅速な求職、Zero Exclusion等）への忠実度。"
+      
+      - code: "EP6"
+        name_en: "Engagement & Psychoeducation with Natural Supports"
+        name_ja: "自然的支援へのエンゲージメントと心理教育"
+        definition: "家族等への心理教育やスキル訓練の質。"
+      
+      - code: "EP7"
+        name_en: "Empirically-Supported Psychotherapy"
+        name_ja: "実証的に支持された心理療法"
+        definition: "CBT（認知行動療法）等の専門的心理療法の提供。"
+      
+      - code: "EP8"
+        name_en: "Supportive Housing"
+        name_ja: "サポーティブ・ハウジング"
+        definition: "ハウジングファースト・モデル（居住の無条件提供等）の実践。"
+
+  # --- PP: パーソン・センタード・プランニング ---
+  - id: "PP"
+    name_ja: "パーソン・センタード・プランニング"
+    name_en: "Person-Centered Planning"
+    description: "利用者主体の計画策定とストレングス視点"
+    items:
+      - code: "PP1"
+        name_en: "Strengths Inform Treatment Plan"
+        name_ja: "ストレングスに基づく治療計画"
+        definition: "計画が利用者の強みや希望に基づいて構築されているか。"
+      
+      - code: "PP2"
+        name_en: "Person-Centered Planning"
+        name_ja: "パーソン・センタード・プランニング"
+        definition: "利用者が計画策定の主導権を持っているか。"
+      
+      - code: "PP3"
+        name_en: "Interventions Target Broad Range of Life Domains"
+        name_ja: "生活領域全般を対象とした介入"
+        definition: "症状だけでなく、QOL全般（住居、余暇、関係性）への介入。"
+      
+      - code: "PP4"
+        name_en: "Client Self-Determination & Independence"
+        name_ja: "利用者の自己決定と自立"
+        definition: "自律性を尊重し、チームへの依存を防ぐ支援。"
+
+# -----------------------------------------------------------------------------
+# 3. 日本における実装課題 (Implementation in Japan)
+# -----------------------------------------------------------------------------
+japan_implementation:
+  cultural_challenges:
+    - issue: "Assertive（能動的）の解釈"
+      detail: "日本の文化（察する、家族配慮）において、侵襲的と捉えられないような「諦めない関わり」への翻訳と実践が必要。"
+    - issue: "専門職の役割（ピアスタッフ）"
+      detail: "国家資格化の途上であり、チーム内での対等な権限付与や給与体系の整備が課題（ST7/8）。"
+    - issue: "入院決定権（OS11）"
+      detail: "医療保護入院制度下では医師・家族に権限が集中しており、ACTチームの実質的な関与権限確保には病院との密接な連携協定が必須。"
+  
+  recommendations:
+    - "点数だけでなく、EBP（EPサブスケール）やパーソン・センタード（PPサブスケール）の理念理解を優先する。"
+    - "薬物療法偏重からの脱却ツールとして活用する。"

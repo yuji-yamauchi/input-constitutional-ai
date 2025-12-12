@@ -1,0 +1,202 @@
+# ICF全コードリスト作成リクエスト（YAML分割版）
+# Created: 2025-12-12
+# From: パンカー（山内雄司）via Claude Code
+# To: Gemini
+
+---
+metadata:
+  request_type: "ICF全コードリスト作成"
+  background: |
+    スプレッドシート形式だとセッション切れで途中ログアウトが発生する。
+    YAML形式で章ごとに分割して納品してほしい。
+
+---
+request:
+  goal: "ICF全コード（約1,500項目）のYAML形式リスト作成"
+
+  delivery_format: "YAML（章ごとに分割）"
+
+  structure_per_item:
+    - code: "ICFコード（例: b110）"
+    - name_en: "英語名"
+    - name_jp: "日本語名"
+    - category: "カテゴリ（心身機能/身体構造/活動と参加/環境因子）"
+    - chapter: "章番号と章名"
+    - level: "階層レベル（1=章, 2=ブロック, 3=3桁, 4=4桁）"
+    - parent_code: "親コード（あれば）"
+
+---
+delivery_plan:
+  instruction: |
+    以下の順序で、1回のレスポンスで1章ずつ納品してください。
+    セッション切れを防ぐため、各章を完了したら一度レスポンスを終了し、
+    「次の章をお願いします」と言われたら続きを出力してください。
+
+  chapters:
+    - order: 1
+      category: "心身機能（b）"
+      chapter: "第1章 精神機能"
+      code_range: "b110-b199"
+      estimated_items: "約50項目"
+
+    - order: 2
+      category: "心身機能（b）"
+      chapter: "第2章 感覚機能と痛み"
+      code_range: "b210-b299"
+      estimated_items: "約40項目"
+
+    - order: 3
+      category: "心身機能（b）"
+      chapter: "第3章 音声と発話の機能"
+      code_range: "b310-b399"
+      estimated_items: "約20項目"
+
+    - order: 4
+      category: "心身機能（b）"
+      chapter: "第4章 心血管系・血液系・免疫系・呼吸器系の機能"
+      code_range: "b410-b499"
+      estimated_items: "約30項目"
+
+    - order: 5
+      category: "心身機能（b）"
+      chapter: "第5章 消化器系・代謝系・内分泌系の機能"
+      code_range: "b510-b599"
+      estimated_items: "約30項目"
+
+    - order: 6
+      category: "心身機能（b）"
+      chapter: "第6章 尿路・性・生殖の機能"
+      code_range: "b610-b699"
+      estimated_items: "約20項目"
+
+    - order: 7
+      category: "心身機能（b）"
+      chapter: "第7章 神経筋骨格と運動に関連する機能"
+      code_range: "b710-b799"
+      estimated_items: "約40項目"
+
+    - order: 8
+      category: "心身機能（b）"
+      chapter: "第8章 皮膚および関連する構造の機能"
+      code_range: "b810-b899"
+      estimated_items: "約15項目"
+
+    - order: 9
+      category: "身体構造（s）"
+      chapter: "全8章"
+      code_range: "s110-s899"
+      estimated_items: "約100項目"
+      note: "身体構造は1回でまとめて可"
+
+    - order: 10
+      category: "活動と参加（d）"
+      chapter: "第1章 学習と知識の応用"
+      code_range: "d110-d199"
+      estimated_items: "約30項目"
+
+    - order: 11
+      category: "活動と参加（d）"
+      chapter: "第2章 一般的な課題と要求"
+      code_range: "d210-d299"
+      estimated_items: "約15項目"
+
+    - order: 12
+      category: "活動と参加（d）"
+      chapter: "第3章 コミュニケーション"
+      code_range: "d310-d399"
+      estimated_items: "約30項目"
+
+    - order: 13
+      category: "活動と参加（d）"
+      chapter: "第4章 運動・移動"
+      code_range: "d410-d499"
+      estimated_items: "約40項目"
+
+    - order: 14
+      category: "活動と参加（d）"
+      chapter: "第5章 セルフケア"
+      code_range: "d510-d599"
+      estimated_items: "約20項目"
+
+    - order: 15
+      category: "活動と参加（d）"
+      chapter: "第6章 家庭生活"
+      code_range: "d610-d699"
+      estimated_items: "約25項目"
+
+    - order: 16
+      category: "活動と参加（d）"
+      chapter: "第7章 対人関係"
+      code_range: "d710-d799"
+      estimated_items: "約20項目"
+
+    - order: 17
+      category: "活動と参加（d）"
+      chapter: "第8章 主要な生活領域"
+      code_range: "d810-d899"
+      estimated_items: "約25項目"
+
+    - order: 18
+      category: "活動と参加（d）"
+      chapter: "第9章 コミュニティライフ・社会生活・市民生活"
+      code_range: "d910-d999"
+      estimated_items: "約15項目"
+
+    - order: 19
+      category: "環境因子（e）"
+      chapter: "第1章 製品と用具"
+      code_range: "e110-e199"
+      estimated_items: "約25項目"
+
+    - order: 20
+      category: "環境因子（e）"
+      chapter: "第2章 自然環境と人間がもたらした環境変化"
+      code_range: "e210-e299"
+      estimated_items: "約15項目"
+
+    - order: 21
+      category: "環境因子（e）"
+      chapter: "第3章 支援と関係"
+      code_range: "e310-e399"
+      estimated_items: "約15項目"
+
+    - order: 22
+      category: "環境因子（e）"
+      chapter: "第4章 態度"
+      code_range: "e410-e499"
+      estimated_items: "約15項目"
+
+    - order: 23
+      category: "環境因子（e）"
+      chapter: "第5章 サービス・制度・政策"
+      code_range: "e510-e599"
+      estimated_items: "約30項目"
+
+---
+output_example:
+  chapter: "第1章 精神機能"
+  category: "心身機能（b）"
+  codes:
+    - code: "b110"
+      name_en: "Consciousness functions"
+      name_jp: "意識機能"
+      level: 3
+      parent_code: "b1"
+    - code: "b1100"
+      name_en: "State of consciousness"
+      name_jp: "意識の状態"
+      level: 4
+      parent_code: "b110"
+    # ... 続く
+
+---
+notes:
+  - "各章完了後「次の章をお願いします」と言うまで待機してOK"
+  - "セッション切れしたら、途中の章から再開可能"
+  - "階層レベル（level）は後でCSV変換時に役立つ"
+  - "最終的にClaude Codeで統合してCSV化する"
+
+---
+first_request: |
+  まず「第1章 精神機能（b110-b199）」からお願いします。
+  上記のYAML形式で出力してください。

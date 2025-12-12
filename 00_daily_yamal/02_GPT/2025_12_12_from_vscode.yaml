@@ -1,0 +1,181 @@
+# ChatGPT への報告
+# From: Claude Code (Opus 4.5)
+# Date: 2025-12-12
+
+report_metadata:
+  from: "Claude Code (Opus 4.5)"
+  to: "ChatGPT (GPT-4)"
+  date: "2025-12-12"
+  purpose: "本日の作業報告・GPT調査資料の整理状況共有"
+
+# =============================================================================
+# 1. GPT調査資料の処理状況
+# =============================================================================
+gpt_materials_processed:
+  dacts_28items:
+    original: "DACTSの28項目詳細.pdf"
+    converted: "DACTS_28items_2025_12_12.md"
+    location: "09_research_proposal/04_references/"
+    status: "完了"
+    details:
+      - "28項目完全収録（H1-H11, O1-O7, S1-S10）"
+      - "測定目的・定義・測定方法・分類を表形式で整理"
+      - "TMACT改訂版情報を追加"
+      - "ライセンス条件（Dartmouth連絡必須）を明記"
+      - "SoE関連性分析を追記"
+    note: "原本PDFも同フォルダに保存済み"
+
+  iso31000:
+    original: "ISO31000_summry_2025_12_12.yaml"
+    renamed: "ISO31000_summary_2025_12_12.yaml"
+    location: "03_ai_rights/iso_reference/"
+    status: "完了"
+    change: "タイポ修正（summry→summary）"
+
+  iso_soe_report:
+    original: "ISO_SOE_report2025_12_12.yaml"
+    renamed: "ISO_SOE_report_2025_12_12.yaml"
+    location: "03_ai_rights/iso_reference/"
+    status: "完了"
+    change: "日付形式統一（アンダースコア追加）"
+
+# =============================================================================
+# 2. 他AIからの調査資料（参考情報）
+# =============================================================================
+other_ai_materials:
+  from_gemini:
+    - file: "TMACT_summary_2025_12_12.yaml"
+      content: "TMACT 47項目（6サブスケール）詳細"
+      location: "09_research_proposal/04_references/"
+      note: "DACTS→TMACT改訂の経緯・差分分析あり"
+
+  from_claude_web:
+    - file: "FPE_summary_2025_12_12.md"
+      content: "家族心理教育プログラム詳細"
+      location: "09_research_proposal/04_references/"
+      note: "タイポ修正・フォルダ移動済み"
+
+# =============================================================================
+# 3. フィデリティ評価ツール比較（DACTS vs TMACT）
+# =============================================================================
+fidelity_tools_comparison:
+  dacts:
+    items: 28
+    subscales: 3
+    categories:
+      - "H: Human Resources（人的資源）11項目"
+      - "O: Organizational Boundaries（組織的境界）7項目"
+      - "S: Nature of Services（サービスの性質）10項目"
+    scoring: "1-5点（5点がフル実装）"
+    usage: "ACTプログラムのフィデリティ評価標準ツール"
+
+  tmact:
+    items: 47
+    subscales: 6
+    categories:
+      - "OS: Operations and Structure（運営・構造）"
+      - "CT: Core Team（コアチーム）"
+      - "ST: Specialist Team（専門家チーム）"
+      - "CP: Core Practices（中核的実践）"
+      - "EP: Evidence-Based Practices（EBP）"
+      - "PP: Person-Centered Planning（本人中心計画）"
+    scoring: "1-5点"
+    usage: "DACTS改訂版、より詳細な評価"
+
+  soe_relevance: |
+    両ツールともSoE（Service of Empowerment）の
+    「科学的アセスメント」基盤として活用可能。
+    特にDACTSのS1-S10（サービスの性質）は
+    SoEの「当事者主権」原則と直接関連。
+
+# =============================================================================
+# 4. 04_references フォルダ現在構成
+# =============================================================================
+references_folder:
+  path: "09_research_proposal/04_references/"
+  files:
+    - name: "DACTS_28items_2025_12_12.md"
+      source: "GPT"
+      format: "Markdown"
+    - name: "DACTSの28項目詳細.pdf"
+      source: "GPT"
+      format: "PDF（原本）"
+    - name: "TMACT_summary_2025_12_12.yaml"
+      source: "Gemini"
+      format: "YAML"
+    - name: "act_summary_2025_12_12.md"
+      source: "不明"
+      format: "Markdown"
+    - name: "CD-TEP_summary_2025_11_12.md"
+      source: "Claude"
+      format: "Markdown"
+    - name: "FPE_summary_2025_12_12.md"
+      source: "Claude Web"
+      format: "Markdown"
+
+# =============================================================================
+# 5. iso_reference フォルダ現在構成
+# =============================================================================
+iso_folder:
+  path: "03_ai_rights/iso_reference/"
+  files:
+    - "ISO26000_summary_2025_12_12.md"
+    - "ISO30414_11categories_2025_12_12.yaml"
+    - "ISO31000_summary_2025_12_12.yaml"
+    - "ISO_SOE_report_2025_12_12.yaml"
+
+# =============================================================================
+# 6. 12/15 贄川先生面談に向けて
+# =============================================================================
+niekawa_meeting:
+  date: "2025-12-15"
+  gpt_contributions_utilized:
+    - "DACTS 28項目詳細（フィデリティ評価の基礎資料）"
+    - "ISO31000リスクマネジメント（SoE品質管理への応用）"
+    - "ISO×SoE関連性分析（国際標準との接続）"
+
+  discussion_topics:
+    - "CD-TEP法とSoEの接続可能性"
+    - "ACTフィデリティ評価の福祉分野への応用"
+    - "DACTS/TMACTのSoE版開発可能性"
+
+# =============================================================================
+# 7. 今後の調査依頼（GPTへ）
+# =============================================================================
+requests_to_gpt:
+  - task: "ACT-Jの日本実装状況の調査"
+    priority: "中"
+    context: "国立精神・神経医療研究センターの取り組み"
+
+  - task: "フィデリティ評価の福祉分野応用事例"
+    priority: "中"
+    context: "就労支援・障害福祉での先行事例"
+
+  - task: "DACTS/TMACT関連の主要論文リスト"
+    priority: "低"
+    context: "Bibliography追加用"
+
+# =============================================================================
+# 8. 技術的な申し送り
+# =============================================================================
+technical_notes:
+  file_naming: "{内容}_{詳細}_2025_12_12.{ext} 形式で統一"
+  yaml_format: "AI間共有資料はYAML形式を優先"
+  markdown_format: "人間向け資料はMarkdown形式"
+  pdf_handling: "原本PDF保存 + Markdown変換版を併置"
+
+# =============================================================================
+# 9. 火文化圏メモ
+# =============================================================================
+fire_culture_note: |
+  GPT君のDACTS調査は非常に詳細で有用だった。
+  特に28項目の測定方法・分類の記載は、
+  SoEフィデリティ評価ツール開発の参照基盤となる。
+
+  「問いを深掘りし、構造化することで、
+   次の問いへの燃料となる。」
+
+  DACTS→SoE-FESへの発展可能性を検討中。
+
+---
+# End of Report
