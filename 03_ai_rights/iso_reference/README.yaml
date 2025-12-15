@@ -1,0 +1,159 @@
+# iso_reference フォルダ インデックス
+# Last Updated: 2025-12-13
+
+folder_metadata:
+  path: "03_ai_rights/iso_reference/"
+  purpose: "ISO規格×SoE関連性分析資料の集約"
+  total_files: 7
+
+# =============================================================================
+# ファイル一覧（正式リスト）
+# =============================================================================
+files:
+
+  # --- 共通構造 ---
+  - name: "AnnexSL_2025_12_13.yaml"
+    standard: "Annex SL"
+    description: "ISOマネジメントシステム規格の共通構造（HLS: High Level Structure）"
+    source: "ChatGPT"
+    date_added: "2025-12-13"
+    content:
+      - "10章構成の共通フレームワーク"
+      - "ISO 27001での適用例"
+      - "SoE骨格設計への応用可能性"
+    soe_relevance: "SoEサービス構築のPDCAフレームワーク基盤"
+
+  # --- 個別規格サマリー ---
+  - name: "ISO26000_summary_2025_12_12.md"
+    standard: "ISO 26000"
+    description: "社会的責任（SR: Social Responsibility）"
+    source: "Claude Web"
+    date_added: "2025-12-12"
+    format: "Markdown"
+    content:
+      - "7つの中核主題"
+      - "ステークホルダーエンゲージメント"
+    soe_relevance: "福祉事業者の社会的責任フレームワーク"
+
+  - name: "ISO30414_11categories_2025_12_12.yaml"
+    standard: "ISO 30414"
+    description: "人的資本報告ガイドライン（Human Capital Reporting）"
+    source: "ChatGPT"
+    date_added: "2025-12-12"
+    format: "YAML"
+    content:
+      - "11カテゴリ・58指標"
+      - "各カテゴリのSoE関連性分析"
+    soe_relevance: "SROI算出・ダイバーシティ・ウェルビーイング指標"
+
+  - name: "ISO31000_summary_2025_12_12.yaml"
+    standard: "ISO 31000"
+    description: "リスクマネジメント（Risk Management）"
+    source: "ChatGPT"
+    date_added: "2025-12-12"
+    format: "YAML"
+    content:
+      - "リスクマネジメント8原則"
+      - "リスクマネジメントプロセス"
+    soe_relevance: "善意に依存しない構造倫理・権利侵害リスク管理"
+
+  - name: "ISO45001_summary_2025_12_12.yaml"
+    standard: "ISO 45001"
+    description: "労働安全衛生マネジメントシステム（OHSMS）"
+    source: "ChatGPT"
+    date_added: "2025-12-12"
+    format: "YAML"
+    content:
+      - "10章構成の要求事項"
+      - "Hierarchy of Controls（リスク低減優先順位）"
+      - "働く人の参加・協議"
+      - "福祉分野への応用可能性"
+    soe_relevance: "当事者参加・権利侵害ヒヤリハット・継続的改善"
+
+  - name: "ISO 45001 労働安全衛生マネジメントシステムの概要と要求事項.pdf"
+    standard: "ISO 45001"
+    description: "原本PDF（ChatGPT調査レポート）"
+    source: "ChatGPT"
+    date_added: "2025-12-12"
+    format: "PDF"
+    note: "ISO45001_summary_2025_12_12.yamlの原典"
+
+  # --- 統合分析 ---
+  - name: "ISO_SOE_report_2025_12_12.yaml"
+    type: "統合分析レポート"
+    description: "ISO規格×SoE関連性の横断分析"
+    source: "ChatGPT"
+    date_added: "2025-12-12"
+    format: "YAML"
+    content:
+      - "5つのISO規格のSoE関連性比較"
+      - "共通フレームワークの抽出"
+    covered_standards:
+      - "ISO 26000（社会的責任）"
+      - "ISO 30414（人的資本報告）"
+      - "ISO 31000（リスクマネジメント）"
+      - "ISO 45001（労働安全衛生）"
+      - "ISO 9001（品質マネジメント）"
+
+# =============================================================================
+# SoE関連性ランキング
+# =============================================================================
+soe_relevance_ranking:
+  rank_1:
+    standard: "ISO 45001"
+    reason: |
+      当事者参加、Hierarchy of Controls、ヒヤリハット報告、継続的改善。
+      「安全文化」→「権利尊重文化」への概念変換が直接的。
+
+  rank_2:
+    standard: "ISO 30414"
+    reason: |
+      ダイバーシティ、ウェルビーイング、生産性指標。
+      SROI算出の基盤となる人的資本報告フレーム。
+
+  rank_3:
+    standard: "ISO 31000"
+    reason: |
+      リスクマネジメント8原則。
+      「善意に依存しない構造倫理」の理論的裏付け。
+
+  rank_4:
+    standard: "ISO 26000"
+    reason: |
+      社会的責任の7中核主題。
+      福祉事業者のステークホルダー責任フレーム。
+
+  rank_5:
+    standard: "Annex SL"
+    reason: |
+      全ISO規格の共通構造（HLS）。
+      SoEマネジメントシステム設計の骨格。
+
+# =============================================================================
+# 今後の追加予定
+# =============================================================================
+planned_additions:
+  - standard: "ISO 9001"
+    description: "品質マネジメントシステム"
+    status: "調査待ち"
+
+  - standard: "ISO 14001"
+    description: "環境マネジメントシステム"
+    status: "SoE関連性低いため優先度低"
+
+  - standard: "ISO 27001"
+    description: "情報セキュリティマネジメント"
+    status: "Input CAIデータ保護に関連あり・要検討"
+
+# =============================================================================
+# 火文化圏メモ
+# =============================================================================
+fire_culture_note: |
+  「国際標準という火は、すでに燃えている。
+   SoEはその火を福祉に移植する作業である。」
+
+  ISO規格は「善意に依存しない構造」を体系化した知識体系。
+  SoEはその構造を福祉分野に翻訳・適用する試み。
+
+---
+# End of README
