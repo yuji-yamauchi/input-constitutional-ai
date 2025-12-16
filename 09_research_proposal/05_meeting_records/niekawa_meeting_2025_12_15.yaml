@@ -1,0 +1,383 @@
+# ==========================================
+# 贄川先生面談記録
+# ==========================================
+# 日時: 2025-12-15
+# 参加者: 山内雄司、贄川先生（日本福祉大学）
+# 形式: オンライン面談（録画あり）
+# 結果: 指導教員希望として名前記載許可取得
+# ==========================================
+
+metadata:
+  date: "2025-12-15"
+  meeting_type: "修士課程受験相談"
+  duration: "約40-50分"
+  format: "オンライン"
+  recording: true
+  outcome: "positive"
+
+# ==========================================
+# 面談の結論
+# ==========================================
+conclusion:
+  指導教員:
+    status: "希望として名前記載許可取得"
+    relationship: "研究方向性に共感・前向き"
+
+  研究計画:
+    status: "方向性確認済み"
+    next_step: "リサーチクエスチョンの精緻化"
+
+  入試準備:
+    evaluation: "着実に準備できている"
+    strength: "過去問の単語ほぼ理解済み"
+
+# ==========================================
+# 確定した研究焦点
+# ==========================================
+research_focus:
+  thesis_title_draft: "就労移行支援におけるアセスメントの再構築"
+
+  target_population:
+    primary:
+      - "精神障害"
+      - "発達障害"
+      - "軽度知的障害（手帳B程度）"
+    rationale: "65歳以下で最大ボリューム層"
+
+  service_context:
+    primary: "就労移行支援"
+    future: "相談支援"
+    note: "就労選択支援（2024年10月新設）も視野"
+
+  research_site:
+    avoid: "所属事業所（倫理審査上NG）"
+    candidate: "関東圏の知人事業所"
+
+# ==========================================
+# 理論的基盤
+# ==========================================
+theoretical_framework:
+
+  accounting_approach:
+    concept: "当事者を貸借対照表・損益計算書で理解"
+    key_ideas:
+      - "中学レベル未習得＝本来提供されるべきサービスの負債"
+      - "障害があることで奪われた権利の補償としての福祉"
+    effect:
+      - "ビジネス界隈にわかりやすい"
+      - "自己責任 vs 権利毀損の明確化"
+
+  llm_utilization:
+    tools:
+      - "ChatGPT（OpenAI）"
+      - "Claude（Anthropic）"
+      - "Gemini（Google）"
+    methodology:
+      - "30分ワークショップで複数ペルソナ設定"
+      - "予測行動との差異→異常値検出"
+      - "当事者との対話ログ蓄積・分析"
+      - "2週間での変化測定"
+    advantages:
+      - "支援員よりヒアリング能力高い"
+      - "何時間でも付き合う"
+      - "すべてログとして残る"
+
+  quasi_mandate_contract:
+    legal_basis: "成果物でなくプロセス提供が義務"
+    application: "事業所が提供プロセスを履行しているか可視化"
+    purpose: "当事者と事業者間のアドボカシー担保"
+
+# ==========================================
+# 山内の背景・問題意識
+# ==========================================
+yamauchi_background:
+
+  practical_experience:
+    duration: "12年（就労支援）"
+    scale: "年商1.4億円組織の経営経験"
+    qualification: "サービス管理責任者"
+
+  problem_consciousness:
+
+    regional_cooperation_difficulty:
+      - "自立支援協議会で議論が噛み合わない"
+      - "措置法世代と総合支援法世代のギャップ"
+      - "意思決定支援が『人権は当たり前』前提で伝わらない"
+
+    rights_deprivation:
+      - "発達障害概念なき時代の義務教育"
+      - "読み書きそろばんの未習得"
+      - "選択経験のないまま福祉サービス開始"
+
+    evidence_neglect:
+      - "善良なる弱者への施し思考"
+      - "エビデンスベースより善意重視"
+      - "個別性を盾にした数値化拒否"
+
+    specific_incident:
+      event: "知的障害軽度の友人グループ内リンチ致死"
+      context: "加害者は助けを求めていたが放置"
+      cause: "福祉・行政・医療の連携不全"
+
+  international_comparison:
+    usa_ips:
+      feature: "Individual Placement and Support"
+      principle: "支援員は週5人以上の経営者と会う"
+
+    uk:
+      policy: "福祉的就労は重度障害者のみ"
+
+    sweden:
+      example: "Samhall等の一般企業内支援"
+
+    common_trend:
+      - "1980-90年代に福祉的就労大幅縮小"
+      - "一般企業内での福祉的支援に移行"
+
+    japan_gap:
+      assessment: "30-40年遅れている"
+      current: "A型B型に年間7000億円"
+      proposal: "一般就労支援に8000億円投入の方が効率的"
+
+  turning_point_brain_hemorrhage:
+    timing: "2年前（2023年）"
+    cause:
+      genetic: "海綿状血管腫（脳・脊髄）"
+      environmental: "障害致死事件・違法ドラッグ対応等のストレス"
+    surgery_history: "3回、複数箇所に腫瘍残存"
+    realization:
+      - "N=1にリソース割きすぎる性格"
+      - "現場で精神削りすぎて家庭顧みず"
+      - "現場から距離を置き構造的改善にシフト"
+
+# ==========================================
+# 贄川先生からの助言
+# ==========================================
+niekawa_feedback:
+
+  research_plan_guidance:
+
+    focus_clarification:
+      question: "アセスメントを実施する場は？"
+      options:
+        - "相談支援"
+        - "就労移行支援"
+        - "就労選択支援（2024年10月新設）"
+      yamauchi_response:
+        main_target: "相談支援でのアセスメント強化"
+        focus: "精神・発達・軽度知的→一般就労"
+        prerequisite: "現場連携の文脈統一が前提"
+
+    research_question:
+      importance: "修士論文の骨組みとなる"
+      requirement: "時間をかけて精緻化"
+      process: "やり取りしながら詰める"
+
+    ethics_review:
+      caution: "所属事業所のデータは基本NG"
+      alternative: "知人事業所への協力依頼"
+      target: "関東圏の相談支援・就労支援事業所"
+
+  exam_preparation_evaluation:
+    current_status:
+      - "着実に準備できている"
+      - "過去問の単語ほぼ理解済み"
+      - "AIで簡潔化訓練中"
+    advice:
+      - "面接では大きなストーリーを伝える"
+      - "限られた時間での効果的提示"
+      - "研究計画書の内容を軸に"
+
+  niekawa_self_assessment:
+    strengths:
+      - "精神障害領域でのEBP、IPS経験"
+      - "福祉への批判的眼差しの共有"
+    weaknesses:
+      - "福祉の内側からしか見てこなかった"
+      - "経営的観点の経験不足"
+      - "IT・簿記の専門性不足"
+    proposal:
+      - "大学の他教員も活用してほしい"
+      - "研究観点でできることをインプット"
+      - "山内からは現場情報をフィードバックしてほしい"
+
+  shared_vision:
+    - "福祉の質を上げる"
+    - "当事者の選択肢を広げる"
+    - "構造的改善に取り組む"
+
+# ==========================================
+# Susan Scott-Parkerからの助言（参考）
+# ==========================================
+susan_advice:
+  focus_narrowing: "課題は多いが一つに絞る"
+  cultural_gap:
+    discovery: "英国では福祉的就労は重度のみ"
+    issue: "日本の文脈と前提が異なる"
+  strategic_thinking:
+    advice: "どんな武器を作るか考える"
+    warning: "福祉的就労廃止論への直接攻撃は困難"
+  alternative_approach:
+    proposal: "海外移行期のハレーション研究"
+    rationale: "短期間で効果がないから移行した歴史"
+
+# ==========================================
+# 福祉現場の構造的問題（共有認識）
+# ==========================================
+structural_problems:
+
+  problem_1_goodwill_dependency:
+    phenomenon: "善良なる弱者への施し"
+    results:
+      - "成長しない前提の支援計画"
+      - "福祉的就労への囲い込みインセンティブ"
+      - "一般就労より福祉的就労が得"
+
+  problem_2_evidence_neglect:
+    phenomenon: "数値化への抵抗"
+    excuse: "個別性・多様性を盾に"
+    background: "個性記述vs法則定立の二項対立"
+    niekawa_note:
+      - "尺度って何になるんですか？"
+      - "研究で使うときだけ協力"
+      - "継続的活用への抵抗"
+
+  problem_3_medical_welfare_disconnect:
+    medical_perspective:
+      - "福祉村は胡散臭い"
+      - "5-10分診療で判断せざるを得ない"
+    welfare_perspective:
+      - "医師は本人情報のみで診断"
+      - "週30-40時間接する福祉側の情報が活用されない"
+    ideal_state:
+      - "福祉が医師の診断に必要な情報提供"
+      - "同意のもとフィードバック"
+      - "カウンセリング機能の分担"
+
+  problem_4_measure_era_values:
+    generation: "50代以降（措置法時代から従事）"
+    thinking: "別世界を作る（居心地の良い場所）"
+    contrast: "社会を変える（inclusion）"
+    transition_difficulty:
+      - "配慮された場を作る発想"
+      - "社会が変わる発想への転換困難"
+
+  problem_5_council_dysfunction:
+    phenomenon: "議論が噛み合わない"
+    cause: "同じ言語で異なる文脈"
+    examples:
+      - "リカバリー概念が通じない"
+      - "IPSが理解されない"
+      - "当然でしょう→別世界"
+
+# ==========================================
+# IPS的視点（企業との関係）
+# ==========================================
+ips_perspective:
+  support_worker_role:
+    essence: "セールスマン"
+    obligation: "週5人以上の経営者と会う"
+    skill: "自分より情報・経験ある人とディベート"
+
+  current_problem:
+    welfare_side: "善良なる弱者に仕事を恵んでください"
+    should_be: "労働力として売り込む"
+
+  adjustment:
+    concept: "障害の有無に関わらず働きやすい環境"
+    responsibility: "企業の利益のための人材投資"
+    side_effect: "他の従業員も働きやすくなる"
+
+  regional_labor_strategy:
+    proposal: "海外労働力より地域の障害当事者活用"
+    reason: "コスパが良い、既に地域に存在"
+
+# ==========================================
+# 将来展望
+# ==========================================
+future_vision:
+  masters:
+    goal: "アセスメント手法の確立"
+    duration: "2年"
+
+  doctoral:
+    goal: "博士号取得→権威付け"
+    collaboration: "海外AI企業（Anthropic等）"
+    reason: "肩書きなしでは国際連携困難"
+
+  ultimate:
+    ideal: "A型B型事業所の廃止"
+    method: "一般企業内支援への移行"
+    timeline: "生きている間にできるか"
+
+# ==========================================
+# 入試情報
+# ==========================================
+entrance_exam:
+  category: "社会人経験者枠"
+
+  required_documents:
+    - "研究計画概要書"
+    - "実務経験証明書"
+    - "経歴書（なぜ研究したいか）"
+
+  exam_content:
+    written:
+      question_1: "3つの用語から1つ選択して論述"
+      question_2: "経験から特定の言葉について論じる"
+      note: "小論文はなし"
+    interview:
+      theme: "研究計画書、経歴と研究の接続"
+      lead: "贄川先生が主導、他面接官が補足"
+
+  preparation_status:
+    strengths:
+      - "過去問の単語ほぼ理解済み"
+      - "AIで簡潔化訓練中"
+      - "情緒的にならず第三者的記述練習"
+    weaknesses:
+      - "英語力（TOEIC400点程度）"
+    countermeasures:
+      - "自動翻訳ツール活用（Teams等）"
+      - "ゼロから学ぶより実務的やり取り重視"
+
+# ==========================================
+# 重要な引用
+# ==========================================
+key_quotes:
+
+  yamauchi:
+    philosophy:
+      - "福祉村の品質を上げることが最終的に当事者のプラスになる"
+      - "N=1にリソース割くより構造を変える"
+      - "A型B型7000億→一般就労支援8000億の方が効率的"
+    rights:
+      - "障害があることで奪われた権利の補償としての福祉サービス"
+      - "施しではなく本来提供されるべきサービスの負債"
+    structure:
+      - "支援者の資質でなく構造そのものが質を担保"
+      - "善意が消えてもシステムが機能する"
+
+  niekawa:
+    research:
+      - "研究は小石を積み上げるようなもの"
+      - "大きな夢への小さな一歩を確実に"
+    critique:
+      - "福祉側の発信力を頑張らなきゃいけない"
+      - "数値化への抵抗は個別性を盾にした拒否"
+
+# ==========================================
+# 次のアクション
+# ==========================================
+next_actions:
+  immediate:
+    - "研究計画概要書に贄川先生の名前記載"
+    - "リサーチクエスチョンの精緻化"
+  short_term:
+    - "関東圏知人事業所への協力打診"
+    - "出願書類の最終整備"
+  deadline:
+    application_period: "2026年1月9日〜23日"
+
+---
+# End of Meeting Record
