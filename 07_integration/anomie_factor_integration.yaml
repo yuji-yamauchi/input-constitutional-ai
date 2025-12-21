@@ -1,0 +1,1731 @@
+# ==========================================
+# アノミー因子：理論統合ファイル
+# Anomie Factor: Theoretical Integration
+# Date: 2025-12-18 (Created), 2025-12-21 (Renamed)
+# Status: 概念定義完了・研究計画書への実装は保留
+# ==========================================
+#
+# 用語変更履歴 (2025-12-21):
+#   旧称: 無敵の人因子 (Muteki-no-hito Factor)
+#   新称: アノミー因子 (Anomie Factor)
+#   理由: ネットスラングから学術用語へ（Durkheimへの回帰）
+#   語源: Greek: a- (without) + nomos (law/norm)
+#
+# ==========================================
+
+metadata:
+  purpose: "富の不足／権利剥奪がもたらす認知の歪みを定義"
+  etymology:
+    origin: "Greek"
+    components: "a- (without) + nomos (law/norm)"
+    meaning: "state of normlessness (無規制状態)"
+  former_name: "無敵の人因子 (Muteki-no-hito Factor)"
+  cultural_background: "日本のインターネットスラング（2008年頃〜）で『無敵の人』として知られる現象の学術的再定義"
+  related_files:
+    - "07_integration/hubris_factor_integration.yaml"
+  integration_status: "研究計画書v2.9には未実装（保留）"
+  note: "ヒュブリス因子との対称性を持つ概念（両方ギリシャ語由来）"
+  theoretical_backing: "Émile Durkheim (Suicide), Travis Hirschi (Social Bond Theory)"
+
+# ==========================================
+# PART 1: 概念の起源
+# ==========================================
+concept_origin:
+
+  etymology:
+    term: "無敵の人（Muteki-no-hito）"
+    literal_meaning: "Invincible Person / Person with Nothing to Lose"
+    origin: "日本のインターネット掲示板（2ちゃんねる等）"
+    emergence: "2008年秋葉原無差別殺傷事件以降に普及"
+
+  original_definition:
+    source: "ひろゆき（西村博之）による定義"
+    statement: |
+      「失うものが何もない人は、社会的制裁を恐れない。
+      だから何でもできる。『無敵』である。」
+
+    irony: |
+      「無敵」は強さではなく、絶望の極致を表す。
+      社会とのつながりを全て失った状態。
+
+  criminological_context:
+    pattern: "拡大自殺（Extended Suicide）"
+    examples:
+      - "秋葉原無差別殺傷事件（2008）"
+      - "京都アニメーション放火事件（2019）"
+      - "小田急線刺傷事件（2021）"
+      - "北新地クリニック放火事件（2021）"
+    common_profile:
+      - "社会的孤立"
+      - "経済的困窮"
+      - "将来への絶望"
+      - "自己価値の喪失"
+
+# ==========================================
+# PART 2: 認知の歪みの構造
+# ==========================================
+cognitive_distortion_structure:
+
+  core_belief: "失うものが何もない"
+
+  logical_progression:
+    step_1: "社会から何も受け取っていない（権利の剥奪）"
+    step_2: "社会契約の外にいる（帰属の喪失）"
+    step_3: "罰を恐れる理由がない（抑止力の無効化）"
+    step_4: "社会への攻撃が合理的選択になる（暴力の正当化）"
+
+  psychological_mechanism:
+    hopelessness:
+      definition: "将来に対する絶望感"
+      effect: "長期的結果を考慮しなくなる"
+
+    learned_helplessness:
+      definition: "学習性無力感"
+      reference: "Martin Seligman"
+      effect: "努力しても状況は変わらないという信念"
+
+    social_bond_theory:
+      definition: "社会的絆理論"
+      reference: "Travis Hirschi"
+      effect: "4つの絆（愛着・投資・巻き込み・信念）の全てが断絶"
+
+# ==========================================
+# PART 2.5: 社会的絆理論の詳細（DeepResearch追加）
+# Hirschi's Social Bond Theory - Detailed Analysis
+# ==========================================
+social_bond_theory_detailed:
+
+  source:
+    author: "Travis Hirschi"
+    work: "Causes of Delinquency (1969)"
+    thesis: |
+      人は本来、逸脱行動をとる可能性を秘めているが、
+      社会との「絆（Bond）」によってそれを抑制されている。
+      この絆が断絶した時、人は「自由に」犯罪を行える状態になる。
+
+  four_elements:
+
+    attachment:
+      definition: "他者への情緒的配慮（愛着）"
+      normal_function: |
+        「親を悲しませたくない」「友人に軽蔑されたくない」
+        という感情的ブレーキが逸脱を回避させる。
+
+      muteki_state: |
+        長期間の社会的孤立（引きこもり）や家族関係の断絶により、
+        「心理的な他者」が存在しない状態。
+
+        8050問題：80代の親が50代の引きこもりの子を支える構図。
+        家族という最後の砦が機能不全に陥った時、完全孤立が発生。
+
+      behavioral_impact: |
+        他者との情緒的繋がりの希薄化 → 共感性（Empathy）の著しい低下
+        他者を「人間」ではなく「対象物」「社会の象徴」として認識。
+
+    commitment:
+      definition: "社会的地位・資産への投資"
+      normal_function: |
+        学業、職業上の地位、蓄積された財産は
+        「順応への投資（Stake in Conformity）」と呼ばれ、
+        犯罪によってこれらを失うリスクが抑止力となる。
+
+      muteki_state: |
+        「失うものがない」状態の核心。
+        就職氷河期世代の非正規雇用常態化、長期失業によるキャリア断絶。
+        「守るべき将来」が存在しない。
+
+      empirical_support: |
+        刑務所内研究：仮釈放の可能性がない受刑者は、
+        リスクを顧みず暴力行為に及ぶ傾向が高い。
+
+      behavioral_impact: |
+        現状維持＝「緩やかな死」
+        逮捕・刑罰のリスクは、マイナス資産の現状と比較して
+        実質的なコストとして認識されない。
+
+    involvement:
+      definition: "慣習的活動への従事（巻き込み）"
+      normal_function: |
+        学業や仕事に忙殺されている状態は、
+        逸脱行動を考える暇を与えない。
+
+      muteki_state: |
+        失業や引きこもり状態では膨大な「空白の時間」を抱える。
+        この空白はインターネット上のエコーチェンバーによって埋められる。
+
+      echo_chamber_effect: |
+        同調的な意見が増幅される閉鎖空間で、
+        自身の境遇を社会の不正義として再解釈する
+        独自のナラティブを構築。
+
+    belief:
+      definition: "社会規範の正当性への同意（信念）"
+      normal_function: |
+        法律や道徳は正しく、守るべきものだという信念。
+
+      muteki_state: |
+        「自己責任論」への反発と敵意。
+        既存の社会規範の正当性を否定する信念の形成。
+
+      behavioral_impact: |
+        法遵守義務の否認
+        社会への復讐の正当化
+
+  summary_table:
+    note: |
+      愛着: 孤立、家族不和、友人の欠如 → 他者への共感性の欠如、被害者の記号化
+      コミットメント: 失業、非正規雇用、無資産 → 逮捕・投獄による損失コストの消滅
+      巻き込み: 余暇の過多、ネットへの没入 → 逸脱的空想を醸成する時間の増大
+      信念: 「自己責任論」への反発、敵意 → 法遵守義務の否認、社会への復讐の正当化
+
+    anomie:
+      definition: "アノミー（無規範状態）"
+      reference: "Émile Durkheim"
+      effect: "社会規範が個人に対する拘束力を失う"
+
+# ==========================================
+# PART 2.6: 一般緊張理論（DeepResearch追加）
+# Agnew's General Strain Theory (GST)
+# ==========================================
+general_strain_theory:
+
+  source:
+    author: "Robert Agnew"
+    work: "General Strain Theory (1992, 2001拡張)"
+    core_thesis: |
+      緊張（Strain）は「否定的な感情状態」を生み出し、
+      その感情が犯罪・逸脱行動という「是正行動」を誘発する。
+
+  three_strain_sources:
+
+    failure_to_achieve_goals:
+      description: "正当な目標達成の失敗"
+      traditional: |
+        Mertonの緊張理論：社会的成功目標と正統的手段へのアクセス乖離
+      agnew_expansion: |
+        成功目標だけでなく、
+        「公正な扱いを受けること」「自律性の維持」など
+        より広範な目標の失敗も含む。
+      muteki_application: |
+        就職氷河期世代：努力しても正規雇用という「成功」に到達できない。
+        「頑張れば報われる」という社会的約束の反故。
+
+    removal_of_positive_stimuli:
+      description: "正の刺激の除去"
+      examples:
+        - "失業による収入喪失"
+        - "離婚・離別による家族の喪失"
+        - "コミュニティからの排除"
+      muteki_application: |
+        8050問題における親の死：最後の支援源の喪失
+        「もう何も残っていない」という認知の確定
+
+    presentation_of_negative_stimuli:
+      description: "負の刺激の提示"
+      examples:
+        - "貧困"
+        - "虐待"
+        - "いじめ"
+        - "差別"
+      muteki_application: |
+        「自己責任論」による社会的非難の継続
+        「努力不足」「甘え」というラベリング
+
+  negative_emotions:
+    primary: "怒り（Anger）"
+    secondary:
+      - "フラストレーション"
+      - "怨恨（Ressentiment）"
+    mechanism: |
+      緊張が慢性化すると、怒りは「怨恨」へと変質する。
+      怨恨は特定の個人ではなく「社会全体」「恵まれた人々」への敵意となる。
+
+  ressentiment:
+    source: "Nietzsche, Max Scheler"
+    definition: |
+      自己の劣位を認識しつつ、それを変える力を持たない者が
+      「価値の転換」によって精神的優位を獲得しようとする心理。
+    manifestation: |
+      「成功者は不正をしている」
+      「社会は腐っている」
+      「自分は被害者だ」
+    danger: |
+      怨恨が極限に達すると、
+      「社会への復讐」が道徳的に正当化される。
+
+  deviance_as_corrective:
+    logic: |
+      犯罪・逸脱行動は、緊張への「是正行動」として機能する：
+      1. 緊張の原因を直接除去（例：搾取者への復讐）
+      2. 負の感情の発散（例：破壊行為による怒りの解消）
+      3. 正の刺激の獲得（例：注目・承認の獲得）
+
+# ==========================================
+# PART 2.7: プロスペクト理論（DeepResearch追加）
+# Prospect Theory and Risk-Seeking in Loss Domain
+# ==========================================
+prospect_theory:
+
+  source:
+    authors: "Daniel Kahneman, Amos Tversky"
+    work: "Prospect Theory: An Analysis of Decision Under Risk (1979)"
+
+  core_principles:
+
+    reference_point_dependency:
+      description: |
+        人は「絶対値」ではなく「参照点からの変化」で価値を判断する。
+      muteki_application: |
+        参照点が「かつての自分」「同世代の平均」の場合、
+        現在の状況は深刻な「損失」として認識される。
+
+    loss_aversion:
+      description: "同じ金額でも、損失の痛みは利得の喜びより大きい"
+      ratio: "約2〜2.5倍"
+      muteki_application: |
+        「失うものがない」状態は、損失回避が機能しない状態。
+        通常の人が避けるリスクを、恐れなくなる。
+
+    value_function_convexity:
+      description: |
+        損失領域では価値関数が凸型になる。
+        つまり、損失が大きくなるほど追加損失の痛みは減少する。
+      muteki_application: |
+        既に多くを失った人にとって、
+        「さらに失う」ことの追加コストは心理的に小さい。
+        「どうせ最悪なら、もう少し悪くなっても同じ」
+
+    risk_seeking_in_loss_domain:
+      description: |
+        利得領域ではリスク回避、損失領域ではリスク追求。
+      example: |
+        確実に5万円失う vs 50%で10万円失うか0か
+        → 多くの人がギャンブルを選ぶ
+      muteki_application: |
+        「無敵の人」は深い損失領域にいる。
+        低確率でも「一発逆転」「復讐の達成」を狙う。
+        高確率の「さらなる損失」（逮捕・死）は軽視される。
+
+  desperation_threshold_model:
+    source: "DeepResearch統合概念"
+    description: |
+      プロスペクト理論の極限状態として、
+      「絶望閾値（Desperation Threshold）」を設定できる。
+    threshold_condition: |
+      現在地が参照点から大きく乖離し、
+      かつ回復可能性がゼロに近い時、
+      通常の意思決定モデルが崩壊する。
+    behavioral_prediction: |
+      閾値以下では：
+      - 「協力」が遺伝子的死を意味する状態
+      - 合理的計算による抑止が機能しない
+      - 「道連れ」が「最適戦略」になりうる
+
+# ==========================================
+# PART 2.8: 進化心理学的アプローチ（DeepResearch追加）
+# Evolutionary Psychology Perspectives
+# ==========================================
+evolutionary_psychology:
+
+  young_male_syndrome:
+    source: "Martin Daly & Margo Wilson"
+    work: "Homicide (1988)"
+    description: |
+      若年男性は、繁殖競争において
+      「リスクを取らないことのリスク」が高い。
+      配偶者獲得のためには、地位・資源の誇示が必要。
+    implication: |
+      「何も持っていない」若年男性は、
+      通常のルートで地位を獲得できない。
+      ハイリスク・ハイリターン戦略への傾斜。
+
+  crazy_bastard_hypothesis:
+    source: "Daniel Fessler"
+    description: |
+      一見非合理的なリスク行動は、
+      「自分は手強い相手だ（Formidability）」という
+      シグナリングとして機能する。
+    game_theory: |
+      「この人は何をするかわからない」という評判は、
+      競争相手を退却させる効果を持つ。
+    muteki_application: |
+      社会的地位を持たない者が、
+      「狂気」を資源として利用する。
+      「無敵の人」という自己呈示は、
+      ある種の「強さ」の誇示になりうる。
+
+  spite_behavior:
+    definition: |
+      自己にコストを支払ってでも、
+      他者の利得を減少させる行動。
+    rhp_connection:
+      concept: "Resource Holding Potential (RHP)"
+      logic: |
+        自身のRHPが極端に低い場合、
+        協力的戦略では「遺伝子的死」が確定する。
+        相対的順位を上げるための「引きずり下ろし」。
+    muteki_application: |
+      「自分が幸せになれないなら、他者も道連れにする」
+      これは進化的には「合理的」な戦略でありうる。
+
+  evolutionary_summary: |
+    進化心理学的視点は、「無敵の人」の行動を
+    「狂気」や「病理」ではなく、
+    「極限状況における適応的戦略」として理解する。
+
+    これは行動を「正当化」するためではなく、
+    「予防」のために理解することが目的。
+
+# ==========================================
+# PART 2.9: 拡大自殺・怨恨的資格意識（DeepResearch追加）
+# Extended Suicide and Aggrieved Entitlement
+# ==========================================
+extended_suicide_and_entitlement:
+
+  aggrieved_entitlement:
+    source: "Michael Kimmel"
+    work: "Angry White Men (2013)"
+    definition: |
+      かつて享受していた（あるいは享受すべきと信じていた）
+      特権や地位が奪われたという認識から生じる怒り。
+    mechanism: |
+      「自分はもっと良い扱いを受けるべきだ」
+      「社会が自分から奪った」
+      → 復讐の正当化
+    demographic_pattern: |
+      日本の「無敵の人」事件の多くが中年男性であることと符合。
+      かつての「男性稼ぎ手モデル」からの脱落。
+
+  extended_suicide:
+    source: "Paul E. Mullen"
+    work: "Mass Murder Research"
+    definition: |
+      自殺願望を持つ者が、
+      死に際して他者を巻き込む行動。
+    pseudo_commando:
+      definition: |
+        「疑似コマンド（Pseudo-Commando）」型犯罪者。
+        入念に計画された大量殺人を行い、
+        最終的に自殺または警察による射殺（Suicide by Cop）で終わる。
+      typical_profile:
+        - "怨恨を抱えた社会的孤立者"
+        - "長期間の被害妄想または被害認識"
+        - "詳細な計画と準備"
+        - "マニフェストや遺書を残す傾向"
+    narrative_function: |
+      犯行は「最後の声明」として機能する。
+      「世界に自分の存在を刻む」
+      「自分を無視した社会への報復」
+
+  warning_signs:
+    behavioral:
+      - "社会的撤退の加速"
+      - "怨恨的言動の増加"
+      - "「最後の」行動の準備（財産処分、遺書）"
+      - "攻撃対象の研究"
+    digital:
+      - "過激なコンテンツへの接触増加"
+      - "攻撃方法の検索"
+      - "マニフェストの作成"
+
+  manifestation:
+    - "無差別テロ"
+    - "拡大自殺"
+    - "社会への復讐"
+    - "「道連れ」行動"
+
+# ==========================================
+# PART 3: 社会契約からの離脱
+# ==========================================
+social_contract_exit:
+
+  rousseau_framework:
+    original_contract: |
+      社会契約とは、個人が自然状態の一部の自由を放棄し、
+      代わりに社会から保護と権利を受け取る合意。
+
+    muteki_violation: |
+      「無敵の人」は、社会から何も受け取っていないと感じる。
+      よって、契約の一方的破棄（Exit）が正当化される。
+
+  hobbes_parallel:
+    leviathan_logic: |
+      ホッブズ曰く、主権者（社会）が保護を提供できないなら、
+      臣民（個人）は服従義務から解放される。
+
+    muteki_application: |
+      社会が保護を提供しないなら、
+      個人は社会のルールに従う義務がない。
+
+  rawls_connection:
+    veil_of_ignorance: |
+      ロールズの「無知のヴェール」は、
+      誰もが最悪の立場に陥る可能性を前提とする。
+
+    muteki_critique: |
+      「無敵の人」は、最悪の立場が現実になった人々。
+      社会設計が彼らを救済できなかった証拠。
+
+# ==========================================
+# PART 4: 富の分布と因子の繁殖
+# ==========================================
+wealth_distribution_and_pathogen:
+
+  ecological_model:
+    metaphor: "病原体の繁殖環境"
+
+    breeding_ground:
+      environment: "権利剥奪・機会の欠如・希望の喪失"
+      pathogen: "無敵の人因子"
+      reproduction_rate: "権利侵害の蓄積に比例して増加"
+
+    transmission_mechanism:
+      individual_level: "個人の絶望の蓄積"
+      social_level: "類似境遇者への感染（模倣犯）"
+      media_amplification: "報道による「成功モデル」の拡散"
+
+  quantitative_indicators:
+    proxy_measures:
+      - "相対的貧困率"
+      - "社会的孤立率（独居・無縁）"
+      - "長期失業率"
+      - "生活保護受給率"
+      - "自殺率（特に壮年男性）"
+
+    compound_effect: |
+      これらの指標が複合的に重なると、
+      「無敵の人因子」の繁殖率が指数関数的に上昇する。
+
+# ==========================================
+# PART 5: 罪と罰因子との対称性
+# ==========================================
+symmetry_with_sin_punishment_factor:
+
+  mirror_relationship:
+    statement: |
+      両因子は鏡像関係にある。
+      富の分布の両極で発生する「社会契約からの離脱」。
+
+    muteki_factor:
+      position: "富の分布の底辺"
+      driver: "絶望（Despair）"
+      logic: "排除されたから、ルールの外にいる"
+      outcome: "テロ・暴動（Chaos from below）"
+
+    sin_punishment_factor:
+      position: "富の分布の頂点"
+      driver: "傲慢（Hubris）"
+      logic: "超越したから、ルールに縛られない"
+      outcome: "汚職・搾取（Chaos from above）"
+
+  common_root: "社会契約からの離脱"
+  common_result: "法・道徳の崩壊"
+
+  dostoevsky_connection:
+    crime_and_punishment: |
+      ラスコーリニコフは貧困（無敵因子の環境）と
+      傲慢（罪と罰因子の認知）を同時に持っていた。
+
+      両因子は別々の人間に宿るとは限らない。
+      しかし社会全体で見れば、富の分布が両因子の繁殖環境を決める。
+
+# ==========================================
+# PART 6: 理論的接続
+# ==========================================
+theoretical_connections:
+
+  tilly_opportunity_hoarding:
+    concept: "機会独占（Opportunity Hoarding）"
+    connection: |
+      機会独占により、底辺層は「正規ルート」で成功する可能性を奪われる。
+      「ルールに従っても報われない」という認識が無敵因子を育てる。
+
+  merton_strain_theory:
+    concept: "緊張理論（Strain Theory）"
+    connection: |
+      社会的目標（成功）と正統な手段へのアクセスの乖離が
+      逸脱行動を生む。
+      無敵の人は「革新」「逃避」「反抗」の極端な形態。
+
+  durkheim_anomie:
+    concept: "アノミー（Anomie）"
+    connection: |
+      社会規範の弱体化と個人の欲望の無制限化。
+      急激な社会変動（バブル崩壊、リーマンショック）後に増加。
+
+  hirschman_exit_voice:
+    concept: "Exit, Voice, Loyalty"
+    connection: |
+      「Voice（発言）」が無効と感じた時、人は「Exit（離脱）」を選ぶ。
+      無敵の人は、社会からの究極のExit。
+
+  ekisei_kakumei:
+    concept: "易姓革命（王朝交代）"
+    connection: |
+      無敵の人因子が閾値を超えると、
+      システムリセット（革命・暴動）が発生する。
+
+      底辺の因子蓄積 → テロ・暴動
+      頂点の因子蓄積 → 腐敗・不正義
+
+      両方が臨界点に達した時、社会は崩壊する。
+
+# ==========================================
+# PART 7: SoEにおける位置づけ
+# ==========================================
+soe_integration:
+
+  primary_function:
+    name: "無敵因子の除去"
+    mechanism: "Input Constitutional AI → 権利回復 → 希望の再生"
+    target: "富の分布の底辺"
+
+  intervention_logic:
+    traditional_approach:
+      timing: "Phase 2（崩壊後）で介入"
+      problems:
+        - "遅すぎる"
+        - "高コスト"
+        - "低ROI"
+        - "スティグマの再生産"
+
+    soe_approach:
+      timing: "Phase 1（Silent Accumulation）で介入"
+      advantages:
+        - "早期介入"
+        - "高レバレッジ"
+        - "大きなSROI"
+        - "尊厳を保った支援"
+
+  mechanism_detail:
+    step_1:
+      action: "Input Constitutional AI による記録段階での権利保障"
+      effect: "スティグマ・偏見の記録への混入を防止"
+
+    step_2:
+      action: "Variance Analysis による隠れた資産の発見"
+      effect: "「自分には何もない」という認知を修正"
+
+    step_3:
+      action: "Life Bookkeeping による人生の資産計上"
+      effect: "「失うものがない」から「守るものがある」へ"
+
+    step_4:
+      action: "権利回復プログラムによる機会の提供"
+      effect: "社会契約への再参入"
+
+  key_insight: |
+    無敵の人を「犯罪者予備軍」として監視するのではなく、
+    「権利を奪われた被害者」として支援する。
+
+    予防は抑圧ではなく、権利回復によって達成される。
+
+# ==========================================
+# PART 8: 具体例
+# ==========================================
+concrete_examples:
+
+  case_pattern_1:
+    label: "長期失業・社会的孤立"
+    profile:
+      - "40-50代男性"
+      - "正規雇用からの脱落"
+      - "家族との断絶"
+      - "経済的困窮"
+    cognitive_progression:
+      - "努力しても報われない"
+      - "誰も助けてくれない"
+      - "社会は敵だ"
+      - "どうせ終わりなら..."
+
+  case_pattern_2:
+    label: "発達障害・適応困難"
+    profile:
+      - "20-30代"
+      - "未診断または診断後の支援不足"
+      - "就労の失敗繰り返し"
+      - "二次障害（うつ・不安）"
+    cognitive_progression:
+      - "どこに行っても上手くいかない"
+      - "自分は欠陥品だ"
+      - "生きている価値がない"
+      - "最後に一矢報いたい"
+
+  case_pattern_3:
+    label: "若年層の将来絶望"
+    profile:
+      - "10-20代"
+      - "家庭環境の問題（貧困・虐待）"
+      - "教育機会の欠如"
+      - "ロールモデルの不在"
+    cognitive_progression:
+      - "努力しても親ガチャで決まる"
+      - "社会は不公平だ"
+      - "どうせ報われない"
+      - "注目されたい（承認欲求の歪み）"
+
+  k_case_parallel:
+    description: |
+      SoE研究の原点となったK氏事例も、
+      無敵因子の蓄積過程と見ることができる。
+
+      支援現場での「善意のパターナリズム」が
+      本人の主体性を奪い続け、
+      「自分には何もできない」という認知を強化した。
+
+      K氏は幸い攻撃的行動には至らなかったが、
+      自己効力感の完全な喪失という形で現れた。
+
+# ==========================================
+# PART 9: 戦略的ナラティブ
+# ==========================================
+narrative_strategy:
+
+  for_security_sector:
+    hook: "Pre-crime Prevention（犯罪予防）"
+    logic: |
+      「監視と抑圧」による予防は限界がある。
+      SoEは「権利回復による希望の再生」で
+      無敵因子の発生自体を抑制する。
+
+      テロ対策の最も効果的な方法は、
+      テロリストを生まない社会を作ること。
+
+  for_investors:
+    hook: "Social Stability Insurance（社会安定保険）"
+    logic: |
+      無敵の人による事件は、
+      企業価値・不動産価格・社会的信頼を毀損する。
+
+      SoEへの投資は、
+      社会の安定性を維持するための保険料。
+
+  for_conservatives:
+    hook: "Order through Inclusion（包摂による秩序）"
+    logic: |
+      Burkeは「変化する能力が自己保存の手段」と言った。
+      排除を続ければ、いずれ暴力的なリセットが起きる。
+
+      SoEは「秩序ある自由」を守るための予防策。
+      革命を防ぐための改良こそBurke的。
+
+  for_welfare_sector:
+    hook: "From Charity to Reconstruction"
+    logic: |
+      「かわいそうな人を助ける」のではなく、
+      「奪われた権利を回復する」。
+
+      無敵の人を「危険人物」として管理するのではなく、
+      「被害者」として支援する。
+
+# ==========================================
+# PART 10: 公衆衛生学的エビデンス（Claude資料追加）
+# Population Health Evidence
+# ==========================================
+population_health_evidence:
+
+  overview: |
+    公衆衛生学・疫学研究は「無敵の人因子」を
+    個人の病理ではなく「社会の症状」として裏付ける。
+    不平等そのものが「疾病の根本原因」として機能する。
+
+  deaths_of_despair:
+    researchers: "Anne Case & Angus Deaton"
+    core_finding: |
+      1999年以降、白人非ヒスパニック系アメリカ人（45-54歳）の
+      死亡率が「上昇」に転じた。他の先進国では低下し続けている。
+
+    three_causes:
+      - "薬物過量摂取（1998-2017で4倍以上増加）"
+      - "アルコール性肝疾患（50%増加）"
+      - "自殺（37%増加）"
+
+    educational_gradient: |
+      高校卒業未満の白人の死亡率：
+      1999年：黒人より30%「低かった」
+      2015年：黒人より30%「高くなった」
+
+    muteki_connection: |
+      「絶望死」は無敵因子の最も直接的な表出。
+      社会との断絶が生物学的死に至るプロセス。
+
+  social_isolation_mortality:
+    meta_analysis:
+      source: "Holt-Lunstad et al. (2010)"
+      sample: "148研究、308,849名のメタ分析"
+      finding: |
+        強い社会的関係を持つ人は生存率が「50%高い」。
+        効果サイズは運動不足・肥満を上回る。
+
+    nature_review:
+      source: "Nature Human Behaviour (2023)"
+      sample: "90コホート研究のシステマティックレビュー"
+      finding: |
+        社会的孤立の全死因死亡リスク：1.32倍
+        心血管死リスク：1.34倍
+
+    muteki_connection: |
+      社会的絆理論（Hirschi）の生物学的裏付け。
+      「Attachment」の喪失は文字通り致死的。
+
+  allostatic_load:
+    concept: "慢性ストレスによる生理学的「摩耗」の蓄積"
+    mechanism: |
+      長期的な社会的排除・経済的困窮は
+      コルチゾール上昇、炎症マーカー増加、
+      心血管系・代謝系への累積的負荷をもたらす。
+
+    neighborhood_effect: |
+      研究：近隣貧困は「世帯」貧困とは独立に
+      アロスタティック負荷と正の相関。
+      つまり「場所」自体が健康を損なう。
+
+    childhood_impact: |
+      長期貧困を経験した子どもは
+      成人期の心血管疾患・糖尿病・認知機能低下の
+      リスクが有意に上昇。
+
+    muteki_connection: |
+      無敵因子の「蓄積」プロセスの生物学的メカニズム。
+      Phase 1（沈黙の蓄積）は測定可能な生理学的変化を伴う。
+
+  fundamental_causes_theory:
+    source: "Bruce Link & Jo Phelan (1995)"
+    citations: "5,000件以上"
+    core_thesis: |
+      社会経済的地位（SES）は「根本原因」として機能する。
+      SESは「柔軟な資源」（金銭・知識・威信・権力・社会的つながり）を体現し、
+      「どんな特定のメカニズムが関連していようと」健康を保護する。
+
+    implication: |
+      医学が進歩しても健康格差が持続する理由：
+      新しい治療法の恩恵は既存の資源格差に従って分配される。
+
+    muteki_connection: |
+      無敵因子を持つ者は「柔軟な資源」の全てを欠いている。
+      よって「どんな疾病に対しても」脆弱。
+
+  gini_coefficient_health:
+    general_finding:
+      source: "Wilkinson & Pickett, The Spirit Level (2009)"
+      method: "23先進国、11の健康・社会指標の分析"
+      result: |
+        より不平等な社会は11指標全てで悪い結果：
+        - 身体的健康、精神的健康、薬物乱用
+        - 教育、投獄率、肥満
+        - 社会的流動性、信頼、暴力
+        - 10代の妊娠、子どもの幸福
+      robustness: "OECDデータで再検証：29中28の関係が有意"
+
+    covid_mortality:
+      source: "31研究のシステマティックレビュー"
+      finding: |
+        ジニ係数とCOVID-19死亡率は正の相関。
+        ジニ1%上昇 → 死亡リスク14%上昇。
+
+    child_mortality:
+      source: "103の低・中所得国の分析"
+      finding: |
+        ジニ係数は小児・青年死亡率と正の相関
+        （感染症・非感染症の両方）。
+        国の富を調整後も有意。
+
+  who_commission:
+    source: "WHO Commission on Social Determinants of Health"
+    lead: "Sir Michael Marmot"
+    core_message: |
+      「社会正義は生死の問題である」
+      (Social justice is a matter of life and death.)
+
+    social_gradient: |
+      健康は「社会的勾配」に従う。
+      社会的地位が低いほど、階段の「各段」で健康が悪化する。
+      最底辺だけでなく、全体が勾配に沿って分布。
+
+    england_data:
+      life_expectancy_gap: "最富裕地域と最貧困地域で7年の差"
+      disability_free_gap: "17年の差"
+
+    marmot_review_10_years:
+      source: "2020年報告"
+      findings:
+        - "平均寿命の改善が停滞"
+        - "最貧困10%の女性で平均寿命が「低下」"
+        - "健康格差が拡大"
+
+    muteki_connection: |
+      無敵因子は「社会的勾配」の最底辺で繁殖する。
+      Marmotの「床を上げる」政策はSoEと完全に整合。
+
+  cure_violence_model:
+    founder: "Gary Slutkin（元WHO疫学者）"
+    approach: |
+      暴力を「感染症」として扱い、
+      疾病制御の方法論を適用。
+      「暴力インターラプター」を配置し、
+      暴力の「感染」を事前に遮断。
+
+    results:
+      charlotte_nc: "殺人75%減少"
+      culiacan_mexico: "90%減少"
+      south_bronx: "銃撃63%減少"
+      cali_colombia: "殺人47%減少"
+
+    systematic_review:
+      source: "2025年システマティックレビュー"
+      finding: |
+        68.7%の研究で銃撃・殺人の減少を確認。
+        プログラム地域は対照群より24.9%低リスク。
+
+    muteki_connection: |
+      暴力を「個人の病理」ではなく「社会の感染症」として扱う。
+      これはSoEの「社会の免疫システム」アプローチと同一。
+
+  collective_efficacy:
+    source: "Robert Sampson (1997), Science"
+    sample: "シカゴ343地区、8,782名調査"
+    definition: |
+      「集合的効力感」＝相互信頼＋公共の利益のために介入する意思
+
+    finding: |
+      集合的効力感が高い地区は犯罪率が「40%低い」。
+      集合的効力感が集中的不利と暴力の関係を媒介。
+
+    muteki_connection: |
+      社会的絆理論の「地域レベル」版。
+      地域の「Attachment」と「Belief」が犯罪を抑制。
+
+  guaranteed_income_pilots:
+    stockton_seed:
+      program: "$500/月、24ヶ月"
+      findings:
+        - "収入変動の減少"
+        - "精神的苦痛の軽減"
+        - "「軽度精神疾患の可能性あり」→「精神的健康」への改善"
+
+    newark_nmee:
+      findings:
+        - "ホームレス率：3%→0%"
+        - "ストレス・うつ・不安の有意な減少"
+
+    muteki_connection: |
+      「床を上げる」介入の直接的効果。
+      経済的安定が精神的健康を回復させる。
+
+  floor_and_ceiling_approach:
+    emerging_framework: |
+      公衆衛生学では「床」と「天井」の両方への
+      同時介入フレームワークが新興している。
+
+    consumption_corridors:
+      source: "Ian Gough"
+      concept: |
+        「消費回廊」＝持続可能な幸福のための
+        十分性の「床」と最大限の「天井」の間のゾーン
+
+    doughnut_economics:
+      source: "Kate Raworth"
+      concept: |
+        人類のための「安全で公正な空間」
+        ＝社会的基盤（床）と生態学的上限（天井）の間
+
+    limitarianism:
+      source: "Ingrid Robeyns"
+      concept: |
+        富の上限設定（倫理的～€100万、政治的～€1000万）
+        極端な富の集中を民主主義侵食・気候危機・健康不平等と接続
+
+    policy_examples:
+      - "最低賃金＋CEO報酬比率開示（Dodd-Frank）"
+      - "報酬比率税（9州で検討中）"
+      - "NHS Core20PLUS5：最貧困20%に焦点"
+
+    soe_alignment: |
+      SoEの「床を上げ、天井を設ける」アプローチは
+      公衆衛生学の新興フレームワークと完全に整合。
+      両極への同時介入が最大の効果を生む。
+
+  epidemiology_as_pathogen:
+    question: "不平等を『病原体』として扱う研究はあるか？"
+    answer: |
+      直接的な比喩ではないが、Fundamental Causes Theoryは
+      社会的条件を「疾病誘発因子」として扱う。
+
+      Zelner et al.の最近の研究は、疫学モデルが
+      構造的不平等を組み込むべきと主張。
+      「疾病は平等な機会を与える感染者ではない」
+
+      Johan Galtung, Paul Farmerの「構造的暴力」理論は
+      社会構造が基本的ニーズの充足を妨げることで
+      人々に害を与えると文書化。
+
+  references_population_health:
+    - author: "Case, A., & Deaton, A."
+      year: 2015
+      title: "Rising Morbidity and Mortality in Midlife Among White Non-Hispanic Americans"
+      journal: "PNAS, 112(49)"
+      note: "Deaths of Despair原典"
+
+    - author: "Case, A., & Deaton, A."
+      year: 2020
+      title: "Deaths of Despair and the Future of Capitalism"
+      publisher: "Princeton University Press"
+
+    - author: "Holt-Lunstad, J., Smith, T. B., & Layton, J. B."
+      year: 2010
+      title: "Social Relationships and Mortality Risk: A Meta-analytic Review"
+      journal: "PLoS Medicine, 7(7)"
+
+    - author: "Link, B. G., & Phelan, J."
+      year: 1995
+      title: "Social Conditions as Fundamental Causes of Disease"
+      journal: "Journal of Health and Social Behavior, Extra Issue"
+      note: "5000+引用"
+
+    - author: "Wilkinson, R. G., & Pickett, K."
+      year: 2009
+      title: "The Spirit Level: Why Greater Equality Makes Societies Stronger"
+      publisher: "Bloomsbury Press"
+
+    - author: "Marmot, M."
+      year: 2010
+      title: "Fair Society, Healthy Lives (The Marmot Review)"
+      source: "Institute of Health Equity"
+
+    - author: "Marmot, M., et al."
+      year: 2020
+      title: "Health Equity in England: The Marmot Review 10 Years On"
+      source: "Institute of Health Equity"
+
+    - author: "Sampson, R. J., Raudenbush, S. W., & Earls, F."
+      year: 1997
+      title: "Neighborhoods and Violent Crime: A Multilevel Study of Collective Efficacy"
+      journal: "Science, 277(5328)"
+
+    - author: "Slutkin, G."
+      year: 2013
+      title: "Violence is a Contagious Disease"
+      source: "TED Talk / Cure Violence Global"
+
+    - author: "Raworth, K."
+      year: 2017
+      title: "Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist"
+      publisher: "Chelsea Green Publishing"
+
+    - author: "Gough, I."
+      year: 2017
+      title: "Heat, Greed and Human Need: Climate Change, Capitalism and Sustainable Wellbeing"
+      publisher: "Edward Elgar"
+
+# ==========================================
+# PART 11: 歴史的検証（Gemini古代史資料追加）
+# Historical Verification: Muteki Factor in Ancient Societies
+# ==========================================
+historical_verification_muteki:
+
+  overview: |
+    Gemini DeepResearchによる古代ローマと中国の比較史分析は、
+    「無敵の人因子」が現代固有の現象ではなく、
+    権利構造の歪みが生じた全ての社会で繰り返し出現することを示す。
+
+  roman_proletarii:
+    definition: "土地を失い、ローマ市に流入した無産市民"
+    origin: |
+      ラティフンディア（大土地所有）との競争に敗れた中小農民が
+      土地を手放し、「パンとサーカス」に依存する存在へ転落。
+
+    muteki_characteristics:
+      social_credit: "ゼロ（自作農としての誇りを喪失）"
+      assets: "ゼロ（土地・資本なし）"
+      relationships: "破壊（コミュニティから切り離された）"
+      cost_sensitivity: "極限まで低下（失うものがない）"
+
+    political_mobilization:
+      clodius: |
+        紀元前50年代、クロディウスは無産市民を組織化し、
+        暴力装置として政治利用。
+
+        カレッジア（同業者組合）を通じて、
+        社会的に孤立していた人々に「所属」と「役割」を与えた。
+
+        リミタリアニズムの失敗により経済的市民権を失った人々にとって、
+        クロディウスの私兵となることは、
+        唯一残された社会的アイデンティティの回復手段。
+
+      result: "元老院議事堂が焼き討ちされる"
+
+    catiline_conspiracy:
+      description: |
+        「無敵の人」因子は貧困層だけでなく、没落した貴族層にも現れた。
+        紀元前63年のカティリーナの陰謀は、
+        多額の債務を抱えた不満分子によるクーデター未遂。
+
+      supporters:
+        - "土地を失ったスッラ配下の退役軍人"
+        - "選挙に敗れ借金まみれになった貴族"
+
+      slogan: "借金の帳消し（Tabulae Novae）"
+
+      muteki_logic: |
+        既存の体制内での再起が絶望的であったため、
+        体制そのものの転覆（放火、要人暗殺）以外に
+        生き残る道がなかった。
+
+        これは現代の「無敵の人」と同一の認知構造。
+
+  chinese_liumin:
+    definition: "流民（戸籍から外れた漂泊民）"
+    origin: |
+      土地兼併により自作農の地位を失い、
+      小作人にすらなれなかった最底辺の人々。
+
+    quantitative_scale: |
+      王朝末期には人口の相当部分が流民化。
+      黄巾の乱（AD 184）の参加者は数十万人規模。
+
+  yellow_turban_rebellion:
+    description: |
+      後漢末期、土地を失い流民となった農民たちは、
+      もはや現世的な救済（徳治や法）を信じなくなっていた。
+
+      太平道という宗教的紐帯が結びつくことで、
+      「無敵の人」の大集団へと変貌。
+
+    slogan: "蒼天已死 黄天當立（蒼天すでに死す、黄天まさに立つべし）"
+
+    slogan_analysis:
+      cang_tian:
+        meaning: "漢の秩序"
+        content: |
+          豪族による土地収奪と、宦官による腐敗政治。
+          権利の偏重が極まり、民衆を生存の限界まで追い詰めたシステム。
+
+      yi_si:
+        meaning: "已死（すでに死す）"
+        content: |
+          既存の社会契約の完全な破棄。
+          漢の法や権威はもはや従うべきものではなく、打倒すべき「悪」。
+
+    muteki_parallel: |
+      「蒼天已死」は現代の「無敵の人」が語る
+      「社会は腐っている」「この国は終わっている」と同一の認知。
+
+      終末論的な確信が、通常の抑止力を無効化する。
+
+  chen_sheng_wu_guang:
+    year: "BC 209"
+    slogan: "王侯将相いずくんぞ種あらんや"
+
+    translation: "王や将軍は生まれつき特別な種族なのか？ いや違う"
+
+    historical_context: |
+      秦の過酷な法（雨で遅刻しても死刑）は、
+      民衆を「反乱してもしなくても死ぬ」という極限状況に追い込んだ。
+
+    muteki_state: |
+      死刑か反乱か、どちらを選んでも死。
+      この状況で「失うものがない」状態が確定すると、
+      反乱が「合理的選択」になる。
+
+      これはプロスペクト理論の「損失領域でのリスク追求」と完全に一致。
+
+    significance: |
+      古代社会における「権利の偏重（血統・身分による支配の正当性）」
+      に対する根源的な異議申し立て。
+
+      2200年前の中国で、すでに「無敵の人」のロジックが明確に言語化されていた。
+
+  scheidel_great_leveler:
+    source: "Walter Scheidel, The Great Leveler (2017)"
+    thesis: |
+      歴史的に不平等を劇的に是正したのは、
+      平和的な改革（リミタリアニズム政策）ではなく、
+      「四騎士（戦争、革命、崩壊、疫病）」による破滅的な暴力のみ。
+
+    muteki_role: |
+      「無敵の人」の大量発生は「四騎士」の先行指標。
+      彼らは崩壊の「原因」ではなく「症状」であり、
+      同時に崩壊を加速する「触媒」でもある。
+
+  modern_parallel:
+    comparison_table:
+      ancient_rome:
+        group: "プロレタリイ（無産市民）"
+        trigger: "土地喪失、ラティフンディアとの競争敗北"
+        manifestation: "クロディウスの私兵、カティリーナの陰謀"
+
+      ancient_china:
+        group: "流民、黄巾党"
+        trigger: "土地兼併、免税特権による収奪"
+        manifestation: "黄巾の乱、王朝崩壊"
+
+      modern_japan:
+        group: "無敵の人"
+        trigger: "就職氷河期、非正規雇用、社会的孤立"
+        manifestation: "無差別テロ、拡大自殺"
+
+    common_structure: |
+      1. 権利の偏重が富の偏重を生む
+      2. 富の偏重が一部の人々を「失うものがない」状態に追い込む
+      3. 「失うものがない」人々にとって、通常の抑止力は機能しない
+      4. 彼らは体制への攻撃を「合理的選択」として選ぶ
+      5. 攻撃の蓄積が閾値を超えると、システムが崩壊する
+
+  soe_historical_lesson: |
+    歴史は、「無敵の人」を個人の病理として扱い、
+    抑圧・監視で対処しようとした社会が全て崩壊したことを示す。
+
+    SoEのアプローチ（権利回復による介入）は、
+    「偉大なる平準化」の暴力的代替を提供する試み。
+
+    歴史的には成功例が乏しいが、
+    それは問題が解決不可能だからではなく、
+    特権階級が自発的に権利を手放さなかったから。
+
+    SoEは、透明性と説明責任によって
+    「自発的な権利の平準化」を促す設計。
+
+# ==========================================
+# PART 12: 神経発達的脆弱性とACEs（Gemini資料追加）
+# Neurodevelopmental Vulnerability and ACEs
+# ==========================================
+neurodevelopmental_aces_integration:
+
+  overview: |
+    Gemini DeepResearchによる包括的分析。
+    「無敵の人」現象を3因子の相互作用として理解する。
+
+    重要な前提：
+    発達障害そのものが犯罪の原因ではない。
+    問題の本質は、適切な療育や支援が行われなかったことによる「二次障害」にある。
+
+  three_factor_interaction_model:
+    formula: "Risk = ACEs × Neurodevelopmental Vulnerability × Social Isolation"
+
+    factor_1_aces:
+      name: "逆境的小児期体験（ACEs）"
+      definition: |
+        18歳までの虐待（身体的、心理的、性的）、ネグレクト、
+        家庭機能不全（親の離婚、精神疾患、投獄など）の累積。
+
+      effects:
+        worldview_distortion: "「人は信用できない」「暴力は問題解決手段」という世界観"
+        impulse_control: "衝動制御の生物学的欠損（扁桃体過敏、前頭前野機能低下）"
+
+      japan_specific:
+        educational_abuse:
+          definition: |
+            親が子どもの学業成績に対して過剰な期待をかけ、
+            意に沿わない場合に人格否定や体罰を行う。
+
+          mechanism:
+            conditional_love: "成績が良ければ愛される → ありのままの自分に価値を感じられない"
+            fragility: "受験失敗 = 全人格の否定として体験される"
+
+          example: "秋葉原事件・加藤智大のケース"
+
+        psychological_neglect:
+          definition: |
+            積極的な虐待ではなく、親からの関心が完全に欠落した状態。
+            「存在しないもの」として扱われる。
+
+          effect: "社会全体からも無視されているという感覚 → 負の承認を求める"
+          example: "川崎事件・岩崎隆一のケース"
+
+    factor_2_neurodevelopmental:
+      name: "神経発達的脆弱性"
+      definition: |
+        ASD、ADHD等の神経発達症特性。
+        社会適応の難しさ、対人摩擦の原因となりうる。
+
+      critical_caveat: |
+        発達障害 ≠ 犯罪の原因
+        問題は「二次障害」の発生。
+
+      secondary_disability:
+        formation_process: |
+          特性（空気が読めない、こだわりが強い、衝動的）ゆえに
+          過度な叱責やいじめに晒される
+          → 自己肯定感の著しい低下
+          → 周囲を「敵意に満ちた場所」として認識
+          → 被害妄想・反社会的パーソナリティへの変質
+
+        cognitive_rigidity: |
+          ASD特性の「こだわり」「ルールへの執着」がネガティブに作用
+          → 「自分は不当に扱われている」「社会のルールが間違っている」
+          という確固たる信念（固着観念）の形成
+
+        justice_sensitivity: |
+          「正義への感受性」が高いタイプの場合、
+          自分が受けた理不尽な扱いに対して、
+          法を超えた暴力による「処刑」「報復」を正当化。
+
+      moj_research_report_50:
+        source: "法務総合研究所 研究部報告50号（無差別殺傷事犯の研究）"
+        period: "2000-2010年の無差別殺傷事犯52件"
+
+        findings:
+          mental_disorder_prevalence: |
+            対象者の多くに何らかの精神障害の診断または疑い。
+            特に顕著：パーソナリティ障害、神経発達症の特性を背景とした行動障害。
+            （統合失調症などの精神病圏よりも多い）
+
+          treatment_absence: |
+            精神的な問題を抱えていたにもかかわらず、
+            犯行時に医療機関で適切な治療を受けていた者は極めて少数。
+            → 福祉のセーフティネットから漏れ落ちていた。
+
+          prior_suicide_attempt: |
+            犯行直前に自殺を考えたり、自殺未遂を行った者の割合が高い。
+            特に前科のない初犯者で顕著。
+            → 「拡大自殺」としての側面を裏付け。
+
+    factor_3_social_isolation:
+      name: "社会的排除・孤立"
+      definition: |
+        社会的絆（Hirschiの4要素）の完全な断絶。
+
+      effects:
+        brake_failure: "社会的ブレーキ（絆）の無効化"
+        echo_chamber: |
+          修正的フィードバックの欠如
+          → 妄想や過激思想の先鋭化
+
+      hirschi_bond_breakdown:
+        attachment:
+          normal: "親、友人、教師への情緒的結びつき"
+          muteki: "虐待やいじめにより幼少期に断絶。親への憎悪が動機になることも。"
+
+        commitment:
+          normal: "社会的目標（進学、出世）への投資"
+          muteki: "失業やドロップアウトにより、守るべきキャリアや資産が存在しない"
+
+        involvement:
+          normal: "慣習的活動（部活、仕事）への従事"
+          muteki: "ひきこもり状態により、社会活動への参加時間がゼロに近い"
+
+        belief:
+          normal: "社会のルールを正当と認める価値観"
+          muteki: "「社会は自分を不当に扱った」という被害念慮により、法規範の正当性を否定"
+
+      key_insight: |
+        無差別殺傷事犯に至るケースでは、
+        これら4つの絆が「すべて」欠落していることが最大の特徴。
+
+  violence_type_transformation:
+    instrumental_violence:
+      definition: "金銭獲得、組織防衛など明確な外的利益を目的とした暴力"
+      examples: "暴力団抗争、強盗殺人"
+
+    expressive_violence:
+      definition: |
+        内面に蓄積された絶望、怒り、「存在の証明」を
+        社会に向けて発露すること自体を目的とした暴力
+
+      examples:
+        - "秋葉原無差別殺傷事件（2008）"
+        - "京都アニメーション放火殺人事件（2019）"
+        - "川崎市登戸通り魔事件（2019）"
+
+    shift: |
+      「無敵の人」による犯罪は、
+      道具的暴力から表出的暴力への質的転換を象徴。
+
+  case_studies:
+    akihabara_2008:
+      perpetrator: "加藤智大（犯行時25歳）"
+      motive: "インターネット掲示板でのトラブル、自身の存在誇示"
+
+      factor_analysis:
+        aces_educational_abuse: |
+          母親による壮絶な教育虐待。
+          食事を床に撒いて食べさせる、厳格な監視など。
+          人格を破壊するレベルの支配。
+          → 他者への基本的信頼感の欠如、歪んだ承認欲求の形成。
+
+        social_exclusion: |
+          青森の進学校卒業後、大学受験に失敗。
+          自動車工場の派遣社員として転々とする生活。
+          「負け組」という劣等感と雇用の不安定さが将来への希望を奪った。
+
+        neurodevelopmental: |
+          幼少期からの衝動的な行動（教室のガラスを割るなど）が記録。
+          適切な医療的介入はなされなかった。
+          掲示板への病的な執着は、現実世界での対人関係構築の困難さ
+          （ASD傾向の示唆）を補完する代替行動だった可能性。
+
+      insight: |
+        教育虐待によって「完璧でなければ愛されない」という認知図式が形成。
+        しかし現実は派遣社員であり、掲示板でもなりすまし被害に遭う。
+        この乖離が限界に達した時、
+        「掲示板の住人に自分の存在を認めさせる」という歪んだ動機で凶行に及んだ。
+
+    kawasaki_2019:
+      perpetrator: "岩崎隆一（犯行時51歳）"
+      motive: "不明（自殺したため）。エリート層への嫉妬・道連れの可能性"
+
+      factor_analysis:
+        aces_separation: |
+          幼少期に両親が離婚。実母とは音信不通、実父とも別居。
+          伯父夫婦に預けられる。
+          幼児期に「精神発達水準が低く行動障害がある」との理由で
+          重症心身障害児施設（旭川療育園）に入所していた記録あり。
+          → 早期からの発達的問題と、それに対する親の養育放棄（ネグレクト）。
+
+        eighty_fifty_problem: |
+          長期間のひきこもり状態。
+          80代の伯父夫婦と同居していたが、会話は皆無でメモによる意思疎通のみ。
+          行政（川崎市）の介入も、伯父夫婦への配慮から本人との接触ができず、
+          支援の網から完全に孤立。
+
+        neurodevelopmental: |
+          施設入所歴から、未診断あるいは未治療の知的障害や発達障害の可能性が高い。
+          適切な療育を受けられず、社会適応に失敗し続けた結果、
+          自宅という密室に逃げ込むしかなかった。
+
+      insight: |
+        幼少期から「厄介払い」され続けた人生。
+        攻撃対象が明るい未来を象徴する私立小学生であったことは、
+        自身が得られなかった「幸福な子供時代」への強烈な嫉妬と憎悪を示唆。
+        「社会的に抹殺された存在」から、最期に「加害者」として社会に名を刻むことを選んだ。
+
+    kyoani_2019:
+      perpetrator: "青葉真司（犯行時41歳）"
+      motive: "「小説を盗まれた」という妄想的確信に基づく報復"
+
+      factor_analysis:
+        aces_poverty_abuse: |
+          両親の離婚後、父親と生活。
+          父親は貧困の中で青葉に対して箒で殴るなどの激しい身体的虐待を日常的に加えた。
+          柔道の大会で入賞した盾を焼却させるなど、成功体験を破壊する行為も。
+          父親は後に自殺しており、家庭環境は崩壊。
+
+        secondary_disability_delusion: |
+          コンビニ強盗での服役後、生活保護を受給しながら小説執筆に没頭。
+          精神疾患の診断歴があり、訪問看護も受けていたが、被害妄想は悪化の一途。
+          「京アニが自分のアイデアを盗んだ」という思考は、
+          人生の失敗を他者のせいにする他責的傾向と、
+          統合失調症圏あるいはパーソナリティ障害の症状が混在。
+
+        poverty_lost_hope: |
+          幼少期の極貧体験（カップ麺の単価計算のエピソードなど）が、
+          金銭への執着や社会への恨みを醸成。
+          小説家になることだけが唯一の「逆転の希望」であったが、
+          それが（彼の中で）絶たれた時、暴力への閾値が消失。
+
+      insight: |
+        ACEsによるトラウマと貧困がベース、
+        そこに精神障害による認知の歪みが重なった。
+        「無敵」性は、失うものが何もない貧困と、
+        妄想による「正当防衛」の論理によって補強されていた。
+
+  institutional_gap:
+    problem: "触法精神障害者と『制度の谷間』"
+
+    description: |
+      精神保健福祉法26条に基づく通報制度は存在するが、
+      措置入院の要件は「自傷他害の恐れが著しい」場合に限定。
+
+      多くの「無敵の人」予備軍は、
+      - 幻覚妄想が支配する精神病状態とは異なる
+      - 一見すると論理的に会話が可能
+      - 単なる「性格の偏り」と見なされる
+      → 強制的な医療保護の対象となりにくい
+
+    revolving_door: |
+      刑務所を出た彼らは再び社会的に孤立し、
+      適切な治療も支援も受けられないまま、
+      再犯あるいはより重大な犯罪へとエスカレート。
+      （回転ドア現象）
+
+  soe_intervention_design:
+    principle: |
+      「無敵の人」を「危険人物」として監視・抑圧するのではなく、
+      3因子それぞれへの早期介入によって発生を予防する。
+
+    intervention_points:
+      at_aces:
+        target: "逆境的小児期体験の予防・早期発見"
+        methods:
+          - "教育虐待の認識と防止"
+          - "トラウマインフォームドケアの導入"
+          - "ACEsスクリーニングの制度化"
+
+      at_neurodevelopmental:
+        target: "二次障害の予防"
+        methods:
+          - "発達障害の早期発見と適切な療育"
+          - "学齢期におけるいじめ防止"
+          - "特性に応じた居場所作り"
+          - "自己肯定感を破壊しない教育システム"
+
+      at_social_isolation:
+        target: "社会的絆の維持・回復"
+        methods:
+          - "80-50問題への能動的アウトリーチ"
+          - "ひきこもり支援の法的・福祉的権限強化"
+          - "社会的処方（Social Prescribing）"
+
+    input_cai_role: |
+      Input CAIは支援記録段階で、
+      3因子の蓄積状況を検知し、
+      早期介入のトリガーとして機能する。
+
+      - ACEsの記録と可視化
+      - 二次障害の兆候の検出
+      - 社会的絆の状態アセスメント
+
+  conclusion: |
+    「失うものがない」人間を作り出しているのは、
+    他ならぬ社会の構造である。
+
+    その構造的欠陥に目を向け、
+    排除ではなく包摂（インクルージョン）への道筋をつけることこそが、
+    「無敵の人」現象に対する唯一の根本的解決策。
+
+  references_aces_neurodevelopmental:
+    - author: "法務総合研究所"
+      year: 2013
+      title: "研究部報告50号：無差別殺傷事犯に関する研究"
+      source: "法務省"
+      url: "https://www.moj.go.jp/content/000112394.pdf"
+
+    - author: "Agnew, R."
+      year: 1992
+      title: "Foundation for a General Strain Theory of Crime and Delinquency"
+      journal: "Criminology, 30(1)"
+
+    - author: "Hirschi, T."
+      year: 1969
+      title: "Causes of Delinquency"
+      publisher: "University of California Press"
+
+    - author: "Felitti, V. J., et al."
+      year: 1998
+      title: "Relationship of Childhood Abuse and Household Dysfunction to Many of the Leading Causes of Death in Adults"
+      journal: "American Journal of Preventive Medicine, 14(4)"
+      note: "ACEs研究の原典"
+
+    - source: "Wikipedia"
+      title: "秋葉原通り魔事件"
+
+    - source: "Wikipedia"
+      title: "京都アニメーション放火殺人事件"
+
+# ==========================================
+# PART 13: 警告と希望
+# ==========================================
+warning_and_hope:
+
+  warning:
+    current_trend: |
+      日本社会における無敵因子の繁殖環境は拡大している：
+      - 非正規雇用の増加
+      - 社会的孤立の増加
+      - 相対的貧困率の高止まり
+      - 将来への悲観（特に若年層）
+
+    tipping_point: |
+      無敵の人事件は「個人の狂気」ではなく、
+      「社会システムの症状」である。
+
+      事件の頻度・規模が増加傾向にあることは、
+      システムが臨界点に近づいている兆候。
+
+  hope:
+    soe_intervention: |
+      SoEは、無敵因子の発生を
+      「元から断つ」ことを目指す。
+
+      権利回復により：
+      - 「何も持っていない」→「守るべきものがある」
+      - 「社会から排除された」→「社会に参加できる」
+      - 「努力しても無駄」→「努力が報われる」
+
+    individual_transformation: |
+      無敵の人予備軍を、
+      「社会を攻撃する者」から
+      「社会を改善する当事者」へ。
+
+      彼らの経験（Ground Truth）こそが、
+      SoEシステムを改善する最も貴重なデータ。
+
+# ==========================================
+# 結論
+# ==========================================
+conclusion:
+
+  core_insight: |
+    無敵の人因子は、富の不足と権利剥奪がもたらす認知の歪み。
+
+    「失うものが何もない」という絶望が、
+    社会契約からの離脱を正当化し、
+    暴力を「合理的選択」に変える。
+
+    これは個人の病理ではなく、社会システムの症状である。
+
+  soe_mission: |
+    SoE = 社会の免疫システム
+
+    無敵因子の繁殖環境を除去し（権利回復）、
+    「失うものがない人」を
+    「守るものがある人」に変える。
+
+    監視ではなく支援。抑圧ではなく回復。
+    これが持続可能な社会安定化の方法。
+
+  symmetry_reminder: |
+    無敵の人因子（底辺）と罪と罰因子（頂点）は
+    同じコインの裏表。
+
+    両方を同時に治療しなければ、
+    社会は安定しない。
+
+    SoEは両極への同時介入を目指す。
+
+# ==========================================
+# 今後の検討事項
+# ==========================================
+future_considerations:
+
+  research_proposal_integration:
+    status: "保留"
+    reason: "概念として成熟させてから研究計画書に組み込む"
+    potential_sections:
+      - "社会的意義（テロ予防・社会安定化）"
+      - "理論的枠組み（社会契約論との接続）"
+      - "将来の研究課題"
+
+  academic_questions:
+    - "無敵の人因子を学術的に定義する際、どの犯罪学・社会学の概念が近いか？"
+    - "Strain Theory、Anomie、Social Bond Theoryとの統合は？"
+    - "定量的な「無敵因子指数」は構築可能か？"
+    - "介入の効果を測定する方法は？"
+
+  policy_implications:
+    - "福祉政策としての位置づけ"
+    - "治安政策との関係（監視 vs 支援）"
+    - "メディア報道ガイドライン（模倣犯防止）"
+
+# ==========================================
+# 参照文献（DeepResearch統合分）
+# References from Gemini DeepResearch
+# ==========================================
+references_deep_research:
+
+  social_bond_theory:
+    - author: "Hirschi, T."
+      year: 1969
+      title: "Causes of Delinquency"
+      publisher: "University of California Press"
+    - author: "Hirschi, T., & Gottfredson, M."
+      year: 1990
+      title: "A General Theory of Crime"
+      publisher: "Stanford University Press"
+
+  general_strain_theory:
+    - author: "Agnew, R."
+      year: 1992
+      title: "Foundation for a General Strain Theory of Crime and Delinquency"
+      journal: "Criminology, 30(1), 47-87"
+    - author: "Agnew, R."
+      year: 2001
+      title: "Building on the Foundation of General Strain Theory"
+      journal: "Journal of Research in Crime and Delinquency, 38(4), 319-361"
+    - author: "Merton, R. K."
+      year: 1938
+      title: "Social Structure and Anomie"
+      journal: "American Sociological Review, 3(5), 672-682"
+
+  ressentiment:
+    - author: "Nietzsche, F."
+      year: 1887
+      title: "On the Genealogy of Morals"
+    - author: "Scheler, M."
+      year: 1912
+      title: "Ressentiment"
+
+  prospect_theory:
+    - author: "Kahneman, D., & Tversky, A."
+      year: 1979
+      title: "Prospect Theory: An Analysis of Decision Under Risk"
+      journal: "Econometrica, 47(2), 263-291"
+    - author: "Tversky, A., & Kahneman, D."
+      year: 1992
+      title: "Advances in Prospect Theory: Cumulative Representation of Uncertainty"
+      journal: "Journal of Risk and Uncertainty, 5(4), 297-323"
+
+  evolutionary_psychology:
+    - author: "Daly, M., & Wilson, M."
+      year: 1988
+      title: "Homicide"
+      publisher: "Aldine de Gruyter"
+    - author: "Wilson, M., & Daly, M."
+      year: 1985
+      title: "Competitiveness, Risk Taking, and Violence: The Young Male Syndrome"
+      journal: "Ethology and Sociobiology, 6(1), 59-73"
+    - author: "Fessler, D. M. T."
+      year: 2010
+      title: "Madmen: An Evolutionary Perspective on Anger and Men's Violent Responses to Transgression"
+      collection: "International Handbook of Anger"
+
+  extended_suicide_mass_murder:
+    - author: "Mullen, P. E."
+      year: 2004
+      title: "The Autogenic (Self-Generated) Massacre"
+      journal: "Behavioral Sciences & the Law, 22(3), 311-323"
+    - author: "Knoll, J. L."
+      year: 2010
+      title: "The 'Pseudocommando' Mass Murderer"
+      journal: "Journal of the American Academy of Psychiatry and the Law, 38(1), 87-94"
+
+  aggrieved_entitlement:
+    - author: "Kimmel, M."
+      year: 2013
+      title: "Angry White Men: American Masculinity at the End of an Era"
+      publisher: "Nation Books"
+
+  anomie:
+    - author: "Durkheim, É."
+      year: 1893
+      title: "The Division of Labor in Society"
+    - author: "Durkheim, É."
+      year: 1897
+      title: "Suicide: A Study in Sociology"
+
+  japan_specific:
+    - author: "加藤智大"
+      year: 2012
+      title: "解（東拘永田町筆）"
+      note: "秋葉原事件加害者の獄中手記"
+    - author: "斎藤環"
+      year: 2010
+      title: "ひきこもりはなぜ「治る」のか?"
+      publisher: "ちくま文庫"
+    - author: "内閣府"
+      year: 2019
+      title: "生活状況に関する調査（ひきこもり調査）"
+      note: "40-64歳：推計61.3万人"
+
+  social_contract:
+    - author: "Rousseau, J.-J."
+      year: 1762
+      title: "The Social Contract"
+    - author: "Hobbes, T."
+      year: 1651
+      title: "Leviathan"
+
+  policy_references:
+    - author: "WHO"
+      year: 2017
+      title: "Preventing Suicide: A Resource for Media Professionals"
+      note: "メディア報道ガイドライン"
+    - author: "Lankford, A."
+      year: 2016
+      title: "Fame-Seeking Rampage Shooters"
+      journal: "Aggression and Violent Behavior, 27, 122-129"
+
+---
+# End of Muteki Factor Integration
+# Created: 2025-12-18
+# Location: 07_integration/muteki_factor_integration.yaml

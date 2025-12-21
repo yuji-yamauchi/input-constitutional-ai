@@ -1,0 +1,181 @@
+# =============================================================================
+# Terminology Update: SoE Core Concepts
+# 用語更新：SoE中核概念の名称変更
+# Date: 2025-12-21
+# Source: Gemini + Claude Web 統合
+# =============================================================================
+
+metadata:
+  update_type: "Terminology Refinement"
+  context: "修士論文および研究計画書 v2.9 に向けたアカデミック・チューニング"
+  objective: "文学的・ネットスラング的表現を、社会学・政治心理学の標準用語へ置換"
+  contributors:
+    - "Gemini: 初期提案と理論的根拠"
+    - "Claude Web: 詳細定義とICF接続"
+
+# =============================================================================
+# 名称変更サマリー
+# =============================================================================
+
+terminology_changes:
+
+  bottom_pole:
+    original: "無敵の人因子 (Muteki-no-hito Factor)"
+    new: "アノミー因子 (Anomie Factor)"
+    etymology: "Greek: a- (without) + nomos (law/norm)"
+    reason: |
+      「無敵の人」はネットスラングで学術的定義に不向き。
+      デュルケームの「アノミー（無規制状態）」への回帰が最も適切。
+
+  top_pole:
+    original: "罪と罰因子 (Sin & Punishment Factor)"
+    new: "ヒュブリス因子 (Hubris Factor)"
+    etymology: "Greek: hybris/hubris (excessive pride, arrogance)"
+    reason: |
+      「罪と罰」は文学的注釈が必要で直感性に欠ける。
+      政治心理学・リーダーシップ論で確立された概念を採用。
+
+# =============================================================================
+# 最終定義
+# =============================================================================
+
+definitions:
+
+  anomie_factor:
+    term_ja: "アノミー因子"
+    term_en: "Anomie Factor"
+    position: "富の分布の底辺 (Bottom Pole)"
+    core_state: "Normlessness (無規制)"
+
+    definition: |
+      社会的結合（Social Bonds）の断絶により、社会規範が個人に対する
+      拘束力を失った状態。「失うもの（Stake）」の欠如により、
+      刑罰等のサンクションが抑止力として機能せず、
+      自暴自棄な攻撃が合理的選択となる認知状態。
+
+    characteristics:
+      - "社会的紐帯の喪失（家族・職場・地域との断絶）"
+      - "規範の内面化の失敗（守るべきものの不在）"
+      - "欲望の無規制状態（破壊衝動への歯止めの欠如）"
+      - "急激な地位変動（転落経験が誘因）"
+
+    theoretical_references:
+      - author: "Émile Durkheim"
+        works: ["社会分業論 (1893)", "自殺論 (1897)"]
+        relevance: "アノミー概念の原型"
+      - author: "Robert K. Merton"
+        work: "Social Structure and Anomie (1938)"
+        relevance: "手段と目標の乖離（strain theory）"
+
+    cognition_pattern: "「社会が私を見捨てたから、私はルールを守らない」"
+    result: "Chaos from below (テロ・暴動)"
+
+  hubris_factor:
+    term_ja: "ヒュブリス因子"
+    term_en: "Hubris Factor"
+    position: "富の分布の頂点 (Top Pole)"
+    core_state: "Exemption (例外化)"
+
+    definition: |
+      権力や富の集中が脳の共感機能（ミラーニューロン系）を抑制し、
+      「自分は法や規範の例外である（特別だ）」と誤認する認知の歪み。
+      この全能感（Hubris）により、家庭・組織内での搾取や、
+      ルールの私物化が正当化される。
+
+    characteristics:
+      - "自己判断への過度な確信（批判的フィードバックの軽視）"
+      - "批判・助言への耐性低下（諫言者の排除傾向）"
+      - "現実認識の歪み（成功の自己帰属バイアス）"
+      - "説明責任の軽視（社会的責任の外部化）"
+
+    theoretical_references:
+      - author: "Greek Tragedy"
+        works: ["Aeschylus", "Sophocles"]
+        relevance: "ハマルティア（致命的欠陥）としてのヒュブリス"
+      - author: "David Owen"
+        work: "Hubris Syndrome (2008)"
+        relevance: "権力者の人格変容としての現代的再定式化"
+      - author: "David Owen & Jonathan Davidson"
+        work: "Hubris syndrome: An acquired personality disorder? (Brain, 2009)"
+        relevance: "臨床的基準の提案"
+
+    cognition_pattern: "「私は特別な存在だから、ルールに縛られない」"
+    result: "Chaos from above (汚職・搾取・戦争)"
+
+# =============================================================================
+# 双極構造
+# =============================================================================
+
+bipolar_structure:
+  name_ja: "富の偏重による双極的社会毀損モデル"
+  name_en: "Bipolar Social Damage Model from Wealth Maldistribution"
+
+  shared_origin: "富の偏重 (Wealth Maldistribution)"
+
+  structural_symmetry:
+    anomie_pole:
+      direction: "不足側 (Deprivation)"
+      mechanism: "社会的紐帯・規範の喪失"
+      outcome: "失うものがない状態"
+      status: "規範の崩壊 (Below the Law)"
+
+    hubris_pole:
+      direction: "過剰側 (Excess)"
+      mechanism: "自己過信・現実認識の歪み"
+      outcome: "説明責任の放棄"
+      status: "規範の超越 (Above the Law)"
+
+  naming_rationale: |
+    両因子ともギリシャ語由来とすることで：
+    1. 学術的権威の対称性を確保
+    2. 国際的学術発信における明瞭性を担保
+    3. 個人病理ではなく構造的帰結であることを含意
+
+# =============================================================================
+# Input CAIとの接続
+# =============================================================================
+
+input_cai_connection:
+  role: "Universal Audit (全方位監査)"
+  function: |
+    底辺のアノミー（絶望）と頂点のヒュブリス（傲慢）を
+    同時に検知・是正する社会契約監査人。
+
+  anomie_audit:
+    target: "欠乏による規範喪失の検出"
+    icf_domain: "Environmental Factors"
+    measurement: "環境因子の欠損として測定（簿外債務の可視化）"
+
+  hubris_audit:
+    target: "過剰による傲慢の検出"
+    icf_domain: "Environmental Factors"
+    measurement: "準委任契約における受任者側の義務逸脱として測定"
+
+# =============================================================================
+# 執筆ガイド
+# =============================================================================
+
+writing_guide:
+  - "初出時に『アノミー因子（いわゆる無敵の人現象の学術的再定義）』のように注釈を入れる"
+  - "ヒュブリス因子については、David Owenの研究（医学的アプローチ）を引用し、単なる道徳批判ではないことを強調"
+  - "2つの因子を「社会契約を破壊する両極の病原体」として位置づけ、SoEの必要性を論証"
+
+# =============================================================================
+# 今後の課題
+# =============================================================================
+
+future_work:
+  - task: "ICF環境因子コードとの詳細マッピング"
+    status: pending
+  - task: "ケイパビリティアプローチとの理論的接続の精緻化"
+    status: pending
+  - task: "準委任契約における義務論的位置づけの明確化"
+    status: pending
+  - task: "実証研究への操作化（operationalization）"
+    status: pending
+  - task: "リミタリアニズムとの接続"
+    status: "deferred (博士課程以降)"
+
+# =============================================================================
+# End of Terminology Update
+# =============================================================================

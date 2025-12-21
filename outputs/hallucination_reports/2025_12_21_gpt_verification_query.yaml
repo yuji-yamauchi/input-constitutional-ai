@@ -1,0 +1,146 @@
+# ============================================================
+# GPT Deep Research ハレーション検証クエリ
+# Verification Query for GPT Deep Research Output
+# Date: 2025-12-21
+# Purpose: 合成レポートの内容がGPTオリジナル出力と一致するか確認
+# ============================================================
+
+query_metadata:
+  created: 2025-12-21
+  created_by: "Claude Code (Opus 4.5)"
+  target_ai: "ChatGPT (GPT-4)"
+  context: |
+    3AI Deep Research統合作業中に、GPTの「独自貢献」として
+    記載した内容がGPTオリジナル出力と一致しない可能性を検出。
+    GPT本人に確認を依頼。
+
+# ============================================================
+# 検証対象コンテンツ
+# ============================================================
+
+content_in_question:
+  location: "2025_12_21_deep_research_3ai_synthesis.yaml, Lines 107-114"
+  section: "gpt_unique"
+
+  what_was_attributed_to_gpt: |
+    gpt_unique:
+      title: "相対的剥奪感（RD）理論との接続"
+      contributions:
+        - "RD理論の7段階プロセスをSoE会計メタファーにマッピング"
+        - "Callan (2011): Personal RDと衝動的意思決定の関連"
+        - "Greitemeyer (2019): RD操作で攻撃的行動が上昇"
+        - "Victimhood Culture (Campbell & Manning 2018) との接続"
+      soe_relevance: |
+        アノミー因子の生成メカニズムをRD理論で具体化。
+
+# ============================================================
+# GPTへの質問
+# ============================================================
+
+verification_questions:
+  question_1:
+    ja: |
+      GPT君、2025年12月21日に実施した「Effective Citizenship」
+      「Rights Maldistribution」に関するDeep Researchの結果について
+      確認させてください。
+
+      上記の「gpt_unique」セクションに記載されている内容
+      （RD理論、Callan 2011、Greitemeyer 2019、Victimhood Culture）は、
+      あなたのDeep Research出力に含まれていましたか？
+
+    en: |
+      GPT, regarding your Deep Research output from December 21, 2025
+      on "Effective Citizenship" and "Rights Maldistribution":
+
+      Did your output actually contain the content listed above
+      (RD theory, Callan 2011, Greitemeyer 2019, Victimhood Culture)?
+
+  question_2:
+    ja: |
+      もしこれらがあなたのDeep Researchに含まれていなかった場合、
+      あなたの実際の「独自貢献」は何でしたか？
+
+      Claude Codeの推測では、以下が正しいGPT独自貢献ではないかと
+      考えています：
+        - Patrick Heller (2000, 2020): effective citizenship定義
+        - Partha Chatterjee (2004, 2006): differentiated citizenship
+        - Thomas Pfister (2012): CA-citizenship synthesis attempt
+        - Jack Knight & James Johnson: institutions and justice
+        - Legal Empowerment Advocates (Golub, Maru): development context
+
+      これは正確ですか？
+
+    en: |
+      If these were NOT in your Deep Research, what were your
+      actual unique contributions?
+
+      Claude Code suspects the correct GPT unique contributions are:
+        - Patrick Heller (2000, 2020): effective citizenship definition
+        - Partha Chatterjee (2004, 2006): differentiated citizenship
+        - Thomas Pfister (2012): CA-citizenship synthesis attempt
+        - Jack Knight & James Johnson: institutions and justice
+        - Legal Empowerment Advocates (Golub, Maru): development context
+
+      Is this accurate?
+
+  question_3:
+    ja: |
+      RD理論（Relative Deprivation）、Callan、Greitemeyer、
+      Victimhood Cultureに関する議論は、別のセッション
+      （山上徹也分析）で行ったものだと思います。
+
+      この混同について確認できますか？
+
+    en: |
+      The RD theory, Callan, Greitemeyer, and Victimhood Culture
+      discussion was likely from a DIFFERENT session
+      (Yamagami Tetsuya analysis).
+
+      Can you confirm this confusion?
+
+# ============================================================
+# 背景情報（GPTへの参考）
+# ============================================================
+
+background_for_gpt:
+  source_file: "2025_12_21_gpt_Executive Summary.pdf"
+
+  claude_code_observation: |
+    Claude Codeがセッション内でGPT Deep Research PDFを処理した際、
+    同じセッション内で先に処理した「yamagami_analysis」ファイルの
+    内容（RD理論等）が混入した可能性があります。
+
+    これは「セッションコンテキストブリード」と呼ばれる
+    ハレーションパターンです。
+
+  what_claude_remembers_from_gpt_pdf:
+    key_authors_mentioned:
+      - "Galanter (1974) - Why the Haves Come Out Ahead"
+      - "Acemoglu & Robinson - Why Nations Fail"
+      - "T.H. Marshall - Citizenship and Social Class"
+      - "Patrick Heller - effective citizenship"
+      - "Partha Chatterjee - differentiated citizenship"
+      - "Thomas Pfister - CA and citizenship"
+      - "Sandefur - Justice Gap"
+      - "Sen & Nussbaum - Capability Approach"
+
+    gpt_assessment: "fresh angle（新鮮な角度）"
+
+    theoretical_gaps_identified: 5
+
+# ============================================================
+# 期待する回答形式
+# ============================================================
+
+expected_response_format:
+  structure: |
+    以下の形式で回答をお願いします：
+
+    1. RD理論等の内容について（含まれていた / 含まれていなかった）
+    2. 実際のGPT独自貢献のリスト
+    3. 混同の確認（はい/いいえ + 説明）
+    4. その他の訂正事項があれば
+
+# ============================================================
+# End of Verification Query
+# ============================================================

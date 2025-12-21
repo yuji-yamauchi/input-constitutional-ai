@@ -1,0 +1,327 @@
+# LinkedIn About Section - Gemini Prompts Response
+# Generated: 2025-12-17
+# Author: Claude Code (Opus 4.5) for Yuji Yamauchi
+
+# ==========================================
+# 1. Narrative Bridge - キャリアの統合
+# ==========================================
+response_1_narrative_bridge:
+  id: "Narrative_Bridge"
+
+  english_200_words: |
+    My journey from IT entrepreneur to welfare innovator wasn't a pivot—it was an evolution.
+
+    As CEO of an IT company generating 140M JPY annually, I built systems that processed
+    government contracts worth 120M JPY. I learned how infrastructure scales, how ISO
+    certifications (27001/20000) create trust, and how digital architecture shapes outcomes.
+
+    Then bankruptcy happened. And disability. These weren't failures—they became my fieldwork.
+
+    When I entered the welfare sector, I saw a system running on 1990s logic: paper-based
+    assessments, siloed data, and processes designed for institutions rather than individuals.
+    I applied IT thinking to human services. In three years, I founded 10 disability support
+    facilities—not by copying existing models, but by architecting new ones.
+
+    Today, I call myself a "Social System Architect" because I build bridges: between
+    technology and humanity, between efficiency and dignity, between data infrastructure
+    and individual rights. My IT background isn't separate from my welfare work—it's the
+    lens through which I see solutions others miss.
+
+    DX for Welfare isn't about digitizing forms. It's about redesigning power structures
+    so that data serves people, not institutions.
+
+  key_phrases:
+    - "evolution, not pivot"
+    - "bankruptcy and disability became fieldwork"
+    - "IT thinking applied to human services"
+    - "Social System Architect"
+    - "DX for Welfare = redesigning power structures"
+
+# ==========================================
+# 2. Mission Statement - 哲学のビジネス翻訳
+# ==========================================
+response_2_mission_statement:
+  id: "Mission_Statement"
+
+  context: |
+    『パンプキン・シザーズ』の戦災復興部隊のコンセプト：
+    - 戦争は終わったが、傷は残っている
+    - 慈善ではなく、市民の権利回復のための戦い
+    - 「可哀想だから助ける」ではなく「奪われたものを取り戻す」
+
+  mission_statement_english: |
+    I don't do charity. I fight for reconstruction.
+
+    When war ends, the visible battles stop—but the invisible ones continue.
+    People labeled as "disabled" didn't lose their potential; society lost
+    the infrastructure to recognize it. My mission is not to "help the unfortunate"
+    but to rebuild the systems that were never built for them in the first place.
+
+    This is a Rights-Based Approach: not empowerment as a gift,
+    but empowerment as restoration of what was always theirs.
+
+  alternative_versions:
+    version_a: |
+      Welfare isn't charity—it's post-war reconstruction for peacetime casualties.
+      I build the infrastructure that restores what society's design flaws took away.
+
+    version_b: |
+      My work is reconstruction, not rescue. I don't empower people—I dismantle
+      the barriers that disempowered them. Rights-based. Evidence-driven. Relentless.
+
+    version_c: |
+      Society didn't fail disabled people by accident. It failed by design.
+      I redesign those systems. Not from pity, but from conviction that
+      rights delayed are rights denied.
+
+  key_terms_translated:
+    戦災復興: "Post-war Reconstruction (for peacetime)"
+    慈善: "Charity (rejected framing)"
+    権利回復: "Rights Restoration / Rights-Based Approach"
+    自立のための戦い: "Fight for Self-Determination"
+
+# ==========================================
+# 3. Resilience Framing - 当事者性の資産化
+# ==========================================
+response_3_resilience_framing:
+  id: "Resilience_Framing"
+
+  medical_history:
+    - age_22: "Spinal cord tumor → Paralysis"
+    - age_51: "Cerebral hemorrhage (cavernous hemangioma)"
+    - ongoing: "ADHD (confirmed diagnosis)"
+    - current: "Sudden hearing loss (September 2024, recovering)"
+
+  reframing_statement_english: |
+    My body has been a laboratory for resilience.
+
+    At 22, a spinal tumor taught me how systems fail individuals—and how
+    individuals rebuild when systems won't. At 51, a brain hemorrhage
+    showed me that recovery isn't linear; it's iterative, like debugging code.
+    ADHD? It's not a disorder in my work—it's the operating system that
+    lets me see patterns others miss and move faster than bureaucracies allow.
+
+    These experiences aren't liabilities on my balance sheet. They're assets.
+
+    When I design welfare services, I don't imagine what users need—I remember.
+    When I build assessment frameworks, I know exactly which questions feel
+    invasive and which feel empowering. My "Unique UX Perspective" isn't
+    theoretical; it's autobiographical.
+
+    Disability gave me what no MBA could: the insider knowledge to build
+    systems that actually work for the people inside them.
+
+  tagline: "These are not deficits, but the source of my innovation."
+
+  linkedin_format: |
+    **Lived Experience as Design Expertise**
+
+    Spinal tumor at 22. Brain hemorrhage at 51. ADHD throughout.
+
+    These aren't items on a medical chart—they're the R&D department
+    behind everything I build. When I design welfare systems, I don't
+    guess what users need. I remember. My disability history isn't a
+    liability; it's the unique dataset that makes my work authentic.
+
+# ==========================================
+# 4. Concept Hook - 研究のキャッチコピー化
+# ==========================================
+response_4_concept_hook:
+  id: "Concept_Hook"
+
+  research_concepts:
+    double_entry_bookkeeping_metaphor: |
+      人生を P/L（損益計算書：出来事）、B/S（貸借対照表：蓄積状態）、
+      C/F（キャッシュフロー：資源流動）で可視化する手法
+
+    input_constitutional_ai: |
+      記録作成段階（Input）で権利保障を組み込むAI設計思想。
+      「出力の検閲」ではなく「入力の設計」で倫理を実現。
+
+  hook_proposals:
+    hook_1:
+      english: "Turning Life's Liabilities into Assets: A New Accounting for Human Potential"
+      appeal: "会計メタファーを直感的に伝える。投資家向け。"
+
+    hook_2:
+      english: "What if your life had a balance sheet—and society owed you equity?"
+      appeal: "問いかけ形式。知的好奇心を刺激。"
+
+    hook_3:
+      english: "AI that protects rights at input, not output. Constitutional by design."
+      appeal: "技術者・AI倫理研究者向け。Constitutional AIとの差別化。"
+
+    hook_4:
+      english: "Disability assessment asks 'What's wrong with you?' I ask 'What did society take from you?'"
+      appeal: "感情に訴える。当事者・アドボケイト向け。"
+
+    hook_5:
+      english: "From Deficit Model to Balance Sheet Model: Rewriting the Grammar of Welfare"
+      appeal: "学術的。研究者・政策立案者向け。"
+
+  recommended_for_linkedin:
+    primary: "hook_4"
+    reason: "LinkedIn読者の感情に刺さる。シェアされやすい。"
+    secondary: "hook_1"
+    reason_2: "SROIに興味がある投資家・政策立案者向け"
+
+# ==========================================
+# 5. Final Draft - 統合About Section
+# ==========================================
+response_5_final_draft:
+  id: "Draft_Generation"
+
+  structure_followed:
+    1: "Headline Summary"
+    2: "The Why (Mission)"
+    3: "The What (Track Record)"
+    4: "The How (Research)"
+    5: "Call to Action"
+
+  final_about_english: |
+    **Social System Architect** | Bridging IT, Welfare, and Lived Experience
+
+    ═══════════════════════════════════════════
+    THE WHY
+    ═══════════════════════════════════════════
+
+    I don't do charity. I fight for reconstruction.
+
+    Disability assessment asks "What's wrong with you?"
+    I ask "What did society take from you?"
+
+    My mission is not to help the unfortunate, but to rebuild systems
+    that were never designed for the people who need them most.
+    This is a rights-based approach: empowerment as restoration,
+    not as a gift.
+
+    ═══════════════════════════════════════════
+    THE WHAT
+    ═══════════════════════════════════════════
+
+    **IT Entrepreneur (2010-2016)**
+    • Built company to 140M JPY annual revenue
+    • Secured 120M JPY government contracts (Ministry of Internal Affairs)
+    • Established ISO 27001 & ISO 20000 certification
+    • Then: bankruptcy. And disability. These became my fieldwork.
+
+    **Welfare Innovator (2016-2024)**
+    • Founded 10 disability support facilities in 3 years
+    • Executive Director managing organization with ~100 clients at peak
+    • Led 20-person employment transition service based on supported decision-making
+
+    **Lived Experience**
+    Spinal tumor at 22. Brain hemorrhage at 51. ADHD throughout.
+    These aren't liabilities—they're the R&D behind my designs.
+    When I build assessment frameworks, I don't imagine what users need.
+    I remember.
+
+    ═══════════════════════════════════════════
+    THE HOW
+    ═══════════════════════════════════════════
+
+    Currently developing **Service of Empowerment (SoE)**:
+
+    • **Double-Entry Bookkeeping for Life**: Individuals visualize whether
+      their difficulties stem from disability itself, violation of basic rights,
+      or personal responsibility—using P/L, B/S, and C/F frameworks.
+      This process itself becomes disability acceptance.
+
+    • **Projected SROI**: 29.4:1 based on preliminary N=100 analysis
+
+    • **Input Constitutional AI**: Rights protection built at data creation,
+      not after. Constitutional by design, not by censorship.
+
+    Preparing Master's application (Japan College of Social Work, 2026).
+
+    ═══════════════════════════════════════════
+    LET'S CONNECT
+    ═══════════════════════════════════════════
+
+    I want to talk with you if you're working on:
+    → Disability rights & CRPD implementation
+    → Employment support reform
+    → AI ethics in welfare systems
+    → Evidence-based policy advocacy
+    → "Fit for Purpose" from the user's perspective
+
+    Currently in dialogue with Susan Scott-Parker OBE (DEAI Founder).
+    Open to research collaboration, advisory roles, and strategic partnerships.
+
+    📍 Kasaoka, Okayama, Japan
+    🌐 Domain: d-rel.jp
+
+  character_count: 2547  # LinkedIn About上限 2,600文字以内
+
+  japanese_version: |
+    **Social System Architect** | IT × 福祉 × 当事者経験の架橋
+
+    ═══════════════════════════════════════════
+    WHY - なぜやるのか
+    ═══════════════════════════════════════════
+
+    私は慈善をしない。復興のために戦う。
+
+    障害者アセスメントは「あなたの何が問題か」と問う。
+    私は「社会があなたから何を奪ったか」と問う。
+
+    私の使命は「不幸な人を助ける」ことではなく、
+    最も必要とする人のために設計されなかったシステムを再構築すること。
+    これは権利ベースのアプローチ：贈り物ではなく、回復としてのエンパワメント。
+
+    ═══════════════════════════════════════════
+    WHAT - 何をしてきたか
+    ═══════════════════════════════════════════
+
+    **IT起業家 (2010-2016)**
+    • 年商1.4億円企業構築
+    • 総務省1.2億円事業受託
+    • ISO 27001 & ISO 20000 認証取得
+    • そして：破産。障害。これらが私のフィールドワークになった。
+
+    **福祉イノベーター (2016-2024)**
+    • 3年で10の障害福祉事業所を創設
+    • 最大約100名規模の事業所の事務局長として管理
+    • 20名規模の意思決定支援を基盤とした就労移行支援サービス運営
+
+    **当事者経験**
+    22歳で脊髄腫瘍。51歳で脳出血。ADHDは常に。
+    これらは負債ではない—私の設計のR&D部門だ。
+
+    ═══════════════════════════════════════════
+    HOW - どう実現するか
+    ═══════════════════════════════════════════
+
+    **Service of Empowerment (SoE)** を開発中：
+
+    • **複式簿記メタファー**: 当事者の困難性の原因が、障がいそのものか、
+      基本的権利の毀損か、自己責任かを当事者自身がP/L・B/S・C/Fで可視化。
+      このプロセス自体が障害受容となる
+    • **予測SROI**: 29.4:1（N=100予備分析）
+    • **Input Constitutional AI**: 記録作成段階での権利保護
+
+    日本社会事業大学大学院修士課程出願準備中（2026年）
+
+    ═══════════════════════════════════════════
+    つながりたい人
+    ═══════════════════════════════════════════
+
+    → 障害者権利・CRPD実装
+    → 就労支援改革
+    → 福祉システムにおけるAI倫理
+    → エビデンスベース政策提言
+
+    Susan Scott-Parker OBE（DEAI創設者）と対話中。
+    研究協力、アドバイザリー、戦略的パートナーシップ歓迎。
+
+# ==========================================
+# メタ情報
+# ==========================================
+meta:
+  generated_by: "Claude Code (Opus 4.5)"
+  source_prompts: "Gemini Pro Session 2025-12-17"
+  integration_with: "linkedin_profile_2025_12_17.md"
+  next_action:
+    - "LinkedInに最終ドラフトをコピー"
+    - "Featured セクションに Research Proposal を追加"
+    - "プロフィール写真・バナー画像の検討"

@@ -1,0 +1,1506 @@
+# ==========================================
+# Schema Duality Design
+# Date: 2025-12-18
+# Source: Gemini雑談 → Claude Code実装
+# ==========================================
+
+metadata:
+  date: "2025-12-18"
+  concept: "Cognitive Schema × Database Schema の二重性統合"
+  breakthrough: "ペルソナ切り替えによるスキーマ移行（Schema Migration）"
+
+# ==========================================
+# PART 1: Core Concept - Schema Duality
+# ==========================================
+core_concept:
+
+  duality:
+    cognitive_schema:
+      definition: "ユーザーの内的・主観的世界観（ACEsによって歪められていることが多い）"
+      source: "心理学：早期不適応スキーマ（Early Maladaptive Schemas / EMS）"
+      developer: "Jeffrey Young（スキーマ療法創始者）"
+
+    database_schema:
+      definition: "外的・客観的データ構造（複式簿記メタファーで再定義）"
+      source: "IT：JSON/YAMLスキーマ"
+      application: "SoE Life Bookkeeping"
+
+  mechanism:
+    traditional_welfare: "ユーザーの否定的Cognitive Schemaを『障害』として受容"
+    soe_approach: "権限付与されたDatabase Schema（P/L, B/S）を可視化することで、内的Cognitive Schemaを上書き"
+    process: "自己イメージの『スキーマ移行』：Deficit Model → Asset Model"
+
+  key_insight: |
+    従来のCBT/スキーマ療法は「認知の歪みを修正する」アプローチ。
+    SoEは「歪んだ認知を外部化・客観化し、別のスキーマで再解釈する」アプローチ。
+    → 当事者が「自分のデータベース管理者」になる。
+
+# ==========================================
+# PART 2: Early Maladaptive Schemas → Assets Mapping
+# Task: Schema_Bridge_Design
+# ==========================================
+schema_bridge_design:
+
+  early_maladaptive_schemas:
+    source: "Jeffrey Young's Schema Therapy (18 schemas, 5 domains)"
+    domains:
+      - name: "Disconnection & Rejection（断絶と拒絶）"
+        schemas:
+          - "Abandonment/Instability（見捨てられ/不安定）"
+          - "Mistrust/Abuse（不信/虐待）"
+          - "Emotional Deprivation（情緒的剥奪）"
+          - "Defectiveness/Shame（欠陥/恥）"
+          - "Social Isolation/Alienation（社会的孤立/疎外）"
+
+      - name: "Impaired Autonomy & Performance（自律性と行動の障害）"
+        schemas:
+          - "Dependence/Incompetence（依存/無能）"
+          - "Vulnerability to Harm（損害への脆弱性）"
+          - "Enmeshment/Undeveloped Self（巻き込まれ/未発達な自己）"
+          - "Failure（失敗）"
+
+      - name: "Impaired Limits（限界の障害）"
+        schemas:
+          - "Entitlement/Grandiosity（特権意識/誇大性）"
+          - "Insufficient Self-Control（不十分な自己制御）"
+
+      - name: "Other-Directedness（他者志向性）"
+        schemas:
+          - "Subjugation（服従）"
+          - "Self-Sacrifice（自己犠牲）"
+          - "Approval-Seeking（承認欲求）"
+
+      - name: "Overvigilance & Inhibition（過剰警戒と抑制）"
+        schemas:
+          - "Negativity/Pessimism（否定性/悲観主義）"
+          - "Emotional Inhibition（感情抑制）"
+          - "Unrelenting Standards（厳格な基準）"
+          - "Punitiveness（罰則主義）"
+
+  mapping_examples:
+
+    example_1_defectiveness:
+      cognitive_schema: "Defectiveness/Shame（欠陥/恥）"
+      description: "自分は根本的に欠陥があり、愛されない、価値がないと感じる"
+
+      current_it_schema:
+        self_evaluation: "low"
+        error_attribution: "internal_permanent"
+        social_expectation: "rejection"
+
+      refactoring_logic:
+        step_1:
+          action: "Extract source of shame"
+          finding: "Diagnostic disclosure → Social stigma → Internalized as 'defect'"
+          classification: "Liability: External Stigma (ISO 26000 6.3 Human Rights Violation)"
+
+        step_2:
+          action: "Extract coping mechanism"
+          finding: "High sensitivity to rejection → Early warning system"
+          classification: "Asset: High Sensitivity Radar (ICF b156: Perceptual functions)"
+
+        step_3:
+          action: "Reframe self-evaluation"
+          finding: "Survival through adversity → Resilience capital"
+          classification: "Asset: Resilience (ICF d240: Handling stress)"
+
+      new_it_schema:
+        assets:
+          - type: "High Sensitivity Radar"
+            icf_code: "b156"
+            value: "Early threat detection, empathy enhancement"
+          - type: "Resilience Capital"
+            icf_code: "d240"
+            value: "Proven track record of survival"
+        liabilities:
+          - type: "External Stigma"
+            source: "Social environment"
+            iso_violation: "ISO 26000 6.3"
+            owner: "Society (not individual)"
+        equity:
+          self_determined_capacity: "Moderate-High"
+          note: "Liabilities are external claims, not internal defects"
+
+    example_2_failure:
+      cognitive_schema: "Failure（失敗）"
+      description: "自分は失敗者で、同年代と比べて劣っていると感じる"
+
+      current_it_schema:
+        performance_evaluation: "inadequate"
+        comparison_reference: "peers"
+        future_expectation: "continued_failure"
+
+      refactoring_logic:
+        step_1:
+          action: "Extract 'failure' events"
+          finding: "Job loss, relationship breakdown, health crisis"
+          classification: "P/L Loss Events (Historical)"
+
+        step_2:
+          action: "Analyze accumulated learning"
+          finding: "Each 'failure' generated specific knowledge"
+          classification: "Asset: Experience Capital (B/S)"
+
+        step_3:
+          action: "Reframe reference point"
+          finding: "'Failure' measured against neurotypical timeline"
+          classification: "Liability: Inappropriate Benchmark (Environmental factor)"
+
+      new_it_schema:
+        assets:
+          - type: "Experience Capital"
+            source: "10 facility launches, 100+ cases"
+            value: "Ground truth data for research"
+          - type: "Adaptive Expertise"
+            source: "Multiple pivots/recoveries"
+            value: "Change readiness (ISO 30414)"
+        liabilities:
+          - type: "Inappropriate Benchmark"
+            source: "Neurotypical career timeline"
+            owner: "Social expectation (not individual)"
+        equity:
+          actual_performance: "High (when measured appropriately)"
+
+# ==========================================
+# PART 3: Persona-Based Schema Switching
+# Task: Persona_Based_Schema_Design
+# ==========================================
+persona_based_schema_design:
+
+  concept:
+    persona_layer:
+      definition: "適用する会計ルールを決定するアクティブな『ユーザーモード』"
+      analogy: "会計基準の切り替え（GAAP vs IFRS）"
+
+    schema_layer:
+      definition: "ペルソナが入力をP/LまたはB/Sにマッピングするロジック/ルールセット"
+
+  personas:
+    victim_mode:
+      id: "victim_mode"
+      description: "入力を負債（Liabilities）として解釈するデフォルトモード"
+      accounting_rules:
+        - input_trigger: "Failure Event"
+          output_account: "Loss (P/L)"
+          multiplier: -1.0
+        - input_trigger: "Negative Feedback"
+          output_account: "Defect (B/S Liability)"
+          multiplier: -1.0
+        - input_trigger: "Health Crisis"
+          output_account: "Permanent Damage (B/S Liability)"
+          multiplier: -1.0
+
+    survivor_mode:
+      id: "survivor_mode"
+      description: "入力を資産（Assets）として解釈するターゲットモード"
+      accounting_rules:
+        - input_trigger: "Failure Event"
+          output_account: "R&D Investment (B/S Asset)"
+          multiplier: 1.0
+          note: "Failure = Data for future design"
+        - input_trigger: "Negative Feedback"
+          output_account: "Quality Assurance Input (P/L Investment)"
+          multiplier: 1.0
+          note: "Criticism = Free consulting"
+        - input_trigger: "Health Crisis"
+          output_account: "UX Research Asset (B/S Asset)"
+          multiplier: 29.4
+          note: "Lived experience = R&D department"
+
+    architect_mode:
+      id: "architect_mode"
+      description: "システム全体を設計する上位モード（SoE実践者向け）"
+      accounting_rules:
+        - input_trigger: "Any Event"
+          output_account: "Raw Data for Analysis"
+          multiplier: 0  # No value judgment yet
+          note: "Neutral observation before classification"
+
+  switching_mechanism:
+    trigger: "Input Constitutional AI"
+    logic: |
+      1. ユーザーが入力を提供
+      2. Input AIが入力のコンテキストを分析
+      3. 現在のペルソナを確認
+      4. victim_modeの場合、survivor_modeへの切り替えを提案
+      5. ユーザーの同意後、survivor_modeのスキーマで再処理
+      6. 結果をユーザーにプレビュー表示
+      7. ユーザー承認後、DBに書き込み
+
+# ==========================================
+# PART 4: Mermaid Diagrams
+# ==========================================
+mermaid_diagrams:
+
+  schema_refactoring_flow: |
+    ```mermaid
+    flowchart TB
+        subgraph INPUT ["1. INPUT (User Experience)"]
+            A["😢 'I am a failure'<br/>(Raw Input)"]
+        end
+
+        subgraph COGNITIVE ["2. COGNITIVE SCHEMA (Current)"]
+            B["🧠 Victim Mode<br/>Schema: Defectiveness"]
+            C["📊 Current IT Schema<br/>{ self_eval: 'low' }"]
+        end
+
+        subgraph INPUT_AI ["3. INPUT CONSTITUTIONAL AI"]
+            D["🔍 Analyze Source"]
+            E["✂️ Separate:<br/>Personal Factor vs<br/>Environmental Factor"]
+            F["🔄 Propose Persona Switch"]
+        end
+
+        subgraph SURVIVOR ["4. SURVIVOR MODE"]
+            G["💪 Survivor Mode<br/>Schema: Resilience"]
+            H["📊 New IT Schema<br/>{ assets: ['Experience'] }"]
+        end
+
+        subgraph OUTPUT ["5. OUTPUT (Life Bookkeeping)"]
+            I["📒 B/S Updated<br/>Asset: Experience Capital<br/>Liability: External Stigma"]
+        end
+
+        A --> B
+        B --> C
+        C --> D
+        D --> E
+        E --> F
+        F -->|User Consent| G
+        G --> H
+        H --> I
+
+        style INPUT fill:#ffcccc
+        style COGNITIVE fill:#ffffcc
+        style INPUT_AI fill:#ccffcc
+        style SURVIVOR fill:#ccccff
+        style OUTPUT fill:#e6ccff
+    ```
+
+  persona_class_diagram: |
+    ```mermaid
+    classDiagram
+        class Persona {
+            +string id
+            +string description
+            +List~SchemaRule~ accounting_rules
+            +apply(input: Event): AccountEntry
+        }
+
+        class SchemaRule {
+            +string input_trigger
+            +string output_account
+            +float multiplier
+            +string note
+        }
+
+        class Event {
+            +string type
+            +string description
+            +datetime timestamp
+            +string source
+        }
+
+        class AccountEntry {
+            +string account_type
+            +string account_name
+            +float value
+            +string icf_code
+            +string note
+        }
+
+        class InputConstitutionalAI {
+            +Persona current_persona
+            +analyze(input: Event): Analysis
+            +suggest_persona_switch(): Persona
+            +process(input: Event, persona: Persona): AccountEntry
+        }
+
+        class LifeBookkeeping {
+            +List~AccountEntry~ assets
+            +List~AccountEntry~ liabilities
+            +float equity
+            +add_entry(entry: AccountEntry)
+            +calculate_equity(): float
+        }
+
+        Persona "1" *-- "many" SchemaRule
+        InputConstitutionalAI --> Persona
+        InputConstitutionalAI --> Event
+        InputConstitutionalAI --> AccountEntry
+        LifeBookkeeping *-- AccountEntry
+    ```
+
+  strategy_pattern: |
+    ```mermaid
+    flowchart LR
+        subgraph Client ["User Input"]
+            U["😢 'Painful Experience'"]
+        end
+
+        subgraph Context ["Input Constitutional AI"]
+            C["🤖 Context<br/>(Persona Holder)"]
+        end
+
+        subgraph Strategy ["Persona (Strategy)"]
+            V["😔 Victim Mode"]
+            S["💪 Survivor Mode"]
+            A["🏗️ Architect Mode"]
+        end
+
+        subgraph Result ["Account Entry"]
+            R1["❌ Loss"]
+            R2["✅ R&D Asset"]
+            R3["📊 Raw Data"]
+        end
+
+        U --> C
+        C --> V
+        C --> S
+        C --> A
+        V --> R1
+        S --> R2
+        A --> R3
+
+        style V fill:#ffcccc
+        style S fill:#ccffcc
+        style A fill:#ccccff
+    ```
+
+# ==========================================
+# PART 5: JSON Data Examples (Before/After)
+# ==========================================
+json_examples:
+
+  scenario: "ユーザーが『会社を解雇された』という辛い経験を入力"
+
+  before_victim_mode:
+    persona: "victim_mode"
+    input:
+      event_type: "job_termination"
+      description: "会社を解雇された"
+      timestamp: "2024-06-15"
+      emotional_state: "shame, despair"
+
+    output:
+      account_entries:
+        - account_type: "liability"
+          account_name: "Personal Failure"
+          value: -100
+          note: "また失敗した"
+        - account_type: "liability"
+          account_name: "Damaged Reputation"
+          value: -50
+          note: "周りからダメな人間と思われる"
+
+      life_bookkeeping:
+        assets: []
+        liabilities:
+          - "Personal Failure: -100"
+          - "Damaged Reputation: -50"
+        equity: -150
+        self_narrative: "私はダメな人間だ"
+
+  after_survivor_mode:
+    persona: "survivor_mode"
+    input:
+      event_type: "job_termination"
+      description: "会社を解雇された"
+      timestamp: "2024-06-15"
+      emotional_state: "processing"
+
+    input_ai_analysis:
+      source_separation:
+        personal_factor: "業務スキルのミスマッチ（修正可能）"
+        environmental_factor: "企業の業績悪化、障害への無理解（外部要因）"
+        rights_violation: "合理的配慮の不履行（CRPD違反の可能性）"
+
+      proposed_reframe:
+        original: "また失敗した"
+        reframed: "合わない環境から解放された + 権利主張の経験を得た"
+
+    output:
+      account_entries:
+        - account_type: "asset"
+          account_name: "Career Pivot Experience"
+          icf_code: "d845"
+          value: 30
+          note: "転職・適応の経験値"
+        - account_type: "asset"
+          account_name: "Rights Awareness"
+          icf_code: "d940"
+          value: 20
+          note: "合理的配慮を求める権利を学んだ"
+        - account_type: "liability"
+          account_name: "External Discrimination"
+          owner: "Former Employer"
+          iso_violation: "ISO 26000 6.3"
+          value: -50
+          note: "これは社会の負債であり、個人の欠陥ではない"
+
+      life_bookkeeping:
+        assets:
+          - "Career Pivot Experience: +30"
+          - "Rights Awareness: +20"
+        liabilities:
+          - "External Discrimination: -50 (社会の負債)"
+        equity: 50
+        equity_note: "負債は社会に帰属。個人の純資産はプラス"
+        self_narrative: "私は困難な状況を乗り越えてきた。この経験は次の設計に活かせる"
+
+# ==========================================
+# PART 6: Pseudocode Implementation
+# ==========================================
+pseudocode: |
+  # Persona class (Strategy Pattern)
+  class Persona:
+      def __init__(self, id: str, description: str):
+          self.id = id
+          self.description = description
+          self.accounting_rules: List[SchemaRule] = []
+
+      def add_rule(self, rule: SchemaRule):
+          self.accounting_rules.append(rule)
+
+      def apply(self, event: Event) -> List[AccountEntry]:
+          entries = []
+          for rule in self.accounting_rules:
+              if rule.matches(event):
+                  entry = AccountEntry(
+                      account_type=rule.output_account,
+                      value=event.base_value * rule.multiplier,
+                      note=rule.note
+                  )
+                  entries.append(entry)
+          return entries
+
+  # SchemaRule class
+  class SchemaRule:
+      def __init__(self, input_trigger: str, output_account: str,
+                   multiplier: float, note: str = ""):
+          self.input_trigger = input_trigger
+          self.output_account = output_account
+          self.multiplier = multiplier
+          self.note = note
+
+      def matches(self, event: Event) -> bool:
+          return event.type == self.input_trigger or self.input_trigger == "Any Event"
+
+  # Input Constitutional AI class
+  class InputConstitutionalAI:
+      def __init__(self):
+          self.personas = {
+              "victim_mode": self._create_victim_persona(),
+              "survivor_mode": self._create_survivor_persona(),
+              "architect_mode": self._create_architect_persona()
+          }
+          self.current_persona = self.personas["victim_mode"]  # Default
+
+      def analyze(self, event: Event) -> Analysis:
+          # Separate personal vs environmental factors
+          analysis = Analysis()
+          analysis.personal_factors = self._extract_personal(event)
+          analysis.environmental_factors = self._extract_environmental(event)
+          analysis.rights_violations = self._check_crpd_iso(event)
+          return analysis
+
+      def suggest_persona_switch(self, current: str) -> Optional[str]:
+          if current == "victim_mode":
+              return "survivor_mode"
+          return None
+
+      def process(self, event: Event, user_consent: bool) -> List[AccountEntry]:
+          if user_consent and self.current_persona.id == "victim_mode":
+              self.current_persona = self.personas["survivor_mode"]
+
+          return self.current_persona.apply(event)
+
+  # Main flow
+  def schema_migration_flow(user_input: str):
+      ai = InputConstitutionalAI()
+      event = Event.from_text(user_input)
+
+      # Step 1: Analyze with current persona
+      analysis = ai.analyze(event)
+
+      # Step 2: Show analysis to user
+      print(f"Personal factors: {analysis.personal_factors}")
+      print(f"Environmental factors: {analysis.environmental_factors}")
+      print(f"Potential rights violations: {analysis.rights_violations}")
+
+      # Step 3: Suggest persona switch
+      suggested = ai.suggest_persona_switch(ai.current_persona.id)
+      if suggested:
+          consent = get_user_consent(f"Switch to {suggested}?")
+          if consent:
+              ai.current_persona = ai.personas[suggested]
+
+      # Step 4: Process with (possibly new) persona
+      entries = ai.process(event, user_consent=consent)
+
+      # Step 5: Write to Life Bookkeeping
+      life_book = LifeBookkeeping()
+      for entry in entries:
+          life_book.add_entry(entry)
+
+      return life_book
+
+# ==========================================
+# PART 7: Implications for SoE
+# ==========================================
+implications:
+
+  theoretical:
+    - "スキーマ療法（CBT派生）とSoEの理論的統合が可能"
+    - "『認知の歪み』を『会計基準の違い』として再定義"
+    - "当事者を『自分のデータベース管理者』として位置づける"
+
+  practical:
+    - "Input Constitutional AIの具体的実装ロジックが明確化"
+    - "ペルソナ切り替えはユーザー同意が必須（権利保護）"
+    - "Before/Afterの可視化で変化を実感できる"
+
+  research:
+    - "スキーマ療法のEMSとICFコードのマッピング研究"
+    - "ペルソナ切り替え前後のSROI比較"
+    - "IMRの『疾病管理』とSoEの『スキーマ移行』の統合可能性"
+
+  connection_to_imr:
+    insight: |
+      IMRの「ストレス脆弱性モデル」は、脆弱性を固定的に捉える傾向がある。
+      SoEの「スキーマ移行」は、脆弱性自体を資産として再解釈する。
+      両者を統合することで、IMRの限界（QOL・リカバリーへの限定的効果）を
+      補完できる可能性がある。
+
+# ==========================================
+# PART 8: Deep Dive - Granularity of Schema Architecture
+# Source: Gemini Deep Dive Tasks 2025-12-18
+# ==========================================
+deep_dive_architecture:
+
+  layer_1_data_structure:
+    task_id: "Define_Schema_Class"
+    description: "心理的スキーマをITクラスオブジェクトとして定義"
+
+    cognitive_schema_class:
+      id: "string (e.g., 'S_001_Defectiveness')"
+      trigger_pattern: "regex/vector (発火条件)"
+      default_interpretation: "string (自動思考)"
+      associated_liability_account: "string (紐づく負債勘定)"
+      refactoring_logic: "function (Input AIによる変換ロジック)"
+      target_asset_account: "string (変換後の資産勘定)"
+
+    example_instance:
+      id: "S_001_Defectiveness"
+      trigger_pattern: "/(fail|reject|shame|worthless)/i"
+      default_interpretation: "私は根本的に欠陥がある"
+      associated_liability_account: "L_SELF_WORTH_DEFICIT"
+      refactoring_logic: "extract_coping_mechanism() -> classify_as_resilience()"
+      target_asset_account: "A_HIGH_SENSITIVITY_RADAR"
+
+  layer_2_persona_state_machine:
+    task_id: "Persona_Switching_Logic"
+    description: "ペルソナ切り替えのトリガーとフロー"
+
+    states:
+      - id: "legacy_mode"
+        description: "Trauma response active（トラウマ反応発動中）"
+      - id: "input_ai_intervention"
+        description: "System detects cognitive distortion（認知の歪み検出）"
+      - id: "refactoring_mode"
+        description: "User rewriting the narrative（ユーザーがナラティブを書き換え中）"
+      - id: "asset_mode"
+        description: "Record finalized as B/S Asset（B/S資産として確定）"
+
+    mermaid_state_diagram: |
+      ```mermaid
+      stateDiagram-v2
+          [*] --> Legacy_Mode
+          Legacy_Mode --> Input_AI_Intervention: Distortion Detected
+          Input_AI_Intervention --> Legacy_Mode: User Declines
+          Input_AI_Intervention --> Refactoring_Mode: User Consents
+          Refactoring_Mode --> Asset_Mode: Reframe Accepted
+          Refactoring_Mode --> Input_AI_Intervention: Need More Analysis
+          Asset_Mode --> [*]: Record Committed
+
+          note right of Legacy_Mode
+              Trauma-based interpretation
+              Default negative accounting
+          end note
+
+          note right of Refactoring_Mode
+              User actively rewriting
+              With AI guidance
+          end note
+      ```
+
+  layer_3_valuation_metrics:
+    task_id: "Quantify_Transformation"
+    description: "スキーマ変換完了時のB/S価値変動計算"
+
+    valuation_formula:
+      expression: "Valuation = (Cost_of_Incident) × (Resilience_Multiplier)"
+      resilience_multiplier: "その経験を他者支援に転用できる回数（N）"
+
+    example_calculation:
+      incident: "脳出血からの回復"
+      cost_of_incident: 100  # 基準単位
+      transfer_count: 29  # 100名支援中、類似経験を活用できた回数
+      resilience_multiplier: 1.294  # 1 + (29/100)
+      final_valuation: 129.4
+      note: "SROI 29.4:1 の理論的根拠の一つ"
+
+# ==========================================
+# PART 9: Variance Analysis Engine
+# Core: 支援者の演繹 vs 本人の帰納 の不一致検出
+# ==========================================
+variance_analysis_engine:
+
+  architectural_pivot:
+    from: "Classification System（分類システム）"
+    to: "Discovery System（発見システム）"
+    core_function: "Variance Analysis Engine（予実差異分析）"
+
+  deduction_vs_induction:
+    deduction_layer:
+      role: "The 'Budget'（支援者の仮説/ペルソナ）"
+      status: "Provisional & Biased（暫定的かつ偏りあり）"
+      source: "支援者の専門知識・経験・先入観"
+
+    induction_layer:
+      role: "The 'Actual'（本人の行動ログ）"
+      status: "Ground Truth（事実）"
+      source: "Input Constitutional AI が記録した実際の行動"
+
+  three_way_outcome:
+    positive_variance:
+      condition: "Reality > Hypothesis（実績が仮説を上回る）"
+      output: "Asset Discovery（才能/ギフテッド発見）"
+      action: "Update Persona（エンパワメント）"
+      example: "『ストレスに弱い』と予測 → 実際はクレーム交渉を笑顔で成功"
+
+    negative_variance:
+      condition: "Reality < Hypothesis（実績が仮説を下回る）"
+      output: "Environmental Barrier Detection（環境障壁検出）"
+      action: "Flag Rights Violation（社会モデル）"
+      example: "『できるはず』と予測 → 環境側の合理的配慮不足で失敗"
+
+    negative_match:
+      condition: "Reality == Hypothesis (Negative)（予測通りにできなかった）"
+      output: "Personal Factor Confirmation（個人因子確定）"
+      action: "Establish Protective Boundary（医学モデル）"
+      rationale:
+        - "これは失敗ではない。『限界の戦略的定義』である"
+        - "『毒性ポジティビズム』（不可能な成長の強制）を防止"
+        - "『合理的配慮』を恒久的必要事項としてトリガー"
+
+  mermaid_variance_flow: |
+    ```mermaid
+    flowchart TB
+        subgraph INPUT ["1. Data Collection"]
+            H["📋 Supporter's Hypothesis<br/>(Deduction/Budget)"]
+            A["📱 User's Actual Behavior<br/>(Induction/Log)"]
+        end
+
+        subgraph ANALYSIS ["2. Variance Analysis"]
+            C["🔍 Compare<br/>Hypothesis vs Actual"]
+        end
+
+        subgraph OUTCOME ["3. Three-Way Output"]
+            P["✨ Positive Variance<br/>Asset Discovery"]
+            N["🚧 Negative Variance<br/>Barrier Detection"]
+            M["🔒 Negative Match<br/>Limit Confirmation"]
+        end
+
+        subgraph ACTION ["4. System Action"]
+            PA["Update Persona<br/>(Empowerment)"]
+            NA["Flag Rights Violation<br/>(Social Model)"]
+            MA["Establish Boundary<br/>(Medical Model)"]
+        end
+
+        H --> C
+        A --> C
+        C -->|"Actual > Hypo"| P
+        C -->|"Actual < Hypo"| N
+        C -->|"Actual == Hypo (Neg)"| M
+        P --> PA
+        N --> NA
+        M --> MA
+
+        style P fill:#ccffcc
+        style N fill:#ffcccc
+        style M fill:#ffffcc
+    ```
+
+  hypothesis_testing_loop:
+    description: "支援者の偏見を矯正するシステム"
+    scenario:
+      step_1: "Supporter sets Schema: 'User cannot handle stress' (Deduction)"
+      step_2: "Input AI captures Log: 'User successfully negotiated a claim' (Induction)"
+      step_3: "System detects contradiction"
+      step_4: "Flag as 'Supporter Bias Error'"
+      step_5: "Auto-generate Asset: 'Stress Resilience in Negotiation'"
+
+# ==========================================
+# PART 10: Difficulty Triage Protocol
+# 困難の要因仕訳アルゴリズム
+# ==========================================
+difficulty_triage_protocol:
+
+  problem_statement: |
+    現行の福祉は、生物学的要因・環境要因・薬物要因を
+    すべて「障害」として一括りにしている。
+    SoEはRoot Causeを特定し、適切な勘定科目に振り分ける。
+
+  three_layer_filter:
+
+    layer_1_pharmacological:
+      name: "薬物要因チェック"
+      logic: "行動が服薬タイミング/変更と相関しているか？"
+      action: "Flag as 'Medical Side-effect' → Medical Liaison へ出力"
+      example: "午後の集中力低下 → コンサータの効果切れ"
+
+    layer_2_environmental:
+      name: "環境・歴史要因チェック"
+      logic: "ACEs、教育機会の欠如、トラウマトリガーと関連があるか？"
+      action: "Flag as 'Rights Violation (Social Debt)' → Empowerment Program へ出力"
+      example: "対人恐怖 → 過去のいじめ経験（社会の負債）"
+
+    layer_3_biological:
+      name: "生物学的・神経学的要因チェック"
+      logic: "Layer 1, 2 に該当せず、一貫した神経学的特性か？"
+      action: "Flag as 'Disability Characteristic' → Reasonable Accommodation へ出力"
+      example: "聴覚情報処理の困難 → 両耳難聴（個人因子）"
+
+  mermaid_triage_flow: |
+    ```mermaid
+    flowchart TB
+        subgraph INPUT ["Difficulty Input"]
+            D["😓 'I can't concentrate'"]
+        end
+
+        subgraph L1 ["Layer 1: Pharmacological"]
+            Q1{"Medication<br/>Correlation?"}
+            A1["💊 Side-effect<br/>→ Medical Liaison"]
+        end
+
+        subgraph L2 ["Layer 2: Environmental"]
+            Q2{"ACEs/Trauma<br/>Trigger?"}
+            A2["🏚️ Rights Violation<br/>→ Empowerment"]
+        end
+
+        subgraph L3 ["Layer 3: Biological"]
+            Q3{"Consistent<br/>Neuro Trait?"}
+            A3["🧬 Disability<br/>→ Accommodation"]
+        end
+
+        D --> Q1
+        Q1 -->|Yes| A1
+        Q1 -->|No| Q2
+        Q2 -->|Yes| A2
+        Q2 -->|No| Q3
+        Q3 -->|Yes| A3
+        Q3 -->|No| D
+
+        style A1 fill:#e6f3ff
+        style A2 fill:#ffe6e6
+        style A3 fill:#e6ffe6
+    ```
+
+  json_schema_design:
+    difficulty_entry:
+      id: "string"
+      description: "string"
+      timestamp: "datetime"
+      triage_result:
+        layer: "1|2|3"
+        classification: "pharmacological|environmental|biological"
+        confidence: "float (0-1)"
+        evidence: "array of observations"
+      output_destination: "medical|empowerment|accommodation"
+      icf_code: "string (optional)"
+      iso_reference: "string (optional)"
+
+# ==========================================
+# PART 11: Scientific Horizon Policy
+# 「現在の科学水準での」限界と未来への希望
+# ==========================================
+scientific_horizon_policy:
+
+  core_philosophy: |
+    「不変（Immutable）」は、現在の科学に基づく一時的ステータスである。
+    「絶望的なケース」を「科学的リソース」に変換する。
+
+  policy_clauses:
+
+    clause_1:
+      rule: "すべての『個人因子』判定に 'Based on current scientific limitations' を付記"
+      reason: "固定マインドセットを防止し、将来の可能性を認める"
+
+    clause_2:
+      rule: "蓄積された『個人因子』データを医学科学セグメントへエクスポート"
+      reason: "将来の治療法/介入法の発見に貢献（ループを閉じる）"
+
+    clause_3:
+      rule: "『固定』タグ付与前の必須クロスバリデーション"
+      mechanism: "外部医学/学術DBをチェックし、『支援者の無知』を除外"
+
+    clause_4:
+      rule: "すべての『固定的困難』タグに有効期限を設定"
+      mechanism: "365日ごとに最新の科学データで自動再評価"
+
+  bias_check_engine:
+    logic: |
+      If (Supporter says "Impossible") THEN
+         Query External_DB (PubMed, Cochrane, etc.) with Keywords
+         If (Search Hits > 0) THEN
+            Alert: "Potential Intervention Found: [Title]"
+            Block "Fixed Tag" assignment.
+         Else
+            Allow "Fixed Tag" with Time-Stamp.
+
+  data_donation_api:
+    purpose: "未解決ケースを科学に寄付し、今日の限界を明日の治療法に変える"
+    requirements:
+      aggregation: "特定の特性を持つケースを集約"
+      anonymization: "個人を特定できない純粋な症状データへの加工"
+      versioning: "『2025年の科学水準での判定』というタイムスタンプ付与"
+
+    github_readme_paragraph: |
+      **Data Donation to Science**
+      We donate unsolved cases to science, turning today's limits into tomorrow's cures.
+      When our system confirms a difficulty as "Personal Factor" (immutable by current science),
+      the anonymized data is aggregated and made available to medical research institutions.
+      Every "impossible" case becomes a beacon for future breakthroughs.
+
+# ==========================================
+# PART 12: Data Reliability Layer
+# 福祉記録 → 医療エビデンス変換
+# ==========================================
+data_reliability_layer:
+
+  problem: "医療セクターは主観的な福祉記録を信頼しない（'Unreliable Narratives'）"
+  solution: "主観的ログを標準化・定量化可能なデータポイントに変換"
+
+  conversion_logic:
+    input: "'He seems anxious today.' (Subjective/Ambiguous)"
+    soe_filter: "Ask for Indicators: 'Pulse? Body movement? Verbal repetition?'"
+    output:
+      symptom: "Psychomotor Agitation"
+      severity: "Level 3"
+      indicator: "Pacing"
+      icf_code: "b152 (Emotional functions)"
+      fhir_compatible: true
+
+  mermaid_conversion_flow: |
+    ```mermaid
+    flowchart LR
+        subgraph WELFARE ["Welfare Village"]
+            W["😰 'He seems anxious'<br/>(Anecdote)"]
+        end
+
+        subgraph SOE ["SoE Filter"]
+            Q["❓ Request Indicators"]
+            I["📊 Pulse: 95bpm<br/>Movement: Pacing<br/>Speech: Repetitive"]
+        end
+
+        subgraph MEDICAL ["Medical Village"]
+            M["📋 ICF: b152<br/>FHIR: Observation<br/>Severity: Level 3"]
+        end
+
+        W --> Q
+        Q --> I
+        I --> M
+
+        style W fill:#ffe6e6
+        style SOE fill:#e6ffe6
+        style M fill:#e6e6ff
+    ```
+    **Title: "Turning Anecdotes into Evidence"**
+
+# ==========================================
+# PART 13: Public Health Model (SDoE)
+# 「個人の福祉」から「社会疫学」へ
+# ==========================================
+public_health_model:
+
+  core_metaphor:
+    rights_violation: "病原体（Pathogen）"
+    apathy_mukiteki: "感染症（Infectious Disease）"
+    input_constitutional_ai: "公衆衛生インフラ（Sanitation Infrastructure）"
+
+  framework_mapping:
+    prevention_levels:
+      primary: "Input Filtering（スティグマ予防）"
+      secondary: "Variance Analysis（才能/障壁の早期発見）"
+      tertiary: "B/S Reconstruction（アイデンティティのリハビリ）"
+
+    determinants:
+      from: "SDOH (Social Determinants of Health)"
+      to: "SDoE (Social Determinants of Empowerment)"
+      logic: "『権利インフラ』が『SROI』とどう相関するかを定量化"
+
+  epidemiological_design:
+    aggregation_key:
+      - individual: "個人単位"
+      - facility: "支援所単位"
+      - region: "地域単位"
+    metric: "無気力発生率（Apathy Incidence Rate）"
+    causality_tracking: "特定の支援介入（Input）と資産形成（Outcome）の相関をコホート分析"
+
+    john_snow_map_concept: |
+      「この地域の支援所は、権利侵害ウイルスに汚染されている」
+      という事実をデータで可視化する
+      「ジョン・スノウの地図（コレラ発生マップ）」のような機能。
+
+# ==========================================
+# PART 14: Ekisei Kakumei Model (易姓革命)
+# 社会免疫システムとしてのSoE
+# ==========================================
+ekisei_kakumei_model:
+
+  historical_analogy:
+    concept: "王朝サイクル = 公衆衛生サイクル"
+    mechanism:
+      loss_of_mandate: "徳の喪失 = 権利侵害の蓄積"
+      revolution: "革命 = 社会体の免疫反応（感染のパージ）"
+
+  modern_application:
+    wealthy_hoarders: "『勝者』ではなく、免疫反応を引き起こす『病原体』"
+    soe_role: "恒常性維持装置（Homeostasis Mechanism）として崩壊を防止"
+
+  compound_interest_of_rights:
+    concept: "権利の複利効果"
+    mechanism:
+      phase_1: "Silent Accumulation（権利侵害が線形に蓄積。富の格差は見えない）"
+      phase_2: "Exponential Manifestation（蓄積された不利が富/地位の崩壊を引き起こす）"
+
+    intervention_logic:
+      traditional_welfare: "Phase 2 で介入（遅すぎる、高コスト、低ROI）"
+      soe: "Phase 1 で介入（早期介入、高レバレッジ、大きなSROI）"
+
+  mermaid_social_immunity: |
+    ```mermaid
+    flowchart TB
+        subgraph ACCUMULATION ["Phase 1: Silent Accumulation"]
+            R["🔴 Rights Deprivation"]
+            A["📈 Accumulation of<br/>'Muteki' Factor"]
+        end
+
+        subgraph THRESHOLD ["Tipping Point"]
+            T["⚠️ Threshold Breach"]
+        end
+
+        subgraph COLLAPSE ["Phase 2: Systemic Collapse"]
+            C["💥 Revolution/Terror<br/>(Ekisei Kakumei)"]
+        end
+
+        subgraph INTERVENTION ["SoE Intervention"]
+            S["🛡️ SoE drains the<br/>Accumulation Pool"]
+        end
+
+        R --> A
+        A --> T
+        T --> C
+        S -.->|"Early Intervention"| A
+
+        style R fill:#ffcccc
+        style A fill:#ffffcc
+        style T fill:#ffcc99
+        style C fill:#ff9999
+        style S fill:#ccffcc
+    ```
+
+  exponential_gap_visualization:
+    concept: "権利の格差が時間をかけて富の格差へと加速度的に拡大"
+    variables:
+      x_axis: "Time (Life Stages: Childhood → Education → Career)"
+      y_axis: "Capability / Assets (Cumulative)"
+    lines:
+      line_a: "Rights Protected: 最初は平坦、その後指数関数的に上昇"
+      line_b: "Rights Deprived: 最初はわずかに低い、その後下降（負債スパイラル）"
+    annotation: "SoE intervenes HERE (at the divergence point), not THERE (at the bottom)"
+
+  urgency_narrative: |
+    Wealth inequality is just the final symptom of a disease that started years ago.
+    We cannot fix the 'Exponential Explosion' of poverty with cash alone.
+    We must stop the 'Silent Accumulation' of rights violations.
+    SoE detects the smoke before the fire burns down the house.
+
+# ==========================================
+# PART 15: Limitarianism & Choice Redistribution
+# 富の再分配から選択権の再分配へ
+# ==========================================
+limitarianism_integration:
+
+  strategic_pivot:
+    old_framing: "Wealth Gap（経済的格差）"
+    new_framing: "Asymmetry of Choice（選択権の非対称性）"
+
+  causal_chain:
+    step_1: "Rights Hoarding（多数派が『リスク/選択』を独占）"
+    step_2: "Opportunity Gap（少数派が『生存モード』に閉じ込められる）"
+    step_3: "Wealth Gap（結果としての経済的アウトカム）"
+    step_4: "Muteki-no-hito Factor（結果としての社会リスク）"
+
+  soe_intervention_point:
+    - "SoE は Step 3（富）を直接修正しない"
+    - "SoE は Step 1（権利/選択）を Input Constitutional AI で修正"
+    - "結果: Step 3 は時間をかけて自己修正（SROI）"
+
+  theoretical_pillars:
+    capability_approach:
+      authors: "Amartya Sen, Martha Nussbaum"
+      focus: "'Raising the Floor'（床を上げる）"
+      soe_connection: "SoEのゴール（機能すること・あること）の定義"
+
+    limitarianism:
+      author: "Ingrid Robeyns"
+      focus: "'Lowering the Ceiling'（天井を下げる/再分配）"
+      soe_connection: "資源の偏在がもたらす『無敵の人因子』発生メカニズムの理論的支柱"
+
+    tyranny_of_merit:
+      author: "Michael Sandel"
+      focus: "能力主義の暴力性"
+      soe_connection: "『努力の前提条件の整備』としてのSoEの応答"
+
+  synthesis: |
+    Capability Approach は『床を上げる』。
+    Limitarianism は『天井を下げる』（再分配）。
+    SoE は両者を接続する: 『天井』からリソースを動かし、『床』を修復する。
+
+  mermaid_choice_redistribution: |
+    ```mermaid
+    flowchart LR
+        subgraph CAUSE ["Root Cause"]
+            CH["🔒 Choice Hoarding"]
+        end
+
+        subgraph CHAIN ["Causal Chain"]
+            OM["📊 Opportunity Monopoly"]
+            WC["💰 Wealth Concentration"]
+            SI["💥 Social Instability"]
+        end
+
+        subgraph INTERVENTION ["SoE Intervention"]
+            SOE["🛡️ Democratizing<br/>Rights Infrastructure"]
+        end
+
+        CH --> OM --> WC --> SI
+        SOE -.->|"Breaks Link"| CH
+
+        style CH fill:#ffcccc
+        style SI fill:#ff9999
+        style SOE fill:#ccffcc
+    ```
+
+# ==========================================
+# PART 16: The Fair Game Doctrine
+# リバタリアン/保守層向けの論理
+# ==========================================
+fair_game_doctrine:
+
+  wealth_classification:
+    acceptable_inequality:
+      definition: "権利が平等化された環境での、努力/才能の差から生じる格差"
+      stance: "Protect & Respect（これが自由）"
+
+    unacceptable_inequality:
+      definition: "『選択』と『権利』の独占から生じる格差"
+      stance: "Correct & Democratize（これが専制）"
+
+  soe_positioning:
+    - "SoE is PRO-MARKET: 権利の非対称性による『市場の失敗』を修正"
+    - "SoE is ANTI-MONOPOLY: 『人権』の独占を打破"
+    - "成功を罰しない。ズル（権利侵害）を罰する"
+
+  infrastructure_argument:
+    premise: "リバタリアンは国家インフラ（警察/裁判所）に依存して富を守る"
+    fact: "このインフラは現在、不均等に分配されている（権利の囲い込み）"
+    conclusion: "富裕層は偏ったシステムに『フリーライド』している。SoEはこの偏りを修正"
+
+  pitch_to_conservatives:
+    slide_1: "You built your wealth through hard work.（努力を称える）"
+    slide_2: "But the game is currently rigged by 'Rights Hoarding'.（バグを特定）"
+    slide_3: "This rigging creates 'Muteki-no-hito' which threatens your wealth.（リスクを特定）"
+    slide_4: "SoE restores the 'Fair Game'. Not Charity, but Fair Competition.（解決策）"
+    goal: "『SoEへの投資は、自由市場を守るためのコストだ』と思わせる"
+
+  mermaid_infrastructure_analogy: |
+    ```mermaid
+    flowchart LR
+        subgraph LANE_A ["Lane A: Majority"]
+            A["🛣️ Paved Road<br/>Guard Rails<br/>Traffic Lights"]
+        end
+
+        subgraph LANE_B ["Lane B: Minority"]
+            B["🏚️ Muddy Swamp<br/>No Rules<br/>Risk of Theft"]
+        end
+
+        subgraph SOE ["SoE Intervention"]
+            S["🔧 Paving Lane B<br/>(Not giving free cars)"]
+        end
+
+        A -->|"Rights Protected"| WIN["🏆 Success"]
+        B -->|"Rights Deprived"| LOSE["💀 Failure"]
+        S -.->|"Infrastructure Fix"| B
+
+        style LANE_A fill:#ccffcc
+        style LANE_B fill:#ffcccc
+        style SOE fill:#e6e6ff
+    ```
+    **Argument:** "SoE does not give Lane B runners a 'free car' (Money).
+    SoE simply paves Lane B (Rights).
+    If you oppose this, you oppose Fair Competition."
+
+  key_phrases:
+    - "We are not asking for charity. We are fixing the rigged game."
+    - "Inequality of Wealth starts with Inequality of Choice."
+    - "History shows that when the 'Rights Gap' becomes too wide, the system resets itself violently."
+    - "SoE is your insurance policy against this reset."
+
+# ==========================================
+# PART 17: Governance Architecture
+# 「魂のない機械」の統治構造
+# ==========================================
+governance_architecture:
+
+  problem: "誰が SoE という『魂のない機械』をコントロールするのか？"
+  solution: "分散型ガバナンス（Commons）& 徹底的透明性"
+
+  principle: "No Single Point of Control (SPOF)（単一障害点なし）"
+
+  layers:
+    layer_1_constitution:
+      name: "The Constitution (Code)"
+      features:
+        - "Open Source（誰でも監査可能）"
+        - "Hard-coded check against 'Rights Violations'"
+
+    layer_2_council:
+      name: "The Council (Humans)"
+      composition: "マルチステークホルダー（ユーザー、医師、弁護士）"
+      authority: "『資産/障壁の定義』を更新するキーを保持"
+
+    layer_3_oracle:
+      name: "The Oracle (Data)"
+      role: "Input Constitutional AI は中立的な実行者であり、意思決定者ではない"
+
+  participatory_algorithm_design:
+    flow:
+      step_1: "User reports: 'This AI judgment feels unfair.'"
+      step_2: "Issue flagged to 'Ethics Committee.'"
+      step_3: "Committee reviews against CRPD."
+      step_4: "If valid, update the 'Schema Logic.'"
+      step_5: "Deploy update to all users."
+
+    goal: "SoEは『ブラックボックス独裁』ではなく『ガラスボックス民主主義』であることを証明"
+
+  mermaid_governance_flow: |
+    ```mermaid
+    flowchart TB
+        subgraph USER ["User"]
+            U["😕 'This feels unfair'"]
+        end
+
+        subgraph ETHICS ["Ethics Committee"]
+            E["⚖️ Review against<br/>CRPD/ISO 26000"]
+        end
+
+        subgraph CODE ["Open Source Code"]
+            C["📝 Schema Logic<br/>(GitHub)"]
+        end
+
+        subgraph DEPLOY ["Deployment"]
+            D["🚀 Update to<br/>All Users"]
+        end
+
+        U --> E
+        E -->|Valid| C
+        C --> D
+        E -->|Invalid| U
+
+        style E fill:#ffffcc
+        style C fill:#ccffcc
+    ```
+
+  open_source_manifesto: |
+    **Commitment to Transparency**
+    We believe that systems governing human rights must be open source.
+    Trust is not given; it is verified. (Verify, don't trust.)
+
+# ==========================================
+# PART 18: Agency-Centric Philosophy
+# 「ユーザー中心」から「主体性中心」へ
+# ==========================================
+agency_centric_philosophy:
+
+  philosophical_correction:
+    from: "User-Centric（ユーザー中心/天動説）"
+    to: "Agency-Centric（主体性中心/地動説）"
+
+  center_concept:
+    status: "Null（中心は存在しない）"
+    guiding_principle: "合意された法理（Human Rights/CRPD）のみが絶対定数"
+
+  goal_redefinition:
+    before: "Protect and serve the user.（ユーザーを守り、仕える）"
+    after: "Restore the infrastructure that makes 'Effort towards a self-selected future' possible.（自己選択した未来への努力を可能にするインフラを復旧する）"
+
+  key_distinction:
+    welfare: "努力の必要性を除去する（依存）"
+    soe: "不公平な障壁を除去し、努力が意味を持つようにする（主体性）"
+
+  mission_statement: |
+    SoE does not place the user at the center to be served.
+    Instead, it clears the 'Rights Violations' (debris) that block the road,
+    ensuring the user can grip the steering wheel and drive towards their own selected future.
+
+  new_keywords:
+    - "Agency-Centric（主体性中心）"
+    - "Enabling Effort（努力の可能化）"
+    - "Rights as Protocol（プロトコルとしての権利）"
+
+  mermaid_network_model: |
+    ```mermaid
+    flowchart LR
+        subgraph PROTOCOL ["Human Rights Protocol"]
+            HR["📜 CRPD/ISO 26000<br/>(Traffic Rules)"]
+        end
+
+        subgraph INFRASTRUCTURE ["Infrastructure"]
+            S["🔧 Supporter<br/>(Maintenance)"]
+            B["🚧 Barrier<br/>(To be removed)"]
+        end
+
+        subgraph AGENT ["User as Agent"]
+            U["🚗 User<br/>(Moving Agent)"]
+        end
+
+        subgraph FUTURE ["Destination"]
+            F["🎯 Future<br/>(Selected by User)"]
+        end
+
+        HR -->|"Governs"| S
+        S -->|"Removes"| B
+        U -->|"Decides Path"| F
+        U -->|"Exerts Effort"| F
+
+        style HR fill:#e6e6ff
+        style U fill:#ccffcc
+        style F fill:#ffffcc
+    ```
+
+# ==========================================
+# PART 19: Final Vision - Global Security Infrastructure
+# SoEの最終ビジョン
+# ==========================================
+final_vision:
+
+  dual_use_potential:
+    counter_terrorism:
+      logic: "テロリズムは『希望の欠乏』の症状。SoEは『将来の資産』を回復し『無敵』マインドセットを中和"
+      role: "Pre-crime Prevention / Social Stabilization"
+
+    counter_tyranny:
+      logic: "専制は『真実の独占』に依存。SoEは粒度の高いフィールドデータに基づく『分散型真実』を創造"
+      role: "Check & Balance / Anti-Propaganda Filter"
+
+  grand_strategy:
+    - "SoEは『障害福祉』だけのためではない"
+    - "SoEは社会秩序の崩壊を防ぐ『市民防衛システム』である"
+
+  manifesto_epilogue: |
+    **Epilogue: The Architecture of Peace**
+
+    We build this system not just to help the vulnerable,
+    but to protect the sanity of society itself.
+
+    By fixing the bugs in our rights infrastructure,
+    we prevent the fatal errors of Terrorism and Tyranny.
+
+    This is the architecture of Peace.
+
+# ==========================================
+# PART 20: Strategic Summary (Gemini Handover)
+# ==========================================
+strategic_summary:
+
+  center_of_gravity:
+    old: "User-Centric / Paternalism（天動説）"
+    new: "Agency-Centric / Network Model（地動説/相対論）"
+    definition: "中心はない。あるのは『合意された法理』と『インフラ』のみ"
+
+  theoretical_pillars:
+    pillar_1: "Public Health Model (SDoE)"
+    pillar_2: "Ekisei Kakumei Model (Social Immunity)"
+    pillar_3: "Limitarianism Pivot (Choice Redistribution)"
+
+  system_architecture:
+    core_engine: "Variance Analysis（予実差異分析）"
+    triage_protocol: "Difficulty Triage（困難の仕訳）"
+    governance: "Decentralized / Open Source"
+
+  narrative_strategy:
+    to_libertarians: "We are fixing the 'Rigged Game' to ensure Fair Competition."
+    to_medical_sector: "We convert 'Anecdotes' into 'Epidemiological Evidence'."
+    to_investors: "We are the 'Security Patch' for Capitalism and Democracy."
+
+  immediate_tasks:
+    - "Update GitHub README with Public Health & Variance Analysis diagrams"
+    - "Design JSON Schema for Difficulty Triage layers"
+    - "Draft Scientific Horizon Policy (Data donation)"
+    - "Prepare Infrastructure Argument slide logic"
+
+# ==========================================
+# PART 21: Theory Hierarchy Structure
+# Added: 2025-12-18 (Post Gemini Deep Research)
+# ==========================================
+theory_hierarchy:
+
+  overview:
+    insight: |
+      SoEはミクロ視点（現場実践）からの帰納的構築だが、
+      マクロ視点の演繹的理論（学術的正当化）が必要。
+
+      この階層構造により、研究計画書における理論的位置づけが明確化される。
+
+  level_3_macro_theory:
+    description: "演繹的正当化：学術的理論基盤"
+    reference: "09_research_proposal/04_references/macro_theory_rights_wealth.md"
+
+    theories:
+      legal_coding:
+        theorist: "Katharina Pistor"
+        work: "The Code of Capital (2019)"
+        core_thesis: "法が富を人為的に構築する4つの属性（優先権・耐久性・普遍性・換金性）"
+        soe_connection: "支援記録の所有権問題、Input Constitutional AIの理論的根拠"
+
+      anticommons:
+        theorist: "Michael Heller"
+        work: "The Gridlock Economy (2008)"
+        core_thesis: "過剰な排除権による過少利用（アンチコモンズの悲劇）"
+        soe_connection: "福祉情報のアンチコモンズ化、Life Bookkeepingによる解決"
+
+      ip_rent_seeking:
+        theorist: "Joseph Stiglitz"
+        work: "The Price of Inequality (2012)"
+        core_thesis: "知的財産権の強化がレントシーキングを助長"
+        soe_connection: "専門知識の囲い込み批判、データ信託モデルの正当化"
+
+      rights_critique:
+        theorist: "Samuel Moyn"
+        work: "Not Enough (2018)"
+        core_thesis: "人権運動は十分性に注目し平等（上限）を無視"
+        soe_connection: "リミタリアニズムとの統合、クロイソス問題への対応"
+
+      opportunity_hoarding:
+        theorist: "Charles Tilly"
+        work: "Durable Inequality (1998)"
+        core_thesis: "機会独占と法的シニシズムによる階層固定化"
+        soe_connection: "無敵の人問題、社会契約からの離脱防止"
+
+      data_labor:
+        theorists:
+          - "Glen Weyl"
+          - "Jaron Lanier"
+        works:
+          - "Radical Markets (2018)"
+          - "Who Owns the Future? (2013)"
+        core_thesis: "データは労働であり、提供者は公正な対価を受けるべき"
+        soe_connection: "PHR Commons、データ・ディグニティ概念"
+
+      capability_approach:
+        theorists:
+          - "Amartya Sen"
+          - "Martha Nussbaum"
+        works:
+          - "Development as Freedom (1999)"
+          - "Creating Capabilities (2011)"
+        core_thesis: "福祉は『持っているもの』ではなく『できること』で評価すべき"
+        soe_connection: "床を上げるアプローチ、Three-Layer Modelとの親和性"
+
+      limitarianism:
+        theorist: "Ingrid Robeyns"
+        work: "Limitarianism (2024)"
+        core_thesis: "富の下限だけでなく上限も設定すべき"
+        soe_connection: "Schema Dualityの上限概念、Fair Game Doctrine"
+
+  level_2_meso_framework:
+    description: "統合設計：理論と実装をつなぐフレームワーク"
+
+    frameworks:
+      three_layer_model:
+        scope: "理念・哲学・認知構造"
+        role: "上位概念の整理"
+
+      four_pillar_model:
+        scope: "実装フレーム"
+        pillars:
+          - "権利回復（Rights Recovery）"
+          - "支援者倫理（Supporter Ethics）"
+          - "地域人材（Community Resources）"
+          - "科学的アセスメント（Scientific Assessment）"
+
+      iso_integration:
+        scope: "品質保証"
+        standards:
+          - "ISO 9001（品質マネジメント）"
+          - "ISO 26000（社会的責任）"
+          - "ISO 31000（リスクマネジメント）"
+
+  level_1_micro_implementation:
+    description: "帰納的構築：現場実践からのツール"
+
+    tools:
+      input_constitutional_ai:
+        scope: "記録作成段階での権利保障"
+        innovation: "Output側ではなくInput側での憲法準拠"
+
+      variance_analysis_engine:
+        scope: "予実差異分析"
+        outputs:
+          - "Asset Discovery（正の差異）"
+          - "Barrier Detection（負の差異）"
+          - "Limit Confirmation（負の一致）"
+
+      life_bookkeeping:
+        scope: "複式簿記メタファーでの人生記録"
+        structure: "P/L（成長）+ B/S（蓄積）"
+
+      schema_duality:
+        scope: "認知スキーマ × DBスキーマの統合"
+        mechanism: "外部化による内的スキーマの上書き"
+
+  hierarchy_diagram: |
+    ```
+    ┌─────────────────────────────────────────────────────────┐
+    │ Level 3: Macro Theory (Deductive Justification)        │
+    │ ┌─────────────────────────────────────────────────────┐│
+    │ │ Pistor │ Heller │ Stiglitz │ Moyn │ Tilly │ Sen   ││
+    │ │ Weyl/Lanier │ Nussbaum │ Robeyns │ Sandel        ││
+    │ └─────────────────────────────────────────────────────┘│
+    │                          ↓                              │
+    │ Level 2: Meso Framework (Integration Design)           │
+    │ ┌─────────────────────────────────────────────────────┐│
+    │ │ Three-Layer │ Four-Pillar │ ISO Integration        ││
+    │ └─────────────────────────────────────────────────────┘│
+    │                          ↓                              │
+    │ Level 1: Micro Implementation (Inductive Construction) │
+    │ ┌─────────────────────────────────────────────────────┐│
+    │ │ Input Constitutional AI │ Variance Analysis        ││
+    │ │ Life Bookkeeping │ Schema Duality                  ││
+    │ └─────────────────────────────────────────────────────┘│
+    └─────────────────────────────────────────────────────────┘
+    ```
+
+  research_proposal_integration:
+    position: |
+      研究計画書において、この階層構造は以下のように活用される：
+
+      1. 文献レビュー：Level 3のマクロ理論を学術的先行研究として引用
+      2. 理論的枠組み：Level 2のフレームワークで研究設計を説明
+      3. 研究方法：Level 1のミクロツールで実装・検証計画を記述
+
+      これにより「現場知の体系化」と「学術的正当性」の両立が可能となる。
+
+---
+# End of Schema Duality Design (Extended with Theory Hierarchy)

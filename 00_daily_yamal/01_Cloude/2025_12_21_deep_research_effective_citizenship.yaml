@@ -1,0 +1,512 @@
+# ============================================================
+# Claude Web Deep Research: Effective Citizenship & Rights Maldistribution
+# 実効的市民権と権利の構造的偏重
+# Date: 2025-12-21
+# Source: Claude Web (Compass Artifact)
+# ============================================================
+
+metadata:
+  created: 2025-12-21
+  source_ai: "Claude Web"
+  research_type: "Deep Research (Literature Map)"
+  topic: "Effective Citizenship / Rights Maldistribution"
+  format: "Markdown Artifact"
+
+# ============================================================
+# Executive Summary
+# ============================================================
+
+executive_summary:
+  core_finding: |
+    「権利の構造的偏重が富の不平等に因果的に先行する」という仮説は、
+    理論的には未発達だが、実証的に支持される仮説である。
+
+  literature_support: |
+    市民権研究、制度経済学、ケイパビリティ理論、司法アクセス研究にわたって
+    研究者の中核主張を支持する実質的な学術的基盤が存在。
+
+  robeyns_gap: |
+    Ingrid Robeynsの Limitarianism は資源配分のみを扱い、
+    権利の次元は未開拓の理論的ギャップとして博士課程への貢献の余地がある。
+
+  hypothesis_validation: |
+    雄司の仮説は防御可能であり、真の理論的ギャップを表している。
+    文献は強固な基盤を提供するが、この因果方向を
+    統一理論として明示的に表現していない。
+
+# ============================================================
+# RQ1: Effective Citizenship vs Formal Citizenship
+# ============================================================
+
+rq1_effective_citizenship:
+  title: "実効的市民権と形式的地位の区別"
+  status: "学術文献で十分に確立されている"
+
+  key_theorists:
+    th_marshall:
+      work: "Citizenship and Social Class (1950)"
+      contribution: "三部構成モデル: civil → political → social rights"
+      key_insight: |
+        形式的市民権・政治権は、社会権なしには不十分。
+        「教育にアクセスできない個人にとって、言論の自由の権利は無効」
+
+    engin_isin:
+      work: "Acts of Citizenship (2008, with Greg Nielsen)"
+      framework: "status（形式的法的地位）, habitus（内面化された性向）, acts（市民として構成する瞬間）"
+      key_quote: |
+        「多くの学者は今や形式的市民権と実質的市民権を区別し、
+        後者を前者の可能性の条件と見なしている」
+
+    ruth_lister:
+      work: "Citizenship: Feminist Perspectives (1997/2003)"
+      contribution: "市民権を「地位と実践の両方、人間のエージェンシーの概念を通じて結びついた」"
+      concept: "false universalism（偽りの普遍主義）"
+      insight: "普遍的な約束が差異化された不平等な結果を生む"
+
+  terminology:
+    substantive_citizenship:
+      definition: "権利を実際に主張し行使する能力"
+      theorists: ["Holston", "Janoski"]
+    citizenship_gap:
+      definition: "想像された/形式的な市民権と経験された市民権のギャップ"
+      theorists: ["Núñez", "Shafir"]
+    citizenship_deficit:
+      definition: "成員特典への部分的アクセス"
+      theorist: "Bhabha"
+    acts_of_citizenship:
+      definition: "地位に関係なく市民として構成する瞬間"
+      theorist: "Isin"
+
+  key_journals:
+    - "Citizenship Studies (Taylor & Francis, 1997年創刊 by Turner and Isin)"
+    - "Journal of Ethnic and Migration Studies"
+    - "Sociology"
+
+# ============================================================
+# RQ2: Structural Framing of Rights Gap
+# ============================================================
+
+rq2_structural_framing:
+  title: "形式的・実効的権利ギャップの構造的フレーミング"
+  status: "複数分野で十分に確立 - ギャップではなく強固な基盤"
+
+  key_theories:
+    iris_marion_young:
+      works:
+        - "Justice and the Politics of Difference (1990)"
+        - "Responsibility for Justice (2011)"
+      concept: "structural injustice（構造的不正義）"
+      thesis: |
+        不正義は個人の不正行為ではなく社会構造から生じる。
+        住宅ヴィネット：働く母親が手頃な住宅を見つけられないのは、
+        個人の悪意ではなく、累積的な構造的プロセスによる。
+      social_connection_model: |
+        構造的不正義への責任は不正な構造に接続された全員が共有。
+        guilt/blame（個人的、過去志向）と
+        political responsibility（集合的、将来志向）を区別。
+      spread: "McKeown (2021) Philosophy Compass: 生命倫理、公衆衛生、教育、社会福祉、法学に拡大"
+
+    capability_approach:
+      theorists: ["Sen", "Nussbaum"]
+      key_distinction: "形式的権利 vs 実質的/実効的自由"
+      stanford_encyclopedia: |
+        「ケイパビリティは、潜在的障害が除去された自由を示すため、
+        単なる形式的権利とは対照的に、実質的または実効的自由と呼ばれる」
+      conversion_factors:
+        definition: "リソースがケイパビリティに変換されるかどうかを決定する条件"
+        types: ["personal", "social", "environmental"]
+        relevance: "形式的権利が実効的ケイパビリティとして実現しない理由を直接説明"
+
+    sandra_fredman:
+      work: "International Journal of Constitutional Law (2016)"
+      concept: "substantive equality framework（実質的平等フレームワーク）"
+      four_dimensions:
+        - "redistributive（体系的不利益の是正）"
+        - "recognition（スティグマへの対処）"
+        - "participative（周縁化された人々の参加確保）"
+        - "transformative（強化構造の修正）"
+      adoption: "カナダ最高裁、南アフリカ憲法裁判所"
+
+    gap_studies:
+      source: "Gould & Barclay, Annual Review of Law and Social Science (2012)"
+      tradition: "法社会学の「ギャップ研究」"
+      concept: "law on the books vs. law in action"
+      finding: "形式的法的権利と実際の執行の体系的乖離を文書化"
+
+# ============================================================
+# RQ3: Rights → Wealth Causation (HIGHEST PRIORITY)
+# ============================================================
+
+rq3_causal_direction:
+  title: "権利の偏重が富の偏重を引き起こすか"
+  status: "実質的な支持が存在するが、逆方向のフレーミングより発展が遅れている"
+  assessment: "真の理論的貢献の機会"
+
+  foundational_framework:
+    marc_galanter:
+      work: "Why the 'Haves' Come Out Ahead (Law & Society Review, 1974)"
+      status: |
+        史上最も引用された法学論文の一つ。
+        The Canon of American Legal Thought (Kennedy & Fisher, 2006) に収録。
+
+      core_argument:
+        repeat_players:
+          definition: "頻繁な法的やり取りを持つ組織"
+          advantages:
+            - "優秀な弁護士を雇用できる"
+            - "複数ケースで「オッズをプレイ」できる"
+            - "先例を形成して「ルールをプレイ」できる"
+        one_shotters:
+          definition: "稀な法的ニーズを持つ個人"
+          disadvantages:
+            - "質の高い代理人を雇えない"
+            - "ケースのメリットに関係なく体系的に不利"
+
+      critical_insight: |
+        法的アクセスの*構造そのもの*（権利の偏重の一形態）が
+        累積的優位を生み出す。富裕層はより多くの富を蓄積する、
+        なぜなら法制度のアーキテクチャが体系的に彼らを優遇するから。
+        これは「因果的に先行」: 権利アクセスの制度的構造が
+        富の蓄積パターンを「生成する」。
+
+      galanter_quote: |
+        「法制度の基本的アーキテクチャが、再分配的変化の手段として
+        システムを使用する可能性を創造し制限する」
+
+  legal_empowerment:
+    clep:
+      source: "Commission on Legal Empowerment of the Poor (UNDP 2008)"
+      co_chairs: ["Madeleine Albright", "Hernando de Soto"]
+      title: "Making the Law Work for Everyone"
+      thesis: |
+        法的排除が貧困の持続を「引き起こす」:
+        「世界中で40億人が法の支配から排除されているため、
+        生活を改善し貧困から脱出する機会を奪われている」
+      four_pillars:
+        - "access to justice"
+        - "property rights"
+        - "labor rights"
+        - "business rights"
+      direct_claim: "Poverty is an outcome of legal deprivation（貧困は法的剥奪の結果）"
+
+    hernando_de_soto:
+      work: "The Mystery of Capital (2000)"
+      thesis: |
+        正式な財産権の欠如が、資本主義が貧困層のために
+        富を生成できない「主要な理由」。
+      dead_capital_concept:
+        definition: "法的認知がないため「死んだ資本」となっている資産"
+        global_estimate: "約9.3兆ドル"
+        consequences:
+          - "担保として使用できない"
+          - "信用のために活用できない"
+          - "公開市場で取引できない"
+      direct_argument: "法的権利を付与することが富の創造を「引き起こす」"
+
+  institutional_economics:
+    acemoglu_johnson_robinson:
+      work: "Why Nations Fail (2012)"
+      award: "2024年ノーベル経済学賞"
+      thesis: |
+        法的制度を含む制度が、国家間の繁栄の違いの
+        「根本的原因」である。
+      institution_types:
+        inclusive:
+          definition: "財産権を保護し、契約を公平に執行"
+          outcome: "公平な経済的結果"
+        extractive:
+          definition: "エリートの手に権力を集中"
+          outcome: "富の不平等
+      quote: "Economic institutions are a fundamental cause of cross-country differences in prosperity."
+
+  recent_empirical_evidence:
+    study:
+      source: "European Economic Review (2024)"
+      method: "46カ国の人口あたり裁判官の新規データベース（1970-2019）"
+      finding: |
+        「司法へのアクセスが経済成長にかなりのプラス効果を持つ」
+        ― 権利アクセスが経済的結果を引き起こす直接的な実証的証拠
+
+  gap_assessment: |
+    これは「理論的ギャップ」である。
+    権利→富の因果関係を支持する実質的な文献は存在するが、
+    「権利の偏重が富の偏重に因果的に先行する」という
+    特定の定式化は、統一的フレームワークとして明示的に理論化されていない。
+    研究の大半は逆方向（富→権利の不平等）を論じる。
+
+    雄司は、Galanterの法社会学と制度経済学を統合し、
+    権利の偏重が先行原因として富の偏重を生成する
+    明示的理論を発展させることができる。
+
+# ============================================================
+# RQ4: Access to Justice Research
+# ============================================================
+
+rq4_access_to_justice:
+  title: "権利の構造的偏重としての司法アクセス"
+  status: "豊富な実証的支持を提供"
+
+  key_researcher:
+    rebecca_sandefur:
+      affiliation: "American Bar Foundation"
+      award: "MacArthur 'Genius Grant' (2018)"
+      key_finding: "民事司法問題のわずか14%が裁判所に持ち込まれる"
+      framing: |
+        アクセス危機は根本的に「民主主義の危機」:
+        「裁判所は人々のために設計されたものではない...
+        プロセスは、それを発明した非常に狭い人口層のために実装された」
+
+  empirical_data:
+    by_income:
+      source: "Legal Services Corporation (2022)"
+      findings:
+        - "低所得アメリカ人の実質的な民事法的問題の92%が適切な法的援助を受けていない"
+        - "低所得アメリカ人は報告された問題のわずか14%で適切な解決を受ける"
+        - "低所得者の45%のみが弁護士を見つけ/支払いできると信じる vs 高所得者の73%"
+
+    by_race:
+      finding: "法律扶助クライアントの58.7%が有色人種"
+      intersectional_analysis:
+        source: "Young & Billings (2023)"
+        finding: |
+          交差的要因を考慮すると、低所得黒人アメリカ人が
+          家族構造問題に直面する確率が6%から45%まで予測可能
+
+    by_geography:
+      source: "Pruitt et al., Harvard Law & Policy Review (2018)"
+      concept: "legal deserts（法的砂漠）"
+      findings:
+        - "米国の郡の41%が弁護士がほとんどまたは全くいない「法的砂漠」"
+        - "52の農村郡には弁護士が全くいない"
+        - "農村低所得アメリカ人は民事法的問題のわずか6%で適切な法的援助を受ける"
+
+  key_journals:
+    - "Law & Society Review（旗艦誌）"
+    - "Journal of Empirical Legal Studies"
+    - "Daedalus（AAAS、2019年特集号を司法アクセスに）"
+
+# ============================================================
+# RQ5: Capability Approach & Robeyns Gap
+# ============================================================
+
+rq5_capability_robeyns:
+  title: "ケイパビリティ・アプローチとRobeynsのギャップ"
+
+  critical_finding: |
+    Ingrid RobeynsのLimitarianismは
+    「富/資源配分のみ」を扱い、「権利配分は扱わない」。
+    これは研究者が埋められる重要なギャップ。
+
+  capability_citizenship_link:
+    status: "体系的に市民権理論に発展していない"
+    thomas_pfister:
+      source: "Citizenship Studies (2012)"
+      finding: |
+        「SenとNussbaumは、市民権ではなく、
+        不平等、貧困、開発のグローバルな問題に主に焦点を当てた
+        グローバルな視点を取っている」
+
+  nussbaum_relevant_capabilities:
+    capability_10a:
+      name: "Political Control over Environment"
+      definition: |
+        「自分の人生を統治する政治的選択に効果的に参加できること；
+        政治参加の権利と言論・結社の自由の保護を持つこと」
+    internal_vs_combined:
+      internal: "教育を通じて発達したケイパビリティ"
+      combined: "内的ケイパビリティ + 支援的な外部条件"
+      nussbaum_quote: |
+        「政治に参加する内的能力を持つ多くの人々は、
+        複合的ケイパビリティの意味でそれを選択することができない：
+        法的権利を持たない移民であるか、参加から排除されているかもしれない」
+
+  robeyns_focus_analysis:
+    focus: "資源のみ、権利ではない"
+    robeyns_quote_1: |
+      「Limitarianismは、人生で完全に繁栄するために必要以上の
+      「リソースを持つ」ことは道徳的に許されないと主張する」
+    erc_grant:
+      amount: "200万ユーロ (2016)"
+      topic: "個人が持てる「金融的・生態学的リソース」の上限"
+    robeyns_quote_2: |
+      「Limitarianismは「リソース」がどのように分配されるべきかについての見解...
+      誰も「余剰のお金」を持つべきではない」
+
+  gap_identified: |
+    Robeynsが「権利のlimitarianism」を発展させた、または
+    実効的権利行使の不平等な分配を扱った証拠はない。
+    彼女の研究は富/所得制限と生態学的リソース制限のみを扱う ―
+    政治的/市民的権利の分配や実効的行使は扱わない。
+
+  opportunity: |
+    「権利のlimitarianism」または、実効的権利が頂点にどのように
+    集中しているかの分析のための補完的理論貢献の余地。
+    Robeynsの「riches line」概念に類似した「権利行使能力」への適用。
+
+# ============================================================
+# Theoretical Gaps Identified (Novelty Opportunities)
+# ============================================================
+
+theoretical_gaps:
+  gap_1:
+    title: "明示的な「権利→富」因果理論"
+    description: |
+      Galanter、de Soto、Acemoglu/Robinsonは基盤を提供するが、
+      権利の偏重が根本原因として富の偏重に「因果的に先行する」と
+      明示的に主張する統一理論は存在しない。
+
+  gap_2:
+    title: "権利のlimitarianism"
+    description: |
+      Robeynsのlimitarianismは資源配分のみを扱う。
+      実効的権利の集中の上限や、リピートプレイヤーによる
+      「権利の囲い込み」を検討する類似理論は存在しない。
+
+  gap_3:
+    title: "ケイパビリティ市民権統合"
+    description: |
+      Pfister (2012) の「ケイパビリティ理論に権利と権利言語を統合する」
+      呼びかけにもかかわらず、Nussbaumの正義理論に匹敵する
+      包括的な「ケイパビリティ市民権」理論は存在しない。
+
+  gap_4:
+    title: "権利行使のための変換因子"
+    description: |
+      CAはリソース→ケイパビリティの変換因子を議論するが、
+      「権利の変換因子」（なぜ形式的市民権が実効的参加に
+      変換されないか）の体系的扱いは未発達。
+
+  gap_5:
+    title: "簿外債務としての自己責任フレーミング"
+    description: |
+      研究者の概念化「福祉義務が社会から個人に転嫁される」は
+      新規に見え、Youngの構造的不正義理論と
+      CAの変換因子に生産的に接続される。
+
+# ============================================================
+# SoE Integration Points
+# ============================================================
+
+soe_integration:
+  hypothesis_positioning: |
+    「Service of Empowerment」フレームワーク ―
+    自己責任を簿外債務として概念化（社会が引き受けるべき
+    権利保障義務が個人に転嫁される構造）―
+    Youngのguilt/blame（個人）とpolitical responsibility（集合）の
+    区別に生産的に接続。
+
+  bipolar_model_extension: |
+    ヒュブリス因子/アノミー因子の双極モデルは、
+    Galanterのrepeat player/one-shotter フレームワークを拡張し、
+    法的リソース集中の社会的帰結を検討できる。
+
+  doctoral_contribution_paths:
+    path_1: |
+      Galanterの法社会学とAcemoglu/Robinsonの制度経済学を統合し、
+      権利の偏重が富の不平等に因果的に先行するという
+      明示的理論を発展させる。
+    path_2: |
+      Robeynsのlimitarianismを権利の領域に拡張し、
+      「riches line」に類似した「rights line」を理論化。
+    path_3: |
+      Youngの構造的不正義フレームワークを適用し、
+      形式的権利が構造的（個人的ではなく）メカニズムを通じて
+      実効的市民権に変換されない理由を説明。
+    path_4: |
+      ケイパビリティ・アプローチの変換因子を市民権理論と統合し、
+      形式的/実質的ギャップを説明。
+
+# ============================================================
+# Key Authors to Follow
+# ============================================================
+
+key_authors:
+  - name: "Marc Galanter"
+    work: "Why the Haves Come Out Ahead (1974)"
+    relevance: "法的構造 → 累積的優位の基盤"
+
+  - name: "Iris Marion Young"
+    work: "Responsibility for Justice (2011)"
+    relevance: "構造的不正義理論"
+
+  - name: "Ruth Lister"
+    work: "Citizenship: Feminist Perspectives (2003)"
+    relevance: "実践としての市民権、貧困-市民権のリンク"
+
+  - name: "Engin Isin"
+    work: "Acts of Citizenship (2008)"
+    relevance: "形式的/実質的市民権の区別"
+
+  - name: "Rebecca Sandefur"
+    work: "Access to justice empirical research"
+    relevance: "現代の司法ギャップデータ"
+
+  - name: "Daron Acemoglu"
+    work: "Why Nations Fail (2012)"
+    relevance: "制度 → 繁栄の因果関係"
+
+  - name: "Hernando de Soto"
+    work: "The Mystery of Capital (2000)"
+    relevance: "財産権 → 富の創造"
+
+  - name: "Martha Nussbaum"
+    work: "Creating Capabilities (2011)"
+    relevance: "政治的ケイパビリティ、複合的ケイパビリティ"
+
+  - name: "Ingrid Robeyns"
+    work: "Limitarianism (2024)"
+    relevance: "補完的フォーカス（富）を研究者の（権利）に"
+
+  - name: "Thomas Pfister"
+    work: "Citizenship and capability? (2012)"
+    relevance: "CA-市民権統合の試み"
+
+  - name: "Elizabeth Anderson"
+    work: "What Is the Point of Equality? (1999)"
+    relevance: "民主的市民権ケイパビリティ理論"
+
+# ============================================================
+# Suggested Search Queries
+# ============================================================
+
+suggested_queries:
+  rights_wealth_causation:
+    - "legal resources cumulative advantage Galanter"
+    - "Matthew effect legal system inequality"
+    - "institutional origins wealth inequality"
+    - "legal empowerment economic outcomes empirical"
+
+  capability_citizenship:
+    - "conversion factors citizenship participation"
+    - "site:tandfonline.com capability approach citizenship"
+    - "democratic citizenship capabilities Anderson"
+
+  japanese_scholarship:
+    - "CiNii: 実効的市民権、実質的権利"
+    - "J-STAGE: ケイパビリティ・アプローチ、シティズンシップ"
+    - "福祉国家 権利保障 構造的不平等"
+
+  robeyns_gap:
+    - "rights inequality NOT human rights NOT civil rights movement"
+    - "legal access concentration inequality"
+    - "repeat player wealth accumulation"
+
+# ============================================================
+# Conclusion
+# ============================================================
+
+conclusion: |
+  研究者の仮説 ― 権利の構造的偏重が富の偏重に先行し引き起こす ―
+  は、統合されていない複数の文献にわたって「実質的だが散在した支持」を見出す。
+
+  博士課程の貢献は生産的に以下を行える：
+  1. Galanterの法社会学とAcemoglu/Robinsonの制度経済学を統合
+  2. Robeynsのlimitarianismを権利の領域に拡張
+  3. Youngの構造的不正義フレームワークを適用
+  4. CAの変換因子を市民権理論と統合
+
+  中核仮説は防御可能であり、真の理論的ギャップを表している。
+
+# ============================================================
+# End of Claude Web Deep Research Integration
+# ============================================================

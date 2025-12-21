@@ -1,0 +1,579 @@
+# ==========================================
+# LinkedIn & ISO Integration Strategy
+# Date: 2025-12-17
+# Sources: Gemini (Strategy) + GPT (Analysis) + Claude Code (Implementation)
+# ==========================================
+
+metadata:
+  date: "2025-12-17"
+  purpose: "LinkedIn職歴/プロフィール最適化 + ISO規格統合"
+  ai_collaboration:
+    gemini: "戦略・Experience設計・ISOタスク"
+    gpt: "Skills分析・SROI防衛・Mermaid"
+    claude_code: "実装・統合・ファイル生成"
+
+# ==========================================
+# PART 1: LinkedIn Experience Section
+# ==========================================
+linkedin_experience:
+  strategy: "Evolution from IT Entrepreneur to Welfare Architect"
+  target_audience:
+    - "Global Recruiters"
+    - "Researchers"
+    - "Policy Makers"
+
+  entries:
+    # ------------------------------------------------------------------
+    # 1. 現在の活動 (Current Role)
+    # ------------------------------------------------------------------
+    - title: "Founder & Lead Researcher | Service of Empowerment (SoE) Project"
+      employment_type: "Self-employed"
+      company_name: "DUG Research Institute (合同会社DUG研究所)"
+      location: "Kasaoka, Okayama, Japan"
+      period: "2021-05 - Present"
+      description_3line:
+        impact: "Developing frameworks to restructure disability employment support systems for 1.3B persons with disabilities globally"
+        mechanism: "Input Constitutional AI + Double-Entry Bookkeeping Assessment + Privacy-preserving data pipeline"
+        proof: "Projected SROI 29.4:1 (N=100 preliminary analysis, conservative assumptions)"
+      full_description: |
+        Developing "Input Constitutional AI" and "Double-Entry Bookkeeping Assessment" frameworks
+        to restructure disability employment support systems.
+
+        • Researching structural exclusion mechanisms of 1.3 billion persons with disabilities
+          from AI training data
+        • Conducting preliminary N=100 analysis on SROI (Social Return on Investment),
+          projecting a 29.4:1 return (conservative assumptions, pending validation)
+        • Architecting a privacy-preserving data pipeline using Microsoft 365 Business,
+          OpenAI Whisper, and Voice Synthesis to turn sensitive field records into anonymized evidence
+        • Preparing for Master's research focused on reorienting assessment from personal deficits
+          to cumulative environmental factors
+      skills:
+        - "Input Constitutional AI"
+        - "Social Return on Investment (SROI)"
+        - "Privacy by Design"
+        - "Research Design"
+
+    # ------------------------------------------------------------------
+    # 2. 福祉分野での実績 (Welfare Leadership)
+    # ------------------------------------------------------------------
+    - title: "Executive Director & Service Manager (Chief Administrator)"
+      employment_type: "Full-time"
+      company_name: "General Incorporated Association Anmar (一般社団法人アンマー) & Partner Organizations"
+      location: "Okayama & Hiroshima, Japan"
+      period: "2016-01 - 2024-12"
+      description_3line:
+        impact: "Founded 10 disability support facilities, managing up to 100 clients and 35 staff"
+        mechanism: "DX leadership (100 PCs + Teams deployment) + Government liaison + Agriculture-Welfare partnerships"
+        proof: "Successfully launched and stabilized 10 facilities; maintained operations through COVID-19"
+      full_description: |
+        Led the establishment and management of 10 disability support facilities (Type B & Transition Support)
+        across Okayama and Hiroshima, managing up to 35 staff and 100+ clients.
+
+        Key Achievements:
+        • [Business Scaling] Successfully launched and stabilized 10 new facilities within a short timeframe
+        • [DX Leadership] Served as DX Promotion Director for a social welfare corporation (4B JPY revenue),
+          leading the deployment of 100 PCs and Microsoft Teams to modernize workflows
+        • [Government Liaison] As Vice Director of the Okayama Prefecture SELP Center, secured collaborative
+          orders from government agencies (Okayama Pref., Kasaoka City), promoting "Agriculture-Welfare" partnerships
+        • [Crisis Management] Maintained operations and protected user rights during the COVID-19 pandemic
+          through rapid IT implementation
+      skills:
+        - "Digital Transformation (DX)"
+        - "Change Management"
+        - "Government Liaison"
+        - "Crisis Management"
+        - "Vocational Rehabilitation"
+
+    # ------------------------------------------------------------------
+    # 3. IT起業家時代 (IT Entrepreneurship)
+    # ------------------------------------------------------------------
+    - title: "Founder & CEO"
+      employment_type: "Full-time"
+      company_name: "Arts Information System Co., Ltd. (株式会社アーツ情報システム)"
+      location: "Okayama, Japan"
+      period: "2006-08 - 2012-08"
+      description_3line:
+        impact: "Scaled IT company to 140M JPY annual revenue; secured 120M JPY government contracts"
+        mechanism: "ISO 27001/20000 certification + IT lifecycle management for local governments"
+        proof: "3 organizations ISMS certified, 1 organization ITSM certified"
+      full_description: |
+        Founded and scaled an IT solution company to 140 million JPY in annual revenue within 4 years.
+
+        Key Achievements:
+        • [Government Projects] Secured and managed a 120 million JPY project from the Ministry of
+          Internal Affairs and Communications (MIC) for regional ICT utilization
+        • [Governance] Implemented and acquired ISO 27001 (ISMS) certification for 3 organizations
+          and ISO 20000 (ITSM) for 1 organization
+        • [System Integration] Built IT lifecycle management systems for local governments
+          (Kurashiki City, etc.) and managed large-scale infrastructure projects
+      skills:
+        - "ISO 27001"
+        - "ISO 20000"
+        - "Government Contracting"
+        - "IT Strategy"
+        - "Business Development"
+
+    # ------------------------------------------------------------------
+    # 4. 初期キャリア (Foundation)
+    # ------------------------------------------------------------------
+    - title: "Section Chief, General Affairs (ISO Lead)"
+      employment_type: "Full-time"
+      company_name: "Ihara Broadcasting Co., Ltd."
+      location: "Ihara, Okayama, Japan"
+      period: "2003-10 - 2006-07"
+      description_3line:
+        impact: "Led ISO 27001 certification acquisition"
+        mechanism: "Customer information system management + Complaint resolution balancing corporate/user interests"
+        proof: "ISO 27001 certified"
+      skills:
+        - "Information Security Management"
+        - "Process Improvement"
+
+    - title: "Tax Staff (Audit & Accounting)"
+      employment_type: "Full-time"
+      company_name: "Saito Tax Accountant Office"
+      location: "Kasaoka, Okayama, Japan"
+      period: "1996-10 - 2000-03"
+      description_3line:
+        impact: "Foundation for 'Life Bookkeeping' assessment theory"
+        mechanism: "Monthly corporate audits + Tax filings + Quasi-Mandate Contract knowledge"
+        proof: "This experience later inspired the Double-Entry Bookkeeping for Life framework"
+      skills:
+        - "Corporate Finance"
+        - "Tax Law"
+        - "Financial Analysis"
+
+# ==========================================
+# PART 2: ISO 30414 → Assets Mapping
+# Task: Map_ISO30414_to_Assets
+# ==========================================
+iso_30414_to_assets_mapping:
+  task_id: "Map_ISO30414_to_Assets"
+
+  rationale: |
+    ISO 30414は企業向け人的資本報告だが、個人のB/S（貸借対照表）の
+    「資産の部」に転用することで、障害者の能力開発を
+    「福祉的更生」ではなく「資本形成」として再定義できる。
+
+  mapping_table:
+    # Category 9: Skills and Capabilities
+    - iso_metric: "9.5 従業員のコンピテンシー達成度"
+      iso_code: "Workforce competency rate"
+      asset_category: "Intangible Asset: Skill Portfolio"
+      bs_account: "技能資産"
+      description: |
+        個人が習得したスキル・資格・コンピテンシーの総体。
+        「持っている能力」を資産として可視化。
+      valuation_method: "スキルマトリクスによる定性評価 + 市場価値換算（任意）"
+
+    # Category 10: Succession Planning
+    - iso_metric: "10.2 後継者候補準備率"
+      iso_code: "Successor coverage rate"
+      asset_category: "Future Career Path Value"
+      bs_account: "将来キャリア資産"
+      description: |
+        個人が将来進める可能性のあるキャリアパス。
+        「ポテンシャル」を資産として認識。
+      valuation_method: "キャリアマップによる定性評価"
+
+    # Category 5: Organizational Culture
+    - iso_metric: "5.1 エンゲージメント／満足度／コミットメント"
+      iso_code: "Engagement, satisfaction, commitment"
+      asset_category: "Social Capital: Network & Trust"
+      bs_account: "社会関係資産"
+      description: |
+        職場での信頼関係、ネットワーク、所属感。
+        「つながり」を資産として可視化。
+      valuation_method: "ソーシャルネットワーク分析 + 主観的評価"
+
+    # Category 9: Training
+    - iso_metric: "9.3 従業員1人あたりの研修受講時間"
+      iso_code: "Average training hours per employee"
+      asset_category: "Learning Capital: Accumulated Investment"
+      bs_account: "学習投資資産"
+      description: |
+        これまでに受けた教育・研修・自己学習の累積。
+        「学んできたこと」を資産として認識。
+      valuation_method: "累積時間 × 平均単価 = 推定投資額"
+
+    # Category 6: Health & Wellbeing
+    - iso_metric: "6.1-6.4 健康・安全関連"
+      iso_code: "Health & Safety metrics"
+      asset_category: "Health Capital: Functional Capacity"
+      bs_account: "健康資産"
+      description: |
+        身体的・精神的な機能状態。
+        ICFの「心身機能」をB/S資産として読み替え。
+      valuation_method: "ICF評価 + QALY換算（任意）"
+
+    # Category 8: Recruitment/Mobility
+    - iso_metric: "8.5 将来必要となる人材の能力"
+      iso_code: "Future workforce capabilities assessment"
+      asset_category: "Adaptability Capital: Change Readiness"
+      bs_account: "適応力資産"
+      description: |
+        変化への対応力、新しいスキル習得の可能性。
+        「変われる力」を資産として認識。
+      valuation_method: "レジリエンス評価 + 学習速度評価"
+
+  linkedin_explanation_english: |
+    **ISO 30414 for Individuals: Turning "Deficits" into "Assets"**
+
+    Traditional disability assessment focuses on what's missing. I'm developing a framework
+    that applies ISO 30414 (Human Capital Reporting) principles to individual capability mapping:
+
+    • Skills Portfolio (from Competency Rate)
+    • Future Career Value (from Succession Planning)
+    • Social Capital (from Engagement metrics)
+    • Learning Investment (from Training Hours)
+    • Health Capital (linked to ICF Functioning)
+    • Adaptability Capital (from Future Capabilities)
+
+    This reframes disability support from "rehabilitation" to "capital formation"—
+    the same language investors and policymakers already understand.
+
+# ==========================================
+# PART 3: ISO 31000 → Input AI Necessity
+# Task: Map_ISO31000_to_InputAI
+# ==========================================
+iso_31000_to_input_ai:
+  task_id: "Map_ISO31000_to_InputAI"
+
+  logical_structure:
+    step_1_risk_identification:
+      iso_reference: "ISO 31000:2018 リスク特定 (6.4.2)"
+      risk_statement: |
+        AI学習データにおけるマイノリティ排除のリスク
+
+        具体的リスク：
+        - 障害者の生活実態データが学習データから系統的に除外されている
+        - 「正常」のベースラインが健常者データで定義されている
+        - 結果として、AIの推論・判断が障害者に不利に働く
+
+      evidence:
+        - "13億人の障害者のうち、支援記録がデジタル化されているのは一部"
+        - "福祉記録は多くの場合、紙ベースまたはクローズドシステム"
+        - "AIトレーニングデータセットに障害者の声が過小代表"
+
+    step_2_risk_analysis:
+      iso_reference: "ISO 31000:2018 リスク分析 (6.4.3)"
+      analysis: |
+        発生可能性: 高（既に発生中）
+        影響度: 極めて高（13億人の権利に影響）
+        リスクレベル: クリティカル
+
+        現行管理策の評価:
+        - 「出力段階でのフィルタリング」（Constitutional AI等）は存在
+        - しかし、入力段階での偏りは修正されていない
+        - = 根本原因に対処していない
+
+    step_3_risk_evaluation:
+      iso_reference: "ISO 31000:2018 リスク評価 (6.4.4)"
+      evaluation: |
+        リスク許容度との比較:
+        - CRPD（障害者権利条約）は「排除からの保護」を要求
+        - 現状のAI開発は条約違反のリスクあり
+        - = このリスクは許容不可能
+
+        対応の優先度: 最高
+
+    step_4_risk_treatment:
+      iso_reference: "ISO 31000:2018 リスク対応 (6.5)"
+      treatment_option: "リスク源の除去 + 発生確率の低減"
+      solution: |
+        Input Constitutional AI（入力段階での権利保護）
+
+        メカニズム：
+        1. 記録作成段階でCRPD準拠チェックを実施
+        2. 権利侵害の可能性がある記述をフラグ
+        3. 当事者レビュー・修正の機会を保証
+        4. 同意に基づくデータ共有のみ許可
+
+        これにより：
+        - AIトレーニングデータに入る前に品質保証
+        - 「汚染された入力」がそもそも発生しない
+        - 出力フィルタリングに依存しない根本対策
+
+    step_5_conclusion:
+      statement: |
+        Input Constitutional AIは「倫理的オプション」ではない。
+        ISO 31000に基づく必須のリスク対応策である。
+
+        根拠：
+        - リスクは特定済み（マイノリティ排除）
+        - リスクレベルはクリティカル（13億人影響）
+        - リスクは許容不可能（CRPD違反）
+        - 対応策は「リスク源の除去」が最適
+        - Input AIはその唯一の実効的手段
+
+  linkedin_explanation_english: |
+    **Why Input Constitutional AI is Not Optional: An ISO 31000 Analysis**
+
+    Using ISO 31000 (Risk Management) framework:
+
+    1. **Risk Identification**: 1.3B persons with disabilities are systematically
+       excluded from AI training data
+    2. **Risk Analysis**: Impact is critical; current "output filtering" doesn't
+       address root cause
+    3. **Risk Evaluation**: CRPD non-compliance = unacceptable risk level
+    4. **Risk Treatment**: "Eliminate risk source" = build protection at INPUT,
+       not just OUTPUT
+
+    **Conclusion**: Input Constitutional AI isn't an ethical nicety—it's a
+    mandatory risk control measure under ISO 31000 principles.
+
+# ==========================================
+# PART 4: ISO 26000 → Enterprise Benefits
+# Task: Map_ISO26000_to_Community
+# ==========================================
+iso_26000_to_enterprise:
+  task_id: "Map_ISO26000_to_Community"
+
+  core_subjects_applied:
+    human_rights:
+      iso_reference: "ISO 26000 6.3 人権"
+      enterprise_benefit: |
+        SoEを導入する企業は、以下のISO 26000準拠を自動的に達成：
+
+        ✓ デューデリジェンス（人権への影響評価）
+        ✓ 救済へのアクセス（苦情対応メカニズム）
+        ✓ 脆弱な立場の人々の保護（障害者の権利保護）
+        ✓ 差別の禁止（アセスメントバイアスの除去）
+
+      value_proposition: |
+        "SoEを導入することは、そのままISO 26000の人権条項を実践することになる"
+
+    community_involvement:
+      iso_reference: "ISO 26000 6.8 コミュニティ参画とコミュニティ発展"
+      enterprise_benefit: |
+        SoEを導入する企業は、以下のISO 26000準拠を自動的に達成：
+
+        ✓ 雇用創出（障害者の就労機会拡大）
+        ✓ 技能開発（ケイパビリティ・ポートフォリオ構築支援）
+        ✓ 社会的投資（SROI 29.4:1のリターン）
+        ✓ 地域福祉との連携（福祉事業所との協働）
+
+      value_proposition: |
+        "SoEへの投資は、CSV（共有価値創造）として報告できる"
+
+    consumer_issues:
+      iso_reference: "ISO 26000 6.7 消費者課題（≒利用者保護）"
+      enterprise_benefit: |
+        SoEを導入する企業は、以下のISO 26000準拠を自動的に達成：
+
+        ✓ 個人情報保護・プライバシー保護（Input Constitutional AI）
+        ✓ サービス説明の透明性（複式簿記による可視化）
+        ✓ 苦情対応・救済措置（当事者レビュー機能）
+
+      value_proposition: |
+        "SoEは『顧客保護』の観点からもISO 26000準拠を証明できる"
+
+  enterprise_pitch:
+    headline: "SoE導入 = ISO 26000準拠アクション"
+
+    bullet_points:
+      - "人権デューデリジェンス義務を果たせる"
+      - "CSV（共有価値創造）レポートに記載できる"
+      - "ESG投資家向けの実績として報告可能"
+      - "SDGs Goal 8 (Decent Work) への貢献を数値化"
+      - "SROI 29.4:1で投資対効果を説明できる"
+
+    for_hr_department: |
+      SoEフレームワークの導入は、貴社のダイバーシティ&インクルージョン戦略を
+      国際規格（ISO 26000）に基づく活動として位置づけることができます。
+
+      これは単なる「社会貢献」ではなく、
+      ESG評価向上・採用ブランド強化・従業員エンゲージメント向上に直結する
+      戦略的投資です。
+
+    for_csr_department: |
+      ISO 26000の7原則（説明責任・透明性・倫理的行動・ステークホルダー利害尊重・
+      法規尊重・国際規範尊重・人権尊重）に対し、
+      SoEは具体的な実装手段を提供します。
+
+      特に「人権」「コミュニティ発展」「消費者保護」の3領域で
+      明確な貢献実績を示すことができます。
+
+  linkedin_explanation_english: |
+    **ISO 26000 Compliance Through SoE Adoption**
+
+    For enterprises, adopting Service of Empowerment (SoE) means automatic compliance
+    with multiple ISO 26000 core subjects:
+
+    **Human Rights (6.3)**
+    • Due diligence on disability rights impact
+    • Accessible grievance mechanisms
+    • Protection of vulnerable groups
+
+    **Community Development (6.8)**
+    • Employment creation for persons with disabilities
+    • Skills development & capability building
+    • Social investment with measurable SROI
+
+    **Consumer Protection (6.7)**
+    • Privacy protection via Input Constitutional AI
+    • Transparent service explanation via Life Bookkeeping
+    • User review and control mechanisms
+
+    **Bottom Line**: SoE adoption isn't just CSR—it's ISO 26000 compliance
+    that strengthens ESG ratings, employer branding, and stakeholder trust.
+
+# ==========================================
+# PART 5: GPT Integration - Mermaid & SROI
+# ==========================================
+gpt_integration:
+
+  mermaid_diagram_final:
+    description: "Input Constitutional AI Privacy Pipeline (GPT版を採用)"
+    code: |
+      ```mermaid
+      flowchart LR
+        A[Audio Capture\n(Consent: Opt-in)] --> B[Whisper Transcription]
+        B --> C[Sanitize / De-identify\nPII redaction + pseudonymization]
+        C --> D[Input Constitutional AI Gate\nCRPD-based checks at record creation]
+        D -->|Pass| E[User Review & Control\nMySupport.yaml ownership]
+        D -->|Flag| F[Supporter Prompting\nRewrite / add context / remove bias]
+        F --> D
+
+        E --> G[Encrypted Storage\nUser-Sovereign Data Vault]
+        E --> H[VOICEVOX Synthesis\nAccessible playback]
+        G --> I[Research Data Commons\nOptional, granular sharing]
+        I --> J[Analytics / Evaluation\nOutcomes & process verification]
+      ```
+
+  sroi_safe_expressions:
+    linkedin_version: "Projected SROI: 29.4:1 (preliminary analysis, N=100, conservative assumptions)"
+    academic_version: "Early-stage SROI modeling suggests a potential return of 29.4:1, pending rigorous validation in upcoming Master's research."
+    investor_version: "Based on preliminary data from 100 cases, the projected SROI is 29.4:1. This figure uses conservative inputs and excludes indirect benefits."
+
+    defense_strategy:
+      - "最初から『試算であり、検証が研究課題』として位置づける"
+      - "内訳が分解可能＝透明性（仮定・感度分析に落とせる）"
+      - "一点推定→レンジ提示（base/conservative）へ拡張可能"
+
+  skills_50_final:
+    note: "GPT版を採用（より詳細なカテゴリ分け）"
+    category_a_ai_ethics:
+      - "Constitutional AI"
+      - "Input Constitutional AI"
+      - "AI Ethics"
+      - "Responsible AI"
+      - "AI Governance"
+      - "Data Sovereignty"
+      - "Privacy by Design"
+      - "Human-in-the-Loop"
+      - "Participatory Design"
+      - "Ethical Risk Assessment"
+      - "Bias Detection"
+      - "Bias Mitigation"
+      - "Data Quality Management"
+      - "Data Lifecycle Management"
+      - "Pseudonymization"
+      - "Anonymization"
+      - "Consent Management"
+      - "Secure Data Pipelines"
+      - "Assistive AI"
+      - "Accessibility Tech"
+    category_b_welfare_rights:
+      - "CRPD"
+      - "Disability Rights"
+      - "Supported Employment"
+      - "Welfare-to-Work Programs"
+      - "Vocational Rehabilitation"
+      - "Disability Employment Policy"
+      - "Person-Centered Planning"
+      - "Decision-Making Support"
+      - "Case Management"
+      - "ICF Framework"
+      - "ACEs-informed Practice"
+      - "Trauma-Informed Care"
+      - "Community Resource Coordination"
+      - "Ethics in Human Services"
+      - "Advocacy"
+      - "Record Access Rights"
+      - "Outcome Measurement"
+    category_c_business_it:
+      - "ISO 27001"
+      - "Information Security Management"
+      - "Risk Management"
+      - "Business Process Improvement"
+      - "Change Management"
+      - "Digital Transformation (DX)"
+      - "Program Management"
+      - "Stakeholder Management"
+      - "KPI Design"
+      - "Service Design"
+      - "Operational Excellence"
+      - "Cost-Benefit Analysis"
+      - "SROI"
+      - "Financial Modeling"
+      - "Process Accountability"
+      - "Cross-sector Collaboration"
+
+# ==========================================
+# PART 6: ISO統合フレームワーク
+# ==========================================
+iso_integrated_framework:
+  title: "Defense-Offense-Governance-Purpose Model"
+
+  components:
+    defense:
+      iso: "ISO 27001 (Information Security)"
+      role: "データ保護・セキュリティ"
+      soe_application: "支援記録の機密性・完全性・可用性を保証"
+
+    offense:
+      iso: "ISO 30414 (Human Capital)"
+      role: "資産価値化"
+      soe_application: "障害者の能力を『資本』として可視化・評価"
+
+    governance:
+      iso: "ISO 31000 (Risk Management)"
+      role: "Input AIの必要性根拠"
+      soe_application: "マイノリティ排除リスクへの必須対応としてInput AIを位置づけ"
+
+    purpose:
+      iso: "ISO 26000 (Social Responsibility)"
+      role: "権利ベースの正当化"
+      soe_application: "企業のSoE導入を国際規格準拠アクションとして説明"
+
+  integration_diagram: |
+    ┌─────────────────────────────────────────────────────────────┐
+    │                    SoE + Input Constitutional AI            │
+    │                                                             │
+    │  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐        │
+    │  │ ISO 27001   │  │ ISO 30414   │  │ ISO 31000   │        │
+    │  │ DEFENSE     │  │ OFFENSE     │  │ GOVERNANCE  │        │
+    │  │ データ保護  │  │ 資産価値化  │  │ リスク対応  │        │
+    │  └──────┬──────┘  └──────┬──────┘  └──────┬──────┘        │
+    │         │                │                │               │
+    │         └────────────────┼────────────────┘               │
+    │                          │                                 │
+    │                   ┌──────┴──────┐                         │
+    │                   │ ISO 26000   │                         │
+    │                   │ PURPOSE     │                         │
+    │                   │ 社会的責任  │                         │
+    │                   └─────────────┘                         │
+    └─────────────────────────────────────────────────────────────┘
+
+# ==========================================
+# PART 7: Next Actions
+# ==========================================
+next_actions:
+  immediate:
+    - "LinkedIn Experience欄を Impact→Mechanism→Proof の3行テンプレで統一"
+    - "Featuredの3PDFタイトル表記を一貫（v番号/命名規則）"
+    - "SROIはbase-case表記＋conservativeレンジを添える"
+    - "README側でMermaid図＋Input CAIの一段落説明をセットで掲載"
+
+  for_gemini:
+    - "LinkedIn Experience更新後のレビュー"
+    - "ISO統合フレームワーク（Defense-Offense-Governance-Purpose）の検証"
+
+  for_gpt:
+    - "Skills 50のLinkedIn登録優先順位確認"
+    - "SROI感度分析のモデル化検討"
+
+# ==========================================
+# End of Integration Document
+# ==========================================

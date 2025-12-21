@@ -1,0 +1,451 @@
+# ==========================================
+# セッション記録: 2025-12-17
+# ==========================================
+# 担当AI: Claude Code (Opus 4.5)
+# 作業内容: LinkedInプロフィール完成、Gemini連携
+# ==========================================
+
+metadata:
+  date: "2025-12-17"
+  session_start: "07:09 JST"
+  researcher: "山内雄司"
+  ai_model: "Claude Code (Opus 4.5)"
+  collaboration: "Gemini Pro (Strategy Partner)"
+  context: "LinkedInプロフィール戦略的構築"
+
+# ==========================================
+# 主要成果
+# ==========================================
+main_accomplishments:
+
+  1_linkedin_profile_created:
+    status: "完了"
+    file: "outputs/linkedin_profile_2025_12_17.md"
+    content:
+      headline_options:
+        recommended: "Founder of SoE | Reorienting Assessment via Bookkeeping Metaphor | Disability Employment & AI Policy Researcher"
+        alternative: "Social System Architect | IT Entrepreneur → Welfare (10 Facilities Founded)"
+      about_section:
+        structure: "WHY → WHAT → HOW → CONNECT"
+        languages: ["English", "Japanese"]
+        character_count: "2,547 (LinkedIn上限2,600以内)"
+      key_narrative:
+        - "I don't do charity. I fight for reconstruction."
+        - "Assessment asks 'What's wrong?' I ask 'What did society take?'"
+
+  2_gemini_prompts_answered:
+    status: "完了"
+    file: "outputs/linkedin_about_responses_2025_12_17.yaml"
+    prompts_addressed:
+      narrative_bridge: "IT→福祉をEvolution（進化）として統合"
+      mission_statement: "Reconstruction, not Charity"
+      resilience_framing: "障害経験をR&D部門として資産化"
+      concept_hooks: "5案作成、Hook#4を推奨"
+      final_draft: "英日両版の統合About完成"
+
+  3_gemini_tasks_completed:
+    status: "完了"
+    file: "outputs/linkedin_gemini_response_2025_12_17.yaml"
+    tasks:
+      featured_descriptions:
+        - "Research Proposal v2.8"
+        - "SoE Ammunition Brief (SROI 29.4:1)"
+        - "Detailed Episodes from the Field"
+      skills_tags:
+        total: 50
+        categories:
+          ai_ethics: 15
+          welfare_rights: 20
+          business_it: 15
+
+  4_critical_questions_answered:
+    sroi_defense:
+      risk: "29.4:1は楽観的すぎると批判される可能性"
+      recommended_phrase: "Projected SROI: 29.4:1 (preliminary analysis, N=100, conservative assumptions)"
+
+    accounting_metaphor_critique:
+      issues_identified:
+        - "Asset定義の不整合"
+        - "Liabilities問題（障害を負債とすると医学モデルに逆行）"
+        - "Equity測定不能問題"
+      refinements:
+        - "Liabilities → Unresolved Claims Against Society"
+        - "Equity → Self-Determined Capacity"
+      disclaimer: "This is a metaphorical framework, not literal accounting."
+
+    mermaid_diagram:
+      purpose: "Input Constitutional AIプライバシーパイプライン図解"
+      layers:
+        input: "Raw Audio / Case Notes"
+        process: "Whisper → Constitutional AI → Anonymization"
+        output: "VOICEVOX → Safe Evidence"
+        governance: "Air-gapped Storage, Consent, Audit Trail"
+
+# ==========================================
+# 修正履歴（重要）
+# ==========================================
+corrections_applied:
+
+  university_name:
+    before: "日本福祉大学"
+    after: "日本社会事業大学"
+    reason: "出願先大学の正式名称"
+
+  welfare_experience:
+    before: "100名以上の就労移行支援、35名規模運営"
+    after: "最大約100名規模の事務局長、20名規模の意思決定支援ベース就労移行"
+    reason: "正確な役職・規模の記載"
+
+  bookkeeping_metaphor:
+    before: "単純な可視化説明"
+    after: "困難性の原因（障がい/権利毀損/自己責任）を当事者自身が可視化 → 障害受容プロセス"
+    reason: "本質的な意義の明確化"
+
+  content_order:
+    before: "Input Constitutional AI → 複式簿記"
+    after: "複式簿記 → SROI → Input Constitutional AI"
+    reason: "当事者プロセスを先に、技術を後に"
+
+  advisor_removed:
+    before: "贄川信幸教授の記載あり"
+    after: "削除"
+    reason: "出願先大学との整合性"
+
+# ==========================================
+# 生成ファイル一覧
+# ==========================================
+files_created:
+  - path: "outputs/linkedin_profile_2025_12_17.md"
+    description: "LinkedInプロフィール完全版（Experience, Skills, Featured等）"
+
+  - path: "outputs/linkedin_about_responses_2025_12_17.yaml"
+    description: "Gemini 5質問への回答（Narrative, Mission, Resilience, Hook, Draft）"
+
+  - path: "outputs/linkedin_gemini_response_2025_12_17.yaml"
+    description: "Geminiタスク＆質問への回答（Featured, Skills, SROI防衛, 会計批評, Mermaid）"
+
+  - path: "00_daily_yamal/04_VSClaude/2025_12_16_session_summary.yaml"
+    description: "前日セッションサマリー（セッション冒頭で作成）"
+
+# ==========================================
+# LinkedIn戦略（Gemini連携で確立）
+# ==========================================
+linkedin_strategy:
+
+  positioning:
+    title: "Social System Architect"
+    tagline: "Hybrid: IT Entrepreneur × Welfare Manager × Lived Experience"
+    differentiator: "Reconstruction, not Charity"
+
+  target_audience:
+    priority_1: "Susan Scott-Parker OBE (DEAI/ILO) - Already in dialogue"
+    priority_2: "Global Academic Community (Disability Studies / AI Ethics)"
+    priority_3: "Policy Makers & Investors"
+
+  key_hooks:
+    emotional: "Assessment asks 'What's wrong?' I ask 'What did society take?'"
+    business: "Turning Life's Liabilities into Assets: SROI 29.4:1"
+    technical: "AI that protects rights at input, not output"
+
+  tone_decision:
+    approach: "謙遜を排した強いリーダーシップ"
+    reason: "海外エキスパート（Susan等）向け"
+    opening_hook: "I don't do charity. I fight for reconstruction."
+
+# ==========================================
+# 技術的作業
+# ==========================================
+technical_work:
+
+  cv_reading:
+    attempted: "職務経歴書2025_12_17.docx"
+    result: "docx直接読み込み不可、エンコーディング問題"
+    solution: "PDF版を使用（職務経歴書2025_12_17.pdf）"
+
+  cv_differences_identified:
+    added:
+      - "サービス管理責任者実践研修修了（令和5年）"
+      - "井笠自立支援協議会就労部会部長"
+      - "岡山県セルプセンター副所長"
+    updated:
+      - "CrossFarm期間：〜令和6年12月31日"
+      - "現状：突発性難聴療養中（令和6年9月〜）"
+
+  folder_scans:
+    - "00_daily_yamal（47ファイル確認）"
+    - "09_research_proposal（27ファイル確認）"
+
+# ==========================================
+# AI間連携（本セッション）
+# ==========================================
+ai_collaboration:
+
+  gemini_role: "戦略パートナー"
+  gemini_contributions:
+    - "LinkedIn戦略フレームワーク設計"
+    - "5つのプロンプト（Narrative, Mission, Resilience, Hook, Draft）"
+    - "3つのタスク（Featured, Skills, Mermaid）"
+    - "3つの質問（SROI防衛, 会計批評, パイプライン図解）"
+
+  claude_code_role: "実装パートナー"
+  claude_code_contributions:
+    - "全プロンプト・タスク・質問への回答生成"
+    - "ファイル作成・修正"
+    - "日英両版のコンテンツ同期"
+
+  handoff_pattern:
+    - "Gemini → 戦略・質問をYAMLで送付"
+    - "Claude Code → 回答・成果物をYAMLで返却"
+    - "Gemini → レビュー・次ステップ指示"
+
+# ==========================================
+# 次のステップ
+# ==========================================
+next_steps:
+
+  immediate:
+    - "LinkedInプロフィールを実際に更新"
+    - "Featuredセクションにドキュメント追加"
+    - "50スキルタグを登録"
+
+  short_term:
+    - "GitHub READMEにMermaid図を埋め込み"
+    - "ICF-DACTS-ISO マッピングスキーマ作成"
+    - "匿名化エビデンスサンプル作成（Whisper/VOICEVOX）"
+
+  for_gemini:
+    - "LinkedIn更新後のレビュー依頼"
+    - "プロフィール公開後の反応分析"
+    - "ISO統合フレームワーク（Defense-Offense-Governance-Purpose）の検証"
+
+  for_gpt:
+    - "Skills 50のLinkedIn登録優先順位確認"
+    - "SROI感度分析のモデル化検討"
+
+  upcoming_deadlines:
+    application_period: "2026年1月9日〜23日"
+    days_remaining: "約3週間"
+
+# ==========================================
+# 追加成果（セッション後半）
+# ==========================================
+additional_accomplishments:
+
+  5_linkedin_experience_finalized:
+    status: "完了"
+    file: "07_integration/2025_12_17_linkedin_iso_integration.yaml"
+    entries:
+      - "Founder & Lead Researcher | SoE Project (2021-Present)"
+      - "Executive Director | Anmar (2016-2024)"
+      - "Founder & CEO | Arts Information System (2006-2012)"
+      - "Section Chief | Ihara Broadcasting (2003-2006)"
+      - "Tax Staff | Saito Office (1996-2000)"
+    template: "Impact → Mechanism → Proof の3行テンプレ"
+
+  6_iso_30414_mapping:
+    status: "完了"
+    purpose: "障害者の能力を『福祉的更生』から『資本形成』へ再定義"
+    mapping:
+      - "9.5 コンピテンシー → Skill Portfolio (技能資産)"
+      - "10.2 後継者準備 → Future Career Value (将来キャリア資産)"
+      - "5.1 エンゲージメント → Social Capital (社会関係資産)"
+      - "9.3 研修時間 → Learning Capital (学習投資資産)"
+      - "6.1-4 健康安全 → Health Capital (健康資産)"
+      - "8.5 将来能力 → Adaptability Capital (適応力資産)"
+
+  7_iso_31000_logic:
+    status: "完了"
+    conclusion: "Input Constitutional AIは『倫理的オプション』ではなく、ISO 31000に基づく必須のリスク対応策"
+    logic_flow:
+      - "Risk Identification: 13億人のマイノリティ排除"
+      - "Risk Analysis: クリティカル（出力フィルタでは根本対処不可）"
+      - "Risk Evaluation: CRPD違反 = 許容不可能"
+      - "Risk Treatment: リスク源の除去 = Input AI"
+
+  8_iso_26000_enterprise:
+    status: "完了"
+    pitch: "SoE導入 = ISO 26000準拠アクション"
+    benefits:
+      - "人権デューデリジェンス義務を果たせる"
+      - "CSV（共有価値創造）レポートに記載できる"
+      - "ESG投資家向けの実績として報告可能"
+      - "SDGs Goal 8 への貢献を数値化"
+
+  9_iso_integrated_framework:
+    status: "完了"
+    model: "Defense-Offense-Governance-Purpose"
+    components:
+      defense: "ISO 27001 (Security)"
+      offense: "ISO 30414 (Human Capital)"
+      governance: "ISO 31000 (Risk)"
+      purpose: "ISO 26000 (Social Responsibility)"
+
+# ==========================================
+# セッション中の気づき
+# ==========================================
+session_notes:
+
+  gemini_collaboration_insight: |
+    Geminiとの連携パターンが確立された：
+    - Gemini = 戦略・フレームワーク・質問設計
+    - Claude Code = 実装・ファイル操作・詳細回答
+    YAMLによるハンドオフが効率的。
+
+  accounting_metaphor_evolution: |
+    「複式簿記メタファー」の本質が明確化された：
+    単なる可視化ツールではなく、
+    「困難の原因を当事者自身が仕分けるプロセス」
+    → そのプロセス自体が障害受容になる。
+
+  linkedin_tone_decision: |
+    日本的な謙遜を排し、
+    "I don't do charity. I fight for reconstruction."
+    という強いリーダーシップトーンを採用。
+    Susan等の国際的な専門家に響く表現。
+
+  sroi_framing: |
+    29.4:1という数字の「楽観的すぎる」批判への防衛策：
+    "preliminary analysis, conservative assumptions"
+    を常に付記することで、
+    謙虚さと自信のバランスを取る。
+
+# ==========================================
+# Gemini最終報告（セッション終了時）
+# ==========================================
+gemini_final_handover:
+
+  project_status:
+    phase: "LinkedIn Profile Finalization Complete"
+    branding_theme: "Social System Architect (Reconstruction, not Charity)"
+    key_metrics: "SROI 29.4:1 (Projected)"
+
+  finalized_linkedin:
+    headline: "Social System Architect | Founder of SoE | Reorienting Assessment via Bookkeeping Metaphor | SROI 29.4:1"
+    about_core: "I don't do charity. I fight for reconstruction."
+    narrative_arc:
+      - "IT Entrepreneur (Success & ISO Governance)"
+      - "Bankruptcy & Disability (Fieldwork & R&D)"
+      - "Welfare Innovator (Sherpa Model & DX)"
+      - "SoE Founder (Input Constitutional AI & Bookkeeping Metaphor)"
+
+  experience_media_attachments:
+    welfare_leadership:
+      - title: "Strategic Service Model: The 'Sherpa' Approach"
+        desc: "Operational Blueprint. Supporters as guides. Taught ISO 27001 & Coding to users."
+      - title: "Philosophy: 'Post-War Reconstruction' & Advocate"
+        desc: "Why we fight. Restoring rights infrastructure rather than offering pity."
+    it_entrepreneurship:
+      - title: "2013 Vision: Personal Data as 'Commons'"
+        desc: "Evidence of Foresight. PHR concept treating data as Social Capital. Origin of SoE."
+    foundation_era:
+      achievements:
+        - "Migrated 20,000 paper records to digital CRM (Early DX)"
+        - "Organizational Optimization: 60% headcount reduction (5->2) via automation"
+        - "Audit of 40 clients (Financial Literacy & Quasi-Mandate Contracts)"
+
+  strategy_logic:
+    evolution_vs_pivot:
+      - "ITから福祉への転身は 'Pivot' ではなく 'Evolution'"
+      - "過去の破産・障害・アナログ業務経験はすべて現在の研究の 'Ground Truth (正解データ)'"
+    iso_integration:
+      iso_27001: "Defense & Governance"
+      iso_30414: "Asset Valuation (B/S)"
+      iso_31000: "Input AI Necessity (Risk Management)"
+      iso_26000: "Rights-Based Justification"
+    privacy_pipeline:
+      flow: "Raw Audio -> Whisper -> Sanitize (Input AI) -> VOICEVOX -> Evidence"
+      purpose: "To safely publish 'Edge Case' realities without privacy violation"
+
+  remaining_tasks_for_claude:
+    github_readme:
+      - "Generate Mermaid diagram for the Privacy Pipeline (Whisper -> VOICEVOX)"
+      - "Update 'Technical Stack' to include: VSCode, GitHub, 3-LLM Integration, MS365 Business"
+    schema_design:
+      - "Draft YAML schema for 'Life Bookkeeping' mapping ICF codes to Assets"
+      - "Integrate ISO 30414/31000 concepts into the schema definitions"
+    defense_logic:
+      - "Prepare counter-arguments for SROI 29.4:1 ('Projected base-case for sensitivity analysis')"
+
+# ==========================================
+# 本日の全成果ファイル一覧
+# ==========================================
+all_files_created_today:
+  - "outputs/linkedin_profile_2025_12_17.md"
+  - "outputs/linkedin_about_responses_2025_12_17.yaml"
+  - "outputs/linkedin_gemini_response_2025_12_17.yaml"
+  - "07_integration/2025_12_17_linkedin_iso_integration.yaml"
+  - "00_daily_yamal/04_VSClaude/2025_12_16_session_summary.yaml"
+  - "00_daily_yamal/04_VSClaude/2025_12_17_session_summary.yaml"
+  - "09_research_proposal/04_references/IMR_GPT_2025_12_17.md"
+
+# ==========================================
+# GPT調査報告（IMR）
+# ==========================================
+gpt_research_imr:
+
+  source: "09_research_proposal/04_references/IMR_GPT_2025_12_17.md"
+
+  summary:
+    name: "IMR（Illness Management and Recovery / 疾病管理とリカバリー）"
+    developers: "Kim T. Mueser博士、Susan Gingerich（2002年）"
+    organization: "SAMHSA（米国）"
+    target: "統合失調症、双極性障害、大うつ病等（重篤な精神疾患）"
+    duration: "6〜12ヶ月、週1〜2回"
+    structure: "11モジュール"
+    evidence:
+      effective: "疾病自己管理能力（SMD 0.39：中程度効果）"
+      limited: "QOL、入院率、就労への効果は限定的"
+    japan_status:
+      introduction: "2008年（藤田英美氏ら）"
+      coverage: "38都道府県、328か所"
+      main_settings: "精神科デイケア"
+
+  theoretical_foundations:
+    - "ストレス脆弱性モデル"
+    - "リカバリーモデル"
+    - "認知行動療法"
+    - "動機づけ面接法"
+
+  five_core_strategies:
+    - "心理教育"
+    - "再発防止訓練"
+    - "行動テイラリング（服薬管理）"
+    - "対処スキル訓練"
+    - "社会スキル訓練"
+
+  soe_connection_points:
+    stress_vulnerability_model:
+      imr: "生物学的脆弱性と心理社会的ストレスの相互作用"
+      soe: "複式簿記の『環境因子 vs 個人因子』の分離と類似"
+
+    recovery_orientation:
+      imr: "疾患を抱えながらも希望に満ちた人生を送るプロセス"
+      soe: "Reconstruction, not Charity"
+
+    fidelity_scale:
+      imr: "13項目、4.0以上が高フィデリティ"
+      soe: "DACTSフィデリティ評価との統合可能性"
+
+    ips_complementary:
+      description: "IMRでの疾病管理スキル習得が就労準備性を高め、IPSの成功率向上"
+      niekawa_connection: "贄川先生の専門領域（IPS、EBP）と完全に合致"
+
+  related_programs:
+    - name: "SST（社会生活技能訓練）"
+      relationship: "IMRの中核戦略の一つ、併用推奨"
+    - name: "WRAP（元気回復行動プラン）"
+      relationship: "ピア主導、IMRと相補的"
+    - name: "IPS（個別就労支援）"
+      relationship: "競争的雇用特化、IMRと相補的"
+      evidence: "28RCTで雇用率55%（対照群25%）"
+    - name: "ACT（包括的地域生活支援）"
+      relationship: "IMR+IPS統合モデルの基盤"
+
+  implications_for_research:
+    - "IMRのフィデリティスケールをSoE評価に応用可能"
+    - "ストレス脆弱性モデルと複式簿記メタファーの理論的接続"
+    - "IPS・IMR・SoE統合モデルの可能性"
+    - "日本での普及モデル（38都道府県）を参照可能"
+
+---
+# End of Session Summary

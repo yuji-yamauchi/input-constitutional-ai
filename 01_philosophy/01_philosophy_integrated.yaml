@@ -1027,20 +1027,85 @@ final_statement:
       文明の知識基盤を維持する社会インフラである。
 
 # ==========================================
+# Part 9: マクロ理論への接続（2025-12-18追加）
+# ==========================================
+# Source: Gemini Deep Research + Claude Code Theory Hierarchy
+macro_theory_connection:
+
+  reference_document: "09_research_proposal/04_references/macro_theory_rights_wealth.md"
+
+  core_thesis:
+    statement: "権利の偏重が富の偏重をおこす"
+    implication: "SoEは権利の再定義（排他→包摂）を通じて富の偏在を是正するモデル"
+
+  theoretical_grounding:
+
+    pistor_connection:
+      theory: "資本の法的コーディング（Code of Capital）"
+      relevance: |
+        福祉事業所の支援記録は、Pistorの4属性（優先権・耐久性・普遍性・換金性）で
+        コードされ、当事者を排除している。Input Constitutional AIは、
+        この法的コーディングを入力段階で転換する試み。
+
+    heller_connection:
+      theory: "アンチコモンズの悲劇（Gridlock Economy）"
+      relevance: |
+        福祉情報のアンチコモンズ化：事業所・医療機関・行政がそれぞれ
+        排除権を持つことで、当事者が自身の情報にアクセスできない。
+        Life Bookkeepingは情報のコモンズ化による解決モデル。
+
+    moyn_connection:
+      theory: "人権批判（Not Enough）"
+      relevance: |
+        人権運動が「十分性（Sufficiency）」に焦点を当て、
+        「平等（Equality）」=上限設定を無視してきた批判。
+        SoEは床を上げる（Capability）と天井を設ける（Limitarianism）の統合。
+
+    tilly_connection:
+      theory: "機会独占と法的シニシズム（Durable Inequality）"
+      relevance: |
+        「無敵の人」は法的シニシズムの極致：
+        「法は自分を守らない」という認識からの社会契約離脱。
+        SoEは形式的権利整備を超えた実質的機能保障を目指す。
+
+    weyl_lanier_connection:
+      theory: "データ労働論（Data as Labor）"
+      relevance: |
+        PHR Commons構想との直接的接続。
+        データを「売る」のではなく「投資」として提供し、
+        社会的リターンとして再分配するモデル。
+
+  hierarchy_position:
+    level: "Level 1: Micro Implementation"
+    role: "マクロ理論の実践的検証フィールド"
+    bidirectional_flow:
+      deductive: "マクロ理論 → SoE設計への理論的制約"
+      inductive: "SoE実践 → マクロ理論への経験的フィードバック"
+
+  research_proposal_application:
+    literature_review: "Level 3のマクロ理論を先行研究として引用"
+    theoretical_framework: "Level 2のメゾ・フレームワークで研究設計を説明"
+    methodology: "Level 1のミクロツールで実装・検証計画を記述"
+
+# ==========================================
 # 作成メタデータ
 # ==========================================
 creation_metadata:
   compiled_by: "Claude Sonnet 4.5"
   source_material_date_range: "2025-11-05 to 2025-11-18"
   integration_date: "2025-11-19"
+  last_updated: "2025-12-18"
   total_source_sessions: 5
-  philosophical_depth: "存在論・認識論・倫理学・宇宙論・思想史"
-  
+  philosophical_depth: "存在論・認識論・倫理学・宇宙論・思想史・政治経済学"
+
   target_folder: "01_philosophy/"
   file_name_suggestion: "01_philosophy_integrated_2025_11_19.yaml"
-  
+
   notes: >
     このファイルは、プロジェクト内の哲学・存在論・倫理関連の
     議論を網羅的に統合したものである。
     SoEの根本理念、安全設計、宇宙論的位置づけ、思想史的系譜、
     そして実装時の倫理的考慮事項を包含している。
+
+    2025-12-18追記：Gemini Deep Researchによるマクロ理論との接続を追加。
+    「権利の偏重が富の偏重をおこす」仮説の学術的裏付けを統合。

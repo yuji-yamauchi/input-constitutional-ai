@@ -1,0 +1,100 @@
+# ============================================================
+# Verification Response YAML
+# Date: 2025-12-21
+# Responder: ChatGPT (GPT-5.2 Thinking)
+# Purpose: Validate attribution in 3AI synthesis (gpt_unique section)
+# ============================================================
+
+response_metadata:
+  date: "2025-12-21"
+  responder: "ChatGPT"
+  scope_note: >
+    本回答は、このチャット上での「Effective Citizenship / Rights Maldistribution」
+    関連の私（ChatGPT）の出力内容に基づく検証結果。
+    （統合yaml側の記述が、別セッション素材を誤混入している可能性を判定）
+
+verification_results:
+
+  question_1_rd_inclusion:
+    asked: "RD理論、Callan (2011)、Greitemeyer (2019)、Victimhood Culture が、あなたのDeep Research出力に含まれていたか？"
+    answer: "含まれていなかった"
+    confidence: "high"
+    rationale: >
+      RD理論・攻撃性・Victimhood Culture は、概念的に「相対的剥奪感→怒り/攻撃」
+      「被害者ナラティブ同一化」系の棚に属し、当該Deep Research（市民権/権利実効性/司法アクセス）
+      の主軸とは異なる。少なくとも当該テーマでの私の出力内容には登場していない。
+
+  question_2_actual_gpt_unique:
+    asked: "RD系が含まれていない場合、実際のGPT独自貢献は何か？ Claude Code推測は正しいか？"
+    answer_summary: >
+      独自貢献の中心は「形式的権利 vs 実効的権利（de jure vs de facto）のギャップ」を、
+      市民権研究・司法アクセス・制度論・構造的不正義の古典/主要研究でマッピングした点。
+    included_as_unique_core:
+      - author_year: "Heller (2000, 2020)"
+        concept: "effective citizenship / substantive citizenship の定義・射程"
+        relevance_to_yuji_hypothesis: "形式的市民権と実効的市民権のギャップを制度/参加の問題として定式化"
+      - author_year: "Marshall (1950)"
+        concept: "social citizenship（civil/political/social）"
+        relevance_to_yuji_hypothesis: "権利の階層構造と実効性の議論の古典的足場"
+      - author_year: "Galanter (1974)"
+        concept: "Why the Haves Come Out Ahead（repeat players優位）"
+        relevance_to_yuji_hypothesis: "権利の実効性が資源で偏重し、累積優位を生むメカニズム"
+      - author_year: "Sandefur (2010s)"
+        concept: "justice gap / access to justice"
+        relevance_to_yuji_hypothesis: "権利の『行使可能性』が不均等に配分される経験的・制度的枠組み"
+      - author_year: "Young (2011)"
+        concept: "structural injustice"
+        relevance_to_yuji_hypothesis: "個人失敗ではなく構造的条件が不正義を生成するという責任論"
+      - author_year: "Acemoglu & Robinson (2012)"
+        concept: "inclusive vs extractive institutions"
+        relevance_to_yuji_hypothesis: "制度が権利アクセス/経済成果に影響する因果の語り口（補助線）"
+    claude_code_suspected_list_check:
+      suspected_correct:
+        - "Heller (2000, 2020): effective citizenship"
+        - "Chatterjee (2004, 2006): differentiated citizenship"
+      not_confirmed_in_my_output:
+        - "Pfister (2012): CA-citizenship synthesis attempt"
+        - "Knight & Johnson: institutions and justice"
+        - "Golub / Maru: legal empowerment advocates"
+      note: >
+        Chatterjeeは当該領域に親和的で、統合側の記憶にも残っているため
+        「含まれていた可能性」はあるが、本チャット上で確認できる範囲では
+        少なくともRD系ほど明確ではない。RD系は明確に別棚。
+
+  question_3_confusion_confirmation:
+    asked: "RD/Callan/Greitemeyer/Victimhood Culture は別セッション（山上分析）由来の混入では？"
+    answer: "はい（混同/コンテキストブリードの可能性が高い）"
+    confidence: "high"
+    explanation: >
+      RDやVictimhood Cultureは「相対的剥奪→攻撃/正当化」「被害者物語の採用」
+      の分析で自然に出現する。市民権/権利実効性の文献マップとは異なるため、
+      統合作業で「別セッション素材がgpt_uniqueに誤帰属した」説明が最も整合的。
+
+corrections_recommended:
+
+  replace_gpt_unique_section:
+    reason: "gpt_uniqueにRD系が誤帰属している可能性が高いため"
+    recommended_new_gpt_unique:
+      title: "Formal vs Effective Rights: Citizenship/Justice-Gap Mapping"
+      contributions:
+        - "effective citizenship / substantive citizenship の定義（Heller）を中核に据え、形式的権利と実効的権利のギャップを整理"
+        - "司法アクセス研究（Galanter, Sandefur）を『権利の実効性偏重』の古典メカニズムとして接続"
+        - "構造的不正義（Young）を『個人失敗ではなく構造問題』として理論基盤化"
+        - "制度論（Acemoglu & Robinson）を補助線に、権利アクセスの制度設計が成果分配へ影響する語り口を提示"
+      soe_relevance: >
+        「権利の実効性ギャップ」を、SoEの会計メタファー（簿外債務/誤仕訳）で監査・可視化するための
+        文献的土台（citizenship + access to justice + structural injustice）を提供。
+
+  decontamination_note:
+    action: "統合yamlの該当箇所（Lines 107-114）をRD系から上記に差し替え"
+    additional_check: >
+      統合時に先に処理した別ファイル（例: yamagami_analysis）内容が混入していないか、
+      gpt_unique周辺の引用元（PDF/MD）を再照合すること。
+
+action_taken:
+  date: "2025-12-21"
+  by: "Claude Code (Opus 4.5)"
+  action: "Applied correction to 2025_12_21_deep_research_3ai_synthesis.yaml"
+  status: "COMPLETED"
+
+# End of Verification Response
