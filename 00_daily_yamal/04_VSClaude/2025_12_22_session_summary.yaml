@@ -1,0 +1,186 @@
+# ============================================================
+# Claude Code Session Summary
+# Date: 2025-12-22
+# ============================================================
+
+metadata:
+  date: "2025-12-22"
+  session_time: "09:10 ~ 19:00 JST"
+  health_check:
+    blood_pressure: "118/80"
+    status: "良好"
+  days_to_deadline: 18
+
+# ============================================================
+# MAIN TASK: Susanメール送信
+# ============================================================
+
+susan_email:
+  status: "SENT"
+  final_version: "v6"
+  file: "10_DEAI/01_susan/mail/2025_12_22_susan_reply_draft_v6.md"
+
+  key_content:
+    - title: "Employment Passport episode"
+      detail: "厚労省面談、「メリットもデメリットもなし」設計"
+    - title: "Disability acceptance hypothesis"
+      detail: "「ユーザーマニュアル」なしで就労、ストレングスモデル偏重の問題"
+    - title: "Employability terminology gap"
+      detail: "職業準備性 vs employability（概念的盲点）"
+    - title: "30-year gap as opportunity"
+      detail: "リープフロッグ比喩（有線→無線インフラ）"
+    - title: "Interview request"
+      detail: "UK Sheltered → Supported Employment移行時の摩擦・抵抗"
+
+  auto_reply:
+    received: "2025-12-22"
+    susan_out_of_office: "2025-12-22 ~ 2026-01-02"
+    expected_response: "1月2日以降"
+    urgent_contact: "Clare (Assistant) +44 7710 341096"
+
+  version_evolution:
+    v1_v4: "Claude Code初期ドラフト（会計メタファー中心）"
+    v5: "障害受容プロセス、エンプロイアビリティ概念追加"
+    v6: "最終版、送信"
+
+# ============================================================
+# RESEARCH: Susan資料分析
+# ============================================================
+
+susan_materials_analysis:
+  source: "SPI - Job markets v3.pdf"
+
+  bridge_academy_model:
+    founder: "Pat Romzek (元Cisco上級幹部)"
+    statistics:
+      entry_to_graduation: "94%"
+      graduation_to_certification: "91%"
+      certification_to_employment: "96%"
+    key_insight: "雇用主需要（Demand）から始まる設計"
+    selection_criteria: "態度・志・コミットメント・適性（障害自体は参加資格にならない）"
+
+  critical_observation:
+    yuji_insight: "合理的判断ができる人を前提としたゲーム理論"
+    soe_difference: "SoEは合理的判断困難な人の態度自体を環境負債として可視化"
+
+  file_created: "10_DEAI/01_susan/analysis/2025_12_22_bridge_academy_vs_japan_analysis.yaml"
+
+# ============================================================
+# FIRST-HAND EXPERIENCE RECORDED
+# ============================================================
+
+firsthand_experiences:
+  ministry_meeting:
+    context: "厚労省 就労パスポート担当者との面談（制度開始前）"
+    key_quote: |
+      「有識者会議が『パスポートがあることでメリットもデメリットもなく、
+      ないことでもメリットもデメリットもないように』と主張した」
+    result: "推奨フォーマットに矮小化"
+    significance: "日本の政策プロセスの構造的問題を示すエビデンス"
+
+  ikasa_council:
+    context: "井笠自立支援協議会 就労部会部長時代"
+    proposal: "共同受注を通じた適性スキル測定システム"
+    mechanism:
+      - "事業所所属はそのまま維持"
+      - "施設外就労として適性に合った受注業務に派遣"
+      - "スキルの伸び幅を測定"
+    failure_reason: |
+      事業者が「利用者同士の情報交換→移籍リスク」を危惧して継続せず
+    structural_cause: "報酬設計が囲い込みにインセンティブを与えている"
+
+# ============================================================
+# TERMINOLOGY RESEARCH
+# ============================================================
+
+terminology_research:
+  disability_acceptance:
+    japanese: "障害受容"
+    english_equivalents:
+      - term: "Acceptance of disability"
+        nuance: "最終段階、到達点"
+      - term: "Adjustment to disability"
+        nuance: "動的プロセス全体"
+    theoretical_model: "Antonak & Livneh (1991) 5段階モデル"
+    soe_critique: "障害を個人が乗り越えるべき課題として位置づけ、環境側責任が不在"
+
+  employability_gap:
+    observation: "日本では「エンプロイアビリティ」はカタカナ転写のみ、翻訳なし"
+    japanese_term: "職業準備性"
+    problem: "個人責任のみ、雇用主・システム責任の語彙がない"
+
+# ============================================================
+# FILES CREATED/MODIFIED
+# ============================================================
+
+files_created:
+  - path: "10_DEAI/01_susan/mail/2025_12_22_susan_reply_draft_v6.md"
+    description: "Susanメール最終版（送信済み）"
+  - path: "10_DEAI/01_susan/mail/susan_reply_2025_12_22_japanese.yaml"
+    description: "メール日本語訳（旧バージョンベース）"
+  - path: "10_DEAI/01_susan/analysis/2025_12_22_bridge_academy_vs_japan_analysis.yaml"
+    description: "Bridge Academy vs 日本構造分析"
+
+files_modified:
+  - path: "10_DEAI/01_susan/mail/susan_reply_2025_12_21_draft.md"
+    changes: "統計修正（94%→91%→96%）、厚労省エピソード追加"
+
+# ============================================================
+# KEY INSIGHTS
+# ============================================================
+
+key_insights:
+  insight_1:
+    title: "Bridge Academyの暗黙の前提"
+    content: "合理的判断可能な人を対象としたモデル、日本の就労継続支援とは逆構造"
+
+  insight_2:
+    title: "日本の囲い込み構造"
+    content: "報酬設計が当事者の自律的成長を阻害するインセンティブを生む"
+
+  insight_3:
+    title: "障害受容概念の問題"
+    content: "英語圏でも個人責任モデル（Kübler-Ross借用）、社会モデル不在"
+
+  insight_4:
+    title: "エンプロイアビリティの概念的盲点"
+    content: "日本には雇用主・システム責任を語る語彙がない"
+
+# ============================================================
+# PENDING TASKS
+# ============================================================
+
+pending_tasks:
+  - task: "大学院提出書類の確認"
+    priority: "HIGH"
+    deadline: "2026-01-09 ~ 01-23"
+  - task: "Susanからの返信待ち"
+    expected: "2026-01-02以降"
+
+# ============================================================
+# SESSION STATISTICS
+# ============================================================
+
+session_statistics:
+  files_created: 3
+  files_modified: 1
+  email_sent: 1
+  firsthand_experiences_recorded: 2
+  terminology_researched: 2
+  days_to_deadline: 18
+
+# ============================================================
+# 署名
+# ============================================================
+
+signature:
+  recorded_by: "Claude Code (Opus 4.5)"
+  timestamp: "2025-12-22 19:00 JST"
+  session_theme: "Susanメール送信完了"
+  fire_culture_note: |
+    記録されなかった問いは燃え尽きたものと見なされる。
+    記録されることでのみ、問いは再燃可能となる。
+
+---
+# End of Session Summary
+# 2025-12-22

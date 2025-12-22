@@ -1,0 +1,180 @@
+# ============================================================
+# Bridge Academy vs 日本の就労支援構造分析
+# 作成日: 2025-12-22
+# 契機: Susan資料（SPI Job Markets v3）読破後の考察
+# ============================================================
+
+metadata:
+  date: "2025-12-22"
+  source: "SPI - Job markets v3.pdf (Susan Scott-Parker)"
+  session_context: "Susanメール返信作成中の分析"
+
+# ============================================================
+# Bridge Academy モデルの核心
+# ============================================================
+
+bridge_academy_model:
+  founder: "Pat Romzek (元Cisco上級幹部)"
+  locations: "アメリカ、ヨーロッパ、ケニア"
+
+  statistics:
+    entry_to_graduation: "94%"
+    graduation_to_certification: "91%"
+    certification_to_employment: "96%"
+
+  design_principles:
+    starting_point: "Demand（雇用主需要）から始まる"
+    selection_criteria:
+      - "態度 (attitude)"
+      - "志 (aspiration)"
+      - "コミットメント (commitment)"
+      - "適性 (aptitude)"
+    explicit_exclusion: "障害があること自体は参加資格にならない"
+
+  key_features:
+    - "雇用主が求めるスキル（Cisco資格）から逆算"
+    - "Talent Pipeline：求職競争より前の段階で雇用主とつなぐ"
+    - "従来の障害者紹介ルート依存からの脱却（SNS等で広く募集）"
+    - "成功指標は就職率（訓練人数ではない）"
+    - "訓練者は障害者雇用に精通し、雇用主とつながっている"
+
+  implicit_assumption: |
+    合理的判断ができる人を前提としたゲーム理論モデル。
+    「態度・志・コミットメント・適性」で選抜できる人が対象。
+
+# ============================================================
+# 日本の就労継続支援との構造比較
+# ============================================================
+
+structural_comparison:
+  headers: ["観点", "Bridge Academy", "日本の就労継続支援A/B型"]
+
+  rows:
+    - aspect: "参加条件"
+      bridge: "態度・志・コミットメント・適性"
+      japan: "障害者手帳の所持"
+
+    - aspect: "設計起点"
+      bridge: "雇用主需要（Demand）"
+      japan: "サービス提供（Supply）"
+
+    - aspect: "成功指標"
+      bridge: "就職率（96%）"
+      japan: "利用者数・稼働率"
+
+    - aspect: "事業者インセンティブ"
+      bridge: "就職させれば成功"
+      japan: "囲い込めば報酬継続"
+
+    - aspect: "当事者の情報交換"
+      bridge: "推奨（SNS募集等）"
+      japan: "脅威（移籍リスク）"
+
+    - aspect: "Talent Pipeline"
+      bridge: "雇用主と直結"
+      japan: "事業所内で完結"
+
+    - aspect: "「態度問題」の扱い"
+      bridge: "選抜で除外"
+      japan: "受け入れ（報酬対象）"
+
+# ============================================================
+# 雄司の一次体験：井笠自立支援協議会
+# ============================================================
+
+yuji_firsthand_experience:
+  context:
+    role: "井笠自立支援協議会 就労部会 部長"
+    period: "（時期要確認）"
+    location: "岡山県井笠地域"
+
+  proposal:
+    title: "共同受注を通じた適性スキル測定システム"
+    mechanism:
+      - "事業所の所属はそのまま維持"
+      - "当事者の適性スキルを伸ばす受注業務に「施設外就労」として派遣"
+      - "各場所に集まってスキルの伸び幅を測定"
+      - "職業準備性を事業所間で共有"
+
+  implementation:
+    status: "実際に数回共同受注を実施"
+
+  failure_reason:
+    description: |
+      各事業者は、利用当事者同士が情報交換をし自律的行動をすると
+      事業所を移籍する可能性を危惧して継続しなかった。
+
+    structural_cause: "報酬設計が「囲い込み」にインセンティブを与えている"
+
+  significance:
+    for_research: |
+      Bridge Academy型アプローチを日本で試みた場合の構造的障壁を
+      実体験として証明するエビデンス。
+    for_soe: |
+      事業者が当事者の自律的成長を阻害する構造の可視化。
+      「態度問題」以前に、成長機会自体が制限されている。
+
+# ============================================================
+# SoEとBridge Academyの位置づけ
+# ============================================================
+
+soe_bridge_academy_relationship:
+  complementarity:
+    bridge_academy: "合理的判断可能な障害者を雇用主につなぐ最適化モデル"
+    soe: "合理的判断困難な人の態度自体を環境負債として可視化するモデル"
+
+  target_population:
+    bridge_academy: "態度・志・コミットメント・適性で選抜可能な人"
+    soe: "全ての人（judgment困難者含む）"
+
+  design_origin:
+    bridge_academy: "雇用主需要（Demand）"
+    soe: "権利（Equal-basis participation）"
+
+  success_metric:
+    bridge_academy: "就職率"
+    soe: "環境負債の清算度"
+
+  attitude_problem_handling:
+    bridge_academy: "選抜で除外"
+    soe: "環境要因として再分類（システム設計問題）"
+
+  theoretical_gap:
+    description: |
+      Bridge Academyは「合理的選択ができる障害者」向けの成功モデル。
+      しかし「なぜ合理的選択ができないのか」という問いへの回答がない。
+      SoEはこのギャップを埋める：
+      「合理的選択ができない」こと自体を環境要因として可視化する。
+
+    susans_question: "なぜ特別扱いを期待するのか？"
+    soe_answer: |
+      その「期待」は個人特性ではなく、善意の支援と制度設計の
+      意図せぬ結果として形成された環境要因である。
+
+# ============================================================
+# 活用可能性
+# ============================================================
+
+usage_notes:
+  for_susan_email: |
+    今回のメールでは触れない。
+    補完関係を強調するに留め、批判的分析は将来のインタビュー時に。
+
+  for_research_proposal: |
+    「日本固有の構造的障壁」として記載可能。
+    一次体験としてのエビデンス価値あり。
+
+  for_susan_interview: |
+    UK移行時の摩擦・抵抗と対比する形で、
+    日本の構造的問題を説明する際の核心的エビデンス。
+
+# ============================================================
+# 署名
+# ============================================================
+
+signature:
+  recorded_by: "Claude Code (Opus 4.5)"
+  timestamp: "2025-12-22 09:45 JST"
+  fire_culture_note: |
+    記録されなかった問いは燃え尽きたものと見なされる。
+    記録されることでのみ、問いは再燃可能となる。
