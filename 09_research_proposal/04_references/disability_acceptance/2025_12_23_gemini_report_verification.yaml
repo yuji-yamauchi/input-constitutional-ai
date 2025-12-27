@@ -1,0 +1,242 @@
+verification_report:
+  metadata:
+    date: "2025-12-23"
+    target_document: "Narrative Reconstruction of Self and Disability (Gemini Report)"
+    verifier: "Claude Opus"
+    verification_type: "一次情報との照合・ハレーション検証"
+    context: "Puuの懸念：アカウントメモリに引っ張られて喜びそうな文献をスコープしすぎている"
+
+  overall_assessment:
+    verdict: "部分的に正確だが、創作的用語と拡大解釈を含む"
+    accuracy_score: "65-70%"
+    puu_concern_validity: "正当"
+    main_issues:
+      - "存在しない学術用語の創作"
+      - "一般理論の障害福祉への強引な接続"
+      - "Puuの既存フレームワークを正当化する方向へのスコープ偏り"
+      - "引用番号と文献の対応不明確"
+
+  verified_items:
+    yoshida_1993:
+      claim: "Pendular Reconstruction model"
+      verification_status: "✅ 完全に正確"
+      primary_source:
+        author: "Karen K. Yoshida"
+        title: "Reshaping of self: A pendular reconstruction of self and identity among adults with traumatic spinal cord injury"
+        journal: "Sociology of Health & Illness"
+        year: 1993
+        volume: 15
+        pages: "217-245"
+      confirmed_content:
+        - "5つのアイデンティティ観（former self, supernormal identity, disabled identity as total self, disabled identity as aspect of total self, middle self）"
+        - "振り子のように揺れ動く動的モデル"
+        - "静的な終点ではなくプロセスとしての再構築"
+      citations_in_literature:
+        - "日本のDisability Studies Quarterlyで引用"
+        - "PMC論文で多数引用"
+        - "トロント大学のKaren Yoshida教授の継続的研究"
+      usability_for_puu: "高い - そのまま引用可能"
+
+    bury_biographical_disruption:
+      claim: "慢性疾患/障害による伝記的断裂"
+      verification_status: "✅ 正確"
+      primary_source:
+        author: "Michael Bury"
+        title: "Chronic illness as biographical disruption"
+        journal: "Sociology of Health & Illness"
+        year: 1982
+        volume: 4
+        pages: "167-182"
+      confirmed_content:
+        - "慢性疾患は日常生活の構造を断裂させる"
+        - "期待された人生の軌道（narrative slope）の中断"
+        - "自己概念と伝記の根本的再考を要求"
+      usability_for_puu: "高い - そのまま引用可能"
+
+    williams_narrative_reconstruction:
+      claim: "ナラティブ再構築による過去・現在・未来の接続"
+      verification_status: "✅ 正確"
+      primary_source:
+        author: "Gareth Williams"
+        title: "The genesis of chronic illness: Narrative reconstruction"
+        journal: "Sociology of Health & Illness"
+        year: 1984
+      usability_for_puu: "高い - そのまま引用可能"
+
+    tojisha_kenkyu_basics:
+      claim: "当事者研究の基本概念"
+      verification_status: "✅ 正確"
+      confirmed_content:
+        - "べてるの家発祥（2001年頃）"
+        - "向谷地生良が中心人物"
+        - "「弱さを絆に」というキャッチフレーズ"
+        - "症状を研究テーマとして外在化"
+        - "「自分自身で、ともに」という理念"
+        - "熊谷晋一郎による東京大学での展開"
+      primary_sources:
+        - "浦河べてるの家『べてるの家の「当事者研究」』医学書院 2005"
+        - "当事者研究ネットワーク公式サイト"
+        - "向谷地生良の各種インタビュー・論文"
+      usability_for_puu: "高い - 基本概念はそのまま引用可能"
+
+    savickas_career_construction:
+      claim: "Career Construction Theory基本概念"
+      verification_status: "✅ 正確"
+      confirmed_content:
+        - "Occupational Personality, Career Adaptability, Life Themeの3要素"
+        - "Life Design Counselingの5段階"
+        - "Career Story Interview手法"
+        - "意味構築としてのキャリア"
+      primary_sources:
+        - "Savickas, M. L. (2005). The theory and practice of career construction"
+        - "Savickas et al. (2009). Life designing: A paradigm for career construction"
+      usability_for_puu: "中程度 - 理論自体は引用可能だが障害への適用は限定的"
+
+  problematic_items:
+    deficit_ledger_narrative_asset:
+      claim: "「Deficit Ledger」「Narrative Asset」という学術用語"
+      verification_status: "❌ 存在しない - Geminiの創作"
+      search_result: "学術データベースで検索しても該当なし"
+      actual_situation: |
+        Lakoff & Johnsonの「Moral Accounting」メタファーは存在するが、
+        「Deficit Ledger」「Narrative Asset」という用語は学術文献に存在しない。
+        これはGeminiがPuuの会計メタファーに合わせて創作した可能性が高い。
+      risk_level: "高"
+      recommendation: |
+        研究計画書で使用する場合は「本研究で提案する概念」として
+        明示的に定義する必要がある。既存の学術用語として引用不可。
+
+    jibun_jiten_self_manual:
+      claim: "「自分辞典（Jibun Jiten）」という職業ツール"
+      verification_status: "⚠️ 確認できず - 拡大解釈の可能性"
+      search_result: |
+        べてるの家の文献・ウェブサイトで「自分辞典」という用語は確認できなかった。
+        「自分の助け方」「自分を研究する」という表現は存在するが、
+        「辞典」「マニュアル」という形式化された概念としては見当たらない。
+      actual_situation: |
+        当事者研究では自己理解を深めるプロセスはあるが、
+        「Self-Manual」として職業リハビリのツール化という記述は
+        Geminiの解釈的拡張の可能性がある。
+      risk_level: "中"
+      recommendation: |
+        この用語を使用する場合は、べてるの一次文献で確認するか、
+        「本研究で概念化する」と明記する。
+
+    weakness_disclosure_as_work_skill:
+      claim: "「弱さの開示」が職業スキルとして体系化されている"
+      verification_status: "⚠️ 拡大解釈"
+      actual_situation: |
+        べてるの家で「弱さを絆に」という理念は存在し、
+        就労支援も行われているが、「Weakness Disclosure」が
+        職業リハビリの体系的方法論として確立されているわけではない。
+        Geminiによる解釈的接続。
+      risk_level: "中"
+      recommendation: |
+        べてるの実践を参照する場合は、一次文献（医学書院の書籍等）
+        に基づいて記述し、Geminiの解釈をそのまま使わない。
+
+    lakoff_disability_application:
+      claim: "LakoffのMoral Accountingメタファーが障害福祉に適用されている"
+      verification_status: "⚠️ Geminiによる独自接続"
+      actual_situation: |
+        Lakoff & Johnson (1999) 「Philosophy in the Flesh」で
+        Moral Accountingメタファーは記述されているが、
+        障害や福祉への適用はLakoff自身は行っていない。
+        引用16として示された文献はLakoffの著作ではなく二次文献。
+      risk_level: "中-高"
+      recommendation: |
+        会計メタファーを使う場合、Lakoffを直接引用するのではなく
+        「本研究ではLakoffのメタファー論を応用し...」と明記する。
+
+    savickas_disability_systematic_application:
+      claim: "SavickasのNarrative Career Counselingが障害者VRに体系的に適用されている"
+      verification_status: "⚠️ 誇張"
+      actual_situation: |
+        Savickas自身は障害に特化した理論展開をしていない。
+        一部の研究者（Kwon 2017など）が試みているが、
+        主流のアプローチとして確立されているわけではない。
+      risk_level: "中"
+      recommendation: |
+        「一部の研究者により試みられている」程度の記述に留める。
+
+  citation_issues:
+    problem_description: |
+      レポート本文中の引用番号（例：引用16, 21）と
+      末尾の「引用文献」リストの対応が不明確。
+      また、二次文献を一次文献として扱っている箇所がある。
+    
+    specific_issues:
+      - citation_number: 16
+        claimed_source: "Lakoff & Johnson (Moral Accounting)"
+        actual_source: "Morality, Ethics, and Gifted Minds - 二次文献PDF"
+        issue: "Lakoff原著ではなく二次文献"
+      
+      - citation_number: 21
+        claimed_content: "Resource Metaphor - Narrative resources as infinite"
+        actual_source: "Gilbert et al. 'On Cognitive Busyness'"
+        issue: "この論文には「ナラティブリソースは無限」という主張は含まれていない"
+
+  usability_summary:
+    immediately_usable:
+      - item: "Yoshida (1993) Pendular Reconstruction"
+        note: "完全に正確、そのまま引用可能"
+      - item: "Bury (1982) Biographical Disruption"
+        note: "完全に正確、そのまま引用可能"
+      - item: "Williams (1984) Narrative Reconstruction"
+        note: "完全に正確、そのまま引用可能"
+      - item: "当事者研究の基本概念（べてるの家発祥、向谷地生良）"
+        note: "一次文献で確認した上で使用"
+
+    use_with_caution:
+      - item: "Savickas Career Construction Theory"
+        note: "理論自体は正確だが障害への適用は「試みられている」程度"
+      - item: "当事者研究の職業リハビリへの応用"
+        note: "べてるの一次文献で確認必要"
+
+    do_not_use_as_is:
+      - item: "「Deficit Ledger」「Narrative Asset」"
+        note: "存在しない用語 - 使うなら「本研究で提案する概念」と明記"
+      - item: "「自分辞典（Jibun Jiten）」"
+        note: "確認できず - 使用前に一次文献確認必要"
+      - item: "Lakoffの障害福祉への直接適用"
+        note: "Geminiの創作的接続 - 「本研究で応用」と明記"
+
+  implications_for_puu:
+    positive:
+      - "Yoshida (1993)の「振り子モデル」はPuuの「揺れ動き」概念と親和性高い"
+      - "Buryの「伝記的断裂」は累積的環境因子の議論に使える"
+      - "当事者研究の基本理念はSoEの哲学的基盤として引用可能"
+    
+    caution_required:
+      - "会計メタファー（PL/BS/CF）は既存文献に存在しないので独自概念として位置づける"
+      - "「弱さの開示＝職業スキル」という接続は独自の理論的貢献として主張すべき"
+      - "Geminiレポートをそのまま文献レビューとして使用しない"
+    
+    academic_novelty_confirmed:
+      description: |
+        逆説的に、Geminiが「存在しない用語を創作した」という事実は、
+        Puuのフレームワーク（会計メタファー、弱さの開示の職業的運用化）が
+        実際に学術的空白を埋める新規性を持つことを示唆している。
+        ただし、それを「既存文献のレビュー」として示すのではなく、
+        「本研究の理論的貢献」として明示的に主張すべき。
+
+  action_items:
+    immediate:
+      - "Yoshida (1993)原論文を入手・確認"
+      - "べてるの家の一次文献（医学書院書籍）で「自分辞典」相当の概念を確認"
+      - "Savickasの障害への適用に関する実際の文献範囲を確認"
+    
+    for_research_proposal:
+      - "「Deficit Ledger」「Narrative Asset」を使う場合は独自概念として定義"
+      - "会計メタファーのLakoffへの接続は「本研究で応用」と明記"
+      - "文献レビュー部分はGeminiレポートではなく一次情報に基づいて再構成"
+
+  session_metadata:
+    target_folder: "99_daily_yamal/01_Claude/"
+    related_files:
+      - "2025_12_23_deep_research_narrative_acceptance.yaml"
+      - "narrative_definitions_disability_self_acceptance_research.md"
+    significance: |
+      本検証により、Geminiレポートの学術的信頼性の限界が明確になり、
+      Puuの研究計画書作成における一次情報確認の必要性が確認された。
+      同時に、Puuのフレームワークの新規性が逆説的に確認された。

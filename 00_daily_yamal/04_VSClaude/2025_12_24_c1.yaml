@@ -1,0 +1,97 @@
+session_metadata:
+  date: "2025-12-24"
+  time: "~19:00 JST"
+  session_type: "file_organization_and_documentation"
+  ai_model: "Claude Code (Opus 4.5)"
+
+key_achievements:
+  - "GPT検証レポートのYAML記録作成"
+  - "04_references ディレクトリの整理・カテゴリ分類"
+  - "プロジェクト全体構造YAMLの作成（AI間共有用）"
+
+tasks_completed:
+  1_gpt_verification_yaml:
+    description: "ChatGPT検証レポートのYAML化"
+    output_file: "00_daily_yamal/02_GPT/2025_12_23_gemini_verification_report.yaml"
+    content:
+      - "Geminiレポートの検証結果（mostly solid）"
+      - "3件の捏造引用特定（XYZ Institute, Smith & John, UK Survey）"
+      - "Claude Opus検証との比較分析"
+
+  2_references_reorganization:
+    description: "04_references ディレクトリのカテゴリ分類"
+    created_folders:
+      - name: "CRPD/"
+        content: "障害者権利条約関連（4件）"
+      - name: "disability_acceptance/"
+        content: "障害受容研究（12件）"
+      - name: "evidence_based_practices/"
+        content: "EBP - ACT, IPS, IMR, FPE等（4件）"
+      - name: "fidelity_scales/"
+        content: "フィデリティ尺度 - DACTS, TMACT（3件）"
+      - name: "researchers/"
+        content: "研究者プロファイル（1件）"
+      - name: "rights_wealth_theory/"
+        content: "権利・富の理論（3件）"
+    note: "障害受容→disability_acceptance に英語化"
+
+  3_project_structure_yaml:
+    description: "プロジェクト全体構造のYAML作成"
+    output_file: "project_structure_2025_12_24.yaml"
+    purpose: "AI間共有用 - Claude Web, ChatGPT, Gemini が参照可能"
+    content:
+      - "全ディレクトリ定義（日英両方）"
+      - "AI間役割分担"
+      - "キー概念（Input Constitutional AI, SoE, Three-Layer, Four-Pillar）"
+      - "トークン効率化ガイドライン"
+
+verification_summary:
+  from_previous_session:
+    claude_opus_accuracy: "65-70%"
+    chatgpt_assessment: "mostly solid"
+    key_finding: |
+      Geminiレポートの「理論的骨格」は信頼できるが、
+      「学術用語の創作」と「一部引用の捏造」という2種類の問題がある。
+  safe_to_cite:
+    - "Yoshida (1993) Pendular Reconstruction"
+    - "Bury (1982) Biographical Disruption"
+    - "Williams (1984) Narrative Reconstruction"
+    - "Dunn & Burcaw (2013) Disability Identity"
+  puu_original_concepts:
+    - "PL/BS/CFメタファー - 「本研究で提案する概念」として明記"
+    - "Deficit Ledger / Narrative Asset - 存在しない学術用語"
+
+files_created_today:
+  - "00_daily_yamal/02_GPT/2025_12_23_gemini_verification_report.yaml"
+  - "project_structure_2025_12_24.yaml"
+  - "00_daily_yamal/04_VSClaude/2025_12_24_c1.yaml（本ファイル）"
+
+files_moved_today:
+  to_disability_acceptance: 12
+  to_CRPD: 4
+  to_evidence_based_practices: 4
+  to_fidelity_scales: 3
+  to_rights_wealth_theory: 3
+  to_researchers: 1
+
+next_actions:
+  for_research_proposal:
+    - "研究計画書v2.9 Gap Statement更新（検証済み文献のみ使用）"
+    - "Bibliography.bib に検証済み8件追加"
+    - "PL/BS/CFを「本研究で提案する概念」として位置づけ"
+  for_bethel_verification:
+    - "「自分辞典（Jibun Jiten）」をべてるの一次文献で確認"
+
+application_deadline:
+  start: "2026-01-09"
+  end: "2026-01-23（消印有効）"
+  days_remaining: 16
+
+fire_culture_note: |
+  クリスマスイブの整理作業。
+  ディレクトリ構造の整理は、知識の「再燃可能性」を高める。
+  AI間共有YAMLにより、どのAIも同じ地図を持って協働できる。
+
+metadata:
+  created_by: "Claude Code (Opus 4.5)"
+  created_at: "2025-12-24T19:00:00+09:00"

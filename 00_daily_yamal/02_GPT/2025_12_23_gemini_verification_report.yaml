@@ -1,0 +1,192 @@
+session_metadata:
+  date: "2025-12-23"
+  session_type: "verification_report"
+  ai_model: "ChatGPT (GPT-4)"
+  task: "Gemini Deep Research Report の一次情報検証"
+  target_document: "Narrative Disability Acceptance Research (Gemini Report)"
+
+overall_assessment:
+  verdict: "factual foundations are mostly solid"
+  core_accuracy: "高い（WHO/ICF, CRPD, narrative psychology, constructivist theory）"
+  problem_areas:
+    - "一部の引用が確認できない（fabricated or mis-cited）"
+    - "国別フレームワークの単純化（nuances underplayed）"
+    - "3件の捏造・未確認引用を特定"
+
+verification_results:
+  fully_verified:
+    - claim: "WHO/ICF定義（健康状態＋環境・個人因子）"
+      status: "✅ Correct"
+
+    - claim: "CRPD Article 3 - 人間の多様性としての障害者受容"
+      status: "✅ Correct"
+      note: "米国未批准への言及なし（minor omission）"
+
+    - claim: "段階モデルの限界（shock, denial等は時代遅れ）"
+      status: "✅ Correct (with context)"
+      evidence: "Disability scholars have critiqued stage-based models"
+
+    - claim: "ナラティブ心理学 - 障害を人生物語に統合"
+      status: "✅ Correct"
+      key_source: "Dunn & Burcaw (2013)"
+
+    - claim: "構成主義VR（Career Construction Theory）"
+      status: "✅ Correct"
+      key_source: "Savickas (2005)"
+
+    - claim: "Person-first (US) vs Identity-first (UK) 用語差"
+      status: "✅ Correct"
+
+    - claim: "社会モデル（UK）- 社会的障壁が障害を生む"
+      status: "✅ Correct"
+      key_source: "UPIAS, Mike Oliver"
+
+    - claim: "Beatrice Wright (1983) 受容理論"
+      status: "✅ Correct"
+      components:
+        - "de-emphasizing disability"
+        - "developing new values"
+        - "acquiring adaptive skills"
+
+    - claim: "障害受容と幸福感・低ストレスの相関"
+      status: "✅ Correct"
+      evidence: "2024 study - acceptance predicts flourishing"
+
+  mostly_correct:
+    - claim: "日本の障害受容概念の変遷（障害との自由へ）"
+      status: "⚠️ Mostly Correct"
+      verified_content:
+        - "Ueda (1980) - 段階的心理プロセス"
+        - "Tajima Akiko (2009) - 障害受容→障害との自由"
+      note: "新概念の深堀り不足"
+
+    - claim: "UK/US/Japan の法的枠組み比較"
+      status: "⚠️ Mostly Correct"
+      issue: "構造的差異を過度に単純化"
+      details:
+        - "US: ADA + state VR programs (individualized)"
+        - "UK: Equality Act 2010 + Access to Work"
+        - "Japan: quota-based + welfare services (not unified VR)"
+
+    - claim: "構成主義・ナラティブ手法のVRへの国際的浸透"
+      status: "⚠️ Mostly Correct"
+      note: "日本での文献は英語圏より少ない"
+
+fabricated_sources:
+  - source: "XYZ Disability Institute, 2022"
+    status: "❌ Not Found"
+    assessment: "likely non-existent"
+
+  - source: "Smith & John (2018), Journal of Narrative Rehabilitation"
+    status: "❌ Not Found"
+    assessment: "plausible-sounding but fabricated citation"
+
+  - source: "UK 'National Disability Acceptance Survey' (2021)"
+    status: "❌ Not Verified"
+    assessment: "no evidence of official 2021 survey by that name"
+
+academic_alignment:
+  narrative_self_acceptance:
+    assessment: "well-aligned with contemporary academic thought"
+    key_shift: "from static end-state to ongoing process of story-construction"
+    consistent_with:
+      - "Dunn & Burcaw (2013) - first-person disability narratives"
+      - "narrative turn in psychology and rehabilitation"
+      - "Swain & French's affirmation model (UK)"
+
+  constructivist_vr:
+    assessment: "in line with evolving practices"
+    key_insight: "counselors should help clients 'author' career trajectories"
+    support: "self-determination and personal meaning improve employment outcomes"
+
+  cross_cultural_frameworks:
+    assessment: "demonstrates general awareness of international differences"
+    strengths:
+      - "social model correctly identified as UK foundation"
+      - "person-first language correctly attributed to US"
+      - "Japanese 障害受容 concept properly contextualized"
+    weaknesses:
+      - "underplays nuances within each country"
+      - "disability pride movement in US not mentioned"
+
+key_verified_references:
+  primary_sources:
+    - author: "Dunn & Burcaw"
+      year: 2013
+      topic: "Disability identity and narrative"
+      url: "static1.squarespace.com/Dunn+and+Burcaw+(2013)"
+
+    - author: "Savickas"
+      year: 2005
+      topic: "Career Construction Theory"
+      url: "sciencedirect.com/science/article/abs/pii/S0001879111000509"
+
+    - author: "OHCHR"
+      year: 2006
+      topic: "CRPD"
+      url: "ohchr.org/instruments-mechanisms/instruments/convention-rights-persons-disabilities"
+
+    - author: "Tajima Akiko"
+      year: 2009
+      topic: "障害受容→障害との自由"
+      note: "Japanese podcast reference confirmed"
+
+comparison_with_claude_opus_verification:
+  claude_opus_accuracy_score: "65-70%"
+  chatgpt_assessment: "mostly solid"
+  key_difference:
+    opus_focus: "学術用語の創作を厳しく指摘（Deficit Ledger等）"
+    gpt_focus: "引用の実在性検証（3件の捏造引用特定）"
+  agreement:
+    - "core theoretical framework は正確"
+    - "Yoshida, Bury, Williams は完全に引用可能"
+    - "Geminiの独自解釈・拡大解釈が存在"
+
+implications_for_research_proposal:
+  safe_to_cite:
+    - "WHO/ICF disability definition"
+    - "CRPD Article 3"
+    - "Dunn & Burcaw (2013) narrative identity"
+    - "Savickas (2005) Career Construction Theory"
+    - "Beatrice Wright (1983) acceptance theory"
+    - "UK Social Model (Oliver, UPIAS)"
+    - "Japanese 障害との自由 concept (Tajima 2009)"
+
+  requires_caution:
+    - "Cross-national VR comparisons (oversimplified)"
+    - "Constructivist methods in Japan (less documented)"
+
+  do_not_cite:
+    - "XYZ Disability Institute"
+    - "Smith & John (2018)"
+    - "UK National Disability Acceptance Survey (2021)"
+
+session_conclusion:
+  gpt_verdict: |
+    The Gemini-generated report is fidelity-adequate with respect to
+    current research. It reflects key academic perspectives on narrative
+    and constructivist approaches to disability and generally avoids
+    deprecated theories. Apart from a few questionable references and
+    slight generalizations, it would meet the approval of many scholars
+    in disability studies and rehabilitation psychology.
+
+  combined_verification_insight: |
+    Claude Opus検証（65-70%精度）とChatGPT検証（mostly solid）を
+    総合すると、Geminiレポートの「理論的骨格」は信頼できるが、
+    「学術用語の創作」と「一部引用の捏造」という2種類の問題がある。
+    研究計画書では、検証済み文献のみを使用し、
+    PL/BS/CFメタファー等は「本研究で提案する概念」として位置づける。
+
+fire_culture_note: |
+  3AI（Claude Opus, ChatGPT, Gemini revised）による相互検証が完了。
+  「AIの出力を別のAIが検証する」というメタ構造が、
+  Input Constitutional AIの実践例となっている。
+  記録は燃え尽きず、再燃可能な形で保存された。
+
+metadata:
+  created_by: "Claude Code (Opus 4.5)"
+  created_at: "2025-12-24"
+  source_document: "09_research_proposal/04_references/2025_12_23_Narrative Disability Acceptance Research – Verification Report.pdf"
+  related_files:
+    - "09_research_proposal/04_references/2025_12_23_gemini_report_verification.yaml"
+    - "09_research_proposal/04_references/2025_12_24_gemini_Narrative Disability Acceptance Research.pdf"

@@ -1,0 +1,244 @@
+# ============================================================
+# AI間ハンドオーバー: 2025-12-22 セッション成果
+# 宛先: Claude Web / Gemini / GPT
+# 作成者: Claude Code (Opus 4.5)
+# ============================================================
+
+metadata:
+  date: "2025-12-22"
+  session_time: "09:10 ~ 19:00 JST"
+  created_by: "Claude Code (Opus 4.5)"
+  purpose: "AI間情報共有"
+
+# ============================================================
+# 1. Susanメール送信完了
+# ============================================================
+
+susan_email_sent:
+  status: "SENT (v6)"
+  file: "10_DEAI/01_susan/mail/2025_12_22_susan_reply_draft_v6.md"
+
+  auto_reply_received:
+    susan_out_of_office: "2025-12-22 ~ 2026-01-02"
+    expected_response: "1月2日以降"
+
+  key_content_points:
+    1_employment_passport:
+      description: "厚労省面談エピソード"
+      key_quote: |
+        有識者会議が「パスポートがあることでメリットもデメリットもなく、
+        ないことでもメリットもデメリットもないように」と主張
+      result: "推奨フォーマットに矮小化（何の効力もない書類）"
+      significance: "日本の政策プロセスの構造的問題を示す一次体験エビデンス"
+
+    2_disability_acceptance_hypothesis:
+      description: "障害受容プロセスの欠如仮説"
+      core_insight: |
+        多くの当事者が「自分のユーザーマニュアル」を持たずに就労。
+        ストレングスモデル偏重が、合理的配慮を求める言語を奪う。
+        結果：「特別扱いしろ」と「自分は無価値」の間を揺れる状態（アノミー）
+      soe_answer: "複式簿記メタファーによる自己棚卸しで障害受容を支援"
+
+    3_employability_terminology_gap:
+      japanese_term: "職業準備性 (vocational readiness)"
+      english_term: "Employability"
+      problem: |
+        日本では「エンプロイアビリティ」はカタカナ転写のみ、翻訳なし。
+        職業準備性 = 個人責任のみ。
+        雇用主・システム責任を語る語彙が概念的に欠落。
+      significance: "Susanの4カテゴリー障壁フレームワークが言語化できない理由"
+
+    4_leapfrog_opportunity:
+      analogy: "アフリカ諸国の固定電話→携帯電話飛び越え"
+      application: |
+        日本の30年遅れは、時代遅れシステムの段階的修繕ではなく、
+        現在のリソース（科学的アセスメント、ITプラットフォーム、
+        Susanのフレームワーク）で再構築できる機会
+
+    5_interview_request:
+      topic: "UK Sheltered → Supported Employment移行時の摩擦・抵抗"
+      timing: "大学院合格後"
+
+# ============================================================
+# 2. Susan資料分析：Bridge Academy
+# ============================================================
+
+bridge_academy_analysis:
+  source: "SPI - Job markets v3.pdf (Susan Scott-Parker)"
+  file_created: "10_DEAI/01_susan/analysis/2025_12_22_bridge_academy_vs_japan_analysis.yaml"
+
+  bridge_academy_model:
+    founder: "Pat Romzek (元Cisco上級幹部)"
+    statistics:
+      entry_to_graduation: "94%"
+      graduation_to_certification: "91%"
+      certification_to_employment: "96%"
+    design_principle: "Demand（雇用主需要）から始まる設計"
+    selection_criteria: "態度・志・コミットメント・適性（障害自体は参加資格にならない）"
+
+  yuji_critical_reading:
+    insight: "合理的判断ができる人を前提としたゲーム理論モデル"
+    implication: |
+      Bridge Academyは「合理的選択ができる障害者」向けの成功モデル。
+      しかし「なぜ合理的選択ができないのか」への回答がない。
+      SoEはこのギャップを埋める：
+      「合理的選択ができない」こと自体を環境要因として可視化。
+
+  japan_structural_comparison:
+    - aspect: "参加条件"
+      bridge: "態度・志・コミットメント・適性"
+      japan: "障害者手帳の所持"
+    - aspect: "設計起点"
+      bridge: "雇用主需要（Demand）"
+      japan: "サービス提供（Supply）"
+    - aspect: "成功指標"
+      bridge: "就職率（96%）"
+      japan: "利用者数・稼働率"
+    - aspect: "事業者インセンティブ"
+      bridge: "就職させれば成功"
+      japan: "囲い込めば報酬継続"
+
+# ============================================================
+# 3. 一次体験記録：井笠自立支援協議会
+# ============================================================
+
+firsthand_experience_recorded:
+  context:
+    role: "井笠自立支援協議会 就労部会 部長"
+    location: "岡山県井笠地域"
+
+  proposal:
+    title: "共同受注を通じた適性スキル測定システム"
+    mechanism:
+      - "事業所の所属はそのまま維持"
+      - "当事者の適性スキルを伸ばす受注業務に「施設外就労」として派遣"
+      - "各場所に集まってスキルの伸び幅を測定"
+      - "職業準備性を事業所間で共有"
+    implementation: "実際に数回共同受注を実施"
+
+  failure_reason: |
+    各事業者は、利用当事者同士が情報交換をし自律的行動をすると
+    事業所を移籍する可能性を危惧して継続しなかった。
+
+  structural_cause: "報酬設計が「囲い込み」にインセンティブを与えている"
+
+  significance:
+    for_research: "Bridge Academy型アプローチを日本で試みた場合の構造的障壁の実体験エビデンス"
+    for_soe: "事業者が当事者の自律的成長を阻害する構造の可視化"
+
+# ============================================================
+# 4. 用語研究：障害受容
+# ============================================================
+
+terminology_research:
+  topic: "障害受容"
+
+  english_equivalents:
+    acceptance_of_disability:
+      nuance: "最終段階、到達点"
+    adjustment_to_disability:
+      nuance: "動的プロセス全体"
+
+  theoretical_model:
+    name: "Antonak & Livneh (1991) 5段階モデル"
+    stages: ["Denial", "Anger", "Bargaining", "Depression", "Acceptance"]
+    origin: "Kübler-Ross死の受容モデルからの借用"
+
+  soe_critique: |
+    この「受容」概念自体が、障害を個人が乗り越えるべき課題として位置づけ。
+    環境側の責任（社会モデル）が不在。
+
+  connection_to_susan_email: |
+    v6メールで「disability acceptance process」として言及。
+    「ユーザーマニュアル」の欠如として問題化。
+
+# ============================================================
+# 5. SoEとBridge Academyの位置づけ
+# ============================================================
+
+soe_bridge_academy_positioning:
+  complementarity:
+    bridge_academy: "合理的判断可能な障害者を雇用主につなぐ最適化モデル"
+    soe: "合理的判断困難な人の態度自体を環境負債として可視化するモデル"
+
+  target_population:
+    bridge_academy: "態度・志・コミットメント・適性で選抜可能な人"
+    soe: "全ての人（judgment困難者含む）"
+
+  susans_question: "なぜ特別扱いを期待するのか？"
+  soe_answer: |
+    その「期待」は個人特性ではなく、善意の支援と制度設計の
+    意図せぬ結果として形成された環境要因である。
+
+  strategic_note: |
+    今回のメールではこの批判的分析には触れず。
+    補完関係を強調するに留め、詳細分析は将来のインタビュー時に。
+
+# ============================================================
+# 6. 残タスク
+# ============================================================
+
+pending_tasks:
+  priority_1:
+    task: "大学院提出書類の確認"
+    deadline: "2026-01-09 ~ 01-23（出願期間）"
+    status: "未着手"
+
+  priority_2:
+    task: "Susanからの返信待ち"
+    expected: "2026-01-02以降"
+
+  priority_3:
+    task: "研究計画書v2.9への統合"
+    elements:
+      - "昨日の3AI Deep Research成果（アノミー/ヒュブリス用語更新）"
+      - "今日のBridge Academy分析"
+      - "井笠自立支援協議会の一次体験"
+
+# ============================================================
+# 7. 理論的接続メモ
+# ============================================================
+
+theoretical_connections:
+
+  disability_confident:
+    definition: "雇用主が障害者雇用に自信を持つ状態"
+    soe_connection: "雇用主側のケイパビリティ構築としてフレーム可能"
+    uk_government_scheme: "UK政府の企業認証制度名"
+
+  talent_pipeline:
+    definition: "求職競争より前の段階で雇用主と当事者をつなぐ仕組み"
+    japan_absence: "日本には概念自体が欠如"
+    japan_reality: "事業所内で完結（囲い込み構造）"
+
+  push_vs_pull:
+    push: "求職者を準備する（日本の主流）"
+    pull: "雇用主が適切な人材を引き寄せる"
+    susan_framework: "PUSH & PULLのバランスが重要"
+
+# ============================================================
+# 8. 健康記録
+# ============================================================
+
+health_record:
+  blood_pressure: "118/80"
+  status: "良好"
+
+# ============================================================
+# 9. 出願までのカウントダウン
+# ============================================================
+
+deadline_countdown:
+  application_period: "2026-01-09 ~ 2026-01-23"
+  days_remaining: 18
+
+# ============================================================
+# 署名
+# ============================================================
+
+signature:
+  recorded_by: "Claude Code (Opus 4.5)"
+  timestamp: "2025-12-22 19:00 JST"
+  fire_culture_note: |
+    記録されなかった問いは燃え尽きたものと見なされる。
+    記録されることでのみ、問いは再燃可能となる。

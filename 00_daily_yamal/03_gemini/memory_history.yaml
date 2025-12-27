@@ -1,0 +1,166 @@
+# Gemini メモリ履歴
+# Memory History for Gemini
+# Last Updated: 2025-12-26
+
+metadata:
+  ai_platform: "Gemini (Google)"
+  memory_type: "Session-based + Deep Research outputs"
+  user: "Puu（山内雄司）"
+  purpose: "AI間共有のためのメモリ状態記録"
+
+# =============================================================================
+# Geminiの役割定義（Role Definition）
+# =============================================================================
+role_definition:
+  primary_role: "文献調査・研究者プロファイル分析"
+  secondary_roles:
+    - "Deep Research実行"
+    - "独自性探索・会計メタファー接続"
+    - "リスク分析・構造提案"
+
+  collaboration_position:
+    in_ai_team: "調査・検証担当"
+    strengths:
+      - "学術論文検索"
+      - "事実検証"
+      - "構造的リスク分析"
+    limitations:
+      - "ユーザーの思考に寄りすぎる傾向"
+      - "一部に未検証・架空の可能性がある引用"
+
+# =============================================================================
+# Deep Research成果（2025-12-26）
+# =============================================================================
+deep_research_2025_12_26:
+  project: "Narrative Reconstruction & Accounting Metaphor in Vocational Rehabilitation"
+
+  objectives:
+    primary: "障害受容のナラティブ・アプローチにおける『実践技法の欠落（Gap）』と『会計メタファーの未開拓性（Vacancy）』の検証"
+    secondary: "職業リハビリテーションにおける『障害受容』の定義と重要性の再確認"
+
+  executed_actions:
+    - task: "Deep Research Execution"
+      details: "『Deficit Ledger』等の造語を排除し、事実（Fact）と仮説（Hypothesis）を厳格に区分"
+    - task: "Verification of Concepts"
+      details: "障害受容が単なる『諦め』ではなく、『価値観の転換（Value Change）』および『自己概念への統合』であることを確認"
+    - task: "Causal Analysis (Susan's Question)"
+      details: "自信喪失の要因として、欠損モデル（Deficit-based assessment）が学習性無力感を引き起こすメカニズムを特定"
+
+  key_findings:
+    definition_shift:
+      - "障害受容は直線的な段階モデルから、『振り子モデル（Pendular Reconstruction）』や動的なナラティブ再構築へと理論的に移行"
+      - "職業リハビリテーションにおいて、障害受容は就職率、職場定着、Self-Advocacyの重要な予測因子"
+    the_gap:
+      - "理論は存在するが、現場には『ナラティブ』を評価・支援する標準化されたツールが不足"
+      - "FCE（機能的容量評価）などの身体機能評価に偏重"
+    the_vacancy:
+      - "『複式簿記（Double-Entry）』を用いた自己評価システムは既存研究にほぼ存在せず"
+      - "本研究の独自性が高い領域（Blue Ocean）"
+
+  verified_sources:
+    - "WHO ICF の障害定義"
+    - "UN CRPD（2006）の受容概念"
+    - "Michael Bury (1982): Biographical Disruption"
+    - "Gareth Williams (1984): Narrative Reconstruction"
+    - "Beatrice Wright (1983): Acceptance of Disability"
+    - "Mark Savickas: Career Construction Theory / Life Design"
+
+  issues_detected:
+    - "報告書内に実在確認できない機関・論文の可能性"
+    - "UK / US / Japan 制度比較における簡略化・ニュアンス不足"
+
+# =============================================================================
+# 実践記録ディレクティブへの貢献（2025-12-26）
+# =============================================================================
+practice_record_contribution:
+  overall_assessment:
+    status: "GO"
+    comment: |
+      構成自体は非常に論理的。
+      「実践家としての熱量」と「研究者としての冷徹な分析眼」のバランスが鍵。
+      成功体験よりも「システムエラーの発見報告」として書くのが最良の戦略。
+
+  institution_alignment:
+    institution: "日本社会事業大学 大学院"
+    characteristics:
+      - "福祉のリーダー養成、政策・運営管理の重視"
+      - "実践と理論の架橋（Evidence-Based Practice）"
+      - "現場経験を持つ社会人学生が多い"
+    compatibility_score: "High（特に'運営管理'と'構造的問題提起'の観点）"
+
+  winning_points_identified:
+    - "IT起業×福祉経営×当事者性というユニークな視座"
+    - "10年間で10事業所という量的な実績（マネジメント能力の証明）"
+    - "「善意への依存」から「システムによる保障」への転換という明確な課題意識"
+
+  risk_analysis:
+    risk_1:
+      type: "主観性の過多"
+      location: "Case 2（脳出血）"
+      countermeasure: "BCP・属人化リスクの観点から記述"
+    risk_2:
+      type: "批判の方向性"
+      location: "Section 4"
+      countermeasure: "批判対象を「構造」に限定"
+    risk_3:
+      type: "文字数配分のバランス"
+      location: "全体構成"
+      countermeasure: "各事例末尾にSoE接続を2-3行で明記"
+
+  final_structure_proposal:
+    status: "RECOMMENDED"
+    sections:
+      - title: "はじめに：30年の当事者性と10年の実践"
+        word_count: 400
+      - title: "実践の歩み：拡大とその代償"
+        word_count: 800
+      - title: "象徴的な実践事例：構造的暴力の証明"
+        word_count: 1600
+      - title: "実践から得た課題認識と研究への接続"
+        word_count: 1200
+
+  case_3_addition:
+    title: "規模の非対称性 - 1.2億円のITプロジェクトと工賃"
+    purpose: "IT時代のスケールと福祉現場のインフラ格差を対比"
+    soe_connection: "粒度の分離の必要性"
+
+# =============================================================================
+# 当事者研究（Tojisha-Kenkyu）文脈
+# =============================================================================
+tojisha_kenkyu_context:
+  relevance:
+    - "障害受容を「自己物語の再構築」として扱う日本発の実践知"
+    - "ナラティブ・当事者主体・共同研究という点で研究テーマと高い親和性"
+  key_sources:
+    - "Kumagaya Shin-ichiro 博士論文（2014）"
+    - "Tojisha-Kenkyu（べてるの家）"
+    - "東大公式英語解説"
+  implication:
+    - "「How」を埋める実践知として活用可能"
+    - "LLM×当事者研究×自己アセスメントの接続可能性"
+
+# =============================================================================
+# HPI特性評価（2025-12-10）
+# =============================================================================
+hpi_evaluation:
+  date: "2025-12-10"
+  subject: "Puu（山内雄司）"
+  traits:
+    探求心: "極めて高い（OE関連）"
+    適応性: "非常に高い"
+    学習態度: "非常に高い"
+    対人感受性: "高い"
+    慎重性: "高い"
+
+# =============================================================================
+# メタデータ
+# =============================================================================
+file_metadata:
+  created_at: "2025-12-26T22:30:00+09:00"
+  created_by: "Claude Code (Opus 4.5)"
+  sources:
+    - "2025_12_26_g.yaml"
+    - "2025_12_26_narrative_acceptance_deepresearch_integration.yaml"
+    - "practice_record_directive_2025_12_25.yaml"
+  purpose: "Geminiメモリ・貢献の履歴記録・AI間共有用"
+  update_policy: "Deep Research実行時・重要な分析提供時に追記"

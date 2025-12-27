@@ -1,0 +1,29 @@
+session_report:
+  project: "Narrative Reconstruction & Accounting Metaphor in Vocational Rehabilitation"
+  researcher: "Gemini (Assistant)"
+  date: "2025-12-26"
+
+  objectives:
+    primary: "障害受容のナラティブ・アプローチにおける『実践技法の欠落（Gap）』と『会計メタファーの未開拓性（Vacancy）』の検証"
+    secondary: "職業リハビリテーションにおける『障害受容』の定義と重要性の再確認"
+
+  executed_actions:
+    - task: "Deep Research Execution"
+      details: "『Deficit Ledger』等の造語を排除し、事実（Fact）と仮説（Hypothesis）を厳格に区分した上で、Bury, Williams, Yoshida, Savickasらの理論と現状のVRシステム（FCE等）の乖離を調査 [1]。"
+    - task: "Verification of Concepts"
+      details: "障害受容が単なる『諦め』ではなく、『価値観の転換（Value Change）』および『自己概念への統合』であることをWrightの理論等に基づき確認。"
+    - task: "Causal Analysis (Susan's Question)"
+      details: "自信喪失の要因として、欠損モデル（Deficit-based assessment）が学習性無力感や『特別な配慮（Special Treatment）』への恐怖を引き起こすメカニズムを特定 [[5]]。"
+
+  key_findings:
+    definition_shift:
+      - "障害受容は直線的な段階モデルから、行ったり来たりする『振り子モデル（Pendular Reconstruction）』や動的なナラティブ再構築へと理論的に移行している [2]。"
+      - "職業リハビリテーションにおいて、障害受容は就職率、職場定着、および合理的配慮を要求する能力（Self-Advocacy）の重要な予測因子である。"
+    the_gap:
+      - "理論は存在するが、現場には『ナラティブ』を評価・支援する標準化されたツールが不足しており、FCE（機能的容量評価）などの身体機能評価に偏重している [3, 4]。"
+    the_vacancy:
+      - "『複式簿記（Double-Entry）』を用いた自己評価システムは既存研究にほぼ存在せず、本研究の独自性が高い領域（Blue Ocean）であることが示唆された [1]。"
+
+  next_steps:
+    - "『ナラティブ資産対照表（Narrative Asset Balance Sheet）』の具体的な項目開発"
+    - "当事者研究（Tojisha-kenkyu）における『弱さの情報公開』と会計メタファーの接続点の深掘り"

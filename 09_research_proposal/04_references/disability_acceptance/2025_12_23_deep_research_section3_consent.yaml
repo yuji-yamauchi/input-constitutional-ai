@@ -1,0 +1,228 @@
+deep_research_section_3:
+  metadata:
+    date: "2025-12-23"
+    section: "3 of 6"
+    title: "同意の有効性と選択肢の認識（The Consent）"
+    focus: "未必の故意証明スキームの核心部分"
+    
+  theoretical_core:
+    puu_insight: |
+      「深いでしょ。未必の故意の証明のスキームだよ。」
+      
+      従順な当事者は「障害受容ができている」のではなく、
+      そもそも選択肢があることすら知らない。
+      知識や行動による経験値が制限されているため、
+      「別の可能性」という概念自体が欠落している。
+      
+      この状態での「同意」は法的・倫理的に有効か？
+      有効でないなら、それを知りながら放置することは
+      「未必の故意」に該当するのではないか？
+    
+    dolus_eventualis_connection: |
+      未必の故意（Dolus Eventualis）:
+      結果の発生を確実に認識していなくても、
+      「そうなるかもしれない」と認識しながら行為を続けた場合、
+      故意として法的責任が問われる。
+      
+      適用:
+      - 支援者・事業者・行政は「選択肢を知らない状態での同意」が
+        有効でない可能性を認識しうる
+      - その状態を放置し、形式的同意を取り続けることは
+        未必の故意による搾取となりうる
+
+  research_objective: |
+    Puuの仮説「従順性＝選択肢の知識欠如」の学術的裏付けを探り、
+    「選択肢を知らない状態での同意」が法的・倫理的にどう評価されるかを調査する。
+    これは強制労働構造との近似性を証明する核心部分である。
+
+  strict_constraints:
+    - "確認できない情報は「確認できなかった」と明記"
+    - "一次情報の著者・年・タイトル・ページを明記"
+    - "Puuの仮説は「検証対象」であり「確認済み事実」ではない"
+    - "「Deficit Ledger」「Narrative Asset」等の未確認用語は使用禁止"
+
+  search_queries:
+    
+    consent_validity:
+      primary:
+        - "informed consent disability legal validity requirements"
+        - "consent capacity alternatives awareness coercion"
+        - "valid consent knowledge of options choice"
+        - "consent without alternatives forced labor"
+      
+      legal_philosophical:
+        - "undue influence disability consent contract law"
+        - "duress definition lack of alternatives legal"
+        - "consent validity philosophy autonomy information"
+        - "Kantian consent rationality full information"
+    
+    capability_approach:
+      primary:
+        - "capability approach Sen Nussbaum choice freedom disability"
+        - "substantive freedom awareness of options capabilities"
+        - "adaptive preferences disability welfare"
+        - "capability deprivation information knowledge"
+      
+      specific:
+        - "Nussbaum central capabilities practical reason affiliation"
+        - "Sen agency freedom opportunity freedom"
+        - "adaptive preferences Elster sour grapes disability"
+    
+    learned_helplessness:
+      primary:
+        - "learned helplessness Seligman disability compliance"
+        - "learned helplessness vocational rehabilitation employment"
+        - "helplessness perceived control choice disability"
+        - "behavioral repertoire restriction disability"
+      
+      outcome_related:
+        - "learned helplessness employment outcomes"
+        - "perceived choice control job satisfaction disability"
+        - "compliance passivity disability long-term outcomes"
+    
+    crpd_article_12:
+      primary:
+        - "CRPD Article 12 legal capacity supported decision making"
+        - "CRPD Article 12 substituted decision making criticism"
+        - "supported decision making implementation employment"
+        - "legal capacity disability UN Committee recommendations"
+      
+      implementation:
+        - "supported decision making information provision"
+        - "CRPD Article 12 will preferences interpretation"
+        - "decision making support alternatives presentation"
+
+  key_questions:
+    
+    legal_validity:
+      - "法的に「有効な同意」の要件は何か？"
+      - "「選択肢を知らない」状態での同意は有効と見なされるか？"
+      - "契約法・労働法における「不当威圧（undue influence）」の定義は？"
+      - "「選択肢がない」状態はduress（強迫）に該当するか？"
+    
+    philosophical_ethical:
+      - "Kantの同意論では「完全な情報」はどう扱われるか？"
+      - "自律（autonomy）の条件として「選択肢の認識」は必須か？"
+      - "adaptive preferences（適応的選好）は本人の「真の」意思か？"
+    
+    capability_empirical:
+      - "ケイパビリティ・アプローチは「選択肢の認識」をどう扱うか？"
+      - "Senの「agency freedom」と「opportunity freedom」の区別は？"
+      - "Nussbaumの「practical reason」capability は選択肢認識を含むか？"
+    
+    psychological:
+      - "学習性無力感は同意の有効性にどう影響するか？"
+      - "行動レパートリーの制限と選択肢認識の関係は？"
+      - "「従順性」は心理学的にどう評価されるか？"
+    
+    crpd_application:
+      - "CRPD第12条の「支援付き意思決定」は選択肢提示を含むか？"
+      - "「代行決定」と「支援付き意思決定」の境界線は？"
+      - "選択肢を示さない「支援」は第12条違反か？"
+
+  expected_output:
+    
+    part_1_legal_framework:
+      title: "同意の有効性：法的要件"
+      content:
+        - "Informed consentの構成要件（情報提供・自発性・能力）"
+        - "「選択肢の認識」が要件に含まれるか"
+        - "契約法・労働法における判例・学説"
+        - "強制労働定義との接続点"
+    
+    part_2_philosophical_basis:
+      title: "同意の有効性：哲学的・倫理学的根拠"
+      content:
+        - "自律（autonomy）の条件としての情報"
+        - "adaptive preferencesの問題"
+        - "Kantian, Rawlsianアプローチからの評価"
+    
+    part_3_capability_connection:
+      title: "ケイパビリティ・アプローチとの接続"
+      content:
+        - "Sen/Nussbaumの選択・自由概念"
+        - "「選択肢を知らない」状態のcapability分析"
+        - "障害と選択肢制限の関係"
+    
+    part_4_psychological_evidence:
+      title: "心理学的証拠"
+      content:
+        - "学習性無力感と同意の関係"
+        - "行動レパートリーと選択肢認識"
+        - "従順性の長期的アウトカム"
+    
+    part_5_crpd_implementation:
+      title: "CRPD第12条と実装"
+      content:
+        - "支援付き意思決定の国際基準"
+        - "選択肢提示の義務"
+        - "日本の実装状況と課題"
+    
+    synthesis:
+      title: "統合：未必の故意証明への含意"
+      content: |
+        以下の形式で整理：
+        
+        IF: 「選択肢を知らない状態での同意」が法的・倫理的に無効
+        AND: 支援者・事業者・行政がこの無効性を認識しうる
+        THEN: 形式的同意を取り続けることは「未必の故意」に該当
+        
+        この論理構造を支持/反証する文献の整理
+
+  connection_to_puu_framework:
+    
+    plbscf_interpretation: |
+      従順な当事者のB/S（貸借対照表）：
+      
+      【見かけの資産】
+      - 従順性（compliance）
+      - 「扱いやすさ」
+      
+      【隠れた負債】
+      - 選択肢の知識欠如（経験値の制限）
+      - 行動レパートリーの貧困
+      - 「別の可能性」という概念自体の欠落
+      
+      【簿外債務】
+      - 将来選択を迫られたときの意思決定不能
+      - 環境変化への適応困難
+      - 搾取されても気づけないリスク
+    
+    soe_diagnostic_axis: |
+      SoEの診断基準への反映：
+      
+      「有効な同意が取れているか」の判定：
+      1. 選択肢が提示されているか
+      2. 選択肢を理解できる形で説明されているか
+      3. 選択しない自由も保障されているか
+      4. 選択の結果についての情報があるか
+      
+      いずれかが欠けていれば「搾取リスク」と判定
+
+  caution_notes:
+    academic_expression: |
+      「未必の故意」という法的概念を使う場合、
+      刑法・民法それぞれの文脈での定義を確認する必要がある。
+      学術的裏付けがない段階では：
+      - 「同意の有効性の問題」
+      - 「認識可能な構造的問題の放置」
+      - 「情報非対称性の悪用」
+      等の表現を使用する。
+    
+    verification_stance: |
+      Puuの仮説を「確認する」のではなく「検証する」姿勢で。
+      反証となる文献も同等に重要。
+      例：「選択肢を知らなくても有効な同意は成立する」という立場の文献も収集。
+
+  metadata:
+    target_folder: "08_research_proposal/01_planning_sessions/"
+    filename: "2025_12_23_deep_research_section3_consent.yaml"
+    related_files:
+      - "2025_12_23_deep_research_directive_v2.yaml"
+      - "2025_12_23_puu_hypotheses_for_deep_research.yaml"
+    
+    significance: |
+      本セクションは「未必の故意証明スキーム」の核心部分。
+      「選択肢を知らない状態での同意は無効」が証明できれば、
+      福祉的就労における形式的同意の問題が明確になり、
+      SoEの診断軸の学術的根拠が確立される。

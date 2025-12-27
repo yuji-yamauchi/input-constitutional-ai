@@ -1,0 +1,258 @@
+project_structure:
+  metadata:
+    date: "2025-12-24"
+    purpose: "AI間共有用 - input-constitutional-ai プロジェクト全体構造"
+    created_by: "Claude Code (Opus 4.5)"
+    target_audience:
+      - "Claude Web (Sonnet)"
+      - "ChatGPT (GPT-4)"
+      - "Gemini"
+    project_name: "Input Constitutional AI"
+    researcher: "山内雄司（Puu）"
+
+  root_path: "C:/Users/USER/Documents/GitHub/input-constitutional-ai/"
+
+  directories:
+    00_daily_yamal:
+      definition_ja: "日次セッション記録（火文化圏に基づくYAML構造化記録）"
+      definition_en: "Daily session records following Fire Culture principles"
+      philosophy: "記録されなかった問いは燃え尽きたものと見なされる"
+      subdirectories:
+        01_Cloude:
+          description: "Claude Web版セッション記録"
+          naming: "YYYY_MM_DD_*.yaml"
+        02_GPT:
+          description: "ChatGPTセッション記録"
+          naming: "YYYY_MM_DD_g{N}.yaml"
+        03_gemini:
+          description: "Geminiセッション記録"
+          naming: "YYYY_MM_DD_*.yaml"
+        04_VSClaude:
+          description: "Claude Code（VSCode）セッション記録"
+          naming: "YYYY_MM_DD_c{N}.yaml"
+
+    01_philosophy:
+      definition_ja: "SoE哲学・存在論・認知構造"
+      definition_en: "Philosophy, ontology, and cognitive structures underlying SoE"
+      scope:
+        - "Three-Layer Model（理念・哲学・認知構造）"
+        - "ケイパビリティ・アプローチ"
+        - "火文化圏思想"
+      subdirectories:
+        01_capabilities:
+          description: "ケイパビリティ理論関連"
+        99.daily:
+          description: "日次哲学的考察"
+
+    02_social_system:
+      definition_ja: "社会システム・制度設計"
+      definition_en: "Social systems and institutional design"
+      scope:
+        - "福祉制度分析"
+        - "雇用政策"
+        - "地域社会システム"
+
+    03_ai_rights:
+      definition_ja: "AI倫理・CRPD・データ主権"
+      definition_en: "AI ethics, CRPD alignment, and data sovereignty"
+      scope:
+        - "Input Constitutional AI概念"
+        - "記録作成段階での権利保障"
+        - "ICF/ISOとの整合性"
+      subdirectories:
+        icf_code_reference:
+          description: "ICF（国際生活機能分類）コード参照"
+        iso_reference:
+          description: "ISO規格参照"
+
+    04_SoE:
+      definition_ja: "SoE（Service of Empowerment / Service or Exploitation）中核概念"
+      definition_en: "Core SoE framework - distinguishing empowerment from exploitation"
+      scope:
+        - "Four-Pillar Model実装フレーム"
+        - "権利回復"
+        - "支援者倫理"
+        - "地域人材育成"
+        - "科学的アセスメント"
+
+    05_practice:
+      definition_ja: "実践記録・事例"
+      definition_en: "Practice records and case studies"
+      scope:
+        - "10年間の福祉事業経験"
+        - "10事業所立ち上げ記録"
+        - "100名支援の知見"
+
+    06_research_process:
+      definition_ja: "研究プロセス管理"
+      definition_en: "Research process management"
+      subdirectories:
+        01_literature_review:
+          description: "文献レビュー"
+        02_conceptual_framework:
+          description: "概念フレームワーク"
+        03_methodology:
+          description: "研究方法論"
+        04_thesis_drafts:
+          description: "論文ドラフト"
+
+    07_integration:
+      definition_ja: "統合ドキュメント（旧）"
+      definition_en: "Integration documents (legacy)"
+      subdirectories:
+        iso_soe_mapping:
+          description: "ISO規格とSoEのマッピング"
+
+    07_researcher_context:
+      definition_ja: "研究者コンテキスト"
+      definition_en: "Researcher context and background"
+      scope:
+        - "山内雄司プロファイル"
+        - "ADHD/OE特性"
+        - "福祉事業経験"
+
+    08_integration:
+      definition_ja: "統合ドキュメント（現行）"
+      definition_en: "Current integration documents"
+      note: "大規模ファイルあり - 部分読み込み推奨"
+
+    09_research_proposal:
+      definition_ja: "研究計画書（日本福祉大学院出願用）"
+      definition_en: "Research proposal for Japan Welfare University graduate school"
+      deadline: "2026-01-09 ~ 01-23（消印有効）"
+      subdirectories:
+        00_README.md:
+          description: "研究計画書README"
+        01_planning_sessions:
+          description: "計画セッション記録"
+          key_file: "research_plan_v2.8.md"
+        02_outline:
+          description: "アウトライン"
+        03_main_proposal:
+          description: "本文"
+        04_references:
+          description: "参考文献（カテゴリ別整理済み）"
+          subdirectories:
+            CRPD:
+              description: "障害者権利条約関連"
+            disability_acceptance:
+              description: "障害受容研究"
+            evidence_based_practices:
+              description: "EBP（ACT, IPS, IMR, FPE等）"
+            fidelity_scales:
+              description: "フィデリティ尺度（DACTS, TMACT）"
+            researchers:
+              description: "研究者プロファイル"
+            rights_wealth_theory:
+              description: "権利・富の理論"
+        05_ethics_dialogue:
+          description: "倫理対話記録"
+        05_meeting_records:
+          description: "ミーティング記録"
+        06_research_process:
+          description: "研究プロセス"
+        references:
+          description: "参考文献（旧フォルダ）"
+
+    10_DEAI:
+      definition_ja: "DEAI（Disability Empowerment Advocacy International）協働"
+      definition_en: "DEAI collaboration - Susan Scott-Parker OBE"
+      subdirectories:
+        01_susan:
+          description: "Susan Scott-Parker関連資料"
+
+    11_MoH:
+      definition_ja: "厚生労働省関連資料"
+      definition_en: "Ministry of Health, Labour and Welfare materials"
+      subdirectories:
+        PDF:
+          description: "PDF資料"
+
+    90_pre:
+      definition_ja: "プレ資料・アーカイブ"
+      definition_en: "Pre-project materials and archives"
+      subdirectories:
+        GitHub-archive:
+          description: "GitHubアーカイブ"
+
+    outputs:
+      definition_ja: "AI間共有出力ファイル"
+      definition_en: "Shared output files between AI systems"
+      subdirectories:
+        hallucination_reports:
+          description: "ハルシネーション検証レポート"
+
+    .claude:
+      definition_ja: "Claude Code設定"
+      definition_en: "Claude Code configuration"
+      key_files:
+        - "CLAUDE.md - プロジェクト指示書"
+        - "rules/token-efficiency.md - トークン効率化ルール"
+        - "rules/yaml-recording.md - YAML記録ルール"
+
+  ai_collaboration_roles:
+    claude_code:
+      role: "技術管理・ファイル操作・バージョン管理"
+      primary_folders:
+        - "00_daily_yamal/04_VSClaude/"
+        - "09_research_proposal/"
+        - ".claude/"
+    claude_web:
+      role: "研究計画書本文執筆・ブラッシュアップ"
+      primary_folders:
+        - "00_daily_yamal/01_Cloude/"
+        - "09_research_proposal/03_main_proposal/"
+    chatgpt:
+      role: "理論的探索・概念発掘・批判的検討"
+      primary_folders:
+        - "00_daily_yamal/02_GPT/"
+        - "01_philosophy/"
+        - "04_SoE/"
+    gemini:
+      role: "文献調査・研究者プロファイル分析"
+      primary_folders:
+        - "00_daily_yamal/03_gemini/"
+        - "09_research_proposal/04_references/"
+
+  key_concepts:
+    input_constitutional_ai:
+      definition: "記録作成段階での権利保障 - 記録が生成される時点で当事者の権利を組み込む"
+      innovation: "従来の「出力後の監査」ではなく「入力時の憲法的保障」"
+    soe:
+      full_name: "Service of Empowerment / Service or Exploitation"
+      question: "この支援はエンパワメントか、それとも搾取か？"
+    three_layer_model:
+      layers:
+        - "理念（Philosophy）"
+        - "哲学（Ethics）"
+        - "認知構造（Cognitive Structure）"
+    four_pillar_model:
+      pillars:
+        - "権利回復（Rights Recovery）"
+        - "支援者倫理（Supporter Ethics）"
+        - "地域人材育成（Community Capacity Building）"
+        - "科学的アセスメント（Scientific Assessment）"
+    fire_culture:
+      principle: "記録されなかった問いは燃え尽きたものと見なされる"
+      implication: "記録することで問いは再燃可能となる"
+
+  token_efficiency_guidelines:
+    for_all_ai:
+      - "大きなファイルは段階的に読む（metadata → 必要部分のみ）"
+      - "Grep/Globで事前フィルタリングしてからRead"
+      - "08_integrationは部分読み込みのみ許可"
+    consumption_estimates:
+      grep_glob: "2-3%"
+      yaml_500_lines: "5%"
+      yaml_1000_lines: "10%"
+      yaml_3000_lines: "25%"
+
+fire_culture_note: |
+  このプロジェクト構造は、Input Constitutional AIの実践例でもある。
+  各AIが適切なフォルダを参照し、記録を残すことで、
+  研究の継続性と透明性を担保している。
+
+metadata:
+  created_at: "2025-12-24T18:50:00+09:00"
+  created_by: "Claude Code (Opus 4.5)"
+  version: "1.0"

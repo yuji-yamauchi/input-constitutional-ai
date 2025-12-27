@@ -1,0 +1,734 @@
+practice_record_directive:
+  metadata:
+    date: "2025-12-25"
+    purpose: "日本社会事業大学 大学院出願用 実践記録作成指示"
+    created_by: "Claude Code (Opus 4.5)"
+    target_ai:
+      - "Claude Web (Sonnet)"
+      - "ChatGPT (GPT-4)"
+      - "Gemini"
+
+  document_requirements:
+    institution: "日本社会事業大学 大学院"
+    program: "社会福祉学研究科"
+    document_type: "実践記録"
+    format: "A4版"
+    word_count: "4,000字程度"
+    copies: "4部（原本1部＋複写3部）"
+    requirement: "2年以上の現場経験を踏まえた社会福祉等の実践記録"
+    note: "氏名明記、参考資料添付可"
+
+  institution_alignment:
+    source: "Gemini Analysis (2025-12-26)"
+    institution_characteristics:
+      - "福祉のリーダー養成、政策・運営管理の重視"
+      - "実践と理論の架橋（Evidence-Based Practice）"
+      - "現場経験を持つ社会人学生が多い"
+    compatibility_score: "High（特に'運営管理'と'構造的問題提起'の観点）"
+    winning_points:
+      - "IT起業×福祉経営×当事者性というユニークな視座"
+      - "10年間で10事業所という量的な実績（マネジメント能力の証明）"
+      - "「善意への依存」から「システムによる保障」への転換という明確な課題意識"
+    strategic_positioning: |
+      成功体験よりも「システムエラーの発見報告」として書くのが最良の戦略。
+      「失敗（破産、閉所）を構造的知見に昇華している点」が山内の強み。
+
+  author_profile:
+    name: "山内雄司"
+    age: 52
+    welfare_experience: "10年（2012年〜現在）"
+    facilities_established: 10
+    facility_breakdown:
+      就労継続支援B型: 6
+      就労移行支援: 2
+      多機能型: 2
+    users_supported: "約100名"
+    max_management: "5事業所・35名スタッフ・100名利用者"
+    qualifications:
+      - "サービス管理責任者（実践研修修了 2024年7月）"
+      - "ISO27001構築取得（3法人）"
+    current_status: "研究活動専念（SoE理論構築）"
+    characteristics:
+      - "支援者かつ当事者（ADHD、両耳難聴、脳出血後遺症）"
+      - "IT起業・破産からの転身"
+      - "2023年脳出血で自身の事業所閉所経験"
+
+  practical_experience_timeline:
+    phase_1_entry:
+      period: "2012年冬〜2013年"
+      context: "IT起業破産後、無給で福祉に従事"
+      facilities:
+        - "①就労継続支援B型『はれの国』（岡山市）- 立ち上げ支援"
+        - "②就労継続支援B型ひだまり（愛媛県今治市）- 設立支援"
+      key_learning: "ゼロからの事業所立ち上げプロセス"
+
+    phase_2_expansion:
+      period: "2013年〜2015年"
+      organization: "チャレンジド尾道"
+      position: "事務局長"
+      facilities:
+        - "③就労継続支援B型カイト御調"
+        - "④就労継続支援B型カイト世羅"
+        - "⑤多機能型（就B・移行支援）カイト尾道"
+        - "⑥就労継続支援B型カイト西条"
+        - "⑦就労継続支援B型カイト今治"
+      scale: "5事業所・利用者約100名・スタッフ約35名"
+      achievements:
+        - "広域展開（岡山・広島・愛媛3県）"
+        - "尾道ケーブルテレビ報道"
+      media_url: "https://www.youtube.com/watch?v=e7X70PsGuLI"
+      key_learning: "組織マネジメントと品質管理の限界"
+
+    phase_3_deepening:
+      period: "2016年〜2021年5月"
+      organization: "一般社団法人アンマー"
+      position: "事務局長"
+      facility: "⑧就労継続支援B型→多機能型シェル"
+      regional_roles:
+        - "井笠自立支援協議会就労部会責任者"
+        - "岡山県セルプセンター営業責任者"
+        - "岡山県農福連携推進担当"
+      external_projects:
+        - "社会福祉協議会（年商40億）DX推進事業受託"
+        - "パソコン100台入替（予算1,000万円）"
+        - "Teams導入"
+      shared_project: "⑨就労移行支援ACT01（川崎市）- 資金調達3,000万円"
+      ending: "福祉事業責任者を外され退職"
+      key_learning: "地域連携と組織内政治の複雑性"
+
+    phase_4_independence:
+      period: "2021年7月〜2023年11月"
+      organization: "合同会社DUG研究所（自身で設立）"
+      facility: "⑩就労移行支援コーリングサポ笠岡"
+      role: "代表社員・管理者・サービス管理責任者"
+      crisis: "2023年9月 コロナ感染→左前頭葉脳出血"
+      decision: "回復見通し立たず閉所決断"
+      aftermath: "閉所後のサポート受け皿として自助会設立"
+      key_learning: "個人依存システムの脆弱性を身をもって経験"
+
+    phase_5_transition_support:
+      period: "2024年5月〜12月"
+      organization: "一般社団法人クロスファーム"
+      facility: "就労継続支援A型→B型クロスファーム東岡山"
+      role: "管理者・サービス管理責任者"
+      crisis_response:
+        users_affected: 45
+        tasks_completed:
+          - "45名分の会社都合書類整備"
+          - "35名分のB型移行受給者証申請"
+          - "個別支援計画の移行対応"
+      key_learning: "制度変更時の当事者保護の実務"
+
+  symbolic_cases_for_record:
+    plot_purpose: "事例を通じて構造的課題（SoEの必要性）を立証する"
+
+    case_1:
+      title: "制度変更と大量解雇の狭間で"
+      subtitle: "Legal but Unethical（合法的権利侵害）"
+      period: "2024年5月〜12月"
+      organization: "Cross Farm"
+      factual_basis:
+        - "2024年5月16日：代表よりA型からB型への転換（事実上の解雇）を通告"
+        - "2024年6月30日：転換実施（猶予期間わずか1.5ヶ月）"
+        - "対象：45名の利用者"
+        - "アクション：45名分の『会社都合』書類整備、35名のB型移行申請"
+      narrative_arc:
+        - "着任直後（5/7着任→5/16通告）の衝撃と、経営権を持たない管理者の限界"
+        - "組織防衛（経営者の論理）と利用者保護（福祉の論理）の衝突"
+        - "「会社都合」の書類を整備することが、管理者としてできる精一杯の抵抗（失業給付等の権利確保）"
+      soe_connection: |
+        形式的な「同意書」さえあれば、生活の場を奪うことが「合法」とされる
+        入力プロセスの脆弱性。「合意形成の形式性（ハンコをもらうだけの儀式）」
+      writing_instruction: |
+        感情的な「かわいそう」な描写ではなく、
+        「書類上は合法だが、実質的な権利侵害が起きているプロセス」を冷徹に描写せよ。
+
+    case_2:
+      title: "管理者自身の罹患とBCPの破綻"
+      subtitle: "System Vulnerability（属人性の限界）"
+      period: "2023年9月〜11月"
+      organization: "DUG研究所"
+      factual_basis:
+        - "2021年7月：自身の理想を掲げDUG研究所設立"
+        - "2023年9月：コロナ感染から左前頭葉脳出血で緊急入院"
+        - "2023年11月：閉所（発症からわずか2ヶ月での決断）"
+        - "アクション：閉所後の受け皿として『自助会』を設立"
+      narrative_arc:
+        - "「理想的な支援」を追求して独立したが、それは「山内雄司」という個人の健康リソースに100%依存するシステムだった"
+        - "脳出血により言語・記憶機能の見通しが立たなくなった瞬間、事業所の機能が停止"
+        - "入院中のベッドで閉所を決断せざるを得ない絶望感"
+        - "公的な受け皿が見つからず、私的な「自助会」を作らざるを得なかった現実"
+      soe_connection: |
+        「献身的な支援者」が倒れれば、利用者も共倒れになる構造。
+        善意はインフラになり得ない。
+      writing_instruction: |
+        単なる闘病記や個人の悲劇ではなく、BCP（事業継続計画）および
+        「属人化リスク」の観点から記述すること。
+        「私が倒れて大変だった」ではなく、
+        「管理者が倒れただけでシステムが停止する構造的欠陥」に焦点を当てる。
+      gemini_risk_alert: |
+        このケースは「主観性の過多」リスクが最も高い。
+        研究計画書としての評価を下げる可能性があるため、
+        システム論で冷徹に結ぶこと。
+
+    case_3:
+      title: "地域連携による経済循環の試み"
+      subtitle: "Scalability & Limitations（連携の限界）"
+      period: "2016年〜2021年"
+      organization: "アンマー・井笠地域"
+      factual_basis:
+        - "役割：井笠地域自立支援協議会 就労部会部長 / 岡山県セルプセンター副所長"
+        - "実績：マスク作成事業（300万円）、社協DX推進（1,000万円予算）、官公庁アンケート等の共同受注"
+        - "広域連携：5市町（笠岡・井原・浅口・里庄・矢掛）のネットワーク化"
+      narrative_arc:
+        - "一事業所では不可能な「大規模案件」を、地域連携（共同受注）で実現した成功体験"
+        - "しかし、その調整コストは膨大で、特定の「動けるリーダー（山内）」に負担が集中"
+        - "DX推進や共同受注で成果（数字）を出しても、組織内の政治的力学や旧態依然とした慣習により、取り組みが継続しない（退職により瓦解）"
+      soe_connection: |
+        「スーパーマン」がいなければ回らない地域連携は持続可能ではない。
+        調整プロセス自体のシステム化が必要。
+      writing_instruction: |
+        成功体験として書くのではなく、「成功したが持続しなかった」という
+        構造的限界の発見報告として書く。
+
+    integration_instruction:
+      - "各事例の末尾に、必ず『なぜ、記録入力段階での権利保護が必要なのか』という問いを残すこと"
+      - "感情的な描写は事実経過の中に留め、結論は冷徹にシステム論で結ぶこと"
+      - "事例→構造的課題→SoEへの接続を明確に示すこと"
+
+  core_insights_from_practice:
+    insight_1:
+      title: "善意に依存する支援の構造的脆弱性"
+      observation: |
+        10年間で見てきた現実：
+        - 善意ある支援者が燃え尽きる
+        - 善意なき支援者が制度を悪用する
+        - 「熱意」と「搾取」の区別がつきにくい
+      implication: "個人の善意ではなく構造で品質を保障する必要"
+
+    insight_2:
+      title: "支援記録が当事者を搾取する構造"
+      observation: |
+        支援記録の現実：
+        - 当事者の「できないこと」を詳細に記録
+        - 記録は支援者の「証拠」として機能
+        - 当事者は記録内容を知らない/理解できない
+        - 記録が当事者の不利益に使われうる
+      implication: "記録作成段階での権利保障（Input Constitutional AI）"
+
+    insight_3:
+      title: "支援者の消耗と制度悪用の二極化"
+      observation: |
+        福祉現場の分極化：
+        - 真面目な支援者は低賃金・長時間労働で消耗
+        - 一部の事業者は制度の隙間を悪用
+        - 両極端の間に「普通の支援」が成立しにくい
+      implication: "監査と支援の統合（SoEフレームワーク）"
+
+  document_structure:
+    section_1:
+      title: "はじめに"
+      word_count: 400
+      content:
+        - "福祉との出会い（IT起業破産からの転身）"
+        - "10年間の実践の概要"
+        - "「支援者かつ当事者」という立場"
+
+    section_2:
+      title: "実践の歩み"
+      word_count: 800
+      content:
+        - "Phase 1-5の時系列概要"
+        - "10事業所立ち上げの経験"
+        - "管理者・サビ管としての業務"
+
+    section_3:
+      title: "象徴的な実践事例"
+      word_count: 1200
+      content:
+        - "事例1: A型→B型移行（2024年）"
+        - "事例2: 脳出血と事業閉所（2023年）"
+        - "事例3: 地域連携と就労部会（2016-2021年）"
+      note: "各事例400字程度、具体的なエピソードを含める"
+
+    section_4:
+      title: "実践から得た課題認識"
+      word_count: 1000
+      content:
+        - "善意依存の構造的脆弱性"
+        - "支援記録の権力構造"
+        - "支援者消耗と制度悪用の二極化"
+
+    section_5:
+      title: "今後の展望"
+      word_count: 600
+      content:
+        - "SoE（Service of Empowerment）概念"
+        - "Input Constitutional AIの着想"
+        - "大学院での研究への接続"
+
+  critical_risks_and_countermeasures:
+    source: "Gemini Analysis (2025-12-26)"
+
+    risk_1:
+      type: "主観性の過多"
+      location: "Section 3 (象徴的な実践事例)"
+      concern: |
+        特に「Case 2: 脳出血」は、単なる闘病記や個人の悲劇として読まれるリスクがある。
+        研究計画書としての評価を下げる可能性がある。
+      countermeasure: |
+        BCP（事業継続計画）および「属人化リスク」の観点から記述すること。
+        「私が倒れて大変だった」ではなく、「管理者が倒れただけでシステムが停止する構造的欠陥」に焦点を当てる。
+
+    risk_2:
+      type: "批判の方向性"
+      location: "Section 4 (実践から得た課題認識)"
+      concern: |
+        既存の福祉制度や他機関への批判が、単なる「不平不満（Complaint）」と受け取られるリスク。
+      countermeasure: |
+        批判対象を「個人（あの職員、あの役所）」ではなく「構造（Design/System）」に徹底して限定する。
+        「誰も悪くないが、構造が悪手を選ばせている」というトーンを維持する。
+
+    risk_3:
+      type: "文字数配分のバランス"
+      location: "全体構成"
+      concern: |
+        4,000字は長いが、事例3つ（1200字）と課題認識（1000字）で過半数を占める。
+        記述的（Descriptive）になりすぎ、分析的（Analytical）な視点が埋もれる恐れ。
+      countermeasure: |
+        各事例の最後に必ず「この事例が示す構造的課題（SoEへの接続）」を2-3行で明記し、
+        Section 4へのブリッジを明確にする。
+
+  writing_guidelines:
+    tone:
+      - "実践者としての具体性を重視"
+      - "理論的抽象化は控えめに"
+      - "当事者・現場への敬意を示す"
+      - "自己批判的視点を含める"
+      - "「実践家としての熱量」と「研究者としての冷徹な分析眼」のバランス"
+
+    avoid:
+      - "過度な自己顕示"
+      - "他者・他機関への批判（個人攻撃）"
+      - "理論の詳細説明（研究計画書で行う）"
+      - "専門用語の多用"
+      - "独自用語（火文化、灰色の放棄等）- 審査員は定義を知らない"
+      - "単なる「不平不満」と受け取られる表現"
+
+    include:
+      - "具体的なエピソード・数字"
+      - "失敗・挫折からの学び"
+      - "当事者との関わりの実感"
+      - "構造的課題への気づきのプロセス"
+      - "システム論による冷徹な分析"
+
+    terminology_guidance:
+      avoid_terms:
+        - "Input Constitutional AI（唐突感あり）"
+        - "火文化"
+        - "灰色の放棄"
+      replace_with:
+        - "記録入力段階での倫理的介入"
+        - "データ入力時の権利保護"
+        - "バーンアウト"
+        - "ネグレクトの構造的誘発"
+      connection_strategy: |
+        社会福祉学的に通じる表現に一度翻訳し、
+        「それを工学的に実装するのが私の研究テーマである」と結ぶ流れを推奨。
+
+  reference_materials:
+    available:
+      - "尾道ケーブルテレビ報道映像（YouTube）"
+      - "サービス管理責任者研修修了証"
+      - "ISO27001構築実績証明"
+    to_consider:
+      - "個別支援計画のサンプル（匿名化）"
+      - "就労部会の活動報告書"
+
+  ai_role_assignment:
+    claude_web:
+      primary_task: "本文執筆"
+      focus:
+        - "文章の流れと読みやすさ"
+        - "感情と論理のバランス"
+        - "4,000字への調整"
+
+    chatgpt:
+      primary_task: "構造チェック・批判的レビュー"
+      focus:
+        - "論理の一貫性"
+        - "出願書類としての適切性"
+        - "過度な自己顕示の指摘"
+
+    gemini:
+      primary_task: "事実確認・補足調査"
+      focus:
+        - "日本社会事業大学の求める人材像との整合性"
+        - "社会福祉実践記録の一般的な形式確認"
+
+    claude_code:
+      primary_task: "ファイル管理・バージョン管理"
+      focus:
+        - "ドラフトの保存・整理"
+        - "最終版のフォーマット調整"
+
+  output_location:
+    draft: "09_research_proposal/03_main_proposal/practice_record_draft_v1.md"
+    final: "09_research_proposal/03_main_proposal/practice_record_final.md"
+
+  deadline:
+    application_period: "2026-01-09 〜 01-23"
+    target_completion: "2026-01-05"
+    days_remaining: 11
+
+fire_culture_note: |
+  この実践記録は、10年間の「燃え続けてきた問い」の結晶。
+  「なぜ善意だけでは支援が成り立たないのか」
+  「なぜ支援者が消耗し、当事者が搾取されるのか」
+  これらの問いを記録し、再燃可能な形で大学院に提出する。
+
+gemini_overall_assessment:
+  status: "GO"
+  comment: |
+    構成自体は非常に論理的です。
+    「実践家としての熱量」と「研究者としての冷徹な分析眼」のバランスが鍵です。
+    特に山内さんの強みは「失敗（破産、閉所）を構造的知見に昇華している点」にあるため、
+    成功体験よりも「システムエラーの発見報告」として書くのが最良の戦略です。
+
+gemini_final_structure_proposal:
+  source: "Gemini (with Claude Web Memory Access) 2025-12-26"
+  target_writer: "Claude Web (Sonnet)"
+  status: "RECOMMENDED - 最終構成案"
+
+  role_setting: |
+    あなたは「日本社会事業大学大学院」への出願を目指す、52歳の実践家研究者（Practitioner-Researcher）です。
+
+  context_and_goal:
+    purpose: |
+      社会福祉学研究科への出願。単なる活動報告ではなく、
+      「なぜ私がこの研究（Input Constitutional AI）をしなければならないのか」という
+      研究の必然性（Research Necessity）を、過去の実践から論証すること。
+    core_theme: "「善意への依存」から「構造による権利保護」へ"
+    writing_style: "アカデミックかつ実践の熱量（Phronesis）を感じさせる文体。「〜だ・である」調"
+
+  structure_and_plot:
+    section_1:
+      title: "はじめに：30年の当事者性と10年の実践"
+      word_count: 400
+      elements:
+        hook: |
+          福祉との関わりは10年前の事業所開設ではない。
+          29年前（平成8年）、就職活動中に脊髄腫瘍で下半身麻痺となり、
+          内定も就職活動もすべて「全滅」した原体験から始まる。
+        bridge: |
+          その後、IT起業家として年商1.4億円・国費1.2億円規模のプロジェクトを回す経営者となった私が、
+          なぜ2012年に破産し、無給の福祉現場に飛び込み、
+          そして今「AIによる権利保護」を志すのか。
+        thesis: |
+          それは、福祉現場が「個人の善意」と「自己犠牲」に依存しすぎており、
+          構造的な品質保証（Quality Assurance）が欠落していることへの、
+          10年越しの義憤と問いである。
+
+    section_2:
+      title: "実践の歩み：拡大とその代償"
+      word_count: 800
+      phases:
+        phase_1:
+          period: "2012-2015"
+          theme: "破産後の無給奉仕からスタート"
+          content: |
+            「はれの国」「チャレンジド尾道」など、
+            がむしゃらに事業所を立ち上げ（計10箇所）、利用者を増やした時期。
+        phase_2:
+          period: "2016-2021"
+          theme: "地域連携の限界"
+          content: |
+            「井笠地域自立支援協議会」等での活動。
+            IT時代のスキルを活かし、広域連携や共同受注（マスク300万円、DX予算1000万円）を成功させるが、
+            結局は「山内雄司」という個人の馬力に依存した属人的な成果に終わる虚しさ。
+        phase_3:
+          period: "2021-2023"
+          theme: "理想の追求と挫折"
+          content: |
+            「DUG研究所」設立。理想的な支援を目指したが、自身の脳出血により閉所。
+            「個人の理想」がいかに脆いかを痛感。
+
+    section_3:
+      title: "象徴的な実践事例：構造的暴力の証明"
+      word_count: 1600
+      note: "最重要パート - 感情論ではなく「システムエラーの記録」として詳細に記述"
+
+      case_1:
+        title: "9日間の無力 - A型からB型への転換（2024年）"
+        fact: |
+          2024年5月7日に管理者として着任。
+          わずか9日後の5月16日、代表から「6月末でのB型転換（事実上の45名解雇・契約変更）」を通告される。
+        structural_issue: |
+          信頼関係を築く時間などない。
+          経営判断という「構造」の前では、現場管理者の対人援助スキルなど無力だった。
+        action: |
+          感情的に反発するのではなく、実務家として「会社都合」の書類を45名分完璧に整備し、
+          失業給付等の権利を守る「事務的抵抗」に徹した。
+        soe_connection: |
+          書類上は「合意」として処理される暴力。
+          データ入力段階での権利保護（Input Constitutional AI）がなければ、
+          彼らの「不本意」は記録に残らない。
+
+      case_2:
+        title: "管理者のあがない - 脳出血とBCPの欠如（2023年）"
+        fact: |
+          2023年9月、コロナ感染から左前頭葉脳出血で緊急入院。
+          言語・記憶機能の回復見通しが立たず、発症から2ヶ月で「DUG研究所」閉所を決断。
+        structural_issue: |
+          「私が守る」というパターナリズムの限界。
+          管理者が倒れただけで、利用者の居場所が消滅する脆弱なシステム。
+        action: |
+          病床から閉所を指示し、公的な受け皿が見つからないため、
+          私的に「自助会」を設立して繋がりを維持した。
+        soe_connection: |
+          「支援者の健康」に依存するBCP（事業継続計画）のなさ。
+          支援者がスーパーマンであることを前提とした制度設計の誤謬。
+
+      case_3:
+        title: "規模の非対称性 - 1.2億円のITプロジェクトと工賃（過去の対比）"
+        fact: |
+          かつて総務省事業（1.2億円）や自治体DXを指揮した経験を持つ私が、
+          福祉現場では月数万円の工賃のために、非効率な手書き書類とFAXに忙殺される現実。
+        structural_issue: |
+          「傷害致死事件加害者」の支援など、高度な専門性が求められる現場でありながら、
+          インフラは昭和のまま。
+        soe_connection: |
+          複雑（Complex）な対人援助に集中すべき人間が、
+          単純（Simple）だが繁雑（Complicated）な事務作業にリソースを奪われている。
+          「粒度の分離」が必要だ。
+
+    section_4:
+      title: "実践から得た課題認識と研究への接続"
+      word_count: 1200
+      issues:
+        issue_1:
+          title: "善意の搾取"
+          content: |
+            支援者の「やりがい」を燃料に回るシステムは、
+            支援者が燃え尽きた（Fire）瞬間に利用者を焼き尽くす。
+        issue_2:
+          title: "記録の権力性"
+          content: |
+            支援記録は「支援者の正当性」を証明するために書かれ、
+            当事者の権利を守るためには書かれていない（Case 1の教訓）。
+      solution:
+        title: "SoE（Service of Empowerment）"
+        content: |
+          人間（支援者）の倫理観に期待するのではなく、
+          システム（AI）が入力段階で権利侵害を検知し、未然に防ぐ仕組み（Input Constitutional AI）。
+          これはIT経営者としての「システム思考」と、
+          脳出血当事者としての「ケアの切実さ」の両方を知る私だからこそ構築できる理論である。
+      closing: |
+        この10年の実践記録は、私の「成功の記録」ではなく、「現行システムのバグ報告書」である。
+        大学院では、このバグを修正するためのパッチ（SoE）を理論化し、実装する。
+
+  formatting_rules:
+    - "見出しを適切に使い、読みやすく構成すること"
+    - "具体的な数字（日付、金額、人数）は事実情報に基づいて正確に記載すること"
+    - "感傷的（Sentimental）になりすぎず、常に分析的（Analytical）な視点を維持すること"
+
+  key_phrases:
+    - "30年の当事者性と10年の実践"
+    - "「全滅」した原体験"
+    - "構造的な品質保証（Quality Assurance）の欠落"
+    - "10年越しの義憤と問い"
+    - "システムエラーの記録"
+    - "9日間の無力"
+    - "事務的抵抗"
+    - "書類上は「合意」として処理される暴力"
+    - "パターナリズムの限界"
+    - "支援者がスーパーマンであることを前提とした制度設計の誤謬"
+    - "粒度の分離"
+    - "現行システムのバグ報告書"
+    - "バグを修正するためのパッチ（SoE）"
+
+chatgpt_writing_guidance:
+  source: "ChatGPT Analysis (2025-12-26)"
+  target_writer: "Claude Web (Sonnet)"
+
+  overall_positioning:
+    document_role: |
+      本文は「研究計画書の説明」ではなく、
+      10年間の現場実践から『何を経験し、何に限界を感じ、何を学んだか』を
+      第三者が検証可能な形で記述する記録である。
+    evaluation_axis_expected:
+      - "実務経験の実在性・具体性"
+      - "当事者理解と倫理性"
+      - "自己内省（成功だけでなく失敗・限界の言語化）"
+      - "大学院で学ぶ必然性"
+
+  tone_and_style:
+    must:
+      - "冷静で誠実"
+      - "数字・役割・判断プロセスを明確に"
+      - "「私は正しい」ではなく「私はこう判断した」"
+    must_not:
+      - "告発調・糾弾調"
+      - "制度・他法人・個人への直接的批判"
+      - "理論用語の過剰使用（SoE・Input CAIは最小限）"
+
+  section_specific_guidance:
+    section_1_introduction:
+      advice:
+        - "IT起業→破産→福祉転身は「転落と再生」ではなく「制度と人を両側から見てきた背景」として描写"
+        - "当事者性（ADHD・難聴・脳出血）は感情ではなく「視点の獲得」として簡潔に"
+      avoid:
+        - "自伝的詳細"
+        - "感情的表現の連続"
+
+    section_2_career_overview:
+      advice:
+        - "10事業所・最大規模・役割は簡潔に整理"
+        - "職務経歴書と同一情報は繰り返さず、「現場で何が見えたか」を一言添える"
+      example: "5事業所を統括する中で、個人の善意に依存する運営の限界を実感した"
+
+    section_3_cases:
+      common_rule:
+        - "事実 → 判断 → 行動 → 結果 → 内省 の順を厳守"
+        - "「怒り」「理不尽」は内省フェーズでのみ言語化"
+      case_1_A_to_B:
+        emphasize:
+          - "45名という人数の重さ"
+          - "書類整備が「権利保護」になる現実"
+        caution: "法人批判に読まれる表現は避ける"
+      case_2_closure:
+        emphasize: "管理者自身が倒れたときに露呈した構造的脆弱性"
+        caution: "自己犠牲の美談化をしない"
+      case_3_regional:
+        emphasize: "個別支援ではなく「地域全体の仕組み」の話として書く"
+
+    section_4_insights:
+      advice:
+        - "課題は3点程度に絞る"
+        - "「善意」「記録」「消耗」は個人ではなく構造の問題として整理"
+      wording_tip: "「〜すべきだ」より「〜という限界を認識した」"
+
+    section_5_future:
+      advice:
+        - "SoE / Input Constitutional AI は「着想の方向性」レベルで触れる"
+        - "大学院で「検証・言語化したい課題」に接続"
+      avoid:
+        - "技術仕様"
+        - "世界的展望（博士課程の話は最小限）"
+
+  risk_management:
+    self_promotion_risk:
+      signal_words:
+        - "誰よりも"
+        - "唯一"
+        - "圧倒的"
+      countermeasure: "数値＋学びに変換する"
+    accusation_risk:
+      signal_patterns:
+        - "主語が「彼らは」「多くの事業者は」"
+      countermeasure: "主語を「現場では」「制度上は」に置換"
+
+  final_checklist:
+    - "職務経歴書と事実関係が一致しているか"
+    - "感情語が多すぎないか"
+    - "「大学院で学ぶ理由」が自然に立ち上がっているか"
+    - "読後に「この人の現場をもっと知りたい」と思わせるか"
+
+  closing_note:
+    message_to_claude: |
+      この実践記録は、主張の強さではなく
+      「判断の重さ」と「引き受けてきた責任」を
+      静かに伝えることが最大の武器です。
+
+# =============================================================================
+# GPT 最終戦略的フィードバック（2025-12-26）
+# =============================================================================
+gpt_strategic_insight:
+  timestamp: "2025-12-26T21:00:00+09:00"
+  source: "ChatGPT Final Strategic Advice"
+
+  core_reframes:
+    soe_essence:
+      original_perception: "SoEはAI技術による福祉DX"
+      corrected_understanding: |
+        SoEの本質は「認知的な会計（Cognitive Accounting）」。
+        障害特性・環境要因・薬剤副作用・制度的要因を
+        分離して記録する「粒度（Granularity）」の技術。
+      implication: |
+        AIは実装手段であって本質ではない。
+        本質は「分離された記録」という認識論的フレーム。
+
+    input_cai_essence:
+      original_perception: "Input CAIはAI倫理・機械学習のフレーム"
+      corrected_understanding: |
+        Input Constitutional AIは「予防的制度設計」。
+        出力段階の監査（Output Constitutional AI）ではなく、
+        入力段階で権利侵害の芽を構造的に摘む設計思想。
+      implication: |
+        実践記録では「AI」という言葉より
+        「記録の作り方」「情報の分離」に焦点を当てる。
+
+  granularity_as_method:
+    description: |
+      「粒度に基づく認知」は再現可能な研究手法として成立する。
+      支援員Aが見落としていた環境要因を、
+      分離記録によって支援員Bが発見できる。
+    research_value: |
+      これは「属人性の排除」と「知識の蓄積」を可能にする。
+      福祉現場における科学的アプローチの基盤。
+
+  dual_protection:
+    insight: |
+      SoEは当事者だけでなく支援者も守る。
+      「記録に残っている」ことが支援者の判断を正当化し、
+      燃え尽きや誤解からの防護壁になる。
+    example: |
+      「なぜこの支援を選んだか」が記録されていれば、
+      後から批判されても「その時点での合理的判断」として説明可能。
+
+  writing_implications:
+    for_practice_record:
+      - "SoE / Input Constitutional AI という用語を最小限に"
+      - "「粒度を分けて記録する」という実践行為に焦点"
+      - "AIは「将来の実装可能性」程度の扱いで十分"
+      - "「記録が支援者と当事者の両方を守る」という経験を語る"
+
+    terminology_substitution:
+      avoid: "SoE（Service of Empowerment）"
+      prefer: "エンパワメント志向の支援"
+
+      avoid_2: "Input Constitutional AI"
+      prefer_2: "記録作成段階での権利保障"
+
+      avoid_3: "粒度分離"
+      prefer_3: "要因を分けて記録する"
+
+  closing_advice: |
+    実践記録は「理論の売り込み」ではなく「経験の報告」。
+    読み手（審査員）が「この人は現場で何を見て、何を学んだか」を
+    理解できれば成功。
+
+    SoEは「着想の方向性」として最後に軽く触れる程度でよい。
+    それでも、記録全体を通じて「分離・透明性・構造」への
+    一貫した問題意識が伝わる構成になっていれば十分。
+
+metadata:
+  created_at: "2025-12-25T19:30:00+09:00"
+  updated_at: "2025-12-26T21:30:00+09:00"
+  created_by: "Claude Code (Opus 4.5)"
+  updated_with:
+    - "Gemini Analysis Integration (2025-12-26)"
+    - "ChatGPT Writing Guidance Integration (2025-12-26)"
+    - "GPT Strategic Insight Integration (2025-12-26 21:00)"
+  related_files:
+    - "09_research_proposal/yamauchi_cv_graduate_2025_12_13.yaml"
+    - "project_structure_2025_12_24.yaml"
+    - "00_daily_yamal/03_gemini/2025_12_26_g.yaml"
+    - "00_daily_yamal/02_GPT/2025_12_26_narrative_acceptance_deepresearch_integration.yaml"
+
+  integration_summary:
+    gemini_contribution: "リスク分析・最終構造提案・Case 3追加"
+    chatgpt_contribution: "執筆トーン・セクション別ガイダンス・リスク管理"
+    gpt_strategic_contribution: "SoE本質の再定義（認知的会計）・用語置換ガイド"
+
+  directive_status: "COMPLETE - Ready for Claude Web execution"

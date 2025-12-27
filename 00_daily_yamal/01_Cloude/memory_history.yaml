@@ -1,0 +1,188 @@
+# Claude Web アカウントメモリ履歴
+# Account Memory History for Claude Web (Sonnet)
+# Last Updated: 2025-12-26
+
+metadata:
+  ai_platform: "Claude Web (Sonnet 4.5)"
+  memory_type: "Project-level memory via conversations"
+  user: "Puu（山内雄司）"
+  purpose: "AI間共有のためのメモリ状態記録"
+
+# =============================================================================
+# 基本情報（Personal Context）
+# =============================================================================
+personal_context:
+  identity:
+    name: "Puu / パンカー"
+    real_name: "山内雄司"
+    age: 52
+    location: "岡山県笠岡市"
+
+  cognitive_profile:
+    mbti: "ENTP"
+    iq: 118
+    diagnoses: ["ADHD確定診断"]
+    traits: ["OE（過度激動）特性"]
+
+  hpi_traits:
+    source: "Gemini評価 2025-12-10"
+    scores:
+      探求心: "極めて高い（OE関連）"
+      適応性: "非常に高い"
+      学習態度: "非常に高い"
+      対人感受性: "高い"
+      慎重性: "高い"
+
+# =============================================================================
+# 研究・プロジェクト文脈（Research Context）
+# =============================================================================
+research_context:
+  current_mission:
+    goal: "日本福祉大学院 修士課程 出願"
+    deadline: "2026年1月9日〜23日（消印有効）"
+    theme: "SoE（Service of Empowerment / Service or Exploitation）"
+    innovation: "Input Constitutional AI（記録作成段階での権利保障）"
+
+  theoretical_structure:
+    three_layer_model:
+      description: "上位概念（理念・哲学・認知構造）"
+      components: ["理念", "哲学", "認知構造"]
+    four_pillar_model:
+      description: "実装フレーム"
+      components:
+        - "権利回復"
+        - "支援者倫理"
+        - "地域人材"
+        - "科学的アセスメント"
+    relationship: "階層構造（Three-Layer → Four-Pillar → SoE実装）"
+
+  international_collaboration:
+    - name: "Susan Scott-Parker OBE"
+      organization: "DEAI創設者（英国）"
+      status: "面談済み"
+    - name: "IPS"
+      organization: "Dartmouth IPS Employment Center（米国）"
+      status: "アプローチ予定"
+    - name: "サムハル"
+      country: "スウェーデン"
+      description: "Sheltered employmentからの脱却モデル"
+
+# =============================================================================
+# 火文化圏思想（Fire Culture Philosophy）
+# =============================================================================
+fire_culture:
+  core_principle: |
+    「記録されなかった問いは燃え尽きたものと見なされる。
+     記録されることでのみ、問いは再燃可能となる。」
+
+  record_sovereignty:
+    description: "当事者の支援情報所有権は当事者に帰属"
+    implementation: "YAML/Markdown形式での構造化記録"
+
+# =============================================================================
+# 対話スタイル（Interaction Style）
+# =============================================================================
+interaction_preferences:
+  mode: "プロフェッショナル研究者モード"
+  likes:
+    - "客観的検証"
+    - "批判的フィードバック"
+  dislikes:
+    - "忖度"
+    - "社交辞令"
+    - "過度な褒め"
+  record_format: "火文化圏思想に基づくYAML構造化記録"
+
+# =============================================================================
+# 健康管理（Health Management）
+# =============================================================================
+health_context:
+  medical_history:
+    - condition: "多発性海綿状血管腫（遺伝性）"
+    - condition: "2023年脳出血→回復"
+    - condition: "両耳難聴"
+  current_medications:
+    - "コンサータ36mg"
+    - "レベチラセタム"
+    - "マイスタン"
+    - "高血圧治療薬"
+  notes:
+    - "Concerta服用タイミングで睡眠に影響"
+
+# =============================================================================
+# AI間連携体制（AI Collaboration Structure）
+# =============================================================================
+ai_collaboration:
+  established: "2025-12-11"
+  roles:
+    claude_code:
+      model: "Opus 4.5"
+      role: "技術管理・ファイル操作・バージョン管理"
+    claude_web:
+      model: "Sonnet 4.5"
+      role: "研究計画書本文執筆・ブラッシュアップ"
+    chatgpt:
+      model: "GPT-4"
+      role: "理論的探索・概念発掘・批判的検討"
+    gemini:
+      role: "文献調査・研究者プロファイル分析"
+
+# =============================================================================
+# プロジェクト構造（Project Structure）
+# =============================================================================
+project_structure:
+  directories:
+    00_daily_yamal:
+      01_Cloude: "Claude Web版セッション記録"
+      02_GPT: "ChatGPTセッション記録"
+      03_gemini: "Geminiセッション記録"
+      04_VSClaude: "Claude Code（VSCode）セッション記録"
+    01_philosophy: "SoE哲学・存在論"
+    03_ai_rights: "AI倫理・CRPD・データ主権"
+    09_research_proposal: "研究計画書"
+
+# =============================================================================
+# トークン効率化ルール（Token Efficiency Rules）
+# =============================================================================
+token_efficiency:
+  principles:
+    - "大きなファイルは段階的に読む（metadata → 必要部分のみ）"
+    - "Grep/Globで事前フィルタリングしてからRead"
+    - "重い作業はリセット後（17:00 JST以降）に実行"
+    - "セッション終了時にYAML記録を作成"
+
+  reset_time:
+    pst: "0:00"
+    jst: "17:00（冬時間）"
+
+# =============================================================================
+# 重要ファイル参照（Key File References）
+# =============================================================================
+key_files:
+  research_plan: "09_research_proposal/01_planning_sessions/research_plan_v2.8.md"
+  philosophy: "01_philosophy/01_philosophy_integrated.yaml"
+  ai_rights: "03_ai_rights/03_ai_rights_integrated.yaml"
+  bibliography: "09_research_proposal/references/bibliography_draft.bib"
+
+# =============================================================================
+# Neuro Fire Check（ADHD対応）
+# =============================================================================
+neuro_fire_check:
+  trigger: "毎セッション開始時"
+  check_items:
+    - stimulant_state: "コンサータ服用有無"
+    - sensory_load: "音・光・通知量"
+    - cognitive_fatigue_signal: "言い淀み・タイポ増加など"
+  actions:
+    if_overload: "速度1/2 & 要約モード"
+    if_under_stimulated: "問いの火種投入を促す"
+
+# =============================================================================
+# メタデータ
+# =============================================================================
+file_metadata:
+  created_at: "2025-12-26T22:30:00+09:00"
+  created_by: "Claude Code (Opus 4.5)"
+  source: "CLAUDE.md + Session Records"
+  purpose: "Claude Webメモリの履歴記録・AI間共有用"
+  update_policy: "重要なメモリ変更時に追記"

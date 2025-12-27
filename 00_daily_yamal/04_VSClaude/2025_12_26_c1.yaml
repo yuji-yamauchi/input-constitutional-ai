@@ -1,0 +1,130 @@
+# 2025-12-26 Claude Code セッション日報
+# Session Report: Practice Record Directive Integration
+
+session_metadata:
+  date: "2025-12-26"
+  session_number: 1
+  platform: "Claude Code (Opus 4.5)"
+  session_type: "AI間統合・実践記録ディレクティブ作成"
+  duration: "継続セッション（12/25からの延長）"
+
+key_achievements:
+  - title: "practice_record_directive_2025_12_25.yaml 完成"
+    description: |
+      日本社会事業大学大学院 出願書類「実践記録（4,000字）」のための
+      包括的執筆ディレクティブを完成。3つのAIからのフィードバックを統合。
+    file: "09_research_proposal/03_main_proposal/practice_record_directive_2025_12_25.yaml"
+    line_count: 735
+
+  - title: "3AI統合"
+    integrations:
+      gemini:
+        contribution: "リスク分析・最終構造提案（Hook→Bridge→Thesis）・Case 3追加"
+        key_insight: "成功体験より「システムエラーの発見報告」として書く戦略"
+      chatgpt:
+        contribution: "執筆トーン・セクション別ガイダンス・リスク管理"
+        key_insight: "「判断の重さ」と「引き受けてきた責任」を静かに伝える"
+      gpt_strategic:
+        contribution: "SoE本質の再定義・用語置換ガイド"
+        key_insight: "SoE ≠ AI技術、SoE = 認知的会計（Cognitive Accounting）"
+
+strategic_reframes:
+  soe_essence:
+    before: "SoEはAI技術による福祉DX"
+    after: |
+      SoEの本質は「認知的な会計（Cognitive Accounting）」。
+      障害特性・環境要因・薬剤副作用・制度的要因を
+      分離して記録する「粒度（Granularity）」の技術。
+    implication: "AIは実装手段であって本質ではない"
+
+  input_cai_essence:
+    before: "Input CAIはAI倫理・機械学習のフレーム"
+    after: |
+      Input Constitutional AIは「予防的制度設計」。
+      出力段階の監査ではなく、入力段階で権利侵害の芽を構造的に摘む。
+    implication: "実践記録では「AI」より「記録の作り方」に焦点"
+
+  dual_protection:
+    insight: |
+      SoEは当事者だけでなく支援者も守る。
+      「記録に残っている」ことが支援者の判断を正当化し、
+      燃え尽きや誤解からの防護壁になる。
+
+terminology_guidance:
+  avoid:
+    - "SoE（Service of Empowerment）"
+    - "Input Constitutional AI"
+    - "粒度分離"
+  prefer:
+    - "エンパワメント志向の支援"
+    - "記録作成段階での権利保障"
+    - "要因を分けて記録する"
+
+files_created:
+  - path: "09_research_proposal/03_main_proposal/practice_record_directive_2025_12_25.yaml"
+    status: "COMPLETE - Ready for Claude Web execution"
+    lines: 735
+
+files_read:
+  - "00_daily_yamal/01_Cloude/2025_12_25_session_final.yaml"
+  - "00_daily_yamal/02_GPT/2025_12_26_narrative_acceptance_deepresearch_integration.yaml"
+  - "00_daily_yamal/03_gemini/2025_12_26_g.yaml"
+  - "09_research_proposal/yamauchi_cv_graduate_2025_12_13.yaml"
+
+context_from_previous_sessions:
+  christmas_session_insights:
+    - "未必の故意（Dolus Eventualis）の証明スキーム"
+    - "三者構造（専門家×LLM×当事者）の有効性確認"
+    - "スキーマ構築プロトコルの発見"
+    - "「ただより高いものはなし」の等価交換原則"
+
+  narrative_research_integration:
+    core_question: |
+      Susan Scott-Parkerの問い：
+      "Why does this person expect special treatment –
+      what combination of factors caused them to lose confidence
+      that they could compete for work on an equal basis?"
+    research_aim:
+      - "障害受容・自己受容を「心理的段階」ではなく「ナラティブ再構築プロセス」として再定義"
+      - "職業リハビリテーション文脈における自己アセスメントの新方法論"
+      - "複式簿記メタファーによる独自モデルのVacancy証明"
+
+next_steps:
+  immediate:
+    - "Claude Webで実践記録ドラフト執筆（4,000字）"
+    - "職務経歴書との整合性確認"
+
+  pending:
+    - "Bibliography.bib 更新（検証済み文献の追加）"
+    - "「自分辞典」概念のべてるの家一次資料での検証"
+
+deadline_tracking:
+  application_deadline: "2026-01-09 〜 01-23（消印有効）"
+  days_remaining: 14  # 1/9まで
+
+gpt_memory_context:
+  note: |
+    GPT君のメモリには、Puuの研究背景・哲学的立場・
+    火文化圏思想・博士課程準備の文脈が蓄積されている。
+    これらは実践記録執筆時の一貫性確保に活用可能。
+
+metadata:
+  created_at: "2025-12-26T22:00:00+09:00"
+  created_by: "Claude Code (Opus 4.5)"
+  tags:
+    - "practice_record"
+    - "ai_integration"
+    - "graduate_application"
+    - "SoE"
+    - "cognitive_accounting"
+
+fire_culture_note: |
+  3つのAI（Gemini・ChatGPT・Claude Web）からの
+  フィードバックを一つのディレクティブに統合した。
+
+  特にGPT君からの最終戦略的フィードバック：
+  「SoEの本質はAI技術ではなく認知的会計」
+  という再定義は、実践記録の方向性を決定づけた。
+
+  実践記録は「理論の売り込み」ではなく「経験の報告」。
+  判断の重さと引き受けてきた責任を、静かに伝える。

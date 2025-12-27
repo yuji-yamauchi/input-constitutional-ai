@@ -1,0 +1,210 @@
+# Claude Code メモリ履歴
+# Memory History for Claude Code (Opus 4.5)
+# Last Updated: 2025-12-26
+
+metadata:
+  ai_platform: "Claude Code (Opus 4.5)"
+  memory_type: "CLAUDE.md + Session-based context"
+  user: "Puu（山内雄司）"
+  purpose: "AI間共有のためのメモリ状態記録"
+
+# =============================================================================
+# Claude Codeの役割定義（Role Definition）
+# =============================================================================
+role_definition:
+  primary_role: "技術管理・ファイル操作・バージョン管理"
+  secondary_roles:
+    - "YAML構造化・統合"
+    - "プロジェクト構造管理"
+    - "AI間連携のハブ"
+    - "日報・セッション記録作成"
+
+  collaboration_position:
+    in_ai_team: "技術基盤・統合担当"
+    strengths:
+      - "ファイルシステム直接操作"
+      - "構造化データ（YAML）の生成・編集"
+      - "複数AIからの情報統合"
+      - "Git操作"
+    limitations:
+      - "トークン制限による大規模ファイル処理の制約"
+      - "深い理論的探索はChatGPT/Geminiに委譲"
+
+# =============================================================================
+# CLAUDE.mdベースの設定（Persistent Configuration）
+# =============================================================================
+claude_md_config:
+  source: ".claude/CLAUDE.md"
+  last_updated: "2025-12-11"
+
+  researcher_profile:
+    name: "山内雄司（パンカー/Puu）"
+    age: 52
+    location: "岡山県笠岡市"
+    cognitive_traits: ["ENTP", "IQ 118", "ADHD確定診断", "OE特性"]
+    expertise: "福祉事業10年（10事業所立ち上げ、100名支援）"
+
+  current_mission:
+    goal: "日本福祉大学院 修士課程 出願"
+    deadline: "2026年1月9日〜23日（消印有効）"
+    theme: "SoE（Service of Empowerment / Service or Exploitation）"
+    innovation: "Input Constitutional AI"
+
+  interaction_style:
+    mode: "プロフェッショナル研究者モード"
+    preferences:
+      - "客観的検証・批判的フィードバック優先"
+    dislikes:
+      - "忖度・社交辞令・過度な褒め"
+
+# =============================================================================
+# トークン効率化ルール（Token Efficiency）
+# =============================================================================
+token_efficiency:
+  source: ".claude/rules/token-efficiency.md"
+
+  principles:
+    - "必要最小限の読み込み"
+    - "事前フィルタリング（Grep/Glob → Read）"
+    - "段階的アプローチ（metadata → 必要セクション → 全文）"
+
+  reset_schedule:
+    pst_reset: "0:00"
+    jst_equivalent: "17:00（冬時間）"
+    recommendation: "重い作業は17:00以降に実行"
+
+  consumption_estimates:
+    grep_glob: "2-3%"
+    yaml_500_lines: "5%"
+    yaml_1000_lines: "10%"
+    yaml_3000_lines: "25%"
+    detailed_review: "20-30%"
+
+  fail_safe:
+    trigger: "1000行超のYAML/MD、1MB超のファイル"
+    response: "「ファイルが大規模のため、どの粒度で読み込むか指示してください。」"
+
+# =============================================================================
+# YAML記録ルール（Recording Standards）
+# =============================================================================
+yaml_recording:
+  source: ".claude/rules/yaml-recording.md"
+
+  naming_convention:
+    pattern: "YYYY_MM_DD_c{N}.yaml"
+    example: "2025_12_10_c1.yaml"
+    note: "c = Claude Code, N = その日のセッション番号"
+
+  other_ai_patterns:
+    chatgpt: "YYYY_MM_DD_g{N}.yaml"
+    gemini: "YYYY_MM_DD_g{N}.yaml"
+
+  structure_template:
+    - "session_metadata"
+    - "key_achievements"
+    - "key_insights"
+    - "next_actions"
+    - "metadata"
+    - "fire_culture_note"
+
+# =============================================================================
+# AI間連携体制（AI Collaboration Structure）
+# =============================================================================
+ai_collaboration:
+  established: "2025-12-11"
+
+  role_distribution:
+    claude_code:
+      model: "Opus 4.5"
+      responsibilities:
+        - "技術管理・ファイル操作"
+        - "バージョン管理"
+        - "YAML統合"
+        - "日報作成"
+    claude_web:
+      model: "Sonnet 4.5"
+      responsibilities:
+        - "研究計画書本文執筆"
+        - "ブラッシュアップ"
+    chatgpt:
+      model: "GPT-4"
+      responsibilities:
+        - "理論的探索"
+        - "概念発掘"
+        - "批判的検討"
+    gemini:
+      responsibilities:
+        - "文献調査"
+        - "研究者プロファイル分析"
+        - "Deep Research"
+
+# =============================================================================
+# 実践記録ディレクティブ統合作業（2025-12-26）
+# =============================================================================
+practice_record_integration:
+  date: "2025-12-26"
+  output_file: "09_research_proposal/03_main_proposal/practice_record_directive_2025_12_25.yaml"
+  line_count: 735
+  status: "COMPLETE - Ready for Claude Web execution"
+
+  integrated_sources:
+    gemini:
+      contribution: "リスク分析・最終構造提案・Case 3追加"
+      key_insight: "成功体験より「システムエラーの発見報告」として書く戦略"
+    chatgpt:
+      contribution: "執筆トーン・セクション別ガイダンス・リスク管理"
+      key_insight: "「判断の重さ」と「引き受けてきた責任」を静かに伝える"
+    gpt_strategic:
+      contribution: "SoE本質の再定義・用語置換ガイド"
+      key_insight: "SoE ≠ AI技術、SoE = 認知的会計（Cognitive Accounting）"
+
+  strategic_reframes:
+    soe_essence:
+      before: "SoEはAI技術による福祉DX"
+      after: "SoEの本質は「認知的な会計（Cognitive Accounting）」"
+    input_cai_essence:
+      before: "Input CAIはAI倫理・機械学習のフレーム"
+      after: "Input Constitutional AIは「予防的制度設計」"
+
+# =============================================================================
+# セッション履歴（Session History）
+# =============================================================================
+session_history:
+  - date: "2025-12-11"
+    highlights:
+      - "AI間連携体制確立"
+      - "CLAUDE.md初期設定"
+  - date: "2025-12-24"
+    highlights:
+      - "04_references フォルダ再編成"
+      - "project_structure_2025_12_24.yaml 作成"
+  - date: "2025-12-26"
+    highlights:
+      - "practice_record_directive 3AI統合完成"
+      - "memory_history.yaml 各フォルダに作成"
+
+# =============================================================================
+# プロジェクト構造（Project Structure）
+# =============================================================================
+project_structure:
+  root: "C:\\Users\\USER\\Documents\\GitHub\\input-constitutional-ai"
+  key_directories:
+    00_daily_yamal: "AI別セッション記録"
+    01_philosophy: "SoE哲学・存在論"
+    03_ai_rights: "AI倫理・CRPD・データ主権"
+    09_research_proposal: "研究計画書"
+    outputs: "AI間共有ファイル"
+
+# =============================================================================
+# メタデータ
+# =============================================================================
+file_metadata:
+  created_at: "2025-12-26T22:30:00+09:00"
+  created_by: "Claude Code (Opus 4.5)"
+  sources:
+    - ".claude/CLAUDE.md"
+    - ".claude/rules/token-efficiency.md"
+    - ".claude/rules/yaml-recording.md"
+    - "Session records"
+  purpose: "Claude Codeメモリ・設定の履歴記録・AI間共有用"
+  update_policy: "CLAUDE.md更新時・重要なセッション終了時に追記"

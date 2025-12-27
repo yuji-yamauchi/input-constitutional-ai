@@ -1,0 +1,107 @@
+metadata:
+  target_folder: "08_research_proposal/01_planning_sessions/"
+  reason: >
+    Narrative Disability Acceptance を軸とした研究計画において、
+    複数GPT（Claude / Gemini / ChatGPT）によるDeep Research結果を比較検証し、
+    学術的妥当性・Gap・独自性（Vacancy）を整理するための統合セッション記録。
+  file_name_suggestion: "2025_12_26_narrative_acceptance_deepresearch_integration.yaml"
+  date: "2025-12-26"
+  participants:
+    - user: "Puu（研究計画策定者）"
+    - gpt_claude: "Deep Research（定義・比較・政策）"
+    - gpt_gemini: "独自性探索・会計メタファー接続"
+    - chatgpt: "統合・検証・プロンプト設計"
+
+session_overview:
+  core_question:
+    source: "Susan Scott-Parker の問い"
+    text: >
+      Why does this person expect special treatment – what combination of factors
+      caused them to lose confidence that they could compete for work on an equal basis?
+  research_aim:
+    - 障害受容・自己受容を「心理的段階」ではなく「ナラティブ再構築プロセス」として再定義
+    - 職業リハビリテーション文脈において、自己アセスメントの新しい方法論を提示
+    - 複式簿記メタファー（Double-Entry Bookkeeping）を用いた独自モデルのVacancyを証明
+
+artifacts_reviewed:
+  claude_markdown:
+    description: "Narrative Definitions of Disability/Self-Acceptance Deep Research（Markdown）"
+    evaluation:
+      strengths:
+        - プロンプト適合度が最も高い
+        - 日・英・米の比較構造が明確
+        - 学術論文 → 公的機関 → 書籍の優先順位を概ね遵守
+      limitations:
+        - Accounting / Resource メタファーの掘り下げが浅い
+        - Gap（Howの欠如）の明示が弱い
+  gemini_pdf:
+    description: "Narrative Disability Acceptance Research（PDF）"
+    evaluation:
+      strengths:
+        - Accounting メタファーとナラティブの接続が示唆的
+        - Susanの問いに構造的に反応している
+        - N=1（LLMによる自己ナラティブ再構築）の着想を誘発
+      concerns:
+        - ユーザーの思考に寄りすぎている可能性
+        - 欲しい答えをまとめた印象
+        - 一部に未検証・架空の可能性がある引用
+  chatgpt_executive_summary:
+    description: "統合用 Executive Summary（PDF）"
+    role:
+      - 全体俯瞰
+      - 研究計画書用の背景整理
+    limitation:
+      - Deep Research成果物としては一次性が弱い
+
+verification_results:
+  focus: "学術的妥当性（理論の引用・出典）"
+  findings:
+    verified_core:
+      - WHO ICF の障害定義
+      - UN CRPD（2006）の受容概念
+      - Michael Bury (1982): Biographical Disruption
+      - Gareth Williams (1984): Narrative Reconstruction
+      - Beatrice Wright (1983): Acceptance of Disability
+      - Mark Savickas: Career Construction Theory / Life Design
+    issues_detected:
+      - Gemini報告書内に、実在確認できない機関・論文の可能性
+      - UK / US / Japan 制度比較における簡略化・ニュアンス不足
+    conclusion:
+      - 概念的方向性は現代研究と整合
+      - ただし strict_constraints を満たすためには再調査・再構成が必要
+
+tojisha_kenkyu_context:
+  relevance:
+    - 障害受容を「自己物語の再構築」として扱う日本発の実践知
+    - ナラティブ・当事者主体・共同研究という点で研究テーマと高い親和性
+  key_sources:
+    - Kumagaya Shin-ichiro 博士論文（2014）
+    - Tojisha-Kenkyu（べてるの家）
+    - 東大公式英語解説（Tojisha-Kenkyu as co-production of research）
+  implication:
+    - 「How」を埋める実践知として活用可能
+    - LLM×当事者研究×自己アセスメントの接続可能性
+
+identified_gaps:
+  theoretical_gap:
+    - 障害受容が「なぜ必要か」は説明されているが、
+      「どのように行うか（操作可能な方法）」が不足
+  methodological_gap:
+    - ナラティブ再構築の具体技法が職業リハ文脈で体系化されていない
+  originality_vacancy:
+    - 複式簿記（BS/PL/CF）を用いた障害受容・自己受容アセスメントは
+      既存研究において明確に存在しない可能性が高い
+
+next_step:
+  revised_deepresearch_prompt:
+    purpose:
+      - strict_constraints の完全遵守
+      - Gap / Cause / Vacancy の明確化
+    structure:
+      - Section 1: The Why
+      - Section 2: The Gap
+      - Section 3: The Cause (Susan's Question)
+      - Section 4: The Vacancy (Double-Entry Bookkeeping)
+  intended_outcome:
+    - 研究計画書にそのまま組み込める理論＋方法論整理
+    - N=1（LLMによる自己ナラティブ再構築）を方法論的実例として位置づけ
