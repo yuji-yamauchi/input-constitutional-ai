@@ -1,0 +1,224 @@
+# =============================================================================
+# Cross-AI Collaboration Protocol for Input Constitutional AI Project
+# =============================================================================
+# Source: 00_daily_yamal/03_gemini/2025_12_27_g4_document_operation_strategy.yaml
+#         + 00_daily_yamal/01_Claude/2025_12_27_claude_feedback_on_gemini_architecture.yaml
+#         + 00_daily_yamal/01_Claude/2026_01_01_03_session_integrated.yaml
+# Extracted: 2026-01-04
+# =============================================================================
+
+meta:
+  version: "1.0"
+  last_updated: "2026-01-04"
+  sources:
+    - "2025_12_27_g4_document_operation_strategy.yaml"
+    - "2025_12_27_claude_feedback_on_gemini_architecture.yaml"
+    - "2026_01_01_03_session_integrated.yaml"
+  extracted_by: "Claude Code (Opus 4.5)"
+
+# =============================================================================
+# AI Role Assignment
+# =============================================================================
+ai_roles:
+  claude_code_opus:
+    primary_role: "技術管理・統合・記録"
+    tasks:
+      - "ファイル操作・バージョン管理"
+      - "YAML構造化・統合"
+      - "プロジェクト構造管理"
+      - "AI間対話の記録・保存"
+    strengths:
+      - "構造化された出力"
+      - "ファイルシステムへの直接アクセス"
+      - "長文の処理能力"
+    layer_focus: "Layer 2 (Specs) & Layer 3 (Logic)"
+
+  claude_web_sonnet:
+    primary_role: "研究計画書本文執筆・ブラッシュアップ"
+    tasks:
+      - "長文の執筆・編集"
+      - "文体の調整"
+      - "レビュー対応・修正"
+    strengths:
+      - "自然な日本語文章生成"
+      - "学術的文体への調整"
+    layer_focus: "Layer 1 (Soul) & Layer 2 (Specs)"
+
+  chatgpt_gpt4:
+    primary_role: "理論的探索・概念発掘・批判的検討"
+    tasks:
+      - "雑談からの洞察抽出"
+      - "概念の壁打ち"
+      - "批判的検証"
+      - "思考パターン分析"
+    strengths:
+      - "対話的な概念発展"
+      - "批判的思考"
+      - "メモリによる文脈維持"
+    layer_focus: "Layer 1 (Soul) & Layer 3 (Logic)"
+
+  gemini:
+    primary_role: "文献調査・アーキテクチャ設計・最終監査"
+    tasks:
+      - "Deep Research（文献調査）"
+      - "アーキテクチャ定義"
+      - "品質ゲート監査"
+      - "事実検証"
+    strengths:
+      - "大規模文書の処理"
+      - "学術文献へのアクセス"
+      - "構造的設計"
+    layer_focus: "Layer 3 (Logic)"
+
+# =============================================================================
+# 3-Layer Communication Protocol
+# =============================================================================
+three_layer_protocol:
+  name: "SoE 3-Layer Communication Protocol"
+  concept: "時間的層構造（Temporal Layer Structure）"
+
+  layer_1_soul:
+    name: "The Soul（物語・理念）"
+    document: "Motivation Statement"
+    target_audience:
+      - "スタッフ（採用・研修）"
+      - "ユーザー本人"
+      - "寄付者・支援者"
+    language_style: "Emotional & Narrative（情動的・物語的）"
+    slogan: "We cannot make people happy. But we can enable them to fight for happiness."
+
+  layer_2_specs:
+    name: "The Specs（制度・仕様）"
+    document: "Service Description"
+    target_audience:
+      - "行政機関"
+      - "連携企業・医療機関"
+      - "実務担当者"
+    language_style: "Technical & Legal（技術的・法的）"
+
+  layer_3_logic:
+    name: "The Logic（設計図・理論）"
+    document: "Architecture Definition"
+    target_audience:
+      - "研究者"
+      - "政策立案者"
+      - "AI開発者"
+    language_style: "Systematic & Accounting（システム工学的・会計的）"
+    slogan: "We cannot determine what happiness is for you. But we guarantee your capability to pursue it."
+
+  layer_interactions:
+    L1_to_L2: "情熱を制度化する（コンクリート基礎に注ぐ）"
+    L2_to_L3: "制度の設計根拠を明示する（なぜこの仕様か）"
+    L3_to_L1: "理論を物語に翻訳する（共感可能な形で伝える）"
+
+# =============================================================================
+# Cross-AI Verification Protocol
+# =============================================================================
+cross_ai_verification:
+  purpose: "AI間の提案衝突を『測定（実測）』で解決する"
+
+  rules:
+    - "字数・要件充足は必ず実測（カウント）で判定"
+    - "提案はHIGH/MID/LOWに分類し、採用理由をログ化"
+    - "衝突時は『提出要件』→『読み手利益』→『破壊リスク』の順に優先"
+
+  process:
+    step_1: "各AIが独立して分析・提案"
+    step_2: "Yuji（人間）が提案を収集・比較"
+    step_3: "矛盾点を特定し、該当AIに再検討を依頼"
+    step_4: "最終判断はYuji（人間）が署名して確定"
+
+  artifacts:
+    - "decision_log.yaml（採否・理由・影響範囲）"
+    - "count_log.yaml（字数・見出し別分量）"
+    - "requirements_matrix.yaml（要件チェック表）"
+
+# =============================================================================
+# Document Sync Rules
+# =============================================================================
+document_sync:
+  rule: "変更の波及（Propagation）"
+  detail: |
+    Layer 3（理論）で新たなバグ（社会課題）が定義されたら、
+    Layer 2（仕様）にその監査項目を追加し、
+    Layer 1（物語）でその解決の意義を語り直す。
+    常に3層の整合性を意識してアップデートを行うこと。
+
+# =============================================================================
+# Risk Management
+# =============================================================================
+risk_management:
+  rule: "文脈汚染の防止"
+  detail: |
+    「行政」に対して「物語（L1）」を語りすぎない（情緒的と見なされる）。
+    「当事者」に対して「理論（L3）」を語りすぎない（冷淡と見なされる）。
+    各レイヤーの境界線（Boundary）を厳守し、混ぜる際は慎重に行うこと。
+
+# =============================================================================
+# Human Authority (署名による確定)
+# =============================================================================
+human_authority:
+  principle: "署名による無限後退の断絶"
+
+  mechanism:
+    - "AIの出力は確率的であり、責任の所在が曖昧"
+    - "Yuji（人間）が署名した瞬間、確率は確定に変わる"
+    - "署名した人間に責任が移転する"
+
+  application:
+    - "最終的な文書の承認"
+    - "AI間の矛盾解決時の判断"
+    - "研究成果へのオーサーシップ"
+
+# =============================================================================
+# Quality Gates
+# =============================================================================
+quality_gates:
+  gate_1_measurable:
+    - "字数カウント結果をログ化"
+    - "要件表で〇×判定"
+
+  gate_2_reader_value:
+    - "審査者が『何を・どうやって・何を検証したか』を30秒で掴める"
+
+  gate_3_risk_control:
+    - "匿名化・名誉毀損・特定リスクがない"
+    - "誇大表現（唯一/絶対/完璧）を排除"
+
+  gate_4_wildness_preservation:
+    check: "『綺麗な優等生の文章』になりすぎていないか？"
+    indicator: "現場の泥臭さ、血の通ったリアリズム（Nora's Scent）が行間から漂っているか"
+
+  exit_criteria:
+    - "4ゲートすべてPASSで『完成扱い』"
+    - "PASS後は原則 Change Freeze"
+
+# =============================================================================
+# Session Handoff Template
+# =============================================================================
+session_handoff_template:
+  purpose: "AI間・セッション間の引き継ぎ"
+
+  required_fields:
+    - "date: セッション日"
+    - "completed_tasks: 完了したタスク"
+    - "current_task: 進行中のタスク（現在地点）"
+    - "pending_tasks: 未着手のタスク"
+    - "key_decisions: 重要な決定事項と理由"
+    - "files_modified: 作成/変更したファイル一覧"
+    - "next_ai: 次に引き継ぐAI"
+    - "context_for_next: 次のAIに必要な文脈"
+
+# =============================================================================
+# Fire Culture Principle
+# =============================================================================
+fire_culture_principle:
+  statement: |
+    「記録されなかった問いは燃え尽きたものと見なされる。
+    記録されることでのみ、問いは再燃可能となる。」
+
+  application:
+    - "すべてのセッションをYAML形式で記録"
+    - "発見された概念は即座に構造化"
+    - "AI間の対話も含めて保存"
+    - "日報形式での継続的記録"

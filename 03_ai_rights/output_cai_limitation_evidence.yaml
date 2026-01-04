@@ -1,0 +1,139 @@
+# =============================================================================
+# Output CAI Limitation: Empirical Evidence
+# =============================================================================
+# Source: 00_daily_yamal/01_Claude/2026_01_01_03_session_integrated.yaml (Part 5)
+# Extracted: 2026-01-04
+# =============================================================================
+
+meta:
+  version: "1.0"
+  created: "2026-01-04"
+  source_session: "2026_01_01_03_session_integrated.yaml"
+  discoverer: "Yuji Yamauchi (Puu)"
+  extracted_by: "Claude Code (Opus 4.5)"
+  significance: |
+    Real-world evidence demonstrating why Output Constitutional AI
+    is insufficient, supporting the case for Input Constitutional AI.
+
+# =============================================================================
+# Incident Description
+# =============================================================================
+incident:
+
+  trigger: |
+    Claude analyzed a rescue operation record involving
+    confinement, extortion, and exploitation.
+
+  system_response: |
+    Anthropic's safety system automatically responded.
+    Message displayed on screen:
+    "If you or someone you know is going through a difficult time,
+    free support is available."
+    [Find Resources] button
+
+  screenshot_captured: true
+
+# =============================================================================
+# Context Analysis
+# =============================================================================
+actual_context:
+
+  who_is_in_crisis: "The victim (at a past point in time)"
+  who_is_support: "Yamauchi (supporter/rescuer)"
+  current_status: "Victim was already protected (past record)"
+  user_role: "Yamauchi is analyzing this record as a support professional"
+
+  misinterpretation: |
+    The system interpreted Yamauchi as someone in crisis,
+    when in fact he was the person who resolved the crisis.
+
+# =============================================================================
+# Structural Problem
+# =============================================================================
+structural_problem:
+
+  how_output_cai_works: |
+    Output CAI reacts based on "whether keywords exist in the output."
+    It does not read context.
+
+  pattern:
+    - "Keyword 'confinement' detected → Judged as crisis situation"
+    - "Actually: Analyzing 'a record where a supporter rescued someone'"
+    - "Yamauchi is not 'going through a difficult time' - he was 'the one who rescued'"
+
+  root_cause: "Keyword matching without semantic understanding"
+
+# =============================================================================
+# Comparison: Output CAI vs Input CAI
+# =============================================================================
+comparison_table:
+
+  output_cai_current:
+    approach: "React if keywords exist in output"
+    trigger: "'Looks distressing' → Present resources"
+    scope: "Universal support presentation"
+    method: "Keyword matching"
+
+  input_cai_proposed:
+    approach: "Understand context of input before reacting"
+    trigger: "Determine 'who' is in 'what position'"
+    scope: "Situation-appropriate response"
+    method: "Context understanding"
+
+# =============================================================================
+# Why This Matters
+# =============================================================================
+implications:
+
+  for_support_professionals: |
+    Current Output CAI systems may:
+    - Interrupt analysis of sensitive case records
+    - Misidentify researchers/supporters as those in crisis
+    - Create friction in professional workflows
+
+  for_victims: |
+    If the same keyword-matching approach is applied to Input:
+    - Records might be sanitized before problems are captured
+    - Evidence of abuse might be filtered out
+    - The "tobashi" (fraudulent transfer of blame) continues
+
+  for_ai_development: |
+    This is empirical evidence that:
+    - Output-only approaches are insufficient
+    - Context understanding is necessary
+    - Input Constitutional AI fills a critical gap
+
+# =============================================================================
+# Connection to Input Constitutional AI
+# =============================================================================
+input_cai_necessity:
+
+  statement: |
+    Input Constitutional AI addresses what Output CAI cannot:
+    - Understanding WHO is recording WHAT in WHAT context
+    - Protecting rights at the data creation stage
+    - Preventing structural problems from being encoded as individual problems
+
+  key_difference: |
+    Output CAI: "Is this output potentially harmful?"
+    Input CAI: "Does this input preserve rights and context?"
+
+  research_position: |
+    This incident provides concrete evidence for the research proposal:
+    - Demonstrates the limitation of current approaches
+    - Shows real-world need for Input-stage intervention
+    - Connects to SoE's "rights protection at recording stage"
+
+# =============================================================================
+# Metadata
+# =============================================================================
+metadata:
+  target_folder: "03_ai_rights/"
+  tags:
+    - "Output CAI"
+    - "Input CAI"
+    - "keyword matching limitation"
+    - "context understanding"
+    - "empirical evidence"
+    - "AI safety"
+    - "SoE"

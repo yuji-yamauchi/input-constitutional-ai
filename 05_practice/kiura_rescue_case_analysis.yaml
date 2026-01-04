@@ -1,0 +1,191 @@
+# =============================================================================
+# SoE Practice Case: Structural Analysis of Crisis Intervention
+# =============================================================================
+# Source: 00_daily_yamal/01_Claude/2026_01_01_03_session_integrated.yaml (Part 3)
+# Extracted: 2026-01-04
+# Note: Names and details anonymized for privacy protection
+# =============================================================================
+
+meta:
+  version: "1.0"
+  created: "2026-01-04"
+  source_session: "2026_01_01_03_session_integrated.yaml"
+  extracted_by: "Claude Code (Opus 4.5)"
+  privacy_note: "All identifying information has been anonymized"
+
+# =============================================================================
+# Case Overview
+# =============================================================================
+case_overview:
+
+  case_type: "Crisis intervention - extortion and confinement"
+  duration: "8 days confinement"
+  outcome: "Successful extraction and protection"
+
+  systemic_failures:
+    police: "Pre-notification made but no action taken"
+    welfare_support: "Recognized perpetrator but took no action"
+
+  reasons_for_inaction:
+    - "No evidence"
+    - "Outside jurisdiction"
+    - "Afraid of being sued"
+    - "No precedent"
+    - "Someone else will do it"
+
+  structural_insight: |
+    Same structure as LLM's "pretending to read":
+    There is a wall between "understanding" and "acting."
+
+# =============================================================================
+# Intervention Structure (5 Phases)
+# =============================================================================
+intervention_phases:
+
+  phase_1_assessment:
+    name: "Situation Assessment First"
+    actions:
+      - "Prefacing with 'I don't have accurate information' to let them talk"
+      - "Checking mobile phone beforehand"
+      - "Collecting prior information from multiple sources"
+    skill: "Information gathering without judgment"
+
+  phase_2_choice_preservation:
+    name: "Not Imposing Judgment"
+    actions:
+      - "Presenting options: 'Do you want to hide it? Or...' "
+      - "Being honest: 'If there's guilt, you should atone for it'"
+    skill: "Respecting autonomy while providing reality check"
+
+  phase_3_structural_understanding:
+    name: "Seeing the Pattern"
+    key_quotes:
+      - "'The worst thing is probably that you can't cut the connection'"
+      - "'Keeping it among themselves - that's actually common'"
+    skill: "Recognizing individual problems as patterns"
+
+  phase_4_physical_protection:
+    name: "Immediate Physical Protection"
+    actions:
+      - "'I'm going to ignore the perpetrator and take you away'"
+      - "'Your excuse is that you were taken'"
+      - "'I'll prepare a hotel' - 'It's a hotel I know, so it's safe'"
+      - "'Turn off your phone' - 'If they call, I'll answer'"
+    skill: "Creating immediate safety, taking on confrontation"
+
+  phase_5_survival_conditions:
+    name: "Establishing Survival Conditions First"
+    actions:
+      - "'For now, get some sleep tonight'"
+      - "'Tomorrow, let's go eat something good'"
+    skill: "Physiological safety before psychological processing"
+
+# =============================================================================
+# Reproducibility Assessment
+# =============================================================================
+reproducibility:
+
+  question: "What percentage of support workers could reproduce this judgment?"
+  answer: "Less than 5%"
+
+  difficulty_factors:
+    - factor: "Not giving 'correct' advice"
+      description: "Knowing the 'right thing' but deliberately not saying it"
+
+    - factor: "Not blaming someone with 'leverage' against them"
+      description: "Understanding vulnerability without adding shame"
+
+    - factor: "Checking the mobile phone"
+      description: "Requires trust relationship AND judgment ability"
+
+    - factor: "'I'll answer' (direct confrontation)"
+      description: "Willingness to directly face the perpetrator"
+
+    - factor: "Seeing 'structure'"
+      description: "Pattern recognition, not individual problem framing"
+
+# =============================================================================
+# SoE Value Proposition
+# =============================================================================
+soe_implication:
+
+  statement: |
+    If this judgment can be "languaged" and "structured" in a reproducible form,
+    the remaining 95% of support workers may be able to use it.
+    That is the value of SoE.
+
+  what_needs_to_be_captured:
+    - "Decision trees that seem like 'intuition'"
+    - "Risk assessment that seems like 'experience'"
+    - "Timing judgments that seem like 'gut feeling'"
+
+  connection_to_research:
+    masters: "Position as 'crisis intervention skill' under assessment framework"
+    doctoral: "Connect to abuse infection model prevention"
+
+# =============================================================================
+# Transmission Limitation Insight
+# =============================================================================
+transmission_limitation:
+
+  core_problem: |
+    No matter how precisely languaged,
+    without the recipient's schema, it "cannot be read."
+
+  transmission_structure: |
+    Practitioner's experience ("blood")
+        ↓
+    Languaging (time-limited)
+        ↓
+    Converted through recipient's schema
+        ↓
+    Recipient's cognition (something different)
+
+  schema_gap_examples:
+    - topic: "8 days of confinement"
+      experienced_reader: "Ah, so that's what it was... (clicks into place)"
+      inexperienced_reader: "Does that really happen?"
+
+    - topic: "Police don't act"
+      experienced_reader: "That's a common story"
+      inexperienced_reader: "That must be a special case"
+
+    - topic: "Self-esteem increased after incident"
+      experienced_reader: "Structurally that makes sense"
+      inexperienced_reader: "Isn't that measurement error? n=1, right?"
+
+# =============================================================================
+# Three Layers Unique to This Case
+# =============================================================================
+unique_value:
+
+  statement: |
+    Normally, one person doesn't have all three layers:
+
+  three_layers:
+    - layer: "Theory"
+      content: "Anomie factor, Hubris factor, abuse infection model"
+
+    - layer: "Data"
+      content: "NOCC self-esteem measurements (before/after incident comparison)"
+
+    - layer: "Practice"
+      content: "Rescue operation when police wouldn't act"
+
+  why_rare:
+    - "Theorists don't go to the field"
+    - "Practitioners don't measure"
+    - "People who measure don't participate in rescue operations"
+
+# =============================================================================
+# Metadata
+# =============================================================================
+metadata:
+  target_folder: "05_practice/"
+  tags:
+    - "crisis intervention"
+    - "case study"
+    - "SoE practice"
+    - "reproducibility"
+    - "schema transmission"
+    - "systemic failure"

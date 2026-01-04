@@ -1,0 +1,162 @@
+# =============================================================================
+# Abuse Infection Model: Anomie Factor & Hubris Factor
+# =============================================================================
+# Source: 00_daily_yamal/01_Claude/2026_01_01_03_session_integrated.yaml (Part 4)
+# Extracted: 2026-01-04
+# =============================================================================
+
+meta:
+  version: "1.0"
+  created: "2026-01-04"
+  source_session: "2026_01_01_03_session_integrated.yaml"
+  discoverer: "Yuji Yamauchi (Puu)"
+  extracted_by: "Claude Code (Opus 4.5)"
+
+# =============================================================================
+# Core Insight
+# =============================================================================
+core_insight: |
+  Abuse is "infectious."
+  And because each successful act of harm raises self-esteem, it doesn't stop.
+
+# =============================================================================
+# The Infection Cycle
+# =============================================================================
+infection_cycle:
+
+  description: |
+    Victimization leads to destruction of self-esteem.
+    This is then "recovered" through harming those weaker,
+    creating a twisted feedback loop.
+
+  progression:
+    - stage: 1
+      state: "Being victimized/exploited"
+      psychology: "'I am worthless' (self-esteem DOWN)"
+
+    - stage: 2
+      state: "Harming someone weaker"
+      psychology: "'I have power too'"
+
+    - stage: 3
+      state: "The harm 'succeeds'"
+      psychology: "'I won't get caught'"
+
+    - stage: 4
+      state: "Repetition"
+      psychology: "'I am a chosen one' (Hubris Factor)"
+
+# =============================================================================
+# Two Factors
+# =============================================================================
+factors:
+
+  anomie_factor:
+    name: "Anomie Factor"
+    japanese: "アノミー因子"
+    definition: "Normlessness among the 'have-nots'"
+    direction: "Corruption from below"
+    manifestation: "Breaking rules because one feels they have nothing to lose"
+
+  hubris_factor:
+    name: "Hubris Factor"
+    japanese: "ヒュブリス因子"
+    definition: "Normlessness among the 'haves'"
+    direction: "Corruption from above"
+    manifestation: "Breaking rules because one feels above them"
+    note: "In this infection model, even the 'have-nots' can develop hubris through successful harm"
+
+# =============================================================================
+# Empirical Observation
+# =============================================================================
+empirical_evidence:
+
+  case: "Kiura case (anonymized)"
+  observation: "Subject's self-esteem increased after the incident"
+  measurement: "NOCC assessment data (before/after comparison)"
+
+  structure: |
+    Victimization → Self-esteem destruction → Harming weaker others →
+    "Success" → Self-esteem recovery (in distorted form)
+
+  implication: |
+    This creates a measurable, structural pattern.
+    The cycle can be detected through proper assessment.
+
+# =============================================================================
+# Intergenerational Transmission
+# =============================================================================
+intergenerational_transmission:
+
+  description: |
+    The "debt" is inherited by the next generation.
+
+  example:
+    - "Brother causes incident"
+    - "Family labeled as 'family of a killer'"
+    - "Sister's marriage breaks down"
+    - "If sister has children, they too are affected"
+
+  accounting_metaphor: |
+    What is visible: "This person killed someone" (single-year P&L statement)
+
+    What should be examined: Balance Sheet liabilities section:
+    - Childhood nurturing environment debt
+    - Mental health debts inherited from parents
+    - Support deficiency debts that society neglected
+
+# =============================================================================
+# Connection to SoE Theory
+# =============================================================================
+soe_connection:
+
+  rights_imbalance:
+    definition: "The true pathogen preceding wealth inequality"
+    relation: "Anomie and Hubris are symptoms of rights imbalance"
+
+  tobashi_detection:
+    description: "Society's debts 'tobashi-ed' (fraudulently transferred) to individuals"
+    mechanism: |
+      Society fails to provide adequate support →
+      This is recorded as the individual's "self-responsibility" →
+      The structural debt is hidden
+
+  soe_diagnostic_value: |
+    SoE can detect when an individual is being blamed
+    for debts that were actually society's.
+    This enables early intervention before the infection cycle begins.
+
+# =============================================================================
+# Research Implications
+# =============================================================================
+research_implications:
+
+  masters_thesis:
+    - "Frame through accounting metaphor (B/S, P/L, C/F)"
+    - "Use NOCC data to demonstrate measurable patterns"
+    - "Position as assessment framework validation"
+
+  doctoral_potential:
+    - "Anomie/Hubris factor visualization"
+    - "Abuse infection model formalization"
+    - "Empirical demonstration of self-esteem recovery through harm"
+    - "Connection to Robeyns' Limitarianism"
+
+  policy_implications:
+    - "Individual 'incidents' are symptoms of structural failures"
+    - "Intervention at the structural level prevents infection"
+    - "Current 'self-responsibility' narrative enables tobashi"
+
+# =============================================================================
+# Metadata
+# =============================================================================
+metadata:
+  target_folder: "01_philosophy/"
+  tags:
+    - "anomie"
+    - "hubris"
+    - "abuse infection"
+    - "intergenerational transmission"
+    - "accounting metaphor"
+    - "SoE"
+    - "structural analysis"

@@ -1,0 +1,170 @@
+# =============================================================================
+# SoE Document Operation Strategy v1.0
+# =============================================================================
+# Purpose: Define a multi-layered documentation strategy to translate the core philosophy
+#          into appropriate languages for different stakeholders.
+# Author: Yuji Yamauchi & AI Research Partners (Gemini & Claude)
+# Date: 2025-12-27
+# =============================================================================
+
+strategy_metadata:
+  name: "SoE 3-Layer Communication Protocol"
+  core_concept: "Temporal Layer Structure (時間的層構造)"
+  objective:
+    - "相手（Target Audience）に合わせて最適な『言語』を選択・翻訳する。"
+    - "情熱（Soul）と実務（Specs）と論理（Logic）を矛盾なく統合管理する。"
+    - "研究者、行政、当事者、スタッフ全方位に対する説明責任（Accountability）の完全履行。"
+
+# =============================================================================
+# 1. LAYER DEFINITIONS (ポートフォリオ構成)
+# =============================================================================
+layers:
+  layer_1:
+    name: "The Soul (物語・理念)"
+    document: "Motivation Statement (Why We Do What We Do)"
+    target_audience:
+      - "スタッフ（採用・研修）"
+      - "ユーザー本人（導入時）"
+      - "寄付者・支援者"
+      - "一般大衆（広報）"
+    language_style:
+      - "Emotional & Narrative (情動的・物語的)"
+      - "Metaphorical (戦い、ヘルプ、戦災復興)"
+    key_function:
+      - "共感の獲得とモチベーションの維持。"
+      - "「なぜやるのか」という原動力の共有。"
+    slogan_version: "Narrative Ver."
+    slogan_text: "We cannot make people happy. But we can enable them to fight for happiness."
+
+  layer_2:
+    name: "The Specs (制度・仕様)"
+    document: "Service Description (FY20xx)"
+    target_audience:
+      - "行政機関（役所・監査指導課）"
+      - "連携企業・医療機関"
+      - "実務担当者"
+    language_style:
+      - "Technical & Legal (技術的・法的)"
+      - "Standardized (ISO, ICF, Best Interests)"
+    key_function:
+      - "Layer 1の情熱を、社会的に通用する「制度」に変換するコンクリート基礎。"
+      - "コンプライアンス順守と品質保証の証明。"
+    slogan_version: "N/A (Use specific standards)"
+    slogan_text: "Compliance with ISO 30414 / ICF Coding / JIS Q SoE (Future)"
+
+  layer_3:
+    name: "The Logic (設計図・理論)"
+    document: "Project Pumpkin Scissors v3.0 (Architecture Definition)"
+    target_audience:
+      - "研究者（大学院・博士課程）"
+      - "政策立案者"
+      - "AI開発者・エンジニア"
+      - "Susan Scott-Parker等、国際的オピニオンリーダー"
+    language_style:
+      - "Systematic & Accounting (システム工学的・会計的)"
+      - "Logical (複式簿記、トバシ検出、システム監査)"
+    key_function:
+      - "Layer 1と2が「なぜ機能するのか」を数学的・工学的に説明する設計図。"
+      - "感情論を排した、構造的欠陥（バグ）の指摘と是正勧告。"
+    slogan_version: "Academic Ver."
+    slogan_text: "We cannot determine what happiness is for you. But we guarantee your capability to pursue it."
+
+# =============================================================================
+# 2. STRATEGIC SIGNIFICANCE (運用の意義)
+# =============================================================================
+significance:
+  translation_capability:
+    title: "多言語対応（プロトコルの切り替え）"
+    description: >
+      同じ「SoE」という実体を、相手のOSに合わせて出力形式を変えることができる。
+      感情で動く人には「物語」を、ルールで動く人には「仕様」を、
+      論理で動く人には「設計図」を渡すことで、あらゆるステークホルダーと接続可能になる。
+
+  robustness_and_consistency:
+    title: "堅牢性と整合性の担保"
+    description: >
+      3つのレイヤーは別々のものではなく、相互に補完し合っている。
+      「物語（L1）」が揺らいだら「理論（L3）」で支え、
+      「理論（L3）」が冷たすぎたら「物語（L1）」で温め、
+      それらを「制度（L2）」という現実的な地盤に固定する。
+      このトライアングル構造により、批判や環境変化に対する防御力が最大化される。
+
+  knowledge_formalization:
+    title: "暗黙知の形式知化"
+    description: >
+      15年間の現場実践（L1/L2）から抽出されたエッセンスを、
+      L3（アーキテクチャ）として体系化したことで、
+      Yuji Yamauchi個人の属人性を超え、再現可能な「社会技術」へと昇華された。
+
+# =============================================================================
+# 3. IMPLEMENTATION GUIDELINES (運用ルール)
+# =============================================================================
+guidelines:
+  document_sync:
+    rule: "変更の波及（Propagation）"
+    detail: >
+      L3（理論）で新たなバグ（社会課題）が定義されたら、
+      L2（仕様）にその監査項目を追加し、
+      L1（物語）でその解決の意義を語り直す。
+      常に3層の整合性を意識してアップデートを行うこと。
+
+  ai_role_assignment:
+    gpt_role: "Layer 1 & 3 Focus"
+    gpt_task: "熱い物語の生成と、冷徹な論理設計の壁打ち。"
+    claude_role: "Layer 2 & 3 Focus"
+    claude_task: "制度との整合性チェック、学術的妥当性の検証、論文執筆。"
+    gemini_role: "Layer 3 Focus (Deep Research)"
+    gemini_task: "文献検証、事実確認、アーキテクチャ設計の精緻化。"
+
+  risk_management:
+    rule: "文脈汚染の防止"
+    detail: >
+      「行政」に対して「物語（L1）」を語りすぎない（情緒的と見なされる）。
+      「当事者」に対して「理論（L3）」を語りすぎない（冷淡と見なされる）。
+      各レイヤーの境界線（Boundary）を厳守し、混ぜる際は慎重に行うこと。
+
+  cross_ai_verification:
+    rule: "相互検証プロトコル"
+    detail: >
+      重要な文書やアーキテクチャ変更は、
+      Claude と Gemini の両方でレビューを行い、
+      盲点の発見と多角的検証を実施する。
+      Yujiが「翻訳者・媒介者」として機能する。
+
+# =============================================================================
+# 4. VISUAL SUMMARY (図解)
+# =============================================================================
+visual_summary:
+  triangle_model: |
+
+                    L3: The Logic (設計図)
+                   /  \
+                  /    \
+                 /      \
+                /   SoE  \
+               /          \
+              /____________\
+        L1: Soul        L2: Specs
+        (物語)          (制度)
+
+  layer_interactions:
+    L1_to_L2: "情熱を制度化する（コンクリート基礎に注ぐ）"
+    L2_to_L3: "制度の設計根拠を明示する（なぜこの仕様か）"
+    L3_to_L1: "理論を物語に翻訳する（共感可能な形で伝える）"
+
+# =============================================================================
+# Metadata
+# =============================================================================
+metadata:
+  created_at: "2025-12-27T21:30:00+09:00"
+  created_by: "Claude Code (Opus 4.5)"
+  source: "Gemini proposal - Document Operation Strategy"
+  version: "1.0"
+  cross_ai_collaboration:
+    gemini: "アーキテクチャ設計・戦略提案"
+    claude_web: "整合性検証・フィードバック"
+    claude_code: "統合・記録管理"
+  significance: |
+    SoEプロジェクトの「多言語コミュニケーション戦略」を
+    正式にプロトコル化した文書。
+    今後の対外発信・文書作成の基準となる。

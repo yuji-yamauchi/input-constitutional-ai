@@ -123,7 +123,7 @@ project_structure:
       full_path: "C:/Users/USER/Documents/GitHub/input-constitutional-ai/00_daily_yamal"
       purpose: "日常的なセッション記録（AI別に分類）"
       subdirectories:
-        claude_web: "01_Cloude"      # Claude Web版（プロジェクト機能）
+        claude_web: "01_Claude"      # Claude Web版（プロジェクト機能）
         gpt: "02_GPT"                 # ChatGPT
         gemini: "03_gemini"           # Gemini
         vsclaude: "04_VSClaude"       # Claude Code（VSCode拡張）
@@ -169,7 +169,7 @@ session_classification_rules:
         - "05_practice: 現場実践・事例"
         - "06_researcher_context: 研究者背景"
         - "07_integration: 全体統合"
-      no_clear_match: "→ 99_daily_yamal/01_Claude/"
+      no_clear_match: "→ 00_daily_yamal/01_Claude/"
   
   special_cases:
     cross_domain:
@@ -178,7 +178,7 @@ session_classification_rules:
     
     meta_discussion:
       description: "プロジェクト管理、ディレクトリ構造の議論"
-      action: "99_daily_yamal/01_Claude/ または root直下のREADME更新"
+      action: "00_daily_yamal/01_Claude/ または root直下のREADME更新"
     
     迷った場合:
       action: "Claudeから『このセッションは○○フォルダでよろしいですか？』と確認"
@@ -271,13 +271,13 @@ custom_instructions_text: |
   - `06_researcher_context`: 研究者背景
   - `07_integration`: 横断的統合
   - `08_research_proposal`: 大学院入試研究計画書
-  - `99_daily_yamal`: 一般的な日常セッション
+  - `00_daily_yamal`: 一般的な日常セッション
   
   **振り分けルール**:
   1. 研究計画書作成関連 → `08_research_proposal/01_planning_sessions/`
   2. SoE倫理・哲学議論 → `01_philosophy` または `08_research_proposal/05_ethics_dialogue/`
   3. 明確なテーマがある → 該当フォルダ
-  4. それ以外 → `99_daily_yamal/01_Claude/`
+  4. それ以外 → `00_daily_yamal/01_Claude/`
   
   **YAML作成時の記載**:
   ```yaml

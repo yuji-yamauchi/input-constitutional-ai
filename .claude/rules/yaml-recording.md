@@ -7,7 +7,7 @@
 ## セッション記録の命名規則
 
 ```
-99_daily_yamal/01_Cloude/YYYY_MM_DD_c{N}.yaml
+00_daily_yamal/01_Claude/YYYY_MM_DD_c{N}.yaml
 ```
 
 - `c` = Claude Code
@@ -18,8 +18,8 @@
 ## 他AIとの統合
 
 ```
-99_daily_yamal/02_GPT/YYYY_MM_DD_g{N}.yaml    # ChatGPT
-99_daily_yamal/03_LeChat/YYYY_MM_DD_lc{N}.yaml  # Le Chat
+00_daily_yamal/02_GPT/YYYY_MM_DD_g{N}.yaml    # ChatGPT
+00_daily_yamal/03_gemini/YYYY_MM_DD_ge{N}.yaml  # Gemini
 ```
 
 ## セッション記録の構造

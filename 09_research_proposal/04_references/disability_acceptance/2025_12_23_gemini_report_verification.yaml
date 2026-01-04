@@ -232,7 +232,8 @@ verification_report:
       - "文献レビュー部分はGeminiレポートではなく一次情報に基づいて再構成"
 
   session_metadata:
-    target_folder: "99_daily_yamal/01_Claude/"
+    target_folder: "09_research_proposal/04_references/disability_acceptance/"
+    note: "Deep Research関連ファイル群と同梱"
     related_files:
       - "2025_12_23_deep_research_narrative_acceptance.yaml"
       - "narrative_definitions_disability_self_acceptance_research.md"

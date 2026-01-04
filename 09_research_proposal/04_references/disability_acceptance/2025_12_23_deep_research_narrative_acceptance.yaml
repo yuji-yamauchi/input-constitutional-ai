@@ -215,8 +215,9 @@ next_steps:
     - "N=1としての自己開示の戦略検討"
 
 metadata:
-  target_folder: "99_daily_yamal/01_Claude/"
+  target_folder: "09_research_proposal/04_references/disability_acceptance/"
   filename_suggestion: "2025_12_23_deep_research_narrative_acceptance.yaml"
+  note: "Deep Research関連ファイル群と同梱"
   tags:
     - "Deep Research"
     - "障害受容"

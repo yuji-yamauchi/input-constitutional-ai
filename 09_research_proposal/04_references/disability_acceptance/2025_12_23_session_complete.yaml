@@ -319,8 +319,9 @@ session_summary:
     福祉業界への根本的な問いかけとなりうる。
 
   metadata:
-    target_folder: "99_daily_yamal/01_Claude/"
+    target_folder: "09_research_proposal/04_references/disability_acceptance/"
     filename: "2025_12_23_session_complete.yaml"
+    note: "Deep Research関連ファイル群と同梱のため、このディレクトリに配置"
     tags:
       - "Deep Research"
       - "障害受容"

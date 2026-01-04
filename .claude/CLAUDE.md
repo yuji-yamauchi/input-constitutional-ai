@@ -25,7 +25,7 @@
 
 ```
 00_daily_yamal/
-  01_Cloude/           # Claude Web版セッション記録
+  01_Claude/           # Claude Web版セッション記録
   02_GPT/              # ChatGPTセッション記録
   03_gemini/           # Geminiセッション記録
   04_VSClaude/         # Claude Code（VSCode）セッション記録
@@ -114,6 +114,6 @@ outputs/                # AI間共有ファイル
 
 ---
 
-*最終更新: 2025-12-11*
+*最終更新: 2026-01-04*
 
 
