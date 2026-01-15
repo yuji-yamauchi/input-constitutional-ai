@@ -1,0 +1,86 @@
+session_metadata:
+  date: "2026-01-14"
+  session_type: "出願書類作成支援"
+  ai_model: "Claude Opus 4.5"
+  key_achievements:
+    - "要項（youkou2026.pdf）の確認・整理"
+    - "志願理由書ドラフト作成（1,073字）"
+    - "GPT君日報のYAML保存"
+
+context:
+  previous_session: "2026-01-14（コンテキスト継続）"
+  carried_over:
+    - "研究計画書v10完成（文字数限界）"
+    - "Research Gap検証報告書（Claude版・Gemini版）読み込み済み"
+    - "Boszormenyi-Nagy研究YAML作成済み"
+
+志願理由書_draft:
+  status: "ドラフト完成・レビュー待ち"
+  word_count: 1073
+  requirements:
+    target: "1,000〜1,200字"
+    key_points:
+      - "これまでの学習経験を踏まえる"
+      - "大学院で何を得ようとするのか"
+      - "成果を将来どのように活かすのか"
+      - "研究計画書と重複しないこと"
+  structure:
+    - section: "導入"
+      content: "10年以上の就労支援経験、構造的課題への問題意識"
+    - section: "動機"
+      content: "累積環境因子の軽視、当事者が語る言葉を持てない現状"
+    - section: "学習目標"
+      content: "理論的基盤習得、研究方法論、実践と理論の往還"
+    - section: "将来展望"
+      content: "アセスメント手法の実装、支援者研修プログラム開発"
+  differentiation_from_research_plan:
+    research_plan: "具体的研究内容（累積環境因子、複式簿記メタファー、LLM活用、方法論）"
+    statement_of_purpose: "動機、学習目標、将来展望（重複なし）"
+
+出願書類_進捗:
+  completed:
+    - "研究計画書（v10）"
+    - "出願書類の全体把握"
+  in_progress:
+    - "志願理由書（ドラフト完成、承認待ち）"
+  pending:
+    - "職務経歴書（4ページ）"
+    - "入学検定料振込（10,000円）"
+    - "書類一式郵送（1/23消印有効）"
+
+職務経歴書_準備:
+  required_sections:
+    - "1. 職歴（異動含む）"
+    - "2. 社会における活動（地域活動・ボランティア）"
+    - "3. 著作・論文等"
+    - "4. 資格等"
+    - "5. 受賞・表彰"
+  data_sources:
+    - "Gemini日報（2026_01_13_ge1.yaml）: researcher_profile, proof_of_competence"
+    - "過去資料: 福祉スキーム説明資料.pdf, コワーキング.pdf等"
+
+key_insights:
+  insight_1:
+    statement: "志願理由書と研究計画書の役割分担が明確"
+    detail: "研究計画書=What/How、志願理由書=Why/Future"
+  insight_2:
+    statement: "GPT君のV8レビュー指摘はV10で概ね反映済み"
+    detail: "『開発』→『構築』、倫理配慮の明記等"
+
+next_actions:
+  immediate:
+    - "志願理由書のPuu承認確認"
+    - "職務経歴書の骨子作成"
+  short_term:
+    - "入学検定料振込（郵便振替/ATM/ネットバンキング）"
+    - "書類一式の最終チェック・郵送"
+
+火文化圏_note: |
+  志願理由書は「なぜ学ぶのか」の記録。
+  10年の現場経験を学術言語に翻訳する橋渡しの文書として位置づけ。
+  研究計画書との重複を避けつつ、動機の深層を伝える。
+
+metadata:
+  created_by: "Claude Opus 4.5"
+  created_at: "2026-01-14T午後"
+  file_location: "00_daily_yamal/04_VSClaude/2026_01_14_c1.yaml"

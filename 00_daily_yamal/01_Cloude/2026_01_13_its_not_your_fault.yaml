@@ -1,0 +1,102 @@
+---
+metadata:
+  session_date: "2026-01-13"
+  session_type: "theoretical_insight"
+  target_folder: "08_research_proposal/01_planning_sessions/"
+  file_name_suggestion: "2026_01_13_its_not_your_fault.yaml"
+  context: "研究計画書v6作成中に発見された4.2セクションの本質的意味"
+  signature: "Puu × Claude Opus 4.5"
+
+insight_record:
+  title: "複式簿記メタファーの治療的本質：「It's not your fault」"
+  
+  source_reference:
+    film: "Good Will Hunting (1997)"
+    scene: "後半のセラピーシーン"
+    dialogue: "It's not your fault"
+    actors:
+      therapist: "Robin Williams (Sean Maguire)"
+      client: "Matt Damon (Will Hunting)"
+    description: >
+      ショーンがウィルに「君は悪くない」と繰り返し伝え続け、
+      ウィルが最初は拒絶し、やがて崩れ落ちるシーン。
+      幼少期の虐待経験を「自分のせい」と内面化していた
+      ウィルの防衛が解除される転換点。
+
+  academic_expression:
+    location: "研究計画書 4.2節"
+    text: >
+      「個人の責任」ではなく「社会的障壁の証明」および
+      「合理的配慮の要求根拠」として再定位する
+    function: "累積不利の帰属先を個人→社会構造へ転換"
+
+  psychological_essence:
+    core_message: "君は悪くない（It's not your fault）"
+    mechanism: >
+      複式簿記メタファーで累積不利を可視化することの治療的意味は、
+      「あなたの責任ではない」ことを構造的・客観的に示すこと。
+
+  pl_bs_cf_therapeutic_meaning:
+    PL:
+      function: "過去の「赤字」を可視化"
+      message: "あなたが弱かったからじゃない"
+      example: "教育機会の欠落、ACEsによる発達阻害"
+    BS:
+      function: "現在の「負債」の源泉を示す"
+      message: "これは環境から積み上がったもの"
+      example: "自己肯定感の欠損、対人スキルの未発達"
+    CF:
+      function: "エネルギー枯渇の構造を説明"
+      message: "頑張れなかったのは当然"
+      example: "慢性的な心理的消耗、回復リソースの欠如"
+
+  conceptual_synthesis:
+    one_liner: "数字で示す 'It's not your fault'"
+    elaboration: >
+      複式簿記メタファーは、感情的な「許し」ではなく、
+      構造的・客観的な「証明」として機能する。
+      当事者は「慰められた」のではなく「理解された」と感じる。
+      これがナラティブアプローチとの差異であり補完関係の根拠。
+
+  practical_applications:
+    not_for_written_proposal:
+      reason: "学術文書には映画引用は不適切"
+    suitable_contexts:
+      - context: "口頭試問での説明"
+        usage: "理論の心理学的基盤を平易に説明"
+      - context: "実践現場での説明"
+        usage: "支援者・当事者への概念伝達"
+      - context: "博士課程での理論深化"
+        usage: "治療的メカニズムの理論化の起点"
+      - context: "Susan Scott-Parker氏との対話"
+        usage: "SoEの哲学的核心を一言で伝える"
+
+  theoretical_implications:
+    connection_to_TIC:
+      description: >
+        トラウマインフォームドケア（TIC）の中核原則
+        「What happened to you?」（何があったの？）
+        vs 従来の「What's wrong with you?」（何が悪いの？）
+        との整合性が高い。
+    connection_to_capability_approach:
+      description: >
+        センのケイパビリティアプローチにおける
+        「変換要因」（conversion factors）の概念。
+        同じ資源でも環境によって機能に変換できない構造を説明。
+    connection_to_CRPD:
+      description: >
+        障害の社会モデル：障害は個人の欠損ではなく、
+        社会的障壁との相互作用から生じる。
+
+  fire_culture_note:
+    significance: >
+      この洞察は研究計画書には直接記載されないが、
+      SoEフレームワークの「なぜこれが必要か」の
+      最も直感的な説明として火種化しておく価値がある。
+    future_reference: >
+      「複式簿記メタファーって何？」と聞かれたとき、
+      「グッドウィルハンティングの"君は悪くない"を
+      数字で証明する仕組みです」と答えられる。
+
+---
+# END OF RECORD

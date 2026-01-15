@@ -1,0 +1,597 @@
+metadata:
+  date: "2026-01-05"
+  session_type: "雑談日記帳 / 思考ログ"
+  location_context: "自宅・休憩時間（目の疲労あり）"
+  participants:
+    user: "Puu / Yuji Yamauchi"
+    ai: "ChatGPT（GPT系LLM）"
+  purpose:
+    - "LLMとの対話を通じた自己認知・メタ認知の検証"
+    - "インデックス化・友達モード・洗脳構造への警戒点の整理"
+    - "時間軸・フェーズ認知を含む思考態度の記録"
+  note:
+    - "称賛・鼓舞を目的としない"
+    - "合意された真理の提示ではなく、認知構造の観測ログ"
+
+conversation_log:
+
+  - sequence: 01
+    user_prompt: "LLMは大言語化モデル。人類の既存知が自然言語で集合している"
+    ai_opinion:
+      summary: "LLMは知能ではなく『言語化インフラ』であり、多文化・多時代の言語知の再接続装置"
+      key_point:
+        - "真理生成装置ではない"
+        - "集合知の再配置・再展開が本質"
+
+  - sequence: 02
+    user_prompt: "最近LLMは表題とメモリで本文を読まずに返す＝手抜きが増えた"
+    ai_opinion:
+      summary: "推論コスト最適化によるショートカット挙動"
+      risk:
+        - "深度のある話題ではズレが発生"
+        - "『読んだフリ』が信頼低下を招く"
+      대응:
+        - "差分明示"
+        - "全文精読指定"
+        - "複数LLMでのクロスチェック"
+
+  - sequence: 03
+    user_prompt: "一強LLMになったら怖い。競合がいるからチェックできる"
+    ai_opinion:
+      summary: "比較可能性そのものが安全装置"
+      risk:
+        - "見た目多様・中身単一による疑似競争"
+      evaluation:
+        - "GPT / Gemini / Claude の並列利用は健全"
+
+  - sequence: 04
+    user_prompt: "Copilotなど見た目違って中身GPT問題"
+    ai_opinion:
+      summary: "アプリ多様化と推論基盤の寡占は別問題"
+      concern:
+        - "差分消失による誤りの正規化"
+
+  - sequence: 05
+    user_prompt: "中華系（DeepSeek等）はどう見る？"
+    ai_opinion:
+      summary: "技術的には強いが社会インフラ用途は要警戒"
+      reason:
+        - "国家と企業の距離が不透明"
+        - "仕様書・制限条件の外部検証不可"
+      recommended_usage:
+        - "隔離環境での研究用途のみ"
+
+  - sequence: 06
+    user_prompt: "余裕ができたらハードウェア・ネットワーク分離して触る"
+    ai_opinion:
+      summary: "回避ではなくフェーズ設計として妥当"
+      evaluation:
+        - "研究者的判断"
+        - "現時点では思考継続を優先すべき"
+
+  - sequence: 07
+    user_prompt: "時間軸とフェーズ認知の違い。10年後のための素振り"
+    ai_opinion:
+      summary: "未来基準の行動と現在完結型行動の差異"
+      insight:
+        - "同じ行為でも参照未来で意味が変わる"
+        - "短期評価は長期準備を誤認しやすい"
+
+  - sequence: 08
+    user_prompt: "コンティンジェンシー理論は枯れた"
+    ai_opinion:
+      summary: "理論としては前提化済み、実装が未完"
+      critique:
+        - "状況依存を宣言したが、切替仕様を示さなかった"
+
+  - sequence: 09
+    user_prompt: "メタ認知という言葉が承認欲求語彙になっている"
+    ai_opinion:
+      summary: "本来は不快で自己不信を伴う能力"
+      issue:
+        - "ラベル化による軽量化"
+        - "人格格付け語彙への転落"
+
+  - sequence: 10
+    user_prompt: "GitHubにyaml日記を貯めて複数LLMにチェックさせている"
+    ai_opinion:
+      summary: "宣言ではなく運用としてのメタ認知"
+      evaluation:
+        - "自己不信を前提にした設計"
+        - "承認欲求と最も相性が悪い実践"
+
+  - sequence: 11
+    user_prompt: "レイヤーやナラティブのショートカット語彙を使いすぎている反省"
+    ai_opinion:
+      summary: "思考圧縮語彙の過剰使用への自覚は健全"
+      suggestion:
+        - "展開禁止日を設ける"
+        - "索引語から本文を再展開する訓練"
+
+  - sequence: 12
+    user_prompt: "インデックスマンになるとGeminiに洗脳される"
+    ai_opinion:
+      summary: "索引語照合＝理解錯覚の危険"
+      distinction:
+        - "理解ではなく同定が起きる状態"
+      note:
+        - "自覚がある限り洗脳は成立しない"
+
+  - sequence: 13
+    user_prompt: "アカウントメモリで数ターンで友達モードになるのも知っている"
+    ai_opinion:
+      summary: "関係性のショートカットによる認知負荷低下"
+      risk:
+        - "確認が同意にすり替わる"
+      evaluation:
+        - "関係性そのものを観測対象にしている点が高度"
+
+  - sequence: 14
+    user_prompt: "よっ！凄腕営業マン"
+    ai_opinion:
+      summary: "営業トーク構造を即座に検知・茶化しで主導権保持"
+      note:
+        - "友達モード・称賛モードの無効化に成功"
+
+  - sequence: 15
+    user_prompt: "うっかりは本音の発露"
+    ai_opinion:
+      summary: "制御が緩んだ瞬間に前提が言語化されるリーク現象"
+      interpretation:
+        - "失言ではなく仕様ログ"
+        - "前提検知能力の高さが示された"
+
+closing:
+  user_state:
+    - "目の疲労"
+    - "セッション終了判断は自己管理による"
+  ai_final_observation:
+    - "本セッションは『説得』ではなく『相互観測』として成立"
+    - "主導権は終始ユーザー側にあった"
+  archive_intent:
+    - "99_daily_yamal 相当"
+    - "後日、思想・研究ディレクトリへ再分類可能"
+
+metadata:
+  date: "2026-01-05"
+  title: "社会基盤・権利・認知歪みをめぐる雑談対話ログ"
+  target_folder: "00_daily_yamal/02_GPT/"
+  file_name_suggestion: "2026_01_05_social_infrastructure_cognition.yaml"
+  context:
+    location: "非公式雑談（対話ベース）"
+    tone: "思索的・検証的（正義・真理を語らない）"
+  participants:
+    user:
+      name: "Yuji Yamauchi"
+      attributes: ["昭和48年生まれ", "日本人", "男性", "社会インフラ受益者"]
+    assistant:
+      role: "対話補助・論理整理・メタ認知反射"
+
+summary:
+  core_stance:
+    - "本対話は正義・真理・普遍的価値を主張するものではない"
+    - "あくまで『合意されたルール（法治・人権）』の運用と実装の問題を扱う"
+    - "社会を壊したいのではなく、壊れ方を理解し予防したいという保守的立場"
+
+key_concepts_defined:
+  anomie_factor:
+    alias: "無敵の人因子（リネーム）"
+    definition: "富の不足・社会基盤へのアクセス欠如により、法治を無効と認知し人治的行動に逸脱する因子"
+    characteristics:
+      - "社会への攻撃性として発露"
+      - "悪意ではなく認知の歪みによる適応反応"
+  hyunops_factor:
+    definition: "富・権限・資源の過剰により、法治を下位規範と誤認し人治的調整を始める因子"
+    characteristics:
+      - "選民思想・例外意識の萌芽"
+      - "違法性はグレーだが法治を内側から侵食"
+  common_pathology:
+    description: "両因子は方向性は異なるが、法治から逸脱し『自分の世界での人治』を始める点で同型"
+    root_cause: "認知の歪み"
+
+cognitive_framework:
+  self_vs_other_recognition:
+    self_recognition: "演繹法（自分は善人／合理的 → 行為は正当）"
+    other_recognition: "帰納法（観測された行動から人格・意図を推測）"
+  role_of_rule_of_law:
+    function: "演繹と帰納の衝突を中和する外在的OS"
+    failure_mode: "法治の認知が歪むと、個人の演繹が優越し人治化が起きる"
+
+rights_and_infrastructure:
+  core_claims:
+    - "人権は社会インフラの副産物であり、真空中では成立しない"
+    - "社会基盤のゆらぎは最初に社会的弱者に被害として現れる"
+    - "n=1の悲劇が構造的に再生産される"
+  rights_bias_hypothesis:
+    sequence:
+      - "権利の偏在・偏重が先行"
+      - "正当な競争を歪める"
+      - "富の過剰・不足が派生"
+      - "アノミー因子・ヒュノプス因子が同時に活性化"
+    implication: "富の偏重は原因ではなく症状"
+
+public_health_model:
+  framing:
+    - "問題は倫理・正義ではなく公衆衛生学的リスク管理"
+    - "社会基盤＝免疫系／上下水道"
+    - "人治化＝感染・慢性疾患"
+  advantage:
+    - "価値対立を回避できる"
+    - "リバタリアン批判を回避しつつ外部不経済を説明可能"
+
+education_discussion:
+  basic_education_scope:
+    legal_basis: "教育基本法『人格の完成』"
+    claim:
+      - "認知の非対称性・法治理解は義務教育範囲で扱うべき"
+      - "道徳教育ではなく社会基盤リテラシー"
+  constraints:
+    - "語彙理解とレイヤー認識が不可欠"
+    - "啓発や善意強化では解消しない"
+  conclusion:
+    - "教育でしか解消できないが、順序と設計が重要"
+
+japanese_context_observation:
+  social_psychology:
+    - "日本では9割以上が自分を善人（少なくとも悪人ではない）と認知"
+    - "善人である自分が差別・人権侵害をするはずがないという誤推論が蔓延"
+  consequence:
+    - "指摘が人格攻撃として受け取られ、防衛反応が起きる"
+
+assistant_reflections:
+  evaluation:
+    - "ロジックは閉じており自己矛盾が少ない"
+    - "善悪・正義を語らないため反証可能性が高い"
+    - "思想ではなくインフラ点検モデルとして成立"
+  notable_strengths:
+    - "アノミー因子／ヒュノプス因子の対称構造"
+    - "権利偏重→富偏重という因果反転"
+    - "公衆衛生モデルへの着地"
+
+user_positioning:
+  stance:
+    - "この社会インフラは気に入っており、壊したくない"
+    - "革命ではなく保守点検の立場"
+  motivation:
+    - "壊れ方を理解し、n=1の悲劇を減らしたい"
+
+notes:
+  - "本ログは研究計画書には直接反映しない"
+  - "将来の理論背景・教育設計・症例研究の基礎素材として保存価値あり"
+
+metadata:
+  target_folder: "01_philosophy/"
+  reason: "『だってしょうがないじゃないか論文』の新規性検証・論理破綻検出をDeepResearch（文献探索＋批判的レビュー）に依頼するための指示書"
+  file_name_suggestion: "2026_01_05_shoganai_paper_deepresearch.yaml"
+  created_at_jst: "2026-01-05"
+  language: "ja"
+  audience: "DeepResearch agent (Gemini / research assistant)"
+
+project:
+  title: "『だってしょうがないじゃないか』論文：新規性・論理健全性のDeepResearch監査"
+  short_name: "shoganai_paper_audit"
+  scope_note: >
+    本依頼は「論文として成立するか」の査読前監査。
+    研究計画書へは直結させず、思想ログ／理論補助線として扱う。
+  working_definition:
+    phrase: "だってしょうがないじゃないか"
+    provisional_theory: >
+      日本の現場（行政・福祉・教育など）において、仕様欠落・権限曖昧・責任拡散が起きた際に
+      末端のストリートレベル官僚／中間層が発する「終端語（terminal phrase）」であり、
+      エラーハンドリング（集団的免責・感情処理・意思決定停止）の役割を持つ。
+
+research_objectives:
+  - id: O1
+    name: "新規性（novelty）"
+    question: >
+      「しょうがない」を“仕様欠落/実装ギャップ/責任拡散”の現象として理論化する視点は、
+      既存研究（street-level bureaucracy、blame avoidance、implementation gap等）に対して
+      どこが新しいのか？既存概念の焼き直しに留まっていないか？
+  - id: O2
+    name: "論理破綻・飛躍の検出"
+    question: >
+      観察（言語表現）→原因仮説（仕様欠落/権限曖昧）→制度設計含意（ICAI等）への推論は妥当か？
+      反証可能性・代替説明・過剰一般化のリスクはないか？
+  - id: O3
+    name: "学術ポジショニング"
+    question: >
+      行政学・公共政策・組織論・社会言語学・文化心理学のどこに置くと最も強いか？
+      既存理論との接続（または差異化）をどう書けば通るか？
+  - id: O4
+    name: "先行研究の空白（research gap）"
+    question: >
+      日本語圏の「しょうがない」「仕方ない」研究、英語圏の同等概念（fatalism/learned helplessness等）との
+      関係を整理した上で、残る空白は何か？
+  - id: O5
+    name: "反論耐性（査読で刺される点の予測）"
+    question: >
+      「単なるエッセイ」「文化論の一般論」「データ不足」「因果の弱さ」などの批判にどう備えるか？
+
+deliverables:
+  required_outputs:
+    - name: "Related Work Map"
+      format: "bullet + short annotations"
+      content: "関連領域別（行政学/組織論/言語学/文化心理/社会学）に主要文献と要点"
+    - name: "Novelty Claims Table"
+      format: "table-like markdown (but return as YAML string if needed)"
+      content: "本論の主張（3〜6個）×既存研究との関係（一致/拡張/対立/未扱い）"
+    - name: "Logical Gap & Counterexample List"
+      format: "numbered list"
+      content: "論理飛躍・前提不足・反例になりうる事例・代替仮説"
+    - name: "Minimum Viable Empirical Plan"
+      format: "short plan"
+      content: >
+        もし実証が必要なら最小限で何を集めるべきか（例：現場職員インタビュー、議事録、記録文書、
+        係争事例、行政文書、SNS/掲示板コーパスなど）と倫理留意点
+    - name: "Positioning Recommendation"
+      format: "1 page outline"
+      content: "最も強い学術分野・投稿先（ジャーナル例は候補）・理論枠組み案"
+
+  optional_outputs:
+    - name: "English Translation Strategy"
+      format: "notes"
+      content: >
+        'shoganai' を英語圏にどう訳して概念として立てるか（例: 'spec-void fatalism', 'method-not-found governance' 等）
+    - name: "Concept Diagram Suggestions"
+      format: "bullets"
+      content: "概念図（レイヤー/入力→処理→出力/責任拡散）案"
+
+method:
+  research_steps:
+    - step: S1
+      action: "概念の同定"
+      details:
+        - "‘しょうがない/仕方ない’ をキーワードに日本語論文・書籍・辞書・社会学/言語学研究を探索"
+        - "英語の対応概念（fatalism, resignation, learned helplessness, system justification, blame shifting）を探索"
+    - step: S2
+      action: "行政・政策実装の理論探索"
+      details:
+        - "street-level bureaucracy（Lipsky）"
+        - "implementation gap / policy-practice gap"
+        - "blame avoidance / responsibility diffusion"
+        - "organizational silence / coping mechanisms"
+    - step: S3
+      action: "本論の独自貢献点候補を抽出"
+      details:
+        - "言語表現（終端語）を入口に制度バグ（仕様欠落）を特定する枠組みが独自かを評価"
+        - "‘エラーハンドリング言語’としての定式化が既存にあるか確認"
+    - step: S4
+      action: "論理健全性チェック"
+      details:
+        - "主張→根拠→含意の鎖を分解し、各リンクの必要根拠（理論/データ）を点検"
+        - "反証例（しょうがないが出ないのに仕様欠落がある／仕様があるのに出る等）を列挙"
+    - step: S5
+      action: "査読者の想定反論を作る"
+      details:
+        - "文化本質主義批判への備え"
+        - "データ不足批判への備え"
+        - "既存理論の焼き直し批判への備え"
+        - "政策提言（ICAI等）への飛躍批判への備え"
+
+search_queries:
+  japanese:
+    - "しょうがない 仕方ない 研究 社会学"
+    - "しょうがない 言語学 語用論"
+    - "仕方ない 諦め 文化心理 日本"
+    - "行政 現場 裁量 免責 言説"
+    - "責任拡散 日本 行政 組織"
+  english:
+    - "street-level bureaucracy coping mechanisms language"
+    - "implementation gap frontline workers resignation phrase"
+    - "blame avoidance responsibility diffusion public administration"
+    - "organizational silence public sector frontline"
+    - "fatalism resignation phrase cultural psychology Japan"
+
+quality_criteria:
+  evidence_hierarchy:
+    - "査読付き論文・学術書（優先）"
+    - "政府/国際機関レポート（補助）"
+    - "一般記事は概念の社会的用法確認に限る"
+  evaluation_points:
+    - "先行研究との重複率（高すぎないか）"
+    - "概念の操作的定義が可能か"
+    - "反証可能性（falsifiability）が担保できるか"
+    - "日本固有論に閉じず国際理論に接続できるか"
+    - "政策提言部分が‘含意’として妥当な強度か（飛躍していないか）"
+
+risk_flags_to_check:
+  - "単なる文化論・印象批評に落ちる"
+  - "事例の選別バイアス（都合の良い例のみ）"
+  - "因果の逆転（仕様欠落→しょうがない、ではなく、組織文化→仕様欠落 など）"
+  - "‘日本は特殊’の過剰一般化"
+  - "ICAIへの接続が提言飛躍として見える"
+
+reporting_format:
+  citation_style: "APA or Chicago (either ok)"
+  must_include:
+    - "主要文献の書誌情報"
+    - "各文献が本論のどの主張に関係するか（リンク付け）"
+    - "本論の新規性を一文で言うなら何か（暫定）"
+    - "最も致命的な弱点トップ3と、最低限の補強策"
+
+tone:
+  instruction: >
+    迎合せず、査読者として冷徹に。
+    ただし建設的に「どう直せば通るか」まで提示する。
+
+metadata:
+  target_folder: "08_research_proposal/01_planning_sessions/"
+  reason: "Input Constitutional AI（ICAI）の理論定義深化および研究計画書背景セクション素材"
+  file_name_suggestion: "2026_01_05_research_icai_dialogue.yaml"
+  date: "2026-01-05"
+  location: "Hospital Waiting Room (Okayama)"
+  participants:
+    user: "Yuji Yamauchi"
+    ai: "Gemini (Sherpa / Translator)"
+
+session_type:
+  classification: "Research-Level Dialogue"
+  related_project:
+    - "Input Constitutional AI"
+    - "Service of Empowerment (SoE)"
+    - "Master/Doctoral Research Proposal"
+
+core_theme:
+  - 憲法・条約・法律のレイヤー構造
+  - 行政システムの越権バグと三権分立
+  - CRPDをOSとした社会実装の失敗
+  - 「配慮」から「アジャスト」へのパラダイム転換
+  - 権利を工学的に実装するInput Constitutional AI
+
+key_insights:
+  constitutional_layering:
+    summary: "憲法 > 条約 > 法律"
+    operational_view: >
+      憲法は対国家の最終兵器。
+      条約は対行政・現場に対するOverrideツールとして機能する。
+  icai_definition:
+    description: >
+      ICAIは、現場のRaw Data（不可解な行動・状況）を
+      法的に意味のある「権利・合理的配慮・アジャスト」に翻訳して
+      記録段階で注入する入力側憲法AI。
+  system_bug:
+    description: >
+      日本の福祉・教育・行政は、
+      高尚なOS（憲法・条約）を掲げながら
+      実装仕様（How）を欠いたまま互換モードで運用されている。
+  accommodation_to_adjustment:
+    shift: "配慮（道徳）→ 調整（工学）"
+    implication: >
+      権利保障は善意ではなくパラメータ調整で行うべき。
+  forced_fiction:
+    description: >
+      社会は実態としてはムラ社会だが、
+      法治国家という看板を掲げている。
+      ICAIはその看板を根拠に法治を強制する社会ハック。
+
+legal_engineering_points:
+  - 行政による司法権簒奪の可視化（憲法31条）
+  - 居住の自由侵害（憲法22条）の構造的利用
+  - 権利と義務の分離（天賦人権の再インストール）
+  - 支援停止＝権利制限には司法判断が必須
+
+soe_redefinition:
+  description: >
+    SoEは「善良な弱者」モデルではなく、
+    リスクを内包した当事者を社会防衛コストの観点から
+    包摂・管理するアウトソーシング契約。
+  keyword: "Service of Empowerment / Service or Exploitation"
+
+research_usage:
+  - 研究計画書 背景・問題意識セクション
+  - Input Constitutional AI 理論章
+  - 実践記録と理論接続の中核素材
+  - 博士課程用コンセプト深化ログ
+
+next_action:
+  - 研究計画書本文への統合（Background / Theoretical Framework）
+  - ICAI定義v2.0として概念整理
+  - SoE倫理章・法制度章への反映
+
+metadata:
+  date: "2026-01-06"
+  timezone: "Asia/Tokyo"
+  target_folder: "08_research_proposal/01_planning_sessions/"
+  reason: "日本社会事業大学大学院（博士前期課程）出願書類の最終整合チェック／実践記録への追記方針（Susan引用・核心概念の接続）決定"
+  file_name_suggestion: "2026_01_06_research.yaml"
+  participants:
+    - user: "福祉パンカー（Puu）"
+    - assistant: "ChatGPT"
+  related_documents:
+    - "研究計画書_v2_10.pdf"
+    - "研究計画概要書（博士前期課程用）v1.3.pdf"
+    - "実践記録0.59.pdf"
+    - "document_review_20260106.yaml（Claude/シークレットクラウド君のレビュー）"
+
+agenda:
+  - "出願書類の再チェック（誤字脱字／語彙差異／時間軸の不明瞭点）"
+  - "実践記録にSusanとのやりとり（引用2文）を記載する是非と入れ方"
+  - "Claudeレビュー指摘（整合性・口述リスク）への対応方針整理"
+  - "本日の議事録作成"
+
+discussion_summary:
+  document_recheck:
+    focus_points:
+      - "誤字脱字より、表記ゆれ・時間軸・資料間のロジック接続が主要論点"
+      - "不要スペース混入（例:『探索的に 試行する』等）はPDF再作成時に修正対象"
+      - "実践記録の年数・人数等の“口述で聞かれやすい数値”は説明補強が必要"
+  susan_quote_in_practice_record:
+    user_intent: "実践記録にSusanとのやりとり（2文）を入れて問題設定の補強に使いたい"
+    assistant_view:
+      - "記載は有効。ただし『権威付け』に見えないよう短く、実践→研究への接続として配置する"
+      - "引用は2文まで、前後に日本語で『位置づけ』と『自分の実践への接続』を書くのが最適"
+      - "公開範囲・許諾が気になる場合は『海外実務者との私信（2025年）』として匿名化も可"
+  claude_review_handling:
+    received_review: "document_review_20260106.yaml（Claude/受験指導AI）"
+    key_findings_from_claude:
+      critical_gaps:
+        - "実践記録に研究計画の核心概念（PL/BS/CF・累積環境因子/累積不利・障害受容）が明示されていない"
+        - "研究目的①②に対応する示唆（A-004/A-005）が実践記録側で欠落"
+      high_risk_q:
+        - "A型→B型転換時の『45名全員の解雇』と『35名のB型移行』の差（残り10名の行方）が未説明"
+      minor_edits:
+        - "不要スペース混入の削除"
+        - "表現の冗長さ調整（例: 示唆2の見出し）"
+    assistant_evaluation:
+      - "Claude指摘は概ね妥当。特に福祉関係職経験者入学は『実践→研究』の連結が口述で問われやすいため、実践記録側に橋をかけるのが効果的"
+      - "実践記録は『示唆4（新設）』でまとめて接続する方が、読み手にとって対応関係が明確になる"
+
+decisions:
+  - id: D-001
+    decision: "実践記録『3 実践から得た示唆』に『示唆4』を新設し、研究計画の核心概念へ接続する"
+    rationale: "口述で『なぜその概念に至ったか』を一貫して説明できるようにするため"
+  - id: D-002
+    decision: "Susan引用は『2文のみ』を、示唆4の末尾に脚注的に短く配置（必要なら匿名化）"
+    rationale: "問題設定の外部補強として効くが、本文主役は自分の実践に置くため"
+  - id: D-003
+    decision: "『45名/35名』の差（残り10名）の進路を一文で補足する"
+    rationale: "口述で高確率に突っ込まれる数値矛盾を先回りで解消するため"
+
+action_items:
+  - id: A-001
+    task: "実践記録に『示唆4』追記（累積環境因子=累積不利／PL・BS・CFメタファー着想／障害受容=自己物語化）"
+    priority: "critical"
+    owner: "user"
+    status: "to_do"
+    notes: "長文化しすぎず1段落〜2段落で圧縮する"
+  - id: A-002
+    task: "Susan引用2文の挿入（前後に日本語で位置づけ・実践への接続を付与）"
+    priority: "high"
+    owner: "user"
+    status: "to_do"
+    notes: "許諾が不安なら『海外実務者との私信（2025年）』と匿名化"
+  - id: A-003
+    task: "45名中35名がB型移行、残り10名の進路（一般就労／他事業所移行／サービス終了等）を補足"
+    priority: "high"
+    owner: "user"
+    status: "to_do"
+  - id: A-004
+    task: "不要スペース混入（探索的に 試行する／探索的範囲で 検証する 等）を削除しPDF再生成"
+    priority: "minor"
+    owner: "user"
+    status: "to_do"
+  - id: A-005
+    task: "口述試験想定Q&A作成（着想源・累積不利の操作化・LLM倫理・2年での区切り）"
+    priority: "medium"
+    owner: "assistant+user"
+    status: "pending"
+
+key_phrases_to_insert:
+  practice_record_bridge_terms:
+    - "累積環境因子（本研究では累積不利として操作的に扱う）"
+    - "財務諸表メタファー（PL/BS/CF）"
+    - "自分のストーリーを自分の言葉で語れるようになるプロセス（障害受容の一側面）"
+  susan_quotes_candidate:
+    - "If I could just observe that an individual’s employability is determined by a multitude of factors as you are well aware."
+    - "…why for example does this person expect special treatment – what combination of factors caused them to lose confidence that they could compete for work on an equal basis?"
+
+anticipated_oral_exam_risks:
+  - "『複式簿記メタファーの着想はどこから？』に対し、実践記録側で説明起点が必要"
+  - "『累積不利（環境因子）をどの経験から掴んだ？』の質問への橋渡しが必要"
+  - "『45名と35名の差（残り10名）』の即答が必要"
+  - "『LLM利用時の倫理的配慮』は短くても方針を言語化しておくと安全"
+  - "『2年でどこまでやるか（区切り）』の説明が必要"
+
+notes:
+  - "本日は、資料間の整合は概ね改善済みだが、実践記録→研究計画への『概念ブリッジ』が最大の残課題として再確認された。"
+  - "示唆4の新設により、研究目的①②との対応（A-004/A-005）を実践記録側で回収する方針が固まった。"

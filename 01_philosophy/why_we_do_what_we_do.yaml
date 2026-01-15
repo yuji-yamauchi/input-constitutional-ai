@@ -1,0 +1,251 @@
+# ==========================================
+# Why We Do What We Do
+# The Philosophy Behind Our Mission
+# ==========================================
+# Source: 5_Detailed_Episodes_OPTIONAL.pdf (Susan Scott-Parker向け資料)
+# Author: Yuji Yamauchi
+# Organization: Calling Support Kasaoka
+# ==========================================
+
+metadata:
+  title: "Why We Do What We Do"
+  subtitle: "The Philosophy Behind Our Mission"
+  author: "Yuji Yamauchi"
+  organization: "Calling Support Kasaoka"
+  year: 2025
+  source_file: "5_Detailed_Episodes_OPTIONAL.pdf"
+  literary_source: "Pumpkin Scissors by Ryoutarou Iwanaga"
+  context: "Susan Scott-Parker (DEAI) 向けプレゼンテーション資料"
+  saved_date: "2026-01-13"
+
+# ==========================================
+# Core Philosophy
+# ==========================================
+core_philosophy:
+  final_statement:
+    en: "We cannot make people happy. But we can enable them to fight for happiness."
+    ja: "私たちは人を幸せにすることはできない。しかし、幸せのために戦えるようにすることはできる。"
+
+  two_missions:
+    mission_1:
+      name: "Advocate"
+      description: "Representative and Protector"
+      principles:
+        - "We respond absolutely to the cry of 'Help me'"
+        - "We eliminate the 'Mukiteki-no-hito factors' (無敵の人因子)"
+        - "We walk alongside until they can protect their own rights"
+
+    mission_2:
+      name: "Inclusive"
+      description: "Embracing Diversity and Respecting Individuality"
+      principles:
+        - "We enable people to fight their lives without disability as an excuse"
+        - "We transform welfare from individual charity to community benefit"
+        - "We create a society where 'disability' does not obstruct future efforts"
+
+# ==========================================
+# Mission 1: When Does the Heart Truly Break?
+# ==========================================
+mission_1_philosophy:
+  title: "The Source - 'Please Help Me'"
+
+  context: |
+    Many individuals we support have already been wounded.
+    Many have experienced bullying since primary school.
+    Many recognise that home is not always a safe place.
+    Their emotional state often goes beyond despair—
+    it has reached the point of resignation.
+
+  commitment: |
+    Therefore, when someone manages to squeeze out that first 'Help me,'
+    we respond with our full commitment, without hesitation.
+    We must respond to that first cry for help—it may be their last.
+
+  pumpkin_scissors_vol21:
+    pages: "129-134"
+    quotes:
+      when_heart_breaks:
+        - "The heart of the persecuted does not break at the moment of persecution."
+        - "The heart truly breaks afterwards..."
+        - "When the desire to be saved finally sprouts—like an ugly boil on society—it is trampled down by the world... by everyone."
+        - "As if the world... everyone... desires it to be so."
+
+      disconnection_from_world_1:
+        - "I can't do this… not any more…."
+        - "Don't scream… you'll only get hit even more…"
+        - "It's precisely when it hurts that you must keep your mouth shut!"
+        - "You end up fearing that even wishing 'I want to be saved' is a frightening thing."
+        - "Don't say 'it hurts'. Don't let it out of your mouth. Keep your head down. Don't laugh. Don't cry."
+
+      disconnection_from_world_2:
+        - "Even if you screw up your courage and ask for help, even if you speak out about the injustice, they don't give you the time of day, worse, they keep their distance."
+        - "'Don't bring your troubles here,' 'Don't make a fuss,'"
+        - "And what awaits you at the end of that is…"
+        - "The cold scoring of bystanders who keep their distance and have nothing to do with you."
+        - "'Your mind is just weak,' 'You're making far too much of the pain,' 'It's you who's at fault for lacking the nous to get on with life,'"
+
+      disconnection_from_world_3:
+        - "To us… other people aren't 'others',"
+        - "Those uninvolved 'others'—they're the world itself."
+        - "This is the yardstick of a world that insists this is 'the present'…"
+        - "What breaks our spirit isn't torture like tearing off fingernails, but—"
+        - "a world that, even while some suffer such persecution, greets tomorrow with an untroubled face."
+        - "A world that judges the persecution of us to be only natural."
+
+  our_commitment:
+    title: "No Excuses, Only Results"
+    principles:
+      - "We must respond to the first cry of 'Help me.'"
+      - "Those drowning do not need lectures on how to swim—they need to be pulled out first."
+      - "After rescue, we provide warmth and safety."
+      - "Only then do we teach swimming—or climbing, if they prefer."
+      - "We act as their Advocate, bearing full responsibility for outcomes."
+      - "We make no excuses."
+    caveat: |
+      However, we adhere to Best Interests principles:
+      Unless there is immediate danger, we do not act until they say 'Help me.'
+
+# ==========================================
+# Mission 2: What is True Support?
+# ==========================================
+mission_2_philosophy:
+  title: "The Source - What is Reconstruction?"
+
+  context: |
+    Welfare work is often misunderstood, even by those who work in it.
+    Employment transition support under the Comprehensive Support Act
+    is like an educational voucher system:
+    - Benefits are granted to individuals with disabilities
+    - We are private service providers
+    - Revenue is generated only when clients use our service
+
+    While we maintain public purpose,
+    we prioritise the individual client who contracts with us.
+    But what does 'benefit to the community' truly mean?
+
+  reading_instruction: |
+    Please read it with "post-war reconstruction" replaced by "disability support (welfare)".
+    And read "war" as "disability".
+
+  pumpkin_scissors_vol11:
+    pages: "174-185"
+    quotes:
+      what_is_reconstruction:
+        - "What exactly is 'post-war reconstruction'…?"
+        - "It's about enabling people to fight."
+
+      public_service:
+        - "It's the same as the fire service or the police. Some jobs aren't about pressing forward to make people happy."
+        - "Public service is… to go on shouldering a responsibility that is, for all intents and purposes, endless."
+
+      reconstruction_has_no_end:
+        - "Post-war reconstruction… as a duty… has no end."
+        - "No. That's not it. It isn't some woolly, evasive turn of phrase."
+        - "Among the scars of war are things that can sprout again even after years—decades."
+        - "If such things exist, then reconstruction must be something we keep up—holding the hope aloft, honouring it, and renewing our vow."
+
+      fighting_strength:
+        - "In going on with life, there's the fight of wanting to achieve something."
+        - "Whether grand or trivial, if hardship comes with it, it's a fight."
+        - "For example, pursuing your studies, or simply living this one day well—"
+        - "Falling in love, for instance, is the prime example, I think."
+        - "For one's own life, in that way—the fighting strength that ought to be spent—"
+        - "must be allocated to dealing with the mighty forces that come from outside. That is 'war.'"
+
+      ravages_of_war:
+        - "Because of the war—because a war took place—we aren't allowed to fight our lives at full strength. That is the ravages of war!"
+        - "'You'll just have to put up with it. We're at war now'"
+        - "As a doctor, he would have wanted to pour his 'fighting strength' into overcoming disease."
+        - "But the war with the Republic forced him to squander that strength on baseless frictions he should never have had to face."
+        - "And in that way, when your 'fighting strength' is worn down and you're weakened, you suffer further ravages of war."
+        - "You can't resist what ought to be resisted."
+        - "We end up yielding to the remnants of a warped war. We end up accepting the absurd."
+
+      goal_of_reconstruction:
+        - "The rules people live by are twisted by the colossal force called war, until anything goes! I want to set those twisted rules straight."
+        - "To make it so people can fight their lives properly—that is the post-war reconstruction I'm aiming for."
+        - "When people, whether well-off or poor, no longer excuse the outcome by saying 'because of the war,'"
+        - "then I believe the work of post-war reconstruction is complete."
+
+# ==========================================
+# SoE/ICAIとの接続
+# ==========================================
+theoretical_connections:
+
+  connection_to_its_not_your_fault:
+    link: "2026_01_13_its_not_your_fault.yaml"
+    synthesis: |
+      「It's not your fault」（複式簿記メタファー）と
+      「We can enable them to fight for happiness」は
+      同じ哲学の二側面である。
+
+      前者は「過去の累積不利はあなたの責任ではない」という証明。
+      後者は「だからこそ、これから戦える状態にする」という約束。
+
+  connection_to_shouganai_hypothesis:
+    link: "2026_01_07_shouganai_integration_for_3ai.yaml"
+    synthesis: |
+      「しょうがない」（仕様がない）は、
+      「戦うための力（fighting strength）」を
+      奪われた状態を示すシステムエラー。
+
+      Pumpkin Scissorsの「戦災」を「障害」に置き換えると、
+      まさにSoEが可視化しようとしている構造が浮かび上がる。
+
+  connection_to_case_k_case_s:
+    link: "case_sk_gemini_review_2026_01_11.yaml"
+    synthesis: |
+      Case KとCase Sは、
+      「最初の『助けて』に応えなければならない」
+      という哲学の実践記録である。
+
+      「それが最後の声かもしれないから」
+      という切迫感が、山内の介入行動を駆動している。
+
+# ==========================================
+# 柱となる言葉（Pillar Statements）
+# ==========================================
+pillar_statements:
+
+  pillar_1:
+    ja: "私たちは人を幸せにすることはできない。しかし、幸せのために戦えるようにすることはできる。"
+    en: "We cannot make people happy. But we can enable them to fight for happiness."
+    usage: "SoE/ICAIの究極的目標を一言で説明する際に使用"
+
+  pillar_2:
+    ja: "最初の『助けて』に応えなければならない。それが最後の声かもしれないから。"
+    en: "We must respond to the first cry of 'Help me'—it may be their last."
+    usage: "Mission 1（Advocate）の根拠を説明する際に使用"
+
+  pillar_3:
+    ja: "心が折れるのは、迫害を受けたその時ではない。その後だ。"
+    en: "The heart truly breaks not at the moment of persecution, but afterwards."
+    usage: "累積不利の構造を説明する際に使用"
+
+  pillar_4:
+    ja: "人々が『障害のせいだから』と言い訳しなくなった時、支援の仕事は完了する。"
+    en: "When people no longer excuse the outcome by saying 'because of the disability,' then our work is complete."
+    usage: "Mission 2（Inclusive）の到達点を説明する際に使用"
+
+# ==========================================
+# メタデータ
+# ==========================================
+signature:
+  compiled_by: "Claude Code (Opus 4.5)"
+  original_author: "Yuji Yamauchi"
+  literary_source: "Pumpkin Scissors by Ryoutarou Iwanaga"
+  date: "2026-01-13"
+  file_path: "01_philosophy/why_we_do_what_we_do.yaml"
+
+fire_culture_note: |
+  このプレゼンテーション資料は、Susan Scott-Parker氏への
+  説明用に作成されたものだが、SoE/ICAIの哲学的基盤を
+  最も直感的に伝える「柱となる言葉」の宝庫である。
+
+  学術文書には直接引用できないが、
+  口頭試問、実践現場、国際対話において
+  「なぜこの研究をするのか」を伝える際の核心となる。
+
+  Pumpkin Scissorsの引用を通じて、
+  「戦災復興」を「障害支援」に置き換えることで、
+  福祉の本質が鮮明に浮かび上がる構造は見事である。

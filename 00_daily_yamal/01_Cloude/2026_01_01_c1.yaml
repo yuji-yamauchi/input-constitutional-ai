@@ -12,7 +12,7 @@ metadata:
   participants:
     human: "山内雄司（Puu）"
     ai: "Claude Opus 4.5"
-  target_folder: "99_daily_yamal/01_Claude/"
+  target_folder: "00_daily_yamal/01_Claude/"
   file_name_suggestion: "2026_01_01_c1.yaml"
   reason: "新年セッション - Geminiセッションレビューから人間-AI相互観測論への展開"
   tags:

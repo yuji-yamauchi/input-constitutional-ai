@@ -27,10 +27,10 @@ ultimate_goal:
   ethical_basis: "「善人づら」の構造的排除"
 
 # =============================================================================
-# 2. 研究の倫理的起点（木浦氏事件）
+# 2. 研究の倫理的起点（被支援者B事件）
 # =============================================================================
 ethical_origin:
-  event: "木浦氏事件"
+  event: "被支援者B事件"
 
   structural_failures:
     judiciary:
@@ -188,7 +188,7 @@ action_items:
       status: "承認済み・作成待機"
 
   for_research_proposal:
-    - item: "Section I（問題提起）に木浦氏事件の構造的失敗を組み込む"
+    - item: "Section I（問題提起）に被支援者B事件の構造的失敗を組み込む"
     - item: "Section II（背景）に歴史的倫理的断層を記述"
     - item: "Section IV, Vに善意排除の構造倫理を反映"
 

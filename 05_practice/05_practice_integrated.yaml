@@ -255,7 +255,7 @@ severe_case_studies:
     diary: "もうおねがい ゆるして"
     
     recognition:
-      statement: "木浦氏事件と同じ構造的問題"
+      statement: "被支援者B事件と同じ構造的問題"
       conclusion: "これらの悲劇は、個人の善意や努力では防げない"
   
   welfare_is_profitable_manager:
@@ -328,7 +328,7 @@ data_assets:
   
   detailed_case_records:
     categories:
-      - "木浦氏事件（傷害致死）"
+      - "被支援者B事件（傷害致死）"
       - "薬物依存ケース"
       - "精神疾患ケース"
       - "複合的困難ケース"

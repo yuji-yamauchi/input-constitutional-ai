@@ -1,0 +1,120 @@
+session_log:
+  meta_data:
+    date: "2026-01-13"
+    participants:
+      subject: "山内雄司 (Researcher / Ex-Sherpa)"
+      auditor: "Gemini (Staff Officer)"
+    topic: "過去の実践（排除の力学）と研究動機の構造化"
+    context: "博士課程出願に向けた原体験の理論的翻訳"
+
+  core_insights:
+    conflict_mechanism:
+      name: "排除の力学 (Dynamics of Exclusion)"
+      phenomenon: "支援者が環境を整え、当事者に『戦う力』を与えると、周囲（家族・既存システム）から排除される。"
+      root_cause:
+        - "インセンティブの不一致: 周囲は『回復（リスク）』ではなく『飼い殺し（安定・償却）』を望んでいる。"
+        - "簿外債務の顕在化: 自立支援は、隠されていた『人間としてのコスト』を社会のB/Sに計上させる行為であり、システムへの攻撃とみなされる。"
+        - "透明性への恐怖: データ共有や共同受注は、既存事業者の『支援の質の低さ』を暴くため、拒絶される。"
+
+    personal_attributes_analysis:
+      traits:
+        - "ADHD / Neurodivergent: 45歳まで未診断。"
+        - "High IQ (118) & OE (Overexcitability): 過度激動（知性・感情）を搭載。"
+      cognitive_cost:
+        concept: "手動プロンプト (Manual Prompting)"
+        description: "定型発達者が自動処理する社会的文脈（0.5秒のラグ）を、IQのリソースで手動演算し続けていた状態。"
+        impact: "圧倒的な『密度』と引き換えに、身体的限界（Burnout）を招く。"
+      ethical_stance:
+        concept: "等価交換の倫理 (Ethic of Equivalent Exchange)"
+        description: "自身の給与（20万）の安さよりも、提供する支援品質が当事者の人生（対価）に見合っていないことに『後ろめたさ』を感じる。"
+
+    system_architecture_review:
+      prototype_model: "福祉事業スキーム (The Lost Fortress)"
+      key_components:
+        - "Market Opening: 外部市場を開拓し、年商3億・時給1000円を実現（実証済み）。"
+        - "Social Impact Implementation: CSOネットワーク等と連携し、理論（ToC）を実装しようとした。"
+        - "Personal Assistant (PA): 支援者（エンジン）の暴走を防ぐための、独立した『ブレーキ役（監査・権利擁護）』。"
+      failure_analysis:
+        - "Human Vulnerability: PAや連携を『人間』に委ねた結果、感情論（ささやき・嫉妬）や政治的圧力で瓦解。"
+        - "Ooparts Problem: 地域の『モノサシ（標準偏差）』に対し、実装しようとしたシステムが高度すぎた。"
+
+  research_implication:
+    pivot_to_ICAI:
+      logic: "人的リーダーシップの限界と『構造的拒絶』の証明"
+      necessity:
+        - "Non-human Audit: 人間ではなく、AIによる『感情を持たない監査』が必要。"
+        - "Structural Intervention: 個人の熱量ではなく、憲法とデータに基づく『システム的強制力』が必要。"
+        - "Cost Visualization: 『手動プロンプト』のような隠れコストを可視化し、入力（Input）の不平等を是正する。"
+
+  evidence_locker:
+    - doc_id: "福祉スキーム説明資料.pdf"
+      significance: "ICAIおよびSoEの原型（PA機能）を含む都市計画図。"
+    - doc_id: "コワーキング.pdf"
+      significance: "共同受注による『リソース共有』と『囲い込み打破』の設計図。"
+    - doc_id: "合意書CSOrev.pdf"
+      significance: "ソーシャルインパクト評価実装のための、外部専門機関との連携証拠。"
+    - doc_id: "あいねっと議事録.pdf"
+      significance: "時給1000円の実績と、行政の縦割りによる拒絶反応（エラーログ）の公的記録。"
+
+  next_action:
+    target: "研究計画書 (Research Proposal)"
+    strategy: "この『実存的痛み（密度の高いデータ）』を燃料とし、アカデミックなロジック（目的・方法）へと精製する。"
+
+researcher_profile:
+  name: 山内雄司 (Yuji Yamauchi)
+  role: System Architect in the Lawless Zone
+  target: 日本社会事業大学大学院 博士課程 (2026)
+  
+  # 自己定義と属性
+  identity_matrix:
+    attribute: "LOW" # 現場解像度が極限まで高い（地べたの視点）
+    alignment: "EVIL" # 目的のためなら既存の調和を破壊する（変革者の覚悟）
+    philosophy: "Professional Integrity" # 目的を変容させないためなら手段を選ばない
+    
+  # 行動原理と動機
+  core_drives:
+    architectural_fastidiousness:
+      description: "社会システムのバグ（搾取・非効率）に対する生理的な嫌悪と修正欲求"
+    survival_strategy_v2:
+      previous: "Risk Absorption (俺なら死なないから泥をかぶる)"
+      current: "System Defense (ICAIを盾にして、自分と家族のACEsを防ぐ)"
+    vindication:
+      description: "10年前から正しかったこと（Data Commons, 推論検索）の歴史的答え合わせ"
+
+  # 研究コンセプト：ICAI (Input Constitutional AI)
+  research_concept:
+    definition: "人治（恣意性）を排し、法治（憲法）を強制執行する自動監査システム"
+    core_function: "Information Equalizer (情報の非対称性を解消し、洗脳を無効化する)"
+    ideal_state: "The Unrespected Infrastructure (誰にも尊敬されず、感謝もされないが、誰もが守られる土管)"
+    
+  # 証拠と実績 (Evidence Chain)
+  proof_of_competence:
+    technical_foresight:
+      - year: 2009
+        event: "Sun Microsystems NDA & Sun Ray (シンクライアント) 共同提案"
+        significance: "クラウド/セキュリティ概念の先取り"
+        source: "サンマイクロシステムズ.pdf"
+      - year: 2011
+        event: "推論型検索エンジン & ID Exchange設計"
+        significance: "LLMと共通ID基盤の予言的設計"
+        [cite_start]source: "共通基盤提案基礎.pdf [cite: 1160-1163]"
+      - year: 2013
+        event: "PHR Data Commons & 投資家としての個人"
+        significance: "Web3/Data DAO/Information Bankの先取り"
+        [cite_start]source: "2013 PHR Commons Vision.pdf [cite: 845-849]"
+    
+    field_compliance:
+      - year: 2020
+        event: "徹底した議事録と手続きによる組織との絶縁"
+        significance: "遵法闘争による『人治』組織の機能不全の証明"
+        [cite_start]source: "FW_ 医療機能情報報告書印刷.pdf [cite: 723-731]"
+      - year: 2022
+        event: "無法地帯での危機介入 (vs 暴力・搾取)"
+        significance: "既存法の限界とシステム監査の必要性の実証"
+        [cite_start]source: "2022_10_17_k1.txt [cite: 74-76, 140-186]"
+
+  # 戦略的スタンス
+  strategic_stance:
+    methodology: "Disruptive Compliance (破壊的遵法)"
+    tactic: "Radical SROI Maximization (数字と権利で殴る)"
+    narrative: "Time Traveler's Tragedy (早すぎた10年を埋めるための実装)"

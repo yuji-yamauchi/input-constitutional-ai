@@ -1,0 +1,195 @@
+# ============================================
+# エビデンス設計思想：記録主権とICAIの原型
+# Sケースから抽出された文書化戦略の哲学
+# ============================================
+
+metadata:
+  version: "1.0"
+  created: "2026-01-08"
+  source: "2025_01_09_case_s_tic_documentation_anonymized.yaml"
+  purpose: "ICAI（Input Constitutional AI）の思想的基盤となるエビデンス設計哲学"
+  relevance: "記録作成段階での権利保障の実践的起源"
+
+# ============================================
+# 核心的問題：構造的疑惑
+# ============================================
+structural_suspicion_problem:
+
+  case_configuration:
+    supporter: "50歳男性、事業所管理者、権限を持つ側"
+    client: "23歳女性、元風俗・売春歴あり、依存症・PTSD・希死念慮"
+
+  default_suspicion_pattern:
+    - "なぜそこまでするのか"
+    - "何か見返りがあるのでは"
+    - "関係を持っているのでは"
+    - "支配しようとしているのでは"
+
+  practitioner_awareness:
+    quote: "若年女性でもあり、下心でやっていると思われているのだろうなという視線は毎回感じます"
+    date: "2023-05-12"
+
+  without_evidence_scenario:
+    reframed_story: |
+      "50歳のおっさんが23歳の元風俗嬢に入れ込んで、
+      警察にまで連れて行って、
+      自分の施設に住まわせようとしていた"
+    implication: "エビデンスがなければ、支援が「問題行動」に書き換えられる"
+
+# ============================================
+# ナラティブ vs ストーリー
+# ============================================
+narrative_vs_story:
+
+  narrative:
+    definition: "語り手の視点から構成される主観的な意味付け"
+    example: "私は彼女を助けたいと思った"
+    weakness: "「私はこう感じた」→ 相対化される"
+    critique: "客観的エビデンスがないと自叙伝にうつる"
+
+  story:
+    definition: "出来事の連鎖、時系列的な事実の配列"
+    example: "3月23日に面談を行った。3月26日に家族と合意した。"
+    strength: "「これが起きた。次にこれが起きた。」→ 検証可能"
+    effect: "受け手がまず「これは本当か？」と問う → 検証モードに入る"
+
+  design_principle:
+    approach: "「信じてください」ではなく「検証可能な形で記録を残し続ける」"
+    limitation: "検証可能であることと、検証されることは違う"
+    core_value: "善意を信じてもらうのではなく、構造的に検証可能な形で証拠を残す"
+
+# ============================================
+# 構造的対抗措置（実践から抽出）
+# ============================================
+structural_countermeasures:
+
+  recording:
+    practice: "1対1で会話する場合は録音"
+    reason: "転移リスクへの自己防衛"
+    icai_implication: "音声記録の自動構造化"
+
+  email_transparency:
+    practice: "メールで家族に定期報告"
+    reason: "第三者の目を入れる"
+    icai_implication: "支援記録の自動共有機能"
+
+  teams_accounts:
+    practice: "家族全員にTeamsアカウント発行"
+    reason: "記録が残る・閲覧可能"
+    icai_implication: "プラットフォームとしての記録基盤"
+
+  document_standards:
+    practice: "全文書に日付・署名入り"
+    reason: "後から検証可能"
+    icai_implication: "タイムスタンプと署名の自動付与"
+
+  police_involvement:
+    practice: "警察に同行して出頭"
+    reason: "公的機関を介入させる"
+    icai_implication: "公的記録との接続"
+
+  third_party_institutions:
+    practice: "大学との連携（メールに本人・母親をCc）"
+    reason: "権威ある第三者による検証可能性"
+    icai_implication: "第三者機関との連携インターフェース"
+
+  contact_minimization:
+    practice: "「お母さんを窓口に」と依頼"
+    reason: "本人との直接関係を減らす"
+    icai_implication: "コミュニケーション経路の可視化"
+
+# ============================================
+# 「信じられない構造」への対処
+# ============================================
+disbelief_structure:
+
+  pattern_1:
+    reaction: "「大変でしたね」"
+    inner: "話半分に聞いている"
+
+  pattern_2:
+    reaction: "「そんな制度がひどいわけがない」"
+    inner: "山内さんの主観が入っているはず"
+
+  pattern_3:
+    reaction: "「何か落ち度があったのでは」"
+    inner: "完璧にやったという主張自体が疑わしい"
+
+  pattern_4:
+    reaction: "「被害者意識が強い」"
+    inner: "自己正当化に見える"
+
+  pattern_5:
+    reaction: "「エビデンス見せて」"
+    inner: "と言いつつ、見ない"
+
+  why_hard_to_believe:
+    too_perfect:
+      issue: "「自分は全部やった。制度は全部動かなかった」という構図"
+      perception: "事実でも「自己正当化」に見える"
+    verification_cost:
+      issue: "文書を全部読む人はいない"
+      perception: "「エビデンスがある」と言われても確認しない"
+    cognitive_dissonance:
+      issue: "「制度がそこまで機能していないはずがない」"
+      perception: "認めると自分たちの社会への信頼が揺らぐ"
+
+# ============================================
+# ICAIへの示唆
+# ============================================
+icai_implications:
+
+  core_principle:
+    statement: "記録作成段階での権利保障"
+    origin: "「エビデンスがなければ支援が問題行動に書き換えられる」経験から"
+
+  design_requirements:
+    - requirement: "自動タイムスタンプ"
+      reason: "後からの改ざん防止"
+    - requirement: "複数者への同時共有"
+      reason: "第三者の目による検証可能性"
+    - requirement: "構造化された記録形式"
+      reason: "検索・検証の容易化"
+    - requirement: "当事者によるアクセス"
+      reason: "記録主権の保障"
+
+  fire_culture_connection:
+    principle: "記録されなかった問いは燃え尽きたものと見なされる"
+    application: |
+      支援記録が構造化されて残らなければ、
+      その支援は「なかったこと」にされ得る。
+      ICAIは記録を「再燃可能な状態」で保存する装置。
+
+  sentinel_surveillance_connection:
+    role: "ICAIは「しょうがない」発話検知センサー"
+    mechanism: |
+      支援記録の中で「しょうがない」類似表現が増加している場合、
+      それはシステムの機能不全を示すViral Load（ウイルス量）。
+
+# ============================================
+# 一石三鳥の設計思想
+# ============================================
+multi_purpose_design:
+
+  principle: "単一の行為で複数の目的を達成する設計"
+
+  case_s_example:
+    purpose_1:
+      title: "当事者支援"
+      content: "Sを「加害者」から「更生者」に転換"
+    purpose_2:
+      title: "自己防衛"
+      content: "全文書化・録音・家族CC・第三者介入で疑惑を構造的に排除"
+    purpose_3:
+      title: "制度化エビデンス"
+      content: "「オンラインで経営者のリワークを実施」という公式事例の創出"
+
+  icai_application:
+    purpose_1: "当事者の権利保障"
+    purpose_2: "支援者の説明責任履行"
+    purpose_3: "制度改善のためのデータ蓄積"
+    quote: "全部エビデンスにしておく"
+
+signature:
+  extracted_by: "Claude Code (Opus 4.5)"
+  date: "2026-01-08"

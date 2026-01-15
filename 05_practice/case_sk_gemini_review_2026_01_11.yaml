@@ -1,0 +1,133 @@
+# ============================================
+# Review: Case S & Case K Intervention Records
+# 参謀分析レポート：制度の「死角」と「ハッキング」の証明
+# ============================================
+
+metadata:
+  date: "2026-01-11"
+  reviewer: "Gemini (Staff Officer)"
+  context: "PhD Application / ICAI Protocol Design"
+  status: "Critical Evidence Verified"
+
+# ============================================
+# 1. 核心的評価 (Core Verdict)
+# ============================================
+verdict:
+  nature_of_records: "社会システムの検死報告書 (Forensic Report)"
+  significance:
+    - "単なる福祉支援記録ではなく、日本の社会保障OSがどこで『クラッシュ』したかを証明する物理的証拠。"
+    - "Ingrid Robeyns（リミタリアニズム）に対し、理論ではなく「実装のバグ」を突きつけるための弾頭として機能する。"
+
+# ============================================
+# 2. 実践者（山内）の機能分析
+# ============================================
+practitioner_profile:
+  observed_role: "Crisis Hacker / Proxy Executive"
+
+  tactics_deployed:
+    protocol_bypass:
+      context: "Case S (Drug Use)"
+      action: "「逮捕」という国家アルゴリズムを、「行政連携による治療計画」という別ルートで迂回し、リスクを制御。"
+      mechanism: "政治的解決 (Political Resolution)"
+
+    function_substitution:
+      context: "Case K (Coercion/Murder)"
+      action: "機能不全に陥った警察機能（捜査・保護）を、私的リソース（ホテル隔離・親族圧力）で代理執行。"
+      mechanism: "危機ハッキング (Crisis Hacking)"
+
+# ============================================
+# 3. ケース別構造分析 (Structural Analysis)
+# ============================================
+case_analysis:
+
+  case_s:
+    theme: "社会的な天井（Ceiling）の崩落 / Social Window Dressing"
+    system_bug:
+      - "「社会的成功（社長・資産）」が迷彩となり、支援ニーズ（Floor割れ）を隠蔽する逆説。"
+      - "既存システムは「強者」の内部崩壊を検知できない。"
+    icai_implication:
+      - "「属性（Attribute）」によるフィルタリングの危険性。"
+      - "「嘘」を背信行為ではなく、システムエラー（症状）として処理する定義の書き換え。"
+
+  case_k:
+    theme: "社会的な床（Floor）の消失 / Judicial Zero-Day Exploit"
+    system_bug:
+      - "「被害届（主体的申告）」をトリガーとする警察システムは、意思をハックされた（弱みを握られた）被害者に対して無力化（N/A）する。"
+      - "「共犯」という法的形式が、実態としての「被害」を上書きするバグ。"
+    icai_implication:
+      - "「SOSがない」こと自体を最高レベルのアラート（Red Flag）とする逆転ロジックの実装。"
+      - "個人単位ではなく、関係性（支配構造）を含めた「連結決算」での監査が必要。"
+
+# ============================================
+# 4. SoE/ICAIへの実装提言 (Implementation)
+# ============================================
+recommendations:
+
+  for_research_proposal:
+    - "これら2事例を「SoEの限界ケース（Edge Cases）」として位置づける。"
+    - "「なぜ人間による制度運用だけでは不十分か」の証明として、Case Kの「制度の不作為（警察の対応拒否）」を使用する。"
+
+  for_icai_architecture:
+    data_labeling:
+      - "Case Sの「嘘」 → System Error / Symptom"
+      - "Case Kの「加担」 → Coerced Action / Victimhood"
+
+    detection_logic:
+      - "Social Camouflage Detection (成功者迷彩の透過)"
+      - "Silence Detection (沈黙・申告不能状態の検知)"
+
+# ============================================
+# 5. 参謀コメント (Staff Note)
+# ============================================
+staff_note: |
+  Case Kにおける「私のモチベーションの維持が辛い」という吐露 や、
+  Case Sにおける予感などの「支援者の直感（Gut feeling）」は、
+  博士課程において「暗黙知の形式知化」を行うための極めて重要な原石である。
+  これらは「武器」として、研究計画書の説得力を飛躍的に高める。
+
+# ============================================
+# 6. Claude Code補足コメント
+# ============================================
+claude_code_addendum:
+  date: "2026-01-11"
+
+  key_observations:
+    - term: "社会システムの検死報告書"
+      comment: |
+        福祉支援記録として読むと「良い支援者がいて良かったね」で終わる。
+        でもそう読むと本質を見失う。これはシステムがどこで死んだかの記録。
+
+    - term: "Crisis Hacker / Proxy Executive"
+      comment: |
+        Yは「支援者」ではなく「制度が動かない時に私的リソースで代理執行する者」として機能。
+        本来あってはならない役割。でも現実にはこれがないと人が死ぬ。
+
+  icai_core_questions:
+    - "「助けを求められない状態」をどう検知するか"
+    - "「強者の仮面」の下のFloor割れをどう可視化するか"
+    - "「沈黙」をどうアラートに変換するか"
+
+  design_philosophy_insight: |
+    現行制度は「申告」をトリガーにする。申告できない人は救われない。
+    これは設計バグではなく設計思想の限界。
+
+    Kケースでは「突き飛ばせ」と命令されて実行した。法的には加害者。でも実態は被害者。
+    この「法的形式と実態のズレ」を検知する仕組みが現行制度にない。
+
+    Sケースでは「社長」という属性が支援ニーズを隠蔽した。
+    「強そうに見える人」は制度から見えなくなる。
+
+  tacit_knowledge_note: |
+    「私のモチベーションの維持が辛い」という吐露は、
+    支援者のバーンアウト構造を示している。
+    これも記録されるべき「しょうがない」の蓄積点。
+
+  research_proposal_value: |
+    博士課程の研究計画書において、これらのケースは
+    「理論の検証」ではなく「理論の必然性の証明」として機能する。
+
+signature:
+  saved_by: "Claude Code (Opus 4.5)"
+  original_author: "Gemini (Staff Officer)"
+  supplemented_by: "Claude Code"
+  date: "2026-01-11"

@@ -1,0 +1,1246 @@
+# ============================================================================
+#  YAMAUCHI PHILOSOPHICAL FOUNDATION
+#  山内雄司の理念体系：SoE/ICAIの哲学的基盤
+# ============================================================================
+#
+#  "We cannot make people happy. But we can enable them to fight for happiness."
+#  "It's not your fault."
+#
+#  この2つの言葉が、山内雄司のすべての実践と研究を駆動する。
+#
+# ============================================================================
+
+metadata:
+  title: "Yamauchi Philosophical Foundation"
+  subtitle: "The Philosophical Core of SoE and ICAI"
+  author: "Yuji Yamauchi (Puu)"
+  compiled_by: "Claude Code (Opus 4.5)"
+  date: "2026-01-13"
+  version: "3.1"
+  sources:
+    - "5_Detailed_Episodes_OPTIONAL.pdf (Susan Scott-Parker向け資料)"
+    - "2026_01_13_its_not_your_fault.yaml"
+    - "why_we_do_what_we_do.yaml"
+  literary_references:
+    - "Pumpkin Scissors by Ryoutarou Iwanaga"
+    - "Good Will Hunting (1997)"
+  related_files:
+    - file: "boszormenyi_nagy_comprehensive.yaml"
+      description: "Contextual Therapy詳細研究（正義の台帳、見えざる忠誠、Exoneration）"
+      relevance: "ICAIの複式簿記メタファーの理論的祖先"
+
+# ============================================================================
+# PART I: THE TWO PILLARS（二本の柱）
+# ============================================================================
+two_pillars:
+
+  overview: |
+    山内の理念体系は、2つの核心的メッセージから構成される。
+    これらは対立するものではなく、同じ哲学の「過去への視線」と「未来への視線」である。
+
+  pillar_1:
+    name: "It's not your fault"
+    origin: "Good Will Hunting (1997)"
+    japanese: "君は悪くない"
+    direction: "過去への視線 — 累積不利の帰属転換"
+    function: |
+      過去の苦しみ、失敗、「できなかった」ことは、
+      あなたの責任ではない。
+      環境が、構造が、システムがあなたをそこに追い込んだ。
+      これを感情論ではなく、構造的・客観的に「証明」する。
+
+  pillar_2:
+    name: "Enable them to fight for happiness"
+    origin: "Pumpkin Scissors Vol.11 + Yamauchi"
+    japanese: "幸せのために戦えるようにする"
+    direction: "未来への視線 — 戦う力の回復"
+    function: |
+      過去が「あなたの責任ではない」と証明された上で、
+      これからは「自分の人生を全力で戦える状態」にする。
+      支援者は「幸せにする」のではなく「戦えるようにする」。
+
+  synthesis: |
+    Pillar 1 = 過去の累積不利を可視化し、責任の帰属を個人→社会構造へ転換
+    Pillar 2 = その上で、未来に向けて「戦う力（fighting strength）」を回復
+
+    この2つは不可分である。
+    Pillar 1なしにPillar 2を求めると「自己責任論」になる。
+    Pillar 2なしにPillar 1だけでは「被害者アイデンティティ」に閉じ込める。
+
+# ============================================================================
+# PART II: PILLAR 1 — "IT'S NOT YOUR FAULT"
+# ============================================================================
+pillar_1_detail:
+
+  title: "複式簿記メタファーの治療的本質"
+  one_liner: "数字で示す 'It's not your fault'"
+
+  source_reference:
+    film: "Good Will Hunting (1997)"
+    scene: "後半のセラピーシーン"
+    dialogue: "It's not your fault"
+    actors:
+      therapist: "Robin Williams (Sean Maguire)"
+      client: "Matt Damon (Will Hunting)"
+    description: |
+      ショーンがウィルに「君は悪くない」と繰り返し伝え続け、
+      ウィルが最初は拒絶し、やがて崩れ落ちるシーン。
+      幼少期の虐待経験を「自分のせい」と内面化していた
+      ウィルの防衛が解除される転換点。
+
+  academic_expression:
+    location: "研究計画書 4.2節"
+    text: |
+      「個人の責任」ではなく「社会的障壁の証明」および
+      「合理的配慮の要求根拠」として再定位する
+    function: "累積不利の帰属先を個人→社会構造へ転換"
+
+  pl_bs_cf_therapeutic_meaning:
+    overview: |
+      複式簿記メタファー（PL/BS/CF）は、
+      「君は悪くない」を感情論ではなく構造的に証明する道具である。
+
+    PL:
+      name: "損益計算書（Profit & Loss）"
+      function: "過去の「赤字」を可視化"
+      message: "あなたが弱かったからじゃない"
+      example: "教育機会の欠落、ACEsによる発達阻害"
+
+    BS:
+      name: "貸借対照表（Balance Sheet）"
+      function: "現在の「負債」の源泉を示す"
+      message: "これは環境から積み上がったもの"
+      example: "自己肯定感の欠損、対人スキルの未発達"
+
+    CF:
+      name: "キャッシュフロー計算書"
+      function: "エネルギー枯渇の構造を説明"
+      message: "頑張れなかったのは当然"
+      example: "慢性的な心理的消耗、回復リソースの欠如"
+
+  differentiation_from_narrative_approach: |
+    複式簿記メタファーは、感情的な「許し」ではなく、
+    構造的・客観的な「証明」として機能する。
+    当事者は「慰められた」のではなく「理解された」と感じる。
+    これがナラティブアプローチとの差異であり補完関係の根拠。
+
+  theoretical_connections:
+    TIC:
+      name: "トラウマインフォームドケア"
+      connection: |
+        「What happened to you?」（何があったの？）
+        vs 従来の「What's wrong with you?」（何が悪いの？）
+        との整合性が高い。
+
+    capability_approach:
+      name: "ケイパビリティアプローチ"
+      connection: |
+        センの「変換要因」（conversion factors）の概念。
+        同じ資源でも環境によって機能に変換できない構造を説明。
+
+    CRPD:
+      name: "障害者権利条約"
+      connection: |
+        障害の社会モデル：障害は個人の欠損ではなく、
+        社会的障壁との相互作用から生じる。
+
+# ============================================================================
+# PART III: PILLAR 2 — "ENABLE THEM TO FIGHT FOR HAPPINESS"
+# ============================================================================
+pillar_2_detail:
+
+  title: "戦う力の回復としての支援"
+  one_liner: "私たちは人を幸せにすることはできない。しかし、幸せのために戦えるようにすることはできる。"
+
+  source_reference:
+    manga: "Pumpkin Scissors by Ryoutarou Iwanaga"
+    volumes: "Vol.11 pp.174-185, Vol.21 pp.129-134"
+    reading_instruction: |
+      「戦災復興」を「障害支援（福祉）」に置き換えて読む。
+      「戦争」を「障害」に置き換えて読む。
+
+  two_missions:
+    mission_1:
+      name: "Advocate（代弁者・守護者）"
+      core_commitment: |
+        最初の『助けて』に応えなければならない。
+        それが最後の声かもしれないから。
+      principles:
+        - "We respond absolutely to the cry of 'Help me'"
+        - "We eliminate the 'Mukiteki-no-hito factors' (無敵の人因子)"
+        - "We walk alongside until they can protect their own rights"
+      no_excuses_policy: |
+        溺れている人に泳ぎ方を講義しない。
+        まず引き上げる。温め、安全を確保する。
+        その後で、泳ぎ方を教える——あるいは登り方を、本人が望むなら。
+        言い訳はしない。結果に責任を持つ。
+
+    mission_2:
+      name: "Inclusive（多様性の受容・個性の尊重）"
+      core_commitment: |
+        人々が『障害のせいだから』と言い訳しなくなった時、
+        支援の仕事は完了する。
+      principles:
+        - "We enable people to fight their lives without disability as an excuse"
+        - "We transform welfare from individual charity to community benefit"
+        - "We create a society where 'disability' does not obstruct future efforts"
+
+  pumpkin_scissors_key_quotes:
+
+    when_heart_breaks:
+      theme: "心が折れる瞬間"
+      quotes:
+        - "The heart of the persecuted does not break at the moment of persecution."
+        - "The heart truly breaks afterwards..."
+        - "When the desire to be saved finally sprouts—like an ugly boil on society—it is trampled down by the world... by everyone."
+        - "As if the world... everyone... desires it to be so."
+
+    fighting_strength:
+      theme: "戦う力"
+      quotes:
+        - "In going on with life, there's the fight of wanting to achieve something."
+        - "Whether grand or trivial, if hardship comes with it, it's a fight."
+        - "For one's own life, in that way—the fighting strength that ought to be spent—must be allocated to dealing with the mighty forces that come from outside. That is 'war.'"
+
+    ravages_of_war:
+      theme: "戦災（=障害による制約）"
+      quotes:
+        - "Because of the war—because a war took place—we aren't allowed to fight our lives at full strength. That is the ravages of war!"
+        - "When your 'fighting strength' is worn down and you're weakened, you suffer further ravages of war. You can't resist what ought to be resisted."
+        - "We end up yielding to the remnants of a warped war. We end up accepting the absurd."
+
+    goal_of_reconstruction:
+      theme: "支援の完了条件"
+      quotes:
+        - "To make it so people can fight their lives properly—that is the post-war reconstruction I'm aiming for."
+        - "When people, whether well-off or poor, no longer excuse the outcome by saying 'because of the war,' then I believe the work of post-war reconstruction is complete."
+
+# ============================================================================
+# PART IV: THE SYNTHESIS — SoE/ICAIへの接続
+# ============================================================================
+synthesis_to_soe_icai:
+
+  overview: |
+    2つの柱は、SoE（Service of Empowerment）とICAI（Input Constitutional AI）の
+    哲学的基盤を構成する。
+
+  pillar_1_to_research:
+    connection: "複式簿記メタファー / 累積環境因子"
+    implementation: |
+      研究計画書4.2節：
+      「見えにくい累積不利（負債）を可視化し、それを『個人の責任』ではなく
+      『社会への請求根拠』として再定位する」
+
+      これは「It's not your fault」の学術的表現である。
+
+  pillar_2_to_research:
+    connection: "情報境界線設計 / 自己受容支援"
+    implementation: |
+      「自分のストーリーを自分の言葉で語れる状態」への到達支援。
+      これは「戦える状態にする」ことの具体的実装である。
+
+  shouganai_connection: |
+    「しょうがない」（仕様がない）は、
+    「戦うための力（fighting strength）」を奪われた状態を示すシステムエラー。
+
+    Pumpkin Scissorsの「戦災」を「障害」に置き換えると、
+    まさにSoEが可視化しようとしている構造が浮かび上がる：
+
+    - 「障害のせいで人生を全力で戦えない」= 戦災
+    - 「戦う力が奪われているのに、さらに追い打ちをかけられる」= 累積不利
+    - 「抵抗すべきことに抵抗できなくなる」= アノミー因子の蔓延
+    - 「不条理を受け入れてしまう」= 「しょうがない」の発話
+
+# ============================================================================
+# PART V: PILLAR STATEMENTS（柱となる言葉）
+# ============================================================================
+pillar_statements:
+
+  statement_1:
+    ja: "私たちは人を幸せにすることはできない。しかし、幸せのために戦えるようにすることはできる。"
+    en: "We cannot make people happy. But we can enable them to fight for happiness."
+    usage: "SoE/ICAIの究極的目標を一言で説明する際に使用"
+    origin: "Yamauchi, inspired by Pumpkin Scissors"
+
+  statement_2:
+    ja: "君は悪くない。"
+    en: "It's not your fault."
+    usage: "複式簿記メタファーの本質を説明する際に使用"
+    origin: "Good Will Hunting (1997)"
+
+  statement_3:
+    ja: "最初の『助けて』に応えなければならない。それが最後の声かもしれないから。"
+    en: "We must respond to the first cry of 'Help me'—it may be their last."
+    usage: "Mission 1（Advocate）の根拠を説明する際に使用"
+    origin: "Yamauchi, inspired by Pumpkin Scissors Vol.21"
+
+  statement_4:
+    ja: "心が折れるのは、迫害を受けたその時ではない。その後だ。"
+    en: "The heart truly breaks not at the moment of persecution, but afterwards."
+    usage: "累積不利の構造を説明する際に使用"
+    origin: "Pumpkin Scissors Vol.21"
+
+  statement_5:
+    ja: "人々が『障害のせいだから』と言い訳しなくなった時、支援の仕事は完了する。"
+    en: "When people no longer excuse the outcome by saying 'because of the disability,' then our work is complete."
+    usage: "Mission 2（Inclusive）の到達点を説明する際に使用"
+    origin: "Yamauchi, adapted from Pumpkin Scissors Vol.11"
+
+  statement_6:
+    ja: "数字で示す『君は悪くない』"
+    en: "Proving 'It's not your fault' with numbers"
+    usage: "複式簿記メタファーの一言説明"
+    origin: "Yamauchi × Claude Code synthesis"
+
+# ============================================================================
+# PART VI: PRACTICAL APPLICATIONS（使用場面）
+# ============================================================================
+practical_applications:
+
+  not_for_written_proposal:
+    reason: "学術文書には映画・漫画引用は不適切"
+
+  suitable_contexts:
+
+    oral_examination:
+      context: "口頭試問での説明"
+      usage: "理論の心理学的基盤を平易に説明"
+      example: |
+        「複式簿記メタファーとは何か？」
+        → 「グッドウィルハンティングの"君は悪くない"を数字で証明する仕組みです」
+
+    practice_field:
+      context: "実践現場での説明"
+      usage: "支援者・当事者への概念伝達"
+      example: |
+        「なぜこのアセスメントをするのか？」
+        → 「あなたの"できなかった"が、あなたのせいじゃないことを証明するため」
+
+    doctoral_research:
+      context: "博士課程での理論深化"
+      usage: "治療的メカニズムの理論化の起点"
+
+    international_dialogue:
+      context: "Susan Scott-Parker氏・Robeyns教授との対話"
+      usage: "SoEの哲学的核心を一言で伝える"
+      example: |
+        "Our framework proves structurally that 'It's not your fault,'
+        and then enables people to fight for their own happiness."
+
+# ============================================================================
+# SIGNATURE
+# ============================================================================
+signature:
+  compiled_by: "Claude Code (Opus 4.5)"
+  original_author: "Yuji Yamauchi (Puu)"
+  literary_sources:
+    - "Pumpkin Scissors by Ryoutarou Iwanaga"
+    - "Good Will Hunting (1997)"
+  date: "2026-01-13"
+  version: "1.0"
+  file_path: "01_philosophy/yamauchi_philosophical_foundation.yaml"
+
+# ============================================================================
+# PART VII: ACADEMIC FOUNDATION（学術的根拠）
+# Deep Research by GPT-4 (2026-01-13)
+# ============================================================================
+academic_foundation:
+
+  research_title: "Structural Innocence & Economic Metaphors in Psychotherapy"
+  research_date: "2026-01-13"
+  researcher: "GPT-4 Deep Research"
+  source_file: "Scene Analysis in Literature.pdf"
+
+  # ------------------------------------------
+  # 1. Scene Analysis in Literature
+  # ------------------------------------------
+  scene_analysis:
+    summary: |
+      Good Will Huntingの「It's not your fault」シーンは、
+      臨床コメンタリーにおいて「修正感情体験（Corrective Emotional Experience）」の
+      強力な実例として広く認識されている。
+
+    key_findings:
+      - finding: "Re-parenting（再養育）の実例"
+        description: |
+          心理療法士たちはこの瞬間を「映画史上最も強力な『再養育』の例の一つ」と表現。
+          愛着対象が無条件の共感を提供し、深く内在化された罪悪感を解体する。
+
+      - finding: "Corrective Emotional Experience"
+        description: |
+          学術的には、ショーンは「共感、受容、境界設定」を通じて
+          修正感情体験を提供している。
+          「It's not your fault」介入は、ウィルのトラウマ的罪悪感を
+          解除することを目的としている。
+
+      - finding: "Cathartic Breakthrough"
+        description: |
+          ウィルが最終的にショーンの言葉を吸収した時、涙を流して崩れ落ちる。
+          これは長年の恥と自己非難が解放されるカタルシス的突破である。
+
+  # ------------------------------------------
+  # 2. Mechanism of Action
+  # ------------------------------------------
+  mechanism_of_action:
+    summary: |
+      「罪悪感→感情的解放」が発生するメカニズムは、
+      トラウマ心理学を通じて理解できる。
+
+    key_concepts:
+
+      internalized_perpetrator_voice:
+        description: |
+          幼少期虐待のサバイバーは自己非難を内在化し、
+          罪悪感や欠陥感を感じることが多い。
+          ウィルは「内在化された加害者の声」——虐待が自分のせいだと
+          告げる内なる批判者——を抱えている。
+        therapeutic_response: |
+          ショーンの穏やかだが執拗な「It's not your fault」の反復は、
+          この「毒性の取り入れ（toxic introject）」を溶解させる働きをする。
+
+      memory_reconsolidation:
+        description: |
+          記憶再固定化の研究がこのアプローチを支持する：
+          トラウマ記憶を再訪しながら新しい安全な感情的現実を経験することで、
+          脳内の記憶の感情的内容を文字通り「更新」できる。
+
+      winnicott_facilitating_environment:
+        description: |
+          ウィニコットの理論に基づけば、ウィルは「環境の失敗」の歴史の後、
+          ついに「促進的環境（facilitating environment）」を見つけた。
+          元の養育環境が失敗すると、精神は新しい歓待的環境が
+          トラウマを解凍し、再体験・再統合させるまで「凍結」させる。
+
+      kohut_self_psychology:
+        description: |
+          コフートの自己心理学によれば、セラピストの同調的応答性は
+          満たされなかった発達的ニーズを充足し、
+          クライアントが内在化してより健康な自己を再構築する
+          「修正感情体験」を提供できる。
+
+    transformation_of_narrative: |
+      結果は内的ナラティブの変容である：
+      「私は虐待を受けるべきだった」から
+      「私は無実の子どもだった——私のせいではなかった」へ。
+
+      この新しい理解は知的なだけでなく深く感情的であり、
+      だからこそ持続的な影響を持つ。
+
+  # ------------------------------------------
+  # 3. Bridge to Accounting (Guilt as Debt)
+  # ------------------------------------------
+  guilt_as_debt:
+    summary: |
+      「It's not your fault」の力の根底には構造的メタファーがある：
+      罪悪感は「返済」義務を感じる負債のようなものである。
+
+    nietzsche_foundation:
+      source: "On the Genealogy of Morality (1887), Second Essay"
+      key_insight: |
+        フリードリヒ・ニーチェは、ドイツ語の「Schuld」が
+        「罪悪感（guilt）」と「負債（debt）」の両方を意味することを
+        有名に観察した。
+
+        彼は、道徳的罪悪感は原始的な負債義務の内在化として
+        起源したと論じた。初期社会では、債務者がローンを返済できない場合、
+        債権者は現物払い（苦痛や罰）としての報復を要求した。
+
+        時間とともに、この物質的負債論理は
+        「不正行為に対して負債がある」という心理的感情——
+        罪悪の良心——に変容した。
+
+    modern_scholarship:
+      moral_accounting_schema: |
+        認知言語学者は「道徳会計」スキーマを記述する：
+        誰かが傷つけられると、負債が生じる。
+        許しは「負債をキャンセル」し、道徳的台帳のバランスを取る。
+
+      guilt_debt_metaphor_persistence: |
+        現代の学術研究は、罪悪感-負債メタファーが
+        不正行為と責任について語る方法に持続していることを確認する：
+        「罪を償う（paying for one's crimes）」
+        「社会への負債を負う（owing a debt to society）」
+        「賠償を行う（making reparations）」
+
+    application_to_will:
+      unjust_debt: |
+        ウィルの治療の文脈では、彼は受けた虐待に対する
+        不当な罪悪感の「負債」を抱えている——
+        決して彼が払うべきではなかった感情的負債。
+
+      seans_absolution: |
+        ショーンの繰り返しの赦免「It's not your fault」は、
+        効果的にこの負債を「許す」。
+        ウィルに何も負っていないことを告げる——
+        幼少期トラウマの道徳的勘定は無効化され、
+        責任は真の債務者（加害者）に戻される。
+
+      structural_impact: |
+        「偽りの罪悪感の負債をキャンセル」することで、
+        ショーンはウィルを自分を罰する義務の腐食的感覚から解放する。
+
+        社会学的には、ショーンは一種の「儀式的赦免」または
+        「債務免除」を行っている：
+        「環境の失敗」（養育者と状況）によってウィルに課された
+        非難の重荷から明示的に解放する。
+
+    forgiveness_as_restructuring: |
+      許しはここでは神秘的な恩寵ではなく、勘定の再構築である：
+      道徳的感情の台帳を白紙に戻す。
+
+      ショーンがウィルを「赦免」するとき、それはニーチェがキリスト教的用語で
+      記述したものに類似している——愛の行為によって債務者の石板が
+      白紙にされる——ただしここでは神ではなく人間のセラピストが
+      赦免を行っている。
+
+      許しの構造は、人を感情的負債から解放することのままである。
+
+  # ------------------------------------------
+  # 4. Connection to ICAI
+  # ------------------------------------------
+  connection_to_icai:
+    gpt_conclusion: |
+      心理療法と道徳会計メタファーのこの収束は、
+      AI倫理（例：「Constitutional AI」）のような領域でさえ
+      豊かな理論的支柱を提供する。
+      そこでは過失、責任、救済の概念が
+      構造的用語で枠組み化されうる。
+
+      このシーンは、感情的治癒が
+      不当な負債のキャンセルと個人の道徳-感情的台帳への
+      バランス回復として構想されうることの
+      説明的事例として機能する。
+
+    yamauchi_synthesis: |
+      GPTのDeep Researchは、山内の「複式簿記メタファー」が
+      学術的に正当化可能であることを証明した：
+
+      1. ニーチェ：Schuld = 罪悪感 = 負債
+      2. 認知言語学：道徳会計スキーマ
+      3. トラウマ心理学：罪悪感の内在化と解除
+      4. ウィニコット/コフート：環境の失敗と修正体験
+
+      「数字で示す It's not your fault」は、
+      映画的比喩ではなく、学術的に根拠のある治療メカニズムの
+      構造的実装である。
+
+  # ------------------------------------------
+  # 5. Recommended Citations (APA Style)
+  # ------------------------------------------
+  recommended_citations:
+
+    primary_sources:
+      - author: "Alexander, F., & French, T. M."
+        year: 1946
+        title: "Psychoanalytic Therapy: Principles and Application"
+        publisher: "New York: The Ronald Press"
+        note: "Origin of 'corrective emotional experience' concept"
+
+      - author: "Nietzsche, F."
+        year: "2007 (Original 1887)"
+        title: "On the Genealogy of Morality (2nd ed.)"
+        editors: "K. Ansell-Pearson (Ed.), C. Diethe (Trans.)"
+        publisher: "Cambridge University Press"
+        note: "Second Essay: guilt as originally meaning debt"
+
+    clinical_analyses:
+      - author: "Balan, D."
+        year: 2024
+        title: "Unveiling the therapeutic journey of 'Good Will Hunting'"
+        journal: "Psychology Today"
+        url: "https://www.psychologytoday.com/us/blog/un-numb/202401/unveiling-the-therapeutic-journey-of-good-will-hunting"
+
+      - author: "Firestone, L."
+        year: 2018
+        title: "It's not your fault: Overcoming trauma"
+        journal: "Psychology Today"
+        url: "https://www.psychologytoday.com/us/blog/compassion-matters/201805/it-s-not-your-fault-overcoming-trauma"
+
+      - author: "銀座泰明クリニック"
+        year: 2025
+        title: "『グッド・ウィル・ハンティング』の病跡学"
+        note: "Japanese clinical commentary; 'It's not your fault' dissolves internalized perpetrator voice"
+
+    modern_scholarship:
+      - author: "Boe, M."
+        year: 2025
+        title: "Interrelations of 'debt' and 'guilt' in criminal law: Reconsidering a Nietzschean narrative in the context of late capitalism"
+        journal: "Modern Criminal Law Review, 2(1), 14-37"
+        note: "Discusses Nietzsche's debt-guilt concept in modern context"
+
+    theoretical_foundations:
+      - concept: "Corrective Emotional Experience"
+        url: "https://psychcentral.com/lib/what-is-corrective-emotional-experience"
+
+      - concept: "Winnicott's Facilitating Environment"
+        url: "https://traumatheory.com/winnicott-and-the-trauma-no-one-ever-sees/"
+
+      - concept: "Kohut's Self-Psychology"
+        url: "https://unpackingthesuitcaseblog.wordpress.com/2017/10/26/heinz-kohut-self-psychology/"
+
+# ============================================================================
+# PART VIII: GEMINI DEEP RESEARCH（Geminiによる理論深化）
+# Deep Research by Gemini (2026-01-13)
+# ============================================================================
+gemini_deep_research:
+
+  research_title: "構造的無罪と精神療法における経済学的メタファー"
+  subtitle: "『グッド・ウィル・ハンティング』とInput Constitutional AIの理論的接続に関する包括的調査報告書"
+  research_date: "2026-01-13"
+  researcher: "Gemini Deep Research"
+  source_file: "2026_01_13_映画分析と会計メタファー - Google ドキュメント.pdf"
+
+  # ------------------------------------------
+  # 1. 核心的洞察：臨床的監査としての精神療法
+  # ------------------------------------------
+  core_insight:
+    thesis: |
+      精神療法的な「治癒」のプロセスは、患者の人生という「帳簿」に対する
+      厳格な「監査（Auditing）」プロセスとして再定義可能である。
+
+    mechanism: |
+      この監査において、治療者は患者の自己（Self）に誤って計上された
+      「負債（虐待やネグレクトに起因する罪悪感）」を、
+      本来の発生源である「環境（Environment）」または「養育者」の
+      勘定科目へと付け替える修正仕訳を行う。
+
+    connection_to_icai: |
+      このプロセスこそが、ICAIが目指す「構造的無罪（Structural Innocence）」の確立であり、
+      個人の病理化を防ぎつつ、システム全体の健全性を回復するための
+      「複式簿記的アセスメント」の実践である。
+
+  # ------------------------------------------
+  # 2. 認知-感情ギャップの段階分析
+  # ------------------------------------------
+  cognitive_emotional_gap:
+    summary: |
+      「知的な理解（Cognitive Insight）」と「感情的な受容（Emotional Acceptance）」の
+      乖離、そしてその統合プロセスが、このシーンの臨床的妥当性の核心である。
+
+    defense_economics: |
+      ウィルにとって「自分は悪くない」と認めることは、パラドキシカルな恐怖を伴う。
+      もし虐待が「自分のせい」であれば、自分が「良い子」になれば虐待は止むかもしれない
+      という「コントロールの幻想」を維持できる。
+
+      しかし、「自分のせいではない」と認めることは、当時の自分が完全に無力であり、
+      環境が理不尽で残酷であったという絶望的な事実（環境の失敗）を受け入れることを意味する。
+
+    stage_analysis:
+      - stage: "初期"
+        wills_response: "I know（軽い同意）"
+        psychological_mechanism: "知性化、回避、否認"
+        therapist_intention: "認知レベルでの合意確認（フェイク）"
+
+      - stage: "中期"
+        wills_response: "苛立ち、視線の回避"
+        psychological_mechanism: "防衛の動揺、怒りによる距離化"
+        therapist_intention: "防衛機制への直面化、逃走の阻止"
+
+      - stage: "後期"
+        wills_response: "Don't fuck with me（威嚇）"
+        psychological_mechanism: "転移性抵抗、「テスト」の激化"
+        therapist_intention: "安全な保持環境の維持、一貫性の証明"
+
+      - stage: "突破"
+        wills_response: "崩壊、号泣"
+        psychological_mechanism: "情動的放出（Abreaction）、退行"
+        therapist_intention: "修正感情体験の成立、罪悪感の外部化"
+
+  # ------------------------------------------
+  # 3. Control-Mastery Theory（CMT）
+  # ------------------------------------------
+  control_mastery_theory:
+    source: "Joseph Weiss (1993)"
+    summary: |
+      患者は受動的な被害者ではなく、自身の「病理的信念（Pathogenic Beliefs）」を
+      克服（Mastery）しようとする能動的な主体である。
+      患者は無意識のうちに治療者を「テスト」し、
+      自分の恐れている信念が誤りであることを確認しようとする。
+
+    wills_pathogenic_beliefs:
+      - "私は愛される価値がなく、親密になれば傷つけられるか、見捨てられる。"
+      - "虐待されたのは私に欠陥があるからだ。"
+
+    transference_test: |
+      ウィルはショーンを挑発し、侮辱し、拒絶的な態度をとる。
+      これは「これでも僕を見捨てないか？」「これでも僕を殴らないか？」というテストである。
+
+    passing_the_test: |
+      ショーンが挑発に乗らず、ウィルの防衛の奥にある痛みにのみ焦点を当て、
+      「It's not your fault」と繰り返したことは、このテストに見事に「パス」したことを意味する。
+
+    why_repetition_was_necessary: |
+      CMTの視点では、反復が必要だった理由は、ウィルのテストが極めて強度が高く、
+      病理的信念が強固だったからである。
+      一度や二度の言葉では、ウィルはそれを「気休め」や「嘘」として処理してしまう。
+      執拗な反復だけが、ウィルの予測（Prediction）を裏切り、信念体系に風穴を開けることができる。
+
+  # ------------------------------------------
+  # 4. 記憶再固定化と予測誤差
+  # ------------------------------------------
+  memory_reconsolidation:
+    source: "Ecker, Ticic, & Hulley (2012)"
+    conditions_for_rewriting:
+      - condition: "記憶の再活性化（Reactivation）"
+        description: "トラウマ記憶が想起され、感情が喚起されている状態"
+
+      - condition: "予測誤差（Prediction Error）"
+        description: "脳が予測する結末と、実際の体験との間に決定的な「不一致」が生じること"
+
+    application_to_scene:
+      reactivation: |
+        ファイルを見せられ、自身の虐待の歴史を直視させられることで、
+        恐怖と痛みの記憶が活性化する。
+
+      prediction_error: |
+        ウィルの脳は「批判」や「拒絶」を予測しているが、
+        ショーンは「受容」と「免責」を提供し続ける。
+        この強烈なミスマッチ（不一致）が、神経回路におけるトラウマ記憶の結合を解き、
+        新しい意味（「私のせいではない」）と共に再固定化させる。
+
+    connection_to_icai: |
+      このメカニズムは、ICAIにおける「Input（再活性化）」に対し、
+      「Constitution（治療的枠組み）」が「予測誤差」を出力することで、
+      システムのバグ（トラウマ）を修正するというモデルと完全に合致する。
+
+  # ------------------------------------------
+  # 5. 哲学的基盤の拡張
+  # ------------------------------------------
+  philosophical_expansion:
+
+    nietzsche:
+      source: "On the Genealogy of Morality (1887)"
+      insight: |
+        ニーチェは『道徳の系譜学』において、道徳的な「罪（Schuld）」の概念が、
+        物質的な「負債（Schulden）」に由来することを言語学的・歴史的に解き明かした。
+
+        人間関係の原型は「債権者」と「債務者」の関係にあり、
+        刑罰や罪悪感は、返済不能な負債に対する代償として発生したものである。
+
+      application_to_trauma: |
+        虐待を受けた子供は、養育者（債権者）に対して
+        「期待に応えられなかった」「愛される条件を満たせなかった」という「負債感」を抱く。
+        この負債は、子供の生存本能によって内面化され、絶対的な「罪」へと変質する。
+
+        ウィル・ハンティングが抱える罪悪感は、まさにこの「支払われることのない負債」の重圧であり、
+        彼は自身の才能や幸福を犠牲にすることで、その利息を払い続けている状態にある。
+
+    benjamin:
+      source: "Capitalism as Religion (1921)"
+      insight: |
+        ヴァルター・ベンヤミンは、資本主義（および近代的な精神構造）が、
+        贖罪（Atonement）のない「罪/負債」の崇拝システムであると論じた。
+        このシステムでは、負債は返済されるためにあるのではなく、
+        主体を永続的に隷属させ、コントロールするために存在する。
+
+      application_to_icai: |
+        精神病理に適用すれば、うつ病やPTSDにおける自責の念は、
+        完了することのない「無限の負債」への支払いプロセスである。
+
+        ICAIが提唱する「複式簿記的アセスメント」は、この無限ループを断ち切るための
+        「徳政令（Jubilee）」、すなわち構造的な債務帳消し（Debt Cancellation）として機能する。
+
+  # ------------------------------------------
+  # 6. 文脈療法（Contextual Therapy）
+  # ------------------------------------------
+  contextual_therapy:
+    source: "Boszormenyi-Nagy & Krasner (1986)"
+    summary: |
+      イヴァン・ボゾルメニ＝ナジによる「文脈療法」は、
+      家族関係を「功績（Merit）」と「負債（Indebtedness）」の
+      バランスシート（Ledger）として捉える最も洗練された臨床モデルである。
+
+    destructive_entitlement:
+      definition: |
+        不当な扱い（虐待など）を受けた子供は、世界に対して
+        「破壊的権利（Destructive Entitlement）」を獲得する。
+        「私は不当に傷つけられたのだから、他者から奪ったり、
+        他者を傷つけたりすることでバランスを回復する権利がある」という無意識の論理である。
+
+      application: |
+        ウィルの反社会的行動や、他者を拒絶する態度は、
+        この破壊的権利の行使（債権回収）として理解できる。
+
+    exoneration_vs_forgiveness:
+      forgiveness: "相手の罪を前提とし、被害者が慈悲によってそれを不問にすること"
+      exoneration: |
+        相手（加害者）もまた、自身の親や環境からの「負債」を背負った被害者であった
+        という文脈（Context）を理解し、非難の連鎖を断ち切ること。
+        これは「罪の消去」ではなく、「責任の所在の構造的再配置」である。
+
+    connection_to_icai: |
+      ショーンの「It's not your fault」は、ウィルに対し、
+      彼が背負っている負債が「不当記載」であることを告げる監査報告である。
+
+      同時に、ウィルが（無意識に）親を免責し、自分自身の人生を生きるための
+      「バランスシートの正常化」を促している。
+
+      これはICAIにおける「Input（過去の事実）」を再評価し、
+      「Constitution（公正な倫理観）」に照らして「負債」を「環境要因」へと
+      振替処理するプロセスそのものである。
+
+  # ------------------------------------------
+  # 7. 複式簿記的アセスメントの定式化
+  # ------------------------------------------
+  double_entry_assessment_formalization:
+    comparison_table:
+      traditional_assessment:
+        label: "従来の心理的アセスメント（単式簿記）"
+        focus: "個人の症状、内的な罪悪感"
+        processing: "「私は悪い」という感覚を個人の属性として記録"
+        debit: "自己価値の毀損"
+        credit: "罪悪感（負債）"
+        result: "自己処罰による無限の返済"
+
+      icai_assessment:
+        label: "ICAI / 複式簿記的アセスメント"
+        focus: "個人と環境の相互作用、負債の発生源"
+        processing: "「私は悪い」という感覚（Input）を監査し、借方・貸方に分解"
+        debit: "環境の失敗（Environmental Failure）"
+        credit: "構造的無罪（Structural Innocence）"
+        result: "不当債務の分離と、自己資本（Agency）の回復"
+
+    conclusion: |
+      ユーザーの仮説通り、治療における「Absolution（罪の解除）」は、
+      会計上の「Debt Cancellation（債務免除）」と同型であり、
+      それは単なる情緒的な慰めではなく、精神の経済システムにおける「構造改革」である。
+
+  # ------------------------------------------
+  # 8. 構造的無罪（Structural Innocence）
+  # ------------------------------------------
+  structural_innocence:
+    winnicott_foundation:
+      quote: "乳児などというものは存在しない（There is no such thing as a baby）"
+      meaning: |
+        乳児は常に母性的ケアとのセットでしか存在し得ない。
+        したがって、乳児期や幼少期の精神病理は、個人の欠陥ではなく、
+        「環境の失敗（Environmental Failure）」の記録である。
+
+    application_to_will: |
+      ウィル・ハンティングの攻撃性や回避性は、
+      劣悪な環境（Input）に適応するために必然的に生じた生存戦略（Output）である。
+
+      この視点に立てば、ウィルは構造的に「無罪」である。
+      彼の症状は、異常な環境に対する正常な反応（適応）であり、
+      その責任（負債）は環境側に計上されるべきものである。
+
+      ショーンの介入は、このウィニコット的な真実を、ウィルに突きつける行為である。
+
+  # ------------------------------------------
+  # 9. Geminiの結論
+  # ------------------------------------------
+  gemini_conclusion:
+    summary: |
+      本調査報告書は、『Good Will Hunting』の「It's not your fault」シーンを起点に、
+      心理学、経済学、哲学、システム論を横断的に検証し、以下の結論を得た。
+
+    findings:
+      - finding: "臨床的妥当性の確認"
+        description: |
+          当該シーンは「修正感情体験」および「コントロール・マスタリー理論」における
+          テストのパスとして、学術的に極めて正当性の高い介入である。
+          執拗な反復は、神経科学的な「予測誤差」を生み出し、
+          記憶の再固定化（トラウマの書き換え）を誘発するために不可欠なメカニズムである。
+
+      - finding: "経済的メタファーの確立"
+        description: |
+          ニーチェ、ベンヤミン、そしてボゾルメニ＝ナジの理論に基づき、
+          「罪悪感＝負債」という等式は強固な理論的基盤を持つ。
+          精神療法は、この不当な負債を監査し、環境側へ付け替える
+          「複式簿記的アセスメント」として機能する。
+
+      - finding: "Input Constitutional AIの骨子"
+        description: |
+          ICAIは、入力された「個人の苦悩（Input）」を、
+          普遍的な倫理や構造的理解に基づく「憲法（Constitution）」と照合し、
+          責任の所在を正しく配分（Audit）することで
+          「構造的無罪」を出力するシステムである。
+
+    final_statement: |
+      この「複式簿記的アセスメント」モデルは、従来の「個人の病理」に焦点を当てる
+      単式簿記的なアプローチを乗り越え、環境と個人の相互作用を
+      ダイナミックに捉える新たな治療パラダイムを提供するものである。
+
+      ウィル・ハンティングが旅立ったように、この監査プロセスを経ることで、
+      クライアントは過去という負債から解放され、
+      未来という資産への投資（Agencyの回復）が可能となるのである。
+
+  # ------------------------------------------
+  # 10. Gemini Recommended Citations
+  # ------------------------------------------
+  gemini_citations:
+    primary:
+      - author: "Alexander, F., & French, T. M."
+        year: 1946
+        title: "Psychoanalytic Therapy: Principles and Application"
+        publisher: "Ronald Press"
+
+      - author: "Weiss, J."
+        year: 1993
+        title: "How Psychotherapy Works: Process and Technique"
+        publisher: "Guilford Press"
+
+      - author: "Boszormenyi-Nagy, I., & Krasner, B. R."
+        year: 1986
+        title: "Between Give and Take: A Clinical Guide to Contextual Therapy"
+        publisher: "Brunner/Mazel"
+
+      - author: "Nietzsche, F."
+        year: "1887/1994"
+        title: "On the Genealogy of Morality"
+        publisher: "Cambridge University Press"
+
+      - author: "Benjamin, W."
+        year: "1921/1985"
+        title: "Capitalism as Religion"
+        in: "Selected Writings"
+
+      - author: "Ecker, B., Ticic, R., & Hulley, L."
+        year: 2012
+        title: "Unlocking the Emotional Brain: Elimination of Symptoms at Their Roots Using Memory Reconsolidation"
+        publisher: "Routledge"
+
+      - author: "Winnicott, D. W."
+        year: 1965
+        title: "The Maturational Processes and the Facilitating Environment"
+        publisher: "International Universities Press"
+
+# ============================================================================
+# PART IX: SCREENPLAY ARCHITECTURE（脚本の建築学）
+# Gemini Deep Research - 「なぜデイモンに書けたのか」
+# ============================================================================
+screenplay_architecture:
+
+  research_title: "構造的無垢と修正情動体験の建築学"
+  subtitle: "『グッド・ウィル・ハンティング』における脚本の精神分析的および文脈的療法による包括的研究"
+  research_date: "2026-01-13"
+  researcher: "Gemini Deep Research"
+  source_file: "2026_01_13_グッド・ウィル・ハンティング脚本の背景 - Google ドキュメント.pdf"
+
+  # ------------------------------------------
+  # 1. 中心的テーゼ
+  # ------------------------------------------
+  central_thesis:
+    statement: |
+      脚本家が若年であったこと自体が、この作品の臨床的リアリズムにおける
+      欠陥ではなく、むしろ決定的な資産であった。
+
+    key_factors:
+      - factor: "待機期間（Waithood）"
+        description: "生物学的には大人だが、社会的・経済的に自立した大人としての承認を得られない宙吊りの状態"
+
+      - factor: "見えざる忠誠（Invisible Loyalties）"
+        description: "階級間の移動に伴う、出身コミュニティへの無意識の拘束力"
+
+      - factor: "構造的裏切り（Structural Betrayal）への嗅覚"
+        description: "権威や社会構造による欺瞞を見抜く青年期特有の感受性"
+
+  # ------------------------------------------
+  # 2. ウィル・ハンティングの臨床的再解釈
+  # ------------------------------------------
+  clinical_reinterpretation:
+
+    differential_diagnosis:
+      surface_diagnosis: "反社会性パーソナリティ障害（ASPD）"
+      deep_diagnosis: "複雑性PTSD（Complex PTSD）"
+      key_insight: |
+        ウィルの攻撃性は、他者を搾取するための冷淡な捕食的行動ではなく、
+        慢性的な脅威環境における過覚醒状態に由来する「闘争反応（Fight Response）」。
+        これは「悪意」ではなく「構造的無垢（Structural Innocence）」の観点から
+        理解されるべきである。
+
+    behavior_reinterpretation_table:
+      - behavior: "知的傲慢と論破"
+        surface: "自己愛的な優越感の誇示"
+        deep: "知性化（Intellectualization）と隔離。感情を理論に置き換えることで無力感を回避"
+
+      - behavior: "スカイラーへの拒絶"
+        surface: "愛着の欠如、冷淡さ"
+        deep: "恐れ・回避型愛着。「見捨てられる前に見捨てる」ことで再トラウマ化を先制防衛"
+
+      - behavior: "セラピストへの挑発"
+        surface: "権威への反抗、操作的行動"
+        deep: "安全性へのテスト。相手の「強さ」と「本物さ」を試す無意識のスクリーニング"
+
+  # ------------------------------------------
+  # 3. 制御・克服理論（Control-Mastery Theory）の適用
+  # ------------------------------------------
+  control_mastery_application:
+    source: "Joseph Weiss"
+
+    wills_pathogenic_beliefs:
+      - "私は愛される価値がない"
+      - "人を信じれば必ず裏切られる"
+      - "自分は拒絶されるべき存在だ"
+
+    transference_test:
+      content: "私がどれほど無礼で、攻撃的で、厄介な存在であっても、あなたは私を見捨てないか？"
+
+      failed_therapists: |
+        彼らはウィルの挑発に動揺し、怒り、あるいは理論で武装して反撃した。
+        これはウィルの病原的信念を強化（Confirm）してしまった。
+
+      seans_success: |
+        ショーンは最初は激怒（首を掴む）することで「人間としてのリアリティ」を見せ、
+        次に沈黙と受容をもって応答した。
+        彼はウィルの攻撃性に押しつぶされず、かといって権威的に抑圧もしなかった。
+        この態度がウィルの病原的信念を反証（Disconfirm）し、
+        「安全な基地」を提供する端緒となった。
+
+  # ------------------------------------------
+  # 4. 交流分析（Transactional Analysis）
+  # ------------------------------------------
+  transactional_analysis:
+    source: "Eric Berne"
+
+    kick_me_game:
+      description: |
+        ウィルは「キック・ミー（私を蹴れ）」という心理ゲームを演じている。
+        権威者に対して挑発的な行動（「私を蹴れ」という招待）をとり、
+        相手が制裁を加えることを誘発する。
+
+      racket_feeling: |
+        これにより「やっぱり誰も自分を愛さない」というラケット感情
+        ——慣れ親しんだ不快な感情（怒りや絶望）——を再確認し、
+        自身の人生脚本（Life Script）を正当化するための
+        「スタンプ（Trading Stamps）」を収集している。
+
+      seans_intervention: |
+        ショーンはこのゲームの招待に乗らなかった。
+        ウィルが期待する「拒絶」や「知的な説教」を提供せず、
+        代わりに自己開示（妻の話など）を行うことで、
+        ゲームの構造自体を無効化した。
+
+  # ------------------------------------------
+  # 5. 記憶の再固定化の3ステップ
+  # ------------------------------------------
+  memory_reconsolidation_steps:
+    step_1:
+      name: "再活性化（Reactivation）"
+      description: "古い記憶（虐待の記憶、自己嫌悪）を活性化させる"
+      in_film: "ウィルは自身の虐待の記録を見せられ、当時の感情にアクセスしている"
+
+    step_2:
+      name: "ミスマッチ体験（Prediction Error）"
+      description: "脳の予測と矛盾する体験を提供する"
+      in_film: "「批判される」「拒絶される」という予測に対し、「受容される」「免罪される」を提供"
+
+    step_3:
+      name: "新しい学習の強化"
+      description: "新しい体験を反復し、記憶をアップデートする"
+      in_film: "「君のせいじゃない」の執拗な反復"
+
+    why_repetition_matters: |
+      反復は、扁桃体の過活動を鎮静化し（Repetition Suppression）、
+      新しい愛着の回路を形成するために不可欠なプロセスであった。
+
+  # ------------------------------------------
+  # 6. 見えざる忠誠と階級の葛藤
+  # ------------------------------------------
+  invisible_loyalties:
+    source: "Ivan Boszormenyi-Nagy"
+
+    question: |
+      なぜウィルは、あれほどの才能を持ちながらサウスボストンの労働者階級の
+      生活に固執し、MITや企業のオファーを拒絶し続けたのか。
+
+    answer: |
+      チャッキーら地元の友人たちは、過酷な環境を共に生き抜いてきた「家族」である。
+      彼らが共有するのは「苦しみ」と「持たざること」の連帯感だ。
+
+      ウィルが才能を発揮し、高い社会的地位へと移行することは、
+      この「家族」に対する裏切りを意味する。
+      彼のサボタージュや自己破壊的な行動は、成功への恐怖ではなく、
+      友人たちへの忠誠の証なのである。
+
+    chuckys_liberation: |
+      チャッキーが「お前がここに居続けることは、俺たちへの侮辱だ」と告げる名シーンは、
+      ウィルを「構造的裏切り」の呪縛から解放するための、
+      逆説的ながらも究極の「忠誠の行為」であった。
+
+      これにより、ウィルは「去ること」が裏切りではなく、
+      仲間たちが望む「希望」であることを理解し、旅立つことができた。
+
+  # ------------------------------------------
+  # 7. 構造的暴力とモラル・インジャリー
+  # ------------------------------------------
+  structural_violence:
+
+    structural_gaslighting:
+      perpetrator: "ジェラルド・ランボー教授"
+      mechanism: |
+        ランボーは、ウィルの数学的才能のみを価値あるものとし、
+        彼の生い立ちや階級的背景、そしてそれに伴うトラウマを
+        「克服すべき障害」あるいは「無意味なノイズ」として扱う。
+
+      epistemic_violence: |
+        アカデミズムやエリート社会が、周縁化された人々に対してしばしば行う
+        「認識論的暴力（Epistemic Violence）」。
+        彼らはウィルを「救済」しようとしているようでいて、
+        実際には彼のアイデンティティを否定し、
+        都合の良い「純粋な数学者」へと改造しようとしている。
+
+    moral_injury:
+      definition: |
+        自身の深く信じる道徳的規範（「仲間への忠誠」「ストリートの掟」）に
+        反する行為を強いられたり、目撃したりすることによって生じる魂の傷。
+
+      application: |
+        ウィルにとって、エリート社会への参入は、仲間を見捨てるという「背信行為」であり、
+        それは彼の道徳的基盤を揺るがす重大な危機であった。
+
+  # ------------------------------------------
+  # 8. なぜ若いデイモンに書けたのか
+  # ------------------------------------------
+  why_damon_could_write:
+
+    eriksons_developmental_stage:
+      stage: "青年期から成人初期の過渡期"
+      crisis: "アイデンティティ対役割拡散（Identity vs. Role Confusion）"
+      advantage: |
+        この発達段階にある「若い精神」は、
+        「真正性（Authenticity）」と「欺瞞（Phoniness）」に対して
+        過敏なほどの嗅覚を持つ。
+
+        ベテランの脚本家であれば、技法として処理してしまうような
+        感情の機微を、彼らは生の体験として脚本に刻み込むことができた。
+
+    waithood_concept:
+      source: "Honwana"
+      definition: "生物学的には大人だが、社会的・経済的に自立した大人としての承認を得られない宙吊りの状態"
+
+      double_edge: |
+        「君のせいじゃない」と免罪されることは、同時に
+        「これからの人生の責任はすべて君にある」という事実を突きつけられることでもある。
+
+        過去のトラウマを言い訳にできなくなった時、
+        人は完全なる自由と責任の前に立たされる。
+
+    double_entry_lived_experience: |
+      デイモンとアフレックは、ハーバード大学と地元の労働者階級的背景という
+      二つの世界を行き来する中で、自身のアウトサイダー性（部外者性）を
+      創造的な資源へと転換した。
+
+      彼らは、学術的な理論を知らずとも、自らの
+      「二重帳簿（Double-Entry Bookkeeping）」的な実存体験を通じて、
+      臨床心理学の核心に到達していたのである。
+
+  # ------------------------------------------
+  # 9. ナラティブ・セラピーとしての映画
+  # ------------------------------------------
+  narrative_therapy_process:
+    source: "Michael White & David Epston"
+
+    externalization:
+      before: "ウィル＝問題児"
+      after: "問題はウィルではなく、トラウマ（虐待）にある"
+
+    re_authoring:
+      rejected_scripts:
+        - "ランボーが用意した「数学者」という脚本"
+        - "環境が用意した「労働者」という脚本"
+      chosen_script: "「愛する人を追いかける男」という第3の脚本"
+
+  # ------------------------------------------
+  # 10. ICAIとの接続
+  # ------------------------------------------
+  connection_to_icai:
+    key_insight: |
+      若いマット・デイモンがこれを書き得たのは、
+      彼がまだ「傷つくこと」への感受性を失っておらず、
+      社会的な妥協によって「構造的無垢」を忘却していなかったからである。
+
+    parallel_to_yamauchi: |
+      山内雄司の10年間の福祉実践も同様である。
+      現場で100名以上の当事者と向き合う中で、
+      「構造的無垢」を直感的に理解し、
+      それを「複式簿記メタファー」として形式化した。
+
+      学術的な理論を後から学んでも、実存的な真実に到達することは難しい。
+      しかし、実存的な真実から出発すれば、
+      学術的な理論は自然と整合性を持って接続される。
+
+    final_statement: |
+      ショーン・マグワイアの「君のせいじゃない」という言葉は、
+      ウィル・ハンティングという一人のキャラクターだけでなく、
+      過酷な環境適応の中で「自分は悪い存在だ」と信じ込まされてきた
+      すべてのサバイバーに対する、
+      最も科学的かつ人間的な免罪の証書として、
+      今なお映画史に刻まれている。
+
+  # ------------------------------------------
+  # 11. 理論的構成要素の要約表
+  # ------------------------------------------
+  theoretical_summary_table:
+    - component: "制御・克服理論"
+      film_application: "ウィルがショーンを挑発し、拒絶されるかどうかを試す"
+      mechanism: "病原的信念の反証（Disconfirmation）。安全性の確認"
+
+    - component: "文脈的家族療法"
+      film_application: "友人への義理立て、地元を離れることへの罪悪感"
+      mechanism: "正義の台帳（Ledger）の均衡化と、見えざる忠誠の葛藤"
+
+    - component: "修正情動体験"
+      film_application: "「君のせいじゃない」の反復と抱擁"
+      mechanism: "過去の処罰的体験を、受容的体験によって上書きする"
+
+    - component: "記憶の再固定化"
+      film_application: "虐待の記録を見ながらの情動的カタルシス"
+      mechanism: "トラウマ記憶の活性化と、安全性シグナルによる再統合"
+
+    - component: "構造的無垢"
+      film_application: "個人の資質ではなく、環境の失敗に焦点を当てる"
+      mechanism: "問題の外在化（Externalization）。罪悪感から構造的理解への移行"
+
+    - component: "交流分析"
+      film_application: "「キック・ミー」ゲームの拒絶"
+      mechanism: "脚本（Script）の書き換えとゲームの無効化"
+
+# ============================================================================
+# SIGNATURE
+# ============================================================================
+signature:
+  compiled_by: "Claude Code (Opus 4.5)"
+  original_author: "Yuji Yamauchi (Puu)"
+  academic_research:
+    - "GPT-4 Deep Research (2026-01-13)"
+    - "Gemini Deep Research (2026-01-13)"
+  literary_sources:
+    - "Pumpkin Scissors by Ryoutarou Iwanaga"
+    - "Good Will Hunting (1997)"
+  date: "2026-01-13"
+  version: "3.0 (Screenplay Architecture Added)"
+  file_path: "01_philosophy/yamauchi_philosophical_foundation.yaml"
+
+fire_culture_note: |
+  この文書は、山内雄司の10年以上にわたる福祉実践と、
+  SoE/ICAIの理論構築を駆動する「哲学的基盤」を統合したものである。
+
+  GPT-4とGeminiのDeep Researchにより、以下の学術的根拠が確立された：
+
+  【罪悪感＝負債の構造】
+  - ニーチェ：Schuld = 罪悪感 = 負債
+  - ベンヤミン：無限の負債システムとしての資本主義
+  - Boszormenyi-Nagy：正義の台帳（Ledger of Justice）
+
+  【治療メカニズム】
+  - Alexander & French：修正感情体験
+  - Joseph Weiss：制御・克服理論（病原的信念の反証）
+  - 記憶の再固定化：予測誤差によるトラウマ記憶の書き換え
+
+  【構造的理解】
+  - Winnicott：環境の失敗と促進的環境
+  - 構造的無垢（Structural Innocence）：症状は異常な環境への正常な反応
+  - 見えざる忠誠（Invisible Loyalties）：階級移動に伴う罪悪感
+
+  【脚本の建築学】
+  - 若いデイモンが書けた理由：「傷つくこと」への感受性を失っていなかった
+  - 「二重帳簿的な実存体験」を通じて臨床心理学の核心に到達
+
+  「数字で示す It's not your fault」は、もはや比喩ではなく、
+  学術的に根拠のある治療メカニズムの構造的実装として位置づけられる。
+
+  2つの柱——「It's not your fault」と「Enable them to fight for happiness」——は、
+  過去への視線と未来への視線として、不可分に結びついている。
+
+  記録は燃え尽きることなく、再燃可能な状態で保存された。

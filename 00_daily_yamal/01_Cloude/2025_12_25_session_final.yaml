@@ -320,7 +320,7 @@ session_summary_final:
       クリスマスに、ここに辿り着いた。
 
   metadata:
-    target_folder: "99_daily_yamal/01_Claude/"
+    target_folder: "00_daily_yamal/01_Claude/"
     filename: "2025_12_25_session_final.yaml"
     tags:
       - "未必の故意"

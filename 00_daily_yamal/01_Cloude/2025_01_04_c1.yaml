@@ -4,7 +4,7 @@ metadata:
   participants:
     - "Yuji Yamauchi (Puu)"
     - "Claude Opus 4.5"
-  target_folder: "99_daily_yamal/01_Claude/"
+  target_folder: "00_daily_yamal/01_Claude/"
   file_name_suggestion: "2025_01_04_c1.yaml"
   reason: "日常セッション - ジェミニ文字起こし記録の検討と戦略議論"
   tags:

@@ -1,0 +1,177 @@
+# ============================================
+# 実践記録：Sケース（2023年3月〜9月）
+# SoE理論の経験的基盤となる介入事例
+# ============================================
+
+metadata:
+  version: "1.0"
+  created: "2026-01-08"
+  source: "2025_01_09_case_s_tic_documentation_anonymized.yaml"
+  purpose: "制度的阻害因子と属人的介入の限界を示す実践記録"
+  anonymized: true
+
+# ============================================
+# 事例概要
+# ============================================
+case_overview:
+  pseudonym: "S"
+  demographics:
+    age: 23
+    gender: "女性"
+    role: "会社経営者"
+  presenting_issues:
+    - "違法薬物使用歴"
+    - "アルコール依存"
+    - "摂食障害（過食嘔吐）"
+    - "PTSD"
+    - "希死念慮"
+  aces_history:
+    - "いじめ（性的行為含む）"
+    - "不登校"
+    - "風俗従事"
+  intervention_period: "2023年3月〜9月（6ヶ月）"
+  outcome: "違法薬物・アルコールの抑制達成、支援者脳出血により終結"
+
+# ============================================
+# 介入プロセス
+# ============================================
+intervention_process:
+
+  phase_1_initial_assessment:
+    period: "2023年3月23日〜26日"
+    activities:
+      - "NOCC実施"
+      - "詳細ヒアリング"
+      - "家族との合意形成"
+    key_insight: "経営者としてのリスク計算で説得"
+
+  phase_2_formal_documentation:
+    period: "2023年3月〜4月"
+    activities:
+      - "市役所向け意見書提出"
+      - "NDA締結"
+      - "登記変更書類作成"
+      - "傷病手当計算"
+      - "Teamsアカウント設定"
+    innovation: "就労移行支援の在宅利用スキーム設計"
+
+  phase_3_institutional_dysfunction:
+    period: "2023年4月〜5月"
+    events:
+      - actor: "依存症センター"
+        response: "「全部任せろ」→1ヶ月以上何もしない"
+      - actor: "保健所"
+        response: "「依存症センターからの依頼がないと動けない」"
+    consequence: "支援者一人で毎日の希死念慮対応"
+
+  phase_4_crisis_intervention:
+    period: "2023年5月"
+    events:
+      - date: "2023-05-04"
+        event: "幻聴、頓服＋アルコール、「死にたい」"
+      - date: "2023-05-05"
+        event: "救急対応"
+    response: "日を跨がない即応体制で対処"
+
+  phase_5_stabilization:
+    period: "2023年8月"
+    achievements:
+      - "違法薬物の抑制達成"
+      - "アルコール依存の抑制達成"
+      - "大学研究者との連携構築"
+      - "警察との協力体制確立"
+      - "退避計画の実行"
+
+  phase_6_termination:
+    trigger: "2023年9月末 支援者脳出血"
+    decision: "支援継続不能を伝え終結"
+    lesson: "属人的スキルへの依存の限界"
+
+# ============================================
+# 制度的阻害因子
+# ============================================
+institutional_barriers:
+
+  dependency_center:
+    claim: "専門機関として全て任せろ"
+    reality: "1ヶ月以上何も進まない"
+    pattern: "専門性の囲い込みによる機能不全"
+
+  public_health_center:
+    claim: "依存症センターからの依頼がないと動けない"
+    reality: "依存症センターは依頼しない"
+    pattern: "責任のたらい回し"
+
+  municipal_office:
+    claim: "両市で協議が必要"
+    reality: "警察が「離れた方がいい」と言っている緊急事態でも進まない"
+    honest_admission: "正直めんどくさいのはめんどくさい"
+    pattern: "管轄問題による遅延"
+
+# ============================================
+# 支援者の実践知
+# ============================================
+practitioner_knowledge:
+
+  multi_purpose_design:
+    purpose_1: "当事者の更生支援"
+    purpose_2: "自己防衛（疑惑への構造的対抗）"
+    purpose_3: "制度化のためのエビデンス生成"
+    principle: "一石三鳥の設計"
+
+  transparency_measures:
+    - "1対1での録音"
+    - "家族への定期メール報告"
+    - "Teamsでの記録保存"
+    - "全文書への日付・署名"
+    - "第三者機関（大学・警察）の介入"
+
+  structural_suspicion_countermeasure:
+    problem: "50歳男性支援者と23歳女性当事者という構図"
+    default_suspicion: "「下心があるのでは」という疑念"
+    solution: "ナラティブ（語り）ではなくストーリー（検証可能な事実連鎖）で対抗"
+
+# ============================================
+# SoE理論への示唆
+# ============================================
+soe_implications:
+
+  empirical_evidence:
+    - "正規ルートの無効化を文書で実証"
+    - "制度が担うべき負荷の個人への集中"
+    - "「しょうがない」が発生する構造的条件"
+
+  theoretical_contribution:
+    - title: "簿外債務の可視化"
+      content: "自己責任として処理されているものの中に、社会が供与すべきだった権利の毀損が隠れている"
+    - title: "専門性の囲い込み"
+      content: "「専門機関」が機能しないことで、現場の支援者に負荷が集中"
+    - title: "検証可能性の設計"
+      content: "善意を信じてもらうのではなく、構造的に検証可能な形で証拠を残す"
+
+  floor_ceiling_analysis:
+    floor_violation:
+      indicator: "当事者が「しょうがない」と諦める"
+      example: "制度が動かない中で希死念慮を抱える"
+    ceiling_absence:
+      indicator: "支援者が「しょうがない」と言い訳する"
+      example: "「両市で協議が必要」「正直めんどくさい」"
+
+# ============================================
+# 教訓と提言
+# ============================================
+lessons_and_recommendations:
+
+  structural_lessons:
+    - "属人的スキルに依存した支援は、その人が倒れれば終わる"
+    - "正規ルートが機能しない場合の迂回路設計が必要"
+    - "エビデンスなしでは支援が「問題行動」に書き換えられる"
+
+  system_design_implications:
+    - "初期介入の即応体制の制度化"
+    - "複合的困難ケースの引き受け手の確保"
+    - "支援記録の標準化と検証可能性の担保"
+
+signature:
+  extracted_by: "Claude Code (Opus 4.5)"
+  date: "2026-01-08"

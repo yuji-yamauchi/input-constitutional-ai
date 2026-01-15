@@ -1,0 +1,466 @@
+# ============================================================
+# 日本社会事業大学大学院 入試書類レビュー
+# 作成日: 2026-01-06
+# 対象: 福祉関係職経験者入学（博士前期課程）
+# ============================================================
+
+metadata:
+  reviewer: Claude（受験指導AI）
+  review_date: "2026-01-06"
+  target_documents:
+    - 実践記録_v1.pdf
+    - 研究計画書_v2_10.pdf
+    - 研究計画概要書_博士前期課程用_v1_4.pdf
+  admission_category: 福祉関係職経験者入学
+  target_program: 博士前期課程（修士課程）
+  intended_supervisor: 贄川信幸教授
+
+# ============================================================
+# 1. 誤字脱字チェック
+# ============================================================
+
+typo_check:
+  
+  実践記録:
+    - id: T-PR-001
+      severity: minor
+      location: "p.2「第2年次 4.」"
+      original: "探索的に 試行する"
+      issue: 不要なスペース混入
+      suggested: "探索的に試行する"
+      status: pending
+
+    - id: T-PR-002
+      severity: info
+      location: "p.2「② 地域関係者交流」"
+      original: "地域関係者交流と広域連携システムの構築"
+      issue: 見出しと内容の微妙な不一致（「関係者交流」より「広域連携」が主内容）
+      suggested: 現状維持でも可。必要なら「広域連携システムの構築と地域関係者の組織化」等に変更
+      status: pending
+
+    - id: T-PR-003
+      severity: info
+      location: "p.3「示唆2」"
+      original: "アセスメント等の当事者の記録作成段階での配慮の重要性"
+      issue: やや冗長な表現
+      suggested: "アセスメント作成段階における当事者配慮の重要性"
+      status: pending
+
+  研究計画書:
+    - id: T-RP-001
+      severity: minor
+      location: "p.1「Ⅱ」"
+      original: "minimal necessary disclosure"
+      issue: 一般的には「minimum necessary disclosure」だが許容範囲
+      suggested: 現状維持でも可
+      status: pending
+
+    - id: T-RP-002
+      severity: minor
+      location: "p.2「第1年次 4.」"
+      original: "探索的に 試行する"
+      issue: 不要なスペース混入
+      suggested: "探索的に試行する"
+      status: pending
+
+    - id: T-RP-003
+      severity: minor
+      location: "p.2「第2年次 2.」"
+      original: "探索的範囲で 検証する"
+      issue: 不要なスペース混入
+      suggested: "探索的範囲で検証する"
+      status: pending
+
+  研究計画概要書:
+    - id: T-RS-001
+      severity: none
+      location: 全体
+      issue: 重大な誤字脱字なし
+      status: confirmed
+
+# ============================================================
+# 2. 書類間整合性チェック
+# ============================================================
+
+consistency_check:
+
+  # ------------------------------------------------------
+  # 2.1 核心概念の接続（重大問題）
+  # ------------------------------------------------------
+  core_concepts:
+    - id: C-001
+      severity: critical
+      concept: 複式簿記メタファー（PL/BS/CF）
+      in_practice_record: false
+      in_research_plan: true
+      in_summary: true
+      issue: |
+        研究計画の核心概念であるにもかかわらず、
+        実践記録に一切の言及がない。
+        口述試験で「なぜこのメタファーに至ったのか」と
+        問われた際に説明困難。
+      recommendation: |
+        実践記録「3 実践から得た示唆」に、
+        会計メタファーへの着想経緯を追記する。
+      status: pending
+
+    - id: C-002
+      severity: critical
+      concept: 累積環境因子／累積不利
+      in_practice_record: false
+      in_research_plan: true
+      in_summary: true
+      issue: |
+        研究目的①の核心概念であるが、
+        実践記録では明示的に言及されていない。
+        「示唆2」が近いが、用語として接続されていない。
+      recommendation: |
+        実践記録に「累積環境因子」という視点への
+        気づきを追記する。ACEsや教育機会の欠落への
+        言及を具体的事例と紐づける。
+      status: pending
+
+    - id: C-003
+      severity: critical
+      concept: 障害受容
+      in_practice_record: false
+      in_research_plan: true
+      in_summary: true
+      issue: |
+        研究目的②の到達点として「障害受容」を
+        位置づけているが、実践記録には言及なし。
+      recommendation: |
+        実践記録に「当事者が自分のストーリーを
+        語れるようになるプロセス」への気づきを追記。
+      status: pending
+
+    - id: C-004
+      severity: moderate
+      concept: ACEs（小児期逆境体験）
+      in_practice_record: false
+      in_research_plan: true
+      in_summary: true
+      issue: |
+        先行研究として重要な位置づけだが、
+        実践からの接続が不明確。
+      recommendation: |
+        具体的な支援事例（匿名化）において、
+        幼少期の経験が成人期に影響した事例への
+        言及を検討。
+      status: pending
+
+    - id: C-005
+      severity: moderate
+      concept: TIC（トラウマインフォームドケア）
+      in_practice_record: false
+      in_research_plan: true
+      in_summary: true
+      issue: 実践記録との接続が不明確
+      recommendation: 累積環境因子の追記と併せて言及を検討
+      status: pending
+
+    - id: C-006
+      severity: low
+      concept: DEAI / "Everyone Wins a Balloon"
+      in_practice_record: false
+      in_research_plan: true
+      in_summary: false
+      issue: |
+        参照枠として位置づけられており、
+        実践記録との直接接続は必須ではない。
+      recommendation: 現状維持
+      status: acceptable
+
+    - id: C-007
+      severity: low
+      concept: 情報境界線（boundary design）
+      in_practice_record: false
+      in_research_plan: true
+      in_summary: true
+      issue: |
+        理論概念であり、実践からの帰納というより
+        研究段階での演繹的構築として説明可能。
+      recommendation: 現状維持
+      status: acceptable
+
+  # ------------------------------------------------------
+  # 2.2 示唆と研究目的の対応
+  # ------------------------------------------------------
+  implications_alignment:
+    - id: A-001
+      practice_record_implication: "示唆1：善意に依存しない仕組みの必要性"
+      research_plan_target: "構造的QA、再現可能モデル"
+      alignment: strong
+      status: confirmed
+
+    - id: A-002
+      practice_record_implication: "示唆2：アセスメント作成段階での配慮"
+      research_plan_target: "情報境界線の設計"
+      alignment: moderate
+      note: 接続は読み取れるが、明示的ではない
+      status: acceptable
+
+    - id: A-003
+      practice_record_implication: "示唆3：属人性から再現可能性への転換"
+      research_plan_target: "形式知化、アセスメント項目案"
+      alignment: moderate
+      status: acceptable
+
+    - id: A-004
+      practice_record_implication: "（未記載）"
+      research_plan_target: "目的①：累積環境因子の因果構造解明"
+      alignment: missing
+      issue: 実践記録に対応する示唆がない
+      status: pending
+
+    - id: A-005
+      practice_record_implication: "（未記載）"
+      research_plan_target: "目的②：複式簿記メタファーによる障害受容支援"
+      alignment: missing
+      issue: 実践記録に対応する示唆がない
+      status: pending
+
+  # ------------------------------------------------------
+  # 2.3 数値・用語の整合性
+  # ------------------------------------------------------
+  factual_consistency:
+    - id: F-001
+      item: 経験年数
+      practice_record: "10年以上（2012年から）"
+      research_plan: "10年以上"
+      summary: "10年以上"
+      consistency: matched
+      status: confirmed
+
+    - id: F-002
+      item: 事業所数
+      practice_record: "計10箇所"
+      research_plan: 言及なし
+      summary: 言及なし
+      consistency: matched
+      status: confirmed
+
+    - id: F-003
+      item: 支援人数
+      practice_record: "延べ100名を超える"
+      research_plan: 言及なし
+      summary: 言及なし
+      consistency: matched
+      status: confirmed
+
+    - id: F-004
+      item: 指導教員
+      practice_record: 言及なし
+      research_plan: 言及なし
+      summary: "贄川信幸教授"
+      consistency: matched
+      note: 概要書のみに記載（正しい）
+      status: confirmed
+
+    - id: F-005
+      item: 研究課題名
+      practice_record: 該当なし
+      research_plan: "就労移行支援における本人側アセスメント構造の再構築―累積環境因子と複式簿記メタファーによる障害受容支援フレームワークの開発―"
+      summary: 同上
+      consistency: matched
+      status: confirmed
+
+    - id: F-006
+      item: A型→B型転換時の人数
+      practice_record: "45名全員の解雇" / "35名のB型移行"
+      research_plan: 言及なし
+      summary: 言及なし
+      consistency: internal_discrepancy
+      issue: |
+        45名 − 35名 = 10名の行方が説明されていない。
+        口述試験で問われる可能性あり。
+      recommendation: |
+        「35名がB型へ移行、残り10名は他事業所への移行や
+        一般就労等の選択をされた」等の補足を追記。
+      status: pending
+
+# ============================================================
+# 3. 修正優先度サマリー
+# ============================================================
+
+priority_summary:
+  
+  critical:
+    description: "口述試験での説明困難を招く重大問題"
+    items:
+      - C-001  # 複式簿記メタファーの接続
+      - C-002  # 累積環境因子の接続
+      - C-003  # 障害受容の接続
+      - A-004  # 研究目的①との接続
+      - A-005  # 研究目的②との接続
+    recommended_action: |
+      実践記録「3 実践から得た示唆」に「示唆4」または
+      示唆2の補足として、以下の内容を追記する：
+      
+      ・時間軸を通じた累積環境因子への気づき
+      ・会計メタファー（PL/BS/CF）への着想経緯
+      ・当事者が自己のストーリーを語れるようになる
+        プロセス（障害受容）への関心
+
+  high:
+    description: "口述試験で質問される可能性が高い"
+    items:
+      - F-006  # 45名と35名の差（10名の行方）
+    recommended_action: |
+      45名中35名がB型移行、残り10名の進路を明記。
+      例：「一般就労、他事業所移行、サービス終了等」
+
+  moderate:
+    description: "先行研究との接続強化"
+    items:
+      - C-004  # ACEs
+      - C-005  # TIC
+    recommended_action: |
+      累積環境因子の追記と併せて、
+      実践事例との接続を示唆する表現を検討。
+
+  minor:
+    description: "誤字脱字・表現の推敲"
+    items:
+      - T-RP-002  # 不要スペース
+      - T-RP-003  # 不要スペース
+      - T-PR-001  # 不要スペース
+      - T-PR-002  # 見出し調整
+      - T-PR-003  # 表現推敲
+    recommended_action: |
+      PDF再作成時に修正。優先度は低い。
+
+# ============================================================
+# 4. 推奨追記案（実践記録用）
+# ============================================================
+
+recommended_additions:
+  
+  target_document: 実践記録
+  target_section: "3 実践から得た示唆"
+  
+  option_A:
+    description: "示唆4として新規追加"
+    content: |
+      示唆4：時間軸を通じた累積環境因子への気づき
+      
+      支援を重ねる中で、当事者の現在の状態は「今ここ」の
+      個人因子だけでは説明できないと感じるようになった。
+      幼少期の家庭環境、教育機会の有無、過去の支援歴と
+      いった「時間軸を通じて累積した環境要因」が、成人期の
+      意思決定や職業準備性に影響を与えている。
+      
+      この気づきから、当事者の「過去」「現在」「未来」を
+      構造的に可視化する方法として、会計における財務諸表
+      （損益計算書・貸借対照表・キャッシュフロー計算書）の
+      メタファーが有効ではないかと考えるに至った。
+      当事者が自分の人生を「資産」と「負債」、「収入」と
+      「支出」として捉え直すことで、自己のストーリーを
+      自分の言葉で語れるようになる——そのプロセスこそが、
+      障害受容の一つの到達点ではないかという仮説を
+      持つようになった。
+
+  option_B:
+    description: "示唆2の補足として追加"
+    content: |
+      （示唆2の末尾に追加）
+      
+      さらに、アセスメントの課題を考える中で、当事者の
+      「現在」だけでなく「過去から累積した環境因子」——
+      幼少期の逆境体験、教育機会の欠落、家族関係等——が、
+      成人期の意思決定能力に影響していることを強く実感
+      するようになった。こうした累積的な要因を可視化する
+      ため、会計の財務諸表（PL/BS/CF）をメタファーとして
+      用い、当事者が自己の人生を構造的に理解できる
+      フレームワークの必要性を感じるに至った。
+
+# ============================================================
+# 5. 口述試験想定質問
+# ============================================================
+
+anticipated_questions:
+  
+  - id: Q-001
+    category: 研究動機
+    question: "複式簿記メタファーという着想はどこから得たのですか？"
+    risk_level: high
+    current_preparedness: low
+    note: 実践記録に接続がないため説明困難
+    mitigation: 推奨追記案を採用
+
+  - id: Q-002
+    category: 研究動機
+    question: "累積不利という視点は、どの実践経験から得たのですか？"
+    risk_level: high
+    current_preparedness: low
+    note: 実践記録に明示的言及なし
+    mitigation: 推奨追記案を採用
+
+  - id: Q-003
+    category: 実践経験
+    question: "A型からB型への転換時、45名中35名がB型移行とのことですが、残り10名はどうなりましたか？"
+    risk_level: moderate
+    current_preparedness: low
+    note: 実践記録に説明なし
+    mitigation: 人数の内訳を追記
+
+  - id: Q-004
+    category: 研究方法
+    question: "大言語モデル（ChatGPT等）を研究に用いる際の倫理的配慮はどのように考えていますか？"
+    risk_level: moderate
+    current_preparedness: moderate
+    note: 研究計画書に詳細記載なし
+
+  - id: Q-005
+    category: 研究方法
+    question: "累積不利をどのように測定・操作化するのですか？ACEsスケールを使用しますか？"
+    risk_level: moderate
+    current_preparedness: moderate
+    note: 研究計画書で「操作的に扱う」とあるが具体的方法は未記載
+
+  - id: Q-006
+    category: 実現可能性
+    question: "2年間でこの研究計画を本当に完結できますか？どこで区切りますか？"
+    risk_level: moderate
+    current_preparedness: moderate
+    note: 計画の野心度が高い
+
+  - id: Q-007
+    category: 指導教員
+    question: "贄川教授の研究領域との接点は何ですか？なぜこの先生を希望されたのですか？"
+    risk_level: high
+    current_preparedness: unknown
+    note: 確認が必要
+
+# ============================================================
+# 6. 次のアクション
+# ============================================================
+
+next_actions:
+  - action: "実践記録への追記案の確定"
+    priority: 1
+    status: awaiting_user_decision
+    options:
+      - option_A（示唆4として新規追加）
+      - option_B（示唆2の補足として追加）
+
+  - action: "45名/35名の人数説明の追記"
+    priority: 2
+    status: pending
+
+  - action: "誤字脱字の修正（不要スペース等）"
+    priority: 3
+    status: pending
+
+  - action: "贄川信幸教授の研究領域確認"
+    priority: 4
+    status: pending
+    method: Web検索
+
+  - action: "口述試験想定問答の作成"
+    priority: 5
+    status: pending
+
+# ============================================================
+# End of Document
+# ============================================================

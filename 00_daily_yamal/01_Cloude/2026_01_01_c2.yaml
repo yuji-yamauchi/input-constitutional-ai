@@ -13,7 +13,7 @@ metadata:
     human: "山内雄司（Puu）"
     ai_primary: "Claude Opus 4.5"
     ai_comparison: "GPT-4（Thinkingモード）"
-  target_folder: "99_daily_yamal/01_Claude/"
+  target_folder: "00_daily_yamal/01_Claude/"
   file_name_suggestion: "2026_01_01_c2.yaml"
   reason: "GPTとの精読比較実験、LLMの癖の発見、Input CAI実証"
   tags:

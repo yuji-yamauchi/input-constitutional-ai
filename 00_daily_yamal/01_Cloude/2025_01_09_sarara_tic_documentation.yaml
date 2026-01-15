@@ -1,0 +1,922 @@
+---
+# ============================================
+# セッション議事録：讃良ケース及びTIC共同検証事業の文書検証
+# ============================================
+
+metadata:
+  session_id: "2025_01_09_sarara_tic_documentation"
+  date: "2025-01-09"
+  participants:
+    - name: "山内雄司"
+      role: "研究者・実践者"
+    - name: "Claude"
+      role: "分析支援"
+  target_folder: "05_practice/"
+  file_name_suggestion: "2025_01_09_sarara_tic_documentation.yaml"
+  reason: "現場実践記録・事例研究として、2023年讃良ケース及びTIC共同検証事業の一次資料検証"
+
+session_purpose:
+  primary: "2023年讃良ケースの介入記録と、脳出血直前のTIC共同検証事業準備の文書群を時系列で検証"
+  secondary: "SoE思想形成過程における制度的阻害因子の実証的記録"
+
+# ============================================
+# PART 1: 讃良知佳ケース（2023年3月〜8月）
+# ============================================
+
+sarara_case:
+  basic_info:
+    name: "讃良知佳（仮名）"
+    age_at_intervention: 23
+    status: "株式会社Laings代表取締役"
+    business: "ペット用酸素濃縮器レンタル事業"
+    capital_at_founding: "約2000万円（夜職で貯蓄）"
+
+  aces_background:
+    source_document: "/mnt/user-data/uploads/ヒアリング_医療機関向け_20230410.docx"
+    timeline:
+      - age: "小学3年〜"
+        event: "両親からの叱責記憶"
+      - age: "中学1年後半〜"
+        event: "いじめ（性的行為含む）"
+      - age: "中学2年"
+        event: "不登校開始"
+      - age: "高校"
+        event: "不登校を言いふらされる"
+      - age: "19歳"
+        event: "風俗開始（月収100万円）、違法店でマリファナ接触"
+      - age: "21歳"
+        event: "違法店スタッフ、友人自殺→夜職から足を洗う決意"
+      - age: "23歳"
+        event: "起業（ペット用酸素濃縮器レンタル）"
+      - age: "23〜24歳"
+        event: "過食嘔吐・アルコール依存増加"
+    
+    self_reported_cognition:
+      - "人が信じきれないし、人の善意も何か裏があると思ってしまっている"
+      - "なぜみんなそれ（共感・空気を読むこと）ができないのか理解に苦しむ"
+
+  intervention_trigger:
+    context: "今田さん（山内の利用者）が讃良さんの違法行為を知り警察に通報"
+    consequence: "讃良さんにバレる→今田さんが報復を恐れ山内に相談"
+    yamauchi_strategy: "讃良さんを『加害者』から『更生者』に転換"
+
+  intervention_timeline:
+    phase_1_initial_contact:
+      - date: "2023-03-23"
+        action: "初回面談・NOCC実施"
+      - date: "2023-03-24"
+        action: "詳細ヒアリング（大麻使用等の自白）"
+        source_document: "/mnt/user-data/uploads/2023_03_24_saga3.txt"
+        yamauchi_approach:
+          - "通報義務の存在を明示しつつ「更生に対して有効なやり方」を提案"
+          - "経営者としてのリスク計算で説得：得られるものvs失うもの"
+          - "5年後10年後の防御戦略：成功時に引っ張られても対応できる整理"
+      - date: "2023-03-25"
+        action: "両親への伝達内容整理"
+      - date: "2023-03-26"
+        action: "両親とZOOM面談・合意形成"
+
+    phase_1b_mother_email_correspondence:
+      source_document: "/mnt/user-data/uploads/LAINGSメール20230413-2.pdf"
+      period: "2023年3月27日〜4月13日"
+      email_timeline:
+        - date: "2023-03-27"
+          content: "母親からメールアドレス連絡"
+        - date: "2023-03-28"
+          content: "NDA説明、在宅意見書、依存症センター相談提案、役員構成助言（COO取締役社長案）"
+        - date: "2023-03-30"
+          content: "交通費請求書送付"
+        - date: "2023-03-31"
+          content: "母親から振込連絡"
+        - date: "2023-04-01"
+          content: "Teamsアカウント作成・家族全員に共有"
+        - date: "2023-04-02"
+          content: "元カレの件、お金周りの整理、今後について報告"
+        - date: "2023-04-10"
+          content: "元彼氏と面会した報告、「逃げ道を塞ぐ」戦略"
+        - date: "2023-04-13"
+          content: "登記変更書類（覚書.docx、臨時取締役会総会.docx、登記申請書.docx）、傷病手当計算"
+      
+      activities_beyond_employment_support:
+        legal:
+          - "NDA（秘密保持契約書）締結"
+          - "登記変更書類作成"
+          - "覚書作成"
+          - "通報義務への「言い訳」設計"
+        financial:
+          - "傷病手当計算（月額66,666円）"
+          - "借入状況確認（キャッシング50万円、ペットローン）"
+          - "クレジットカード管理"
+          - "月10万円での生活設計"
+        business:
+          - "役員構成助言（COO取締役社長案）"
+          - "金融機関への説明戦略（コロナ後遺症として）"
+          - "最悪の事態への備え（親に紐付かない負債管理）"
+        human_relations:
+          - "元彼氏との面会・評価・管理判断"
+          - "「逃げ道を塞ぐ」戦略"
+          - "協力者になりそうなら管理下に、そうでないなら排除"
+        it_environment:
+          - "Teamsアカウント作成・家族全員に共有"
+          - "dug-rel.comドメインでの情報共有環境構築"
+      
+      self_protection_measures:
+        recording:
+          practice: "1対1で会話する場合は録音"
+          reason: "転移リスクへの自己防衛"
+          reference: "https://psychoterm.jp/clinical/theory/transference"
+        nda:
+          purpose: "違法薬物等の疑いに対する通報義務への対応"
+          quote: "疑いの状態で依存症などの場合は本人が関心を引くために虚偽の申し出である可能性も考慮してアセスメント実施後に対応をするという言い訳をします"
+        transparency:
+          - "家族へのメール定期報告"
+          - "Teamsでの記録自動保存"
+          - "全文書に日付・署名"
+      
+      傷病手当_calculation:
+        formula: "100,000円/月÷30日×2/3＝2,222円/日×30日＝66,666円/月"
+        additional_income: "就労移行工賃 20,000〜40,000円/月"
+        total: "会社からの支出なしで10万円確保"
+        note: "傷病手当も就労移行支援サービスも通常ではない使い方なので調整は必要"
+
+    phase_2_formal_process:
+      date: "2023-03-16（付）"
+      document: "/mnt/user-data/uploads/令和5年3月16日_就労移行支援再利用及び在宅支援実施についての意見書.pdf"
+      content:
+        support_goal: "両親と対等な関係で会社運営できる体制をつくる"
+        medical_coordination:
+          - "大阪府こころの健康総合センター相談支援・依存症対策課への連携提案"
+          - "摂食障害・アルコール依存の早急な医療接続"
+          - "抑うつ症状の診断提案"
+        remote_support_requirements:
+          - "Microsoft Teamsでの記録・検証可能性"
+          - "1日2回の連絡・進捗確認"
+          - "緊急時90分以内訪問体制"
+          - "月1回以上の事業所訪問"
+          - "Windows11パソコン貸与"
+        family_agreement_items:
+          - "依存症診察・治療を優先"
+          - "3ヶ月程度コーリングサポが関与"
+          - "必要なら父親が代表取締役を代行"
+          - "支援計画を4人で検討"
+
+    phase_3_institutional_dysfunction:
+      period: "2023年4月〜5月"
+      events:
+        - date: "2023-04-03"
+          actor: "大阪依存症センター"
+          action: "「全部任せろ」「山内に頼るな」"
+        - date: "2023-04月〜"
+          actor: "八尾市保健所"
+          action: "「依存症センターからの依頼がないと動けない」"
+        - period: "1ヶ月以上"
+          result: "何も進まない"
+      consequence: "山内さん一人で希死念慮対応（毎日チャット・5/5救急対応）"
+
+    phase_4_crisis_escalation:
+      source_document: "/mnt/user-data/uploads/阻害因子対応計画案_20230505_.docx"
+      events:
+        - date: "2023-04-29"
+          event: "「儀式としてのデート」→5/31まで生きる約束"
+        - date: "2023-05-04"
+          event: "幻聴、頓服＋アルコール、「死にたい」"
+        - date: "2023-05-05"
+          event: "「救急車呼んでいいか」山内に連絡"
+        - date: "2023-05-05頃"
+          event: "家族からチェーンで締め出される→「拒絶された」認識"
+
+    phase_5_soe_origin:
+      date: "2023-05-12"
+      source_document: "/mnt/user-data/uploads/阻害因子対応計画案_20230512_.docx"
+      institutional_critique:
+        quotes:
+          - "福祉側はほぼ機能しない、もしくは阻害していることが多い現実"
+          - "医療側も多くの場合はちゃんとした確定診断までしない"
+          - "自分たちは何の案もださないのですが、提示した計画案には文句をつけるか無視をするかがデフォルト"
+          - "『本人が周囲に対して問題を起こさせない状態』にすることが目標になっている"
+        structural_problem:
+          existing_goal: "本人が問題を起こさない状態（管理）"
+          missing_elements:
+            - "本人の権利保全"
+            - "障害者権利条約の理念"
+          consequence: "初期介入が機能しない→入退院繰り返し→家族破綻"
+      countermeasure:
+        model: "自助/家族会モデル"
+        tools:
+          - "dug-rel.jp（relatives = 同胞・親族）"
+          - "Microsoft Teamsでの家族全員連携"
+          - "個人情報保護法準拠環境"
+        strategy: "既存福祉スキームを迂回して機能実現"
+      yamauchi_motivation:
+        quotes:
+          - "医療や福祉の偉そうにしている方々のやり方は古いのだと見返してやるため"
+          - "身近な人や当事者の方で自死されたかたや殺された方もいらっしゃるなかで、『死なせない』ためにできることは日を跨がないうちに反射的に行動する癖をつけています"
+
+    phase_6_rework_plan:
+      date: "2023-08-04"
+      source_document: "/mnt/user-data/uploads/リワーク計画案_20230512_-2.pdf"
+      progress_comparison:
+        march_2023:
+          drug_dependency: "5〜6万円/月"
+          alcohol_dependency: "20万円〜/月"
+          eating_disorder: "20万円/月"
+          sex_work: "不定期従事"
+          total_monthly_expense: "50万円以上"
+        july_2023:
+          drug_dependency: "抑制達成"
+          alcohol_dependency: "抑制達成"
+          eating_disorder: "20〜50万円/月（反動で増加）"
+          sex_work: "記載なし"
+          total_monthly_expense: "摂食障害のみに集約"
+        assessment: "5ヶ月で違法薬物とアルコールの抑制に成功"
+      
+      planned_schedule:
+        phase_1_assessment:
+          duration: "1〜2ヶ月"
+          content:
+            - "ICF個人因子アセスメント（睡眠、障害特性、処方薬）"
+            - "ICF環境因子アセスメント（促進因子・阻害因子）"
+            - "支援体制の可視化・情報共有最適化"
+            - "セルフケア・対人技能向上"
+          deliverables:
+            - "厚生労働省『就労パスポート』"
+            - "NOCC診断"
+            - "日本語能力検定"
+            - "GATB一般職業適性検査"
+        phase_2_rework:
+          duration: "2〜6ヶ月"
+          content:
+            - "大阪府経営革新計画フォーマットでの事業計画書作成"
+            - "財務会計基礎知識"
+            - "ICT基礎スキル"
+          deliverables:
+            - "大阪府経営革新計画申請書"
+      
+      concurrent_initiatives:
+        - "京都大学大学院「摂食障害の衝動性神経基盤研究」参加予定"
+        - "TICC TIサポーター講座受講（本人・家族）"
+
+    phase_6b_kyoto_university_coordination:
+      date: "2023-08-01"
+      source_document: "/mnt/user-data/uploads/Re__摂食障害の認知行動療法介入研究につきまして.pdf"
+      parties:
+        researcher: "野田智美（京都大学大学院医学研究科）"
+        coordinator: "山内雄司"
+        participant: "讃良知佳"
+      email_cc: "知佳 讃良、讃良 加津栄（本人と母親）"
+      transparency_design:
+        purpose: "第三者介入による検証可能性の確保"
+        methods:
+          - "京都大学という第三者機関の介入"
+          - "母親を全メールのCcに入れる"
+          - "本人にも同時送信"
+          - "日付入りメールで記録保全"
+      structural_defense: "「おっさん支援員が若い女性に入れ込んでいる」という見え方への構造的対抗"
+
+    phase_7_police_coordination_and_evacuation:
+      date: "2023-08-20"
+      source_document: "/mnt/user-data/uploads/リワーク計画案_20230820_.pdf"
+      
+      police_report:
+        date: "2023-08-18"
+        location: "河内警察署 刑事課暴力犯係"
+        attendees: "本人と山内"
+        officers:
+          supervisor: "山田刑事"
+          primary: "石川刑事"
+        contact: "TEL:072-956-1234 内線:382"
+        police_advice:
+          - "一時的に大阪を離れる方が良い（報復の対策も含めて）"
+          - "仮に元カレが違法行為をしていた事実が本当だとしても逮捕等できるまでは半年から一年はかかる"
+        agreement: "継続的に情報共有をすることを約束"
+      
+      client_declaration:
+        content: "反社会的コミュニティから逃げたい"
+        context: "当職及び当事業所は反社会的行為について許容できない旨伝え、当人と合意"
+      
+      evacuation_plan:
+        start_date: "2023-08-21"
+        location: "当法人が管理する退避場所"
+        duration: "最長1ヶ月程度"
+        agreement: "本人及びご家族に合意済み、河内警察署も有効と意見"
+        monthly_cost: "1万円（税込）/月（光熱費・ペット2匹引き受け含む）"
+      
+      service_type_change:
+        original: "在宅利用"
+        changed_to: "通所利用"
+        reason: "河内警察署からの助言による"
+      
+      主訴_at_time:
+        本人:
+          - "摂食（主に過食嘔吐）症状が治まらない。こんなに半年近く頑張っているのにまだ家族に迷惑をかけているのがつらい"
+          - "元カレと同棲したいが、それが自分のためにならないことも分かっているが抑えられない"
+          - "元カレは違法薬物やそのほかの違法行為もやっていてそれを辞めてほしいが、指摘すると捨てられるので怖くて言えない"
+        家族:
+          - "毎月の経済的負担（30万〜50万円）が大きすぎる。この状態を10年我慢しろと言われても無理"
+          - "娘の行動（我儘）に対してそれが症状によるものなのかの判断が難しく、重度のストレスに感じる"
+      
+      theoretical_framework:
+        best_interest_7_principles:
+          - "(ア)本人の年齢や外見、状態、ふるまいによって判断を左右されてはならない"
+          - "(イ)当該問題に関係すると合理的に考えられる事情については、全て考慮した上判断しなければならない"
+          - "(ウ)本人が意思決定能力を回復する可能性を考慮しなければならない"
+          - "(エ)本人が自ら意思決定に参加し主体的に関与できるような環境を、できる限り整えなければならない"
+          - "(オ)本人に死をもたらしたいとの動機に動かされての判断はしてはならない"
+          - "(カ)本人の過去現在の意向、感情、信念や価値観を考慮しなければならない"
+          - "(キ)本人が相談者とした者、家族・友人などの身近な介護者、法定後見人、任意後見人等の見解を考慮に入れて、判断しなければならない"
+        icf_environmental_factors:
+          e310_family:
+            goal: "少なくとも疎外因子化を防止"
+            assessment: "半年間ご両親とも全身全霊で支援に力を注いでいるが、長期的な支援環境のため第三者視点で適切な距離を検証すべき"
+          e325_peers:
+            status: "現時点で疎外因子化されている"
+            issue: "若年層においてこのコミュニティから自分の意志で離脱することは困難"
+            strategy: "本人合意のもと強制的に環境を引き離す"
+          e350_pets:
+            role: "他のコミュニティの帰属の代替として重要"
+      
+      document_submitted_to_city:
+        recipient: "東大阪市役所窓口"
+        submitted_by: "母親"
+        contents:
+          - "警察出頭済みの事実"
+          - "担当刑事の名前・連絡先"
+          - "本人・家族の合意"
+          - "退避計画詳細"
+          - "ICF環境因子分析"
+          - "ベストインタレスト7原則"
+        status: "「あとは受給者証を出すだけ」の状態に整えて提出"
+
+    phase_8_city_response:
+      date: "2023-08-22"
+      event: "東大阪市役所からの電話（大野職員）"
+      gap_between_preparation_and_response:
+        準備完了事項:
+          - "警察出頭済み（8/18）"
+          - "退避施設入居開始（8/21）"
+          - "計画書に担当刑事の名前・内線番号記載"
+          - "本人・家族の合意完了"
+          - "経済計算完了"
+        市役所の回答:
+          - "すぐに決定できない"
+          - "両市で協議が必要"
+          - "上席に相談する"
+          - "正直めんどくさいのはめんどくさい"
+      structural_failure: "警察が報復対策として「大阪を離れた方がいい」と助言している状況で、福祉サービス決定が進まない"
+
+    phase_9_case_termination:
+      trigger: "2023年9月末 左前頭葉脳出血"
+      medical_prognosis:
+        affected_areas:
+          - "言語機能への影響可能性"
+          - "感情コントロールへの影響可能性"
+        severity: "高次脳機能障害のリスク"
+      decision:
+        action: "本人と母親にこれ以上のサポートは難しい旨伝えて線引き"
+        reason: "継続することは山内の属人的スキルでの対応でしかなかった"
+        structural_implication: "代わりがいない → 支援終了"
+      lesson: "属人的スキルに依存した支援体制の限界の実証"
+
+# ============================================
+# PART 2: TIC共同検証事業（2023年9月）
+# ============================================
+
+tic_joint_verification_project:
+  
+  hattori_request_document:
+    date: "2023-09-12"
+    source_document: "/mnt/user-data/uploads/③服部先生依頼内容.pdf"
+    
+    staff_overview:
+      count: 4
+      composition: "男性1名（山内・50歳）、女性3名（40代後半〜50代）"
+      qualifications:
+        - "介護福祉士 1名"
+        - "養護教諭免許 1名"
+      tic_awareness: "全スタッフ TIサポーター/TIコーディネーター受講中"
+    
+    current_issues:
+      user_demographics: "20代前半〜30代、女性が過半"
+      core_insight: "障害そのものの困難性より、障がいがあることにより低すぎる自尊感情についての対策が必要"
+      approach_taken: "本人が解決できないものと認識している阻害因子（経済的・家族関係・ネガティブな人間関係）を初手で一緒に解決"
+      staff_training_need: "スタッフのストレス軽減"
+      recent_cases_note: "傷害致死事件や違法薬物、また売春行為などでの対応が増加"
+    
+    problem_analysis:
+      institutional_blindspot: "医療現場及び福祉サービスの現場において、トラウマが当事者の困難性として認識されていることがない"
+      cultural_minimization: "『トラウマ』『フラッシュバック』の単語がかなり一般化されすぎ、あくまで本人の努力の範囲のものであり治療・支援の対象でない（自業自得の範囲）という認識が固定化"
+    
+    family_training_targets:
+      count: 4
+      cases:
+        - "傷害致死事件当事者の姉・叔母"
+        - "違法薬物離脱当事者のパートナー"
+        - "統合失調症・パーソナリティ障害当事者の父母妹"
+        - "PTSD・違法薬物離脱当事者の父母・祖父母・パートナー"
+    
+    yamauchi_self_disclosure:
+      personal_conditions:
+        - condition: "遺伝性海綿状血管腫"
+          history: "過去3回全身麻酔手術"
+        - condition: "ADHD"
+          diagnosis_timing: "約6年前"
+          medication: "コンサータ（仕事時服薬）"
+          disability_certificate: "3級"
+      spouse:
+        conditions:
+          - "癲癇（交通事故後遺症）"
+          - "高次脳機能障害"
+        disability_certificate: "2級"
+      children:
+        count: 3
+        inherited_condition: "海綿状血管腫（全員）"
+        monitoring: "毎年MRI検査"
+        additional_concern: "次男に発達障害の可能性"
+      experienced_discrimination: "障害を持つあなた方から生まれる子供がかわいそう（面と向かって言われた）"
+      
+      identity_struggle:
+        user_feedback:
+          - "山内さんと私は違う"
+          - "山内さんは障害者ではない。障がいを利用しているだけだ"
+        self_analysis:
+          advantaged_factors:
+            - "男性"
+            - "体格に恵まれる（178cm）"
+            - "IQ117"
+            - "両親から愛された実感"
+            - "教育機会を与えられた"
+            - "性的虐待経験なし"
+          unresolved_question: "『あなたは恵まれているから障害者ではない』という声にまだ自信をもって返答できる答えがない状態"
+      
+      perspective_shift_episode:
+        trigger: "身長190cmくらいの方と立ち話"
+        realization: "自分より視線が高い人と会話することがほぼなかった"
+        insight: "多くの女性は威圧感を感じて生活している"
+    
+    peer_support_motivation:
+      origin: "SAMHSAでピアサポートの有効性の記載"
+      goal: "『障害者』というラベリングに対する当事者各自のとらえ方の違いへの理解"
+      worldview_shift:
+        before: "日本において不幸はあくまで各自の選択の結果（自己責任）"
+        turning_point: "目黒区5歳女児虐待死事件（2018年）"
+        after: "家庭環境の把握と経済的事象への対策を視野に入れた支援"
+
+  joint_agreement_document:
+    date: "2023-09-22"
+    source_document: "/mnt/user-data/uploads/②共同検証事業合意書案__20230922_.pdf"
+    
+    parties:
+      party_a: "甲（講義提供者・服部先生側）"
+      party_b: "乙（甲の業務支援）"
+      party_c: "合同会社DUG研究所（丙）代表社員 山内雄司"
+    
+    purpose: "就労支援サービスフィールドにてトラウマインフォームドケア（TIC）を活用し、当事者の障がい受容促進及び支援関係者のスキル向上の有効性を検証"
+    
+    legal_basis:
+      - "障害者総合支援法"
+      - "障害者雇用促進法"
+    
+    financial_terms:
+      monthly_fee: "80,000円（税抜）"
+      period: "2023年10月〜2024年3月"
+      payment_terms: "月末締め翌月17日支払"
+    
+    verification_content:
+      items:
+        - "コンテンツを障害者総合支援法及び雇用促進法に基づいた障がい当事者の就労環境向上として汎用的に活用できる環境に資するための検証"
+        - "学習手法の効果測定のための当事者のアセスメント情報の共有"
+        - "当事者の自尊感情等への影響についての測定"
+      schedule:
+        online_training: "毎月○曜日 11時〜12時（第5週除く）"
+        verification_meeting: "毎月第4水曜日 11時〜11時30分"
+    
+    role_distribution:
+      party_a:
+        - "コンテンツの有償提供"
+        - "検証会議への参加"
+      party_b:
+        - "甲業務の支援"
+      party_c:
+        - "施設利用者の対応"
+        - "検査結果に基づく支援計画作成及び成果報告"
+        - "検証会議の開催"
+        - "情報共有プラットフォーム（Teams）の提供"
+    
+    contract_period:
+      start: "2023-10-01（遡及適用）"
+      end: "2024-03-31"
+    
+    jurisdiction: "大阪地方裁判所"
+
+# ============================================
+# PART 3: 時系列統合と分析
+# ============================================
+
+integrated_timeline:
+  2023:
+    march:
+      - date: "03-16（付）"
+        event: "市役所向け意見書提出（正規プロセス完遂）"
+      - date: "03-23"
+        event: "讃良さん初回面談・NOCC実施"
+      - date: "03-24"
+        event: "詳細ヒアリング・大麻使用自白"
+      - date: "03-26"
+        event: "両親とZOOM面談・合意形成"
+      - date: "03-27"
+        event: "母親とのメール開始"
+      - date: "03-28"
+        event: "NDA説明、在宅意見書、依存症センター相談提案"
+    april:
+      - date: "04-01"
+        event: "Teamsアカウント作成・家族全員に共有"
+      - date: "04-02"
+        event: "元カレの件、お金周りの整理報告"
+      - date: "04-03"
+        event: "大阪依存症センター「全部任せろ」→以後1ヶ月以上停滞"
+      - date: "04-10"
+        event: "元彼氏と面会・「逃げ道を塞ぐ」戦略実行"
+      - date: "04-13"
+        event: "登記変更書類・傷病手当計算を母親に送付"
+      - date: "04-19"
+        event: "阻害因子対応計画案（医療機関向け）作成"
+      - date: "04-29"
+        event: "讃良さん「儀式としてのデート」→5/31まで生きる約束"
+    may:
+      - date: "05-04"
+        event: "幻聴、頓服＋アルコール、「死にたい」"
+      - date: "05-05"
+        event: "「救急車呼んでいいか」→山内対応"
+      - date: "05-12"
+        event: "阻害因子対応計画案（SoE思想起点文書）"
+    august:
+      - date: "08-01"
+        event: "京都大学野田先生とメール（本人・母親をCcに入れて透明性確保）"
+      - date: "08-04"
+        event: "リワーク計画案作成（5ヶ月の成果：違法薬物・アルコール抑制達成）"
+      - date: "08-18"
+        event: "河内警察署に本人と出頭（山田刑事・石川刑事と継続的情報共有を約束）"
+      - date: "08-20"
+        event: "直近支援計画案作成（警察担当者名・連絡先記載）、母親が東大阪市役所窓口に提出"
+      - date: "08-21"
+        event: "退避施設入居開始"
+      - date: "08-22"
+        event: "東大阪市役所との電話（大野職員）→「すぐに決定できない」"
+    september:
+      - date: "09-12"
+        event: "服部先生への依頼書（TIC共同検証事業準備）"
+      - date: "09-22"
+        event: "共同検証事業合意書案完成"
+      - date: "09月末"
+        event: "脳出血（左前頭葉）"
+    post_collapse:
+      - event: "本人・母親に「これ以上のサポートは難しい」と伝え、支援終了"
+        reason: "属人的スキルでの対応でしかなかったため、代わりがいない"
+
+structural_analysis:
+  
+  workload_concentration:
+    period: "2023年3月〜9月（6ヶ月間）"
+    single_practitioner_tasks:
+      - "違法薬物からの離脱支援"
+      - "アルコール依存の抑制支援"
+      - "毎日の希死念慮対応"
+      - "家族との調整"
+      - "医療機関への働きかけ（結果：機能せず）"
+      - "正規制度への書類提出"
+      - "リワーク計画設計"
+      - "トラウマインフォームドケア共同検証事業の準備"
+    outcome: "制度が担うべき負荷を一人の身体が限界まで引き受けた"
+
+  institutional_failure_pattern:
+    formal_process_completed:
+      - "市役所への意見書提出"
+      - "就労移行支援の在宅利用スキーム設計"
+      - "家族との合意形成"
+      - "医療連携の道筋提示"
+    institutional_response:
+      dependency_center: "「全部任せろ」→1ヶ月以上何もしない"
+      public_health_center: "「依存症センターからの依頼がないと動けない」"
+      result: "正規ルートが機能せず、山内一人で対応"
+
+  soe_implications_from_case:
+    lesson_1:
+      title: "正規ルートの無効化"
+      content: "文書を出し、スキームを設計し、家族と合意しても、「専門機関」が動かない"
+    lesson_2:
+      title: "簿外債務の可視化"
+      content: "「自己責任」として処理されているものの中に社会が供与すべきだった権利の毀損が隠れている"
+    lesson_3:
+      title: "制度の空洞化"
+      content: "「専門性の囲い込み」が実際の支援を機能不全にする"
+    lesson_4:
+      title: "初期介入の重要性"
+      content: "「死なせない」ための即応体制"
+    lesson_5:
+      title: "検証可能性の設計"
+      content: "「下心」疑惑への構造的対抗（Teams記録、家族との目標共有）"
+    lesson_6:
+      title: "迂回路の構築"
+      content: "制度が機能しないなら自分で作る（dug-rel.jp等）"
+
+  aces_to_social_debt_mapping:
+    case_sarara:
+      factor: "いじめ（性的行為含む）"
+      responsible_institution: "学校（公的機関）"
+      debt_type: "教育機関の債務不履行"
+      current_framing: "本人の問題として処理"
+      actual_nature: "二次加害"
+    pattern:
+      individual_responsibility_attribution:
+        - "統合失調症・解離 → 本人責任？ × → 診断・治療アクセス、トラウマケアの不備"
+        - "売春 → 本人責任？ △ → 他の経済的選択肢は与えられていたか？"
+        - "大麻使用 → 本人責任？ △ → 元カレ・環境要因、適切な情報環境"
+        - "過剰適応 → 本人責任？ × → 夜職で生き延びるために身につけたスキル"
+
+  readiness_before_collapse:
+    tic_project_status:
+      contract_prepared: true
+      monthly_fee_agreed: "80,000円×6ヶ月"
+      verification_schedule_set: true
+      teams_platform_ready: true
+    systemic_approach_designed:
+      staff_training: true
+      family_training: true
+      peer_support_training: true
+      assessment_integration: true
+    conclusion: "制度化・汎用化しようとしていた矢先に倒れた"
+
+# ============================================
+# PART 3b: 一石三鳥の構造
+# ============================================
+
+multi_purpose_design:
+  
+  三鳥_structure:
+    purpose_1:
+      title: "今田さんの依頼対応"
+      content: "讃良さんを「加害者」から「更生者」に転換し、報復リスクを消す"
+    purpose_2:
+      title: "自己防衛"
+      content: "全文書化・録音・家族CC・第三者介入で「下心」疑惑を構造的に排除"
+    purpose_3:
+      title: "制度化のための実績"
+      content: "「オンラインで経営者のリワークを実施」という公式事例の創出"
+  
+  case_as_evidence:
+    individual_support: "讃良さんの更生"
+    self_protection: "疑惑への構造的対抗"
+    institutionalization: "制度設計のエビデンス生成"
+    quote: "全部エビデンスにしておく"
+
+# ============================================
+# PART 3c: エビデンス設計思想
+# ============================================
+
+evidence_design_philosophy:
+  
+  narrative_vs_story:
+    narrative:
+      definition: "語り手の視点から構成される主観的な意味付け"
+      weakness: "「私はこう感じた」→ 相対化される"
+      yamauchi_view: "客観的エビデンスがないと自叙伝にうつる"
+    story:
+      definition: "出来事の連鎖、時系列的な事実の配列"
+      strength: "「これが起きた。次にこれが起きた。」→ 検証可能"
+      effect: "受け手がまず「これは本当か？」と問う → 検証モードに入る"
+  
+  structural_suspicion_problem:
+    構図:
+      supporter: "50歳男性、事業所管理者、権限を持つ側"
+      client: "23歳女性、元風俗・売春歴あり、依存症・PTSD・希死念慮"
+    default_suspicion:
+      - "なぜそこまでするのか"
+      - "何か見返りがあるのでは"
+      - "関係を持っているのでは"
+      - "支配しようとしているのでは"
+    5_12_document_quote: "若年女性でもあり、下心でやっていると思われているのだろうなという視線は毎回感じます"
+  
+  structural_countermeasures:
+    recording:
+      practice: "1対1は録音"
+      reason: "転移リスクと自己防衛"
+    email_transparency:
+      practice: "メールで家族に定期報告"
+      reason: "第三者の目を入れる"
+    teams_accounts:
+      practice: "家族全員にTeamsアカウント発行"
+      reason: "記録が残る・閲覧可能"
+    document_standards:
+      practice: "全文書に日付・署名入り"
+      reason: "後から検証可能"
+    police_involvement:
+      practice: "警察に同行して出頭"
+      reason: "公的機関を介入させる"
+    third_party_institutions:
+      practice: "京都大学との連携（メールに本人・母親をCc）"
+      reason: "権威ある第三者による検証可能性"
+    contact_minimization:
+      practice: "「お母さんを窓口に」と依頼"
+      reason: "本人との直接関係を減らす"
+  
+  without_evidence_scenario:
+    reframed_story: "50歳のおっさんが23歳の元風俗嬢に入れ込んで、警察にまで連れて行って、自分の施設に住まわせようとしていた"
+    implication: "エビデンスがなければ、支援が「問題行動」に書き換えられる"
+  
+  信じられない構造:
+    pattern_1:
+      reaction: "「大変でしたね」"
+      inner: "話半分に聞いている"
+    pattern_2:
+      reaction: "「そんな制度がひどいわけがない」"
+      inner: "山内さんの主観が入っているはず"
+    pattern_3:
+      reaction: "「何か落ち度があったのでは」"
+      inner: "完璧にやったという主張自体が疑わしい"
+    pattern_4:
+      reaction: "「被害者意識が強い」"
+      inner: "自己正当化に見える"
+    pattern_5:
+      reaction: "「エビデンス見せて」"
+      inner: "と言いつつ、見ない"
+  
+  why_hard_to_believe:
+    too_perfect:
+      issue: "「自分は全部やった。制度は全部動かなかった」という構図"
+      perception: "事実でも「自己正当化」に見える"
+    verification_cost:
+      issue: "文書を全部読む人はいない"
+      perception: "「エビデンスがある」と言われても確認しない"
+    cognitive_dissonance:
+      issue: "「制度がそこまで機能していないはずがない」"
+      perception: "認めると自分たちの社会への信頼が揺らぐ"
+  
+  soe_design_principle:
+    approach: "「信じてください」ではなく「検証可能な形で記録を残し続ける」"
+    limitation: "検証可能であることと、検証されることは違う"
+    core_value: "善意を信じてもらうのではなく、構造的に検証可能な形で証拠を残す"
+
+# ============================================
+# PART 4: 東大阪市役所との電話記録
+# ============================================
+
+higashiosaka_city_call_record:
+  
+  metadata:
+    date: "2023-08-22"
+    source_file: "/mnt/user-data/uploads/2023_08_22_higasioosakacity.txt"
+    format: "電話会議書き起こし"
+    participants:
+      - name: "大野（もち子さん）"
+        role: "東大阪市役所職員（調査員）"
+      - name: "山内雄司（玄野武宏）"
+        role: "コーリングサポ笠岡 管理者"
+    backup_contact: "ミキ（東大阪市役所職員）"
+  
+  context:
+    days_since_police_report: 4
+    days_since_evacuation_start: 1
+    document_submitted: "8/20版リワーク計画案（警察担当者名・連絡先記載）を母親が窓口に提出済み"
+  
+  situation_at_time_of_call:
+    sarara_current_location: "岡山県笠岡市（実家）"
+    resident_registration: "東大阪市"
+    transportation: "父親が送迎対応"
+    yamauchi_role: "親子関係の調整役（致命的にならないようキャッチボールの間に入る）"
+    family_relationship_status: "コーリングサポが間に入ることで致命的にはなっていない"
+  
+  new_problem_identified:
+    medical_side_instruction:
+      content: "彼氏と同棲をするっていうのを直前まで黙っとけ"
+      source: "訪問看護・病院の方針"
+    yamauchi_concern:
+      - "親御さんとしては病院や訪問看護自体の信頼がなくなる"
+      - "SさんからUさん（彼氏）は、いまだにまだドラッグをやってるっていう報告がある中で、同棲を許容するっていうのはどういうことか"
+    structural_issue: "医療側が親への情報隠蔽を指示しつつ、ドラッグ使用中の彼氏との同棲を容認"
+  
+  administrative_jurisdiction_problem:
+    issue: "福祉サービス決定の管轄（東大阪市 vs 笠岡市）"
+    kasaoka_city_rules:
+      self_plan: "原則禁止"
+      consultation_support: "必須"
+      city_role: "担当者が相談支援を紹介してくれることがある"
+    higashiosaka_city_rules:
+      self_plan: "可能"
+      consultation_support: "利用が望ましいが必須ではない"
+      city_role: "役所から直接紹介できない（委託相談支援事業所を経由）"
+    action_plan:
+      - "笠岡市の認定担当者と木曜日に打ち合わせ"
+      - "笠岡市で決定が難しいか確認"
+      - "東大阪市・笠岡市の両市で協議"
+      - "どちらの市で決定が望ましいか判断"
+  
+  yamauchi_assessment:
+    consultation_support_probability:
+      quote: "今のSさんの状態で、やってくれる相談支援さんが見つかる確率はだいぶ低い"
+      reason: "警察沙汰になるような方の受け入れケースが多く、福祉主体で物事が動かないジレンマ"
+    case_complexity:
+      factors:
+        - "PTSD"
+        - "親子間の関係問題"
+        - "親子3人での会社経営"
+        - "反射的な生活習慣"
+      quote: "いろんな複雑な条件が絡んでるので、その上での計画相談を立てれるところがあれば嬉しい"
+    alternative_consideration:
+      quote: "就労支援じゃなくてもいい。治療に当てることや、機能訓練・生活訓練も含めて客観的に判断はすべき"
+    current_strategy:
+      quote: "強制的にとりあえずこちらに。まずは反射からの隔離っていうところを含めて今に至っている"
+  
+  city_official_response:
+    stance: "すぐに決定できないが、できることはさせていただきたい"
+    honest_admission: "正直めんどくさいのはめんどくさい"
+    process:
+      - "上席に報告・相談"
+      - "両市で協議して決定"
+      - "合理的で一番効果のある方法を決める"
+    communication_agreement:
+      primary_contact: "山内を窓口として連絡"
+      reason: "お母様からの希望（岡山とのやり取りはコーリングサポを通して）"
+  
+  yamauchi_closing_remarks:
+    to_city_official:
+      - "多分板挟みで大変だとは思うんですけど"
+      - "本人シーンはすごく傍から見ると今が一番きつい状態かなとは思ってる"
+      - "どうにか安心できる時間が作れれば"
+    city_official_response: "板挟みの方になっていらっしゃる方にはなるので、こちらの方としてもできることはさせていただきたい"
+  
+  structural_insights:
+    
+    institutional_gap_visualization:
+      problem_1:
+        title: "医療と福祉の断絶"
+        content: "医療側が家族への情報隠蔽を指示、福祉側は知らされない"
+      problem_2:
+        title: "自治体間の管轄問題"
+        content: "住民票と実際の居住地が異なる場合の福祉サービス決定の困難"
+      problem_3:
+        title: "複雑ケースの受け皿不在"
+        content: "警察沙汰・違法薬物・家族経営・PTSD等が絡むケースを引き受ける相談支援がない"
+    
+    positive_elements:
+      city_official_attitude: "制度の中で誠実に動こうとしている姿勢"
+      inter_municipal_coordination: "両市で協議する意思がある"
+      flexibility: "面倒でも合理的な方法を探ろうとしている"
+    
+    yamauchi_burden:
+      roles_accumulated:
+        - "支援者"
+        - "親子関係の調整役"
+        - "自治体間の連絡調整"
+        - "医療側の問題への対応"
+        - "彼氏のドラッグ問題の把握"
+      pattern: "制度の狭間を一人で埋めている"
+
+# ============================================
+# 文書一覧（本セッションで検証）
+# ============================================
+
+documents_verified:
+  sarara_case:
+    - path: "/mnt/user-data/uploads/ヒアリング_医療機関向け_20230410.docx"
+      content: "讃良さんACEs・育成歴詳細"
+    - path: "/mnt/user-data/uploads/2023_03_24_saga3.txt"
+      content: "大麻使用自白の面談記録"
+    - path: "/mnt/user-data/uploads/令和5年3月16日_就労移行支援再利用及び在宅支援実施についての意見書.pdf"
+      content: "市役所向け正式意見書"
+    - path: "/mnt/user-data/uploads/LAINGSメール20230413-2.pdf"
+      content: "母親とのメール往復記録（3/27〜4/13）"
+    - path: "/mnt/user-data/uploads/阻害因子対応計画案_20230419医療機関用_.docx"
+      content: "医療機関向け計画案"
+    - path: "/mnt/user-data/uploads/阻害因子対応計画案_20230505_.docx"
+      content: "5/5版計画案（希死念慮対応期）"
+    - path: "/mnt/user-data/uploads/阻害因子対応計画案_20230512_.docx"
+      content: "5/12版計画案（SoE思想起点）"
+    - path: "/mnt/user-data/uploads/Re__摂食障害の認知行動療法介入研究につきまして.pdf"
+      content: "京都大学野田先生とのメール（8/1、本人・母親Cc）"
+    - path: "/mnt/user-data/uploads/リワーク計画案_20230512_-2.pdf"
+      content: "8/4付リワーク計画案"
+    - path: "/mnt/user-data/uploads/リワーク計画案_20230820_.pdf"
+      content: "8/20付直近支援計画案（警察出頭・退避計画）"
+    - path: "/mnt/user-data/uploads/2023_08_22_higasioosakacity.txt"
+      content: "東大阪市役所との電話記録（8/22）"
+  
+  tic_project:
+    - path: "/mnt/user-data/uploads/③服部先生依頼内容.pdf"
+      content: "服部先生への依頼書（9/12付）"
+    - path: "/mnt/user-data/uploads/②共同検証事業合意書案__20230922_.pdf"
+      content: "TIC共同検証事業合意書案"
+
+session_outcome:
+  recorded: "讃良ケース6ヶ月間の全介入記録、TIC共同検証事業準備、東大阪市役所との管轄調整、ケース終結まで"
+  soe_relevance: "制度的阻害因子の実証的記録として、SoE理論の経験的基盤を構成"
+  historical_significance: "脳出血直前の準備完了状態が、「制度が担うべき負荷の個人への集中」の帰結を示す"
+  evidence_design: "「おっさん支援員と若い女性当事者」という構図への構造的対抗としての文書化戦略"
+  multi_purpose: "一石三鳥（今田さんの依頼対応・自己防衛・制度化エビデンス）の実証"
+  termination: "属人的スキルへの依存が、脳出血により支援継続不能という帰結を生んだ"
+  key_insight: "ナラティブ（主観的語り）ではなくストーリー（検証可能な事実連鎖）としての記録の重要性"
+
+signature:
+  recorded_by: "Claude（分析支援）"
+  verified_by: "山内雄司"
+  timestamp: "2025-01-09T18:30:00+09:00"
+---

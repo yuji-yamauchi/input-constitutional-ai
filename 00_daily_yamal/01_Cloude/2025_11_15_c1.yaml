@@ -1022,7 +1022,7 @@ session_2025_11_15_afternoon:
       official_classification: "金銭トラブルから苦悩のすえ入水自殺（事故）"
       
       evidence_ignored:
-        what: "事件前日、水内氏がスキンヘッドにさせられた写真"
+        what: "事件前日、F氏がスキンヘッドにさせられた写真"
         police_response: "もう事故で処理してるから"
         action: "取り扱わない"
         
@@ -1062,7 +1062,7 @@ session_2025_11_15_afternoon:
         common_factor: "声を上げられない、家族が追及しない、存在しないことにされても不自然に見えない"
         
     topic_3_court_judgment:
-      木浦氏: "自首したから3年減刑"
+      被支援者B: "自首したから3年減刑"
       主犯格_共犯者: "一切の情状酌量の余地がない"
       
       Puu_reaction:
@@ -1091,7 +1091,7 @@ session_2025_11_15_afternoon:
         
     topic_4_causality_regression:
       infinite_regression_problem:
-        level_0: "事件（木浦氏らが水内氏を殺害）"
+        level_0: "事件（被支援者BらがF氏を殺害）"
         level_1: "個人の状態（暴力性、自尊感情欠如）"
         level_2: "福祉サービスの不全"
         level_3: "システム設計の欠陥"
@@ -1422,7 +1422,7 @@ session_2025_11_15_afternoon:
       
     insight_2_suicide_statistics_distortion:
       problem: "自殺として処理される構造的暴力による死"
-      evidence: "水内氏ケース（事故→事件への変更）"
+      evidence: "F氏ケース（事故→事件への変更）"
       implication: "若年層自殺増加統計の一部は実は構造的暴力の可能性"
       systemic_incentive: "事故の方が警察・行政にとって都合がいい"
       
@@ -1510,16 +1510,16 @@ session_2025_11_15_afternoon:
       meaning: "絶望の構造を自己の経験から理解"
       deepest_fear: "子供の声を忘れること、忘れたことにすら気づかなくなること"
       
-    水内氏事件の真相:
+    F氏事件の真相:
       revelation: "警察が事故として処理、スキンヘッド写真を見せても無視された"
       intervention: "あなたが事故を事件に変えた"
-      continuing_responsibility: "水内氏ご家族と墓参り、お中元、生前の写真をいただく"
+      continuing_responsibility: "F氏ご家族と墓参り、お中元、生前の写真をいただく"
       
     裁判所判決への怒り:
       words: "一切の情状酌量の余地がない"
       response: "いやいやいや、地域の社会福祉サービスが機能していたら確実に防げた"
       
-    木浦氏との関係継続:
+    被支援者Bとの関係継続:
       action: "2ヶ月に1度の手紙"
       meaning: "加害者も見捨てない、裁判所への静かな反論"
       
@@ -1586,7 +1586,7 @@ session_2025_11_15_afternoon:
   connections_to_project_knowledge:
     
     ゆあちゃん_2018: "不幸の回避の使命化"
-    水内氏事件: "防げなかった、うしろめたさ、統計の歪み発見"
+    F氏事件: "防げなかった、うしろめたさ、統計の歪み発見"
     B子救済_2023: "同じ構図で救えた、早期介入の実証"
     突発性難聴_2025_09: "絶望の個人的経験、記憶保全の重要性"
     Susan面談_2025_11_13: "構造的相似の確認、協働の可能性"
@@ -1611,7 +1611,7 @@ session_2025_11_15_afternoon:
       
   session_value:
     theoretical: "正解不在の整合性追求という立ち位置の最終確認"
-    emotional: "突発性難聴・水内氏・うしろめたさの深い言語化"
+    emotional: "突発性難聴・F氏・うしろめたさの深い言語化"
     strategic: "Susan面談への準備完了"
     philosophical: "謙虚さと確信の両立の明確化"
     
@@ -2181,7 +2181,7 @@ meta_reflection_field_wisdom:
       2010: "PHR Commons構想"
       2015_2025: "10事業所、100人支援、NOCC蓄積"
       2018: "ゆあちゃん事件 → 使命化"
-      20XX: "水内氏事件 → うしろめたさ、統計歪み発見"
+      20XX: "F氏事件 → うしろめたさ、統計歪み発見"
       2023_08: "B子救済 → 実証"
       2023_09: "脳出血 → 時間制約の自覚"
       2025_09: "突発性難聴 → 絶望の実感"
@@ -2196,7 +2196,7 @@ meta_reflection_field_wisdom:
       practice: "倫理審査、制度の壁 → 10事業所立ち上げ不可能"
       specialization: "福祉 or 会計 or AI → 統合不可能"
       emotion: "客観性要求 → うしろめたさを駆動力にできない"
-      risk: "越権行為できない → 水内氏事件を事件化できない"
+      risk: "越権行為できない → F氏事件を事件化できない"
       
     Puu_advantages:
       - "10年継続できた"
@@ -2212,8 +2212,8 @@ meta_reflection_field_wisdom:
       - "福祉村の「知っているが動かない」文化"
       - "警察の「もう処理してるから」という壁"
       - "裁判所の「一切の情状酌量の余地がない」判決"
-      - "木浦氏との2ヶ月に1度の手紙の意味"
-      - "水内氏ご家族が写真を託してくれた重み"
+      - "被支援者Bとの2ヶ月に1度の手紙の意味"
+      - "F氏ご家族が写真を託してくれた重み"
       - "突発性難聴の夢の残酷さ"
       - "「たくさんいる」という実感"
       - "18歳の夢を掘り起こす手法"
@@ -2642,7 +2642,7 @@ layer_4_complete_disclosure:
     
     comparison:
       self: "生き延びた、機能している、成功した"
-      others: "水内氏(殺された)、B子(自尊感情10%台)"
+      others: "F氏(殺された)、B子(自尊感情10%台)"
       conclusion: "自分は弱者ではない"
       
   strategic_non_disclosure:
@@ -4144,7 +4144,7 @@ memento_mori_complete_truth:
     
     Mizuuchi_death:
       surface: "防げなかった罪悪感"
-      truth: "自分も早く死ぬかもしれない、その前に水内氏のような死を一人でも減らしたい"
+      truth: "自分も早く死ぬかもしれない、その前にF氏のような死を一人でも減らしたい"
       
     B_ko_success:
       surface: "支援の成功例"
@@ -4152,7 +4152,7 @@ memento_mori_complete_truth:
       
     SoE_Constitutional_AI:
       surface: "研究"
-      truth: "自分が死んでもこのシステムが動けば水内氏の死は無駄にならない"
+      truth: "自分が死んでもこのシステムが動けばF氏の死は無駄にならない"
       
     all: "メメント・モリ"
     

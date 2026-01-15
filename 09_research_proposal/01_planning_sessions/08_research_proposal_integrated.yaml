@@ -423,7 +423,7 @@ practical_foundation:
       
       - type: "詳細ケース記録"
         cases:
-          - "木浦氏事件"
+          - "被支援者B事件"
           - "薬物依存"
           - "精神疾患"
         depth: "重度ケースの構造的分析"
@@ -470,7 +470,7 @@ ideological_continuity:
       
       implementation:
         - "自尊感情50%以下を50%以上に引き上げるKPI設定"
-        - "木浦氏事件の教訓を制度化する試み"
+        - "被支援者B事件の教訓を制度化する試み"
     
     phase_4:
       period: "現在（SoE構想）"
@@ -546,7 +546,7 @@ motivation_for_application:
     core_belief: "制度に救われるべき仲間を見捨てず、制度の構造的問題を解決する"
     
     sustainability_concern: >
-      木浦氏事件で私が単独で動いたように、
+      被支援者B事件で私が単独で動いたように、
       「英雄的個人」に依存するシステムは持続可能ではない。
       私自身も脳出血で倒れた。システム化しなければ、問題は繰り返される。
     

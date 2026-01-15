@@ -35,7 +35,7 @@ researcher_profile:
     data_assets:
       - "NOCCデータ10年分（自尊感情測定）"
       - "支援音声記録5年分（Whisper変換済）"
-      - "重度ケース詳細記録（木浦氏事件等）"
+      - "重度ケース詳細記録（被支援者B事件等）"
 
   medical_history:
     genetic_condition: "多発性海綿状血管腫（父系遺伝・子3人に継承）"
@@ -336,7 +336,7 @@ formative_experiences:
   
   meguro_child_abuse:
     trigger: "「もうおねがい ゆるして」という日記"
-    recognition: "木浦氏事件と同じ構造的問題"
+    recognition: "被支援者B事件と同じ構造的問題"
     resolution: "システム化しなければ問題は繰り返される"
   
   genetic_inheritance:
