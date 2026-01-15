@@ -1,0 +1,214 @@
+# ============================================================
+# 日報 / Daily Report
+# ============================================================
+date: 2025-01-15
+author: 山内雄司 (Yuji Yamauchi)
+category: ファイル整理・アーカイブ構築
+
+# ------------------------------------------------------------
+# 概要 / Summary
+# ------------------------------------------------------------
+summary: |
+  過去10年以上の電子ファイル（Dropbox、Google Drive、デスクトップバックアップ）を
+  職務経歴ベースのディレクトリ構造に整理・統合。
+  重複ファイルの検出・削除により大幅な容量削減を達成。
+
+# ------------------------------------------------------------
+# 作業内容 / Tasks
+# ------------------------------------------------------------
+tasks:
+  - id: 1
+    title: 現状把握・構造分析
+    description: |
+      - F:ドライブ内のフォルダ構造確認（DROPBOX移行、Dropbox、Google）
+      - 総ファイル数・容量の把握
+      - メディアファイル（画像・動画・音声）の分布確認
+    status: completed
+
+  - id: 2
+    title: メディアファイル整理
+    description: |
+      - 画像・動画・音声ファイルをArchiveフォルダに年別振り分け
+      - EXIFデータ優先で撮影年を判定（画像）
+      - 同名・同サイズの重複ファイルは自動スキップ・削除
+    status: completed
+    metrics:
+      source_folders:
+        - F:\DROPBOX移行
+        - F:\Dropbox
+        - F:\Google
+        - C:\Users\USER\Desktop\20250311Desktop
+      processed_files: 32795
+      moved_files: 21429
+      duplicates_removed: 11366
+
+  - id: 3
+    title: 職務経歴ベースのディレクトリ構造作成
+    description: |
+      職務経歴書に基づき、キャリア時系列でフォルダ構造を設計・作成
+    status: completed
+    structure:
+      base_path: F:\Career
+      categories:
+        - name: 01_2006-2012_アーツ情報システム
+          subcategories:
+            - LIS関連
+            - セゾン_リコー
+            - 倉敷市IT事業
+            - 総務省事業_観光PF
+            - 総務省事業_バリアフリー
+            - 健康づくり財団
+        - name: 02_2012-2016_福祉立ち上げ期
+          subcategories:
+            - はれの国_岡山
+            - ひだまり_今治
+            - チャレンジド尾道_カイト
+        - name: 03_2016-2021_アンマー
+          subcategories:
+            - シェル
+            - セルプセンター
+            - 天神会DX
+            - JUSPO_ACT01
+        - name: 04_2021-2023_DUG研究所
+          subcategories:
+            - コーリングサポ笠岡
+            - Google_Backup
+        - name: 05_2024_クロスファーム
+        - name: 90_個人
+        - name: 91_資格_研修
+        - name: 99_未分類
+      year_folders: true
+      other_folder: true
+
+  - id: 4
+    title: ドキュメントファイル移動
+    description: |
+      - 既存フォルダを職務経歴ベースの構造に移動
+      - 重複ファイルチェック付きで移動
+      - 移動ログをCSV出力
+    status: completed
+    metrics:
+      processed_folders: 20
+      moved_files: 27222
+      duplicates_skipped: 0
+
+  - id: 5
+    title: 00.作業中フォルダの仕分け
+    description: |
+      - 混在していた作業中フォルダを内容に応じて振り分け
+      - 日時ベースでの自動振り分け（2006-2012→アーツ、2016-2021→アンマー等）
+      - 不要フォルダの削除
+    status: completed
+    mapping:
+      to_arts: [ヘルスブック]
+      to_dug: [DUG, まなびば, MRF, TICC, トラウマインフォームドケア, 廃材, 福氏資料]
+      to_anmar: [dist, SDGs, コロナ, コワーキング, シェル【利用者】, 天神会, 岡山県セルプセンター, etc.]
+      to_fukushi: [岡山県岡山市, 広島県世羅町, 広島県尾道市, 愛媛県今治市カイト, etc.]
+      to_personal: [城見台, 山内履歴, 山内通帳, 龍一]
+      deleted: [apri, B, R4概算要求, あいねっと, 放課後デイ, cg]
+      date_sorted: [kannren, 予算, 新しいフォルダー, CS, 20230129, 20240930, etc.]
+
+  - id: 6
+    title: デスクトップバックアップ整理
+    description: |
+      C:\Users\USER\Desktop\20250311Desktop の整理
+    status: completed
+    metrics:
+      before_size: 12.0 GB
+      after_size: 200 MB
+      reduction: 約98%
+
+  - id: 7
+    title: Googleフォルダ整理
+    description: |
+      - Google Takeout（GoogleChat、マイドライブ、共有ドライブ）をDUG研究所に統合
+      - Career配下の既存ファイルと照合し重複削除
+    status: completed
+    metrics:
+      processed_files: 6169
+      moved_files: 2244
+      duplicates_removed: 3925
+      duplicate_rate: 64%
+
+  - id: 8
+    title: 空フォルダ・残骸削除
+    description: |
+      - Dropbox、DROPBOX移行の空フォルダ削除
+      - 90_個人、91_資格_研修、99_未分類配下の空フォルダ削除
+    status: completed
+
+# ------------------------------------------------------------
+# 成果 / Results
+# ------------------------------------------------------------
+results:
+  total_files_processed: 40000+
+  total_duplicates_removed: 15000+
+  storage_optimized:
+    desktop_backup:
+      before: 12.0 GB
+      after: 200 MB
+    f_drive_freed: 約20GB（推定）
+  
+  final_structure:
+    archive:
+      path: F:\Archive
+      contents: メディアファイル（年別）
+      subfolders: [images, videos, audio]
+    career:
+      path: F:\Career
+      contents: 職務経歴ベースのドキュメント
+      categories: 8
+
+# ------------------------------------------------------------
+# 生成ログファイル / Generated Logs
+# ------------------------------------------------------------
+log_files:
+  - F:\Archive\migration_log_test.csv
+  - F:\Archive\migration_log_20260115_105614.csv
+  - F:\Archive\migration_log_desktop_20260115_110946.csv
+  - F:\Career\migration_log_career_20260115_112943.csv
+  - F:\Career\migration_log_career_remaining_*.csv
+  - F:\Career\migration_log_sort_*.csv
+  - F:\Career\migration_log_google_20260115_131601.csv
+
+# ------------------------------------------------------------
+# 残タスク / Remaining Tasks
+# ------------------------------------------------------------
+remaining_tasks:
+  - id: R1
+    title: Dropbox/DROPBOX移行の残りファイル処理
+    priority: low
+    description: 少量のファイルが残存、手動確認推奨
+  
+  - id: R2
+    title: 99_未分類の確認・手動仕分け
+    priority: medium
+    description: 自動仕分けできなかったファイルの手動整理
+  
+  - id: R3
+    title: エビデンス音声・動画の専用フォルダ検討
+    priority: medium
+    description: |
+      木浦ケース、謀良ケース等のセンシティブな記録について
+      - 暗号化の検討
+      - 研究利用時の匿名化プロトコル策定
+
+# ------------------------------------------------------------
+# 所感 / Notes
+# ------------------------------------------------------------
+notes: |
+  - 10年以上の実務経験に基づくファイルが職務経歴ベースで整理された
+  - 重複ファイルが予想以上に多く（約15,000件）、削除により容量効率化
+  - 支援記録の音声・動画ファイルは研究エビデンスとして価値が高い
+  - 博士課程準備に向けて、資料へのアクセス性が大幅に向上
+  - PowerShellスクリプトによる自動化で効率的に処理完了
+
+# ------------------------------------------------------------
+# 使用ツール / Tools Used
+# ------------------------------------------------------------
+tools:
+  - PowerShell（ファイル操作、重複検出、移動処理）
+  - VSCode + Claude（スクリプト生成・実行）
+  - System.Drawing（EXIF読み取り）
+
+# ============================================================
