@@ -1,0 +1,120 @@
+# ============================================
+# User Zero 概念
+# 発見日: 2026-01-15
+# 出典: 2026_01_15_Gem.yaml (Gemini Session)
+# ============================================
+
+metadata:
+  created_at: "2026-01-16"
+  created_by: "Claude Code (Opus 4.5)"
+  source_session: "2026_01_15_Gem.yaml"
+  discovery_context: "Geminiとのセッションで発掘された概念"
+
+# ============================================
+# User Zero とは
+# ============================================
+
+user_zero:
+
+  definition:
+    statement: "研究者自身がシステムの最初のユーザーであり受益者である"
+    japanese: "ユーザーゼロ"
+    context: |
+      SoEフレームワークを設計するYuji自身が、
+      そのフレームワークを最初に必要とするユーザーである。
+
+  implications:
+    for_research_validity:
+      - "当事者性が研究の動機と方法論に直結"
+      - "理論と実践の乖離を防ぐ内蔵型検証装置"
+      - "「机上の空論」批判への構造的回答"
+
+    for_ethical_stance:
+      - "研究対象と研究者の境界の再検討"
+      - "「支援する側」と「支援される側」の二項対立を超える"
+      - "当事者研究（Tojisha-kenkyu）との接続"
+
+  yuji_profile_as_user_zero:
+    attributes:
+      - "ADHD確定診断"
+      - "脳出血サバイバー（2023年）"
+      - "福祉事業10年・100名支援の経験"
+      - "52歳での大学院挑戦"
+    double_perspective:
+      description: |
+        支援者としての10年の経験と、
+        当事者としての障害経験の両方を持つ。
+        この「二重の視座」がUser Zeroとしての独自性。
+
+# ============================================
+# 研究への示唆
+# ============================================
+
+research_implications:
+
+  methodological:
+    autoethnography_potential:
+      description: |
+        オートエスノグラフィー的アプローチとの親和性。
+        ただし、主観に閉じず、構造化・外部検証可能な形式を維持。
+
+    insider_outsider_position:
+      description: |
+        完全なインサイダーでも完全なアウトサイダーでもない、
+        境界的位置（liminal position）からの研究。
+
+  theoretical:
+    soe_self_application:
+      description: |
+        SoEフレームワークをまず自分自身に適用してみる。
+        「累積環境因子」「簿外債務」「ケイパビリティ剥奪」を
+        自分の人生で検証する。
+
+    recursive_validation:
+      description: |
+        フレームワークがUser Zero（自分自身）に有効であることが、
+        他者への適用可能性の第一証明となる。
+
+# ============================================
+# 類似概念との比較
+# ============================================
+
+related_concepts:
+
+  dogfooding:
+    origin: "ソフトウェア開発"
+    meaning: "自社製品を自分たちで使うこと"
+    difference: |
+      User Zeroは単なるテストではなく、
+      研究動機そのものが当事者性に根ざしている点が異なる。
+
+  action_research:
+    origin: "Kurt Lewin"
+    meaning: "研究者が実践に参加しながら研究する"
+    connection: |
+      User Zeroは、研究者が「参加」するだけでなく、
+      研究対象そのものであるという点でより徹底している。
+
+  tojisha_kenkyu:
+    origin: "べてるの家（浦河）"
+    meaning: "当事者による当事者のための研究"
+    connection: |
+      User Zero概念は当事者研究の系譜に位置づけられるが、
+      「構造化・測定可能性」を重視する点で独自性を持つ。
+
+# ============================================
+# 火文化圏ノート
+# ============================================
+
+fire_culture_note: |
+  User Zeroという概念は、
+  「なぜこの研究をするのか」という問いへの
+  最も誠実な答えかもしれない。
+
+  「他者を救いたいから」ではなく、
+  「まず自分が必要としているから」。
+
+  この正直さが、研究の真正性（authenticity）を担保する。
+
+  Geminiとのセッションで発掘されたこの概念は、
+  SoE研究の動機構造を再照明するものとなった。

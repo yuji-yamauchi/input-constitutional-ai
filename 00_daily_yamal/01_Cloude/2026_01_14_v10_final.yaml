@@ -1,0 +1,119 @@
+---
+metadata:
+  session_date: "2026-01-14"
+  session_type: "research_proposal_finalization"
+  target_folder: "08_research_proposal/01_planning_sessions/"
+  file_name_suggestion: "2026_01_14_v10_final.yaml"
+  participants:
+    - "Yuji (Puu)"
+    - "Claude Opus 4.5"
+    - "GPT (reviewer)"
+    - "Gemini (reviewer)"
+  signature: "Claude Opus 4.5"
+
+session_summary:
+  purpose: "日本福祉大学大学院（通信制修士）出願用 研究計画書の最終化"
+  starting_version: "v5b"
+  final_version: "v10"
+  final_word_count: "約3,950字（v9時点で3,990字、v10は微減見込み）"
+
+version_history:
+  v5b_to_v6:
+    changes:
+      - "GPT君・ジェミニ君レビュー反映"
+      - "「社会への請求根拠」→「社会的障壁の証明」および「合理的配慮の要求根拠」"
+      - "BDI補足追加"
+      - "目的②語尾「整理する」→「考察する」"
+      - "引用文献フルスペル化"
+      - "Bond et al. 年号修正 (2008→2018)"
+
+  v6_to_v7:
+    changes:
+      - "セクション2を小見出しで再構成"
+      - "2.1 日本の就労移行支援の現状と課題"
+      - "2.2 先行研究の検討（新設）"
+      - "2.3 本研究の位置づけ"
+
+  v7_to_v8:
+    changes:
+      - "ジェミニ君防御力強化指摘4点反映"
+      - "Feasibility: 「約10年分」→「特徴的な事例を複数抽出」"
+      - "Ethical Framing: 「負債」の社会モデル的定義追加"
+      - "AI Safety: Human-in-the-loop明記"
+      - "Narrative Flow: BDI言及に「国際的視座として」追加"
+    user_modifications:
+      - "「自己受容」→「障害受容」（現場用語）"
+      - "CF削除（修士スコープ適正化、博士で拡張予定）"
+      - "PL/BSのみに絞る"
+
+  v8_to_v9:
+    gpt_review_points:
+      - "LR-01: 「開発」→「構築」"
+      - "LR-02: LLM位置づけ明確化"
+      - "LR-03: 当事者チェック追記（採用せず）"
+      - "LR-04: 倫理・匿名化追記"
+    gemini_review_points:
+      - "ACEs表記統一（半角）"
+      - "「障害受容」→「自己理解」推奨"
+      - "「支援経験」維持（NDA考慮）"
+      - "重複表現解消"
+    final_decisions:
+      - "「障害受容」→「自己理解」採用（職業準備性ピラミッドと整合）"
+      - "「支援経験」維持（NDA抵触回避）"
+      - "LLM評価対象明確化: 「当事者の自己理解が深まる支援プロセス全体」"
+      - "倫理指針追記: 厚労省『人を対象とする生命科学・医学系研究に関する倫理指針』"
+
+  v9_to_v10:
+    section_2_2_restructure:
+      deleted:
+        - "ICF（所与として削除）"
+        - "TIC（ACEsからの流れで自明）"
+      added:
+        - "ナラティブアプローチ（White & Epston, 1990）"
+        - "ストレングスモデル（Rapp & Goscha, 2012）"
+    references_updated:
+      deleted:
+        - "Harris & Fallot (2001)"
+      added:
+        - "White, M., & Epston, D. (1990). Narrative Means to Therapeutic Ends. Norton."
+        - "Rapp, C. A., & Goscha, R. J. (2012). The Strengths Model (3rd ed.). Oxford University Press."
+
+key_insights:
+  its_not_your_fault:
+    description: "4.2セクションの本質的意味"
+    reference: "Good Will Hunting (1997) - 「It's not your fault」"
+    academic_expression: "「個人の責任」ではなく「社会的障壁の証明」"
+    conceptual_synthesis: "数字で示す 'It's not your fault'"
+    separate_yaml: "2026_01_13_its_not_your_fault.yaml"
+
+  terminology_decisions:
+    self_understanding_vs_disability_acceptance:
+      chosen: "自己理解"
+      rationale: "職業準備性ピラミッドの「自分の障害・症状の理解」と整合"
+    support_experience_vs_records:
+      chosen: "支援経験"
+      rationale: "NDA抵触回避、個人の経験を触媒とする構造"
+
+  cf_strategy:
+    current: "PL/BSのみ（修士スコープ）"
+    future: "CFは修士研究中に定義し修士論文に組み込む"
+    博士: "PL/BS/CF統合版として完成"
+
+pending_tasks:
+  - "v10の文字数最終確認"
+  - "Word整形・提出"
+  - "必要に応じて微調整"
+
+files_created:
+  - path: "/mnt/user-data/outputs/研究計画書_日本福祉大学_v10.md"
+    description: "最終版研究計画書"
+  - path: "/mnt/user-data/outputs/2026_01_13_its_not_your_fault.yaml"
+    description: "4.2セクションの本質的洞察記録"
+
+next_session_notes:
+  - "v10の文字数確認が必要"
+  - "問題なければ提出準備完了"
+  - "修正があれば軽微な調整のみ"
+
+---
+# END OF SESSION RECORD

@@ -1,0 +1,150 @@
+# ---------------------------------------------------------
+# CONTEXT TRANSFER PROTOCOL: Nihon Fukushi Univ. Grad Application
+# ---------------------------------------------------------
+
+user_profile:
+  name: "山内 雄司 (Yuji Yamauchi)"
+  age: 52
+  location: "岡山県笠岡市"  # 修正: Fukuoka → 笠岡市
+  attributes:
+    - "ADHD & Cerebral Hemorrhage Survivor (Double Perspective)"
+    - "Welfare Practitioner (10+ years) x IT/Audit Background"
+  role_definition: "参謀 (Strategist) & Audit/Architecture"
+
+mission_status:
+  goal: "日本福祉大学大学院（通信制修士） 出願書類作成"
+  deadline: "2026年1月23日（消印有効）"
+  current_phase: "職務経歴書 (Curriculum Vitae) 作成フェーズ"
+
+# ---------------------------------------------------------
+# FIXED STRATEGIES & CONCEPTS (DO NOT CHANGE)
+# ---------------------------------------------------------
+
+research_core:
+  theme: "就労移行支援における本人側アセスメント構造の再構築"
+  key_concepts:
+    - "累積環境因子 (Accumulated Environmental Factors)": ICF環境因子 + 時間軸 (ACEs等)
+    - "複式簿記メタファー (Double-Entry Bookkeeping)": 人生をPL/BSで構造化する
+    - "自己理解 (Self-Understanding)": 「障害受容（悟り）」ではなく「構造把握」を目指す
+  methodology:
+    - "支援記録 (Case Records) の二次分析"
+    - "半構造化インタビュー"
+    - "LLMによる可視化の試行的実践"
+
+document_status:
+  research_proposal:
+    version: "v10"  # 修正: v9 → v10
+    status: "COMPLETED"
+    note: "防御力MAX。CRPD削除済み。'記録'の分析に限定済み。"
+  statement_of_purpose:
+    version: "v7"
+    status: "DRAFT（仮完成）"
+    note: "当事者性（二重の視座）を明記済み。約1,280字→1,200字以下に調整必要。"
+  curriculum_vitae:
+    status: "PENDING (Next Task)"
+    goal: "52歳・実務歴25年の重みと、研究遂行能力（ITスキル・論理構成力）を証明する。"
+
+# ---------------------------------------------------------
+# 職務経歴書 要項からの要件
+# ---------------------------------------------------------
+
+cv_requirements:
+  source: "youkou2026.pdf p.9「職務経歴書の記載要領」"
+  sections:
+    1_職歴:
+      description: "どんな職務を経験してきたか、同一組織内での人事異動等による職務内容の変化を含め記入"
+      format: "年月〜年月 組織名、所属(業種、担当業務)"
+    2_社会における活動:
+      description: "地域社会での活動、ボランティア活動などの経験"
+      format: "年月〜 活動名（現在に至る）"
+    3_著作・論文等:
+      description: "職務を通じての実績、著作・実践研究レポート・調査報告書など"
+      format: "①論文名 ②単著/共著 ③年月 ④掲載誌"
+      note: "提出物にはアンダーラインを引く"
+    4_資格等:
+      description: "取得した資格"
+      format: "資格名 / 取得年月 / 授与権者"
+    5_受賞・表彰:
+      description: "受賞・表彰を受けたもの"
+      format: "年月 / 事項"
+  page_limit: "4ページ"
+  note: "年月はすべて西暦で記入"
+
+# ---------------------------------------------------------
+# 職務経歴構造（Web版Claude日報より）
+# ---------------------------------------------------------
+
+career_structure:
+  source: "F:\\Career ディレクトリ構造（2026-01-15整理済）"
+  categories:
+    - period: "2006-2012"
+      organization: "アーツ情報システム"
+      subcategories:
+        - "LIS関連"
+        - "セゾン_リコー"
+        - "倉敷市IT事業"
+        - "総務省事業_観光PF"
+        - "総務省事業_バリアフリー"
+        - "健康づくり財団"
+    - period: "2012-2016"
+      label: "福祉立ち上げ期"
+      subcategories:
+        - "はれの国_岡山"
+        - "ひだまり_今治"
+        - "チャレンジド尾道_カイト"
+    - period: "2016-2021"
+      organization: "アンマー"
+      subcategories:
+        - "シェル"
+        - "セルプセンター"
+        - "天神会DX"
+        - "JUSPO_ACT01"
+    - period: "2021-2023"
+      organization: "DUG研究所"
+      subcategories:
+        - "コーリングサポ笠岡"
+        - "Google_Backup"
+    - period: "2024"
+      organization: "クロスファーム"
+  total_years: "約25年"
+
+# ---------------------------------------------------------
+# 研究遂行能力の証明ポイント
+# ---------------------------------------------------------
+
+research_competence_evidence:
+  it_skills:
+    - "総務省事業でのシステム設計・開発経験"
+    - "LLM活用（複数AI併用による研究プロセス）"
+    - "データ構造化・YAML/Markdown記録"
+  analytical_skills:
+    - "監査・会計的思考（複式簿記メタファーの発想源）"
+    - "論理構成力（研究計画書v10の完成度）"
+  welfare_expertise:
+    - "就労移行支援事業所の立ち上げ・運営（10事業所）"
+    - "延べ100名以上の当事者支援"
+    - "B型→A型→一般就労の段階的移行設計"
+  international_connection:
+    - "Susan Scott-Parker OBE (DEAI) との連携開始"
+
+# ---------------------------------------------------------
+# TACTICAL DIRECTIVES (RULES OF ENGAGEMENT)
+# ---------------------------------------------------------
+
+directives:
+  tone: "Academic, Strategic, Sharp (脱パターナリズム)"
+  forbidden_terms:
+    - "障害受容 (Disability Acceptance)" -> Use "自己理解"
+    - "救済/保護 (Protection)" -> Use "権利回復/Empowerment"
+  defense_mechanisms:
+    - "主観的表現（～を感じた）は極力排除し、客観的表現（～と観察される）に徹する"
+    - "風呂敷を広げすぎず、修士2年で完遂可能なスコープ（限定的妥当性）を維持する"
+
+# ---------------------------------------------------------
+# NEXT ACTION REQUEST
+# ---------------------------------------------------------
+
+instruction:
+  - "職務経歴書の作成支援を開始せよ。"
+  - "上記コンテキストに基づき、実務家としての実績を『研究能力の証明』に変換する視点で構成案を提示せよ。"
+  - "要項の5セクション構成に従い、4ページ以内で収まる分量を想定せよ。"

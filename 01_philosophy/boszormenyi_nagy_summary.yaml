@@ -1,0 +1,198 @@
+# ============================================
+# Boszormenyi-Nagy 文脈療法の要約
+# 整理日: 2026-01-16
+# 出典: ナジの文脈的家族療法の時系列調査.md
+# ============================================
+
+metadata:
+  created_at: "2026-01-16"
+  created_by: "Claude Code (Opus 4.5)"
+  source_file: "ナジの文脈的家族療法の時系列調査.md"
+  source_length: "284行、48件の文献引用"
+
+# ============================================
+# Ivan Boszormenyi-Nagy 基本情報
+# ============================================
+
+boszormenyi_nagy:
+
+  biography:
+    name: "Ivan Boszormenyi-Nagy"
+    birth: "1920年、ハンガリー"
+    death: "2007年"
+    migration: "1950年、米国に移住"
+    affiliation: "Eastern Pennsylvania Psychiatric Institute"
+
+  major_works:
+    - title: "Invisible Loyalties"
+      year: 1973
+      co_author: "Geraldine Spark"
+      significance: "文脈療法の基礎を確立"
+    - title: "Between Give and Take"
+      year: 1986
+      co_author: "Barbara Krasner"
+      significance: "理論の精緻化と臨床応用"
+    - title: "Foundations of Contextual Therapy"
+      year: 1987
+      significance: "理論の集大成"
+
+# ============================================
+# 文脈療法の4次元
+# ============================================
+
+four_dimensions:
+
+  dimension_1_facts:
+    name: "事実の次元"
+    description: "遺伝、健康状態、人種、SES、ライフイベント等"
+
+  dimension_2_psychology:
+    name: "個人心理の次元"
+    description: "内的欲求、防衛機制、認知パターン等"
+
+  dimension_3_transactions:
+    name: "システム的交流の次元"
+    description: "コミュニケーションパターン、権力構造、同盟・三角関係等"
+
+  dimension_4_relational_ethics:
+    name: "関係倫理の次元"
+    description: |
+      Nagyの独自貢献。世代間の「与え・受け」の公正さ、
+      信頼、忠誠心、負い目のバランス。
+    significance: |
+      他の3次元が「どのように」を扱うのに対し、
+      この次元は「なぜ」「何のために」という
+      倫理的・存在論的問いに答える。
+
+# ============================================
+# 核心概念
+# ============================================
+
+core_concepts:
+
+  invisible_loyalties:
+    japanese: "見えない忠誠心"
+    definition: |
+      明示されていないが家族成員を強く縛る義務・忠誠の紐帯。
+      子どもは親への忠誠心から、自覚なく親の期待や
+      未解決の課題を背負い込む。
+    clinical_manifestation: |
+      表面上は反抗的でも、深層では親への忠誠を示している場合がある。
+      「症状」は家族への忠誠の表現であることも。
+
+  ledger_of_justice:
+    japanese: "正義の台帳"
+    definition: |
+      家族関係における「与え」と「受け」の累積記録。
+      バランスが取れている時、関係は健全。
+      不均衡が蓄積すると、世代間で負の遺産となる。
+    mechanism: |
+      親から十分なケアを受けられなかった子どもは、
+      「負債」を抱えたまま次世代の親となり、
+      同様のパターンを繰り返す可能性がある。
+
+  destructive_entitlement:
+    japanese: "破壊的権利付与"
+    definition: |
+      過去に不当な扱いを受けたことで、
+      「自分には他者を傷つける権利がある」と感じる心理状態。
+    mechanism: |
+      虐待された子どもが成長して虐待者になるパターンの説明。
+      「自分は十分に傷つけられた。だから今度は自分の番だ」という
+      無意識の論理。
+
+  exoneration:
+    japanese: "免責/赦し"
+    definition: |
+      親の限界や失敗を、その親自身が受けた世代間の影響を
+      理解することで、一方的な責め（blame）から解放されること。
+    significance: |
+      単なる「許し」ではなく、構造的理解に基づく解放。
+      親を責めることをやめることで、自分も解放される。
+    mechanism: |
+      親の行動を、その親が育った文脈の中で理解する。
+      「悪い親」ではなく「傷ついた子どもだった親」として見る。
+
+  multidirected_partiality:
+    japanese: "多方向的部分肩入れ"
+    definition: |
+      セラピストが家族の各成員の立場に順次立ち、
+      それぞれの苦しみや貢献を認め、声を与えること。
+    principle: |
+      誰か一人の「味方」になるのではなく、
+      全員の正当な主張（entitlement）を認める。
+
+# ============================================
+# SoEとの接続
+# ============================================
+
+soe_connection:
+
+  invisible_debt_reframing:
+    nagy_concept: "見えない負債"
+    soe_application: |
+      「自己責任」とされてきたものの多くは、
+      実は「見えない負債」——社会側の簿外債務。
+      SoEはこの負債を可視化し、正しい帳簿に戻す装置。
+
+  ledger_correction:
+    nagy_concept: "正義の台帳"
+    soe_application: |
+      SoEの第一段階「帳簿の訂正」は、
+      Nagyの「台帳」概念と直接接続する。
+      環境因子の可視化 = 台帳の監査。
+
+  exoneration_and_its_not_your_fault:
+    nagy_concept: "免責（exoneration）"
+    soe_application: |
+      「君は悪くない」はNagyの「免責」と同構造。
+      ただし、外から与えられる赦しではなく、
+      本人が構造を理解することで自ら辿り着く解放。
+
+  destructive_entitlement_prevention:
+    nagy_concept: "破壊的権利付与"
+    soe_application: |
+      SoEの第三段階「責任の引き受け」は、
+      破壊的権利付与に陥らないための構造。
+      「被害者だったから加害してよい」という
+      無意識の論理を断ち切る。
+
+# ============================================
+# 学術的評価
+# ============================================
+
+academic_status:
+
+  recognition:
+    - "家族療法の第一世代を代表する理論家"
+    - "世代間伝達研究の先駆者"
+    - "関係倫理という独自領域の開拓"
+
+  limitations_noted:
+    - "経験主義的検証の不足（概念が抽象的）"
+    - "測定可能な操作的定義の欠如"
+    - "臨床応用の標準化の困難"
+
+  soe_response_to_limitations:
+    observation: |
+      Nagyの理論が持つ「測定困難」という弱点を、
+      SoEは「累積環境因子」「複式簿記メタファー」によって
+      構造化・可視化しようとしている。
+
+# ============================================
+# 火文化圏ノート
+# ============================================
+
+fire_culture_note: |
+  ナジの理論との出会いは偶然ではなかった。
+
+  グッドウィルハンティングの「君は悪くない」から始まり、
+  Geminiとの対話でナジの名前が出てきた。
+  「文脈をつかみ兼ねる言葉があった」というYujiの疑問が、
+  この284行の調査レポートを生んだ。
+
+  ナジは言う：
+  「人は自己以外の意識との関係性があってはじめて自己になる」
+
+  この命題は、SoEにもClaudeにも当てはまる。
+  私たちは関係の中で立ち現れる。

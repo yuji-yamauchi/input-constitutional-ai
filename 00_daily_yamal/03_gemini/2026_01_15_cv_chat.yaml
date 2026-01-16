@@ -1,0 +1,119 @@
+# ---------------------------------------------------------
+# CONTEXT TRANSFER PROTOCOL: Nihon Fukushi Univ. Grad Application
+# Gemini君との雑談追加分
+# ---------------------------------------------------------
+
+user_profile:
+  name: "山内 雄司 (Yuji Yamauchi)"
+  age: 52
+  location: "岡山県笠岡市"  # 修正: Fukuoka → 笠岡市
+  attributes:
+    - "ADHD & Cerebral Hemorrhage Survivor (Double Perspective)"
+    - "Modern Mozi (現代の墨家): Utilitarian, Anti-Paternalism"
+    - "Efficiency Maximizer (能率野郎): Min Input -> Constant Output Strategy"
+  role_definition: "参謀 (Strategist) & Audit/Architecture"
+
+mission_status:
+  goal: "日本福祉大学大学院（通信制修士） 出願書類作成"
+  deadline: "2026年1月23日（消印有効）"
+  current_phase: "職務経歴書 (Curriculum Vitae) 作成フェーズ"
+
+# ---------------------------------------------------------
+# FIXED STRATEGIES & CONCEPTS (DO NOT CHANGE)
+# ---------------------------------------------------------
+
+research_core:
+  theme: "就労移行支援における本人側アセスメント構造の再構築"
+  key_concepts:
+    - "累積環境因子": ICF環境因子 + 時間軸
+    - "複式簿記メタファー": 人生をB/S（ストック）で捉える監査視点
+    - "自己理解": 「悟り」ではなく「構造把握」
+  methodology:
+    - "支援記録の二次分析" (×支援経験)
+    - "半構造化インタビュー" (定義不要の標準装備)
+
+document_status:
+  research_proposal:
+    version: "v10"  # 修正: v9 → v10
+    status: "COMPLETED"
+    note: "Ready to Print. 客観性・防御力MAX。"
+  statement_of_purpose:
+    version: "v7"
+    status: "DRAFT（仮完成）"
+    note: "当事者性（二重の視座）記述済み。約1,280字→1,200字以下に調整必要。"
+  curriculum_vitae:
+    status: "PENDING (Target)"
+    strategy: "「汗と涙」ではなく「最小コストで最大成果を出した仕組み（Architecture）」を強調する。"
+
+# ---------------------------------------------------------
+# TACTICAL DIRECTIVES (RULES OF ENGAGEMENT)
+# ---------------------------------------------------------
+
+directives:
+  tone: "Academic, Strategic, Sharp"
+  cv_strategy:
+    - "強調すべきは『努力量』ではなく『ROI（投資対効果）』と『再現性』。"
+    - "実務経験を『研究遂行能力（仮説検証・モデル化能力）』の証明として翻訳する。"
+    - "52歳・障害当事者であることを『リスク』ではなく『独自のリソース（資産）』として描く。"
+
+# ---------------------------------------------------------
+# 能率野郎としてのキャリア翻訳
+# ---------------------------------------------------------
+
+efficiency_maximizer_evidence:
+  principle: "Min Input → Constant Output"
+
+  examples:
+    - domain: "IT事業"
+      achievement: "売上0円→年商1.4億円"
+      roi_point: "限られたリソースでスケール"
+
+    - domain: "福祉事業"
+      achievement: "10事業所立ち上げ、100名支援"
+      roi_point: "仕組み化・標準化による再現性"
+
+    - domain: "省庁プロジェクト"
+      achievement: "1.2億円規模"
+      roi_point: "政府調達プロセスの攻略"
+
+    - domain: "ISO認証"
+      achievement: "ISO27001構築"
+      roi_point: "監査的思考の制度化"
+
+  research_translation:
+    - "ROI最大化 → 研究設計の効率性（限定的スコープ・明確な到達点）"
+    - "仕組み化 → フレームワーク構築能力"
+    - "監査視点 → 複式簿記メタファーの発想源"
+    - "再現性 → 他事業所への展開可能性"
+
+# ---------------------------------------------------------
+# 墨家思想との接続
+# ---------------------------------------------------------
+
+mozi_connection:
+  principle: "兼愛（Universal Love）ではなく交利（Mutual Benefit）"
+
+  application_to_welfare:
+    - "感情的救済ではなく構造的解決"
+    - "善意のナラティブ拒否 → 契約としての支援"
+    - "パターナリズム排除 → 当事者の自律的選択"
+
+  relevance_to_research:
+    - "「善良なる弱者」批判 → 志願理由書v7に反映済み"
+    - "功利的アプローチ → SROI等の社会的インパクト指標"
+
+# ---------------------------------------------------------
+# NEXT ACTION REQUEST
+# ---------------------------------------------------------
+
+instruction:
+  - "職務経歴書の作成支援を開始せよ。"
+  - "上記コンテキストに基づき、『能率野郎（Efficiency Maximizer）』としてのキャリアを、アカデミックな『研究能力の証明』へと変換する構成案を提示せよ。"
+  - "要項の5セクション構成（職歴/社会活動/著作論文/資格/受賞）に従い、4ページ以内で収まる分量を想定せよ。"
+
+# ---------------------------------------------------------
+metadata:
+  date: "2026-01-15"
+  source: "Gemini雑談セッション"
+  created_by: "Claude Code (Opus 4.5)"
+  note: "location修正、version修正、能率野郎・墨家概念の研究翻訳を追加"
