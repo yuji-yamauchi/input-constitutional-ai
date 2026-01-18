@@ -1,0 +1,145 @@
+# 職務経歴書v3完成セッション 引き継ぎ書
+# 2026-01-16
+# 次セッション：3文書整合性チェック
+
+metadata:
+  session_date: "2026-01-16"
+  session_type: "職務経歴書素案レビュー・完成"
+  target_folder: "08_research_proposal/01_planning_sessions/"
+  file_name_suggestion: "2026_01_16_cv_v3_completion.yaml"
+
+session_summary:
+  purpose: "日本福祉大学大学院出願用 職務経歴書の素案レビューと完成"
+  outcome: "職務経歴書V1_0（PDF）完成、誤字脱字チェック完了"
+
+documents_status:
+  研究計画書:
+    version: "v10"
+    status: "完成"
+    word_count: "約3,950字"
+    location: "別チャットで完成済み"
+  
+  志願理由書:
+    version: "v7"
+    status: "要調整"
+    word_count: "約1,280字"
+    issue: "1,200字以下への削減が必要（約80字削減）"
+    location: "別チャットで作成済み"
+  
+  職務経歴書:
+    version: "V1_0（PDF）"
+    status: "完成"
+    pages: 3
+    location: "/mnt/user-data/uploads/職務経歴書V1_0.pdf"
+    markdown_version: "/mnt/user-data/outputs/職務経歴書_山内雄司_日本福祉大学_v3.md"
+
+cv_development_process:
+  initial_draft: "別チャット（Gemini）で作成された素案をベースに確認"
+  
+  evidence_reviewed:
+    - name: "セルプセンター活動報告（2020年3月）"
+      content: "石勝エクステリア訪問、優先調達・共同受注推進活動"
+    - name: "井笠自立支援協議会 就労部会議事録（R1.6〜R2.2）"
+      content: "代表選出、共同受注窓口検討、受注実績（約70万円）"
+    - name: "共同受注窓口検討協議会設置要綱（素案）"
+      content: "山内が制度設計・要綱起草を担当"
+    - name: "岡山セルプセンター様向け新規会員グループ提案"
+      content: "サムハルモデル参考、自治体BPO市場ターゲティング"
+  
+  review_process:
+    - step: "v2作成（GPT・Gemini両方の指摘を統合）"
+    - step: "GPT vs Gemini対立点の整理"
+    - step: "Yuji判断でGemini案採用（研究者ナラティブ強化）"
+    - step: "v3作成（企業名実名版）"
+    - step: "V1_0 PDF誤字脱字チェック"
+
+key_decisions:
+  脳出血記載:
+    choice: "Gemini案採用"
+    content: "詳細維持＋「支援者と当事者双方の視座を身体的に獲得。研究テーマの原点となった」追記"
+  
+  危機対応記載:
+    choice: "Gemini案採用"
+    content: "「司法・医療連携を要する高難度事例（虐待・触法等）への介入支援」"
+  
+  企業名:
+    choice: "全部実名"
+  
+  研究利用表現:
+    choice: "「適切な匿名化と倫理審査・同意手続を前提に研究利用を検討可能」"
+  
+  職務要約:
+    choice: "追加"
+    note: "ただしV1_0 PDFでは所定フォーマットに合わせて削除"
+
+corrections_from_pdf_review:
+  v3_to_correct:
+    - item: "チャレンジド尾道の法人格"
+      v3_error: "NPO法人"
+      correct: "一般社団法人"
+    - item: "サビ管研修授与権者"
+      v3_error: "岡山県"
+      correct: "愛媛県"
+    - item: "就労部会期間"
+      v3_error: "2019年6月〜2021年"
+      correct: "2019年6月〜2020年3月"
+  
+  pdf_minor_fix:
+    - item: "著作・論文3の表記"
+      current: "視覚聴覚障害者"
+      fix: "視覚・聴覚障害者（p.1と統一）"
+
+next_session_tasks:
+  priority_1:
+    task: "3文書整合性チェック"
+    documents:
+      - "研究計画書v10"
+      - "志願理由書v7"
+      - "職務経歴書V1_0"
+    check_points:
+      - "用語・表記の統一（障害/障がい、年月表記等）"
+      - "数値の整合性（事業所数、利用者数、金額等）"
+      - "キャリアストーリーの一貫性"
+      - "重複記載の確認（冗長ではないか）"
+      - "研究テーマへの接続の整合性"
+  
+  priority_2:
+    task: "志願理由書v7の削減"
+    target: "1,280字 → 1,200字以下（約80字削減）"
+  
+  priority_3:
+    task: "最終提出版の確定"
+
+key_facts_for_consistency_check:
+  career_years:
+    福祉分野: "10年以上（2012年冬〜）"
+    IT_会計分野: "約16年（1996年〜2012年）"
+  
+  quantitative_data:
+    事業所立ち上げ: "累計約10事業所（B型6、移行2、多機能2）"
+    最大運営規模: "5事業所・職員35名・利用者100名"
+    総務省事業: "約1.2億円（+約4,600万円）"
+    共同受注実績: "約70万円（岡山県医療推進課アンケート業務等）"
+  
+  key_dates:
+    脊髄血管腫手術: "1996年（24歳）"
+    脳出血発症: "2023年9月"
+    サビ管研修修了: "2024年7月（愛媛県）"
+    就労部会代表: "2019年6月〜2020年3月"
+    セルプセンター所長補佐: "2019年11月〜2021年3月"
+  
+  research_theme:
+    title: "就労移行支援における本人側アセスメント構造の再構築"
+    core_concept: "累積環境因子・複式簿記メタファー"
+    unique_perspective: "二重の視座（支援者×当事者）"
+
+files_created_this_session:
+  - path: "/mnt/user-data/outputs/職務経歴書_山内雄司_日本福祉大学_素案.md"
+    description: "初期素案"
+  - path: "/mnt/user-data/outputs/職務経歴書_山内雄司_日本福祉大学_v2.md"
+    description: "GPT・Gemini指摘反映版"
+  - path: "/mnt/user-data/outputs/職務経歴書_山内雄司_日本福祉大学_v3.md"
+    description: "最終版（Markdown）"
+
+signature: "Claude Sonnet 4"
+timestamp: "2026-01-16T午後"
