@@ -1,0 +1,443 @@
+# ============================================================
+# ヒュブリス因子とアノミー因子：富の偏重がもたらす双極的認知歪み
+# Hubris Factor & Anomie Factor: Bipolar Cognitive Distortions from Wealth Maldistribution
+# ============================================================
+#
+# 作成日: 2026-01-18
+# 作成者: Claude Code (Opus 4.5)
+# 目的: SoE研究における中核概念の定義
+# 参照: 07_integration/hubris_factor_integration.yaml
+#       07_integration/anomie_factor_integration.yaml
+#       01_philosophy/terminology_update_2025_12_21.yaml
+#
+# ============================================================
+
+metadata:
+  created_at: "2026-01-18"
+  created_by: "Claude Code (Opus 4.5)"
+  purpose: "SoE研究における双極的社会毀損モデルの中核概念定義"
+  version: "1.0"
+  status: "概念定義完了・研究計画書v10への実装は保留"
+
+# ============================================================
+# 概要：双極構造
+# ============================================================
+
+bipolar_model:
+  name_ja: "富の偏重による双極的社会毀損モデル"
+  name_en: "Bipolar Social Damage Model from Wealth Maldistribution"
+
+  core_thesis: |
+    富の偏重は、分布の両極端で異なる認知の歪みを生む。
+    どちらも社会契約からの離脱を正当化し、
+    社会秩序を崩壊させる「病原体」として機能する。
+
+  shared_origin: "富の偏重 (Wealth Maldistribution)"
+  common_root: "社会契約からの離脱"
+  common_result: "法・道徳の崩壊"
+
+  naming_rationale: |
+    両因子ともギリシャ語由来とすることで：
+    1. 学術的権威の対称性を確保
+    2. 国際的学術発信における明瞭性を担保
+    3. 個人病理ではなく構造的帰結であることを含意
+
+# ============================================================
+# アノミー因子（底辺側）
+# ============================================================
+
+anomie_factor:
+
+  basic_info:
+    term_ja: "アノミー因子"
+    term_en: "Anomie Factor"
+    former_name: "無敵の人因子 (Muteki-no-hito Factor)"
+    etymology:
+      origin: "Greek"
+      components: "a- (without) + nomos (law/norm)"
+      meaning: "state of normlessness (無規制状態)"
+    position: "富の分布の底辺 (Bottom Pole)"
+    core_state: "Normlessness (無規制)"
+
+  definition: |
+    社会的結合（Social Bonds）の断絶により、社会規範が個人に対する
+    拘束力を失った状態。「失うもの（Stake）」の欠如により、
+    刑罰等のサンクションが抑止力として機能せず、
+    自暴自棄な攻撃が合理的選択となる認知状態。
+
+  condition: "富の不足 / 権利の剥奪"
+  status: "Below the Law（規範の崩壊）"
+
+  cognitive_distortion:
+    core: "失うものが何もない"
+    logical_progression:
+      step_1: "社会から何も受け取っていない（権利の剥奪）"
+      step_2: "社会契約の外にいる（帰属の喪失）"
+      step_3: "罰を恐れる理由がない（抑止力の無効化）"
+      step_4: "社会への攻撃が合理的選択になる（暴力の正当化）"
+    cognition_pattern: "「社会が私を見捨てたから、私はルールを守らない」"
+
+  characteristics:
+    - "社会的紐帯の喪失（家族・職場・地域との断絶）"
+    - "規範の内面化の失敗（守るべきものの不在）"
+    - "欲望の無規制状態（破壊衝動への歯止めの欠如）"
+    - "急激な地位変動（転落経験が誘因）"
+
+  manifestation:
+    - "無差別テロ"
+    - "拡大自殺"
+    - "社会への復讐"
+    - "「道連れ」行動"
+  result: "Chaos from below"
+
+  theoretical_references:
+    durkheim:
+      author: "Émile Durkheim"
+      works: ["社会分業論 (1893)", "自殺論 (1897)"]
+      relevance: "アノミー概念の原型"
+    merton:
+      author: "Robert K. Merton"
+      work: "Social Structure and Anomie (1938)"
+      relevance: "手段と目標の乖離（strain theory）"
+    hirschi:
+      author: "Travis Hirschi"
+      work: "Causes of Delinquency (1969)"
+      relevance: "社会的絆理論（4つの絆：愛着・投資・巻き込み・信念）"
+    agnew:
+      author: "Robert Agnew"
+      work: "General Strain Theory (1992)"
+      relevance: "緊張理論の現代的拡張"
+
+  psychological_mechanisms:
+    hopelessness:
+      definition: "将来に対する絶望感"
+      effect: "長期的結果を考慮しなくなる"
+    learned_helplessness:
+      definition: "学習性無力感"
+      reference: "Martin Seligman"
+      effect: "努力しても状況は変わらないという信念"
+    ressentiment:
+      source: "Nietzsche, Max Scheler"
+      definition: |
+        自己の劣位を認識しつつ、それを変える力を持たない者が
+        「価値の転換」によって精神的優位を獲得しようとする心理
+
+  prospect_theory_connection:
+    source: "Kahneman & Tversky (1979)"
+    key_insight: |
+      深い損失領域では、リスク追求行動が増加する。
+      「失うものがない」状態は、損失回避が機能しない状態。
+      通常の人が避けるリスクを、恐れなくなる。
+
+  breeding_environment:
+    factors:
+      - "権利剥奪"
+      - "機会の欠如"
+      - "希望の喪失"
+      - "社会的孤立"
+    quantitative_indicators:
+      - "相対的貧困率"
+      - "社会的孤立率（独居・無縁）"
+      - "長期失業率"
+      - "自殺率（特に壮年男性）"
+
+# ============================================================
+# ヒュブリス因子（頂点側）
+# ============================================================
+
+hubris_factor:
+
+  basic_info:
+    term_ja: "ヒュブリス因子"
+    term_en: "Hubris Factor"
+    former_name: "罪と罰因子 (Sin & Punishment Factor)"
+    etymology:
+      origin: "Greek"
+      components: "hybris / hubris"
+      meaning: "excessive pride, arrogance against the gods"
+    literary_background: "Fyodor Dostoevsky, Crime and Punishment (1866)"
+    position: "富の分布の頂点 (Top Pole)"
+    core_state: "Exemption (例外化)"
+
+  definition: |
+    権力や富の集中が脳の共感機能（ミラーニューロン系）を抑制し、
+    「自分は法や規範の例外である（特別だ）」と誤認する認知の歪み。
+    この全能感（Hubris）により、家庭・組織内での搾取や、
+    ルールの私物化が正当化される。
+
+  condition: "富の過剰 / 権利の独占"
+  status: "Above the Law（規範の超越）"
+
+  cognitive_distortion:
+    core: "自分は法を超越できる"
+    logical_progression:
+      step_1: "成功は自分の能力の証明"
+      step_2: "能力ある者は特別なルールで生きる権利がある"
+      step_3: "一般人に適用される法は自分には適用されない"
+      step_4: "道徳・法の踏み越えが正当化される"
+    cognition_pattern: "「私は特別な存在だから、ルールに縛られない」"
+
+  characteristics:
+    - "自己判断への過度な確信（批判的フィードバックの軽視）"
+    - "批判・助言への耐性低下（諫言者の排除傾向）"
+    - "現実認識の歪み（成功の自己帰属バイアス）"
+    - "説明責任の軽視（社会的責任の外部化）"
+
+  manifestation:
+    - "脱税・金融犯罪"
+    - "権力の私物化"
+    - "ルールを作る側に回ることで違法を合法化"
+    - "パワーハラスメント・搾取"
+  result: "Chaos from above"
+
+  theoretical_references:
+    owen_hubris_syndrome:
+      author: "David Owen"
+      work: "Hubris Syndrome (2008)"
+      definition: "権力の座に長く留まることで後天的に発症する人格障害"
+      diagnostic_criteria:
+        - "世界を権力行使の舞台と見なす"
+        - "自分と国家・組織の同一視"
+        - "自分の判断への過度の自信"
+        - "同僚・助言者への軽視"
+        - "「歴史」や「神」に対してのみ説明責任を感じる"
+        - "現実との接点の喪失"
+        - "無能（Incompetence）の出現"
+
+    keltner_power_paradox:
+      author: "Dacher Keltner"
+      work: "The Power Paradox (2016)"
+      core_thesis: |
+        人が権力を獲得するために必要な資質
+        （共感、協調性、他者への配慮）は、
+        権力を持った後に最も損なわれる資質でもある。
+
+    obhi_mirror_neuron:
+      author: "Sukhwinder Obhi"
+      finding: |
+        権力プライミング群では、ミラーニューロン系の活動が
+        有意に低下した（運動共鳴の抑制）。
+        権力は文字通り「他者の痛みが見えなくなる」神経基盤を持つ。
+
+  psychological_mechanisms:
+    dark_triad:
+      components: "Narcissism (自己愛) + Machiavellianism (搾取) + Psychopathy"
+      relevance: "他者を道具視し、特権を当然視するパーソナリティ構造"
+
+    fundamental_attribution_error:
+      description: |
+        成功を『自分の実力』(内部帰属)、
+        他者の失敗を『努力不足』(内部帰属)とするバイアス
+
+    techniques_of_neutralization:
+      source: "Sykes & Matza (1957)"
+      five_techniques:
+        - denial_of_responsibility: "「市場の力が決めたこと」"
+        - denial_of_injury: "「誰も傷ついていない」"
+        - denial_of_victim: "「努力しなかった者の自己責任」"
+        - condemnation_of_condemners: "「批判者こそ偏向している」"
+        - appeal_to_higher_loyalties: "「国益のため」"
+
+  empirical_evidence:
+    rigged_monopoly_game:
+      researcher: "Paul Piff (UC Irvine)"
+      finding: |
+        あからさまに有利な条件を与えられたプレイヤーは
+        態度が横柄になり、勝利後に「自分の戦略の優秀さ」を語る
+        （運を実力と誤認）
+
+  breeding_environment:
+    factors:
+      - "権利独占"
+      - "特権"
+      - "不処罰の経験"
+      - "成功体験の蓄積"
+    reproduction_rate: "成功体験の蓄積に比例して増加"
+
+# ============================================================
+# 両極の対称性
+# ============================================================
+
+symmetry:
+
+  mirror_relationship: |
+    両因子は鏡像関係にある。
+    富の分布の両極で発生する「社会契約からの離脱」。
+
+  comparison_table:
+    anomie_factor:
+      position: "富の分布の底辺"
+      driver: "絶望（Despair）"
+      logic: "排除されたから、ルールの外にいる"
+      status: "Below the Law"
+      outcome: "テロ・暴動（Chaos from below）"
+
+    hubris_factor:
+      position: "富の分布の頂点"
+      driver: "傲慢（Hubris）"
+      logic: "超越したから、ルールに縛られない"
+      status: "Above the Law"
+      outcome: "汚職・搾取（Chaos from above）"
+
+  dostoevsky_connection: |
+    『罪と罰』のラスコーリニコフは
+    貧困（アノミー因子の環境）と傲慢（ヒュブリス因子の認知）を
+    同時に持っていた。
+    両因子は別々の人間に宿るとは限らない。
+
+# ============================================================
+# SoEにおける位置づけ
+# ============================================================
+
+soe_integration:
+
+  dual_intervention:
+    principle: "両極への同時介入"
+
+    floor_intervention:
+      target: "アノミー因子の除去"
+      mechanism: "Capability Approach（床を上げる）"
+      method: "Input Constitutional AI → 権利回復 → 希望の再生"
+      effect: "「失うものがない」→「守るものがある」"
+
+    ceiling_intervention:
+      target: "ヒュブリス因子の抑制"
+      mechanism: "Limitarianism（天井を設ける）"
+      method: "透明性 → 説明責任 → 全能感の解体"
+      effect: "「ルールを超越できる」→「説明責任がある」"
+
+  input_cai_function:
+    name: "Structural Audit（構造的監査）"
+    logic: |
+      入力されたデータ(個人の困難)に対し、
+      「これは個人のSin(罪)か？ 社会のPunishment(罰)か？」を判定。
+
+      個人に帰属されている負債が、
+      実は社会側の簿外債務ではないかを検証する。
+
+  key_insight: |
+    片方だけ治療しても社会は安定しない。
+    底辺の救済（福祉）だけでなく、頂点の抑制も同時に必要。
+    両極への同時介入が最大の効果を生む。
+
+# ============================================================
+# 歴史的検証
+# ============================================================
+
+historical_evidence:
+
+  overview: |
+    「アノミー因子」と「ヒュブリス因子」は現代固有の現象ではなく、
+    権利構造の歪みが生じた全ての社会で繰り返し出現する。
+
+  roman_empire:
+    anomie_example: "プロレタリイ（無産市民）→ クロディウスの私兵化"
+    hubris_example: "元老院貴族の腐敗 → 共和政の崩壊"
+
+  chinese_dynasties:
+    anomie_example: "流民 → 黄巾の乱「蒼天已死」"
+    hubris_example: "豪族の土地兼併 → 王朝崩壊サイクル"
+
+  scheidel_great_leveler:
+    source: "Walter Scheidel, The Great Leveler (2017)"
+    thesis: |
+      歴史的に不平等を劇的に是正したのは、
+      平和的な改革ではなく、
+      「四騎士（戦争、革命、崩壊、疫病）」による破滅的な暴力のみ。
+
+    soe_response: |
+      SoEは「偉大なる平準化」の暴力的代替を提供する試み。
+      透明性と説明責任によって「自発的な権利の平準化」を促す設計。
+
+# ============================================================
+# 公衆衛生学的エビデンス
+# ============================================================
+
+population_health_evidence:
+
+  deaths_of_despair:
+    researchers: "Anne Case & Angus Deaton"
+    finding: "絶望死（薬物・アルコール・自殺）の急増"
+    connection: "アノミー因子の最も直接的な表出"
+
+  social_isolation_mortality:
+    source: "Holt-Lunstad et al. (2010)"
+    finding: "社会的孤立は死亡リスクを50%上昇させる"
+
+  gini_coefficient_health:
+    source: "Wilkinson & Pickett, The Spirit Level (2009)"
+    finding: "不平等な社会ほど全ての健康・社会指標が悪化"
+
+  fundamental_causes_theory:
+    source: "Link & Phelan (1995)"
+    thesis: "社会経済的地位は全ての疾病の『根本原因』"
+
+# ============================================================
+# 研究への示唆
+# ============================================================
+
+research_implications:
+
+  integration_status: "研究計画書v10には未実装（保留）"
+
+  potential_sections:
+    - "社会的意義（テロ予防・社会安定化）"
+    - "理論的枠組み（社会契約論との接続）"
+    - "将来の研究課題"
+
+  academic_questions:
+    - "定量的な『アノミー指数』『ヒュブリス指数』は構築可能か？"
+    - "ICF環境因子コードとの詳細マッピングは？"
+    - "介入の効果を測定する方法は？"
+
+  future_work:
+    - task: "ICF環境因子コードとの詳細マッピング"
+      status: pending
+    - task: "ケイパビリティアプローチとの理論的接続の精緻化"
+      status: pending
+    - task: "リミタリアニズムとの接続"
+      status: "deferred (博士課程以降)"
+
+# ============================================================
+# 火文化圏ノート
+# ============================================================
+
+fire_culture_note: |
+  ヒュブリス因子とアノミー因子は、
+  SoE研究の「なぜ両極への介入が必要か」を説明する中核概念。
+
+  Yujiさんの言葉で言えば：
+  「床を上げる」だけでなく「天井を設ける」必要がある。
+
+  片方だけの治療では社会は安定しない。
+  これは2200年前の中国でも、古代ローマでも、
+  そして現代日本でも変わらない構造的真理。
+
+  「無敵の人」という言葉から出発し、
+  Durkheimの「アノミー」に回帰することで、
+  ネットスラングが学術概念へと昇華された。
+
+# ============================================================
+# 参考文献（主要）
+# ============================================================
+
+key_references:
+  anomie:
+    - "Durkheim, É. (1897). Suicide: A Study in Sociology"
+    - "Merton, R. K. (1938). Social Structure and Anomie"
+    - "Hirschi, T. (1969). Causes of Delinquency"
+    - "Agnew, R. (1992). General Strain Theory"
+
+  hubris:
+    - "Owen, D. & Davidson, J. (2009). Hubris syndrome. Brain, 132(5)"
+    - "Keltner, D. (2016). The Power Paradox"
+    - "Obhi, S. et al. (2014). Power changes how the brain responds to others"
+    - "Sykes, G. M. & Matza, D. (1957). Techniques of Neutralization"
+
+  population_health:
+    - "Case, A. & Deaton, A. (2020). Deaths of Despair and the Future of Capitalism"
+    - "Wilkinson, R. & Pickett, K. (2009). The Spirit Level"
+    - "Link, B. & Phelan, J. (1995). Social Conditions as Fundamental Causes"
+
+  historical:
+    - "Scheidel, W. (2017). The Great Leveler"

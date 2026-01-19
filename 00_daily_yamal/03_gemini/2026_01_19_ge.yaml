@@ -1,0 +1,87 @@
+session_meta:
+  topic: "ナラティブアプローチのSoE実装とInput Constitutional AIの監査ロジック構築"
+  date: "2026-01-18"
+  key_insight: "「問題行動」や「症状」と記述されがちな事象を、SoEのレンズ（帳簿の訂正）を通して「生存戦略」や「ユニークな結末（隠れた資産）」として再定義・記録するための変換プロトコルの確立。"
+
+discussion_log:
+  user_perspective: |
+    高IQ（180）・ASD/ADHD診断を持つ20歳当事者の事例を使用。
+    彼らの「防御姿勢」や「ハック志向（効率化）」、「試し行動」を現場感覚でどう捉え、契約（準委任）を結び直すか。
+    また、それを阻害する既存システム（医療・行政・採用面接）をどうハックするか。
+  academic_correction: |
+    ユーザーの実践知（現場の勘）を以下の理論概念に接続・翻訳。
+    1. ユニークな結末（Unique Outcome / Narrative Approach）
+    2. 認識的不正義（Epistemic Injustice / Fricker）
+    3. ネガティブ・ケイパビリティ（Negative Capability / Keats）
+    4. 準委任契約と秘密保持（Quasi-mandate / Confidentiality）
+  synthesis: |
+    Input Constitutional AI（入力段階の憲法的AI）の具体的挙動（アルゴリズム）として、以下の「変換テーブル」を定義。
+    ・「ズル・手抜き」→「最適化（Optimization）・レバレッジ」
+    ・「わがまま・暴言」→「健全な退行（Healthy Regression）・境界線設定」
+    ・「沈黙」→「処理待ち・権利行使」
+    ・「採用時の迷い」→「ネガティブ・ケイパビリティ（適性あり）」
+
+theory_structure:
+  theory_name: "Narrative Approach (Unique Outcome & Externalization)"
+  origin:
+    author: "Michael White & David Epston"
+    year: 1990s
+    context: "家族療法から発展。人を問題と同一化せず、問題を外在化する。"
+  core_thesis: "人は物語（ドミナント・ストーリー）によって構成される。「問題が問題であり、人（クライアント）は問題ではない」。支配的な物語の例外（ユニークな結末）を見つけ出し、オルタナティブ・ストーリーを再著述する。"
+  key_concepts:
+    - name: "Unique Outcome (ユニークな結末)"
+      definition: "問題に満ちた支配的な物語（例：「私はダメな人間だ」）に矛盾する例外的な出来事（例：「あの時だけは手伝えた」）。"
+    - name: "Externalization (外在化)"
+      definition: "問題を個人の内部（性格・病理）ではなく、外部（環境・関係性）にあるものとして語り直す技法。"
+    - name: "Re-authoring (再著述)"
+      definition: "ユニークな結末を繋ぎ合わせ、新たな自己像（物語）を構築すること。"
+  practical_implications: |
+    福祉現場において、利用者の「逸脱行動」や「ふとした善意」をノイズとして捨てず、主権回復のための「証拠」として採用する視座を提供する。
+
+  connection_to_soe:
+    alignment: |
+      SoE Stage 1「帳簿の訂正」と完全に一致。
+      「不当な負債（私は問題児だ）」を消し込むための「隠れた資産」として「ユニークな結末」を使用する。
+    integration_potential: |
+      Input Constitutional AIの核となる機能。
+      支援記録において、医学モデル的な「症状記述（Deficit）」を検知し、ナラティブアプローチ的な「例外記述（Asset）」や「抵抗記述（Resistance）」へと変換を促す監査ロジックとして実装可能。
+
+# ============================================================
+# Input Constitutional AI 実装用定義（今回の成果物）
+# ============================================================
+ai_implementation_definitions:
+  
+  # 1. 認知・行動の再定義タグ
+  behavior_redefinition:
+    - input: "ひろゆき/ホリエモンへの傾倒、制度批判"
+      output_tag: "System Hacking / Optimization (最適化思考)"
+      logic: "現状の不効率（バグ）への感度が高い。将来のイノベーション能力として記録。"
+    
+    - input: "沈黙、無視"
+      output_tag: "Threat Detection / Right to Silence (脅威検知/沈黙権)"
+      logic: "理解不足ではなく、相手の意図（敵意）を演算中の待機状態、または防御。"
+
+    - input: "金銭の浪費、依存的行動"
+      output_tag: "Self-Medication / Buying Belonging (自己投薬/所属の購入)"
+      logic: "ACEsや環境不全に対する生存コスト（コーピング）として計上。"
+
+    - input: "スタッフへの暴言、わがまま"
+      output_tag: "Healthy Regression / Territorial Defense (健全な退行/領域防衛)"
+      logic: "自尊感情回復に伴う「試し行動」。主権（境界線）の再設定プロセス。"
+
+  # 2. 契約・介入プロトコル
+  intervention_protocols:
+    - name: "The Binary Switch (二択スイッチ)"
+      action: "「欲しい言葉（慰め）」か「必要な言葉（武器）」かを本人に選ばせる。"
+      function: "支援の責任所在を「支援者」から「本人（発注者）」へ移動させる主権返還儀式。"
+    
+    - name: "Medical Translation (医療翻訳)"
+      action: "主治医の「できない（予言の呪い）」を「環境因子の不適合」へ翻訳。"
+      function: "二次障害（医原性負債）の防止と、事業所のリスクヘッジ（免責）。"
+
+  # 3. 組織・採用アルゴリズム
+  hr_algorithm:
+    - name: "The Bathing Dilemma (お風呂問題)"
+      criteria: "正解（入らせる）を即答する者はReject。答えのなさに耐え、葛藤する者（ネガティブ・ケイパビリティ）をPass。"
+    - name: "Decontamination Mode (除染モード)"
+      criteria: "スタッフの愚痴（攻撃性）は、本人の公式記録には残さず、スタッフケア用の「ストレスログ」として分離管理する。"

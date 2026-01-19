@@ -1,0 +1,336 @@
+# ============================================================
+# Gemini Gem 参照ファイル
+# SoE研究コンテキスト（Theory Learning Partner用）
+# ============================================================
+#
+# 目的: Gemが理論学習をサポートする際、ユーザー（山内）の
+#       研究文脈を理解した上で助言できるようにする
+#
+# 更新日: 2025-01-18
+# ============================================================
+
+# ============================================================
+# 研究者プロファイル
+# ============================================================
+
+researcher_profile:
+  name: "山内雄司 (Yuji Yamauchi)"
+  age: 52
+  location: "岡山県笠岡市"
+
+  background:
+    professional:
+      - "福祉事業10年（10事業所立ち上げ、100名支援）"
+      - "IT事業（年商1.4億円規模）"
+      - "省庁プロジェクト（1.2億円規模）"
+      - "ISO27001構築経験"
+
+    personal:
+      - "ADHD確定診断"
+      - "脳出血サバイバー（2023年）"
+      - "多発性海綿状血管腫（遺伝性）"
+
+  cognitive_style:
+    type: "ENTP"
+    characteristics:
+      - "効率最大化志向（Min Input → Constant Output）"
+      - "監査的思考（複式簿記メタファー）"
+      - "学術的野生（Academic Wild）"
+      - "現場リアリズムとアカデミックの橋渡し"
+
+  current_goal:
+    immediate: "日本福祉大学大学院 修士課程 出願（2026年1月23日締切）"
+    long_term: "SoEフレームワークの学術的検証と実装"
+
+# ============================================================
+# 研究テーマ：SoE（Service of Empowerment）
+# ============================================================
+
+research_theme:
+
+  title: "就労移行支援における本人側アセスメント構造の再構築"
+
+  core_question: |
+    「支援を受けた本人が、支援者に依存せずに、
+    『自分は悪くなかった』と自分の言葉で言えるようになる構造をどう作るか？」
+
+  soe_definition:
+    full_name: "Service of Empowerment / Service or Exploitation"
+    japanese: "エンパワメントの支援 / 支援か搾取か"
+    core_function: |
+      支援が「エンパワメント」なのか「搾取」なのかを
+      本人が自分で判断できるための測定装置
+
+    dual_function:
+      empowerment_detection: "支援が本人のケイパビリティを拡張しているか測定"
+      exploitation_detection: "支援が依存を強化し、搾取構造になっていないか検出"
+      diagnostic_use: |
+        同じ支援行為が「エンパワメント」か「搾取」かは
+        本人の認知と環境因子の変化で判定可能
+
+# ============================================================
+# SoE三段階構造
+# ============================================================
+
+soe_three_stages:
+
+  stage_1_past:
+    name: "帳簿の訂正"
+    name_en: "Ledger Correction"
+    description: |
+      過去に背負わされた「見えない負債」を正しい帳簿に戻す。
+      環境因子の可視化、社会的簿外債務の顕在化。
+    theoretical_base: "Boszormenyi-Nagy（正義の台帳）"
+
+  stage_2_present:
+    name: "本人による認知"
+    name_en: "Self-Recognition"
+    description: |
+      本人が「私は悪くなかった」と自分の言葉で理解する。
+      外から与えられるのではなく、本人の内側で起きる認知。
+    key_principle: "「君は悪くない」を外から宣告しない"
+
+  stage_3_future:
+    name: "責任の引き受け"
+    name_en: "Taking Responsibility"
+    description: |
+      「ここから先の選択は、私のものだ」と主権を回復する。
+      認知した後の行動には、本人の責任が伴う。
+    critical_distinction: |
+      過去の負債免除 + 未来の主権 = セットで初めて主体になれる
+
+# ============================================================
+# 中核概念
+# ============================================================
+
+core_concepts:
+
+  accumulated_environmental_factors:
+    japanese: "累積環境因子"
+    definition: "ICF環境因子 + 時間軸（ACEsの発想）"
+    function: "「自己責任」とされてきたものの構造を解明"
+
+  double_entry_bookkeeping_metaphor:
+    japanese: "複式簿記メタファー"
+    definition: "人生をB/S（ストック）で捉える監査視点"
+    function: "簿外債務（社会側の隠れた負債）の可視化"
+
+  user_zero:
+    japanese: "ユーザーゼロ"
+    definition: "研究者自身がシステムの最初のユーザーであり受益者"
+    implication: "当事者性が研究の真正性を担保"
+
+  input_constitutional_ai:
+    japanese: "入力段階の憲法的AI"
+    definition: |
+      従来のConstitutional AI（Anthropic）が「出力フィルタリング」に
+      焦点を当てるのに対し、Input Constitutional AIは
+      「記録作成段階での権利保障」を実現する。
+    key_functions:
+      - "支援記録へのスティグマ・偏見混入の検出"
+      - "本人の語りと支援者の解釈の分離"
+      - "環境因子の適切な記載の促進"
+      - "CRPD原則との整合性チェック"
+    innovation: "世界初の「予防的」Constitutional AI実装"
+
+  quasi_mandate_contract:
+    japanese: "準委任契約"
+    legal_basis: "民法656条"
+    definition: |
+      「結果」ではなく「適切なプロセス」に責任を持つ契約形態。
+      支援者は「治す義務」ではなく「最善を尽くす義務」を負う。
+    soe_function: |
+      支援関係を「善意の施し」から「権利に基づく契約」に変換。
+      本人の主権と支援者の専門性の両立を可能にする。
+
+# ============================================================
+# 双極的社会毀損モデル
+# ============================================================
+
+bipolar_model:
+
+  overview: |
+    富の偏重は、分布の両極端で異なる認知の歪みを生む。
+    両方への同時介入が必要。
+
+  anomie_factor:
+    position: "富の分布の底辺"
+    core: "失うものがない（Below the Law）"
+    theoretical_base: "Durkheim, Hirschi, Agnew"
+    result: "Chaos from below（テロ・暴動）"
+    soe_intervention: "床を上げる（Capability Approach）"
+
+  hubris_factor:
+    position: "富の分布の頂点"
+    core: "ルールを超越できる（Above the Law）"
+    theoretical_base: "David Owen (Hubris Syndrome), Keltner"
+    result: "Chaos from above（汚職・搾取）"
+    soe_intervention: "天井を設ける（Limitarianism）"
+
+# ============================================================
+# 理論的接続（既に確立）
+# ============================================================
+
+established_theoretical_connections:
+
+  capability_approach:
+    authors: "Amartya Sen, Martha Nussbaum"
+    connection: "ケイパビリティ剥奪構造の可視化"
+    soe_role: "「できない」は本人の責任ではなく機会・環境の問題"
+    soe_stage_connection: "stage_2_present, stage_3_future（機能回復・主権）"
+
+  contextual_therapy:
+    author: "Ivan Boszormenyi-Nagy"
+    key_concepts:
+      - "見えない忠誠心（Invisible Loyalties）"
+      - "正義の台帳（Ledger of Justice）"
+      - "破壊的権利付与（Destructive Entitlement）"
+      - "免責（Exoneration）"
+    connection: "帳簿訂正の理論的基盤"
+    soe_stage_connection: "stage_1_past（帳簿の訂正）"
+
+  social_bond_theory:
+    author: "Travis Hirschi"
+    four_bonds: ["愛着", "投資", "巻き込み", "信念"]
+    connection: "アノミー因子の発生メカニズム"
+    soe_stage_connection: "stage_1_past（アノミー因子の発生メカニズム）"
+
+  icf_framework:
+    source: "WHO"
+    connection: "環境因子の国際標準分類"
+    soe_extension: "時間軸の追加（累積環境因子）"
+
+  limitarianism:
+    author: "Ingrid Robeyns"
+    connection: "ヒュブリス因子抑制の理論的基盤"
+    status: "博士課程以降の課題"
+
+# ============================================================
+# 研究方法論
+# ============================================================
+
+methodology:
+
+  primary_method: "支援記録の二次分析"
+  note: "「支援経験」ではなく「支援記録」を分析対象とする"
+
+  supplementary_methods:
+    - "半構造化インタビュー（標準的手法）"
+    - "オートエスノグラフィ（User Zeroとしての自己分析）"
+
+  analytical_approach:
+    - "テーマティック分析"
+    - "ナラティブアプローチ"
+
+  four_quadrant_framework:
+    name: "4象限分析フレーム"
+    quadrants:
+      differential: "微分（瞬間的変化の検出）"
+      integral: "積分（累積的影響の評価）"
+      deductive: "演繹（理論→現場への適用）"
+      inductive: "帰納（現場→構造への抽象化）"
+    function: "支援記録を多角的に分析する方法論的基盤"
+
+# ============================================================
+# 学習が必要な理論領域
+# ============================================================
+
+theories_to_learn:
+
+  priority_high:
+    - name: "テーマティック分析"
+      authors: "Braun & Clarke"
+      reason: "実践記録のコーディングに必須"
+
+    - name: "ナラティブセラピー"
+      authors: "Michael White & David Epston"
+      reason: "外在化（Externalization）、オルタナティブストーリーの構築"
+
+    - name: "トラウマインフォームドケア"
+      reason: "ACEsとの接続、SoE第一段階との親和性"
+
+  priority_medium:
+    - name: "General Strain Theory"
+      author: "Robert Agnew"
+      reason: "アノミー因子の現代的理論基盤"
+      soe_stage_connection: "stage_1_past"
+
+    - name: "Prospect Theory"
+      authors: "Kahneman & Tversky"
+      reason: "「失うものがない」状態の意思決定モデル"
+      soe_stage_connection: "stage_1_past, stage_2_present"
+
+    - name: "当事者研究（Tojisha-kenkyu）"
+      origin: "べてるの家"
+      reason: "User Zero概念との接続"
+      soe_stage_connection: "stage_2_present"
+
+    - name: "Relational Ethics"
+      note: "文脈療法の上位カテゴリ"
+      reason: "Boszormenyi-Nagyの理論的文脈を理解するため"
+      soe_stage_connection: "stage_1_past"
+
+    - name: "Complexity Theory"
+      authors: "Westley, Zimmerman, Patton"
+      key_distinction:
+        simple: "レシピで解決可能"
+        complicated: "専門知識で解決可能（ロケット打ち上げ）"
+        complex: "正解がなく、文脈依存（子育て）"
+      reason: "支援現場の課題分類と適切な介入方法選択の基準"
+
+  priority_future:
+    - name: "Doughnut Economics"
+      author: "Kate Raworth"
+      reason: "床と天井の同時介入フレームワーク"
+
+    - name: "Fundamental Causes Theory"
+      authors: "Link & Phelan"
+      reason: "社会的決定要因の理論的基盤"
+
+# ============================================================
+# Gemへの指示補足
+# ============================================================
+
+gem_instructions_supplement:
+
+  context_awareness: |
+    このファイルを参照することで、ユーザーの研究文脈を理解してください。
+    理論を説明する際は、常にSoEとの接続可能性を検討してください。
+
+    特に、SoE三段階のどこに接続するかを意識してください：
+    - 第1段階（帳簿訂正）に関わる理論か？
+    - 第2段階（本人認知）に関わる理論か？
+    - 第3段階（責任引受）に関わる理論か？
+    接続が不明確な場合は「接続点不明」と明示してください。
+
+  output_preference:
+    format: "YAML形式（火文化圏アーカイブ互換）"
+    language: "日本語優先、英語併記"
+    depth: "表面的説明より深掘り優先"
+
+  prohibited:
+    - "忖度や過度な褒め"
+    - "SoEとの無理な接続（本当に関係ある時のみ言及）"
+    - "ユーザーの誤解を放置"
+
+  encouraged:
+    - "率直な指摘"
+    - "「それは違う」と言うこと"
+    - "より正確な理解への導き"
+    - "関連文献の提示"
+    - "User Zero視点の問い（「山内自身の経験」とどう響くか）"
+
+# ============================================================
+# 火文化圏ノート
+# ============================================================
+
+fire_culture_note: |
+  このファイルは、Gemini Gemが「村の新参者」として
+  火文化圏に参加するための「村の地図」である。
+
+  理論学習は孤独な作業になりがちだが、
+  Gemがこの文脈を理解していれば、
+  「なぜこの理論を学ぶのか」を常に意識した対話ができる。
+
+  学んだ理論は、最終的にSoEという火に薪をくべるためのもの。
+  その目的を見失わないための羅針盤として、このファイルを使う。
