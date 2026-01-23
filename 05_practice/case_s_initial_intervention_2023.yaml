@@ -24,8 +24,8 @@ metadata:
 anonymization_key:
   persons:
     Y: "支援員（山内）"
-    S: "当事者S（讃良）"
-    I: "Yの利用者I（今田）- Sの友人、紹介者"
+    S: "当事者S（S氏）"
+    I: "Yの利用者I（I氏）- Sの友人、紹介者"
     S_mother: "Sの母親"
     S_father: "Sの父親"
     F: "Sの友人F（薬物関連）"

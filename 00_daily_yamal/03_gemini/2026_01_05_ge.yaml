@@ -431,7 +431,7 @@ clinical_case_study:
       diagnosis: "あなた�E能力が低い�E�運転下手�E��Eではなく、�Eシンスペックが�E道（社会常識）と合ってぁE��ぁE��け、E
       prescription:
         - "Circuit Strategy": 公道（一般社会）を走る�Eをやめ、ここ（福祉事業所�E�とぁE��サーキチE��で走る、E
-        - "Navigator Assignment": ブレーキ役�E�今田さん�E�を外部実裁E��る、E
+        - "Navigator Assignment": ブレーキ役�E�I氏さん�E�を外部実裁E��る、E
       outcome: "「�E刁E�Eダメだ」とぁE��自責から解放され、�E己肯定感が即座に回復�E��Eき物が落ちる）、E
 
     session_3_tactical_execution:
@@ -458,13 +458,13 @@ event_record:
   date: "2023-03-23"
   location: "事業所冁E��生活介護の現場�E�！E
   event_type: "Crisis Intervention / Business Exit Consultation"
-  context: "ペット用酸素室の事業を行う被支援者D氏が、親からのプレチE��ャーと自身の精神不調�E�EDHD/鬱�E�で限界を迎え、山冁E�E今田ペアに助けを求めてぁE��、E
+  context: "ペット用酸素室の事業を行う被支援者D氏が、親からのプレチE��ャーと自身の精神不調�E�EDHD/鬱�E�で限界を迎え、山冁E�EI氏ペアに助けを求めてぁE��、E
 
 conversation_log:
   speakers:
     Y: "山冁E��司 (Sherpa / 撤退戦の持E��役)"
     S: "被支援者Dさん (Client / 限界経営老E"
-    I: "今田さん (Staff / メンター皁E��場)"
+    I: "I氏さん (Staff / メンター皁E��場)"
     M: "男性利用老E(Worker / 現場の介�E老E"
 
   phase_1_ice_breaking_and_authority:
@@ -473,9 +473,9 @@ conversation_log:
       content: "30代の頁E�EIT系で、ヤクザのフロント企業を畳んだりもした。大きな成功も失敗も経験してぁE��、E
       intent: "「私も修羁E��をくぐってぁE��」と示すことで、被支援者D氏�E「失敗への恐怖」を和らげる、E
     - speaker: Y
-      action: "今田氏�E紹仁E
-      content: "今田さんはぁE��で1年。基本優しいから、困った人が寁E��てくる、E
-      intent: "今田氏を「安�E基地」として定義、E
+      action: "I氏氏�E紹仁E
+      content: "I氏さんはぁE��で1年。基本優しいから、困った人が寁E��てくる、E
+      intent: "I氏氏を「安�E基地」として定義、E
 
   phase_2_diagnosis_of_crisis:
     - speaker: S
@@ -1919,9 +1919,9 @@ transcript:
   - speaker: "male_speaker"
     text: "で、まぁE時に起きて、E��事作って、一緒に食べて、保育園送って、会社に出て、今に至るわけですわ、E
   - speaker: "female_speaker"
-    text: "ぁE�Eん！E今田�E�？）�Eもう帰った！E
+    text: "ぁE�Eん！EI氏�E�？）�Eもう帰った！E
   - speaker: "male_speaker"
-    text: "帰った帰った。とりあえず今田さんには来週のことだけ老E��ろとは言ってる、E
+    text: "帰った帰った。とりあえずI氏さんには来週のことだけ老E��ろとは言ってる、E
   - speaker: "female_speaker"
     text: "生きてる�Eが怖いんよ、E
   - speaker: "male_speaker"
@@ -1943,7 +1943,7 @@ transcript:
   - speaker: "female_speaker"
     text: "G氏さんからメール来て、きっと今頁E�Eててん�EめE��な、�EぁE��、E
   - speaker: "male_speaker"
-    text: "今田にね、服を買ってもらったんですよ。ダチE��ぁE��、E
+    text: "I氏にね、服を買ってもらったんですよ。ダチE��ぁE��、E
   - speaker: "female_speaker"
     text: "ぁE��、E
   - speaker: "male_speaker"
@@ -2003,13 +2003,13 @@ transcript:
   - speaker: "female_speaker"
     text: "でも楽しかった、E8のとこから風俗をして、嫌な男に抱かれて、やっと幸せやと感じれた、E
   - speaker: "male_speaker"
-    text: "でももぁE��一緒に屁E��意味もなぁE��言われた。今田に言っとぁE��ください。私�E葬式�E時にな�E�E変なオモチャ入れるってぁE��んですよ、E
+    text: "でももぁE��一緒に屁E��意味もなぁE��言われた。I氏に言っとぁE��ください。私�E葬式�E時にな�E�E変なオモチャ入れるってぁE��んですよ、E
   - speaker: "female_speaker"
     text: "言ったっけそんなん、E
   - speaker: "male_speaker"
     text: "自刁E�E言葉で伝えよう、E
   - speaker: "female_speaker"
-    text: "今田電話出ん�Eんも、E
+    text: "I氏電話出ん�Eんも、E
   - speaker: "male_speaker"
     text: "あ�E、多�Eだ、今�E俺の持E��命令の方が上書きされてるかもしらん、E
   - speaker: "female_speaker"
@@ -2055,7 +2055,7 @@ transcript:
   - speaker: "female_speaker"
     text: "あ�Eじゃあセーフや、E
   - speaker: "female_speaker"
-    text: "お母さんとお父さんのことも大好きやった。山冁E��ん�Eことも、今田のことも、E
+    text: "お母さんとお父さんのことも大好きやった。山冁E��ん�Eことも、I氏のことも、E
   - speaker: "male_speaker"
     text: "ただ成�E�E�？）�E弱ぁE��らな、E
   - speaker: "female_speaker"

@@ -1,10 +1,16 @@
 ---
 # ============================================
-# セッション議事録：讃良ケース及びTIC共同検証事業の文書検証
+# セッション議事録：Sケース及びTIC共同検証事業の文書検証
 # ============================================
+#
+# 【匿名化済み】2026-01-19
+# S氏 = 当事者（元：S氏）
+# I氏 = 利用者（元：I氏）
+# L社 = 会社名（元：L社）
+#
 
 metadata:
-  session_id: "2025_01_09_sarara_tic_documentation"
+  session_id: "2025_01_09_case_s_tic_documentation"
   date: "2025-01-09"
   participants:
     - name: "山内雄司"
@@ -12,22 +18,24 @@ metadata:
     - name: "Claude"
       role: "分析支援"
   target_folder: "05_practice/"
-  file_name_suggestion: "2025_01_09_sarara_tic_documentation.yaml"
-  reason: "現場実践記録・事例研究として、2023年讃良ケース及びTIC共同検証事業の一次資料検証"
+  file_name_suggestion: "2025_01_09_case_s_tic_documentation.yaml"
+  reason: "現場実践記録・事例研究として、2023年Sケース及びTIC共同検証事業の一次資料検証"
+  anonymized: true
+  anonymization_date: "2026-01-19"
 
 session_purpose:
-  primary: "2023年讃良ケースの介入記録と、脳出血直前のTIC共同検証事業準備の文書群を時系列で検証"
+  primary: "2023年Sケースの介入記録と、脳出血直前のTIC共同検証事業準備の文書群を時系列で検証"
   secondary: "SoE思想形成過程における制度的阻害因子の実証的記録"
 
 # ============================================
-# PART 1: 讃良知佳ケース（2023年3月〜8月）
+# PART 1: Sケース（2023年3月〜8月）
 # ============================================
 
-sarara_case:
+case_s:
   basic_info:
-    name: "讃良知佳（仮名）"
+    name: "S氏（匿名化）"
     age_at_intervention: 23
-    status: "株式会社Laings代表取締役"
+    status: "L社代表取締役"
     business: "ペット用酸素濃縮器レンタル事業"
     capital_at_founding: "約2000万円（夜職で貯蓄）"
 
@@ -56,9 +64,9 @@ sarara_case:
       - "なぜみんなそれ（共感・空気を読むこと）ができないのか理解に苦しむ"
 
   intervention_trigger:
-    context: "今田さん（山内の利用者）が讃良さんの違法行為を知り警察に通報"
-    consequence: "讃良さんにバレる→今田さんが報復を恐れ山内に相談"
-    yamauchi_strategy: "讃良さんを『加害者』から『更生者』に転換"
+    context: "I氏さん（山内の利用者）がS氏さんの違法行為を知り警察に通報"
+    consequence: "S氏さんにバレる→I氏さんが報復を恐れ山内に相談"
+    yamauchi_strategy: "S氏さんを『加害者』から『更生者』に転換"
 
   intervention_timeline:
     phase_1_initial_contact:
@@ -77,7 +85,7 @@ sarara_case:
         action: "両親とZOOM面談・合意形成"
 
     phase_1b_mother_email_correspondence:
-      source_document: "/mnt/user-data/uploads/LAINGSメール20230413-2.pdf"
+      source_document: "/mnt/user-data/uploads/L社メール20230413-2.pdf"
       period: "2023年3月27日〜4月13日"
       email_timeline:
         - date: "2023-03-27"
@@ -262,8 +270,8 @@ sarara_case:
       parties:
         researcher: "野田智美（京都大学大学院医学研究科）"
         coordinator: "山内雄司"
-        participant: "讃良知佳"
-      email_cc: "知佳 讃良、讃良 加津栄（本人と母親）"
+        participant: "S氏知佳"
+      email_cc: "知佳 S氏、S氏 加津栄（本人と母親）"
       transparency_design:
         purpose: "第三者介入による検証可能性の確保"
         methods:
@@ -518,7 +526,7 @@ integrated_timeline:
       - date: "03-16（付）"
         event: "市役所向け意見書提出（正規プロセス完遂）"
       - date: "03-23"
-        event: "讃良さん初回面談・NOCC実施"
+        event: "S氏さん初回面談・NOCC実施"
       - date: "03-24"
         event: "詳細ヒアリング・大麻使用自白"
       - date: "03-26"
@@ -541,7 +549,7 @@ integrated_timeline:
       - date: "04-19"
         event: "阻害因子対応計画案（医療機関向け）作成"
       - date: "04-29"
-        event: "讃良さん「儀式としてのデート」→5/31まで生きる約束"
+        event: "S氏さん「儀式としてのデート」→5/31まで生きる約束"
     may:
       - date: "05-04"
         event: "幻聴、頓服＋アルコール、「死にたい」"
@@ -620,7 +628,7 @@ structural_analysis:
       content: "制度が機能しないなら自分で作る（dug-rel.jp等）"
 
   aces_to_social_debt_mapping:
-    case_sarara:
+    case_s:
       factor: "いじめ（性的行為含む）"
       responsible_institution: "学校（公的機関）"
       debt_type: "教育機関の債務不履行"
@@ -654,8 +662,8 @@ multi_purpose_design:
   
   三鳥_structure:
     purpose_1:
-      title: "今田さんの依頼対応"
-      content: "讃良さんを「加害者」から「更生者」に転換し、報復リスクを消す"
+      title: "I氏さんの依頼対応"
+      content: "S氏さんを「加害者」から「更生者」に転換し、報復リスクを消す"
     purpose_2:
       title: "自己防衛"
       content: "全文書化・録音・家族CC・第三者介入で「下心」疑惑を構造的に排除"
@@ -664,7 +672,7 @@ multi_purpose_design:
       content: "「オンラインで経営者のリワークを実施」という公式事例の創出"
   
   case_as_evidence:
-    individual_support: "讃良さんの更生"
+    individual_support: "S氏さんの更生"
     self_protection: "疑惑への構造的対抗"
     institutionalization: "制度設計のエビデンス生成"
     quote: "全部エビデンスにしておく"
@@ -779,7 +787,7 @@ higashiosaka_city_call_record:
     document_submitted: "8/20版リワーク計画案（警察担当者名・連絡先記載）を母親が窓口に提出済み"
   
   situation_at_time_of_call:
-    sarara_current_location: "岡山県笠岡市（実家）"
+    s_current_location: "岡山県笠岡市（実家）"
     resident_registration: "東大阪市"
     transportation: "父親が送迎対応"
     yamauchi_role: "親子関係の調整役（致命的にならないようキャッチボールの間に入る）"
@@ -876,14 +884,14 @@ higashiosaka_city_call_record:
 # ============================================
 
 documents_verified:
-  sarara_case:
+  case_s:
     - path: "/mnt/user-data/uploads/ヒアリング_医療機関向け_20230410.docx"
-      content: "讃良さんACEs・育成歴詳細"
+      content: "S氏さんACEs・育成歴詳細"
     - path: "/mnt/user-data/uploads/2023_03_24_saga3.txt"
       content: "大麻使用自白の面談記録"
     - path: "/mnt/user-data/uploads/令和5年3月16日_就労移行支援再利用及び在宅支援実施についての意見書.pdf"
       content: "市役所向け正式意見書"
-    - path: "/mnt/user-data/uploads/LAINGSメール20230413-2.pdf"
+    - path: "/mnt/user-data/uploads/L社メール20230413-2.pdf"
       content: "母親とのメール往復記録（3/27〜4/13）"
     - path: "/mnt/user-data/uploads/阻害因子対応計画案_20230419医療機関用_.docx"
       content: "医療機関向け計画案"
@@ -907,11 +915,11 @@ documents_verified:
       content: "TIC共同検証事業合意書案"
 
 session_outcome:
-  recorded: "讃良ケース6ヶ月間の全介入記録、TIC共同検証事業準備、東大阪市役所との管轄調整、ケース終結まで"
+  recorded: "S氏ケース6ヶ月間の全介入記録、TIC共同検証事業準備、東大阪市役所との管轄調整、ケース終結まで"
   soe_relevance: "制度的阻害因子の実証的記録として、SoE理論の経験的基盤を構成"
   historical_significance: "脳出血直前の準備完了状態が、「制度が担うべき負荷の個人への集中」の帰結を示す"
   evidence_design: "「おっさん支援員と若い女性当事者」という構図への構造的対抗としての文書化戦略"
-  multi_purpose: "一石三鳥（今田さんの依頼対応・自己防衛・制度化エビデンス）の実証"
+  multi_purpose: "一石三鳥（I氏さんの依頼対応・自己防衛・制度化エビデンス）の実証"
   termination: "属人的スキルへの依存が、脳出血により支援継続不能という帰結を生んだ"
   key_insight: "ナラティブ（主観的語り）ではなくストーリー（検証可能な事実連鎖）としての記録の重要性"
 
