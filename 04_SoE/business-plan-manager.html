@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5カ年経営計画 数字管理システム</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --success: #059669;
+            --warning: #d97706;
+            --danger: #dc2626;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text: #1e293b;
+            --text-light: #64748b;
+            --border: #e2e8f0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .header p {
+            font-size: 0.875rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 100%;
+            padding: 1.5rem;
+        }
+
+        .controls {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-bottom: 1.5rem;
+            align-items: center;
+        }
+
+        .control-group {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        label {
+            font-weight: 500;
+            font-size: 0.875rem;
+            color: var(--text-light);
+        }
+
+        select, input, button {
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--border);
+            border-radius: 0.5rem;
+            font-size: 0.875rem;
+            transition: all 0.2s;
+        }
+
+        select:focus, input:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+
+        button {
+            background: var(--primary);
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: 500;
+        }
+
+        button:hover {
+            background: var(--primary-dark);
+        }
+
+        button.secondary {
+            background: var(--card-bg);
+            color: var(--text);
+            border: 1px solid var(--border);
+        }
+
+        button.secondary:hover {
+            background: var(--bg);
+        }
+
+        button.success {
+            background: var(--success);
+        }
+
+        button.warning {
+            background: var(--warning);
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 0.75rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .card-header {
+            padding: 1rem 1.5rem;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .card-header h2 {
+            font-size: 1.125rem;
+            font-weight: 600;
+        }
+
+        .table-container {
+            overflow: auto;
+            max-height: 70vh;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.8125rem;
+        }
+
+        th, td {
+            padding: 0.5rem 0.75rem;
+            text-align: left;
+            border: 1px solid var(--border);
+            min-width: 80px;
+            white-space: nowrap;
+        }
+
+        th {
+            background: #f1f5f9;
+            font-weight: 600;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        tr:nth-child(even) {
+            background: #fafafa;
+        }
+
+        tr:hover {
+            background: #f0f9ff;
+        }
+
+        td.editable {
+            cursor: pointer;
+        }
+
+        td.editable:hover {
+            background: #dbeafe;
+        }
+
+        td.editing {
+            padding: 0;
+        }
+
+        td.editing input {
+            width: 100%;
+            padding: 0.5rem 0.75rem;
+            border: 2px solid var(--primary);
+            border-radius: 0;
+            font-size: inherit;
+        }
+
+        td.number {
+            text-align: right;
+            font-family: 'Consolas', 'Monaco', monospace;
+        }
+
+        td.negative {
+            color: var(--danger);
+        }
+
+        td.positive {
+            color: var(--success);
+        }
+
+        .summary-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .summary-card {
+            background: var(--card-bg);
+            padding: 1.25rem;
+            border-radius: 0.75rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .summary-card h3 {
+            font-size: 0.75rem;
+            color: var(--text-light);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.5rem;
+        }
+
+        .summary-card .value {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .summary-card .value.negative {
+            color: var(--danger);
+        }
+
+        .tabs {
+            display: flex;
+            gap: 0.25rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+            background: var(--card-bg);
+            padding: 0.5rem;
+            border-radius: 0.75rem;
+        }
+
+        .tab {
+            padding: 0.5rem 1rem;
+            border: none;
+            background: transparent;
+            cursor: pointer;
+            border-radius: 0.5rem;
+            font-size: 0.8125rem;
+            transition: all 0.2s;
+            color: var(--text-light);
+        }
+
+        .tab:hover {
+            background: var(--bg);
+            color: var(--text);
+        }
+
+        .tab.active {
+            background: var(--primary);
+            color: white;
+        }
+
+        .status {
+            padding: 0.25rem 0.75rem;
+            border-radius: 1rem;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+
+        .status.saved {
+            background: #d1fae5;
+            color: var(--success);
+        }
+
+        .status.modified {
+            background: #fef3c7;
+            color: var(--warning);
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            z-index: 100;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal.show {
+            display: flex;
+        }
+
+        .modal-content {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 1rem;
+            max-width: 500px;
+            width: 90%;
+        }
+
+        .modal-content h3 {
+            margin-bottom: 1rem;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .form-group input {
+            width: 100%;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 3rem;
+            color: var(--text-light);
+        }
+
+        .spinner {
+            width: 40px;
+            height: 40px;
+            border: 3px solid var(--border);
+            border-top-color: var(--primary);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 1rem;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .file-input-wrapper {
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
+        }
+
+        .file-input-wrapper input[type=file] {
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;
+            cursor: pointer;
+            width: 100%;
+            height: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .controls {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            
+            .control-group {
+                flex-direction: column;
+                align-items: stretch;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>5カ年経営計画 数字管理システム</h1>
+        <p>事業計画の数値をブラウザ上で管理・編集</p>
+    </div>
+
+    <div class="container">
+        <div class="controls">
+            <div class="control-group">
+                <label>データソース:</label>
+                <div class="file-input-wrapper">
+                    <button class="secondary">JSONファイルを選択</button>
+                    <input type="file" id="fileInput" accept=".json">
+                </div>
+                <button id="loadSample" class="secondary">サンプルデータ</button>
+            </div>
+            <div class="control-group">
+                <button id="exportJson" class="secondary">JSONエクスポート</button>
+                <button id="exportCsv" class="secondary">CSVエクスポート</button>
+            </div>
+            <span id="status" class="status saved">保存済み</span>
+        </div>
+
+        <div class="summary-cards" id="summaryCards">
+            <!-- Summary cards will be inserted here -->
+        </div>
+
+        <div class="tabs" id="tabs">
+            <!-- Tabs will be inserted here -->
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h2 id="sheetTitle">シートを選択してください</h2>
+                <div class="control-group">
+                    <input type="text" id="searchInput" placeholder="検索..." style="width: 200px;">
+                </div>
+            </div>
+            <div class="table-container" id="tableContainer">
+                <div class="loading">
+                    <div class="spinner"></div>
+                    <p>JSONファイルを読み込んでください</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="editModal">
+        <div class="modal-content">
+            <h3>セル編集</h3>
+            <div class="form-group">
+                <label>値:</label>
+                <input type="text" id="editValue">
+            </div>
+            <div style="display: flex; gap: 1rem; justify-content: flex-end;">
+                <button class="secondary" id="cancelEdit">キャンセル</button>
+                <button id="saveEdit">保存</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Global state
+        let data = null;
+        let currentSheet = null;
+        let isModified = false;
+        let editingCell = null;
+
+        // Sheet name mapping (Japanese names)
+        const sheetNameMap = {
+            '事業評価【A案・税引前】': '事業評価（税引前）',
+            '事業評価【A案・税引後】': '事業評価（税引後）',
+            'Sheet2': '出店計画',
+            '売上計画': '売上計画',
+            'シェル ': 'シェル店舗',
+            'ACT01': 'ACT01',
+            'ACT川崎': 'ACT川崎',
+            'シェルあざみ野': 'シェルあざみ野',
+            '基礎': '基礎データ',
+            'PL': '損益計算書(PL)',
+            'CF': 'キャッシュフロー(CF)',
+            'BS': '貸借対照表(BS)',
+            '店舗初期投資': '店舗初期投資',
+            '店舗投資詳細': '店舗投資詳細',
+            '金融機関': '金融機関',
+            'Sheet3': '計算シート',
+            '金融借入': '金融借入',
+            '金融借入（移行計算）': '借入移行計算',
+            'Sheet1': 'メモ'
+        };
+
+        // DOM elements
+        const fileInput = document.getElementById('fileInput');
+        const loadSampleBtn = document.getElementById('loadSample');
+        const exportJsonBtn = document.getElementById('exportJson');
+        const exportCsvBtn = document.getElementById('exportCsv');
+        const tabsContainer = document.getElementById('tabs');
+        const tableContainer = document.getElementById('tableContainer');
+        const sheetTitle = document.getElementById('sheetTitle');
+        const statusEl = document.getElementById('status');
+        const summaryCards = document.getElementById('summaryCards');
+        const searchInput = document.getElementById('searchInput');
+        const editModal = document.getElementById('editModal');
+        const editValue = document.getElementById('editValue');
+        const saveEditBtn = document.getElementById('saveEdit');
+        const cancelEditBtn = document.getElementById('cancelEdit');
+
+        // Format number with commas
+        function formatNumber(num) {
+            if (num === null || num === undefined || num === '') return '';
+            if (typeof num === 'string' && isNaN(parseFloat(num))) return num;
+            const n = parseFloat(num);
+            if (isNaN(n)) return num;
+            return n.toLocaleString('ja-JP', { maximumFractionDigits: 2 });
+        }
+
+        // Check if value is a number
+        function isNumeric(val) {
+            if (val === null || val === undefined || val === '') return false;
+            return !isNaN(parseFloat(val)) && isFinite(val);
+        }
+
+        // Update status
+        function setModified(modified) {
+            isModified = modified;
+            statusEl.textContent = modified ? '変更あり' : '保存済み';
+            statusEl.className = 'status ' + (modified ? 'modified' : 'saved');
+        }
+
+        // Create tabs
+        function createTabs() {
+            if (!data) return;
+            
+            tabsContainer.innerHTML = '';
+            const prioritySheets = ['PL', 'CF', 'BS', '基礎', '売上計画', '事業評価【A案・税引前】'];
+            const sheets = Object.keys(data);
+            
+            // Sort sheets: priority first, then others
+            const sortedSheets = [
+                ...prioritySheets.filter(s => sheets.some(sheet => sheet.includes(s) || sheet === s)),
+                ...sheets.filter(s => !prioritySheets.some(p => s.includes(p) || s === p))
+            ];
+
+            // Remove duplicates
+            const uniqueSheets = [...new Set(sortedSheets.map(s => 
+                sheets.find(sheet => sheet === s || sheet.includes(s)) || s
+            ))].filter(s => sheets.includes(s));
+
+            uniqueSheets.forEach((sheet, index) => {
+                const tab = document.createElement('button');
+                tab.className = 'tab' + (index === 0 ? ' active' : '');
+                tab.textContent = sheetNameMap[sheet] || sheet;
+                tab.onclick = () => selectSheet(sheet);
+                tabsContainer.appendChild(tab);
+            });
+
+            if (uniqueSheets.length > 0) {
+                selectSheet(uniqueSheets[0]);
+            }
+        }
+
+        // Select sheet
+        function selectSheet(sheetName) {
+            currentSheet = sheetName;
+            sheetTitle.textContent = sheetNameMap[sheetName] || sheetName;
+            
+            // Update active tab
+            document.querySelectorAll('.tab').forEach(tab => {
+                const tabName = Object.keys(sheetNameMap).find(k => sheetNameMap[k] === tab.textContent) || tab.textContent;
+                tab.classList.toggle('active', tabName === sheetName || sheetName.includes(tab.textContent));
+            });
+
+            renderTable();
+            updateSummary();
+        }
+
+        // Render table
+        function renderTable() {
+            if (!data || !currentSheet || !data[currentSheet]) {
+                tableContainer.innerHTML = '<div class="loading"><p>データがありません</p></div>';
+                return;
+            }
+
+            const sheetData = data[currentSheet];
+            const searchTerm = searchInput.value.toLowerCase();
+            
+            let html = '<table><thead><tr>';
+            
+            // Create header row (use first row or generate column letters)
+            const maxCols = Math.max(...sheetData.map(row => row.length));
+            html += '<th>#</th>';
+            for (let i = 0; i < maxCols; i++) {
+                const letter = String.fromCharCode(65 + (i % 26));
+                const prefix = i >= 26 ? String.fromCharCode(64 + Math.floor(i / 26)) : '';
+                html += `<th>${prefix}${letter}</th>`;
+            }
+            html += '</tr></thead><tbody>';
+
+            // Create data rows
+            sheetData.forEach((row, rowIndex) => {
+                // Filter by search term
+                const rowText = row.join(' ').toLowerCase();
+                if (searchTerm && !rowText.includes(searchTerm)) return;
+
+                html += `<tr><td>${rowIndex + 1}</td>`;
+                for (let colIndex = 0; colIndex < maxCols; colIndex++) {
+                    const cellValue = row[colIndex] !== undefined ? row[colIndex] : '';
+                    const isNumber = isNumeric(cellValue);
+                    const displayValue = isNumber ? formatNumber(cellValue) : cellValue;
+                    const isNegative = isNumber && parseFloat(cellValue) < 0;
+                    
+                    const classes = ['editable'];
+                    if (isNumber) classes.push('number');
+                    if (isNegative) classes.push('negative');
+                    
+                    html += `<td class="${classes.join(' ')}" 
+                                data-row="${rowIndex}" 
+                                data-col="${colIndex}"
+                                data-value="${cellValue}"
+                                onclick="startEdit(this)">${displayValue}</td>`;
+                }
+                html += '</tr>';
+            });
+
+            html += '</tbody></table>';
+            tableContainer.innerHTML = html;
+        }
+
+        // Start editing cell
+        function startEdit(cell) {
+            editingCell = cell;
+            const value = cell.dataset.value;
+            editValue.value = value;
+            editModal.classList.add('show');
+            editValue.focus();
+            editValue.select();
+        }
+
+        // Save edit
+        function saveEdit() {
+            if (!editingCell) return;
+            
+            const row = parseInt(editingCell.dataset.row);
+            const col = parseInt(editingCell.dataset.col);
+            const newValue = editValue.value;
+            
+            // Update data
+            if (data[currentSheet][row]) {
+                const parsedValue = isNumeric(newValue) ? parseFloat(newValue) : newValue;
+                data[currentSheet][row][col] = parsedValue;
+                setModified(true);
+            }
+            
+            editModal.classList.remove('show');
+            editingCell = null;
+            renderTable();
+            updateSummary();
+        }
+
+        // Cancel edit
+        function cancelEdit() {
+            editModal.classList.remove('show');
+            editingCell = null;
+        }
+
+        // Update summary cards
+        function updateSummary() {
+            if (!data) {
+                summaryCards.innerHTML = '';
+                return;
+            }
+
+            let html = '';
+            
+            // Try to extract key metrics from PL sheet
+            const plSheet = Object.keys(data).find(s => s === 'PL' || s.includes('PL'));
+            if (plSheet && data[plSheet]) {
+                const plData = data[plSheet];
+                
+                // Extract metrics based on actual structure
+                let totalRevenue = 0;      // 総売上
+                let trainingRevenue = 0;   // 訓練給付金等
+                let operatingProfit = 0;   // 営業利益
+                let grossProfit = 0;       // 売上総利益
+                
+                plData.forEach(row => {
+                    if (row[1] && typeof row[1] === 'string') {
+                        // 最新年度(R4)のデータを取得（列5）、なければR3（列4）
+                        const getValue = (r) => {
+                            if (isNumeric(r[5])) return parseFloat(r[5]);
+                            if (isNumeric(r[4])) return parseFloat(r[4]);
+                            if (isNumeric(r[3])) return parseFloat(r[3]);
+                            return 0;
+                        };
+                        
+                        if (row[1] === '総売上') {
+                            totalRevenue = getValue(row);
+                        }
+                        if (row[1] === '訓練給付金等') {
+                            trainingRevenue = getValue(row);
+                        }
+                        if (row[1].includes('営業利益')) {
+                            operatingProfit = getValue(row);
+                        }
+                        if (row[1].includes('売上総利益')) {
+                            grossProfit = getValue(row);
+                        }
+                    }
+                });
+
+                if (totalRevenue) {
+                    html += `
+                        <div class="summary-card">
+                            <h3>総売上高</h3>
+                            <div class="value">${formatNumber(totalRevenue)}円</div>
+                        </div>
+                    `;
+                }
+                if (trainingRevenue) {
+                    html += `
+                        <div class="summary-card">
+                            <h3>訓練給付金等</h3>
+                            <div class="value">${formatNumber(trainingRevenue)}円</div>
+                        </div>
+                    `;
+                }
+                if (grossProfit || operatingProfit) {
+                    const profit = operatingProfit || grossProfit;
+                    html += `
+                        <div class="summary-card">
+                            <h3>営業利益</h3>
+                            <div class="value ${profit < 0 ? 'negative' : 'positive'}">${formatNumber(profit)}円</div>
+                        </div>
+                    `;
+                }
+            }
+
+            // Count sheets and cells
+            const sheetCount = Object.keys(data).length;
+            let cellCount = 0;
+            let numericCells = 0;
+            Object.values(data).forEach(sheet => {
+                sheet.forEach(row => {
+                    row.forEach(c => {
+                        if (c !== '' && c !== null) {
+                            cellCount++;
+                            if (isNumeric(c)) numericCells++;
+                        }
+                    });
+                });
+            });
+
+            html += `
+                <div class="summary-card">
+                    <h3>シート数</h3>
+                    <div class="value">${sheetCount}</div>
+                </div>
+                <div class="summary-card">
+                    <h3>数値データ数</h3>
+                    <div class="value">${formatNumber(numericCells)}</div>
+                </div>
+            `;
+
+            summaryCards.innerHTML = html;
+        }
+
+        // Load JSON file
+        function loadFile(file) {
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                try {
+                    data = JSON.parse(e.target.result);
+                    createTabs();
+                    setModified(false);
+                } catch (err) {
+                    alert('JSONファイルの読み込みに失敗しました: ' + err.message);
+                }
+            };
+            reader.readAsText(file, 'UTF-8');
+        }
+
+        // Load sample data (embedded)
+        function loadSampleData() {
+            // Try to fetch from the same directory
+            fetch('excel_data.json')
+                .then(response => {
+                    if (!response.ok) throw new Error('File not found');
+                    return response.json();
+                })
+                .then(jsonData => {
+                    data = jsonData;
+                    createTabs();
+                    setModified(false);
+                })
+                .catch(err => {
+                    alert('excel_data.json を同じフォルダに配置してください。\n\nエラー: ' + err.message);
+                });
+        }
+
+        // Export to JSON
+        function exportJson() {
+            if (!data) {
+                alert('エクスポートするデータがありません');
+                return;
+            }
+            
+            const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'business_plan_' + new Date().toISOString().slice(0, 10) + '.json';
+            a.click();
+            URL.revokeObjectURL(url);
+            setModified(false);
+        }
+
+        // Export to CSV
+        function exportCsv() {
+            if (!data || !currentSheet) {
+                alert('エクスポートするデータがありません');
+                return;
+            }
+            
+            const sheetData = data[currentSheet];
+            const csv = sheetData.map(row => 
+                row.map(cell => {
+                    if (cell === null || cell === undefined) return '';
+                    const str = String(cell);
+                    if (str.includes(',') || str.includes('"') || str.includes('\n')) {
+                        return '"' + str.replace(/"/g, '""') + '"';
+                    }
+                    return str;
+                }).join(',')
+            ).join('\n');
+            
+            const bom = '\uFEFF';
+            const blob = new Blob([bom + csv], { type: 'text/csv;charset=utf-8' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `${currentSheet}_${new Date().toISOString().slice(0, 10)}.csv`;
+            a.click();
+            URL.revokeObjectURL(url);
+        }
+
+        // Event listeners
+        fileInput.addEventListener('change', (e) => {
+            if (e.target.files[0]) {
+                loadFile(e.target.files[0]);
+            }
+        });
+
+        loadSampleBtn.addEventListener('click', loadSampleData);
+        exportJsonBtn.addEventListener('click', exportJson);
+        exportCsvBtn.addEventListener('click', exportCsv);
+        saveEditBtn.addEventListener('click', saveEdit);
+        cancelEditBtn.addEventListener('click', cancelEdit);
+
+        searchInput.addEventListener('input', () => {
+            renderTable();
+        });
+
+        editValue.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') saveEdit();
+            if (e.key === 'Escape') cancelEdit();
+        });
+
+        editModal.addEventListener('click', (e) => {
+            if (e.target === editModal) cancelEdit();
+        });
+
+        // Warn before leaving if modified
+        window.addEventListener('beforeunload', (e) => {
+            if (isModified) {
+                e.preventDefault();
+                e.returnValue = '';
+            }
+        });
+
+        // Keyboard shortcuts
+        document.addEventListener('keydown', (e) => {
+            if (e.ctrlKey && e.key === 's') {
+                e.preventDefault();
+                exportJson();
+            }
+        });
+    </script>
+</body>
+</html>

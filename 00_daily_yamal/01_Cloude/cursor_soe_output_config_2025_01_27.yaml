@@ -1,0 +1,114 @@
+# ============================================
+# Cursor導入・SoE実装フォルダ設定
+# ============================================
+# 作成日: 2025-01-27
+# 作成者: Puu（Claude Opus 4.5との協働）
+# 対象: VS Claude（Claude Code）への引き継ぎ情報
+# ============================================
+
+metadata:
+  target_folder: "99_daily_yamal/01_Claude/"
+  file_name: "cursor_soe_output_config_2025_01_27.yaml"
+  purpose: "Cursor導入状況とSoE実装フォルダの運用ルール共有"
+
+# =================== 状況説明 ===================
+
+situation_summary:
+  date: "2025-01-27"
+  event: "Cursorエディタの新規導入"
+  
+  background:
+    - "PuuはこれまでVS Code + Claude Codeで開発環境を構築"
+    - "SoE実装フェーズに向け、AIコーディング支援ツールとしてCursorを追加導入"
+    - "Cursorは無料アカウントで取得（Free Plan）"
+  
+  setup_completed:
+    - "VS Codeからの設定・拡張機能インポート"
+    - "キーバインディング: VS Code互換"
+    - "ターミナルコマンド（cursor）のインストール"
+
+# =================== ツール役割分担 ===================
+
+tool_responsibilities:
+  
+  claude_code_vscode:
+    primary_use:
+      - "研究記録・YAML・Markdownドキュメント作成"
+      - "セッション議事録の構造化"
+      - "プロジェクト知識の管理・参照"
+    repository: "input-constitutional-ai（全体）"
+    note: "既存の運用を継続"
+  
+  cursor:
+    primary_use:
+      - "SoE実装コード開発"
+      - "AIエージェント支援によるコーディング"
+      - "納品物・成果物の作成"
+    output_directory: "C:\\Users\\USER\\Documents\\GitHub\\input-constitutional-ai\\04_SoE"
+    note: "実装専用ツールとして新規運用開始"
+
+# =================== 04_SoE フォルダ運用ルール ===================
+
+soe_implementation_folder:
+  
+  path: "C:\\Users\\USER\\Documents\\GitHub\\input-constitutional-ai\\04_SoE"
+  
+  purpose: "SoEシステムの技術実装・コード成果物の格納"
+  
+  designated_tool: "Cursor"
+  
+  folder_structure_suggestion:
+    04_SoE:
+      - "src/"           # ソースコード
+      - "docs/"          # 技術ドキュメント
+      - "tests/"         # テストコード
+      - "outputs/"       # 生成物・納品物
+      - "README.md"      # フォルダ説明
+  
+  naming_conventions:
+    code_files: "snake_case（例: soe_assessment.py）"
+    config_files: "snake_case.yaml/json"
+    documentation: "descriptive_name.md"
+  
+  git_workflow:
+    - "Cursorで編集 → ローカルコミット → GitHubプッシュ"
+    - "Claude Codeとの同時編集は避ける（競合防止）"
+
+# =================== 注意事項 ===================
+
+cautions:
+  
+  concurrent_editing:
+    risk: "CursorとClaude Codeで同じファイルを同時編集すると競合の可能性"
+    mitigation:
+      - "04_SoE配下はCursor専用とする"
+      - "他フォルダ（00_daily_yamal等）はClaude Code/VS Code使用"
+      - "同一ファイルの同時編集を避ける"
+  
+  file_safety:
+    rule: "既存ファイルの上書き・削除は事前確認必須"
+    applies_to: "Cursor, Claude Code両方"
+
+# =================== VS Claudeへの依頼事項 ===================
+
+request_to_vs_claude:
+  
+  acknowledgment:
+    - "04_SoEフォルダがCursor成果物出力先として設定されたことを認識してください"
+    - "04_SoE配下のファイル編集はCursorが担当することを前提としてください"
+  
+  coordination:
+    - "04_SoE関連の議論・設計はClaude Codeでも可能"
+    - "ただし実装コードの直接編集はCursorに委ねる"
+    - "設計ドキュメント（.md）はどちらでも編集可"
+  
+  knowledge_sharing:
+    - "Cursorでの実装進捗は必要に応じてYAML記録として共有"
+    - "04_SoEの技術仕様が確定したらプロジェクト知識として登録検討"
+
+# =================== 記録署名 ===================
+
+signature:
+  recorded_by: "Claude Opus 4.5"
+  session_context: "Cursor初期設定支援セッション"
+  timestamp: "2025-01-27T14:30:00+09:00"

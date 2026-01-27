@@ -1,0 +1,190 @@
+# セッション作業報告書
+# 火文化圏: 記録されることでのみ、問いは再燃可能となる
+
+session:
+  date: "2026-01-27"
+  time_start: "14:40 JST (estimated)"
+  ai_agent: "Cursor (Claude Opus 4.5)"
+  researcher: "山内雄司"
+  
+task:
+  title: "5カ年経営計画書 Webアプリ化"
+  request: |
+    Excelファイル「【参考資料１】5カ年経営計画書.xlsx」を読み込んで、
+    ブラウザ上で事業計画用の数字管理ができるようにしたい
+  background: |
+    就労継続支援A型・B型事業の5カ年経営計画書をWeb化することで、
+    Excel依存からの脱却と、ブラウザでの即時アクセス・編集を可能にする
+
+deliverables:
+  - file: "04_SoE/business-plan-manager.html"
+    type: "Single Page Application (HTML/CSS/JavaScript)"
+    description: "ブラウザで動作する事業計画数字管理システム"
+    features:
+      - シート切替タブ（PL/CF/BS/売上計画など19シート対応）
+      - セル編集機能（クリックでモーダル編集）
+      - 検索・フィルタリング機能
+      - JSON/CSVエクスポート機能
+      - サマリーカード（総売上・訓練給付金・営業利益を自動計算）
+      - レスポンシブデザイン
+      - キーボードショートカット対応
+    tech_stack:
+      - Vanilla JavaScript (フレームワーク不使用)
+      - CSS Grid/Flexbox
+      - LocalStorage対応可能な設計
+      
+  - file: "04_SoE/excel_data.json"
+    type: "JSON Data"
+    description: "Excelから抽出した全シートデータ（UTF-8）"
+    size: "約75KB"
+    sheets_count: 19
+    sheets:
+      - name: "事業評価【A案・税引前】"
+        rows: 55
+        cols: 14
+      - name: "事業評価【A案・税引後】"
+        rows: 55
+        cols: 14
+      - name: "Sheet2（出店計画）"
+        rows: 29
+        cols: 25
+      - name: "売上計画"
+        rows: 49
+        cols: 36
+      - name: "シェル（店舗）"
+        rows: 56
+        cols: 68
+      - name: "ACT01"
+        rows: 56
+        cols: 68
+      - name: "ACT川崎"
+        rows: 54
+        cols: 52
+      - name: "シェルあざみ野"
+        rows: 39
+        cols: 55
+      - name: "基礎"
+        rows: 96
+        cols: 53
+      - name: "PL（損益計算書）"
+        rows: 46
+        cols: 6
+      - name: "CF（キャッシュフロー）"
+        rows: 57
+        cols: 8
+      - name: "BS（貸借対照表）"
+        rows: 17
+        cols: 17
+      - name: "店舗初期投資"
+        rows: 45
+        cols: 15
+      - name: "店舗投資詳細"
+        rows: 51
+        cols: 7
+      - name: "金融機関"
+        rows: 69
+        cols: 36
+      - name: "金融借入"
+        rows: 492
+        cols: 72
+      - name: "金融借入（移行計算）"
+        rows: 9
+        cols: 149
+
+process:
+  steps:
+    - step: 1
+      action: "プロジェクトルール確認"
+      detail: ".cursorrules と CLAUDE.md を読み込み、04_SoE/のみ編集可能であることを確認"
+      
+    - step: 2
+      action: "Excelファイル存在確認"
+      detail: "日本語ファイル名の文字コード問題に対処しながらファイル特定"
+      challenge: "PowerShellでの日本語ファイル名の文字化け"
+      solution: "Python glob を使用してファイルパスを取得"
+      
+    - step: 3
+      action: "Excel構造解析"
+      detail: "openpyxl を使用して全シート構造を把握"
+      finding: |
+        就労継続支援事業の経営計画書
+        - 複数店舗（シェル笠岡、ACT01川崎、シェルあざみ野）
+        - 財務三表（PL/CF/BS）
+        - 返済シミュレーション
+        - 店舗投資計画
+        
+    - step: 4
+      action: "データ抽出・JSON変換"
+      detail: "data_only=True で計算値を抽出し、UTF-8 JSON として保存"
+      output: "excel_data.json (75KB, 19シート)"
+      
+    - step: 5
+      action: "Webアプリ開発"
+      detail: "単一HTMLファイルでSPAを構築"
+      design_decisions:
+        - フレームワーク不使用（依存関係なし、即座に動作）
+        - モダンUI（CSS Grid/Flexbox, 変数によるテーマ）
+        - 編集機能（モーダル方式で誤操作防止）
+        - サマリー自動計算（PLシートから主要KPI抽出）
+        
+    - step: 6
+      action: "シート名マッピング最適化"
+      detail: "実際のシート名を確認し、日本語ラベルを設定"
+
+key_metrics_extracted:
+  from_pl_sheet:
+    総売上_R4: 166438327
+    訓練給付金等_R4: 139618300
+    営業利益_R4: 43401778
+    営業利益_R3: -7297026  # 初年度赤字から黒字転換
+
+technical_notes:
+  challenges_resolved:
+    - issue: "PowerShell での日本語文字化け"
+      cause: "コンソールのエンコーディング設定"
+      resolution: "Python の sys.stdout.reconfigure(encoding='utf-8') および repr() 使用"
+      
+    - issue: "Excel数式 vs 計算値"
+      cause: "openpyxl デフォルトは数式を返す"
+      resolution: "data_only=True オプションで計算値を取得"
+      
+    - issue: "ブラウザでのローカルファイル読み込み制限"
+      cause: "CORS / Same-origin policy"
+      resolution: "fetch API でフォールバック、手動アップロード機能も提供"
+
+usage_instructions:
+  basic:
+    - "business-plan-manager.html をブラウザで開く"
+    - "「サンプルデータ」ボタンで excel_data.json を読み込み"
+    - "タブでシート切替、セルクリックで編集"
+    - "「JSONエクスポート」で変更を保存"
+  keyboard_shortcuts:
+    - "Ctrl+S: JSONエクスポート"
+    - "Enter: 編集確定"
+    - "Esc: 編集キャンセル"
+  browser_compatibility:
+    - "Edge: 推奨（ローカルファイル制限なし）"
+    - "Firefox: 動作確認済み"
+    - "Chrome: --allow-file-access-from-files が必要な場合あり"
+
+future_enhancements:
+  suggested:
+    - グラフ・チャート表示機能（Chart.js統合）
+    - 年度比較ビュー
+    - 予実対比機能
+    - Excelエクスポート機能（SheetJS統合）
+    - LocalStorage による自動保存
+    - 印刷用レイアウト
+
+reflection:
+  success_factors:
+    - Excelの複雑な構造を維持しながらWeb化
+    - フレームワーク不使用で即時動作可能
+    - 日本語完全対応（UTF-8）
+  learning:
+    - PowerShell + 日本語 + Python の組み合わせには注意が必要
+    - openpyxl の data_only モードは計算値取得に有効
+  
+---
+# 最終更新: 2026-01-27
+# 作成者: Cursor (Claude Opus 4.5)

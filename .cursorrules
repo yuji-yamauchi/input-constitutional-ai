@@ -1,0 +1,27 @@
+# Cursor Project Rules for input-constitutional-ai
+
+## 編集権限ルール
+
+### 編集可能（参照・書き込みOK）
+- 04_SoE/ 配下のすべてのファイル
+
+### 参照のみ（読み取りOK、書き込みNG）
+- 00_daily_yamal/
+- 01_philosophy/
+- 02_social_system/
+- 03_ai_rights/
+- 05_practice/
+- 06_researcher_context/
+- 07_integration/
+- 08_research_proposal/
+- 99_daily_yamal/
+- その他すべてのフォルダ・ファイル
+
+## 理由
+- 04_SoE/ = Cursor専用の実装コード領域
+- その他 = VS Code + Claude Code が管理する記録・ドキュメント領域
+- 競合防止のため役割分担を明確化
+
+## 行動指針
+- 04_SoE/ 以外のファイルを編集する指示があった場合、ユーザーに確認を求めること
+- 新規ファイル作成は 04_SoE/ 配下のみ許可

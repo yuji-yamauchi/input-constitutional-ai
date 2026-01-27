@@ -1,0 +1,201 @@
+# ============================================
+# 統合日報 - 2026年1月27日
+# ============================================
+# 火文化圏: 記録されなかった問いは燃え尽きたものと見なされる
+
+report_metadata:
+  date: "2026-01-27"
+  type: "integrated_daily_report"
+  created_by: "Claude Opus 4.5 (VS Code)"
+  researcher: "山内雄司（Puu）"
+
+# ============================================
+# 1. 本日のセッション一覧
+# ============================================
+
+sessions:
+
+  - id: gemini_session
+    source: "00_daily_yamal/03_gemini/2026_01_27_ge.yaml"
+    ai: "Gemini (Strategic Staff Officer)"
+    title: "経営計画データ復元 & SOE定量的証明"
+    summary:
+      - "バラバラのCSVを分析可能なExcelに統合"
+      - "AIコーディングツール選定（Cursor=SS評価）"
+      - "SOE理論（成功＝排除）の定量証明グラフをPythonで作成"
+      - "30分以内で売上増→構造的コスト増を可視化"
+    key_insight: "数字は構造しか語らない。怨念（現場リアリズム）を吹き込むのはPuuの仕事"
+
+  - id: cursor_session
+    source: "04_SoE/00_daily_yamal/2026_01_27_business_plan_app.yaml"
+    ai: "Cursor (Claude Opus 4.5)"
+    title: "5カ年経営計画書 Webアプリ化"
+    summary:
+      - "Excelファイル（19シート）をJSON変換"
+      - "business-plan-manager.html（SPA）を開発"
+      - "シート切替・セル編集・検索・エクスポート機能を実装"
+      - "フレームワーク不使用で即時動作可能"
+    deliverables:
+      - "04_SoE/business-plan-manager.html"
+      - "04_SoE/excel_data.json"
+
+  - id: claude_code_session
+    source: "MENTA/mentor_resources/learning/2026_01_27_session_minutes.yaml"
+    ai: "Claude Code (Opus 4.5, VS Code)"
+    title: "Excel財務三表の分析・修正・Python再構築"
+    summary:
+      - "PLシミュレーター（Streamlit）の動作確認"
+      - "元Excelの貸借不一致の原因特定（売掛回収サイト設定ミス）"
+      - "条件付き書式による手打ちセル可視化手法の提示"
+      - "三表連動Excel（5year_plan_template.xlsx）の新規作成"
+      - "Cursor導入・ツール役割分担の設定"
+    deliverables:
+      - "learning/pl_simulator.py"
+      - "learning/create_excel.py"
+      - "learning/5year_plan_template.xlsx"
+    key_discovery:
+      issue: "売掛回収サイトの設定ミス"
+      detail: "当月80%回収の数式 → 実態は2ヶ月後回収（福祉事業の業界標準）"
+      impact: "CF→BS全体に影響し、貸借差額△10,538,157円を発生"
+
+# ============================================
+# 2. 本日の成果物一覧
+# ============================================
+
+deliverables_summary:
+
+  code:
+    - path: "learning/pl_simulator.py"
+      tool: "Claude Code"
+      description: "Streamlit PLシミュレーター"
+
+    - path: "learning/create_excel.py"
+      tool: "Claude Code"
+      description: "openpyxl Excel生成スクリプト"
+
+    - path: "04_SoE/business-plan-manager.html"
+      tool: "Cursor"
+      description: "経営計画書Webアプリ（SPA）"
+
+  data:
+    - path: "learning/5year_plan_template.xlsx"
+      tool: "Claude Code"
+      description: "三表連動Excelテンプレート（PL/CF/BS/凡例）"
+
+    - path: "04_SoE/excel_data.json"
+      tool: "Cursor"
+      description: "Excel全19シートのJSON変換データ"
+
+  records:
+    - path: "00_daily_yamal/03_gemini/2026_01_27_ge.yaml"
+      tool: "Gemini"
+      description: "Geminiセッション議事録"
+
+    - path: "00_daily_yamal/01_Cloude/cursor_soe_output_config_2025_01_27.yaml"
+      tool: "Claude Code"
+      description: "Cursor導入・SoEフォルダ設定"
+
+    - path: "learning/2026_01_27_session_minutes.yaml"
+      tool: "Claude Code"
+      description: "Claude Codeセッション議事録（全12プロンプト）"
+
+# ============================================
+# 3. ツール環境の変化
+# ============================================
+
+environment_changes:
+
+  cursor_introduction:
+    date: "2026-01-27"
+    tool: "Cursor Editor"
+    ai_model: "GPT-5.2 Codex"
+    plan: "Free Plan"
+    role: "SoE実装コード開発専用"
+    output_dir: "04_SoE/"
+
+  tool_responsibilities:
+    claude_code_vscode:
+      role: "研究記録・YAML・議事録・ファイル管理"
+      04_SoE_access: "読み取りのみ（書き込みNG）"
+    cursor:
+      role: "SoE実装コード・納品物"
+      04_SoE_access: "読み書き可能"
+    gemini:
+      role: "戦略参謀・監査・アーキテクチャ"
+
+# ============================================
+# 4. 本日のキーインサイト
+# ============================================
+
+key_insights:
+
+  - title: "AI協働の理想形"
+    source: "Claude Code session"
+    insight: |
+      AIは数値の不整合（貸借差額△1,053万円）は検出できたが、
+      「なぜ」壊れているかの業界知識による診断はPuuにしかできなかった。
+      AI=構造分析・数値検証・コード生成、人間=ドメイン知識・前提条件の妥当性判断。
+
+  - title: "SOE理論の物理的証明"
+    source: "Gemini session"
+    insight: |
+      SOE理論が単なるナラティブではなく「物理的現象」であることが
+      Pythonグラフにより証明された。成功するほど排除圧力が高まる構造の可視化。
+
+  - title: "1日の学習速度"
+    source: "全セッション統合"
+    insight: |
+      前日（1/26）Python初体験（Hello World）から、
+      本日（1/27）Excel財務分析・Streamlitアプリ・Webアプリ・Cursor導入まで。
+      AIツールの使い分けを実践的に習得している。
+
+# ============================================
+# 5. 未実装・次回アクション
+# ============================================
+
+next_actions:
+
+  immediate:
+    - "5year_plan_template.xlsx をExcelで開いて動作検証"
+    - "business-plan-manager.html をブラウザで動作確認"
+    - "SOE証明グラフに学術的キャプション付与"
+
+  development:
+    - "売掛回収2ヶ月ロジックの実装（月次CF）"
+    - "Streamlit版での三表連動シミュレーター"
+    - "Chart.js統合によるグラフ表示（Webアプリ）"
+
+  mentoring:
+    - "メンティー向け教材としての整理"
+    - "「数式1つの前提条件で財務三表が全部崩れる」事例の教材化"
+
+  research:
+    - "SOEグラフの解釈（ナラティブ）の整備"
+    - "ICAI（Input Constitutional AI）開発への移行検討"
+
+# ============================================
+# 6. mentees/nakashima_kengo
+# ============================================
+
+mentees:
+  nakashima_kengo:
+    status: "本日の更新なし"
+
+# ============================================
+# メタデータ
+# ============================================
+
+metadata:
+  created_at: "2026-01-27"
+  created_by: "Claude Opus 4.5 (VS Code)"
+  source_files:
+    - "00_daily_yamal/03_gemini/2026_01_27_ge.yaml"
+    - "04_SoE/00_daily_yamal/2026_01_27_business_plan_app.yaml"
+    - "MENTA/mentor_resources/learning/2026_01_27_session_minutes.yaml"
+    - "00_daily_yamal/01_Cloude/cursor_soe_output_config_2025_01_27.yaml"
+
+fire_culture_note: |
+  本日は3つのAI（Gemini・Cursor・Claude Code）が並行稼働した初日。
+  それぞれが異なる角度から同じExcelデータに向き合い、
+  「復元」「Web化」「分析・修正」という3つの成果物を生んだ。
+  ツール分担の記録は、今後のAI協働のプロトコルとなる。
