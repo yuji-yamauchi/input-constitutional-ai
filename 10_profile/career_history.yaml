@@ -1,0 +1,104 @@
+# 経歴・職歴
+# 最終更新: 2026-01-24
+# ※詳細な年月日は要確認・追記
+
+career_summary:
+  total_experience: 約30年（推定）
+  domains:
+    - IT企業経営
+    - 福祉事業運営
+    - 研究活動
+
+it_career:
+  period: "詳細要確認"
+  role: IT企業創業者・経営者
+
+  achievements:
+    revenue:
+      peak: 1.4億円/年
+      timeline: 4年で達成
+
+    clients:
+      local_government:
+        - 倉敷市役所（Web保守、IT資産管理）
+        - 山口県
+        - 山口市
+        - 萩市
+        - 勝央町
+        - 交野市（大阪府、ITアドバイザリー）
+
+      central_government:
+        - 総務省案件（最大1.2億円規模）
+
+      enterprise:
+        - セゾン情報システムズ（上場企業、保守契約）
+        - リコーソフトウェア（保守契約、共同営業）
+        - サン・マイクロシステムズ（直接契約）
+        - NECフィールディング（コンソーシアム）
+
+    skills_acquired:
+      - RFP作成・入札評価基準設計（発注者視点の理解）
+      - 行政予算サイクル・調達プロセス理解
+      - 初期顧客獲得の実践的アプローチ
+      - 非技術者向け提案書作成
+      - リピートビジネス構築
+
+welfare_career:
+  period: 約10年（〜現在）
+  domain: 障害福祉
+
+  achievements:
+    facilities_launched: 10事業所
+    people_supported: 100名以上
+
+  facility_types:
+    - 就労継続支援A型
+    - 就労継続支援B型
+    - 就労移行支援
+    # その他要確認
+
+  competencies_developed:
+    - 事業所立ち上げ（ゼロイチ）
+    - 行政との指定申請折衝
+    - 個別支援計画作成
+    - 多職種連携
+    - 当事者との対話・内省支援
+
+research_career:
+  period: 2025年〜現在
+  status: 大学院進学準備中 → 出願完了（2026-01-24）
+
+  institution: 日本福祉大学大学院
+  program: 社会福祉学研究科 社会福祉学専攻 修士課程（通信教育）
+
+  research_focus:
+    main_theme: SoE（Service of Empowerment）
+    innovation: Input Constitutional AI
+    theoretical_contributions:
+      - 福祉権力のリミタリアニズム
+      - 双極的社会損モデル
+      - ケアの複式簿記メタファー
+
+  international_engagement:
+    - Susan Scott-Parker OBE（DEAI創設者）面談
+
+mentoring_career:
+  period: 2026年1月〜
+  platform: MENTA
+
+  current_mentees:
+    - name: 中島健吾
+      project: HOHOHO（インフラメンテナンス事業）
+      contract: 2026-01-21 ~ 2026-02-21
+
+  service_offering:
+    - LLM共有（Claude/ChatGPT/Gemini）
+    - 質問の言語化支援
+    - 内省サポート
+    - B2G/B2B営業指導
+
+health_events:
+  - year: 2023
+    event: 脳出血
+    outcome: 回復
+    impact: 福祉現場での直接支援からの一時離脱

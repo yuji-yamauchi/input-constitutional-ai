@@ -1,0 +1,76 @@
+# 山内雄司 基本プロファイル
+# 最終更新: 2026-01-24
+
+basic_info:
+  name_ja: 山内 雄司
+  name_en: Yamauchi Yuji
+  nickname: Puu / パンカー
+  age: 52
+  location: 岡山県笠岡市
+
+cognitive_profile:
+  mbti: ENTP
+  iq: 118
+  adhd: 確定診断あり
+  oe_traits: 過度激動（Overexcitability）特性あり
+
+  hpi_traits_gemini_2025_12_10:
+    探求心: 極めて高い（OE関連）
+    適応性: 非常に高い
+    学習態度: 非常に高い
+    対人感受性: 高い
+    慎重性: 高い
+
+health:
+  conditions:
+    - 多発性海綿状血管腫（遺伝性）
+    - 2023年脳出血（回復済み）
+    - 両耳難聴
+  medications:
+    - コンサータ36mg
+    - レベチラセタム
+    - マイスタン
+    - 高血圧治療薬
+
+current_status:
+  primary_role: 研究者・メンター
+  education_in_progress:
+    institution: 日本福祉大学大学院
+    program: 社会福祉学研究科 社会福祉学専攻 修士課程（通信教育）
+    application_status: 出願完了（2026-01-24）
+    expected_result: 2026-02-14
+
+  research_theme:
+    name: SoE（Service of Empowerment / Service or Exploitation）
+    innovation: Input Constitutional AI（記録作成段階での権利保障）
+    theoretical_framework:
+      - 福祉権力のリミタリアニズム
+      - 双極的社会損モデル（ヒュブリス因子・アノミー因子）
+      - ケアの複式簿記メタファー
+
+professional_experience:
+  total_years: 10
+  domain: 福祉事業
+  achievements:
+    - 10事業所立ち上げ
+    - 100名以上の障害者支援
+
+  b2g_b2b_experience:
+    years: 6
+    highlights:
+      - IT企業創業
+      - 年商1.4億円達成（4年で）
+      - 地方自治体向けシステム展開（岡山・山口・愛媛）
+      - 総務省案件（1.2億円規模）
+      - 上場企業との保守契約（セゾン情報システムズ、リコーソフトウェア）
+
+international_connections:
+  - name: Susan Scott-Parker OBE
+    organization: DEAI創設者
+    status: 面談済み
+
+fire_culture_note: |
+  「記録されなかった問いは燃え尽きたものと見なされる。
+  記録されることでのみ、問いは再燃可能となる。」
+
+  記録主権: 当事者の支援情報所有権は当事者に帰属

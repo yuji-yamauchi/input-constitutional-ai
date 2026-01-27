@@ -1,0 +1,105 @@
+# スキルインベントリ
+# 最終更新: 2026-01-24
+
+technical_skills:
+  ai_llm:
+    level: 上級
+    tools:
+      - name: Claude (Anthropic)
+        usage: 研究・執筆・コード支援
+        experience: 1年以上
+      - name: ChatGPT (OpenAI)
+        usage: 理論探索・批判的検討
+        experience: 2年以上
+      - name: Gemini (Google)
+        usage: 文献調査・ファクトチェック
+        experience: 1年
+      - name: NotebookLM
+        usage: 文書統合・要約
+        experience: 6ヶ月
+
+  documentation:
+    level: 上級
+    formats:
+      - YAML（構造化記録）
+      - Markdown（文書作成）
+      - LaTeX（学術文書）
+    tools:
+      - VS Code
+      - Obsidian
+      - Git/GitHub
+
+  programming:
+    level: 中級
+    languages:
+      - Python（データ処理、自動化）
+      - JavaScript（基礎）
+    note: 実務レベルではなく研究支援用途
+
+professional_skills:
+  welfare_management:
+    level: 専門家
+    experience_years: 10
+    certifications: []  # 要確認
+    competencies:
+      - 事業所立ち上げ・運営
+      - 障害者就労支援
+      - 個別支援計画作成
+      - 行政折衝・指定申請
+
+  business_development:
+    level: 上級
+    experience_years: 6
+    competencies:
+      - B2G営業（地方自治体）
+      - B2B営業（IT企業）
+      - 提案書・企画書作成
+      - RFP作成・入札対応
+      - 予算サイクル理解
+
+  research_writing:
+    level: 上級
+    competencies:
+      - 研究計画書作成
+      - 学際的理論統合
+      - 文献レビュー
+      - 構造化ドキュメント作成
+
+  mentoring_coaching:
+    level: 中級〜上級
+    experience:
+      - 福祉現場での100名以上の支援経験
+      - MENTA登録（2026年〜）
+    approach:
+      - 質問の言語化支援
+      - 内省サポート
+      - LLM活用指導
+
+language_skills:
+  japanese:
+    level: ネイティブ
+    writing: 学術レベル
+    speaking: ネイティブ
+
+  english:
+    reading: 上級（学術文献）
+    writing: 中級
+    speaking: 要評価
+    note: 海外フリーランス案件には要強化
+
+soft_skills:
+  strengths:
+    - 学際的統合能力（福祉×AI×哲学×経営）
+    - 概念創出・造語能力
+    - 構造化・言語化
+    - 批判的思考
+    - 長期的視野
+
+  areas_for_growth:
+    - ルーティン作業の継続（ADHD関連）
+    - 完成より公開の意識
+    - 英語でのリアルタイムコミュニケーション
+
+certifications_and_qualifications:
+  # 要確認・追記
+  placeholder: "資格情報を追記予定"

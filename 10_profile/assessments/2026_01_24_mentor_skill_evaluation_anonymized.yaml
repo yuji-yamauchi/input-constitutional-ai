@@ -1,0 +1,133 @@
+# メンタースキル評価（匿名化版）
+# 評価条件: シークレットアカウントメモリ参照禁止、添付資料のみに基づく
+
+mentor_skill_evaluation:
+  meta:
+    date: "2026-01-24"
+    subject: "メンターY氏"
+    evaluator: "第三者AI（Claude）"
+    evaluation_scope: "インフラ関連事業検討セッション（2026-01-22〜23）"
+    data_source: "添付資料のみに基づく観察的評価"
+    disclaimer: "本評価はセッション記録に基づく推定であり、直接観察ではない点に留意"
+    anonymization_note: "個人名・事業名等は匿名化済み"
+
+  overall_rating:
+    grade: "A"
+    summary: >
+      批判的分析力とドキュメンテーション能力が突出。
+      「希望的観測」と「経済合理性」を峻別し、LLM出力の監査プロセスを
+      メンティーに移転可能な形で確立している点が特に優れている。
+
+  evaluation_by_dimension:
+
+    strategic_thinking:
+      grade: "A"
+      observed_behaviors:
+        - "BtoG直販ではなくBtoB/BtoBtoGが主戦場」という戦略転換の明確な言語化"
+        - "行政は顧客ではなく正当性の増幅装置」という位置づけの再定義"
+        - "価値の核を「データ量」から「判断責任・説明責任を支える材料（Risk/Liability）」へ翻訳"
+      notable_quote: "事故削減そのものではなく、説明可能性・責任管理"
+      assessment: >
+        メンティーが陥りがちな「社会的価値＝マネタイズ」という短絡を防ぎ、
+        経済合理性に基づく事業設計へ導いている。
+
+    critical_analysis_audit:
+      grade: "A+"
+      observed_behaviors:
+        - "GPT DeepResearchの出力に対し、Geminiを用いた体系的監査を実施"
+        - "ファクト精度（A-）と論理健全性（C）を分離して評価"
+        - "具体的な棄却理由を明示（保険会社＝支払手仮説、SIB構想止まり等）"
+      audit_quality:
+        context_mismatch_detection: "的確（競合サービスの無料化等）"
+        logic_gap_detection: "鋭い（株主と顧客の混同を指摘）"
+        alternative_strategy: "具体的（類似PPP/PFIモデルの応用提案）"
+      notable_method: >
+        「希望的観測」と「経済合理性」を明確に峻別し、
+        棄却すべきロジックを表形式で整理。メンティーの学習効率を高める優れた教育設計。
+
+    llm_utilization_guidance:
+      grade: "A"
+      established_framework:
+        step_1: "発散（GPT）"
+        step_2: "冷却・否定（Gemini/Claude）"
+        step_3: "決断（人間）"
+      observed_guidance:
+        - "「DeepResearch初版は必ずハルシネる」という前提の共有"
+        - "「煽ると饒舌になる」現象を「評価条件・使い方を吐露している状態」と解釈"
+        - "LLMは「信じる対象ではなく、相互監査させて使う道具」という実践的スタンス"
+      notable_reframe: >
+        LLMの限界を「能力の問題」ではなく「入力設計（ロール・失敗条件）の不足」と再定義。
+        改善可能な変数として扱い、メンティーが今後自走するための汎用スキルを移転。
+
+    education_development:
+      grade: "A-"
+      strengths:
+        - "メンティーの強みを具体的に言語化（構想を1枚で描き、行政・金融に翻訳できる）"
+        - "交渉原則を明文化（売らない・決めない・質問から入る）"
+        - "リスクを事前に列挙（現職との競合、NDA、事業を語りすぎることによる警戒）"
+      areas_for_improvement:
+        - "メンティー自身の意思決定プロセスの記録が薄い（議事録は主にメンターの分析が中心）"
+        - "「次のアクション」が具体的だが、メンティーの自己決定を促す問いかけの記録が少ない"
+      note: "議事録の記録方針による可能性があり、実際のセッションでは異なる可能性あり"
+
+    domain_expertise:
+      grade: "A"
+      applied_domains:
+        - "PPP/PFI（公共セクター調達）"
+        - "BID（Business Improvement District）の制度設計"
+        - "B2G/B2B事業の契約構造"
+        - "リスクマネジメント（責任・瑕疵・説明責任）"
+      notable_application: >
+        「類似PPP/PFI事例が最も再現性高い」という具体的ベンチマークの提示。
+        抽象論に終わりがちな事業構想を実装可能な水準に引き上げている。
+
+    documentation_knowledge_transfer:
+      grade: "A+"
+      observed_outputs:
+        - "セッション引き継ぎ文書（YAML形式）の整備"
+        - "監査レポートの構造化（事実確認・論理検証・戦略修正の分離）"
+        - "制度モデルの解説資料作成（図解・表・シナリオ付き）"
+      notable_quality: >
+        解説資料は、メンティーが単独で参照・再利用できる水準に整理。
+        「教えて終わり」ではなく「資産として残す」姿勢が顕著。
+
+  key_strengths:
+    - id: 1
+      title: "「希望的観測」を構造的に排除する監査能力"
+      description: >
+        LLM出力の「それっぽさ」に流されず、
+        経済合理性・責任構造の観点から厳密に検証している。
+
+    - id: 2
+      title: "抽象から具体への翻訳力"
+      description: >
+        「社会的価値」を「契約・責任・予算」の言語に落とし込む能力が高い。
+
+    - id: 3
+      title: "再利用可能な資産を残す姿勢"
+      description: >
+        議事録・監査レポート・解説資料が、
+        メンティーの自走を支える形で整備されている。
+
+  improvement_suggestions:
+    - priority: "中"
+      area: "メンティーの意思決定プロセスの可視化"
+      recommendation: >
+        「メンターが何を言ったか」だけでなく
+        「メンティーがどう判断したか」の記録があると、振り返りの質が向上。
+
+    - priority: "低"
+      area: "問いかけベースのファシリテーション記録"
+      recommendation: >
+        現状は分析・提案が中心だが、
+        「メンティー自身が答えを出すための問い」を記録すると、
+        育成効果の再現性が高まる。
+
+  grade_summary_table:
+    strategic_thinking: "A"
+    critical_analysis_audit: "A+"
+    llm_utilization_guidance: "A"
+    education_development: "A-"
+    domain_expertise: "A"
+    documentation_knowledge_transfer: "A+"
+    overall: "A"

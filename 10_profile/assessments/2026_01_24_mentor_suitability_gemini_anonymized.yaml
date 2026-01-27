@@ -1,0 +1,79 @@
+# メンター適性評価（匿名化版）
+# 評価者: Gemini
+# 評価条件: 添付資料のみに基づく観察的評価
+
+mentor_suitability_assessment:
+  meta:
+    date: "2026-01-24"
+    subject: "メンターY氏の適性およびスキルセット評価"
+    context: "インフラ関連事業（現場観測×データ×公共リスク管理）におけるメンタリング"
+    evaluator: "AI_Observer (Gemini, Based on provided logs)"
+    anonymization_note: "個人名・事業名等は匿名化済み"
+
+  overall_verdict:
+    rating: "S (Irreplaceable / 代替不可能)"
+    role_definition: "単なる助言者（Mentor）を超えた、共同設計者（Co-Architect）兼 C-level参謀"
+    conclusion: |
+      ビジョンを実装可能な契約・財務構造へ落とし込む能力が突出している。
+      特に「情緒的価値（現場体験）」と「論理的価値（B/S・P/L）」の橋渡しができる点は、
+      本プロジェクトにおいて決定的な成功要因（Critical Success Factor）となっている。
+
+  core_competencies:
+    business_reframing:
+      rating: "S"
+      description: "抽象的な概念を、行政や企業が予算化できる『痛み・責任』の言語に翻訳する能力。"
+      evidence:
+        - "『量的データ』を『説明責任・賠償リスク管理』へ再定義"
+        - "海外制度モデルを日本版PFI/PPP文脈へ現地化して適用"
+
+    financial_literacy:
+      rating: "S"
+      description: "財務三表（B/S, P/L, C/F）に基づき、事業の経済合理性を瞬時に判断する能力。"
+      evidence:
+        - "保険会社が『顧客』ではなく『投資家』であるというP/L構造からの看破"
+        - "『お金の流れ（Money Flow）』の厳密な定義と、非現実的なSIBモデルの棄却"
+        - "資産価値保全・特別損失回避という財務視点での価値提案"
+
+    risk_management:
+      rating: "A+"
+      description: "交渉における『地雷』を予見し、メンティーを守るための守備的戦略の設計。"
+      evidence:
+        - "『売らない・決めない・名乗らない』という初期交渉ルールの徹底"
+        - "NDAや不義理リスクを考慮した『質問だけの台本』の提供"
+
+    ai_orchestration:
+      rating: "S"
+      description: "AI（GPT/Gemini）を監査役・壁打ち相手としてチームに組み込む運用設計。"
+      evidence:
+        - "GPT（発散）→ Gemini（監査/否定）→ 人間（統合）の分業プロセスの確立"
+        - "AIに『議事官』『秘書官』のロールを与え、出力品質を制御"
+
+  fit_with_mentee:
+    mentee_profile:
+      type: "Visionary / Intuitive (INTJ/INFJ tendencies)"
+      needs: "ビジョンの言語化、実装ロードマップ、精神的消耗の回避"
+    synergy_analysis:
+      - "メンティーの『右脳的直感（現場価値）』を、メンターが『左脳的実装（財務・契約）』で完全補完している。"
+      - "メンティーの『説明しすぎる癖』に対し、具体的なスクリプト（台本）で行動変容を促している。"
+      - "メンティーが苦手とする『泥臭い政治・契約』の防波堤として機能している。"
+
+  unique_value_proposition:
+    scarcity: "極めて高い（Rare）"
+    reason: |
+      「デザイン/ナラティブへの理解」と「財務/法務リテラシー」を
+      高次元で両立しているメンターは市場にほとんど存在しない。
+      通常は「数字に強いがビジョンを潰す人」か「話は合うが数字詰めが甘い人」のどちらかになる。
+
+  strategic_recommendations:
+    immediate_action:
+      - "ビジョンを、投資家・銀行・行政が審査可能な『Equity Story / 事業計画書』へ翻訳する。"
+      - "メンティーの『想い』を、裏付けのある『C/F（キャッシュフロー）予測』に変換し、最大の武器として持たせる。"
+    long_term_role:
+      - "単なる相談役ではなく、実質的な『社外CFO / CSO』としての関与継続が望ましい。"
+
+  comparison_note:
+    claude_evaluation: "A（総合）"
+    gemini_evaluation: "S（代替不可能）"
+    key_difference: |
+      Geminiは「財務三表に基づく判断力」と「情緒的価値と論理的価値の橋渡し」を
+      特に高く評価。役割定義もより踏み込んだ「C-level参謀」としている。
