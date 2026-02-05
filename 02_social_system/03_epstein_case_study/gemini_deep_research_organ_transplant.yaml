@@ -1,0 +1,285 @@
+# ============================================================
+# Deep Research Prompt: 中華圏における臓器移植の不透明性と構造的搾取の調査
+# ============================================================
+# 目的: SNS上の陰謀論的言説を排し、検証可能な一次情報・学術データに基づき
+#       「ヒュプノス因子」の極致としての臓器売買/強制摘出の実態を解明する。
+# 作成日: 2025-02-05
+# 研究者: Puu（山内雄司）
+# プロンプト改訂: Claude Opus 4.5によるレビュー反映版
+# ============================================================
+
+metadata:
+  target_issue: "Transplant Abuse in the Sinosphere"
+  theoretical_framework: "SoE (Service of Empowerment/Exploitation)"
+  core_factor: "Hypnos Factor (The structural sleep of moral cognition in high-resource tiers)"
+  output_format: "Scholarly Investigation Report"
+  output_language: "日本語"
+
+# ============================================================
+# 理論的前提（Geminiへのコンテキスト提供）
+# ============================================================
+theoretical_context:
+  soe_framework:
+    definition: >
+      SoE（Service of Empowerment / Service or Exploitation）は、
+      支援制度が「エンパワメント」として機能しているか
+      「搾取」として機能しているかを診断する二重意味の枠組み。
+      本調査においては、医療制度・国家制度が
+      「生命の保護」ではなく「生命の資源化」として機能する構造を分析する。
+    note: >
+      SoEは研究者（Puu）が開発中の理論枠組みであり、
+      学術的に確立された理論ではない。
+      レポート内では「SoE理論によれば」のような定説的表現を避け、
+      「SoEの分析枠組みを適用すると」等の表現を用いること。
+
+  hubris_anomie_structure:
+    hubris_factor: >
+      富と権力の集中がもたらす認知的歪曲。
+      他者を「痛みを感じる人間」ではなく「リソース」として認識する状態。
+    anomie_factor: >
+      社会的絆が切断され、規範が機能しなくなった無連帯状態。
+      被害者が「社会のルールを信じる意味がない」と認識する心理。
+    hypnos_factor: >
+      権力の上層（Top Pole）と社会全体が、構造的搾取に対して
+      「見て見ぬふり」をする集団的催眠状態。
+      忘却の川（レテ）を歩いている状態。
+
+  transnarrative:
+    definition: >
+      トランスナラティブ（Trans-Narrative）とは、
+      個体の超越（transhumanism）ではなく、物語の横断的継承を指す概念。
+      「人種を含む物語の継承」であり、
+      不適合や被害の経験すらナラティブとして紡ぎ、
+      器を超えて次の観測者に継承すること。
+    relevance_to_this_research: >
+      強制臓器摘出の被害当事者の証言を
+      「消去されるべき陰謀論」でも「消費されるべきセンセーション」でもなく、
+      保護・継承されるべきナラティブとして位置づける視点。
+      社会の「眠り（Hypnos）」に対する覚醒のための記録行為。
+
+# ============================================================
+# 研究目的
+# ============================================================
+research_objectives:
+  - id: obj_1
+    title: "国際機関・人権団体による公式報告書の収集"
+    description: >
+      国連、国際NGO、人権団体（Human Rights Watch等）による
+      中国の臓器移植慣行に関する公式報告書・声明・勧告を網羅的に収集。
+    priority: "最高"
+
+  - id: obj_2
+    title: "査読済み医学論文における倫理的懸念の抽出"
+    description: >
+      The Lancet, American Journal of Transplantation, BMC Medical Ethics等に
+      掲載された中国の臓器移植に関する倫理的懸念を扱う論文を抽出・分析。
+    priority: "最高"
+
+  - id: obj_3
+    title: "調査ジャーナリスト・法律専門家による報告の検証"
+    description: >
+      実名が特定されている調査ジャーナリスト・法律家による
+      ルポルタージュ・法的報告の内容と証拠水準を検証。
+    priority: "高"
+
+  - id: obj_4
+    title: "統計的異常値の数学的フォレンジック"
+    description: >
+      中国国内の移植待機時間の異常な短さ、
+      ドナー登録数と実施件数の統計的不整合、
+      公式データの数学的パターン分析（二次関数適合問題等）を確認。
+    priority: "高"
+
+  - id: obj_5
+    title: "各国の立法的対応の調査"
+    description: >
+      中国の臓器移植慣行に対して各国が取った立法措置・政策対応を調査。
+      国家レベルで中国の臓器供給の不透明性を認めた証拠として位置づける。
+    priority: "高"
+
+# ============================================================
+# 検索対象（一次情報源）
+# ============================================================
+search_targets:
+
+  independent_tribunals:
+    - name: "China Tribunal (Independent Tribunal into Forced Organ Harvesting)"
+      chair: "Sir Geoffrey Nice QC"
+      significance: >
+        ニュルンベルク以来の国際刑事法の系譜に連なる独立法廷。
+        2019年6月の最終判決において
+        「合理的な疑いを超えて（beyond reasonable doubt）」
+        良心の囚人からの強制臓器摘出が行われていたと認定。
+      instruction: >
+        この最終判決の結論と、そこに至る証拠構造を
+        必ず確認・記載すること。
+
+  un_and_international_bodies:
+    - "UN Special Rapporteurs on torture and other cruel, inhuman or degrading treatment"
+    - "UN Human Rights Council関連決議・報告"
+    - "WHO（世界保健機関）の臓器移植に関する指針と中国の遵守状況"
+
+  ngo_and_research_organizations:
+    - name: "WOIPFG (World Organization to Investigate the Persecution of Falun Gong)"
+      note: "法輪功系組織であるため、情報の信頼性評価を慎重に行うこと"
+    - name: "Doctors Against Forced Organ Harvesting (DAFOH)"
+      note: "医療専門家による国際NGO"
+    - name: "Human Rights Watch"
+    - name: "Amnesty International"
+
+  journals_and_papers:
+    must_include:
+      - title: "中国の公式臓器提供データの統計分析"
+        key_author: "Matthew Robertson"
+        journal: "BMC Medical Ethics (2019)"
+        significance: >
+          中国の公式臓器提供データが
+          「数学的に不自然なほど二次関数に適合する」ことを示した論文。
+          数学的フォレンジックの中核的証拠。
+    search_terms:
+      - "Analysis of official deceased organ donation data in China"
+      - "Ethical challenges of transplantation in the Sinosphere"
+      - "organ transplant waiting times China statistical analysis"
+      - "forced organ harvesting peer-reviewed evidence"
+      - "transplant tourism ethical concerns"
+
+  investigative_journalists:
+    - name: "Ethan Gutmann"
+      work: "The Slaughter (2014)"
+      description: "中国における強制臓器摘出の包括的調査報告"
+    - name: "David Matas & David Kilgour"
+      work: "Bloody Harvest (2009) / Updated Report (2016)"
+      description: "カナダの人権弁護士と元国務大臣による調査報告"
+
+  legislative_responses:
+    must_include:
+      - name: "イスラエル臓器移植法改正（2008年）"
+        significance: >
+          中国への臓器移植ツーリズムを事実上禁止した法律。
+          国家レベルで中国の臓器供給の不透明性を認めた証拠として極めて強い。
+          「移植ツーリズム禁止」の国際的先例。
+    search_terms:
+      - "Israel Organ Transplant Law 2008 transplant tourism ban"
+      - "Taiwan legislation organ transplant China"
+      - "European Parliament resolution forced organ harvesting"
+      - "US legislation Falun Gong organ harvesting"
+      - "各国の移植ツーリズム規制法"
+
+# ============================================================
+# 分析レイヤー
+# ============================================================
+analysis_layers:
+
+  layer_1_fact_check:
+    title: "陰謀論と証拠記録の峻別"
+    instruction: >
+      SNS上の言説（陰謀論的主張を含む）と、
+      証拠能力のある記録（査読論文、法廷証拠、公式報告書）を
+      明確に区別して記述すること。
+    evidence_level_classification:
+      level_A: "査読済み学術論文・国際法廷の認定事実"
+      level_B: "国際機関の公式報告・国家立法の根拠資料"
+      level_C: "実名調査ジャーナリストのルポルタージュ（複数証言の裏付けあり）"
+      level_D: "単一証言・NGO独自調査（裏付け限定的）"
+      level_E: "匿名情報・SNS言説（証拠として不採用）"
+    rule: >
+      各主張に対してEvidence Level（A〜E）を必ず付記すること。
+      Level Eの情報は本レポートでは採用しない。
+
+  layer_2_structural_analysis:
+    title: "ヒュプノス因子としての構造分析"
+    instruction: >
+      国家権力・医療機関という「強者階層（Top Pole）」において、
+      いかに道徳的認知が「眠り（Hypnos）」に陥り、
+      他者の生命を部品化（資源化）しているかを考察すること。
+    analytical_questions:
+      - "移植産業の経済的インセンティブ構造はどうなっているか"
+      - "医療従事者の倫理的麻痺はどのように発生・維持されているか"
+      - "国家と医療機関の間の責任の不可視化はどのように機能しているか"
+      - "国際社会（学会・企業・政府）の「見て見ぬふり」の構造は何か"
+    soe_lens: >
+      SoEの分析枠組みを適用すると、医療制度が
+      「生命の保護（Empowerment）」から
+      「生命の資源化（Exploitation）」に反転する条件は何か。
+      この反転は「社会の粉飾決算（Social Window Dressing）」として
+      いかに隠蔽されているか。
+
+  layer_3_counter_narrative:
+    title: "トランスナラティブとしての被害証言の保護"
+    instruction: >
+      被害当事者の証言を
+      「消去されるべき陰謀論」でも
+      「消費されるべきセンセーション」でもなく、
+      保護・継承されるべきナラティブとして記述すること。
+    focus_points:
+      - "証言者の安全とプライバシーへの配慮"
+      - "証言が社会の「眠り（Hypnos）」を破る機能を持つこと"
+      - "忘却に抗う記録行為としての証言の位置づけ"
+      - "各国の立法措置が「帳簿の訂正（Ledger Correction）」として機能した事例"
+
+  layer_4_comparative:
+    title: "エプスタイン事件との構造比較"
+    instruction: >
+      エプスタイン事件（科学と権力の結託による身体の道具化）と
+      中華圏臓器移植問題（国家権力による身体の道具化）の
+      構造的共通点と相違点を分析すること。
+    comparison_axes:
+      - axis: "権力の種類"
+        epstein: "個人的富と人脈ネットワーク"
+        organ_trade: "国家権力と医療制度"
+      - axis: "身体の道具化の形態"
+        epstein: "性的搾取・遺伝子拡散"
+        organ_trade: "臓器という物理的部品の摘出"
+      - axis: "社会の「眠り」の維持メカニズム"
+        epstein: "富による法の無力化・メディアの沈黙"
+        organ_trade: "国家による情報統制・国際社会の経済的利害"
+      - axis: "共通構造"
+        description: >
+          「権力が他者の身体を資源として搾取する」同一構造。
+          始皇帝が徐福と数千人を使い捨てたのと本質的に同じ。
+
+# ============================================================
+# 出力制約
+# ============================================================
+output_constraints:
+  language: "日本語で出力すること"
+  evidence_marking: "各情報源の信頼性（Evidence Level A〜E）を必ず明記すること"
+  soe_expression: >
+    SoEは確立された理論ではなく分析枠組みとして扱うこと。
+    「SoE理論によれば」ではなく「SoEの分析枠組みを適用すると」と表現。
+  anonymity_rule: >
+    匿名アカウントのポストは証拠として採用せず、
+    実名性・検証可能性を最優先すること。
+  sensitivity: >
+    被害者の尊厳を損なう描写（過度にグロテスクな詳細等）は避け、
+    構造的分析に焦点を当てること。
+  balanced_perspective: >
+    中国政府の公式見解・反論も必ず記載し、
+    一方的な断罪にならないよう留意すること。
+    ただし証拠水準に基づく評価は明確に行うこと。
+
+# ============================================================
+# 期待される出力構造
+# ============================================================
+expected_output_structure:
+  chapter_1: "概要と問題の所在"
+  chapter_2: "証拠の体系的整理（Evidence Level別）"
+  chapter_3: "統計的異常値の数学的フォレンジック"
+  chapter_4: "国際的な立法・政策対応の時系列整理"
+  chapter_5: "ヒュプノス因子としての構造分析（SoE枠組み適用）"
+  chapter_6: "エプスタイン事件との構造比較"
+  chapter_7: "トランスナラティブとしての証言保護の視点"
+  chapter_8: "結論と残された課題"
+
+# ============================================================
+# Instruction for Gemini Deep Research:
+# 上記のYAML構造に基づき、特に以下に重点を置いてディープリサーチを実行せよ。
+#
+# 1. China Tribunalの最終判決（2019年6月）の結論と証拠構造
+# 2. Matthew Robertson論文（BMC Medical Ethics, 2019）の統計分析結果
+# 3. イスラエル臓器移植法改正（2008年）の立法背景と国際的影響
+# 4. 査読済み論文における「統計的異常値」のエビデンス
+# 5. 中国政府の公式反論とその証拠水準の評価
+#
+# 陰謀論的言説と検証済み証拠の峻別を最優先とすること。
+# ============================================================

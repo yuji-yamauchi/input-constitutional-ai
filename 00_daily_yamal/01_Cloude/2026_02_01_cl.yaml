@@ -1,0 +1,1038 @@
+question: "d-rel.jpをLovableのカスタムドメインに設定できるか？"
+
+short_answer: "技術的には可能だが、Pro版が必要"
+
+current_status:
+  lovable_plan: "Free（おそらく）"
+  domain_features:
+    既存ドメインを追加: "Pro必要"
+    新しいドメインを購入: "Pro必要"
+    サブドメインなし: "未発表状態"
+
+options:
+
+  option_a:
+    action: "Lovable Pro にアップグレード"
+    then: "「既存のドメインを追加」→ d-rel.jp を接続"
+    cost: "月額課金（要確認）"
+    手順:
+      1: "Lovableでプランをアップグレード"
+      2: "「ドメインを接続」をクリック"
+      3: "d-rel.jpのDNS設定を変更（お名前.comなどで）"
+      4: "Lovableが指定するCNAMEまたはAレコードを追加"
+
+  option_b:
+    action: "今はFree版のまま、サブドメインで公開"
+    domain: "xxx.lovable.app（自動発行）"
+    cost: "無料"
+    用途: "PoC検証には十分"
+
+  option_c:
+    action: "d-rel.jpは別用途に温存"
+    考え方: |
+      SoEのPoCはLovableのサブドメインで検証し、
+      本番公開時にd-rel.jpを使う
+
+recommendation:
+  for_current_phase: "option_b または option_c"
+  
+  reasoning: |
+    今はPoC段階なので、カスタムドメインは必須ではない。
+    d-rel.jpは「本番公開」や「研究成果の公開サイト」用に
+    取っておく方が戦略的。
+
+  when_to_upgrade: |
+    - 研究協力者に正式なURLを案内したい時
+    - 学会発表やデモで見栄えが必要な時
+    - SoEが「製品」として公開段階に入った時
+
+clarification_question:
+  q: "d-rel.jpは既に取得済み？"
+  if_yes: "DNS設定の管理画面（お名前.com等）にアクセスできれば接続可能"
+  if_no: "Lovable Pro経由で購入も可能（ただし割高の可能性）"
+
+clarification:
+  what_you_said: "d-rel.jpをMicrosoft Teamsで管理"
+  
+  likely_meaning:
+    option_a: "Microsoft 365（旧Office 365）のカスタムドメインとして設定済み"
+    option_b: "DNS管理をMicrosoft経由で行っている"
+    
+  implication: |
+    d-rel.jpは既にMicrosoft 365の
+    メール・Teams等で使用中の可能性が高い
+
+current_usage_check:
+  question: "d-rel.jpは今、何に使っていますか？"
+  
+  possibilities:
+    - "メール（xxxxx@d-rel.jp）"
+    - "Teamsの組織ドメイン"
+    - "SharePointのサイト"
+    - "特に使っていない（取得のみ）"
+
+domain_connection_consideration:
+
+  if_using_for_email_teams:
+    warning: "ルートドメインをLovableに向けるとメール等に影響する可能性"
+    safe_approach: "サブドメインを使う"
+    example:
+      - "soe.d-rel.jp → Lovableに向ける"
+      - "app.d-rel.jp → Lovableに向ける"
+      - "d-rel.jp本体 → Microsoft 365のまま"
+    
+  if_not_using:
+    approach: "d-rel.jp全体をLovableに向けても問題なし"
+
+recommendation:
+  for_soe_poc:
+    best_option: "サブドメイン（例: soe.d-rel.jp）を作成"
+    benefit:
+      - "既存のMicrosoft 365設定に影響なし"
+      - "SoE専用のURLとして明確"
+      - "将来、別プロジェクト用にも拡張可能"
+    
+  setup_steps:
+    1: "Microsoft 365管理センターでDNS設定を開く"
+    2: "CNAMEレコードを追加: soe.d-rel.jp → Lovable指定の値"
+    3: "LovableのPro版で「既存ドメインを追加」"
+    4: "soe.d-rel.jp を入力して接続"
+
+  timing: "今すぐやる必要はない（PoCが固まってから）"
+
+next_question:
+  q: "d-rel.jpでメールやTeamsを使っていますか？"
+
+current_session_summary:
+  started_with: "Perplexityの技術構造の話"
+  evolved_to: "SoE開発環境の選定と構築"
+  
+  decisions_made:
+    tool_stack:
+      ui: "Lovable ✅ 動作確認済み"
+      database: "Supabase ✅ アカウント作成済み"
+      coding_tool: "Cursor → 今は不要"
+      domain: "d-rel.jp → 後で（サブドメインで）"
+    
+    prototype:
+      status: "Support Navigator（評価ツール）が動いている"
+      next: "Supabase連携でデータ永続化"
+
+  pending_tasks:
+    priority_1:
+      task: "データベース設計の確定"
+      blocker: "SoE固有の評価軸（本人主権・ケイパビリティ）の組み込み方"
+      
+    priority_2:
+      task: "Lovable ↔ Supabase 接続"
+      
+    priority_3:
+      task: "Deep Researchの結果（NOCC, schema, BIG5, LLM）をテーブル化"
+
+next_session_suggestion:
+  focus: "SoEの評価軸を明確化 → DB設計確定"
+  
+  questions_to_resolve:
+    - "スキーマ療法の測定とSoE（本人主権評価）の関係は？"
+    - "ICF環境因子はどう組み込む？"
+    - "最小限のPoC（MVP）で何を測定可能にするか？"
+
+refined_architecture:
+  
+  core_principle: "当事者 vs それ以外"
+  
+  layer_A:
+    name: "当事者"
+    position: "データの主権者"
+    rights:
+      - "自分のデータを所有"
+      - "アクセス権を付与/剥奪"
+      - "削除・移行の決定権"
+    db_concept: "全てのデータの帰属先"
+    
+  layer_B:
+    name: "それ以外（代理者群）"
+    position: "当事者から委任を受けた存在"
+    includes:
+      - "支援者"
+      - "評価者"  
+      - "制度・社会"
+    common_feature: "当事者の許可がなければデータにアクセスできない"
+    db_concept: "アクセス権限を持つビューワー"
+
+structural_insight: |
+  支援者も評価者も社会も、
+  本質的には「当事者のために働く代理者」。
+  
+  違いは：
+  - 距離感（直接支援 vs 間接評価 vs マクロ分析）
+  - 許可されるデータの粒度（個別 vs 匿名集計）
+  
+  でも根本は同じ：
+  「当事者から許可を得てデータに触れる」
+
+quasi_mandate_contract_mapping:
+  当事者: "委任者（本人）"
+  それ以外: "受任者（善管注意義務を負う）"
+  
+  boundary: "許可/同意（consent）"
+
+db_design_simplified:
+
+  central_table:
+    name: "clients（当事者）"
+    role: "全データの帰属点"
+    owns:
+      - "プロフィール"
+      - "支援記録"
+      - "評価結果"
+      - "アウトカム"
+    
+  access_table:
+    name: "access_grants（アクセス許可）"
+    role: "誰が何を見れるかの定義"
+    columns:
+      - "client_id: 当事者"
+      - "grantee_id: 許可された人"
+      - "grantee_role: supporter / evaluator / researcher"
+      - "scope: どこまで見れるか"
+      - "granted_at: いつから"
+      - "revoked_at: いつまで（null=有効）"
+
+  implication: |
+    「それ以外」は細かくロール分けしても、
+    DB上は「access_grants」で一元管理できる。
+    
+    支援者か評価者かは「role」カラムの値の違いだけ。
+
+soe_as_measurement:
+  what_this_enables: |
+    「当事者のデータを、誰が、いつ、どの範囲で見たか」
+    が全て記録される。
+    
+    これ自体が「支援の透明性」の測定装置になる。
+
+next_question:
+  q: "「それ以外」の中での権限の違いは、最初のPoCでどこまで作り込む？"
+  
+  options:
+    minimal: "supporter のみ（評価者は後で）"
+    moderate: "supporter + evaluator"
+    full: "全ロール実装"
+  
+  my_suggestion: "minimal（支援者のみ）で十分"
+
+access_hierarchy:
+  
+  owner:
+    name: "当事者（本人）"
+    data_access: "全て"
+    anonymization: "不要（自分のデータ）"
+    consent_required: false
+    
+  tier_1_direct_contract:
+    name: "直接契約関係（就労支援事業所等）"
+    relationship: "準委任契約の当事者"
+    examples:
+      - "就労移行支援事業所"
+      - "就労継続支援A型/B型"
+      - "相談支援事業所"
+    data_access: "契約範囲内で詳細データ"
+    anonymization: "不要（ただし範囲限定）"
+    consent:
+      type: "primary_opt_in"
+      granularity: "項目別選択可"
+      examples:
+        - "基本情報: ✓"
+        - "健康情報: ✓"
+        - "家族構成: ✗"
+        - "経済状況: ✓"
+    
+  tier_2_secondary_share:
+    name: "契約経由の二次共有先"
+    relationship: "直接契約者を通じた間接関係"
+    examples:
+      - "市区町村障害福祉課"
+      - "ハローワーク"
+      - "医療機関"
+      - "他の支援機関（連携先）"
+    data_access: "一次契約者が共有許諾した範囲のみ"
+    anonymization: "部分的（必要最小限）"
+    consent:
+      type: "secondary_opt_in"
+      condition: "一次契約のオプトインが前提"
+      granularity: "共有先ごとに選択"
+      examples:
+        - "行政機関への共有: ✓"
+        - "医療機関への共有: ✓"
+        - "他支援機関への共有: ✗"
+    
+  tier_3_employer:
+    name: "就職先企業"
+    relationship: "支援の成果先（雇用契約）"
+    examples:
+      - "就職先企業の人事部"
+      - "就職先の産業医"
+      - "職場の上司（限定的）"
+    data_access: "就労に必要な範囲のみ"
+    anonymization: "高度（診断名等は選択的開示）"
+    consent:
+      type: "employer_opt_in"
+      granularity: "非常に細かい"
+      examples:
+        - "配慮事項の共有: ✓"
+        - "診断名の開示: ✗"
+        - "通院頻度の共有: ✓"
+        - "支援機関との連携許可: ✓"
+    note: "本人が『何を開示するか』を完全にコントロール"
+    
+  tier_4_macro:
+    name: "社会分析（マクロデータ）"
+    relationship: "研究・政策立案目的"
+    examples:
+      - "厚労省の統計調査"
+      - "学術研究"
+      - "制度評価"
+    data_access: "匿名化された集計データのみ"
+    anonymization: "完全（k-匿名性等）"
+    consent:
+      type: "research_opt_in"
+      granularity: "参加/不参加"
+      examples:
+        - "匿名統計への貢献: ✓"
+        - "学術研究への提供: ✗"
+
+db_design_for_consent:
+
+  table_consent_categories:
+    description: "同意カテゴリのマスタ"
+    columns:
+      - "id"
+      - "tier: 1-4"
+      - "code: direct_contract, secondary_share, employer, macro"
+      - "name_ja: 表示名"
+      - "description: 説明文"
+      - "anonymization_level: none, partial, high, full"
+      
+  table_consent_items:
+    description: "同意項目のマスタ（何を共有するか）"
+    columns:
+      - "id"
+      - "category_id: FK"
+      - "code: basic_info, health_info, family_info, etc."
+      - "name_ja: 基本情報、健康情報、等"
+      - "sensitivity_level: low, medium, high, critical"
+      - "requires_explicit_consent: boolean"
+
+  table_client_consents:
+    description: "当事者ごとの同意状態"
+    columns:
+      - "id"
+      - "client_id: 当事者"
+      - "consent_item_id: 何について"
+      - "grantee_type: tier (1-4)"
+      - "grantee_id: 具体的な共有先（組織/個人）"
+      - "granted: boolean"
+      - "granted_at: timestamp"
+      - "revoked_at: timestamp (null=有効)"
+      - "granted_via: 同意取得方法（書面/アプリ/口頭）"
+      
+  table_data_access_log:
+    description: "誰がいつ何を見たか"
+    columns:
+      - "id"
+      - "client_id: 誰のデータを"
+      - "accessor_id: 誰が"
+      - "accessor_tier: どのレイヤーの人が"
+      - "accessed_at: いつ"
+      - "data_scope: 何を見たか"
+      - "purpose: 目的"
+    note: "透明性の測定装置"
+
+anonymization_levels:
+
+  level_0_none:
+    tier: "1（直接契約）"
+    method: "生データ（許可範囲内）"
+    example: "山田太郎、35歳、統合失調症"
+    
+  level_1_partial:
+    tier: "2（二次共有）"
+    method: "部分マスキング"
+    example: "山田T、30代、精神障害"
+    
+  level_2_high:
+    tier: "3（就職先）"
+    method: "本人選択的開示"
+    example: "配慮事項：静かな環境、定期通院あり"
+    
+  level_3_full:
+    tier: "4（マクロ）"
+    method: "完全匿名化・集計"
+    example: "30代男性、精神障害、就職率データに1件としてカウント"
+
+soe_measurement_insight: |
+  この同意構造自体が「本人主権の測定装置」になる。
+  
+  測定できること：
+  - 当事者が実際にどの範囲で同意しているか
+  - 同意なしのアクセスが発生していないか
+  - 同意の撤回がどれくらい起きているか
+  - 各tierでのデータ利用頻度
+  
+  「善意に依存しない」構造的保証。
+
+poc_scope_question:
+  q: "最初のPoCでは、どのtierまで実装する？"
+  
+  suggestion:
+    phase_1: "tier_1（直接契約）のみ"
+    reason: "当事者 ↔ 支援者 の基本構造を先に確立"
+    
+    phase_2: "tier_3（就職先）追加"
+    reason: "就労支援の出口として重要"
+    
+    phase_3: "tier_2, tier_4"
+    reason: "連携・研究は後から"
+
+guardian_complexity:
+  
+  why_complex: |
+    監護者・家族は「当事者のため」に行動するが、
+    当事者本人ではない。
+    
+    本人主権との緊張が生じうる。
+
+  types:
+    legal_guardian:
+      name: "法定代理人"
+      examples:
+        - "成年後見人"
+        - "保佐人"
+        - "補助人"
+        - "未成年の親権者"
+      authority: "法的に定義された代理権限"
+      
+    family_supporter:
+      name: "家族（法的権限なし）"
+      examples:
+        - "同居の親"
+        - "配偶者"
+        - "きょうだい"
+      authority: "法的権限はないが実質的影響力あり"
+      
+    informal_guardian:
+      name: "事実上の監護者"
+      examples:
+        - "グループホームの世話人"
+        - "長年の支援者"
+      authority: "慣習的・信頼関係ベース"
+
+soe_dilemma:
+  
+  tension_point: |
+    「本人主権」を掲げるSoEにおいて、
+    監護者は：
+    
+    A) 本人の意思を代弁・補助する存在？
+    B) 本人の意思と対立しうる存在？
+    C) 両方ありうる？
+    
+  real_scenarios:
+    scenario_1:
+      situation: "本人は就職したいが、家族は反対"
+      question: "誰の意思を優先？"
+      
+    scenario_2:
+      situation: "本人は情報開示を拒否、後見人は開示を求める"
+      question: "誰の同意が有効？"
+      
+    scenario_3:
+      situation: "本人の判断能力が変動する"
+      question: "いつ、誰が、どう判断？"
+
+positioning_options:
+
+  option_a:
+    name: "当事者レイヤーに含める"
+    logic: "本人の意思を補完する存在として"
+    risk: "本人主権が曖昧になる"
+    
+  option_b:
+    name: "tier_0.5 として独立"
+    logic: "当事者と直接契約の間の特別な位置"
+    structure:
+      - "tier_0: 当事者本人"
+      - "tier_0.5: 監護者・家族"
+      - "tier_1: 直接契約関係"
+      - "..."
+    merit: "特殊性を明示できる"
+    
+  option_c:
+    name: "tier_1の一種として扱う"
+    logic: "家族も『本人と契約関係を持つ者』として抽象化"
+    risk: "家族と支援事業所を同列に扱う違和感"
+
+my_suggestion:
+  approach: "option_b（tier_0.5 として独立）"
+  
+  rationale: |
+    監護者は「当事者の延長」でも「外部支援者」でもない。
+    独自のレイヤーとして明示することで：
+    
+    1. 本人主権との関係を構造的に可視化できる
+    2. 同意の優先順位を明確にできる
+    3. 「本人 vs 監護者」の対立時の処理ルールを定義できる
+
+consent_logic_with_guardian:
+
+  principle: "本人意思の最大尊重"
+  
+  cases:
+    
+    case_1_full_capacity:
+      condition: "本人に判断能力あり"
+      rule: "本人の同意が全て"
+      guardian_role: "参考意見・サポート"
+      
+    case_2_supported_decision:
+      condition: "本人に部分的支援が必要"
+      rule: "本人の意思 + 監護者の補助"
+      guardian_role: "意思決定支援"
+      note: "意思決定支援ガイドライン準拠"
+      
+    case_3_substituted_decision:
+      condition: "本人の意思表明が困難"
+      rule: "監護者が代理、ただし本人の推定意思を尊重"
+      guardian_role: "代理決定（最小限）"
+      safeguard: "本人の過去の意思・価値観を参照"
+
+db_design_addition:
+
+  table_guardians:
+    description: "監護者・家族の登録"
+    columns:
+      - "id"
+      - "client_id: 当事者"
+      - "user_id: 監護者のユーザーID"
+      - "relationship: parent, spouse, sibling, legal_guardian, etc."
+      - "legal_authority: none, assistant, curator, guardian"
+      - "authority_document: 後見登記等の参照"
+      - "registered_at"
+      - "revoked_at"
+
+  table_guardian_consents:
+    description: "監護者経由の同意（代理同意）"
+    columns:
+      - "id"
+      - "client_id"
+      - "guardian_id"
+      - "consent_item_id"
+      - "consent_type: proxy_full, proxy_supported, advisory"
+      - "client_capacity_at_time: full, partial, limited"
+      - "granted_at"
+      - "rationale: 代理同意の根拠"
+
+  table_consent_conflicts:
+    description: "本人と監護者の意思が対立した場合の記録"
+    columns:
+      - "id"
+      - "client_id"
+      - "guardian_id"
+      - "consent_item_id"
+      - "client_position: granted / denied"
+      - "guardian_position: granted / denied"
+      - "resolution: client_priority, guardian_priority, mediated"
+      - "resolution_rationale"
+      - "resolved_at"
+    note: "SoEの『測定装置』として極めて重要"
+
+soe_measurement_value: |
+  「本人 vs 監護者」の対立記録は、
+  制度が本人主権をどこまで実現できているかの
+  直接的な測定データになる。
+  
+  これこそが「簿外債務の可視化」。
+
+revised_tier_structure:
+  tier_0: "当事者本人"
+  tier_0.5: "監護者・家族"
+  tier_1: "直接契約関係（支援事業所等）"
+  tier_2: "二次共有先（行政・医療・他機関）"
+  tier_3: "就職先"
+  tier_4: "マクロ分析（匿名統計）"
+
+question:
+  q: "この構造で、SoEの本人主権と監護者の関係性は表現できていますか？"
+
+soe_actor_map:
+  
+  core_principle: |
+    全てのアクターは「当事者との関係性」と「オプトインの粒度」で整理される。
+    同意は関係性ごとに別々に取得し、秘匿化レベルも異なる。
+
+  tier_0_principal:
+    name: "当事者（本人）"
+    role: "データ主権者・契約の委任者"
+    consent: "不要（自己のデータ）"
+    anonymization: "なし"
+
+  tier_0_5_guardian:
+    name: "監護者・家族"
+    subtypes:
+      - legal_guardian: "成年後見人・保佐人・補助人"
+      - family: "親・配偶者・きょうだい（法的権限なし）"
+      - informal: "GH世話人等（事実上の監護者）"
+    consent: "本人意思との調整が必要"
+    tension: "本人主権との緊張関係あり"
+    
+  tier_1_direct_contract:
+    name: "直接契約関係"
+    relationship: "準委任契約の受任者"
+    examples:
+      - "就労移行支援事業所（コーリングサポ等）"
+      - "就労継続支援A型/B型"
+      - "相談支援事業所"
+      - "グループホーム"
+    consent:
+      type: "primary_opt_in"
+      granularity: "項目別（健康情報、家族構成、経済状況等）"
+    anonymization: "なし（ただし範囲限定）"
+    note: "事業説明書の『シェルパ』としての位置づけ"
+
+  tier_2_secondary_share:
+    name: "契約経由の二次共有先"
+    
+    tier_2a_government:
+      name: "行政機関"
+      subtypes:
+        municipal:
+          name: "基礎自治体（市区町村）"
+          examples:
+            - "障害福祉課（支給決定）"
+            - "生活保護課"
+          role: "サービス利用決定・給付管理"
+          
+        prefectural:
+          name: "広域自治体（都道府県）"
+          examples:
+            - "障害者更生相談所"
+            - "精神保健福祉センター"
+          role: "専門相談・広域調整"
+          
+        national_agency:
+          name: "国の機関"
+          examples:
+            - "ハローワーク"
+            - "障害者職業センター"
+          role: "就労支援・職業評価"
+      consent: "secondary_opt_in（共有先ごと）"
+      anonymization: "部分的"
+      
+    tier_2b_medical:
+      name: "医療機関"
+      examples:
+        - "主治医"
+        - "産業医"
+      role: "診断・治療・意見書"
+      consent: "secondary_opt_in"
+      note: "事業説明書：医療への積極的情報共有を本人同意で"
+      
+    tier_2c_other_support:
+      name: "他支援機関"
+      examples:
+        - "地域定着支援センター"
+        - "就労定着支援事業所"
+        - "発達障害者支援センター"
+      role: "連携支援"
+      consent: "secondary_opt_in"
+      
+  tier_3_employer:
+    name: "就職先"
+    subtypes:
+      - hr_department: "人事部"
+      - occupational_health: "産業医・産業保健スタッフ"
+      - supervisor: "直属上司（限定的）"
+    consent:
+      type: "employer_opt_in"
+      granularity: "非常に細かい（項目ごと選択）"
+    anonymization: "高度（本人が開示範囲を完全コントロール）"
+    examples:
+      - "配慮事項: ✓"
+      - "診断名: ✗"
+      - "通院頻度: ✓"
+      - "支援機関との連携許可: ✓"
+    note: "就労パスポートの活用"
+
+  tier_4_macro:
+    name: "社会分析（マクロデータ）"
+    subtypes:
+      research:
+        name: "研究機関"
+        examples: "大学・研究所"
+        purpose: "学術研究・エビデンス構築"
+        
+      policy:
+        name: "政策立案（行政統計）"
+        examples: "厚労省調査・自治体統計"
+        purpose: "制度設計・予算配分"
+        
+      commons_manager:
+        name: "共有財管理者（PHR基盤）"
+        note: "社会資本.pdfの構想"
+        purpose: "社会関係資本としての運用"
+        
+    consent: "research_opt_in（参加/不参加）"
+    anonymization: "完全（k-匿名性等）"
+
+consent_matrix:
+  
+  structure: |
+    当事者は各tierごとに別々のオプトインを行う。
+    上位tierへの同意が下位tierへの同意を含意しない。
+  
+  example_flow:
+    step_1:
+      action: "就労移行支援の利用契約"
+      consent: "tier_1（事業所）への基本情報共有"
+      
+    step_2:
+      action: "市区町村への情報提供同意"
+      consent: "tier_2a（行政）への支援状況共有"
+      separate_from: "step_1"
+      
+    step_3:
+      action: "就職時の情報開示同意"
+      consent: "tier_3（企業）への配慮事項共有"
+      separate_from: "step_1, step_2"
+      
+    step_4:
+      action: "研究協力同意"
+      consent: "tier_4（匿名統計）への貢献"
+      separate_from: "全て"
+
+db_implication:
+  
+  consent_categories_expanded:
+    description: "オプトインカテゴリの拡張"
+    categories:
+      - code: "direct_support"
+        tier: 1
+        name: "直接支援機関"
+        
+      - code: "gov_municipal"
+        tier: "2a"
+        name: "基礎自治体"
+        
+      - code: "gov_prefectural"
+        tier: "2a"
+        name: "広域自治体"
+        
+      - code: "gov_national"
+        tier: "2a"
+        name: "国の機関"
+        
+      - code: "medical"
+        tier: "2b"
+        name: "医療機関"
+        
+      - code: "other_support"
+        tier: "2c"
+        name: "他支援機関"
+        
+      - code: "employer"
+        tier: 3
+        name: "就職先"
+        
+      - code: "research"
+        tier: 4
+        name: "研究・統計"
+
+  note: |
+    行政の細分化（基礎/広域/国）は将来的に実装。
+    PoCではまず tier_2a_government として一括でもOK。
+
+alignment_with_docs:
+  
+  calling_sapo:
+    connection: "tier_1 直接契約の具体例"
+    key_concepts:
+      - "シェルパ = 準委任契約の受任者"
+      - "ベストインタレスト = 同意取得の指針"
+      - "ICF環境因子 = 共有すべき情報の枠組み"
+      
+  welfare_scheme:
+    connection: "tier構造の事業展開"
+    key_concepts:
+      - "AI相談支援モデル = パーソナルアシスタント"
+      - "データバンク機能 = SoEのDB"
+      
+  phr_commons:
+    connection: "tier_4 マクロデータの思想的基盤"
+    key_concepts:
+      - "共有財（コモンズ）としてのデータ"
+      - "投資者（個人）への運用益還元"
+      - "社会関係資本の最大化"
+
+poc_simplification:
+  
+  phase_1:
+    scope: "tier_0 + tier_1 のみ"
+    actors:
+      - "当事者"
+      - "支援者（直接契約）"
+    reason: "基本構造の確立"
+    
+  phase_2:
+    add: "tier_0.5（監護者）+ tier_3（就職先）"
+    reason: "就労支援の入口と出口"
+    
+  phase_3:
+    add: "tier_2（二次共有）"
+    reason: "連携機能"
+    
+  phase_4:
+    add: "tier_4（マクロ）"
+    reason: "研究・政策への接続"
+
+# SoE PoC 引継ぎファイル
+# 作成日: 2026-02-01
+# セッション: アクター構造・同意階層の設計
+
+session_summary:
+  topic: "SoEのアクター構造と同意（オプトイン）階層の設計"
+  outcome: "6層のtier構造と同意マトリクスの確定"
+  status: "設計完了・DB実装前"
+
+# ============================================
+# 確定したアクター構造（6層）
+# ============================================
+
+actor_tiers:
+  
+  tier_0:
+    name: "当事者（本人）"
+    role: "データ主権者・契約の委任者"
+    consent: "不要（自己のデータ）"
+    anonymization: "なし"
+
+  tier_0_5:
+    name: "監護者・家族"
+    subtypes:
+      - "法定代理人（後見人・保佐人・補助人）"
+      - "家族（法的権限なし）"
+      - "事実上の監護者（GH世話人等）"
+    key_issue: "本人主権との緊張関係"
+    db_tables:
+      - "guardians"
+      - "guardian_consents"
+      - "consent_conflicts（本人vs監護者の対立記録）"
+
+  tier_1:
+    name: "直接契約関係（準委任契約）"
+    examples:
+      - "就労移行支援事業所"
+      - "就労継続支援A型/B型"
+      - "相談支援事業所"
+      - "グループホーム"
+    consent: "primary_opt_in（項目別選択可）"
+    anonymization: "なし（範囲限定）"
+
+  tier_2:
+    name: "契約経由の二次共有先"
+    subtypes:
+      tier_2a_government:
+        name: "行政機関"
+        detail:
+          - "基礎自治体（市区町村）: 障害福祉課等"
+          - "広域自治体（都道府県）: 更生相談所等"
+          - "国の機関: ハローワーク、障害者職業センター"
+        note: "細分化は将来実装、PoCでは一括でOK"
+      tier_2b_medical:
+        name: "医療機関"
+        examples: "主治医、産業医"
+      tier_2c_other_support:
+        name: "他支援機関"
+        examples: "地域定着支援、発達障害者支援センター"
+    consent: "secondary_opt_in（共有先ごと）"
+    anonymization: "部分的"
+
+  tier_3:
+    name: "就職先"
+    subtypes:
+      - "人事部"
+      - "産業医・産業保健スタッフ"
+      - "直属上司（限定的）"
+    consent: "employer_opt_in（非常に細かい項目別）"
+    anonymization: "高度（本人が完全コントロール）"
+    tool: "就労パスポート"
+
+  tier_4:
+    name: "社会分析（マクロデータ）"
+    subtypes:
+      - "研究機関（学術研究）"
+      - "政策立案（行政統計）"
+      - "共有財管理者（PHR基盤構想）"
+    consent: "research_opt_in（参加/不参加）"
+    anonymization: "完全（k-匿名性等）"
+
+# ============================================
+# 同意（オプトイン）の原則
+# ============================================
+
+consent_principles:
+  
+  core_rule: |
+    各tierごとに別々のオプトインが必要。
+    上位tierへの同意が下位tierへの同意を含意しない。
+  
+  per_tier_consent:
+    tier_1: "契約時に項目別選択"
+    tier_2: "共有先ごとに別途同意"
+    tier_3: "就職時に細かく選択（診断名開示等）"
+    tier_4: "研究参加の可否"
+
+  anonymization_levels:
+    level_0_none: "tier_1（生データ、範囲内）"
+    level_1_partial: "tier_2（部分マスキング）"
+    level_2_high: "tier_3（本人選択的開示）"
+    level_3_full: "tier_4（完全匿名化・集計）"
+
+# ============================================
+# DB設計の方向性（未実装）
+# ============================================
+
+db_design_direction:
+  
+  core_tables:
+    clients: "当事者（全データの帰属点）"
+    guardians: "監護者・家族"
+    organizations: "支援機関・企業等"
+    users: "システム利用者（支援者等）"
+    
+  consent_tables:
+    consent_categories: "同意カテゴリマスタ（tier別）"
+    consent_items: "同意項目マスタ（何を共有するか）"
+    client_consents: "当事者ごとの同意状態"
+    guardian_consents: "監護者経由の代理同意"
+    consent_conflicts: "本人vs監護者の意思対立記録"
+    
+  access_control:
+    access_grants: "誰が何を見れるか"
+    data_access_log: "誰がいつ何を見たか（透明性測定）"
+
+  soe_measurement: |
+    同意構造自体が「本人主権の測定装置」になる。
+    - 同意の分布
+    - 同意なしアクセスの有無
+    - 同意撤回の頻度
+    - 本人vs監護者の対立パターン
+
+# ============================================
+# PoC実装フェーズ
+# ============================================
+
+poc_phases:
+  
+  phase_1:
+    scope: "tier_0 + tier_1"
+    actors: "当事者 + 支援者（直接契約）"
+    goal: "基本構造の確立"
+    
+  phase_2:
+    add: "tier_0.5 + tier_3"
+    actors: "監護者 + 就職先"
+    goal: "就労支援の入口と出口"
+    
+  phase_3:
+    add: "tier_2"
+    actors: "行政・医療・他支援機関"
+    goal: "連携機能"
+    
+  phase_4:
+    add: "tier_4"
+    actors: "研究・政策"
+    goal: "マクロデータ接続"
+
+# ============================================
+# 参照資料との接続
+# ============================================
+
+uploaded_docs:
+  
+  calling_sapo_r5:
+    file: "R５年度_就労移行支援コーリングサポ笠岡事業説明書"
+    connection:
+      - "tier_1 直接契約の具体例"
+      - "シェルパ = 準委任契約の受任者"
+      - "ベストインタレスト = 同意取得の指針"
+      - "ICF環境因子 = 共有すべき情報の枠組み"
+      - "医療への積極的情報共有（本人同意で）"
+      
+  welfare_scheme:
+    file: "_参考資料1-1_福祉スキーム説明資料"
+    connection:
+      - "AI相談支援モデル = パーソナルアシスタント機能"
+      - "データバンク機能 = SoEのDB構想"
+      - "IPS就労支援モデル = tier_1の理論的基盤"
+      
+  phr_commons:
+    file: "社会資本.pdf"
+    connection:
+      - "tier_4 マクロデータの思想的基盤"
+      - "共有財（コモンズ）としてのデータ"
+      - "投資者（個人）への運用益還元"
+      - "社会関係資本の最大化"
+
+# ============================================
+# 前セッションからの継続事項
+# ============================================
+
+previous_session:
+  transcript: "/mnt/transcripts/2026-02-01-01-54-03-soe-poc-tool-selection-db-design.txt"
+  
+  completed:
+    - "開発ツール選定: Lovable + Supabase"
+    - "Lovableアカウント作成・Support Navigator生成"
+    - "Supabaseプロジェクト「SoE」作成"
+    - "スキーマ療法LLM測定ガイドの確認"
+    
+  pending:
+    - "Lovable ↔ Supabase 接続完了"
+    - "DB設計の確定・実装"
+    - "Deep Research結果のテーブル化"
+
+# ============================================
+# 次セッションの推奨タスク
+# ============================================
+
+next_session_tasks:
+  
+  priority_1:
+    task: "DB設計の確定"
+    detail: |
+      - consent_categories/items のマスタ設計
+      - client_consents テーブル設計
+      - access_grants/access_log 設計
+    note: "tier構造が確定したので実装可能"
+    
+  priority_2:
+    task: "Lovable ↔ Supabase 接続"
+    detail: "前回システム障害で中断"
+    
+  priority_3:
+    task: "最小PoC（MVP）の範囲確定"
+    question: |
+      - 当事者自身がアプリに直接入力？支援者が代行？
+      - 評価者は組織内？外部第三者？
+      - phase_1で何を「測定可能」にするか？
+
+# ============================================
+# 未解決の論点
+# ============================================
+
+open_questions:
+  - "スキーマ療法の測定とSoE（本人主権評価）の関係は？"
+  - "ICF環境因子はDBにどう組み込む？"
+  - "行政の細分化（基礎/広域/国）はいつ実装？"
+  - "PHR基盤構想（社会資本.pdf）とSoEの統合は博士課程以降？"

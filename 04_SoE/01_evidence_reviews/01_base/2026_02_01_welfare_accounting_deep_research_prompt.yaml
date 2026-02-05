@@ -1,0 +1,507 @@
+# ============================================
+# 福祉簿記メタファー：勘定科目設計のための
+# Deep Research プロンプト
+# ============================================
+# 作成日: 2026-02-01
+# 目的: エピソード→仕訳、勘定科目→アセスメント指標
+#       のエビデンス基盤構築
+# ============================================
+
+research_context:
+  
+  core_concept: |
+    「福祉簿記メタファー」とは、当事者の状態を会計フレームワークで
+    可視化する試みである。
+    
+    - 貸借対照表（B/S）: 当事者の「資産」と「負債」の現在価値
+    - 損益計算書（P/L）: 支援期間中の「増減」
+    - キャッシュフロー計算書（C/F）: 実際の行動・活動の流れ
+    
+    エピソード（支援記録、生活上の出来事）が「仕訳」として機能し、
+    勘定科目は心理学・福祉学のエビデンスベースの指標で構成される。
+
+  research_question: |
+    障害者就労支援における当事者の状態変化を、
+    会計的フレームワーク（B/S, P/L, C/F）で測定・可視化するために、
+    どのようなアセスメント指標が「勘定科目」として適切か？
+    
+    各指標について以下を明らかにする：
+    - 理論的基盤
+    - 測定ツール（尺度）
+    - 信頼性・妥当性のエビデンス
+    - 障害福祉領域での適用事例
+    - 縦断的測定（変化の追跡）への適合性
+
+# ============================================
+# 勘定科目候補：資産サイド
+# ============================================
+
+asset_categories:
+
+  # ========== 固定資産（変動しにくい基盤） ==========
+  fixed_assets:
+    
+    cognitive_capital:
+      description: "認知的資本（知的能力、学習能力）"
+      search_queries:
+        - "cognitive assessment disability employment evidence-based"
+        - "intellectual functioning measurement vocational rehabilitation"
+        - "WAIS-IV reliability validity intellectual disability"
+        - "認知機能評価 就労支援 信頼性 妥当性"
+      target_scales:
+        - "WAIS-IV（ウェクスラー成人知能検査）"
+        - "NOCC（神経心理学的オンライン総合チェック）"
+        - "MoCA（モントリオール認知評価）"
+      accounting_analogy: "土地・建物（減価しにくい基盤能力）"
+    
+    personality_traits:
+      description: "性格特性（比較的安定した特性）"
+      search_queries:
+        - "Big Five personality traits stability change longitudinal"
+        - "NEO-PI-R vocational rehabilitation disability"
+        - "personality assessment employment outcomes meta-analysis"
+        - "BIG5 性格特性 安定性 変化 縦断研究"
+      target_scales:
+        - "NEO-PI-R / NEO-FFI"
+        - "BFI-2（Big Five Inventory-2）"
+        - "TIPI（Ten Item Personality Inventory）"
+      accounting_analogy: "のれん（企業買収時の無形資産）"
+    
+    educational_capital:
+      description: "教育的資本（学歴、資格、スキル）"
+      search_queries:
+        - "human capital measurement disability employment"
+        - "vocational skills assessment supported employment"
+        - "educational attainment disability outcomes systematic review"
+        - "職業スキル評価 障害者雇用 アウトカム"
+      target_scales:
+        - "GATB（一般職業適性検査）"
+        - "日本語能力検定"
+        - "各種資格・検定"
+      accounting_analogy: "特許権・ライセンス（取得した権利）"
+
+  # ========== 流動資産（変動しやすい状態） ==========
+  current_assets:
+    
+    self_esteem:
+      description: "自尊感情（自己価値の認識）"
+      search_queries:
+        - "Rosenberg Self-Esteem Scale reliability validity meta-analysis"
+        - "self-esteem measurement disability population psychometric"
+        - "self-esteem intervention employment outcomes longitudinal"
+        - "自尊感情 測定 障害者 信頼性 妥当性 縦断"
+        - "RSES-J 日本語版 心理測定特性"
+      target_scales:
+        - "RSES（Rosenberg Self-Esteem Scale）"
+        - "RSES-J（日本語版）"
+        - "State Self-Esteem Scale"
+      accounting_analogy: "現金・預金（最も流動性の高い資産）"
+      priority: "HIGH - SoEの中核指標"
+    
+    self_efficacy:
+      description: "自己効力感（目標達成への確信）"
+      search_queries:
+        - "General Self-Efficacy Scale psychometric properties"
+        - "self-efficacy vocational rehabilitation systematic review"
+        - "Bandura self-efficacy measurement disability"
+        - "自己効力感 就労支援 効果 メタ分析"
+        - "GSE尺度 日本語版 信頼性"
+      target_scales:
+        - "GSE（General Self-Efficacy Scale）"
+        - "CDSE（Career Decision Self-Efficacy Scale）"
+        - "職業的自己効力感尺度"
+      accounting_analogy: "売掛金（将来回収予定の価値）"
+    
+    resilience:
+      description: "レジリエンス（回復力・適応力）"
+      search_queries:
+        - "Connor-Davidson Resilience Scale psychometric review"
+        - "resilience measurement disability mental health"
+        - "resilience intervention vocational outcomes"
+        - "レジリエンス尺度 日本語版 心理測定特性"
+      target_scales:
+        - "CD-RISC（Connor-Davidson Resilience Scale）"
+        - "BRS（Brief Resilience Scale）"
+        - "精研式レジリエンス検査"
+      accounting_analogy: "棚卸資産（消費・補充を繰り返す）"
+    
+    hope_optimism:
+      description: "希望・楽観性（将来への期待）"
+      search_queries:
+        - "Adult Hope Scale Snyder psychometric properties"
+        - "optimism measurement LOT-R disability population"
+        - "hope theory vocational rehabilitation"
+        - "希望尺度 楽観性 就労支援 効果"
+      target_scales:
+        - "Adult Hope Scale（Snyder）"
+        - "LOT-R（Life Orientation Test-Revised）"
+        - "日本語版希望尺度"
+      accounting_analogy: "有価証券（将来価値への期待）"
+    
+    social_capital:
+      description: "社会関係資本（人間関係、支援ネットワーク）"
+      search_queries:
+        - "social capital measurement disability employment"
+        - "social support scale psychometric review"
+        - "social network analysis vocational rehabilitation"
+        - "ソーシャルサポート尺度 社会関係資本 障害者"
+      target_scales:
+        - "MSPSS（Multidimensional Scale of Perceived Social Support）"
+        - "SSQ（Social Support Questionnaire）"
+        - "ソーシャルサポート尺度（日本語版）"
+      accounting_analogy: "投資有価証券（長期的関係性への投資）"
+
+  # ========== ケイパビリティ資産（機能的能力） ==========
+  capability_assets:
+    
+    icecap_capability:
+      description: "ケイパビリティ（Sen/Nussbaum理論に基づく）"
+      search_queries:
+        - "ICECAP-A psychometric properties systematic review"
+        - "capability approach measurement disability"
+        - "Sen capability operationalization empirical"
+        - "ケイパビリティアプローチ 測定 障害福祉"
+        - "ICECAP 日本語版 妥当性"
+      target_scales:
+        - "ICECAP-A（成人用）"
+        - "ICECAP-O（高齢者用）"
+        - "OxCAP-MH（精神保健版）"
+      accounting_analogy: "営業権（事業を営む能力の価値）"
+      priority: "HIGH - ケイパビリティアプローチの核心"
+    
+    functioning_icf:
+      description: "ICF機能分類に基づく活動・参加"
+      search_queries:
+        - "WHODAS 2.0 psychometric properties disability"
+        - "ICF Core Sets vocational rehabilitation"
+        - "functioning measurement WHO disability assessment"
+        - "WHODAS 2.0 日本語版 信頼性 妥当性"
+        - "ICF 就労支援 アセスメント"
+      target_scales:
+        - "WHODAS 2.0"
+        - "ICF Core Sets（就労版）"
+        - "生活機能評価表"
+      accounting_analogy: "機械設備（生産活動を可能にする資産）"
+    
+    vocational_readiness:
+      description: "職業準備性（就労に向けた準備状態）"
+      search_queries:
+        - "vocational readiness assessment disability evidence"
+        - "work readiness scale psychometric properties"
+        - "職業準備性ピラミッド エビデンス 測定"
+        - "就労準備性 評価尺度 信頼性"
+      target_scales:
+        - "職業準備性チェックリスト"
+        - "就労移行支援アセスメントシート"
+        - "Work Readiness Inventory"
+      accounting_analogy: "仕掛品（完成に向けて価値が蓄積中）"
+
+# ============================================
+# 勘定科目候補：負債サイド
+# ============================================
+
+liability_categories:
+
+  # ========== 固定負債（長期的な課題） ==========
+  fixed_liabilities:
+    
+    early_maladaptive_schemas:
+      description: "早期不適応的スキーマ（幼少期に形成された認知パターン）"
+      search_queries:
+        - "Young Schema Questionnaire psychometric review"
+        - "early maladaptive schemas disability population"
+        - "schema therapy effectiveness mental health meta-analysis"
+        - "スキーマ療法 YSQ 日本語版 信頼性 妥当性"
+        - "早期不適応的スキーマ 障害者 測定"
+      target_scales:
+        - "YSQ-S3（Young Schema Questionnaire Short Form 3）"
+        - "SMI（Schema Mode Inventory）"
+        - "日本語版YSQ"
+      accounting_analogy: "長期借入金（長期にわたり返済が必要）"
+      priority: "HIGH - 根本的な認知パターン"
+    
+    adverse_childhood_experiences:
+      description: "逆境的小児期体験（トラウマ歴）"
+      search_queries:
+        - "ACE questionnaire psychometric properties"
+        - "adverse childhood experiences disability outcomes"
+        - "childhood trauma measurement adult population"
+        - "ACEs 逆境的小児期体験 測定 日本"
+        - "小児期トラウマ 成人 アウトカム 縦断"
+      target_scales:
+        - "ACE Questionnaire（Felitti）"
+        - "CTQ（Childhood Trauma Questionnaire）"
+        - "日本語版ACE質問票"
+      accounting_analogy: "社債（過去の資金調達の返済義務）"
+      note: "一度形成されると変化しにくいが、影響は軽減可能"
+    
+    internalized_stigma:
+      description: "内在化されたスティグマ（自己に向けられた偏見）"
+      search_queries:
+        - "internalized stigma mental illness scale psychometric"
+        - "self-stigma disability employment barriers"
+        - "stigma reduction intervention effectiveness"
+        - "内在化されたスティグマ 精神障害 尺度"
+      target_scales:
+        - "ISMI（Internalized Stigma of Mental Illness）"
+        - "SSMIS（Self-Stigma of Mental Illness Scale）"
+        - "日本語版ISMI"
+      accounting_analogy: "退職給付引当金（将来の義務）"
+
+  # ========== 流動負債（短期的な課題） ==========
+  current_liabilities:
+    
+    depression_anxiety:
+      description: "抑うつ・不安症状（現在の精神状態）"
+      search_queries:
+        - "PHQ-9 GAD-7 psychometric properties systematic review"
+        - "depression anxiety measurement disability population"
+        - "mental health screening vocational rehabilitation"
+        - "PHQ-9 GAD-7 日本語版 信頼性 妥当性"
+      target_scales:
+        - "PHQ-9（Patient Health Questionnaire-9）"
+        - "GAD-7（Generalized Anxiety Disorder-7）"
+        - "K6/K10（Kessler Psychological Distress Scale）"
+      accounting_analogy: "買掛金（短期的に対処すべき負担）"
+    
+    cognitive_distortions:
+      description: "認知の歪み（非機能的思考パターン）"
+      search_queries:
+        - "cognitive distortions scale psychometric properties"
+        - "automatic thoughts questionnaire reliability validity"
+        - "cognitive errors measurement CBT"
+        - "認知の歪み 尺度 信頼性 妥当性"
+        - "自動思考質問票 日本語版"
+      target_scales:
+        - "ATQ（Automatic Thoughts Questionnaire）"
+        - "DAS（Dysfunctional Attitude Scale）"
+        - "認知の歪み尺度"
+      accounting_analogy: "未払費用（認識されているが未処理）"
+    
+    environmental_barriers:
+      description: "環境的障壁（ICF環境因子の阻害要因）"
+      search_queries:
+        - "environmental barriers measurement ICF"
+        - "CHIEF disability environment assessment"
+        - "environmental factors employment disability"
+        - "ICF環境因子 阻害因子 測定 アセスメント"
+      target_scales:
+        - "CHIEF（Craig Hospital Inventory of Environmental Factors）"
+        - "FABS（Facilitators and Barriers Survey）"
+        - "環境因子評価票"
+      accounting_analogy: "前受金（外部から課された制約）"
+
+# ============================================
+# 勘定科目候補：純資産サイド
+# ============================================
+
+equity_categories:
+  
+  identity_autonomy:
+    description: "アイデンティティ・自律性（自己決定の基盤）"
+    search_queries:
+      - "self-determination theory measurement disability"
+      - "autonomy scale psychometric properties"
+      - "identity development disability adulthood"
+      - "自己決定 尺度 障害者 信頼性"
+      - "アイデンティティ 測定 成人期"
+    target_scales:
+      - "SDS（Self-Determination Scale）"
+      - "Basic Psychological Needs Scale"
+      - "自己決定尺度（日本語版）"
+    accounting_analogy: "資本金（事業の基盤となる出資）"
+  
+  life_satisfaction:
+    description: "人生満足度（主観的ウェルビーイング）"
+    search_queries:
+      - "Satisfaction with Life Scale psychometric review"
+      - "subjective well-being measurement disability"
+      - "quality of life assessment vocational rehabilitation"
+      - "人生満足度尺度 SWLS 日本語版"
+    target_scales:
+      - "SWLS（Satisfaction with Life Scale）"
+      - "PWI（Personal Well-being Index）"
+      - "WHO-5"
+    accounting_analogy: "利益剰余金（蓄積された価値）"
+
+# ============================================
+# 損益計算書（P/L）の勘定科目
+# ============================================
+
+income_statement_categories:
+
+  revenue_gains:
+    description: "収益・利得（プラスの変化をもたらす要因）"
+    examples:
+      - "支援介入による自尊感情向上"
+      - "スキル習得による自己効力感向上"
+      - "社会関係の構築"
+      - "成功体験の蓄積"
+    search_queries:
+      - "intervention effectiveness self-esteem improvement"
+      - "vocational rehabilitation outcomes measurement"
+      - "positive psychology intervention disability"
+      - "支援介入 効果測定 アウトカム指標"
+    accounting_analogy: "売上高、営業外収益"
+  
+  expenses_losses:
+    description: "費用・損失（マイナスの変化をもたらす要因）"
+    examples:
+      - "失敗体験による自己効力感低下"
+      - "ストレスによる精神状態悪化"
+      - "社会関係の喪失"
+      - "スティグマ経験"
+    search_queries:
+      - "negative life events disability impact"
+      - "stress measurement vocational context"
+      - "stigma experience employment outcomes"
+      - "ストレス要因 障害者 就労 影響"
+    accounting_analogy: "売上原価、販管費、営業外費用"
+
+# ============================================
+# キャッシュフロー計算書（C/F）の視点
+# ============================================
+
+cash_flow_categories:
+  
+  operating_activities:
+    description: "営業活動（日常的な支援・生活活動）"
+    measurement_focus:
+      - "日々の活動記録"
+      - "支援セッションの頻度・内容"
+      - "生活習慣の維持・変化"
+    search_queries:
+      - "activity monitoring disability daily living"
+      - "ecological momentary assessment mental health"
+      - "日常生活活動 モニタリング 障害者"
+  
+  investing_activities:
+    description: "投資活動（能力開発・資産形成活動）"
+    measurement_focus:
+      - "訓練・研修への参加"
+      - "資格取得の取り組み"
+      - "新しいスキルの習得"
+    search_queries:
+      - "skill development measurement vocational training"
+      - "human capital investment disability"
+      - "能力開発 投資 測定 障害者就労"
+  
+  financing_activities:
+    description: "財務活動（外部支援・制度利用）"
+    measurement_focus:
+      - "福祉サービスの利用状況"
+      - "家族・支援者からのサポート"
+      - "制度的支援の受給"
+    search_queries:
+      - "social support utilization disability"
+      - "welfare service usage measurement"
+      - "福祉サービス利用 測定 アウトカム"
+
+# ============================================
+# 横断的な研究課題
+# ============================================
+
+cross_cutting_research:
+
+  longitudinal_measurement:
+    description: "縦断的測定の方法論"
+    search_queries:
+      - "longitudinal assessment disability vocational outcomes"
+      - "repeated measures psychometric stability"
+      - "change sensitivity psychological scales"
+      - "縦断的測定 心理尺度 変化感度"
+    importance: "仕訳（エピソード）による変化を追跡するため必須"
+  
+  accounting_metaphor_precedent:
+    description: "会計メタファーの先行研究"
+    search_queries:
+      - "social accounting human capital measurement"
+      - "human resource accounting disability"
+      - "social return on investment disability employment"
+      - "社会会計 人的資本 測定 福祉"
+      - "SROI 社会的投資収益率 障害者雇用"
+    note: "福祉簿記メタファーの学術的位置づけ"
+  
+  icf_operationalization:
+    description: "ICFの操作的定義"
+    search_queries:
+      - "ICF personal factors operationalization"
+      - "ICF environmental factors measurement"
+      - "ICF implementation disability services"
+      - "ICF 個人因子 操作的定義"
+      - "ICF 環境因子 測定 実装"
+    priority: "HIGH - SoEの理論的基盤"
+  
+  constitutional_ai_ethics:
+    description: "Constitutional AIと権利保障"
+    search_queries:
+      - "AI ethics disability rights CRPD"
+      - "Constitutional AI Anthropic human rights"
+      - "algorithmic fairness disability"
+      - "AI倫理 障害者権利 CRPD"
+    note: "Input Constitutional AIの学術的根拠"
+
+# ============================================
+# 出力形式の指定
+# ============================================
+
+output_requirements:
+  
+  per_scale:
+    - "正式名称（英語・日本語）"
+    - "開発者・開発年"
+    - "理論的基盤"
+    - "項目数・所要時間"
+    - "信頼性（Cronbach's α、再検査信頼性）"
+    - "妥当性（構成概念妥当性、基準関連妥当性）"
+    - "障害者集団での使用実績"
+    - "日本語版の有無と心理測定特性"
+    - "縦断的使用への適合性"
+    - "無料/有料、入手方法"
+  
+  synthesis:
+    - "勘定科目としての適切性評価"
+    - "測定頻度の推奨（日次/週次/月次等）"
+    - "他の指標との相関・関係性"
+    - "SoEシステムへの組み込み優先度"
+
+# ============================================
+# 研究の制約条件
+# ============================================
+
+constraints:
+  
+  population: "障害者（特に就労支援利用者）"
+  context: "日本の障害福祉サービス"
+  language: "日本語版が存在するか、翻訳可能なもの"
+  cost: "無料または低コストで実施可能"
+  administration: "支援者またはLLMで実施可能"
+  
+  theoretical_alignment:
+    - "ケイパビリティアプローチとの整合性"
+    - "ICFフレームワークとの整合性"
+    - "CRPD原則との整合性"
+    - "準委任契約論（善管注意義務）との整合性"
+
+# ============================================
+# メタデータ
+# ============================================
+
+metadata:
+  created_at: "2026-02-01T12:00:00+09:00"
+  created_by: "Claude Opus 4.5"
+  purpose: "福祉簿記メタファーの勘定科目設計"
+  target_folder: "04_SoE/"
+  file_name_suggestion: "welfare_accounting_deep_research_prompt.yaml"
+  
+  related_concepts:
+    - "SoE（Service of Empowerment）"
+    - "Input Constitutional AI"
+    - "粒度理論（Grain-Based Cognition）"
+    - "PHR共有財構想"
+  
+  next_steps:
+    1: "Deep Researchの実行"
+    2: "勘定科目マスタの設計"
+    3: "仕訳ルールの定義"
+    4: "Supabase DBスキーマへの反映"

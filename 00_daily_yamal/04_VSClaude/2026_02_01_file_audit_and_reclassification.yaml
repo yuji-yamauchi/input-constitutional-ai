@@ -1,0 +1,198 @@
+# ============================================
+# ファイル監査・再分類レポート
+# 2026-01-29 〜 2026-02-01 の更新ファイル
+# ============================================
+# 作成日: 2026-02-01
+# 作成者: Claude Code (Opus 4.5)
+# 目的: 期間内の新規・更新ファイルの棚卸しと分類提案
+# ============================================
+
+audit_period:
+  from: "2026-01-29"
+  to: "2026-02-01"
+
+# ============================================
+# 1. 現在の配置が適切なファイル（移動不要）
+# ============================================
+
+correctly_placed:
+
+  # --- 04_SoE/01_evidence_reviews/ 配下 ---
+  evidence_reviews_base:
+    - path: "04_SoE/01_evidence_reviews/01_base/2026_01_30_NOCC_Claude.md"
+      content: "NOCC（神経心理学的オンライン総合チェック）のClaudeによるレビュー"
+      status: "OK"
+
+    - path: "04_SoE/01_evidence_reviews/01_base/2026_01_30_LLMによる認知・非認知測定の提案.md"
+      content: "LLM会話を通じた認知・非認知アセスメントの設計提案"
+      status: "OK"
+
+    - path: "04_SoE/01_evidence_reviews/01_base/2026_02_01_福祉簿記メタファー：勘定科目設計.md"
+      content: "RSES/ICECAP-A/YSQ/WHODAS 2.0の4指標エビデンス基盤"
+      status: "OK"
+
+    - path: "04_SoE/01_evidence_reviews/01_base/2026_02_01_日本の障害者就労支援におけるICFとGATBの活用実態.pdf"
+      content: "ICFとGATBの活用実態に関するDeep Researchレポート"
+      status: "OK"
+
+    - path: "04_SoE/01_evidence_reviews/02_schema/2026_02_01_cl.md"
+      content: "YSQスキーマ療法の詳細レビュー（Polyvagal Theory統合含む）"
+      status: "OK"
+
+    - path: "04_SoE/01_evidence_reviews/03_BIG5/2026_01_30_big5_llm_measurement_guide.md"
+      content: "BIG5性格特性のLLM会話型測定ガイド（Cursor開発向け）"
+      status: "OK"
+
+    - path: "04_SoE/01_evidence_reviews/04_LLM/2026_01_30_LLM_cl.md"
+      content: "LLMの予測メカニズム解説（Word Embedding〜Attention）"
+      status: "OK"
+
+    - path: "04_SoE/01_evidence_reviews/05_Whodas 2.0/WHODAS_2.0_36項目_完全解説.md"
+      content: "WHODAS 2.0全36項目の完全解説"
+      status: "OK"
+
+    - path: "04_SoE/01_evidence_reviews/06_Capability/ICECAP-A_ケイパビリティ尺度_完全解説.md"
+      content: "ICECAP-Aケイパビリティ尺度の完全解説"
+      status: "OK"
+
+  # --- 00_daily_yamal/ 配下 ---
+  daily_records:
+    - path: "00_daily_yamal/01_Cloude/2026_01_30_cl.yaml"
+      content: "LLMの仕組み→福祉現場の構造問題（バイスティック7原則批判含む）"
+      status: "OK - セッション記録として適切"
+
+    - path: "00_daily_yamal/01_Cloude/2026_01_31_cl.yaml"
+      content: "SoE PoC ツール推奨（Lovable + Supabase）"
+      status: "OK - セッション記録として適切"
+
+    - path: "00_daily_yamal/01_Cloude/2026_02_01_cl.yaml"
+      content: "d-rel.jpドメイン設定（Lovable/Microsoft 365）"
+      status: "OK - セッション記録として適切"
+
+# ============================================
+# 2. 再分類を提案するファイル
+# ============================================
+
+reclassification_proposals:
+
+  proposal_1:
+    current_path: "00_daily_yamal/01_Cloude/2026_02_01_welfare_accounting_deep_research_prompt.yaml"
+    proposed_path: "04_SoE/01_evidence_reviews/01_base/2026_02_01_welfare_accounting_deep_research_prompt.yaml"
+    reason: |
+      福祉簿記メタファーの勘定科目設計プロンプト。
+      セッション記録ではなく、SoEのエビデンス調査設計文書。
+      04_SoE/01_evidence_reviews/ に属すべき。
+    priority: "HIGH"
+
+  proposal_2:
+    current_path: "00_daily_yamal/01_Cloude/2026_02_01_cldr_.md"
+    proposed_path: "04_SoE/01_evidence_reviews/01_base/2026_02_01_cldr_.md"
+    reason: |
+      福祉簿記メタファー4指標のDeep Research結果。
+      内容は04_SoE/01_evidence_reviews/01_base/2026_02_01_福祉簿記メタファー：勘定科目設計.md
+      と同一または類似。重複確認の上、統合または移動を推奨。
+    priority: "HIGH"
+    note: "01_baseに同名ファイルが既に存在。重複の可能性あり"
+
+  proposal_3:
+    current_path: "00_daily_yamal/01_Cloude/JLPT_N_certification_deepresearch_prompt.md"
+    proposed_path: "04_SoE/01_evidence_reviews/07_JLPT/JLPT_N_certification_deepresearch_prompt.md"
+    reason: |
+      JLPT（日本語能力試験）N認定の調査プロンプト。
+      外国人利用者の日本語能力評価に関するエビデンス調査。
+      新規ディレクトリ 07_JLPT を作成して格納を推奨。
+    priority: "MEDIUM"
+
+  proposal_4:
+    current_path: "04_SoE/01_evidence_reviews/Welfare Bookkeeping Metaphor_ Evidence Base for Four HIGH Priority Account Categories in Disability Employment Support.pdf"
+    proposed_path: "04_SoE/01_evidence_reviews/01_base/Welfare_Bookkeeping_Metaphor_Evidence_Base.pdf"
+    reason: |
+      evidence_reviews直下にPDFが1件だけ存在。
+      内容は01_baseの福祉簿記メタファー関連。
+      01_base配下に移動し、ファイル名のスペースをアンダースコアに統一推奨。
+    priority: "LOW"
+
+# ============================================
+# 3. ディレクトリ構造の課題
+# ============================================
+
+directory_issues:
+
+  issue_1:
+    location: "04_SoE/01_evidence_reviews/"
+    problem: "01_NOCCディレクトリが削除済み（git statusでDeleted）だが01_baseに内容が移動済み"
+    status: "解決済み - 名前変更の過渡期"
+
+  issue_2:
+    location: "04_SoE/01_evidence_reviews/01_base/"
+    problem: "2026_02_01_cldr_.md のファイル名が不明瞭"
+    suggestion: "内容に応じたリネームを推奨（例: 2026_02_01_welfare_accounting_evidence_summary.md）"
+
+  issue_3:
+    location: "04_SoE/01_evidence_reviews/05_Whodas 2.0/"
+    problem: "ディレクトリ名にスペースが含まれる"
+    suggestion: "05_WHODAS_2.0 にリネーム推奨（CLIでの操作性向上）"
+
+  issue_4:
+    location: "04_SoE/evidence_reviews/"
+    problem: "今回作成した空ディレクトリ。01_evidence_reviewsが既に存在"
+    suggestion: "空のまま不要。削除推奨"
+
+# ============================================
+# 4. 期間中の主要な研究進展サマリー
+# ============================================
+
+research_progress:
+
+  welfare_accounting_metaphor:
+    status: "急速に具体化"
+    achievements:
+      - "勘定科目候補の体系化（資産/負債/純資産/P&L/C&F）"
+      - "4つのHIGH優先度指標のエビデンス基盤確立"
+      - "RSES（自尊感情）= 現金・預金"
+      - "ICECAP-A（ケイパビリティ）= 営業権"
+      - "YSQ（早期不適応的スキーマ）= 長期借入金"
+      - "WHODAS 2.0（ICF機能分類）= 機械設備"
+    next: "Deep Research実行 → 勘定科目マスタ設計 → Supabase DBスキーマ"
+
+  llm_mechanism_understanding:
+    status: "基礎理解完了"
+    key_insight: |
+      LLMは福祉村の「免疫システム」（善意ベースの排除反応）を迂回できる。
+      「誰が言ったか」ではなく「何を言ったか」で処理するため、
+      品質ベースの評価を感情的反発なしに実装可能。
+
+  soe_poc_architecture:
+    status: "技術選定完了"
+    decision: "Lovable + Supabase（Phase 2）"
+    rationale: "研究データの永続化・監査ログ蓄積が必須要件"
+    domain: "d-rel.jp → soe.d-rel.jp（サブドメイン）を推奨"
+
+  bystick_critique:
+    status: "構造的批判の言語化完了"
+    core_argument: "7原則は『姿勢』であり『実装方法』がない"
+    soe_response: "Input Constitutional AIで実装レイヤーを提供"
+
+  assessment_expansion:
+    new_domains:
+      - "BIG5性格特性のLLM会話型測定（30分×10セッション）"
+      - "JLPT N認定の就労支援活用"
+      - "読解/聴解×文脈長の乖離測定"
+
+# ============================================
+# メタデータ
+# ============================================
+
+metadata:
+  created_at: "2026-02-01T15:00:00+09:00"
+  created_by: "Claude Code (Opus 4.5)"
+  session_type: "file_audit_and_reclassification"
+  files_audited: 18
+  reclassification_proposals: 4
+  directory_issues: 4
+
+fire_culture_note: |
+  1/29-2/1の3日間で、福祉簿記メタファーの勘定科目が
+  「概念」から「エビデンスベースの設計仕様」へと転換した。
+  RSES/ICECAP-A/YSQ/WHODAS 2.0の4指標が揃い、
+  「数字で示すIt's not your fault」の実装基盤が整いつつある。

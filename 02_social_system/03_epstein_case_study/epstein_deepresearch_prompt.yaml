@@ -1,0 +1,538 @@
+# ============================================================
+# DeepResearch用プロンプト: エプスタイン事件包括的調査
+# GPT DeepResearch / Google NotebookLM 向け
+# ============================================================
+# 作成日: 2026-02-03
+# 作成者: Claude Opus 4.5 + Puu
+# 目的: ヒュノプス因子研究の実証基盤としてのエプスタイン事件調査
+# ============================================================
+
+metadata:
+  purpose: "GPT DeepResearch / NotebookLM への入力用構造化プロンプト"
+  research_context: "SoE（Service of Empowerment / Service or Exploitation）研究"
+  target_concept: "ヒュノプス因子（Hypnos Factor）の実証的裏付け"
+  language: "日本語（英語資料参照可）"
+  created: "2026-02-03"
+
+# ============================================================
+# セクション1: 研究目的と調査フレーム
+# ============================================================
+
+research_objective:
+  title: "エプスタイン事件の構造分析 — ヒュノプス因子の実証的検証"
+  
+  background: |
+    本調査は、富と権力の偏重が人間の道徳認知回路に与える
+    構造的影響（「ヒュノプス因子」）を検証するための
+    実証データ収集を目的とする。
+    
+    ヒュノプス因子（Hypnos Factor）とは：
+    権力や富の偏重が一定閾値を超えたとき、法治的感性・道徳認知回路が
+    構造的に「眠る」現象。個人の道徳的欠陥ではなく、権利非対称性が
+    閾値超過時に確率論的に発現する構造的認知変容。
+
+    先行研究として David Owen（Hubris Syndrome, 2008）、
+    Dacher Keltner（The Power Paradox, 2016）、
+    Sukhwinder Obhi（権力プライミングによるミラーニューロン抑制実験）
+    が理論的基盤を提供するが、本研究では「傲慢（Hubris）」という
+    道徳的帰責を含む用語ではなく、「眠り（Hypnos）」という
+    構造的・確率論的概念として再定義する。
+    
+    エプスタイン事件は、この因子が個人・制度・社会の
+    三レベルで同時発現した歴史的ケーススタディである。
+
+  research_questions:
+    q1: "エプスタインネットワークに関与した人物の権力構造はどうなっていたか？"
+    q2: "司法・学術・メディア等の制度的免疫がなぜ20年間機能しなかったか？"
+    q3: "非起訴合意（NPA）に至る過程で、どのような権力の作用があったか？"
+    q4: "関与者の公的理念と実際の行動の乖離はどの程度だったか？"
+    q5: "被害者の権利はどのように構造的に剥奪されていたか？"
+
+# ============================================================
+# セクション2: 事件概要（検証済み事実）
+# ============================================================
+
+case_overview:
+  subject:
+    name: "Jeffrey Edward Epstein"
+    born: "1953-01-20, Brooklyn, New York"
+    died: "2019-08-10, Metropolitan Correctional Center, Manhattan"
+    cause_of_death: "首吊り自殺（公式発表。異論あり）"
+    occupation: "金融業者（具体的な資産運用の実態は不透明）"
+  
+  co_conspirator:
+    name: "Ghislaine Maxwell"
+    role: "エプスタインの長年のパートナー・共犯者"
+    conviction: "2021-12-30 有罪評決（性的人身売買等）"
+    sentence: "懲役20年（2022-06-28宣告）"
+  
+  crime_scale:
+    victims_identified: "40名以上（FBI確認済み未成年者）"
+    youngest_victim: "14歳"
+    period: "2002年〜2005年（連邦起訴対象期間。実際はそれ以前から）"
+    geographic_scope:
+      - "Palm Beach, Florida（邸宅）"
+      - "New York City（タウンハウス）"
+      - "Little St. James Island, U.S. Virgin Islands（私有島）"
+      - "New Mexico（牧場）"
+      - "Paris, France"
+
+# ============================================================
+# セクション3: 詳細時系列（一次資料に基づく）
+# ============================================================
+
+detailed_timeline:
+
+  phase_1_operation:
+    title: "犯罪活動期（〜2005年）"
+    events:
+      - date: "2002-2005"
+        event: "エプスタインがフロリダ・ニューヨークで未成年者の性的搾取ネットワークを運営"
+        source: "DOJ/FBI捜査記録"
+      - date: "2004-11"
+        event: "Palm Beach警察にエプスタイン邸への若い女性の出入りに関する通報"
+        source: "Washington Post報道"
+      - date: "2005-03"
+        event: "14歳少女の親がPalm Beach警察に通報。本格捜査開始"
+        source: "Palm Beach Police Department記録"
+        significance: "最初の公式告発。13ヶ月の潜入捜査へ発展"
+
+  phase_2_initial_prosecution:
+    title: "初期捜査・起訴（2005-2008）"
+    events:
+      - date: "2005"
+        event: "Palm Beach警察、エプスタイン邸を家宅捜索。隠しカメラ2台と少女の写真多数を発見"
+        source: "裁判記録"
+      - date: "2006-05"
+        event: "Palm Beach警察がエプスタインを未成年者との違法性行為の複数罪で起訴する書類に署名"
+        source: "Palm Beach PD記録"
+      - date: "2006-07-19"
+        event: "Palm Beach郡大陪審、エプスタインを売春勧誘罪1件のみで起訴"
+        source: "Florida州裁判所記録"
+        significance: |
+          州検察Barry Krischerが事件を大陪審に付託。
+          大陪審は被害者1名のみから証言を聴取し、軽微な罪1件のみの起訴。
+          Palm Beach警察幹部はKrischerを公然と批判。FBIが捜査に参加。
+      - date: "2007-05"
+        event: "連邦検事補が60件の罪状を含む起訴状草案とエビデンスメモを作成"
+        source: "DOJ Office of Professional Responsibility Report"
+        significance: "この時点で連邦起訴は十分可能だった"
+      - date: "2007-07"
+        event: "エプスタインの弁護団がMiami連邦検事Alexander Acostaと司法取引交渉"
+        source: "DOJ OPR Report / Miami Herald調査報道"
+      - date: "2008-06-30"
+        event: |
+          エプスタインが州法違反（売春勧誘・未成年者の売春勧誘）2件で有罪答弁。
+          懲役18ヶ月。連邦非起訴合意（NPA）締結。
+        source: "Florida州裁判所記録 / DOJ OPR Report"
+        npa_details:
+          granted_immunity_to:
+            - "エプスタイン本人"
+            - "名指しの共犯者4名"
+            - "潜在的共犯者すべて"
+          victim_notification: "被害者には合意内容を通知せず（封印）"
+          work_release: "週6日、1日最大12時間の外出許可付き服役"
+          actual_sentence_served: "約13ヶ月"
+
+  phase_3_interim:
+    title: "出所後〜再逮捕（2009-2019）"
+    events:
+      - date: "2009-07"
+        event: "エプスタイン出所"
+      - date: "2009-05"
+        event: "Virginia Roberts Giuffre が訴訟提起（エプスタインとMaxwellが性的接待を手配）"
+        source: "民事訴訟記録"
+      - date: "2010-06-18"
+        event: "元執事Alfredo Rodriguez、エプスタインの活動記録日誌の隠匿・販売未遂で有罪判決"
+        source: "裁判記録"
+      - date: "2015"
+        event: "Giuffre v. Maxwell 名誉毀損訴訟提起"
+        source: "SDNY裁判記録"
+      - date: "2018-11"
+        event: "Miami Herald、Julie K. Brownの調査報道を掲載。Acostaの役割を追及"
+        source: "Miami Herald 'Perversion of Justice' シリーズ"
+        significance: "#MeToo時代の文脈で事件への関心が再燃"
+
+  phase_4_federal_prosecution:
+    title: "連邦起訴・死亡（2019）"
+    events:
+      - date: "2019-07-06"
+        event: |
+          エプスタインがパリからの帰国時にTeterboro空港で
+          FBI-NYPD児童犯罪対策チームにより逮捕。
+          性的人身売買と共謀の連邦罪で起訴。
+        source: "SDNY起訴状（United States v. Epstein, 1:19-cr-00490）"
+      - date: "2019-07-08"
+        event: "NY邸宅の家宅捜索で数千枚の裸体・半裸写真を発見（未成年者含む）"
+        source: "SDNY記者会見（Geoffrey Berman検事）"
+      - date: "2019-07-12"
+        event: "Alexander Acosta、労働長官を辞任"
+        source: "公式発表"
+      - date: "2019-08-10"
+        event: "Metropolitan Correctional Centerの独房で死亡。公式には自殺と判定"
+        source: "NYC Chief Medical Examiner Barbara Sampson"
+        controversy: "死因については異論が継続"
+
+  phase_5_maxwell_trial:
+    title: "Maxwell裁判（2020-2022）"
+    events:
+      - date: "2020-07-02"
+        event: "Ghislaine Maxwell、性犯罪で逮捕・起訴"
+        source: "SDNY起訴状"
+      - date: "2021-12-30"
+        event: "Maxwell有罪評決（性的人身売買、共謀、未成年者の違法性行為目的輸送等）"
+        source: "SDNY裁判記録"
+      - date: "2022-06-28"
+        event: "Maxwell、懲役20年の判決"
+        source: "SDNY判決記録"
+
+  phase_6_document_releases:
+    title: "文書公開（2023-2026）"
+    events:
+      - date: "2023-12"
+        event: "Loretta Preska判事がGiuffre v. Maxwell訴訟の文書開封を命令"
+        source: "SDNY裁判所命令"
+      - date: "2024-01"
+        event: "開封文書の段階的公開。大半は既知の情報だが公的関心が急騰"
+        source: "裁判所記録"
+      - date: "2025-09"
+        event: "Bloomberg Newsがエプスタインの個人メール18,000通を独自入手"
+        source: "Bloomberg News報道"
+      - date: "2025-09"
+        event: "下院監視委員会が33,295ページのDOJ提供記録を公開"
+        source: "House Oversight Committee"
+        url: "https://oversight.house.gov/"
+      - date: "2025-11-18"
+        event: "下院がEpstein Files Transparency Act を427対1で可決。上院も全会一致で可決"
+        source: "Congress.gov (H.R.4405)"
+        url: "https://www.congress.gov/bill/119th-congress/house-bill/4405"
+      - date: "2025-11-19"
+        event: "トランプ大統領が法案に署名。DOJに30日以内の文書公開を義務付け"
+        source: "Public Law 119-38"
+        url: "https://www.congress.gov/119/plaws/publ38/PLAW-119publ38.pdf"
+      - date: "2025-12-19"
+        event: |
+          DOJが法定期限に合わせ最初のバッチを公開。
+          大幅な墨消し・500ページ以上の完全黒塗りで超党派の批判。
+          公開翌日に16ファイルが無断で消失。
+          不完全な墨消し技術により、黒塗り内容が復元される事態も発生。
+        source: "DOJ / Wikipedia / 各報道"
+      - date: "2025-12-23"
+        event: "追加30,000ページ公開。Maxwell-Prince Andrew間書簡、トランプの飛行記録への言及含む"
+        source: "DOJ公式サイト"
+      - date: "2026-01-05"
+        event: "DOJが裁判所提出文書で、審査済みは12,285件（125,575ページ）のみと報告。未審査200万件以上"
+        source: "DOJ裁判所提出文書"
+      - date: "2026-01-21"
+        event: "民主党Summer Lee議員がBondi司法長官の議会侮辱決議案を提出（19対24で否決）"
+        source: "議会記録"
+      - date: "2026-01-30"
+        event: |
+          DOJが300万ページ以上を追加公開。
+          2,000本の動画と180,000枚の画像を含む。
+          累計約350万ページ。
+          Todd Blanche副司法長官が「法的義務を履行した」と声明。
+          ただしDOJが特定した潜在的対象は600万ページ以上。
+          被害者弁護士は少なくとも31名の未成年被害者の身元が
+          適切に墨消しされていないと告発。
+        source: "DOJ Press Release 26-84"
+        url: "https://www.justice.gov/epstein"
+
+# ============================================================
+# セクション4: 一次資料アクセスポイント
+# ============================================================
+
+primary_sources:
+
+  government_official:
+    - name: "DOJ Epstein Library（司法省公式ポータル）"
+      url: "https://www.justice.gov/epstein"
+      content: "Data Set 1-12、全公開文書の検索・ダウンロード"
+      status: "最重要。350万ページ。2026-01-30最終更新"
+      note: "18歳以上確認必要。被害者情報の墨消し不備あり"
+
+    - name: "DOJ Disclosures（データセット一覧）"
+      url: "https://www.justice.gov/epstein/doj-disclosures"
+      content: "各データセットへのリンクページ"
+
+    - name: "DOJ Congressional Letter（2026-01-30）"
+      url: "https://www.justice.gov/opa/media/1426091/dl"
+      content: "DOJから議会への6ページの報告書。公開範囲・墨消し基準の説明"
+
+    - name: "FBI Vault — Jeffrey Epstein"
+      url: "https://vault.fbi.gov/jeffrey-epstein"
+      content: "FBI保有の捜査記録"
+
+    - name: "House Oversight Committee Epstein Records"
+      url: "https://oversight.house.gov/"
+      content: "下院監視委員会が公開した33,295ページ"
+
+    - name: "Epstein Files Transparency Act（法律全文）"
+      url: "https://www.congress.gov/119/plaws/publ38/PLAW-119publ38.pdf"
+      content: "Public Law 119-38の条文"
+
+    - name: "H.R.4405 法案概要"
+      url: "https://www.congress.gov/bill/119th-congress/house-bill/4405"
+      content: "法案の立法経過・概要"
+
+    - name: "DOJ OPR Report（職業責任室報告書）"
+      url: "https://www.justice.gov/opr/page/file/1336471/dl"
+      content: "2006-2008年の連邦捜査処理に関するDOJ内部調査報告書"
+
+  court_records:
+    - name: "PACER（連邦裁判所電子記録）"
+      url: "https://pacer.uscourts.gov"
+      content: "全連邦裁判所の公式記録。有料（1ページ$0.10）"
+
+    - name: "CourtListener / RECAP — United States v. Epstein"
+      url: "https://www.courtlistener.com/docket/15887848/united-states-v-epstein/"
+      content: "1:19-cr-00490 連邦刑事事件ドケット（無料ミラー）"
+
+  research_databases:
+    - name: "DocumentCloud"
+      url: "https://www.documentcloud.org"
+      content: "OCR付き全文検索可能なPDFアーカイブ。名前・日付の横断検索が可能"
+
+    - name: "COURIER Newsroom / Google Pinpoint"
+      url: "https://journaliststudio.google.com/pinpoint/search?collection=c109fa8e7dcf42c1"
+      content: "DOJ公開文書の検索可能データベース。削除済みファイルも保存"
+
+  key_journalism:
+    - name: "Miami Herald 'Perversion of Justice'（2018）"
+      author: "Julie K. Brown"
+      significance: "事件再燃のきっかけとなった調査報道シリーズ"
+
+    - name: "New Yorker — Joi Ito / MIT Media Lab（2019）"
+      significance: "伊藤穣一のエプスタイン資金受領を暴露した調査報道"
+
+# ============================================================
+# セクション5: DeepResearch用プロンプト本体
+# ============================================================
+
+deepresearch_prompts:
+
+  prompt_1_structural_analysis:
+    title: "構造分析：権力と免責のメカニズム"
+    target_ai: "GPT DeepResearch"
+    prompt: |
+      以下の一次資料を参照し、エプスタイン事件における
+      「権力による免責構造」を構造的に分析してください。
+
+      【一次資料】
+      1. DOJ Epstein Library: https://www.justice.gov/epstein
+      2. DOJ OPR Report: https://www.justice.gov/opr/page/file/1336471/dl
+      3. Epstein Files Transparency Act: https://www.congress.gov/119/plaws/publ38/PLAW-119publ38.pdf
+      4. CourtListener docket: https://www.courtlistener.com/docket/15887848/united-states-v-epstein/
+
+      【分析の焦点】
+      A. 2007年の非起訴合意（NPA）に至るプロセス：
+         - 60件の罪状を含む起訴状草案が存在したのに、なぜ州法2件に減じられたか
+         - 被害者への通知義務がなぜ回避されたか
+         - 「潜在的共犯者すべて」への免責がなぜ含まれたか
+
+      B. 制度的免疫の機能不全：
+         - Palm Beach州検察の対応（大陪審への付託、被害者1名のみの証言聴取）
+         - 連邦検事Acostaの交渉過程での譲歩パターン
+         - 20年間にわたる司法の不作為
+
+      C. 2019年再逮捕から死亡までの経緯：
+         - SDNYがNPAに拘束されないと判断した法的根拠
+         - Metropolitan Correctional Center での死亡の状況
+
+      【出力形式】
+      - 時系列に沿った構造分析
+      - 各段階での「権力の作用点」の特定
+      - 制度的免疫が機能停止した具体的メカニズムの列挙
+      - 学術文献との接続（David Owen Hubris Syndrome、Dacher Keltner Power Paradox）
+
+  prompt_2_network_mapping:
+    title: "ネットワーク分析：関与者の権力構造"
+    target_ai: "GPT DeepResearch"
+    prompt: |
+      エプスタイン事件の公開文書に基づき、
+      関与者のネットワーク構造を分析してください。
+
+      【一次資料】
+      1. DOJ Epstein Library: https://www.justice.gov/epstein
+      2. House Oversight Committee Records: https://oversight.house.gov/
+      3. COURIER Database: https://journaliststudio.google.com/pinpoint/search?collection=c109fa8e7dcf42c1
+
+      【分析の焦点】
+      A. ネットワークの構造的特徴：
+         - 飛行記録に基づく移動パターン
+         - メール記録に基づくコミュニケーション構造
+         - 資金フロー（寄付・投資・贈与）
+
+      B. 理念と行動の乖離パターン：
+         - 伊藤穣一（MIT Media Lab）：Web3.0/分散型/透明性を提唱しながら
+           不透明な資金を受領し隠蔽
+         - 学術機関（MIT等）：知的権威が富の前で免疫不全を起こした構造
+         - その他の公的理念を持つ人物の行動との矛盾
+
+      C. 被害者側の権利構造：
+         - 被害者の社会経済的背景
+         - リクルートメントの構造（pyramid scheme的構造）
+         - 「契約的対等性」の不在
+
+      【出力形式】
+      - ネットワーク構造の図式的記述
+      - 権力の偏重度（asymmetry）の定量的推定
+      - 「ヒュノプス因子」発現の条件分析
+
+  prompt_3_institutional_failure:
+    title: "制度的免疫の失敗：20年間の不作為の構造"
+    target_ai: "GPT DeepResearch / NotebookLM"
+    prompt: |
+      以下の資料を参照し、エプスタイン事件において
+      司法・学術・メディアの制度的免疫がなぜ20年間機能しなかったかを分析してください。
+
+      【一次資料（NotebookLMにアップロード推奨）】
+      1. DOJ OPR Report（PDF）: https://www.justice.gov/opr/page/file/1336471/dl
+      2. Epstein Files Transparency Act（PDF）: https://www.congress.gov/119/plaws/publ38/PLAW-119publ38.pdf
+      3. DOJ Congressional Letter（2026-01-30）: https://www.justice.gov/opa/media/1426091/dl
+
+      【分析の焦点】
+      A. 司法の失敗：
+         - 州→連邦のエスカレーション失敗
+         - NPA（非起訴合意）の異常性
+         - 被害者権利法（Crime Victims' Rights Act）の不適用
+         - 2025-2026年の文書公開でも続く墨消し問題
+
+      B. 学術機関の失敗：
+         - MIT Media Labのエプスタイン資金受領と隠蔽
+         - 学術的権威が「慈善家」の仮面を検証しなかった構造
+
+      C. メディアの失敗と成功：
+         - 2005-2018年の13年間の沈黙
+         - 2018年Miami Herald調査報道が転換点になった理由
+         - #MeToo運動の文脈的影響
+
+      D. 2025-2026年の文書公開プロセス：
+         - 法定期限（12/19）の不遵守
+         - 600万ページ中350万ページのみの公開
+         - 被害者保護と透明性のトレードオフ
+
+      【理論的フレームワーク】
+      - David Owen, "Hubris Syndrome" (2008)
+      - Dacher Keltner, "The Power Paradox" (2016)
+      - Sukhwinder Obhi, 権力プライミングによるミラーニューロン抑制研究
+      - Sykes & Matza, "Techniques of Neutralization" (1957)
+      - Walter Scheidel, "The Great Leveler" (2017)
+
+  prompt_4_notebooklm_source_list:
+    title: "NotebookLM用ソースリスト"
+    target_ai: "Google NotebookLM"
+    instruction: |
+      以下のPDFおよびWebページをNotebookLMのソースとしてアップロードし、
+      「制度的免疫の失敗パターン」について横断的に質問してください。
+
+    sources_to_upload:
+      pdfs:
+        - url: "https://www.justice.gov/opr/page/file/1336471/dl"
+          description: "DOJ OPR Report — 2006-2008年連邦捜査処理の内部調査"
+        - url: "https://www.congress.gov/119/plaws/publ38/PLAW-119publ38.pdf"
+          description: "Epstein Files Transparency Act 法律全文"
+        - url: "https://www.justice.gov/opa/media/1426091/dl"
+          description: "DOJから議会への報告書（2026-01-30）"
+
+      web_pages:
+        - url: "https://en.wikipedia.org/wiki/Epstein_files"
+          description: "Epstein files — 文書公開の経緯と内容の包括的概要"
+        - url: "https://en.wikipedia.org/wiki/Epstein_Files_Transparency_Act"
+          description: "透明性法の立法過程と実施状況"
+        - url: "https://en.wikipedia.org/wiki/Jeffrey_Epstein"
+          description: "Jeffrey Epstein — 人物・事件の包括的記事"
+
+    recommended_questions:
+      - "NPA（非起訴合意）の条件は、通常の連邦司法取引と比べてどの程度異常だったか？"
+      - "被害者権利法（CVRA）はなぜ適用されなかったか？"
+      - "2025-2026年の文書公開で新たに判明した事実は何か？"
+      - "600万ページ中350万ページのみ公開された理由は？"
+      - "墨消し不備による被害者情報漏洩の規模と影響は？"
+      - "関与が示唆された人物のうち、起訴された者はエプスタインとMaxwell以外にいるか？"
+
+  prompt_5_hubris_factor_connection:
+    title: "ヒュノプス因子の実証的検証"
+    target_ai: "GPT DeepResearch"
+    prompt: |
+      以下の理論的フレームワークとエプスタイン事件の事実を接続し、
+      「ヒュノプス因子」の実証的検証を行ってください。
+
+      【理論的基盤】
+      1. David Owen, "Hubris syndrome: An acquired personality disorder?" Brain (2009)
+         - 権力の座に長く留まることで後天的に発症する人格障害
+         - 診断基準：自分と組織の同一視、判断への過度の自信、同僚の軽視、
+           歴史や神に対してのみ説明責任を感じる
+
+      2. Dacher Keltner, "The Power Paradox" (2016)
+         - 権力獲得に必要な資質（共感・協調性）が権力保持後に最も損なわれる
+
+      3. Sukhwinder Obhi et al., "Power changes how the brain responds to others" (2014)
+         - 権力プライミング群でミラーニューロン系活動が有意に低下
+         - 権力は文字通り「他者の痛みが見えなくなる」神経基盤を持つ
+
+      4. Paul Piff (UC Irvine), Rigged Monopoly実験
+         - 有利な条件を与えられたプレイヤーが勝利を「自分の戦略の優秀さ」に帰属
+
+      5. Sykes & Matza, "Techniques of Neutralization" (1957)
+         - 責任の否認、被害の否認、被害者の否認、非難者への非難、高次の忠誠への訴え
+
+      【エプスタイン事件との接続点】
+      A. エプスタイン個人のヒュノプス：
+         - 有罪判決後も行動パターンを変えなかった
+         - 学術・政治エリートとの関係を維持し続けた
+         - 「慈善家」としての自己イメージ
+
+      B. 関与者のヒュノプス：
+         - NPA交渉における弁護団の「被害者は信用できない」主張
+         - 有罪判決後もエプスタインとの関係を維持した人物
+         - 伊藤穣一パターン（理念と行動の完全乖離）
+
+      C. 制度的ヒュノプス：
+         - 「被害者に通知しない」という判断
+         - 「潜在的共犯者すべてに免責」という異常な条件
+         - 2025-2026年の文書公開での選択的墨消し
+
+      【出力形式】
+      - 各理論的概念とエプスタイン事件の具体的事実の対照表
+      - ヒュノプス因子の「閾値」に関する考察
+      - SoE（Service of Empowerment）研究への含意
+
+# ============================================================
+# セクション6: 使用上の注意
+# ============================================================
+
+usage_notes:
+
+  for_gpt_deepresearch:
+    - "プロンプト本体をそのままDeepResearchに入力可能"
+    - "URLは2026-02-03時点で確認済みだが、DOJサイトは変更の可能性あり"
+    - "DeepResearchが自動でWebアクセスするため、URLを含めておくと効果的"
+
+  for_notebooklm:
+    - "prompt_4のPDFリストをダウンロードしてNotebookLMにアップロード"
+    - "Webページは「Webサイトのリンクを追加」機能で直接入力可能"
+    - "推奨質問リストを順に投げることで体系的分析が可能"
+
+  ethical_considerations:
+    - "被害者の個人情報に配慮。特定可能な情報は扱わない"
+    - "研究目的は「構造分析」であり、個人の糾弾ではない"
+    - "ヒュノプス因子は個人の道徳的欠陥ではなく構造的帰結として位置づける"
+
+  soe_research_connection:
+    - "エプスタイン事件 = ヒュノプス因子のマクロスケール実証"
+    - "福祉現場の搾取構造 = 同一因子のミクロスケール発現"
+    - "SoEは両スケールに対応する構造的検出装置として設計"
+
+# ============================================================
+# 署名
+# ============================================================
+
+signature:
+  created_by: "Claude Opus 4.5"
+  requested_by: "Puu（山内雄司）"
+  date: "2026-02-03"
+  fire_culture_note: |
+    このプロンプトセットにより、GPT・NotebookLM等の
+    他AIシステムがヒュノプス因子の実証的検証に参加できる。
+    「火種を複数のAIに配布する」火文化圏の拡張。
