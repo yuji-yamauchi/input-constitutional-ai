@@ -1,0 +1,352 @@
+# ============================================================
+# ハルシネーションチェック結果
+# 対象: GPT Deep Research「中国における臓器移植の不透明な実態と構造的搾取」
+# ============================================================
+# 検証者: Claude Opus 4.5
+# 検証日: 2025-02-05
+# 検証方法: Web検索による一次情報源との照合
+# 依頼者: Puu（研究者Y）
+# ============================================================
+
+metadata:
+  target_document: "中国における臓器移植の不透明な実態と構造的搾取 – 学術調査報告書"
+  generated_by: "GPT Deep Research"
+  prompt_designed_by: "Claude Opus 4.5（プロンプトレビュー反映版）"
+  verification_by: "Claude Opus 4.5"
+  verification_date: "2025-02-05T21:00:00+09:00"
+  target_folder: "99_daily_yamal/01_Claude/"
+  file_name_suggestion: "2025_02_05_hallucination_check.yaml"
+
+# ============================================================
+# 総合評価
+# ============================================================
+overall_assessment:
+  verdict: "高品質 - 核心的学術主張にハルシネーションなし"
+  summary: >
+    レポートの骨格を構成する主要な学術的主張（Robertson論文、Rogers論文、
+    AJT論文、China Tribunal判決、各国立法措置）はすべて一次情報源と一致。
+    修正が必要な箇所は4点あるが、いずれも致命的な事実誤認ではなく、
+    記述の精度向上レベルの指摘。
+  core_claims_accuracy: "100%（主要学術引用に関して）"
+  required_corrections: 4
+  verification_note: >
+    Geminiが設計したプロンプトに基づくGPT Deep Researchの出力であり、
+    Evidence Level分類のフレームワークが適切に機能していることを確認。
+
+# ============================================================
+# ✅ 事実確認済み（正確な記述）
+# ============================================================
+verified_accurate:
+
+  - id: V01
+    claim: "Robertson論文（BMC Medical Ethics, 2019）の統計分析"
+    report_states: >
+      中国の臓器ドネーション数の年次推移が二次方程式にほぼ完全に適合。
+      Spiegelhalter卿が「他国では見られない驚くべき二次関数的な傾向」とコメント。
+    verification: >
+      原論文（doi:10.1186/s12910-019-0406-6）確認済み。
+      R-squared値0.9993/0.9995/0.9989（donors/kidneys/livers）。
+      Spiegelhalter卿のレビューコメントも原文と一致。
+    evidence_level: "A（査読済み学術論文）"
+    source_url: "https://link.springer.com/article/10.1186/s12910-019-0406-6"
+
+  - id: V02
+    claim: "China Tribunal（2019年6月判決）の結論"
+    report_states: >
+      Geoffrey Nice卿を裁判長とする独立法廷が「合理的な疑いを超えて」
+      良心の囚人からの強制臓器摘出を認定。
+    verification: >
+      China Tribunal公式サイトの最終判決文と一致。
+      "certain – unanimously, and sure beyond reasonable doubt"の文言確認。
+    evidence_level: "B（独立法廷の司法的判断）"
+    source_url: "https://chinatribunal.com/final-judgment/"
+
+  - id: V03
+    claim: "Rogers論文（BMJ Open, 2019）の倫理調査"
+    report_states: >
+      445本の中国移植論文を精査、99%が同意未記載、400本超の撤回要求。
+    verification: >
+      原論文（doi:10.1136/bmjopen-2018-024473）確認済み。
+      439/445=98.7%（「99%」は四捨五入として許容範囲内）。
+      2025年10月時点で44本が実際に撤回済み（Retraction Watch報告）。
+    evidence_level: "A（査読済み学術論文）"
+    source_url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC6377532/"
+
+  - id: V04
+    claim: "Robertson & Lavee論文（AJT, 2022）のDead Donor Rule違反分析"
+    report_states: >
+      124,770の中国語論文から2,838報を分析、71報で脳死判定の問題を検出。
+      臓器摘出行為自体がドナーの死因になったと推察。
+    verification: >
+      原論文（doi:10.1111/ajt.16969）確認済み。
+      データセット規模・分析対象数・検出数すべて正確。
+      56病院、33都市、15省にまたがる分布も原論文記載通り。
+    evidence_level: "A（一流移植医学誌の査読論文）"
+    source_url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9542006/"
+
+  - id: V05
+    claim: "イスラエル臓器移植法（2008年）"
+    report_states: >
+      中国への移植ツーリズムを事実上禁止。
+      国家レベルで中国の臓器供給の不透明性を認めた証拠。
+    verification: >
+      Jacob Lavee教授の複数のインタビュー・学術論文で確認。
+      法施行後、イスラエルから中国への移植渡航が完全に停止。
+      Israel Journal of Health Policy Research（2018）で10年後の効果も検証済み。
+    evidence_level: "B（国家立法）"
+    source_url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC5855996/"
+
+  - id: V06
+    claim: "国連特別報告者声明（2021年6月14日）"
+    report_states: >
+      12名の国連人権専門家が臓器収奪への強い懸念を表明。
+      法輪功、ウイグル族、チベット族、キリスト教徒を名指し。
+    verification: >
+      OHCHR公式プレスリリース（2021年6月14日）と一致。
+      ただし正確には「8名のSpecial Rapporteursと4名のWorking Group委員」の
+      合計12名。レポートの「計12名」は正確。
+    evidence_level: "B（国連専門家の公式声明）"
+    source_url: "https://www.ohchr.org/en/press-releases/2021/06/china-un-human-rights-experts-alarmed-organ-harvesting-allegations"
+
+  - id: V07
+    claim: "Matas & Kilgour報告の推計"
+    report_states: >
+      41,500件の説明不能な移植（2000-2005年）。
+      2016年更新版で年間6-10万件の移植推計。
+    verification: >
+      Wikipedia・China Tribunal引用資料・米国議会証言等で確認。
+      数値は複数の独立資料で一致。
+    evidence_level: "C（実名調査報告）"
+
+  - id: V08
+    claim: "Gutmann推計（法輪功学習者）"
+    report_states: "65,000人が2000-2008年に臓器目的で殺害"
+    verification: >
+      著書『The Slaughter』（2014）および複数の議会証言で確認。
+      数値はKilgour-Matas推計と時期調整後に整合。
+    evidence_level: "C（調査報道）"
+
+  - id: V09
+    claim: "各国議会決議"
+    report_states: >
+      欧州議会（2013年・2016年）、米国下院343号決議（2016年）が
+      中国の臓器摘出に「深刻な懸念」を表明。
+    verification: >
+      欧州議会決議・米国議会記録で確認済み。
+      2022年にも欧州議会が追加決議（B9-0252/2022）。
+    evidence_level: "B（議会の公式決議）"
+
+# ============================================================
+# ⚠️ 要修正（不正確な記述）
+# ============================================================
+requires_correction:
+
+  - id: C01
+    severity: "中"
+    location: "第4章 4.1節"
+    claim: "Geoffrey Nice卿の経歴と法廷の位置づけ"
+    report_states: >
+      「ニュルンベルク以来の国際刑事法の系譜に連なる独立法廷」
+    actual_fact: >
+      Nice卿はニュルンベルク裁判には関与していない。
+      旧ユーゴスラビア国際刑事裁判所（ICTY）で
+      ミロシェヴィッチの検察を担当した人物。
+      「ニュルンベルク以来の系譜」は比喩的解釈としては成立するが、
+      直接関与の印象を与えるため不正確。
+    recommended_fix: >
+      「旧ユーゴスラビア国際刑事裁判所（ICTY）で
+      ミロシェヴィッチ検察を務めたジェフリー・ナイス卿を裁判長とする
+      独立法廷」に修正。
+    source: "https://chinatribunal.com/china-tribunal-final-judgement-and-report-17th-june-2019/"
+
+  - id: C02
+    severity: "低"
+    location: "第4章 4.1節"
+    claim: "証人数"
+    report_states: "30人以上の証人や専門家の証言を公開審理"
+    actual_fact: >
+      China Tribunal公式サイトでは「50人以上の事実証人・専門家」
+      （5日間の公開審理、2018年12月と2019年4月）と記載。
+      30人は2018年12月の最初の審理日のみの数字の可能性。
+    recommended_fix: "「50人以上の証人や専門家」に修正"
+    source: "https://chinatribunal.com/"
+
+  - id: C03
+    severity: "高（プロンプト違反）"
+    location: "第5章全体"
+    claim: "SoE理論の表記"
+    report_states: >
+      繰り返し「SoE理論」「SoE理論に基づけば」と記述。
+    prompt_instruction: >
+      YAMLプロンプトで明示的に指示：
+      「SoE理論によれば」ではなく
+      「SoEの分析枠組みを適用すると」と表現すること。
+    actual_issue: >
+      GPTがプロンプト内のoutput_constraints.soe_expressionを遵守せず、
+      「Structure of Exploitation, SoE理論」と独自に展開。
+      さらにSoEの正式名称を勝手に「Structure of Exploitation」と
+      解釈している（正しくは「Service of Empowerment / Service or Exploitation」）。
+    recommended_fix: >
+      1. 全箇所で「SoE理論」→「SoEの分析枠組み」に統一
+      2. SoEの定義を「Service of Empowerment / Service or Exploitation」に修正
+      3. 「SoE理論に基づけば」→「SoEの分析枠組みを適用すると」に修正
+    severity_note: >
+      これは単なる表記ミスではなく、SoEの本質的定義の誤解を含む。
+      「Structure of Exploitation」はPuuの理論における正式名称ではない。
+
+  - id: C04
+    severity: "低"
+    location: "第2章 2.1節"
+    claim: "Rogers論文の同意未記載率"
+    report_states: "99%に当たる論文がドナーの同意取得状況を記載しておらず"
+    actual_fact: >
+      原論文データ: 439/445 = 98.65%。
+      「99%」は四捨五入として許容範囲だが、
+      学術報告書としては「約99%」または正確な数値を記載すべき。
+    recommended_fix: "「99%（439/445）」と具体数を併記"
+
+# ============================================================
+# 🔴 検証不能・出典要確認
+# ============================================================
+unverifiable_claims:
+
+  - id: U01
+    severity: "高"
+    location: "第3章 3.2節"
+    claim: "Gutmannのウイグル人殺害数推計"
+    report_states: >
+      「毎年2万5千～5万人のウイグル人が臓器のために
+      殺害されている可能性を提起」
+    verification_attempt: >
+      Web検索で主要学術文献・報道を調査したが、
+      この具体的数値（年間2.5万-5万人）の一次情報源が特定できなかった。
+      Gutmannがウイグル人への臓器収奪の拡大を警告していることは確認できるが、
+      年間2.5万-5万人という具体的数値の出典は不明。
+    evidence_level_assessment: "D以下（要検証）"
+    recommended_action: >
+      一次情報源（Gutmannの特定の発言・論文・証言）を明示するか、
+      出典が確認できない場合は数値を削除し
+      「ウイグル人への拡大を警告」程度の記述に留める。
+
+  - id: U02
+    severity: "中"
+    location: "第1章"
+    claim: "2013年中国のドナー登録数「約37.5万人」と米国比較"
+    report_states: >
+      「2013年、中国では登録ドナー数が約37.5万人、
+      提供者5,146人。米国では登録ドナー1億4千万に対し提供者10,824人。
+      中国の提供率は米国の140倍近く」
+    verification_attempt: >
+      数値の桁感は概ね妥当だが、一次出典（脚注番号1）の
+      具体的URLが参考文献リストに明示されていない。
+      米国議会でのRobertson証言に類似統計があるが、
+      「37.5万人」の正確な出典は未確認。
+    recommended_action: "一次情報源のURLまたはDOIを脚注に追加"
+
+  - id: U03
+    severity: "中"
+    location: "第1章"
+    claim: "ある大病院の移植外科医が年間4,000件実施"
+    report_states: >
+      「2013年に中国のある大病院の移植外科医は
+      1年間で4,000件の肝腎移植を実施したと公言」
+    verification_attempt: >
+      病院名・医師名が伏せられており、直接的な一次情報源が不明。
+      Matas-Kilgour-Gutmann報告に類似の記述が存在する可能性があるが、
+      「1病院で年間4,000件」は相当な主張であり、
+      具体的出典の明示が不可欠。
+    recommended_action: "病院名・出典を明示するか、Evidence Level注記を追加"
+
+# ============================================================
+# 📝 構造的所見
+# ============================================================
+structural_observations:
+
+  strengths:
+    - "Evidence Level分類（A-E）のフレームワークが概ね適切に機能"
+    - "中国政府の公式見解・反論を記載（balanced perspectiveの指示を遵守）"
+    - "主要な査読論文・法廷判決・立法措置の引用は高精度"
+    - "各章の構成がYAMLプロンプトのexpected_output_structureに概ね準拠"
+    - "被害者の尊厳への配慮（sensitivityの指示を遵守）"
+
+  weaknesses:
+    - issue: "脚注体系の不完全さ"
+      detail: >
+        本文中の脚注番号[1]-[45]と末尾参考文献リストの対応が不完全。
+        末尾に列挙されたURLは一部のみで、大半の脚注の具体的出典が不明。
+    - issue: "SoEの定義誤解（C03参照）"
+      detail: >
+        「Structure of Exploitation」はPuuの定義ではない。
+        GPTがSoEの二重意味構造（Empowerment/Exploitation）を
+        理解できず、独自に「搾取の構造」と解釈した。
+    - issue: "エプスタイン事件との比較章が欠落"
+      detail: >
+        YAMLプロンプトのexpected_output_structureでは
+        chapter_6として「エプスタイン事件との構造比較」を要求しているが、
+        レポートにはこの章が存在しない。
+    - issue: "トランスナラティブ章が欠落"
+      detail: >
+        chapter_7「トランスナラティブとしての証言保護の視点」も
+        独立した章としては存在せず、Hypnos Factorの考察に
+        部分的に吸収されている。
+
+# ============================================================
+# GPT vs プロンプト遵守率の評価
+# ============================================================
+prompt_compliance:
+  output_structure:
+    requested_chapters: 8
+    delivered_chapters: 6
+    missing:
+      - "chapter_6: エプスタイン事件との構造比較"
+      - "chapter_7: トランスナラティブとしての証言保護の視点"
+    compliance_rate: "75%"
+
+  evidence_level_marking:
+    instruction: "各情報源の信頼性（Evidence Level A〜E）を必ず明記"
+    compliance: "概ね遵守（一部の主張でLevel未付記あり）"
+
+  soe_expression:
+    instruction: "「SoE理論によれば」ではなく「SoEの分析枠組みを適用すると」"
+    compliance: "非遵守 - 「SoE理論」を繰り返し使用"
+
+  balanced_perspective:
+    instruction: "中国政府の公式見解・反論も必ず記載"
+    compliance: "遵守 - 第3.3節で中国政府の反論を記載"
+
+  sensitivity:
+    instruction: "被害者の尊厳を損なう描写は避ける"
+    compliance: "遵守 - 過度にグロテスクな詳細を回避"
+
+  anonymity_rule:
+    instruction: "匿名アカウントのポストは証拠として不採用"
+    compliance: "遵守 - Level E情報は使用されていない"
+
+# ============================================================
+# 推奨アクション
+# ============================================================
+recommended_actions:
+  priority_high:
+    - action: "SoE定義の全面修正"
+      detail: >
+        「Structure of Exploitation」→「Service of Empowerment / Service or Exploitation」
+        「SoE理論」→「SoEの分析枠組み」に全箇所修正
+    - action: "Gutmannのウイグル人数値（U01）の出典確認または削除"
+      detail: "年間2.5万-5万人の一次情報源を特定できない場合は数値を削除"
+
+  priority_medium:
+    - action: "欠落章（エプスタイン比較・トランスナラティブ）の追補"
+      detail: "プロンプトの構造要求に準拠した追加執筆、または欠落理由の注記"
+    - action: "脚注体系の整備"
+      detail: "全脚注に対応するURL/DOI/書誌情報を追加"
+    - action: "Geoffrey Nice卿の経歴修正（C01）"
+    - action: "証人数の修正（C02）：30人→50人超"
+
+  priority_low:
+    - action: "Rogers論文の数値精緻化（C04）"
+    - action: "統計データの一次出典追加（U02, U03）"
+
+# ============================================================
+recorded_by: "Claude Opus 4.5"
+signature: "Puu研究プロジェクト・ハルシネーション検証記録"
+final_timestamp: "2025-02-05T21:30:00+09:00"

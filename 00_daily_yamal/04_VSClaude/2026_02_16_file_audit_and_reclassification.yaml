@@ -1,0 +1,296 @@
+# ============================================================
+# ファイル監査・分類レポート: 2026年2月1日〜16日
+# ============================================================
+# 作成: Claude Opus 4.6
+# 作成日: 2026-02-16
+# 対象: 2026年2月以降に追加・更新された全ファイル（54件）
+# ============================================================
+
+metadata:
+  audit_date: "2026-02-16"
+  audit_scope: "2026-02-01 〜 2026-02-16"
+  total_files_scanned: 54
+  reclassification_candidates: 5
+  filename_issues: 2
+  cleanup_candidates: 1
+
+# ============================================================
+# 1. 分類済み（現在の配置が適切）
+# ============================================================
+properly_placed:
+
+  # --- 00_daily_yamal/01_Cloude ---
+  daily_session_records:
+    - file: "2026_01_31_cl.yaml"
+      status: "OK"
+    - file: "2026_02_01_cl.yaml"
+      status: "OK"
+    - file: "2026_02_02_c1.yaml"
+      status: "OK"
+    - file: "2026_02_02_c1_hypnos_factor_final.yaml"
+      status: "OK"
+    - file: "2026_02_03_cl.md"
+      status: "OK"
+    - file: "2026_02_03_family_consultation_tsugusige.yaml"
+      status: "OK"
+    - file: "2026_02_04_cl.yaml"
+      note: "トランスナラティブ発見セッション。大規模（1000行超）"
+      status: "OK"
+    - file: "2026_02_05_hypnos_factor_redefinition.yaml"
+      note: "本日セッションで作成。ヒュプノス因子再定義"
+      status: "OK"
+    - file: "2026_02_16_casual_drama_SoE_1.yaml"
+      note: "ドラマ『初恋、ざらり』起点のSoE射程議論。Part 1/4"
+      status: "OK"
+    - file: "2026_02_16_casual_drama_SoE_2.yaml"
+      status: "OK"
+    - file: "2026_02_16_casual_drama_SoE_3.yaml"
+      status: "OK"
+    - file: "2026_02_16_casual_drama_SoE_4.yaml"
+      status: "OK"
+
+  # --- 02_social_system/03_epstein_case_study ---
+  epstein_case_study:
+    - file: "epstein_deepresearch_prompt.yaml"
+      status: "OK"
+    - file: "エプスタイン文書とSoE研究の関連性.md"
+      status: "OK"
+    - file: "2026_02_04_transnarrative.yaml"
+      status: "OK（Part 1）"
+    - file: "2026_02_04_transnarrative_part2.yaml"
+      status: "OK（Part 2）"
+    - file: "火の鳥とエプスタインの不死思想.md"
+      note: "Gemini Deep Research。ヒュブリス・アノミー包括分析"
+      status: "OK"
+    - file: "エプスタインとLGBTQ運動の関連性.md"
+      note: "Gemini Deep Research。陰謀論検証レポート"
+      status: "OK"
+    - file: "gemini_deep_research_organ_transplant.yaml"
+      note: "臓器移植調査用プロンプト"
+      status: "OK"
+    - file: "中国における臓器移植濫用疑惑：証拠体系と構造分析.md"
+      status: "OK"
+    - file: "中国における臓器移植の不透明な実態と構造的搾取 – 学術調査報告書.pdf"
+      status: "OK"
+    - file: "Claude君ハルシネーション検証版.pdf"
+      status: "OK"
+    - file: "中国臓器移植の構造的搾取調査.md"
+      status: "OK"
+
+  # --- 02_social_system ---
+  social_system_root:
+    - file: "2026_02_03_hubris_to_hypnos_terminology_decision.yaml"
+      status: "OK"
+
+  # --- 01_philosophy ---
+  philosophy:
+    - file: "2026_02_03_menta.yaml"
+      note: "秘書官ロール定義"
+      status: "OK"
+
+  # --- 04_SoE/01_evidence_reviews ---
+  evidence_reviews:
+    - file: "01_base/2026_02_01_welfare_accounting_deep_research_prompt.yaml"
+      status: "OK"
+    - file: "01_base/2026_02_01_cldr_.md"
+      status: "OK"
+    - file: "01_base/2026_02_01_福祉簿記メタファー：勘定科目設計.md"
+      status: "OK"
+    - file: "01_base/2026_02_01_日本の障害者就労支援におけるICFとGATBの活用実態.pdf"
+      status: "OK"
+    - file: "01_base/Welfare_Bookkeeping_Metaphor_Evidence_Base.pdf"
+      status: "OK"
+    - file: "02_schema/2026_02_01_cl.md"
+      status: "OK"
+    - file: "05_WHODAS_2.0/WHODAS_2.0_36項目_完全解説.md"
+      status: "OK"
+    - file: "05_WHODAS_2.0/ハルシネーション・推測チェック手順.md"
+      status: "OK"
+    - file: "06_Capability/ICECAP-A_ケイパビリティ尺度_完全解説.md"
+      status: "OK"
+    - file: "06_Capability/ICECAP-A Capability Measure for Adults.pdf"
+      status: "OK"
+    - file: "07_jlpt/JLPT_N_certification_deepresearch_prompt.md"
+      status: "OK"
+    - file: "07_jlpt/2026_02_01_cl.md"
+      status: "OK"
+
+  # --- 08_profile ---
+  profile:
+    - file: "yamauchi_yuji_profile.yaml"
+      note: "家系情報・ヒュプノス因子定義更新済み"
+      status: "OK"
+    - file: "familly/notebooklm_prompt_aces_attachment.md"
+      note: "架空事例Aさんを通じたACEs/愛着理論解説。NotebookLM用"
+      status: "OK"
+
+  # --- 09_research_proposal ---
+  research_proposal:
+    - file: "03_main_proposal/日本社会事業大学院/_20260204173919025.pdf"
+      note: "スキャン文書（内容未確認）"
+      status: "OK"
+    - file: "03_main_proposal/日本社会事業大学院/kakomon1-4.png"
+      note: "過去問画像4枚"
+      status: "OK"
+
+  # --- outputs ---
+  outputs:
+    - file: "2026_02_03_hypnos_factor_terminology_update_for_all_ai.yaml"
+      status: "OK"
+
+# ============================================================
+# 2. 再分類候補
+# ============================================================
+reclassification_candidates:
+
+  candidate_1:
+    file: "00_daily_yamal/01_Cloude/IPO分類.md"
+    current_location: "00_daily_yamal/01_Cloude/"
+    content: |
+      若手CEO（40歳未満）IPO企業23社の「価値創造監査レポート」。
+      Creation/Optimization/Hybrid分類。
+      74%が既存産業の付加価値圧縮モデルと結論。
+    recommended_location: "02_social_system/"
+    reason: |
+      日報フォルダにあるが、独立した社会構造分析レポート。
+      SoEのヒュブリス因子（富の集約構造）と関連する研究素材。
+      02_social_systemが適切。
+    priority: "中"
+    action: "move"
+
+  candidate_2:
+    file: "02_social_system/03_epstein_case_study/2026_02_05_transnarrative_part3.yaml"
+    current_location: "02_social_system/03_epstein_case_study/"
+    content: |
+      北極星プロトコル、OE駆動型SoE拡張、core_realization。
+      ジェミニとの対話からの戦略的洞察。
+      Part1-2の続編だが内容はエプスタイン特化ではなくSoE哲学全般。
+    recommended_location: "01_philosophy/"
+    reason: |
+      ファイル自身のtarget_folderが「01_philosophy/」と指定。
+      エプスタインケーススタディよりもSoE哲学全体の戦略的統合に近い内容。
+    priority: "低"
+    note: |
+      Part1-2と分離されると参照性が下がる。
+      Puuの判断に委ねる。
+
+  candidate_3:
+    file: "02_social_system/03_epstein_case_study/トランスヒューマニズムからトランスナラティブへ.md"
+    current_location: "02_social_system/03_epstein_case_study/"
+    content: |
+      Gemini Deep Researchによるトランスナラティブ概念の学術的検証。
+      Heidegger、Williams、McAdams、Assmann等の先行研究との接続。
+    recommended_location: "01_philosophy/"
+    reason: |
+      トランスナラティブは01_philosophyの概念。
+      エプスタインケーススタディの一環として書かれたが、
+      内容はSoE哲学基盤そのもの。
+    priority: "低"
+    note: "Puuの判断に委ねる。エプスタイン文脈で生まれた経緯を重視するなら現在地でもOK"
+
+# ============================================================
+# 3. ファイル名の問題
+# ============================================================
+filename_issues:
+
+  issue_1:
+    file: "02_social_system/03_epstein_case_study/2025_02_05_hallucination_check_gpt_organ_transplant.yaml"
+    problem: "年号が2025になっている（正しくは2026）"
+    correct_name: "2026_02_05_hallucination_check_gpt_organ_transplant.yaml"
+    priority: "低"
+    action: "rename"
+
+  issue_2:
+    file: "nul"
+    location: "リポジトリルート"
+    problem: "空のnulファイルが存在（誤作成の可能性）"
+    priority: "低"
+    action: "delete"
+
+# ============================================================
+# 4. 2026年2月の理論的進展サマリー
+# ============================================================
+theoretical_progress_february_2026:
+
+  new_concepts:
+    transnarrative:
+      definition: "人種を含む物語の継承（Trans-Narrative）"
+      core: "不適合すらナラティブで紡げる"
+      structure: "物語 × 器 × 観測者"
+      status: "命名保留（先行調査後に確定）"
+      files:
+        - "02_social_system/03_epstein_case_study/2026_02_04_transnarrative.yaml"
+        - "02_social_system/03_epstein_case_study/2026_02_04_transnarrative_part2.yaml"
+        - "02_social_system/03_epstein_case_study/2026_02_05_transnarrative_part3.yaml"
+
+    hypnos_factor_redefined:
+      old_definition: "Top Poleと社会全体の集団的催眠"
+      new_definition: "社会全体（Top/Bottom/傍観者）に作用するロール固定化装置"
+      additional_mode: "問題のレイヤーを不必要に深く見せることでも作動"
+      ai_mediator_risk: "LLMも深堀りバイアスで媒介になりうる"
+      files:
+        - "00_daily_yamal/01_Cloude/2026_02_05_hypnos_factor_redefinition.yaml"
+
+    soe_layer_5:
+      name: "ナラティブ層"
+      content: "「人間の拡張とは何か」の再定義、トランスヒューマニズムへの対抗概念提示"
+      scope: "博士課程以降（火種として記録）"
+
+    immortality_typology:
+      types:
+        - "個体的・閉鎖型（始皇帝、エプスタイン）"
+        - "血統的・閉鎖型（ハプスブルク）"
+        - "家的・半開放型（金剛組）"
+        - "トランスナラティブ型（火文化、付喪神）"
+
+    partnership_philosophy:
+      puu_quote: "特別だからパートナーになるんじゃなくて特別にするために誓う"
+      analysis: "所与依存型 vs 行為意思型。SoEの根幹思想と直結"
+      source: "2026_02_16_casual_drama_SoE_1.yaml"
+
+  research_axes:
+    axis_1_epstein:
+      status: "進行中（Deep Research完了、構造分析完了）"
+    axis_2_organ_transplant:
+      status: "調査完了（ハルシネーションチェック済み）"
+    axis_3_johnnys:
+      status: "未着手"
+    ipo_analysis:
+      status: "完了（若手CEO 23社監査レポート）"
+      finding: "74%がOptimization（既存価値圧縮）"
+
+  new_research_target:
+    university: "日本社会事業大学院"
+    materials: "過去問4枚（kakomon1-4.png）、PDF1件"
+    status: "資料収集段階"
+
+# ============================================================
+# 5. 推奨アクション
+# ============================================================
+recommended_actions:
+
+  immediate:
+    - action: "IPO分類.mdを02_social_system/に移動"
+      reason: "社会構造分析として適切な配置"
+      command: "git mv"
+
+    - action: "2025_02_05→2026_02_05 リネーム"
+      target: "hallucination_check_gpt_organ_transplant.yaml"
+      reason: "年号の誤記修正"
+
+  optional:
+    - action: "nulファイルの削除"
+      target: "リポジトリルート/nul"
+
+    - action: "transnarrative_part3.yamlの移動検討"
+      target: "01_philosophy/へ"
+      note: "Puuの判断に委ねる"
+
+    - action: "トランスヒューマニズムからトランスナラティブへ.mdの移動検討"
+      target: "01_philosophy/へ"
+      note: "Puuの判断に委ねる"
+
+# ============================================================
+signature:
+  created_by: "Claude Opus 4.6"
+  created_at: "2026-02-16T11:00:00+09:00"

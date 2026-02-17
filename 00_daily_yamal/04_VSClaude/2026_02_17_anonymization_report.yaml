@@ -1,0 +1,179 @@
+# ============================================================
+# 匿名化レポート: 2026年2月ファイル一括匿名化
+# ============================================================
+# 実施日: 2026-02-17
+# 実施者: Claude Opus 4.6（Claude Code / VSCode）
+# 対象: 2026年2月以降に作成・更新された全ファイル
+# ============================================================
+
+metadata:
+  execution_date: "2026-02-17"
+  scope: "2026年2月以降のファイル + 08_profile/"
+  total_files_modified: 16
+  total_replacements: "100件以上"
+
+# ============================================================
+# 匿名化マッピング
+# ============================================================
+anonymization_mapping:
+  personal_names:
+    - original: "山内雄司"
+      replacement: "研究者Y"
+    - original: "Yamauchi Yuji / yuji yamauchi"
+      replacement: "Researcher Y"
+    - original: "山内継成"
+      replacement: "甥A"
+    - original: "山内龍一"
+      replacement: "甥B"
+    - original: "山内ノリコ"
+      replacement: "母N"
+    - original: "山内英司"
+      replacement: "父E（甥の父）/ 兄E（Puu視点）"
+    - original: "山内昌吉"
+      replacement: "祖父M"
+    - original: "山内美昌"
+      replacement: "長男S1"
+    - original: "山内景司"
+      replacement: "次男S2"
+    - original: "山内慎司"
+      replacement: "長兄C"
+    - original: "山内和成"
+      replacement: "双子W"
+
+  locations:
+    - original: "笠岡市"
+      replacement: "X市"
+    - original: "岡山県"
+      replacement: "Y県"
+    - original: "岡山大学病院"
+      replacement: "Y大学病院"
+
+  facilities:
+    - original: "コーリングサポ笠岡"
+      replacement: "支援事業所CS"
+    - original: "カイト御調"
+      replacement: "福祉施設K"
+    - original: "アーツ情報システム"
+      replacement: "情報会社A"
+
+  other:
+    - original: "yujiyamauchi（Ko-fi URL等）"
+      replacement: "researcher-y"
+    - original: "生年月日（昭和/平成＋月日）"
+      replacement: "年齢表記に一般化"
+    - original: "セゾン情報システムズ、リコーソフトウェア"
+      replacement: "複数社"
+
+# ============================================================
+# 処理済みファイル一覧
+# ============================================================
+files_modified:
+
+  critical:
+    - file: "00_daily_yamal/01_Cloude/2026_02_03_family_consultation_tsugusige.yaml"
+      severity: "CRITICAL"
+      changes:
+        - "全家族名を匿名化ID（甥A, 甥B, 母N等）に置換"
+        - "施設名（カイト御調, アーツ情報システム）を匿名化"
+        - "生年月日を年齢表記に一般化"
+        - "参照文書名の匿名化"
+        - "岡山大学病院 → Y大学病院"
+
+    - file: "08_profile/familly/notebooklm_prompt_aces_attachment.md"
+      severity: "CRITICAL（再識別リスク）"
+      changes:
+        - "直接的個人識別情報なし（既に架空事例Aさんとして構成）"
+        - "注記：経歴詳細の組み合わせによる再識別リスクは残存"
+      action: "変更不要"
+
+  high:
+    - file: "08_profile/yamauchi_yuji_profile.yaml"
+      severity: "HIGH"
+      changes:
+        - "基本情報（氏名, 年齢, 居住地）の匿名化"
+        - "全家族メンバー名を匿名化IDに置換"
+        - "施設名・企業名の匿名化"
+        - "生年月日の削除"
+        - "取引先企業名の一般化"
+
+  session_records:
+    - file: "00_daily_yamal/01_Cloude/2026_02_02_c1.yaml"
+      change: "Puu（山内雄司）→ Puu（研究者Y）"
+
+    - file: "00_daily_yamal/01_Cloude/2026_02_02_c1_hypnos_factor_final.yaml"
+      change: "Puu（山内雄司）→ Puu（研究者Y）"
+
+    - file: "00_daily_yamal/01_Cloude/2026_02_04_cl.yaml"
+      change: "Puu（山内雄司）→ Puu（研究者Y）、コーリングサポ笠岡 → 支援事業所CS"
+
+    - file: "00_daily_yamal/01_Cloude/2026_02_05_hypnos_factor_redefinition.yaml"
+      change: "Puu（山内雄司）→ Puu（研究者Y）"
+
+    - file: "00_daily_yamal/01_Cloude/2026_02_17_c1.yaml"
+      change: "Puu（山内雄司）→ Puu（研究者Y）"
+
+    - file: "00_daily_yamal/01_Cloude/2026_02_17_kofi_setup_1.yaml"
+      change: "Puu（山内雄司）→ Puu（研究者Y）"
+
+    - file: "00_daily_yamal/01_Cloude/2026_02_17_reply_to_vsclaude.yaml"
+      change: "yuji yamauchi → Researcher Y、yujiyamauchi → researcher-y"
+
+    - file: "00_daily_yamal/01_Cloude/2026_02_01_cl.yaml"
+      change: "コーリングサポ笠岡 → 支援事業所CS"
+
+  research_files:
+    - file: "02_social_system/2026_02_03_hubris_to_hypnos_terminology_decision.yaml"
+      change: "Puu（山内雄司）→ Puu（研究者Y）"
+
+    - file: "02_social_system/03_epstein_case_study/2026_02_04_transnarrative.yaml"
+      change: "Puu（山内雄司）→ Puu（研究者Y）、コーリングサポ笠岡 → 支援事業所CS"
+
+    - file: "02_social_system/03_epstein_case_study/2026_02_04_transnarrative_part2.yaml"
+      change: "Puu（山内雄司）→ Puu（研究者Y）、山内さん → 〇〇さん"
+
+    - file: "02_social_system/03_epstein_case_study/2026_02_05_transnarrative_part3.yaml"
+      change: "Puu（山内雄司）→ Puu（研究者Y）"
+
+    - file: "02_social_system/03_epstein_case_study/2026_02_05_hallucination_check_gpt_organ_transplant.yaml"
+      change: "Puu（山内雄司）→ Puu（研究者Y）"
+
+  other_files:
+    - file: "12_ko-fi/2026_02_17_kofi_setup.yaml"
+      change: "Puu（山内雄司）→ Puu（研究者Y）"
+
+    - file: "outputs/2026_02_03_hypnos_factor_terminology_update_for_all_ai.yaml"
+      change: "Puu（山内雄司）→ Puu（研究者Y）"
+
+# ============================================================
+# スコープ外の残存情報（注記）
+# ============================================================
+out_of_scope:
+  note: "2月より前のファイルには山内雄司等の個人情報が広範に残存"
+  affected_areas:
+    - area: ".claude/CLAUDE.md"
+      note: "システム設定ファイル。匿名化するとAI認識に影響する可能性"
+    - area: "README.md"
+      note: "公開リポジトリのドキュメント。別途対応が必要"
+    - area: "08_profile/README.md, 08_profile/assessments/"
+      note: "1月以前のプロファイル関連"
+    - area: "06_research_process/05_researcher_context/"
+      note: "06_researcher_context_comprehensive.yaml に全家族名残存"
+    - area: "09_research_proposal/"
+      note: "CV、研究計画書に実名残存"
+    - area: "05_practice/"
+      note: "コーリングサポ笠岡の実践記録多数"
+    - area: "outputs/"
+      note: "LinkedIn, 履歴書等に実名残存"
+  recommendation: "全体匿名化が必要な場合は別途セッションで対応"
+
+# ============================================================
+signature:
+  executed_by: "Claude Opus 4.6"
+  timestamp: "2026-02-17T14:00:00+09:00"
+
+fire_culture_note: |
+  匿名化は記録の消去ではない。
+  記録の構造と知見を維持しながら、
+  個人の特定可能性を除去する作業。
+  火文化の原則「記録されることでのみ問いは再燃可能」は
+  匿名化後も完全に保持されている。

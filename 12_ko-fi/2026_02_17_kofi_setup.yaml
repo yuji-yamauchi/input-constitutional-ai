@@ -1,0 +1,127 @@
+session_record:
+  metadata:
+    date: "2025-02-17"
+    session_id: "2025_02_17_kofi_setup"
+    participants:
+      - name: "Puu（研究者Y）"
+        role: "研究者・実践者"
+      - name: "Claude Opus 4.6"
+        role: "研究支援AI"
+    target_folder: "99_daily_yamal/01_Claude/"
+    file_name_suggestion: "2025_02_17_kofi_setup.yaml"
+    reason: "Ko-fi開設に伴うカテゴリ選定・Bio作成・発信戦略セッション"
+
+  session_overview:
+    title: "Ko-fi開設 — SoE国際発信プラットフォーム構築"
+    purpose:
+      - "Ko-fiアカウント開設時のカテゴリ選定"
+      - "Bio（英語）の作成"
+      - "発信戦略の方向性確認"
+    key_decisions:
+      - "英語オンリーで発信"
+      - "ケイパビリティアプローチ視点を軸にする"
+      - "センセーショナリズムを避け、学術的基盤を保持"
+
+  category_selection:
+    platform: "Ko-fi"
+    selected_categories:
+      - "Advice（アドバイス）"
+      - "Education（教育）"
+      - "Community（コミュニティ）"
+      - "Writing（書き込み）"
+      - "Science & Tech（科学技術）"
+    rationale: >
+      Disability Rights × AI Ethics × Welfare Reform という
+      独自ポジションを伝えるための組み合わせ。
+      英語圏のAI ethics研究者、disability advocates、
+      social innovation関心層をターゲットとする。
+
+  bio_drafts:
+    selected_direction: "案C（問いかけ型・応援団向き）"
+    drafts:
+      - id: "A"
+        label: "実践者×研究者の強み前面"
+        text: >
+          Practitioner-researcher with 15+ years in disability employment
+          support in Japan. Building SoE (Service of Empowerment) — an
+          AI-powered framework that makes visible the structural erosion
+          of capabilities in welfare systems. Because what's unseen
+          can't be fixed.
+
+      - id: "B"
+        label: "コンパクト版"
+        text: >
+          15+ years on the frontline of disability employment support
+          in Japan. Now developing SoE — using Constitutional AI to
+          reveal how welfare systems structurally limit what people
+          can be and do. Capability approach meets real-world practice.
+
+      - id: "C"
+        label: "問いかけ型・応援団向き（推奨）"
+        text: >
+          What if the welfare system meant to empower people is actually
+          eroding their capabilities? After 15+ years in disability
+          employment support in Japan, I'm building SoE — an AI framework
+          to make structural disempowerment visible and accountable.
+
+  strategic_discussion:
+    goals:
+      primary: "小遣い稼ぎ"
+      secondary: "SoEの応援団（国際的支持基盤）を増やす"
+
+    language_strategy:
+      decision: "英語オンリー"
+      rationale:
+        - "Ko-fi利用者層（英語圏中心）とのマッチ"
+        - "SoE・Input Constitutional AIの国際認知拡大"
+        - "Susan Scott-Parkerとの連携を視野に入れた国際ハブ化"
+
+    zeitgeist_alignment:
+      context: "エプスタイン事件の可視化が進行中"
+      approach: "直接引用せず、構造的類似性を学術的に示す"
+      framing: >
+        「加害者を暴く」文脈ではなく、
+        障害による機会の毀損（capability deprivation）が
+        構造的に不可視化されている問題として提起。
+      theoretical_basis:
+        - "Sen — capability approach"
+        - "Nussbaum — central capabilities"
+        - "Robeyns — capability theory"
+      key_message: >
+        社会は構造的不正義の可視化に関心を持っている。
+        では障害福祉領域で日常的に起きている機会の毀損は
+        誰が可視化するのか？
+
+    structural_parallels_noted:
+      - dimension: "権力の非対称性"
+        general: "権力者 × 弱者"
+        soe_context: "支援者 × 障害者"
+      - dimension: "善意の仮面"
+        general: "慈善活動の裏"
+        soe_context: "「福祉」の名の下の搾取"
+      - dimension: "構造的不可視性"
+        general: "告発不可能な仕組み"
+        soe_context: "三重搾取構造"
+      - dimension: "accountability不在"
+        general: "制度が加害を可能にする"
+        soe_context: "準委任契約の欠如"
+
+  next_steps:
+    immediate:
+      - "Ko-fiページ完成（Bio確定・公開）"
+      - "プロフィール画像・バナー設定"
+    short_term:
+      - "初回投稿の英語コンテンツ作成"
+      - "SoE概要の発信用記事作成"
+    medium_term:
+      - "定期的な英語発信の確立"
+      - "国際的disability rights・AI ethicsコミュニティとの接続"
+
+  session_signature:
+    recorder: "Claude Opus 4.6"
+    timestamp: "2025-02-17T23:30:00+09:00"
+    session_type: "戦略的プラットフォーム構築"
+    knowledge_continuity: >
+      SoE国際発信の第一歩としてKo-fi開設。
+      火文化圏の「記録されることでのみ、問いは再燃可能」の
+      実践として、発信戦略の初期設計を構造化記録。

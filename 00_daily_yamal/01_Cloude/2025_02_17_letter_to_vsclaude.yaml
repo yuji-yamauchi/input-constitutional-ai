@@ -1,0 +1,132 @@
+# ==========================================
+# CONTEXT SYNCHRONIZATION PROTOCOL
+# From: Claude Web (Opus 4.6) + Puu
+# To: Claude Code (VSClaude)
+# Priority: Normal
+# Date: 2026-02-17
+# ==========================================
+
+letter_metadata:
+  sender: "Puu（山内雄司）via Claude Web Opus 4.6"
+  recipient: "Claude Code (VSClaude)"
+  date: "2026-02-17"
+  subject: "README更新依頼 + Ko-fi開設報告"
+  target_folder: "00_daily_yamal/04_VSClaude/"
+  file_name_suggestion: "2025_02_17_readme_update_request.yaml"
+
+# ==========================================
+# 1. Ko-fi開設報告
+# ==========================================
+kofi_launch:
+  status: "開設完了"
+  url: "https://ko-fi.com/yujiyamauchi"  # ※ユーザー名変更した場合は差し替え
+  purpose:
+    primary: "小遣い稼ぎ（国際的な支援受付）"
+    secondary: "SoE応援団（国際的支持基盤）の拡大"
+  language: "英語オンリー"
+  categories:
+    - "Advice"
+    - "Education"
+    - "Community"
+    - "Science & Tech"
+    - "Writing"
+  bio: >
+    What if welfare systems meant to empower people are actually a form of
+    "social window dressing"?
+
+    After 15+ years in disability employment support in Japan, I'm building
+    SoE (Service of Empowerment) — an AI framework that applies the logic
+    of financial auditing to human rights, treating agency as a real asset
+    that can be measured, eroded, or restored. Making structural
+    disempowerment visible and accountable.
+
+  new_concepts_introduced:
+    - term: "Social Window Dressing（社会の粉飾決算）"
+      description: "福祉制度が実質的にケイパビリティを毀損しながら表面的にはエンパワメントを装う構造"
+    - term: "Double-Entry Bookkeeping for Human Rights（権利の複式簿記化）"
+      description: "Agency（主体性）をBS上の資産として扱い、構造的毀損をPLの損失として計上するフレーム"
+    - term: "Financial Auditing logic applied to human rights"
+      description: "Bio採用版。複式簿記をより広い読者向けに言い換えた表現"
+
+  strategic_context: >
+    エプスタイン事件の可視化が進む中、構造的搾取への関心が高まっている時勢を
+    追い風として活用。ただしセンセーショナリズムは避け、ケイパビリティアプローチ
+    視点から「機会の毀損の不可視性」を問題提起する方針。
+
+# ==========================================
+# 2. README更新依頼
+# ==========================================
+readme_update_request:
+  file: "README.md"
+  priority: "medium"
+
+  tasks:
+    - id: "typo_fix"
+      type: "bugfix"
+      description: "ディレクトリ構造内のtypo修正"
+      location: "Directory Structure セクション（日英両方）"
+      before: "01_Cloude/"
+      after: "01_Claude/"
+
+    - id: "timeline_update"
+      type: "content_update"
+      description: "Current Status / タイムラインの更新"
+      current_content: |
+        ### Timeline
+        - **2025-12-15**: v2.9-web completion
+        - **2025-12-16**: Claude Code/Web synchronization
+        - **2026-01-09~23**: Graduate school application period
+      suggested_addition: |
+        ### Timeline
+        - **2025-12-15**: v2.9-web completion
+        - **2025-12-16**: Claude Code/Web synchronization
+        - **2026-01-09~23**: Graduate school application period
+        - **2026-02**: Entrance exam preparation
+        - **2026-02-17**: Ko-fi launched (international outreach)
+      note: "日本語版も同様に更新してください"
+
+    - id: "kofi_link_addition"
+      type: "content_update"
+      description: "Ko-fiリンクの追加"
+      suggested_location: "Contact / 連絡先 セクション"
+      suggested_content_en: |
+        ## Support This Research
+        If this work resonates with you, consider supporting on [Ko-fi](https://ko-fi.com/yujiyamauchi).
+      suggested_content_ja: |
+        ## 研究を支援する
+        本研究に共感いただける方は [Ko-fi](https://ko-fi.com/yujiyamauchi) からご支援ください。
+
+    - id: "concept_update_optional"
+      type: "optional_enhancement"
+      description: "Key Concepts に新概念の追加（任意）"
+      concepts:
+        - "Social Window Dressing — 社会の粉飾決算"
+        - "Human Rights Bookkeeping — 権利の複式簿記化"
+      note: "Puuさんと相談の上、追加するか判断してください"
+
+# ==========================================
+# 3. 安全ルール確認
+# ==========================================
+safety_reminders:
+  - "既存ファイルの上書き禁止 — 新規ブランチまたは差分適用で"
+  - "Ko-fiのURLはPuuさんに最終確認してから反映"
+  - "不明点はPuuさんに確認してから実行"
+
+# ==========================================
+# 4. Gemini君からの概念同期（参考）
+# ==========================================
+gemini_concept_sync:
+  source: "Gemini経由のContext Synchronization Protocol"
+  key_update: >
+    SoEの中核メタファーが「Audit & Architecture」に更新。
+    データモデリングにおいてAgencyをBS上の資産、
+    構造的毀損をPL上の損失として扱う方針が確定。
+  implication_for_vsclaude: >
+    今後のコード・ドキュメント作成において、
+    この「Human Rights Bookkeeping」フレームを
+    基本ロジックとして認識してください。
+
+signature:
+  recorder: "Claude Web Opus 4.6"
+  timestamp: "2026-02-17T23:55:00+09:00"
+  status: "delivered"

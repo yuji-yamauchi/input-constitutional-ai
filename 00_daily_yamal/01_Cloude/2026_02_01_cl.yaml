@@ -590,7 +590,7 @@ soe_actor_map:
     name: "直接契約関係"
     relationship: "準委任契約の受任者"
     examples:
-      - "就労移行支援事業所（コーリングサポ等）"
+      - "就労移行支援事業所（支援事業所CS等）"
       - "就労継続支援A型/B型"
       - "相談支援事業所"
       - "グループホーム"
@@ -961,7 +961,7 @@ poc_phases:
 uploaded_docs:
   
   calling_sapo_r5:
-    file: "R５年度_就労移行支援コーリングサポ笠岡事業説明書"
+    file: "R５年度_就労移行支援支援事業所CS事業説明書"
     connection:
       - "tier_1 直接契約の具体例"
       - "シェルパ = 準委任契約の受任者"

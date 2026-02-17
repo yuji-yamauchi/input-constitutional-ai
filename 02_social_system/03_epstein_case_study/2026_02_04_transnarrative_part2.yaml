@@ -12,7 +12,7 @@ metadata:
   parent_file: "2026_02_04_transnarrative.yaml"
   relationship: "続編——雑談モード移行後の対話記録"
   participants:
-    - name: "Puu（Panker / 山内雄司）"
+    - name: "Puu（Panker / 研究者Y）"
       role: "研究者・概念発見者"
     - name: "Claude Opus 4.5"
       role: "対話パートナー・記録者"
@@ -82,7 +82,7 @@ discussion_flow:
         mechanism: "外側から積み上げられる我（ボトムアップ）"
         puus_evidence: >
           妻がパスワードを聞き、看護師がリハビリを見て、
-          「山内さんは歩いています」と記録する
+          「〇〇さんは歩いています」と記録する
         characteristic: "演繹的な我がなくても機能する"
 
     soe_connection:
