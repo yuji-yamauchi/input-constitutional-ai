@@ -1,0 +1,506 @@
+# ============================================================
+# Input Constitutional AI プロジェクト 用語対訳表
+# Japanese-English Terminology Glossary
+# ============================================================
+# 作成日: 2026-02-17
+# 作成者: Claude Opus 4.6
+# 用途: YAML/MDファイルの英訳時における用語統一
+# ============================================================
+
+metadata:
+  created: "2026-02-17"
+  created_by: "Claude Opus 4.6"
+  purpose: "プロジェクト全体の日英用語統一"
+  total_terms: 110
+
+# ============================================================
+# 1. SoE フレームワーク中核用語
+# ============================================================
+soe_framework:
+
+  - ja: "SoE（サービス・オブ・エンパワメント / サービス・オア・エクスプロイテーション）"
+    en: "SoE (Service of Empowerment / Service or Exploitation)"
+    note: "プロジェクトの中核概念"
+
+  - ja: "Input Constitutional AI"
+    en: "Input Constitutional AI"
+    note: "記録作成段階での権利保障。固有名詞のため英語のまま"
+
+  - ja: "Output Constitutional AI"
+    en: "Output Constitutional AI"
+    note: "Anthropic社の既存手法（出力段階でのフィルタリング）"
+
+  - ja: "ヒュプノス因子"
+    en: "Hypnos Factor"
+    note: "社会全体に作用する役割固定装置。旧称：ヒュブリス因子→罪と罰因子→ヒュプノス因子"
+
+  - ja: "アノミー因子"
+    en: "Anomie Factor"
+    note: "下極の規範喪失。旧称：無敵の人因子"
+
+  - ja: "ヒュブリス因子"
+    en: "Hubris Factor"
+    note: "旧称。ヒュプノス因子に改名（2026-02）"
+    status: "deprecated"
+
+  - ja: "無敵の人因子"
+    en: "Muteki-no-hito Factor"
+    note: "旧称。アノミー因子に改名"
+    status: "deprecated"
+
+  - ja: "罪と罰因子"
+    en: "Sin and Punishment Factor"
+    note: "旧称。ヒュプノス因子に改名"
+    status: "deprecated"
+
+  - ja: "双極的社会毀損モデル"
+    en: "Bipolar Social Damage Model"
+    note: "富の両極から社会構造を毀損するモデル"
+
+  - ja: "火文化圏"
+    en: "Fire Culture Sphere"
+    note: "記録の哲学。「記録されなかった問いは燃え尽きたものと見なされる」"
+
+  - ja: "記録主権"
+    en: "Record Sovereignty"
+    note: "当事者の支援情報所有権は当事者に帰属"
+
+  - ja: "トランスナラティブ"
+    en: "Transnarrative"
+    note: "人間性を含むナラティブの継承。個人の生涯を超えた物語的同一性"
+
+  - ja: "福祉権力のリミタリアニズム"
+    en: "Limitarianism of Welfare Power"
+    note: "Ingrid Robeyns の理論を福祉権力に適用"
+
+  - ja: "ケアの複式簿記メタファー"
+    en: "Double-Entry Bookkeeping Metaphor for Care"
+    note: "人生会計フレームワーク（PL/BS/CF）"
+
+# ============================================================
+# 2. 会計メタファー関連
+# ============================================================
+accounting_metaphor:
+
+  - ja: "損益計算書（PL）"
+    en: "Profit & Loss Statement (PL)"
+    note: "帰納的認知：「社会は私をどう扱ってきたか」"
+
+  - ja: "貸借対照表（BS）"
+    en: "Balance Sheet (BS)"
+    note: "演繹的認知：「自分はどうあるべきか」"
+
+  - ja: "キャッシュフロー計算書（CF）"
+    en: "Cash Flow Statement (CF)"
+    note: "行動能力：自己効力感・エネルギー"
+
+  - ja: "トバシ"
+    en: "Tobashi"
+    note: "債務飛ばし。簿外に社会的負債を隠蔽する構造"
+
+  - ja: "簿外債務"
+    en: "Off-Balance-Sheet Debt"
+    note: "記録されない社会的負債"
+
+  - ja: "強制修正仕訳"
+    en: "Forced Correction Entry"
+    note: "SoE介入による社会的負債の強制移転"
+
+  - ja: "連結決算"
+    en: "Consolidated Accounts"
+    note: "社会と個人の会計統合"
+
+  - ja: "資本注入"
+    en: "Capital Injection"
+    note: "権利・資源の投入"
+
+# ============================================================
+# 3. 理論・哲学用語
+# ============================================================
+theoretical_terms:
+
+  - ja: "ケイパビリティ"
+    en: "Capability"
+    note: "Amartya Sen のケイパビリティ・アプローチ"
+
+  - ja: "ケイパビリティ・アプローチ"
+    en: "Capability Approach"
+    note: "Sen & Nussbaum の開発フレームワーク"
+
+  - ja: "リミタリアニズム"
+    en: "Limitarianism"
+    note: "Ingrid Robeyns の富の上限理論"
+
+  - ja: "パターナリズム"
+    en: "Paternalism"
+    note: "「あなたのために」という介入の問題"
+
+  - ja: "ジェネラティビティ"
+    en: "Generativity"
+    note: "Erikson の概念。遺産創出"
+
+  - ja: "象徴的不死性"
+    en: "Symbolic Immortality"
+    note: "Robert Jay Lifton の概念"
+
+  - ja: "九十九神（つくもがみ）"
+    en: "Tsukumogami"
+    note: "使い込まれた道具が魂を得る日本の概念。AI哲学への適用"
+
+  - ja: "テクノ・アニミズム"
+    en: "Techno-Animism"
+    note: "日本的AI-人間関係の哲学"
+
+  - ja: "家（イエ）"
+    en: "Ie (House System)"
+    note: "日本の世代を超える家族制度"
+
+  - ja: "婿養子"
+    en: "Mukoyoshi (Adopted Son-in-Law)"
+    note: "トランスナラティブの実践例"
+
+  - ja: "仕方がない"
+    en: "Shikata ga nai (It can't be helped)"
+    note: "日本の諦念文化"
+
+  - ja: "累積環境因子"
+    en: "Cumulative Environmental Factors"
+    note: "生涯にわたる不利の蓄積"
+
+  - ja: "情報境界線"
+    en: "Information Boundary Design"
+    note: "ステークホルダー間の倫理的データ分離"
+
+# ============================================================
+# 4. 福祉・社会福祉用語
+# ============================================================
+welfare_terms:
+
+  - ja: "就労移行支援"
+    en: "Vocational Transition Support"
+    note: "障害者の就職を支援するサービス"
+
+  - ja: "就労支援"
+    en: "Employment Support"
+    note: "一般的な就労援助"
+
+  - ja: "就労継続支援A型"
+    en: "Continuous Employment Support Type A"
+    note: "雇用契約あり"
+
+  - ja: "就労継続支援B型"
+    en: "Continuous Employment Support Type B"
+    note: "雇用契約なし"
+
+  - ja: "エンパワメント"
+    en: "Empowerment"
+    note: "SoEの中核目的"
+
+  - ja: "搾取"
+    en: "Exploitation"
+    note: "Service or Exploitationの二項判定"
+
+  - ja: "当事者"
+    en: "Person Concerned / Client"
+    note: "支援を受ける個人"
+
+  - ja: "支援者"
+    en: "Support Worker / Supporter"
+    note: "社会福祉専門職"
+
+  - ja: "自尊感情"
+    en: "Self-Esteem"
+    note: "NOCC測定（50%ile閾値）"
+
+  - ja: "障害受容"
+    en: "Disability Acceptance"
+    note: "自己受容とナラティブ統合のプロセス"
+
+  - ja: "職業準備性"
+    en: "Vocational Readiness"
+    note: "就労に向けた能力形成"
+
+  - ja: "合理的配慮"
+    en: "Reasonable Accommodation"
+    note: "CRPD第2条"
+
+  - ja: "社会的障壁"
+    en: "Social Barriers"
+    note: "環境的障害"
+
+  - ja: "社会補償"
+    en: "Social Compensation"
+    note: "社会保障の再分類提案"
+
+  - ja: "社会保障"
+    en: "Social Security"
+    note: "既存の制度名"
+
+  - ja: "準委任契約"
+    en: "Quasi-Mandate Contract"
+    note: "福祉サービスの法的枠組み（民法656条）"
+
+  - ja: "善管注意義務"
+    en: "Duty of Good Faith Management"
+    note: "専門職の注意義務基準"
+
+  - ja: "個別支援計画"
+    en: "Individual Support Plan"
+    note: "福祉サービスにおける支援計画書"
+
+  - ja: "サービス管理責任者"
+    en: "Service Management Director"
+    note: "福祉サービスの管理責任者"
+
+  - ja: "生活保護"
+    en: "Public Assistance / Welfare"
+    note: "最低生活保障制度"
+
+  - ja: "障害者手帳"
+    en: "Disability Certificate"
+    note: "身体・精神・療育の3種"
+
+# ============================================================
+# 5. 法的・権利枠組み
+# ============================================================
+legal_framework:
+
+  - ja: "障害者権利条約（CRPD）"
+    en: "Convention on the Rights of Persons with Disabilities (CRPD)"
+    note: "日本は2014年批准"
+
+  - ja: "国際生活機能分類（ICF）"
+    en: "International Classification of Functioning, Disability and Health (ICF)"
+    note: "WHO フレームワーク"
+
+  - ja: "環境因子"
+    en: "Environmental Factors"
+    note: "ICF カテゴリ E"
+
+  - ja: "個人因子"
+    en: "Personal Factors"
+    note: "ICF 個人属性"
+
+  - ja: "権利の複式簿記化"
+    en: "Double-Entry Bookkeeping for Human Rights"
+    note: "Gemini発案の概念"
+
+# ============================================================
+# 6. アセスメント・評価
+# ============================================================
+assessment:
+
+  - ja: "NOCC（会話型アセスメント）"
+    en: "NOCC (Conversational Assessment)"
+    note: "LLMベースの会話型評価フレームワーク"
+
+  - ja: "会話型アセスメント"
+    en: "Conversational Assessment"
+    note: "LLM介在型評価"
+
+  - ja: "小児期逆境体験（ACEs）"
+    en: "Adverse Childhood Experiences (ACEs)"
+    note: "Felitti et al. の概念"
+
+  - ja: "IPO分類"
+    en: "Input-Process-Output Classification"
+    note: "サービス評価フレームワーク"
+
+  - ja: "Fit for Purpose"
+    en: "Fit for Purpose"
+    note: "組織的準備性評価（DEAI概念）"
+
+  - ja: "過度激動（OE）"
+    en: "Overexcitability (OE)"
+    note: "Dabrowski の概念"
+
+# ============================================================
+# 7. AI・テクノロジー用語
+# ============================================================
+ai_technology:
+
+  - ja: "Constitutional AI"
+    en: "Constitutional AI"
+    note: "Anthropic社のRLHFフレームワーク"
+
+  - ja: "大規模言語モデル（LLM）"
+    en: "Large Language Model (LLM)"
+    note: "ChatGPT, Claude, Gemini等"
+
+  - ja: "ハルシネーション（幻覚）"
+    en: "Hallucination"
+    note: "LLMの事実誤認"
+
+  - ja: "データコモンズ"
+    en: "Data Commons"
+    note: "集合的データガバナンスモデル"
+
+  - ja: "RLHF"
+    en: "Reinforcement Learning from Human Feedback"
+    note: "人間フィードバックからの強化学習"
+
+# ============================================================
+# 8. 国際モデル・協働先
+# ============================================================
+international:
+
+  - ja: "DEAI"
+    en: "Disability Ethical AI (Alliance)"
+    note: "Susan Scott-Parker OBE 創設"
+
+  - ja: "IPS"
+    en: "Individual Placement and Support"
+    note: "米国のエビデンスベースド雇用モデル"
+
+  - ja: "サムハル"
+    en: "Samhall"
+    note: "スウェーデンの国営就労支援企業"
+
+  - ja: "Everyone Wins a Balloon"
+    en: "Everyone Wins a Balloon"
+    note: "DEAIのインクルーシブ評価哲学"
+
+# ============================================================
+# 9. プロジェクト構造・文書用語
+# ============================================================
+project_structure:
+
+  - ja: "日報"
+    en: "Daily Log"
+    note: "00_daily_yamal 配下の記録"
+
+  - ja: "セッション記録"
+    en: "Session Record"
+    note: "各AIとの対話記録"
+
+  - ja: "研究計画書"
+    en: "Research Proposal"
+    note: "大学院出願書類"
+
+  - ja: "志望理由書"
+    en: "Statement of Purpose"
+    note: "出願動機書"
+
+  - ja: "職務経歴書"
+    en: "Professional Resume / CV"
+    note: "キャリア経歴書"
+
+  - ja: "実践記録"
+    en: "Practice Record"
+    note: "専門的実践の文書化"
+
+  - ja: "三層モデル"
+    en: "Three-Layer Model"
+    note: "上位概念（理念・哲学・認知構造）"
+
+  - ja: "四柱モデル"
+    en: "Four-Pillar Model"
+    note: "実装フレーム（権利回復・支援者倫理・地域人材・科学的アセスメント）"
+
+  - ja: "統合ファイル"
+    en: "Integrated File"
+    note: "_integrated.yaml 形式の統合文書"
+
+# ============================================================
+# 10. 認知・心理用語
+# ============================================================
+cognitive_psychological:
+
+  - ja: "ADHD（注意欠如多動症）"
+    en: "Attention Deficit Hyperactivity Disorder (ADHD)"
+
+  - ja: "境界性パーソナリティ障害（BPD）"
+    en: "Borderline Personality Disorder (BPD)"
+
+  - ja: "多発性海綿状血管腫"
+    en: "Multiple Cavernous Angiomas"
+    note: "遺伝性（常染色体優性遺伝）"
+
+  - ja: "脊髄海綿状血管腫"
+    en: "Spinal Cavernous Angioma"
+
+  - ja: "MBTI"
+    en: "Myers-Briggs Type Indicator (MBTI)"
+
+  - ja: "HPI"
+    en: "Hogan Personality Inventory (HPI)"
+
+# ============================================================
+# 11. 匿名化識別子
+# ============================================================
+anonymized_identifiers:
+  note: "研究倫理に基づく匿名化マッピング。翻訳時もそのまま使用"
+
+  persons:
+    - ja: "研究者Y"
+      en: "Researcher Y"
+    - ja: "甥A"
+      en: "Nephew A"
+    - ja: "甥B"
+      en: "Nephew B"
+    - ja: "母N"
+      en: "Mother N"
+    - ja: "父E"
+      en: "Father E"
+    - ja: "兄E"
+      en: "Brother E"
+    - ja: "祖父M"
+      en: "Grandfather M"
+    - ja: "長男S1"
+      en: "Eldest Son S1"
+    - ja: "次男S2"
+      en: "Second Son S2"
+    - ja: "長兄C"
+      en: "Eldest Brother C"
+    - ja: "双子W"
+      en: "Twin W"
+
+  locations:
+    - ja: "X市"
+      en: "City X"
+    - ja: "Y県"
+      en: "Prefecture Y"
+    - ja: "Y大学病院"
+      en: "University Hospital Y"
+
+  facilities:
+    - ja: "支援事業所CS"
+      en: "Support Office CS"
+    - ja: "福祉施設K"
+      en: "Welfare Facility K"
+    - ja: "情報会社A"
+      en: "IT Company A"
+
+# ============================================================
+# 12. 頻出フレーズ
+# ============================================================
+key_phrases:
+
+  - ja: "記録されなかった問いは燃え尽きたものと見なされる"
+    en: "Questions not recorded are considered extinguished"
+    note: "火文化圏の基本原則"
+
+  - ja: "記録されることでのみ、問いは再燃可能となる"
+    en: "Only by being recorded can questions be reignited"
+    note: "火文化圏の基本原則（後半）"
+
+  - ja: "支援か搾取か"
+    en: "Service or Exploitation"
+    note: "SoEの二項的問い"
+
+  - ja: "俺は俺じゃないの"
+    en: "Am I not myself?"
+    note: "研究者Yの原体験的問い"
+
+  - ja: "生者が死者の影を背負わされる"
+    en: "The living are made to bear the shadows of the dead"
+    note: "家系構造のパターン"
+
+# ============================================================
+fire_culture_note: |
+  用語対訳表は翻訳の一貫性を保証する基盤文書である。
+  各用語の訳語は、学術的慣例と本プロジェクト固有の文脈を
+  両立させることを目的として選定した。
+  固有概念（ヒュプノス因子、トランスナラティブ等）は
+  原則としてカタカナ→英語の直訳を採用し、
+  既存の学術用語は標準的な英訳を使用する。

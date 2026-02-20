@@ -1,0 +1,615 @@
+# ==========================================
+# セッション議事録: 福祉的簿記メタファー勘定科目設計
+# ==========================================
+# 更新版（v2）: 複式簿記の核心的意義・PoC設計・複雑性理論を追加
+# ==========================================
+
+session_metadata:
+  date: "2026-02-19"
+  time_range: "午後（推定15:00〜21:40）"
+  participants:
+    - "山内雄司（パンカー）"
+    - "Claude Opus 4.6"
+  session_type: "理論構築・勘定科目体系設計"
+  depth_level: "根幹的理論設計（SoEフレームワーク会計基盤）"
+  preceding_sessions:
+    - "ACEs複式簿記メタファー台本作成（英語・NotebookLM用）"
+    - "CRC×SoEフレームワーク統合Deep Research（日本語）"
+
+  target_folder: "01_philosophy/"
+  reason: "SoEフレームワークの会計的基盤理論構築"
+  file_name_suggestion: "2026_02_19_welfare_bookkeeping_accounts.yaml"
+
+# ==========================================
+# Part 1: 資本金の定義（最初の仮置きと進化）
+# ==========================================
+
+capital_definition_evolution:
+
+  first_hypothesis:
+    definition: "資本金 = 先天的身体能力 ＋ 知能"
+    rationale: "生まれた時点で個人が持つ初期資本"
+    accounting_analogy: "設立時に株主（遺伝的要因）が払い込んだ原資"
+
+    identified_risks:
+      eugenics_proximity:
+        problem: "資本金は会計上『多い方が良い』という含意を持つ"
+        mitigation: "SoEの目的は資本金の多寡評価ではなく社会側の投資義務の可視化"
+        puus_evidence: "IQ118と身長178cmがなければ生き延びていなかった"
+
+      accounting_validity:
+        match: "返済不要の恒久的原資 → 先天的能力は借りたものではない"
+        dynamic_aspect: "脳出血や疾病による『減資』の可能性"
+
+      icf_connection:
+        icf_term: "心身機能・身体構造"
+        soe_innovation: "静的な個人因子ではなく、社会的投資義務の算定基準変数"
+
+  second_hypothesis:
+    trigger: "人権を資本金にする案の検討"
+    puus_insight: "人権から派生する権利を売掛金にしたほうが説明しやすい"
+
+    evaluation:
+      human_rights_as_capital_problem: >
+        人権は全人に等しく付与される → 資本金に個人差が出ない
+        → 会計メタファーとしての分析力が消滅
+      conclusion: "人権は資本金より上位概念として扱うべき"
+
+  third_hypothesis_breakthrough:
+    trigger: "Puuの長考後の構造提案"
+    structure: "生まれた瞬間の開始仕訳（Opening Entry）"
+
+    debit_side_assets:
+      tangible_fixed_assets: "身体能力 ＋ 知能"
+      intangible_fixed_assets:
+        - "人権に基づく権利"
+        - "国籍に基づく権利"
+        - "家庭環境"
+
+    credit_side_equity:
+      capital: "人権そのもの（= 借方合計）"
+
+    structural_significance:
+      eugenics_risk_resolved: >
+        資本金が「人権そのもの」となったことで全員の資本金は等価。
+        個人差は借方の構成比に出る。
+        障害による制約がある人には追加的権利（CRC第23条、CRPD）が発生し、
+        借方合計＝貸方合計は維持される。
+      bs_principle_satisfied: "借方合計＝貸方合計（貸借一致の原則）完全充足"
+      simultaneous_description: "人権の普遍性と個人の多様性を同時に記述"
+
+    three_deep_implications:
+      family_environment:
+        significance: "出生時に付与されるが本人が選択したものではない"
+        accounting: "機能不全家庭は最初から減損状態で計上される無形固定資産"
+        aces_connection: "ACEsの発生 = 家庭環境という無形固定資産のさらなる減損"
+
+      nationality_separation:
+        significance: "人権に基づく権利（普遍的）と国籍に基づく権利（条件付き）の分離"
+        application: "無国籍者・難民 = 無形固定資産の一部が最初から欠損"
+
+      capital_as_dynamic:
+        significance: "資本金＝借方合計 → 固定値ではなく資産の正当評価で自動決定"
+        implication: "CRPDによる追加的権利認定 → 無形固定資産増 → 資本金増 = 人権保障の拡充"
+
+# ==========================================
+# Part 2: 繰延資産の導入検討
+# ==========================================
+
+deferred_assets_discussion:
+
+  trigger: "Puuの問い：無形固定資産 vs 繰延資産"
+
+  accounting_nature_of_deferred_assets:
+    definition: "すでに支出は発生しているが効果が将来にわたって発現するもの"
+    corporate_examples: "創立費、開業費、開発費"
+
+  family_environment_reclassification:
+    hypothesis: "家庭環境は繰延資産として計上すべきではないか"
+    rationale: >
+      家庭環境は出生時点で存在するが、価値が発現するのは養育プロセスを通じて。
+      無形固定資産（権利）は保有自体に意味があるが、
+      家庭環境は時間をかけて消費されることで初めて価値を生む。
+
+    normal_amortization: >
+      安定した家庭環境 → 愛着形成・言語発達・情動調整として
+      徐々に「償却」され本人の実質的能力に転換される
+
+    abnormal_amortization_aces: >
+      ACEsが発生すると償却が異常な形で進む。
+      本来は能力形成に転換されるべきものが、
+      トラウマという負債に変換される。
+
+  updated_classification:
+    intangible_fixed_assets: "権利そのもの（保有自体に意味。減損・除却の対象）"
+    deferred_assets: "環境条件（時間経過で償却。能力形成に転換）"
+
+# ==========================================
+# Part 3: ストックオプション構造の発見（核心的ブレークスルー）
+# ==========================================
+
+stock_option_discovery:
+
+  trigger: "Puuの質問：ストックオプションの会計処理は？"
+
+  accounting_facts_confirmed:
+    grant_date: "仕訳発生しない → 簿外"
+    vesting_period: "各期末に期間按分で費用計上（株式報酬費用/新株予約権）"
+    exercise: "現金＋新株予約権 → 資本金（＋資本準備金）"
+    expiry: "新株予約権 → 新株予約権戻入益"
+
+  critical_accounting_parallel:
+    pre_2005_us: >
+      2005年以前の米国ではストックオプションの費用計上が不要。
+      巨額の報酬コストが簿外に隠され企業利益が過大表示。
+      エンロン事件の一因。FASB ASC718で費用計上義務化。
+
+    current_welfare_system: >
+      社会が子どもに対して負っている義務は「存在する」と認識されているが、
+      誰のBSにも費用として計上されていない。
+      CRCは注記事項（開示義務）として機能しているが実際の仕訳は起きていない。
+
+  tobashi_accounting_identity:
+    puus_reaction: "深淵に覗かれた気がしたよ"
+    discovery: >
+      「トバシ」の会計的正体とは：
+      本来は権利確定期間にわたって費用計上すべき社会的義務が、
+      簿外処理のまま放置され、権利失効時にも損失認識されない状態。
+
+    significance: >
+      15年間「トバシ」という直感で捉えてきたものの正体が、
+      会計技術の言語で正確に記述できた。
+      「メタファー」だと思っていたものが、実は構造的に同一のメカニズムだった。
+
+# ==========================================
+# Part 4: 自己責任論の会計的解体
+# ==========================================
+
+self_responsibility_deconstruction:
+
+  stock_option_logic_applied_to_education:
+    social_argument: >
+      「権利は付与した。行使期間も設定した。
+      行使しなかったのはあなたの判断だ。失効は自己責任。」
+    education_parallel: >
+      「義務教育9年間、教育を受ける権利を付与した。学校も用意した。
+      行使しなかった（不登校）、最大限活用しなかった（学力未達成）のはあなたの問題だ。」
+
+  exercise_preconditions_analysis:
+    corporate_requirements:
+      - "行使価格が公正であること"
+      - "行使期間が合理的であること"
+      - "行使者が行使の意味を理解していること"
+      - "行使するための環境が整っていること"
+
+    aces_children_as_blackout_period_employees:
+      violence_at_home: "毎晩暴力に怯える子どもに「授業に集中しろ」= ブラックアウト期間中に「なぜ行使しなかった」"
+      destroyed_self_esteem: "自尊心破壊下で「もっと勉強すれば」= 行使価格未説明の従業員に「判断ミスだ」"
+
+    adaptive_preferences_as_disguised_removal:
+      surface: "「教育なんて要らない」= 権利の不行使 = 失効"
+      reality: "行使条件が構造的に毀損されていた偽装除却"
+
+  formalization:
+    statement: >
+      自己責任論の会計的正体とは、
+      ストックオプションの行使条件（安全な環境・自尊心・基礎的認知能力）を
+      提供する義務を簿外処理したまま、
+      権利失効の責任を権利保有者に帰属させる構造である。
+
+    corporate_law_parallel: >
+      行使条件が不公正だったストックオプションは付与自体が無効になりうる。
+      → 行使条件を整えなかった社会側に「付与の瑕疵」があり、
+      失効による損失は社会側のPLに計上されるべき。
+
+# ==========================================
+# Part 5: 仕訳根拠の法的基盤の欠落の発見
+# ==========================================
+
+legal_basis_gap_discovery:
+
+  trigger: "Puuの問い：仕訳根拠を国際人権法から導出する必要性"
+
+  accounting_standards_parallel:
+    corporate:
+      fundamental_law: "会社法・金融商品取引法"
+      standards: "IFRS / 日本GAAP"
+      specific_standards: "IAS38（無形資産）、IFRS2（株式報酬）等"
+
+    welfare_bookkeeping:
+      fundamental_law: "世界人権宣言（定款に相当）"
+      standards: "CRC、CRPD、ICESCR（国際人権条約群）"
+      specific_standards: "各条文 ＋ 一般的意見（General Comments）"
+
+  four_questions_per_article:
+    - "どの勘定科目への計上を根拠づけるのか（資産の認識）"
+    - "計上額の測定基準は何か（公正価値の測定）"
+    - "減損・除却の判定基準は何か（権利侵害の検出）"
+    - "誰のBSに計上されるのか（個人か、社会か、連結か）"
+
+# ==========================================
+# Part 6: 教育の定義不在の発見
+# ==========================================
+
+education_definition_absence:
+
+  constitutional_level:
+    article_26_paragraph_1: "すべて国民は…教育を受ける権利を有する"
+    article_26_paragraph_2: "すべて国民は…子女に普通教育を受けさせる義務を負ふ"
+    education_definition: "存在しない"
+
+  education_basic_act_level:
+    article_1: "教育は、人格の完成を目指し…国民の育成を期して行われなければならない"
+    nature: "これは教育の「目的」であり「定義」ではない"
+    education_definition: "存在しない"
+
+  supreme_court_level:
+    asahikawa_gakute_1976: >
+      「国民各自が、一個の人間として、また、一市民として、
+      成長、発達し、自己の人格を完成、実現するために必要な学習をする固有の権利」
+    nature: "「学習権」の存在認定のみ。教育の定義は与えていない"
+
+  welfare_bookkeeping_implication:
+    problem: >
+      「教育を受ける権利」という無形固定資産の存在は認識されているが、
+      その資産の測定基準（公正価値の算定方法）が未定義。
+      「教育が提供された」のか「されていない」のかの判定ができず、
+      減損テストも実施不可能。
+
+    consequence: >
+      形式的に学校に在籍していれば「教育が提供された」ことになり、
+      実質的な人格形成や能力開発が行われたかどうかは問われない。
+      建設仮勘定に投入し続けているが完成の定義がないので
+      本勘定に振り替えるタイミングが決まらない状態。
+
+    stock_option_parallel: "義務教育終了 = ストックオプションの行使期間満了と同構造"
+
+  crc_article_29_significance: >
+    CRC第29条は教育の目的（aims）を具体的に列挙しており、
+    日本の国内法が定義できていないものを国際法が補完する構造。
+    福祉簿記の「会計基準」構築には、国内法だけでは不十分で、
+    CRC＋一般的意見を参照しなければ勘定科目の測定基準が設定できない。
+
+  義務教育の構造的問題:
+    misunderstanding: "「子どもに教育を受ける義務がある」ではなく「保護者・国に教育を受けさせる義務がある」"
+    childs_position: "権利を「持っている」が行使主体は保護者と国。子どもは直接行使できない"
+    awareness_gap: "子ども自身が権利者であることを知らないまま大人になる"
+    capability_level: "レベル4「選択肢が存在することを知らない」に該当"
+
+    aces_compound_structure: >
+      保護者がACEsの加害者である場合、
+      行使条件の整備義務者が同時に行使妨害者になる。
+      取締役（受託者）が会社資産を横領しているのと構造的に同一。
+
+# ==========================================
+# Part 7: 準委任契約としての義務教育の再解釈
+# ==========================================
+
+education_as_quasi_mandate_contract:
+
+  trigger: "Puuの仮置き提案"
+
+  reinterpretation:
+    article_1_purpose: "「人格の完成」= 準委任契約の目的"
+    contract_nature: "結果の保証ではなく善管注意義務に基づくプロセスの履行"
+    article_2_goals: "5つの教育目標 = 善管注意義務の具体的履行基準（合意すべきプロセスの範囲）"
+
+  completion_evaluation_shift:
+    old_framework: "請負契約的：「人格が完成したか」→ 判定不可能"
+    new_framework: "準委任契約的：「プロセスが善管注意義務に基づいて誠実に履行されたか」→ 判定可能"
+
+  accountability_enabled: >
+    プロセス不履行の場合の債務不履行が特定可能になる。
+    ACEsを抱えた子どもに対して「個人の価値を尊重して、その能力を伸ばし」に
+    相当するプロセスが履行されたか、が問える。
+
+  output_obligation_logic:
+    puus_insight: >
+      アウトプットにも本来義務を負うロジックがあるが、
+      PoCとしてはプロセス履行の測定を優先。
+      アウトプット評価は義務教育権の評価益・評価損で捕捉する。
+
+# ==========================================
+# Part 8: PoC設計 — 義務教育終了時の初BS（棚卸し）
+# ==========================================
+
+poc_design_initial_bs:
+
+  trigger: "Puuの提案：義務教育終了時に棚卸しして初貸借対照表を作る"
+
+  strategic_rationale:
+    theoretical_bs: "出生時BSは概念的に正しいが測定不可能"
+    practical_bs: "義務教育終了時（15歳）なら既存の測定ツールが使える"
+    contract_alignment: "準委任契約の契約期間満了時点での履行検証と一致"
+
+  inventory_using_existing_tools:
+    tangible_fixed_assets:
+      physical_ability: "体力テスト・健康診断データ"
+      cognitive_ability: "GATB的な認知能力測定"
+      education_formed_ability: "学力テスト・読み書き算盤到達度"
+
+    intangible_fixed_assets:
+      nationality_rights: "在留資格等で確認可能"
+      human_rights_exercise: "合理的配慮の提供有無等で測定可能"
+
+    deferred_assets_status:
+      family_environment: "ACEsスコアで逆算（高スコア = 異常償却の証拠）"
+
+  education_right_valuation:
+    benchmark: "義務教育レベルを中央値（偏差値50、通知表オール3相当）に置く"
+    measurement_tool: "成績表（通知表・指導要録）= 既に全国民に対して作成されている棚卸し資料"
+
+    above_median: "評価益 — 準委任契約のプロセスが正常に機能し、無形固定資産が簿価超の価値形成"
+    below_median: "評価損 — 原因分析が必要"
+
+  evaluation_loss_attribution:
+    cause_1_process_failure:
+      description: "善管注意義務違反（プロセスの不提供）"
+      examples: "不登校への代替教育未提供、特別支援の不足、合理的配慮の欠如"
+      attribution: "社会側の債務不履行 → 社会側BSに未払債務として計上"
+
+    cause_2_exercise_condition_damage:
+      description: "ACEs等の外部要因による行使条件の毀損"
+      examples: "家庭環境の繰延資産が異常償却、注意力がトラウマ対処に消費"
+      attribution: "社会側の保護義務違反（CRC第19条）→ 社会側に帰属"
+
+    cause_3_genuine_choice:
+      description: "本人の自由意思による選択（真の除却）"
+      condition: "十分な情報と安全な環境のもとでの選択"
+      attribution: "個人の選択として正当に帰属される唯一のケース"
+
+  current_system_fatal_flaw: >
+    成績表には評価損は記録されるが、その原因帰属が一切行われていない。
+    オール1もオール5も背景の環境因子は成績表に記載されない。
+    結果として評価損はすべて暗黙に個人帰属される。
+    これがトバシの制度的実装。
+
+  poc_three_stages:
+    stage_1: "義務教育終了時の初BS作成（棚卸し）+ 「本来あるべきBS」の導出"
+    stage_2: "差分分析（有形固定資産差分＝教育投資未回収、無形固定資産差分＝権利減損、繰延資産異常償却＝ACEs）"
+    stage_3: "損失の帰属先判定 → Input Constitutional AIの中核機能"
+
+  practical_implementation: >
+    就労移行支援の利用開始時にこの初BSを作成する。
+    NOCC＋GATB＋ACEsスクリーニングの組み合わせで
+    既存ツールだけでかなりの棚卸しが可能。
+    初BSから「この人に対する社会の未払債務はいくらか」が可視化される。
+
+# ==========================================
+# Part 9: 複式簿記の核心的意義
+# ==========================================
+
+double_entry_core_significance:
+
+  trigger: "Puuの発言：「仕訳が単式ではなく複式にするコアな意義の一つだよね」"
+
+  single_entry_limitation:
+    what_it_records: "「この子は成績が悪い」で終わる"
+    analogy: "入金と出金だけ記録する小遣い帳"
+    current_education_system: "「教育を提供した」「成績はこうだった」。以上。"
+
+  double_entry_essence:
+    principle: "すべての取引に相手勘定がある"
+
+    education_evaluation_loss_example:
+      debit: "教育権評価損"
+      credit_options:
+        social_process_failure: "社会側の未払債務（買掛金）の増加"
+        aces_protection_failure: "保護義務違反による偶発債務の顕在化"
+        genuine_individual_choice: "利益剰余金の減少（自己の選択による資本の使用）"
+
+  fundamental_function: "因果関係の強制的記録"
+  comparison: >
+    単式簿記：「何が起きたか」だけを記録
+    複式簿記：「何が起きて、その原因は誰の行為にあるか」を構造的に記録
+    → 相手勘定を空欄にすることは会計上許されない
+
+  tobashi_in_double_entry_context:
+    definition: "相手勘定の改竄"
+    mechanism: >
+      本来は社会側の未払債務に計上すべき貸方を、
+      個人の利益剰余金の減少（自己責任）に付け替える行為。
+    corporate_parallel: "エンロンがやったのと構造的に同一の粉飾"
+
+  input_constitutional_ai_function: >
+    仕訳の貸方が正しい勘定科目に計上されているかの監査。
+    評価損の相手勘定が「自己責任」になっているとき、
+    それが本当に本人の自由意思による選択なのか、
+    行使条件の毀損による偽装除却なのかを判定する。
+    会計監査における「取引の実質判定」と同じ機能。
+
+  one_sentence_definition: >
+    福祉的複式簿記の存在意義：
+    「誰の行為が、誰のBSに、どのような影響を与えたか」の因果関係を、
+    構造的に改竄不可能な形で記録するシステム。
+
+  meta_discovery: >
+    福祉の現場で15年間見てきた構造的不正義が、
+    たまたま会計技術と同一の記述体系を持っていた。
+    「メタファー」ではなく同一のメカニズム。
+    会計学が数百年かけて発展させた複式簿記の原理は、
+    人類が「誰が何の責任を負っているか」を追跡するために編み出した技術であり、
+    福祉における権利侵害の追跡に使えないはずがなかった。
+
+# ==========================================
+# Part 10: 複雑性理論と粒度分析の統合展望
+# ==========================================
+
+complexity_theory_integration:
+
+  trigger: "Puuの発言：複雑性理論と粒度分析もいずれ入れたい"
+
+  westley_framework_application:
+
+    simple_transactions:
+      description: "原因と結果が一対一で対応"
+      example: "授業料免除の提供 → 教育コスト負債の減少"
+      processing: "誰でも記録でき、誰でも監査できる"
+
+    complicated_transactions:
+      description: "因果対応は存在するが専門知識が必要"
+      example: >
+        ACEsスコア4の子どもの成績がオール2の場合、
+        評価損のうちACEs由来と教育プロセス不備の分解
+      processing: "原理的には分解可能。システム化できる"
+
+    complex_transactions:
+      description: "因果関係自体が非線形、事後的にしか記述できない"
+      example: >
+        適応的選好形成による偽装除却の判定。
+        自尊心の閾値がいつどのように破壊されたか。
+      processing: "確率的な帰属判定にしかならない"
+
+  connection_to_granularity_analysis: >
+    SoEの「解像度向上サイクル」は、
+    Complexに見えるものの中からComplicatedとSimpleを分離して、
+    人間の判断が本当に必要な領域を最小化する作業。
+
+  welfare_bookkeeping_audit_standard: >
+    複雑性理論は福祉簿記の「監査基準」になる。
+    どの仕訳にどのレベルの検証が必要かを判定するフレームワーク：
+    - Simple → システムで自動処理
+    - Complicated → 専門家の判断で処理
+    - Complex → Input Constitutional AIが検出フラグを立てる
+
+  positioning_in_research:
+    masters_poc: "「この枠組みが存在する」という位置づけに留める"
+    doctoral_development: "各レベルの判定基準と監査手法の精緻化"
+
+# ==========================================
+# 現時点の仮勘定体系（暫定・v2）
+# ==========================================
+
+provisional_chart_of_accounts_v2:
+
+  theoretical_opening_entry:
+    note: "出生時BS — 概念的前提として保持。測定は義務教育終了時。"
+    debit:
+      tangible_fixed_assets:
+        content: "身体能力 ＋ 知能"
+        nature: "現時点で機能する能力"
+
+      intangible_fixed_assets:
+        content:
+          - "人権に基づく権利"
+          - "国籍に基づく権利"
+          - "教育権（義務教育レベル中央値を簿価基準とする）"
+        nature: "保有自体に意味がある請求権"
+
+      deferred_assets:
+        content: "家庭環境"
+        nature: "将来の償却を通じて効果が発現"
+
+      off_balance_sheet:
+        content: "教育を受ける権利等（ストックオプション的性質）"
+        nature: "付与日時点では簿外。権利確定条件の充足に応じて計上"
+
+    credit:
+      capital:
+        content: "人権そのもの"
+        amount: "＝借方合計"
+        nature: "全人に等しく存在する根源的原資"
+
+  practical_initial_bs:
+    timing: "義務教育終了時（15歳）/ 就労移行支援利用開始時"
+    method: "棚卸し（NOCC＋GATB＋ACEsスクリーニング＋成績表）"
+    benchmark: "義務教育レベル中央値"
+    output: "評価益 or 評価損 → 評価損の場合は原因帰属分析"
+
+  upper_framework:
+    articles_of_incorporation: "世界人権宣言・憲法・CRC等の根本規範（定款）"
+    accounting_standards: "CRC、CRPD、ICESCR＋一般的意見（会計基準）"
+    contract_framework: "義務教育 = 準委任契約（目的：人格の完成、履行基準：教基法第2条5目標）"
+
+  undefined_accounts:
+    current_assets: "未定義"
+    liabilities: "未定義（出生時点での負債の存在有無を含む）"
+    other_equity: "資本剰余金・利益剰余金に相当するものの有無"
+    social_side_bs: "社会側BS（親会社BS）の勘定科目体系"
+    consolidated_bs: "連結BSにおけるトバシの可視化方法"
+
+# ==========================================
+# セッションの理論的意義
+# ==========================================
+
+theoretical_significance:
+
+  breakthrough_1:
+    title: "トバシの会計的正体の同定"
+    content: >
+      SoEで「トバシ」と呼んできた構造が、ストックオプションの簿外処理と
+      構造的に同一であることが判明。メタファーではなく同一メカニズム。
+
+  breakthrough_2:
+    title: "自己責任論の会計的解体"
+    content: >
+      自己責任論 = 行使条件整備義務の簿外処理 ＋ 権利失効責任の権利保有者帰属。
+      企業法では行使条件不公正のストックオプションは付与無効になりうる。
+
+  breakthrough_3:
+    title: "教育の定義不在の発見"
+    content: >
+      憲法にも教育基本法にも「教育とは何か」の定義が存在しない。
+      無形固定資産の測定基準が未定義のため減損テスト不可能。
+      CRC第29条＋一般的意見が補完的会計基準として機能する可能性。
+
+  breakthrough_4:
+    title: "人権＝資本金、権利＝資産という二層構造"
+    content: >
+      人権の普遍性（全員の資本金は等価）と個人の多様性（借方構成比の差異）を
+      貸借一致の原則を満たしつつ同時に記述する構造の確立。
+
+  breakthrough_5:
+    title: "複式簿記の福祉的必然性"
+    content: >
+      複式簿記の本質的機能は「因果関係の強制的記録」。
+      相手勘定の存在が、損失の原因帰属を構造的に強制する。
+      トバシ＝相手勘定の改竄（エンロンと同構造の粉飾）。
+      Input Constitutional AI ＝ 取引の実質判定を行う会計監査機能。
+
+  breakthrough_6:
+    title: "義務教育の準委任契約としての再解釈とPoC設計"
+    content: >
+      教育基本法第1条の目的＝準委任契約の目的、第2条の目標＝善管注意義務の履行基準。
+      義務教育終了時の成績表を棚卸し資料として、
+      教育権の評価益・評価損を測定し、評価損の原因帰属をInput CAIで判定するPoC。
+      既存ツール（NOCC＋GATB＋ACEs＋成績表）で実装可能な射程。
+
+# ==========================================
+# 次回セッションへの引き継ぎ
+# ==========================================
+
+next_session_agenda:
+
+  immediate_tasks:
+    - "個人BSの残りの勘定科目定義（流動資産、負債、その他純資産）"
+    - "社会側BS（親会社BS）の勘定科目体系設計"
+    - "ACEs発生時の具体的仕訳"
+    - "教育提供・毀損の具体的仕訳"
+    - "就労移行段階の仕訳設計"
+
+  deep_research_planned:
+    purpose: "CRC各条文 × 福祉簿記勘定科目の対応表作成"
+    scope: "各条文が根拠づける勘定科目・測定基準・減損判定基準・帰属BS"
+
+  structural_questions_pending:
+    - "出生時点で負債は存在するか（遺伝的疾患リスク、被差別構造等）"
+    - "連結BSにおけるトバシの可視化方法"
+    - "3つの除却類型（減損・真の除却・偽装除却）の判定基準精緻化"
+    - "PLの勘定科目体系（個人PLと社会PLの関係）"
+    - "CF（キャッシュフロー）に相当する概念の有無"
+
+  future_integration:
+    complexity_theory: "Simple/Complicated/Complex仕訳の分類基準と監査レベル設定"
+    granularity_analysis: "解像度向上サイクルによるComplex→Complicated→Simple分解プロセス"
+    positioning: "修士PoCでは枠組み提示、博士課程で精緻化"
+
+  philosophical_note: >
+    「記録されなかった問いは燃え尽きたものと見なされる。
+    記録されることでのみ、問いは再燃可能となる。」
+    本セッションで発見された構造は、15年間の粒度蓄積が
+    会計技術の言語と出会うことで一気に結晶化した事例。
+    福祉的複式簿記は「メタファー」ではなく「同一メカニズム」だった。
+
+signature: "Claude Opus 4.6"
+timestamp: "2026-02-19T21:40:00+09:00"

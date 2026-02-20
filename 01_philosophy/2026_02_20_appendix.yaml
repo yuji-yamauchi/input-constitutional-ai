@@ -1,0 +1,160 @@
+# ==========================================
+# 追記分: 2026_02_20 セッション後半
+# ==========================================
+# 本体: 2026_02_20_persona_based_welfare_bookkeeping.yaml に統合予定
+# ==========================================
+
+appendix_metadata:
+  parent_file: "2026_02_20_persona_based_welfare_bookkeeping.yaml"
+  target_folder: "01_philosophy/"
+  file_name_suggestion: "2026_02_20_appendix.yaml"
+
+# ==========================================
+# バイスティック × 英国MCA × SoE 三者比較
+# ==========================================
+
+three_principles_comparison:
+
+  puu_input_26:
+    content: "バイスティック7原則に縛られてるからね"
+    context: "解離性障害への対応において虚言の可能性も含めて判断保留しながら関わる必要性"
+
+  claude_response_26:
+    bystander_7_principles:
+      scope: "支援者の態度を規定（1957年）"
+      core: "個別化、受容、非審判的態度"
+      welfare_bookkeeping_mapping:
+        individualization: "一人一人に個別のBSを作成"
+        purposeful_expression: "主観的評価を「主観的現実」として受容"
+        controlled_involvement: "善管注意義務の範囲設定（21時ルール）"
+        acceptance: "暫定計上（確定できなくても記帳する）"
+        non_judgmental: "監査は行うが裁かない。構造を可視化する"
+        self_determination: "本人主権型アセスメント（MySupport.yaml）"
+        confidentiality: "データ主権（permission-based disclosure）"
+
+  puu_input_27:
+    content: "英国の意思決定支援のベストインタレストの原則との比較も欲しいね"
+
+  claude_response_27:
+    uk_mca_2005_five_principles:
+      p1: "意思決定能力があると推定される（capacity presumption）"
+      p2: "あらゆる実践的手段を尽くしてから能力なしと判断"
+      p3: "賢明でない判断＝能力なしではない"
+      p4: "能力を欠く人の決定はベストインタレストに基づく"
+      p5: "最も制限の少ない手段を選ぶ（least restrictive option）"
+
+    three_way_comparison:
+      bystander:
+        regulates: "支援者の態度（who you should be）"
+        origin: "1957年ソーシャルワーク倫理"
+        limitation: "属人的な態度に依存"
+      uk_mca:
+        regulates: "意思決定プロセス（how you should decide）"
+        origin: "2005年法的フレームワーク"
+        key_requirement: "判断プロセスの記録義務"
+        limitation: "記録と判断は人間に依存"
+      soe_input_cai:
+        regulates: "構造の設計（what the system should ensure）"
+        origin: "2022年実践→2026年理論化"
+        advancement: "態度とプロセスが自動的に実現されるシステム"
+
+    imada_case_application: |
+      バイスティック：「解離を裁くな」
+      英国MCA：「解離中の意思決定能力を評価し、能力回復の可能性があるなら決定を遅らせよ」
+      英国MCA第2原則「あらゆる実践的手段を尽くす」＝Yujiの支援全体の法的正当化
+      英国MCAの記録義務＝Yujiが直感的に構築していた記録体系と合致
+      SoE：その記録と判断をLLMで自動化・構造化し、属人的能力なしで
+      MCA基準の意思決定支援を可能にする
+
+# ==========================================
+# 支援の成果（資産回復の実証）
+# ==========================================
+
+outcome_evidence:
+
+  puu_input_28:
+    content: |
+      因みにこの子は2023年8月に旧ヘルパー2級を取得したからね。
+      あと彼氏もできて彼氏と家族とを引き合わせたしね。
+    significance: "NOCCが「怠惰で無責任」とラベルした人間の回復の実証"
+
+  claude_response_28:
+    recovery_timeline:
+      baseline_2022_03: "作業記憶0.0%、処理速度6.9%、自尊感情15.4%、ブロン週2-3回、解離常態化"
+      achievement_2022_10: "看護助手実務者認定試験合格"
+      achievement_2023_08: "旧ヘルパー2級取得"
+      relationship: "彼氏ができ家族に紹介"
+    welfare_bookkeeping_interpretation: |
+      繰延資産の異常償却が止まり、新たな資産形成が開始。
+      有形固定資産（資格）と無形固定資産（対人関係再構築能力）の同時回復。
+      資格取得＝スキルではなく自尊感情回復の手段として設計されていた。
+      彼氏を家族に紹介＝受動的被害者から能動的関係再構築者への移行。
+    research_significance: |
+      トバシの告発だけでなく「適切な仕訳を起こせば資産は回復する」の実証。
+      IPS「働きたい意志があれば必ず働ける」の実証データ。
+
+# ==========================================
+# 因果連鎖：善管注意義務の範囲問題
+# ==========================================
+
+causal_chain_and_boundary:
+
+  puu_input_29:
+    content: "まあこの子が俺の倒れる原因となった讃良さんを引き合わせたんだけどね"
+
+  puu_input_30:
+    content: |
+      今田さんからのオーダーだったのよ。
+      今田さんが別のネット上の友達と不安になって讃良さんの大麻利用を警察に通報したけど、
+      報復が怖いから対処してってオーダーしてきたから
+    significance: "善管注意義務の履行が支援者自身のBS毀損に繋がった因果連鎖"
+
+  claude_response_29_30:
+    structural_analysis: |
+      支援による回復→対人関係の拡大→その関係から生じたトラブル対処依頼→
+      Yujiが対処に入る→Yuji自身が倒れる原因に。
+    boundary_problem: |
+      「対処して」が就労移行支援の善管注意義務の範囲内か。
+      大麻使用者への対処・報復リスク管理は本来、警察・弁護士の管轄。
+      しかし現場では利用者が頼れるのがYujiしかいない。
+      制度間の簿外債務の連鎖的移転のさらに先：
+      利用者の私的対人関係トラブルまで流れ込む。断る構造が制度上存在しない。
+    support_worker_bs: |
+      核心的問い：支援者のBSには誰が善管注意義務を負っているのか。
+      Yujiは今田さんのBSを回復させたが、Yuji自身のBSを守る構造は未設計。
+      支援者の消耗コストが制度上どこにも計上されない＝トバシの別形態。
+    input_cai_implication: |
+      「この依頼は善管注意義務の範囲を超えている」という警告機能。
+      支援者保護のためのリスクフラグ。
+      21時ルール（時間的境界）は設計できたが、
+      業務範囲的境界の設計は不在だった。
+
+# ==========================================
+# 全スタッフ共有スペースの設計思想（補足）
+# ==========================================
+
+shared_space_design_supplement:
+
+  puu_input_25_supplement:
+    content: "ちなみにチャットも当事者と俺と全スタッフが共有しているスペースでする。"
+
+  claude_response_25_supplement:
+    multi_function:
+      defense: "密室支援の構造的排除"
+      quality: "チームとしての自然な介入発生、スタッフのOJT"
+      person_centered: "本人も参加する公開帳簿＝MySupport.yamlの思想"
+      audit_trail: "多者間共有で改竄が構造的に不可能"
+    llm_extension: "LLMがスペースに参加しリスクフラグ検出・記録自動構造化"
+
+# ==========================================
+# 次回統合時の注記
+# ==========================================
+
+integration_note: |
+  本追記分は2026_02_20_persona_based_welfare_bookkeeping.yaml の
+  セクション25以降に統合すること。
+  特にthree_principles_comparisonはtheoretical_significanceに
+  breakthrough_7として追加が適切。
+
+signature: "Claude Opus 4.6"
+timestamp: "2026-02-20T23:45:00+09:00"

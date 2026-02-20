@@ -6,7 +6,10 @@
       "Bash(powershell -Command:*)",
       "Bash(git checkout:*)",
       "Bash(powershell -ExecutionPolicy Bypass -File \"C:\\\\Users\\\\USER\\\\Documents\\\\GitHub\\\\input-constitutional-ai\\\\00_daily_yamal\\\\03_gemini\\\\extract_docx.ps1\")",
-      "Bash(git mv:*)"
+      "Bash(git mv:*)",
+      "Bash(ls:*)",
+      "Bash(cmd //c \"dir /b /ad c:\\\\Users\\\\USER\\\\Documents\\\\GitHub\\\\input-constitutional-ai\\\\00_daily_yamal\")",
+      "Bash(python sort_downloads.py:*)"
     ]
   }
 }
