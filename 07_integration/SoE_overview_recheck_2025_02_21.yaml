@@ -1,0 +1,291 @@
+# =====================================================
+# SoE Framework Complete Overview v2 - 再チェック記録
+# =====================================================
+# reviewer: Claude Opus 4.6 (Web)
+# date: 2025-02-21
+# target_file: SoE_Framework_Complete_Overview_for_NotebookLM.md (v2, 857行)
+# previous_review: SoE_overview_review_2025_02_21.yaml
+# target_folder: "07_integration/"
+# file_name_suggestion: "SoE_overview_recheck_2025_02_21.yaml"
+# =====================================================
+
+version_comparison:
+  v1: "672行（2025年10月時点の理論）"
+  v2: "857行（+185行、11月理論発展を反映）"
+  improvement: "前回レビューの主要指摘事項の大半を的確に反映"
+
+# =====================================================
+# 前回指摘の反映状況チェック
+# =====================================================
+previous_review_compliance:
+
+  category_A_critical_additions:
+    A1_grain_engineering:
+      status: "✅ 完全反映"
+      location: "Section 5.3（lines 448-472）"
+      quality: "優秀"
+      notes: >
+        3層粒度モデル、設計目標（眼鏡≠顕微鏡）、Record Exposure Model、
+        必要特性まで正確に記載。プロジェクト知識との整合性も確認済。
+
+    A2_thirty_percent_strategy:
+      status: "✅ 完全反映"
+      location: "Section 5.4（lines 474-488）"
+      quality: "優秀"
+      notes: "コア原則、実装方法、期待効果まで網羅。独立セクションとして適切に配置。"
+
+    A3_forced_labour_framework:
+      status: "✅ 完全反映"
+      location: "Section 3.5（lines 245-293）"
+      quality: "非常に優秀"
+      notes: >
+        三層テーブル、論証チェーン、三行動類型テーブル（ポリヴェーガル状態・
+        スキーマ療法・ILO検出難易度の5列構成）、Constitutional Spaceまで
+        一貫して記載。前回レビューで「最重要」とした項目を完璧に処理。
+
+    A4_constitutional_space:
+      status: "✅ 完全反映"
+      location: "Section 3.5内（lines 282-293）"
+      quality: "良好"
+      notes: "三層介入環境、メカニズムチェーン、Y.Y.事例エビデンスを記載。"
+
+    A5_decimal_accumulation_theory:
+      status: "✅ 完全反映"
+      location: "Section 2.6（lines 135-146）"
+      quality: "良好"
+      notes: "5原則、SoE接続、LLM時代の再現可能性まで記載。"
+
+    A6_grain_based_cognition:
+      status: "⚠️ 部分反映"
+      location: "暗黙的にSection 5.3内に統合"
+      quality: "やや不足"
+      remaining_issue: >
+        Grain-Based CognitionとDistributed Representationが
+        独立した概念として明示されていない。Section 5.3（粒度工学）で
+        粒度の「設計」は詳述されているが、その認知科学的基盤
+        （粒度型思考＝世界を粒レベルで観察し構造を再構築する認知スタイル、
+        分布的表象＝断片がネットワーク配置の中で意味を形成するモデル）が
+        学術用語として登場していない。
+      recommendation: >
+        Section 2.6（小数点蓄積理論）の後にSection 2.8として追加するか、
+        Section 5.3の冒頭に認知科学的根拠として1段落追加。
+        研究計画書（2025_11_17_C2.md）ではGrain-Based Cognitionが
+        中心概念として定義されているため、総論でも触れるべき。
+
+  category_B_corrections:
+    B1_researcher_y_description:
+      status: "❌ 未反映"
+      location: "Section 1, line 18"
+      current: "'over 10 years of experience in disability employment support'"
+      remaining_issue: >
+        15年の理論的連続性（2011年PHR Commons起点）への言及が
+        冒頭に依然としてない。Section 10（Research Design）には
+        時系列があるが、文書を最初に読む人にとって、
+        SoEが「10年の実践成果」に見えてしまう。
+      recommendation: >
+        line 18を以下のように修正：
+        "...with over 10 years of direct practice experience in disability 
+        employment support, building on 15 years of theoretical continuity 
+        beginning with the PHR Commons concept in 2011 — specifically 
+        vocational transition support..."
+
+    B2_exploitation_indicators:
+      status: "✅ 完全反映"
+      location: "line 30"
+      notes: >
+        schema-driven choice、autonomic survival responses、
+        psychological bondageの3指標がExploitation indicatorsに追加済。
+
+    B3_llm_role_redefinition:
+      status: "✅ 完全反映"
+      location: "Section 5.5, line 502"
+      notes: >
+        LLMの役割が「顕微鏡ではなく粒度露光装置」「ナイス3割の眼鏡」
+        「粒度変換器」として再定義済。Co-LLM Sessionの記述内に統合。
+
+    B4_sroi_justification:
+      status: "✅ 大幅に改善（予想以上）"
+      location: "Section 9 全体（lines 668-721）"
+      notes: >
+        前回は「三層理論統合との接続」だけ指摘したが、VSClaude君は
+        それを超えて、SROI自体の方法論的問題（基準率の誤謬、時間軸、
+        二重計上、死荷重）を特定し、2モデル分離（一般モデル1.5-6.0 
+        vs 危機介入モデル15.0-29.4）という構造改革を実施。
+        これは前回レビューの範囲を超えた自律的改善であり、高く評価。
+      new_concern: >
+        ただし、この2モデル分離はPuuがどこかのセッションで
+        議論・承認した内容か要確認。プロジェクト知識内に
+        この構造改革の根拠セッションが見当たらない場合、
+        VSClaude君の「自律的判断」による改変の可能性がある。
+        → Puuに確認推奨。
+
+    B5_nocc_ysq_hrv:
+      status: "✅ 完全反映"
+      location: "Section 5.6, lines 528-529"
+      notes: "YSQ（Hidden structural debt）とHRV（Real-time CF indicator）が正確に追加。"
+
+    B6_information_boundary:
+      status: "✅ 完全反映"
+      location: "Section 5.8, lines 556-560"
+      notes: >
+        雇用主境界の明確化、Schema/ACE情報の排除理由、
+        CRPD Article 12との接続が追加。前回指摘をそのまま反映。
+
+  category_C_structural:
+    C1_architecture_map:
+      status: "✅ 完全反映"
+      location: "Section 11（lines 747-808）"
+      notes: >
+        ★NEWマーカー付きで全項目追加。Three-Layer Forced Labour、
+        Constitutional Space、Three Behavioural Types、Grain Engineering、
+        30% Strategy、Record Exposure Model、UK Remploy。構造も正確。
+
+    C2_glossary:
+      status: "✅ 完全反映"
+      location: "Section 12（lines 839-849）"
+      notes: "前回指摘した全10用語が追加済。定義も正確。"
+
+    C3_uk_remploy:
+      status: "✅ 完全反映（予想以上に充実）"
+      location: "Section 8, lines 641-649"
+      notes: >
+        Remploy閉鎖の経緯、49%脱落（重度で80-90%失業）、
+        日本のパラドックス、SoEが提案する「就労リハ2.0」まで記載。
+        Susanが関心を持った理由も明示。前回指摘を超えた充実度。
+
+    C4_phr_commons_timeline:
+      status: "❌ 未反映"
+      remaining_issue: >
+        PHR Commons→SoEの15年連続性が文書冒頭（Section 1-2）に
+        配置されていない。Section 10にのみ存在。B1と同根の問題。
+
+  category_D_minor:
+    D1_compilation_date:
+      status: "✅ 反映"
+      location: "lines 855-856"
+      notes: "初版日付と更新日付を分離、カバレッジ範囲を注記に追加。"
+
+    D2_nagys_date:
+      status: "変更なし（重要度低、放置可）"
+
+    D3_data_commons_cost:
+      status: "❌ 未反映"
+      remaining_issue: "LLMコスト問題と二重制約は依然未記載。中優先度。"
+
+# =====================================================
+# 新たに発見された課題（v2固有）
+# =====================================================
+new_issues_in_v2:
+
+  N1_sroi_two_model_provenance:
+    severity: "★★★ 要確認"
+    location: "Section 9.2-9.3（lines 683-719）"
+    issue: >
+      SROI 29.4:1の構造批判と2モデル分離は非常に論理的だが、
+      この分析がプロジェクト内のどのセッションに基づくか不明。
+      基準率の誤謬、時間軸割引、二重計上、死荷重の4論点は
+      標準的なSROI方法論批判としては正確だが、Puuがこの
+      リストラクチャリングを明示的に議論・承認した記録が
+      プロジェクト知識内に見当たらない。
+    risk: >
+      VSClaude君が「合理的だから」と自律的に追加した場合、
+      Puuの理論的意図と齟齬が生じる可能性がある。
+      特に「29.4:1」はSusanへの提案で使った数字であり、
+      これを事後的に「1.5-6.0（一般）」に下方修正することは
+      戦略的判断を伴う。
+    recommendation: >
+      Puuに確認：「SROIの2モデル分離はPuuが議論した内容か、
+      VSClaude君の自律的判断か？」
+      承認済みなら問題なし。未議論なら、この部分は
+      「方法論的課題の整理」として残しつつ、
+      数値の確定はPuuの判断に委ねる注記を追加すべき。
+
+  N2_section_numbering_gap:
+    severity: "★ 軽微"
+    location: "Section 2"
+    issue: >
+      Section 2.6がDecimal Accumulation Theory、2.7がBoszormenyi-Nagyだが、
+      前回レビューで提案したGrain-Based Cognition（2.7または2.8）が
+      欠落しているため、Section 2の哲学基盤が「認知科学的根拠なし」に見える。
+      実装セクション（5.3）で粒度工学を語る前に、
+      哲学セクションで認知的基盤を据えるのが論文的には自然。
+
+  N3_phr_to_soe_narrative_gap:
+    severity: "★★ 中程度"
+    location: "文書全体の構成"
+    issue: >
+      Researcher Yの15年の思想的連続性
+      （2010 PHR Commons → 2018 発達障害支援PF → 現在SoE）が
+      Section 10にのみ記載されており、文書冒頭で読者が把握できない。
+      NotebookLMで質問された場合、「SoEの歴史的背景は？」に対して
+      Section 10まで到達しないと回答できない構造。
+    recommendation: >
+      Section 1の"What Is SoE?"に2-3文追加：
+      "SoE builds on 15 years of theoretical continuity, beginning with 
+      the PHR Commons concept (2011) — the idea that personal health 
+      records are a shared resource (commons) rather than corporate property 
+      — through a developmental disability support platform concept (2018), 
+      to its current form as a Constitutional AI-enhanced rights recovery system."
+
+  N4_structural_dig_up_practitioner:
+    severity: "★ 軽微（将来課題）"
+    issue: >
+      Researcher Yの認知プロファイル（Structural Dig-Up Practitioner）が
+      用語集・本文ともに未記載。これはSoEの「方法論がなぜ生まれたか」を
+      説明する概念だが、NotebookLM用文書に研究者個人の認知特性を
+      入れるかどうかは判断が分かれる。Puuの判断に委ねる。
+
+  N5_measurement_integration_table_missing:
+    severity: "★★ 中程度"
+    location: "Section 3.5（Forced Labour Framework）"
+    issue: >
+      三層統合の「測定統合」テーブルが欠落。
+      プロジェクト知識（2025_11_25_s.yaml）では明示されている：
+        NOCC → 自尊感情・ストレス（現在状態）
+        YSQ → Underlying schemas
+        HRV → Autonomic nervous system state
+        → 包括的強制労働脆弱性評価
+      Section 5.6（NOCC）にYSQ/HRVは追加済みだが、
+      Section 3.5内で「三つの測定を組み合わせると強制労働脆弱性の
+      包括的評価になる」という統合的意味づけが欠けている。
+    recommendation: >
+      Section 3.5のConstitutional Spaceの後に1段落追加：
+      "Comprehensive Forced Labour Vulnerability Assessment:
+       NOCC (current state) + YSQ (schema structure) + HRV (autonomic state)
+       = three-layer objective measurement, not subjective judgment."
+
+# =====================================================
+# 総合評価
+# =====================================================
+overall_verdict:
+  score: "9.0/10（前回v1: 7.0/10）"
+  improvement: "+2.0点の大幅改善"
+  
+  strengths_of_v2:
+    - "前回レビューのA1-A5（最重要5件）を全て正確に反映"
+    - "SROI批判と2モデル分離は前回指摘を超えた自律的改善（ただし要確認）"
+    - "UK Remploy文脈が予想以上に充実"
+    - "アーキテクチャマップの★NEWマーカーが可読性を向上"
+    - "用語集が10語追加で包括的に"
+    - "Information Boundary DesignのSchema/ACE排除根拠が明確化"
+
+  remaining_gaps:
+    critical:
+      - "N1: SROI 2モデル分離のPuu承認確認"
+    moderate:
+      - "N3: PHR→SoE時系列を文書冒頭に配置"
+      - "N5: 強制労働脆弱性の測定統合テーブル"
+      - "A6残: Grain-Based Cognition/Distributed Representationの独立記載"
+    minor:
+      - "N2: セクション番号調整"
+      - "N4: Structural Dig-Up Practitioner（判断保留）"
+      - "D3残: Data Commonsコストモデル"
+
+  recommendation: >
+    v2は「国際読者向けNotebookLM資料」として十分な品質に達している。
+    N1（SROI確認）を最優先で処理し、N3（冒頭への時系列追加）と
+    N5（測定統合）を反映すれば、v3は「完成版」と呼べる水準。
+
+# =====================================================
+# END OF RECHECK
+# =====================================================
