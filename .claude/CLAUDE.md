@@ -16,10 +16,12 @@
 
 ## 現在の最重要タスク
 
-- **目標**: 日本福祉大学院 修士課程 出願
-- **出願期限**: 2026年1月9日〜23日（消印有効）
+- **短期目標**: サービス管理責任者として就職（4社面接中）
+- **中期目標**: 2027年度 大学院修士課程 再出願準備
+- **継続**: SoE理論の発展・実装・国際発信
 - **研究テーマ**: SoE（Service of Empowerment / Service or Exploitation）
 - **革新**: Input Constitutional AI（記録作成段階での権利保障）
+- **2026年1月出願結果**: 日本福祉大学院・日本社会事業大学院ともに不合格
 
 ## プロジェクト構造
 
@@ -29,10 +31,13 @@
   02_GPT/              # ChatGPTセッション記録
   03_gemini/           # Geminiセッション記録
   04_VSClaude/         # Claude Code（VSCode）セッション記録
+  05_NotebookLM/       # NotebookLMセッション記録
 01_philosophy/          # SoE哲学・存在論
 03_ai_rights/           # AI倫理・CRPD・データ主権
 09_research_proposal/   # 研究計画書
   references/          # Bibliography（.bib）
+12_ko-fi/               # Ko-fi国際アウトリーチ
+13_d-rel-website/       # d-rel.jpウェブサイト（HTML/CSS/JS + 画像）
 outputs/                # AI間共有ファイル
 ```
 
@@ -62,7 +67,7 @@ outputs/                # AI間共有ファイル
 
 1. 血圧・体調の確認（健康管理）
 2. 前回セッションのサマリーYAML確認（軽量版があれば）
-3. 今日のタスク確認（出願まで残り日数）
+3. 今日のタスク確認
 4. 必要なファイルだけ読み込み
 
 ## Neuro Fire Check（ADHD対応）
@@ -79,26 +84,44 @@ outputs/                # AI間共有ファイル
 
 ## 重要ファイル参照
 
-- 研究計画書最新版: `09_research_proposal/01_planning_sessions/research_plan_v2.8.md`
+- 研究計画書最終版: `09_research_proposal/01_planning_sessions/research_plan_v10_final.md`
 - 哲学統合: `01_philosophy/01_philosophy_integrated.yaml`
 - AI倫理統合: `03_ai_rights/03_ai_rights_integrated.yaml`
 - Bibliography: `09_research_proposal/references/bibliography_draft.bib`（25件）
-- 最新セッション: `00_daily_yamal/04_VSClaude/2025_12_11_session_summary.yaml`
+- d-rel.jpサイト: `13_d-rel-website/00_html/index.html`
+- Hypnos Factor review: `00_daily_yamal/01_Cloude/2026_02_23_Hypnos_Factor_review_v3.yaml`
+- 最新セッション: `00_daily_yamal/04_VSClaude/2026_02_26_d-rel_website_build.yaml`
 
-## AI間連携体制（2025-12-11確立）
+## AI間連携体制
 
 | AI | 役割 |
 |----|------|
-| Claude Code (Opus 4.5) | 技術管理・ファイル操作・バージョン管理 |
-| Claude Web (Sonnet 4.5) | 研究計画書本文執筆・ブラッシュアップ |
+| Claude Code (Opus 4.6) | 技術管理・ファイル操作・バージョン管理・インフラ |
+| Claude Web | 研究計画書本文執筆・ブラッシュアップ・理論対話 |
 | ChatGPT (GPT-4) | 理論的探索・概念発掘・批判的検討 |
-| Gemini | 文献調査・研究者プロファイル分析 |
+| Gemini | 文献調査・画像生成・研究者プロファイル分析 |
+| NotebookLM | 音声コンテンツ生成・理論検証 |
 
-## 理論構造（確定）
+## 理論構造
 
 - **Three-Layer Model**: 上位概念（理念・哲学・認知構造）
 - **Four-Pillar Model**: 実装フレーム（権利回復、支援者倫理、地域人材、科学的アセスメント）
 - **関係**: 階層構造（Three-Layer → Four-Pillar → SoE実装）
+- **三因子モデル（2026-02確立）**:
+  - Hubris Factor: 傲慢・特権意識による構造的支配
+  - Anomie Factor: ボトムアップの規範崩壊
+  - Hypnos Factor: 社会全体のロール固定化装置（催眠的維持機構）
+- **Trans-Narrative**: トランスヒューマニズムへの対抗概念（SoE Layer 5: Narrative）
+- **SoE複式簿記**: 「数字で示す "It's not your fault"」— 構造的不利益の会計的証明
+
+## d-rel ブランド
+
+- **ドメイン**: d-rel.jp（SSL有効）
+- **意味**: D = Disability / Define / Decode、rel = Relative / Reliability / Release
+- **メール**: y-yamauchi@d-rel.jp（Microsoft 365）
+- **技術スタック**: 静的HTML + Lovable/Supabase（PoC用）
+- **CI/CD**: GitHub Actions → FTPデプロイ
+- **外部プラットフォーム**: Ko-fi, MENTA, YouTube（JP/EN）, GitHub
 
 ## 国際協働
 
@@ -114,6 +137,6 @@ outputs/                # AI間共有ファイル
 
 ---
 
-*最終更新: 2026-01-04*
+*最終更新: 2026-02-26*
 
 
