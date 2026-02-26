@@ -1,0 +1,31 @@
+name: Deploy d-rel.jp
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '13_d-rel-website/**'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Deploy index.html to server root
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: www1103.onamae.ne.jp
+          username: rs2321383
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./13_d-rel-website/00_html/
+          server-dir: /d-rel.jp/
+
+      - name: Deploy images
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: www1103.onamae.ne.jp
+          username: rs2321383
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./13_d-rel-website/02_images/
+          server-dir: /d-rel.jp/images/02_images/

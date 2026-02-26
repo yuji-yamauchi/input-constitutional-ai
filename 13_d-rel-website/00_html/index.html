@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>d-rel | Define. Decode. Release.</title>
+    <meta name="description" content="d-rel — Disability × Reliability × Release. 構造設計による権利回復の研究と実践。山内雄司">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=BIZ+UDGothic:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* ============================================
+           CSS Variables — 色やフォントを一箇所で管理
+           ここを変えるだけでサイト全体の雰囲気が変わる
+           ============================================ */
+        :root {
+            --bg-primary: #f5ebe0;       /* 赤みベージュ */
+            --bg-secondary: #ebddd0;     /* 少し濃い赤みベージュ */
+            --bg-card: #fdf5ee;          /* カード背景：温かみのある白 */
+            --text-primary: #2c2418;      /* ダークブラウン */
+            --text-secondary: #6b5e50;    /* ミディアムブラウン */
+            --text-muted: #9a8d7f;        /* ライトブラウン */
+            --accent: #c46a3a;            /* テラコッタ（暖色アクセント） */
+            --accent-hover: #d4884e;      /* ホバー時：少し明るく */
+            --border: #e0d6ca;            /* 暖色ボーダー */
+            --font-en: 'Inter', sans-serif;
+            --font-jp: 'BIZ UDGothic', sans-serif;  /* UD = ユニバーサルデザイン書体 */
+        }
+
+        /* ============================================
+           リセット & ベース
+           ============================================ */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-jp);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.8;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: var(--accent-hover);
+        }
+
+        /* ============================================
+           レイアウト
+           ============================================ */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        section {
+            padding: 80px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        section:last-of-type {
+            border-bottom: none;
+        }
+
+        /* ============================================
+           言語切り替え
+           ============================================ */
+        .lang-toggle {
+            position: fixed;
+            top: 16px;
+            right: 20px;
+            z-index: 100;
+            display: flex;
+            gap: 0;
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(44, 36, 24, 0.12);
+        }
+
+        .lang-btn {
+            padding: 8px 16px;
+            border: none;
+            cursor: pointer;
+            font-family: var(--font-en);
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            transition: all 0.2s;
+            background: var(--bg-card);
+            color: var(--text-muted);
+        }
+
+        .lang-btn.active {
+            background: var(--accent);
+            color: #fff;
+        }
+
+        .lang-btn:hover:not(.active) {
+            background: var(--bg-secondary);
+        }
+
+        /* 言語表示制御 — body内の要素のみ対象 */
+        body :is(p, div, span)[lang="en"] { display: none; }
+        body.en :is(p, div, span)[lang="en"] { display: revert; }
+        body.en :is(p, div, span)[lang="ja"] { display: none; }
+
+        /* ============================================
+           ヘッダー / Hero
+           ============================================ */
+        .hero {
+            padding: 60px 0 0;
+            border-bottom: 1px solid var(--border);
+            text-align: center;
+        }
+
+        .hero-visual {
+            width: 100%;
+            max-width: 100%;
+            display: block;
+        }
+
+        /* ============================================
+           セクション見出し
+           ============================================ */
+        .section-title {
+            font-family: var(--font-en);
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 32px;
+        }
+
+        /* ============================================
+           About
+           ============================================ */
+        .about-name {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .about-name-en {
+            font-family: var(--font-en);
+            font-size: 0.9rem;
+            font-weight: 300;
+            color: var(--text-secondary);
+            margin-bottom: 24px;
+        }
+
+        .about-text {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 2;
+            margin-bottom: 16px;
+        }
+
+        .about-keywords {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 24px;
+        }
+
+        .keyword {
+            font-family: var(--font-en);
+            font-size: 0.75rem;
+            padding: 4px 12px;
+            border: 1px solid var(--border);
+            border-radius: 999px;
+            color: var(--text-secondary);
+            letter-spacing: 0.05em;
+        }
+
+        /* ============================================
+           Activities — リンクカード
+           ============================================ */
+        .link-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 16px;
+        }
+
+        .link-card {
+            display: block;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 24px;
+            transition: border-color 0.2s, transform 0.2s;
+        }
+
+        .link-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-2px);
+            color: var(--text-primary);
+        }
+
+        .link-card-youtube {
+            grid-column: 1 / -1;
+            background: url('images/02_images/YouTubeチャンネルカードデザイン.png') center / cover no-repeat;
+            min-height: 180px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 24px;
+            transition: border-color 0.2s, transform 0.2s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .link-card-youtube::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(transparent 30%, rgba(0,0,0,0.7));
+            border-radius: 8px;
+        }
+
+        .link-card-youtube:hover {
+            border-color: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        .youtube-links {
+            position: relative;
+            display: flex;
+            gap: 24px;
+        }
+
+        .youtube-links a {
+            color: #fff;
+            font-family: var(--font-en);
+            font-size: 0.9rem;
+            font-weight: 600;
+            padding: 8px 16px;
+            border: 1px solid rgba(255,255,255,0.3);
+            border-radius: 6px;
+            transition: background 0.2s;
+        }
+
+        .youtube-links a:hover {
+            background: rgba(255,255,255,0.15);
+            color: #fff;
+        }
+
+        .link-card-kofi {
+            display: block;
+            background: url('images/02_images/Gemini_Generated_Image_fcm0s6fcm0s6fcm0.png') center / cover no-repeat;
+            min-height: 140px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 24px;
+            transition: border-color 0.2s, transform 0.2s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .link-card-kofi::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.3) 100%);
+            border-radius: 8px;
+        }
+
+        .link-card-kofi:hover {
+            border-color: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        .link-card-kofi .link-card-title,
+        .link-card-kofi .link-card-desc {
+            position: relative;
+            color: #fff;
+        }
+
+        .link-card-kofi .link-card-desc {
+            color: rgba(255,255,255,0.8);
+        }
+
+        .link-card-menta {
+            display: block;
+            background: url('images/02_images/Gemini_Generated_Image_wv39wewv39wewv39.png') center / cover no-repeat;
+            min-height: 140px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 24px;
+            transition: border-color 0.2s, transform 0.2s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .link-card-menta::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.3) 100%);
+            border-radius: 8px;
+        }
+
+        .link-card-menta:hover {
+            border-color: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        .link-card-menta .link-card-title,
+        .link-card-menta .link-card-desc {
+            position: relative;
+            color: #fff;
+        }
+
+        .link-card-menta .link-card-desc {
+            color: rgba(255,255,255,0.8);
+        }
+
+        .link-card-github {
+            display: block;
+            background: url('images/02_images/Gemini_Generated_Image_f81c0zf81c0zf81c.png') center / cover no-repeat;
+            min-height: 140px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 24px;
+            transition: border-color 0.2s, transform 0.2s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .link-card-github::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.3) 100%);
+            border-radius: 8px;
+        }
+
+        .link-card-github:hover {
+            border-color: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        .link-card-github .link-card-title,
+        .link-card-github .link-card-desc {
+            position: relative;
+            color: #fff;
+        }
+
+        .link-card-github .link-card-desc {
+            color: rgba(255,255,255,0.8);
+        }
+
+        .link-card-title {
+            font-family: var(--font-en);
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .link-card-desc {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        /* ============================================
+           SoE Framework
+           ============================================ */
+        .soe-text {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 2;
+            margin-bottom: 16px;
+        }
+
+        .soe-equation {
+            font-family: var(--font-en);
+            font-size: 1.1rem;
+            font-weight: 300;
+            color: var(--text-primary);
+            padding: 24px;
+            background: var(--bg-secondary);
+            border-left: 3px solid var(--accent);
+            margin: 24px 0;
+            letter-spacing: 0.02em;
+        }
+
+        .soe-images {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-top: 32px;
+        }
+
+        .soe-images img {
+            width: 100%;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+
+        @media (max-width: 600px) {
+            .soe-images {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* ============================================
+           Community / 自助会
+           ============================================ */
+        .community-text {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 2;
+            margin-bottom: 16px;
+        }
+
+        .community-note {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            padding: 16px 24px;
+            background: var(--bg-secondary);
+            border-radius: 8px;
+            margin-top: 24px;
+        }
+
+        /* ============================================
+           Contact
+           ============================================ */
+        .contact-email {
+            font-family: var(--font-en);
+            font-size: 1.1rem;
+            font-weight: 400;
+        }
+
+        .contact-note {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-top: 8px;
+        }
+
+        /* ============================================
+           Footer
+           ============================================ */
+        footer {
+            padding: 40px 0;
+            text-align: center;
+            font-family: var(--font-en);
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            letter-spacing: 0.1em;
+        }
+
+        /* ============================================
+           レスポンシブ（スマホ対応）
+           ============================================ */
+        @media (max-width: 600px) {
+            .hero {
+                padding: 40px 0 0;
+            }
+
+            section {
+                padding: 60px 0;
+            }
+
+            .link-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 言語切り替えボタン -->
+    <div class="lang-toggle">
+        <button class="lang-btn active" onclick="switchLang('ja')">JP</button>
+        <button class="lang-btn" onclick="switchLang('en')">EN</button>
+    </div>
+
+    <!-- ============================================
+         HERO — サイトの顔
+         ============================================ -->
+    <header class="hero">
+        <img src="images/02_images/Gemini_Generated_Image_y66zdky66zdky66z.png" alt="d-rel — Define. Decode. Release. Specifications can be rewritten. SoE — Debugging Social Code" class="hero-visual">
+    </header>
+
+    <!-- ============================================
+         ACTIVITIES — 活動リンク集
+         ============================================ -->
+    <section id="activities">
+        <div class="container">
+            <p class="section-title">Activities</p>
+            <div class="link-grid">
+                <div class="link-card-youtube">
+                    <div class="youtube-links">
+                        <a href="https://www.youtube.com/@d-rel-japan" target="_blank" rel="noopener">JP — 日本語</a>
+                        <a href="https://www.youtube.com/@SoEFramework" target="_blank" rel="noopener">EN — English</a>
+                    </div>
+                </div>
+                <a href="https://ko-fi.com/soeframework" class="link-card-kofi" target="_blank" rel="noopener">
+                    <p class="link-card-title">Ko-fi</p>
+                    <p class="link-card-desc" lang="ja">研究活動へのサポート</p>
+                    <p class="link-card-desc" lang="en">Support Our Research</p>
+                </a>
+                <a href="https://menta.work/plan/19550/55862" class="link-card-menta" target="_blank" rel="noopener">
+                    <p class="link-card-title">MENTA</p>
+                    <p class="link-card-desc" lang="ja">メンタリング・相談</p>
+                    <p class="link-card-desc" lang="en">Mentoring & Consultation</p>
+                </a>
+                <a href="https://github.com/yuji-yamauchi" class="link-card-github" target="_blank" rel="noopener">
+                    <p class="link-card-title">GitHub</p>
+                    <p class="link-card-desc" lang="ja">研究リポジトリ — Ko-fi月額会員限定</p>
+                    <p class="link-card-desc" lang="en">Research Repository — Ko-fi Members Only</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SoE FRAMEWORK — 研究の紹介
+         ============================================ -->
+    <section id="soe">
+        <div class="container">
+            <p class="section-title">SoE Framework</p>
+            <p class="soe-text" lang="ja">
+                SoE（Service of Empowerment / Service or Exploitation）は、
+                支援が本当にエンパワメントなのか、それとも構造的搾取なのかを監査するフレームワーク。
+            </p>
+            <p class="soe-text" lang="en">
+                SoE (Service of Empowerment / Service or Exploitation) is an audit framework
+                that examines whether a service truly empowers the individual — or structurally exploits them.
+            </p>
+            <div class="soe-equation">
+                "Is this service empowering the person — or exploiting them?"
+            </div>
+            <p class="soe-text" lang="ja">
+                財務会計のメタファーを用い、社会が個人に押し付ける「見えない負債（飛ばし）」を可視化し、
+                強制修正仕訳によって本来の責任主体へ負債を戻す。
+                Hypnos Factor（構造的睡眠）、Anomie Factor（規範崩壊）、Hubris Factor（認知歪曲）の
+                三要因モデルで社会病理を診断する。
+            </p>
+            <p class="soe-text" lang="en">
+                Using financial accounting as a metaphor, SoE reveals the "hidden liabilities" that society
+                forces onto individuals, and reassigns them to the responsible structural actors through
+                forced corrective entries. The framework diagnoses social pathology through three factors:
+                Hypnos Factor (structural sleep), Anomie Factor (normative collapse), and Hubris Factor (cognitive distortion).
+            </p>
+            <div class="soe-images">
+                <img src="images/02_images/soe_framework.png" alt="SoE Framework — Auditing the Social Ledger">
+                <img src="images/02_images/hypnos_factor.png" alt="The Hypnos Factor — Why Systems Sleep Through Exploitation">
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         COMMUNITY — 自助会
+         ============================================ -->
+    <section id="community">
+        <div class="container">
+            <p class="section-title">Community</p>
+            <p class="community-text" lang="ja">
+                d-relは、障害当事者・支援者・研究者がフラットにつながる場を目指しています。
+                「支援する/される」の固定された役割ではなく、構造を共に読み解き、
+                自分の帳簿を自分で持つための自助的コミュニティです。
+            </p>
+            <p class="community-text" lang="en">
+                d-rel aims to create a space where people with disabilities, support workers, and researchers
+                connect on equal footing. Rather than fixed roles of "helper" and "helped," this is a
+                self-help community where we decode structures together and own our own ledgers.
+            </p>
+            <div class="community-note" lang="ja">
+                準備中 — 詳細が決まり次第、こちらでお知らせします。
+            </div>
+            <div class="community-note" lang="en">
+                Coming soon — details will be announced here.
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         ABOUT — プロフィール
+         ============================================ -->
+    <section id="about">
+        <div class="container">
+            <p class="section-title">About</p>
+            <h2 class="about-name">山内 雄司</h2>
+            <p class="about-name-en">Yuji Yamauchi</p>
+            <p class="about-text" lang="ja">
+                障害者就労支援の現場で15年以上の実務経験を持つ研究者・実践家。
+                税務行政・IT・福祉の領域を横断し、10事業所の立ち上げと100名以上の支援に携わる。
+            </p>
+            <p class="about-text" lang="ja">
+                現在、SoE（Service of Empowerment）フレームワークの研究開発と、
+                Input Constitutional AI（記録作成段階での権利保障AI）の構想を進めている。
+            </p>
+            <p class="about-text" lang="en">
+                A researcher and practitioner with over 15 years of hands-on experience in disability employment support.
+                Cross-disciplinary background spanning tax administration, IT, and welfare — established 10 service facilities and supported over 100 individuals.
+            </p>
+            <p class="about-text" lang="en">
+                Currently developing the SoE (Service of Empowerment) framework and
+                conceptualizing Input Constitutional AI — rights protection built into the record-creation process itself.
+            </p>
+            <div class="about-keywords">
+                <span class="keyword">SoE Framework</span>
+                <span class="keyword">Input Constitutional AI</span>
+                <span class="keyword">Disability Employment</span>
+                <span class="keyword">Structural Audit</span>
+                <span class="keyword">ADHD / HPI</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         CONTACT — 連絡先
+         ============================================ -->
+    <section id="contact">
+        <div class="container">
+            <p class="section-title">Contact</p>
+            <p class="contact-email">
+                <a href="mailto:y-yamauchi@d-rel.jp">y-yamauchi@d-rel.jp</a>
+            </p>
+            <p class="contact-note" lang="ja">研究協力・取材・相談など、お気軽にご連絡ください。</p>
+            <p class="contact-note" lang="en">For research collaboration, press inquiries, or consultations — feel free to reach out.</p>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer>
+        <div class="container">
+            &copy; 2026 d-rel. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+    function switchLang(lang) {
+        document.body.classList.toggle('en', lang === 'en');
+        document.querySelectorAll('.lang-btn').forEach(btn => {
+            btn.classList.toggle('active', btn.textContent.trim() === (lang === 'ja' ? 'JP' : 'EN'));
+        });
+    }
+    </script>
+</body>
+</html>
