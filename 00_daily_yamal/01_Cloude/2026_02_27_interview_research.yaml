@@ -1,0 +1,233 @@
+session:
+  date: "2026-02-27"
+  type: "就職活動_面接調査記録"
+  researcher: "山内雄司（Puu）"
+  recorded_by: "Claude Sonnet 4.6"
+  target_folder: "99_daily_yamal/01_Claude/"
+  file_name: "2026_02_27_interview_research.yaml"
+
+overview:
+  summary: >
+    就労継続支援A型・B型事業所のサービス管理責任者（サビ管）求人を対象に
+    3社の面接・事前調査を実施。各法人の財務・構造・経営実態を多角的に分析。
+    Puuの裏目標「日本の就労継続支援施設を10年後に0にする」の文脈における
+    フィールドワークとして位置づける。
+
+interview_1:
+  company: "でじるみ岡山駅前"
+  formal_name: "就労継続支援B型事業所 エンターテインメントアカデミー でじるみ岡山駅前"
+  location: "岡山市北区駅元町22-13 西口駅前ビル2階"
+  open_schedule: "2026年05月01日オープン予定"
+  service_type: "就労継続支援B型"
+  interview_time: "11:00〜12:30（約90分）"
+  interviewers:
+    - "オーナー"
+    - "倉敷事業所 管理者兼サビ管"
+
+  fc_structure:
+    fc_honbu: "株式会社グローバルソリューション"
+    honbu_profile: "投資ポートフォリオコンサル系企業。ISO 27001:2022認証取得（IS 743010）"
+    royalty: "5%"
+    fc_operator_kurashiki: "株式会社リガレックス（東京都台東区根岸3-25-6、代表：青山貞凡、設立2015/10/05）"
+    rigarekkusu_note: "wamnet掲載あり・HP URL空欄。ペーパー的運営法人の可能性"
+    fc_operator_okayama_ekimae: "不明（別法人の可能性あり）"
+
+  site_observation:
+    note: "面接前に現地確認。でじるみ岡山駅前の看板設置済み。右側にインターネットカフェの看板あり"
+    hypothesis: "ネカフェ居抜き転用・ネカフェオーナーがFC加盟した可能性"
+
+  wamnet_status: "未掲載（指定申請前または申請中の可能性）"
+
+  concept:
+    tagline: "好きを仕事に"
+    focus: "イラスト・動画編集・グラフィックデザイン等クリエイティブ系"
+    puu_assessment: "デジタルという蒔絵を巻いた従来型B型。コンセプトの衣であり支援の質変化なし"
+
+  structural_analysis:
+    fc_exploitation_model: >
+      FC本部がロイヤリティ収益を得ながら、加盟オーナーに利用者集客・人材採用コストを転嫁。
+      サビ管は専門職として全責任を負うが経営意思決定に関与できない。
+      準委任契約の本来の意味が空洞化した構造。
+    job_outsourcing: "FC本部がサビ管も外注している構造。専門性と裁量が切り離されている"
+    fc_work_order: "FC本部が加盟店に制作案件を発注している可能性→仕事の蛇口も本部が支配"
+
+  notable_conversation:
+    kurashiki_sabikan_exchange:
+      topic: "採用アセスメント手法・入浴支援事例"
+      puu_method: >
+        支援員のペルソナを父性・母性・兄性・姉性・弟性・妹性で仮定し
+        必要な役割を考える。採用時に子育て経験確認。
+        「1週間以上風呂に入らない当事者にどう支援するか」を面接質問として使用
+      exchange: >
+        倉敷サビ管から逆質問「ではあなたならどうしますか？」→
+        Puuが男男の場合を例示で聞かれ、
+        「メリットを感じないから入らないのか・デメリットを感じるから入らないのか・
+        そもそも風呂に入れる環境なのかをアセスメントする」と回答→
+        倉敷サビ管（。'-')(。,_,)ｳﾝｳﾝ
+
+  condition:
+    salary_estimate: "サビ管のみ月30万円程度なら検討余地あり"
+    next_step: "条件提示待ち（先方も複数面接中）"
+
+  puu_self_disclosure:
+    - "大学院受験目指していることを伝達"
+    - "複数社面接中であることを伝達"
+    - "扱いにくい人材であることを事前に伝達"
+    - "障害の定義が変わっていることを説明（伝わらなかった）"
+
+interview_2:
+  company: "よりそいワーク"
+  location: "岡山市北区三野内"
+  service_type: "就労継続支援B型（推定）"
+  interview_time: "14:00〜"
+  parent_company: "不動産・建設会社（35年継続）"
+  
+  recruit_message_analysis:
+    tagline: "自社物件の清掃等、仕事は既に豊富"
+    honbu_backup: "本部からのバックアップで利用者獲得は任せろ"
+    puu_assessment: >
+      FC本部に唆された不動産オーナーパターン。
+      補助金収入＋自社物件の外注コスト削減を組み合わせたビジネスモデル。
+      利用者の選択肢が自社案件に限定されるリスク。
+      サビ管が実質的に何でも屋になるパターン。
+
+  osaka_nishinariku_consultant:
+    note: "大阪西成区でB型を運営するコンサルタントが関与"
+    assessment: "西成での実績があれば現場知識は本物の可能性あり"
+
+  condition:
+    salary: "月給300,000〜450,000円"
+    negotiation: "提示額を自分で出す形式"
+    autonomy: "裁量は渡すと発言"
+
+  puu_impression: "The昭和の社長。刑務所帰りの受け入れあり→母集団として面白い"
+
+pre_interview_research_3:
+  company: "あったか我が家"
+  formal_name: "就労継続支援A型事業所あったか我が家"
+  operator: "株式会社三備"
+  location: "広島県福山市御門町1丁目6番23号"
+  representative: "藤井　剛"
+  interview_schedule: "2026-02-28 11:00〜"
+  service_type: "就労継続支援A型"
+  designated_number: "3411503026"
+  designated_date: "2020-11-01"
+  latest_renewal: "2024-10-31"
+  capacity: "15名（※A型最低定員20名との乖離あり・要確認）"
+  operating_hours: "6:00〜16:00"
+  service_hours: "6:00〜14:00"
+  average_working_hours: "4〜5時間/日"
+  wage: "時給930円"
+
+  related_entities:
+    yugen_kaisha_tanto:
+      name: "有限会社たんと（瀬戸内料理たんと）"
+      representative: "藤井　剛（同一人物）"
+      address: "広島県福山市御門町1丁目6-23（同一住所）"
+      domain: "attakawagaya.jp（あったか我が家と同一ドメイン）"
+      domain_registrant: "株式会社ぷれこ（2011年登録・HP制作管理会社）"
+      domain_note: "ぷれこ自体はHP制作会社として検索に出てこない。管理を丸投げしている可能性"
+      business: "飲食業（弁当・仕出し・BAR等複数業態）・盛付・調理補助・配膳・配達"
+      established: "2000年6月（藤井剛25歳時に第一号店「海鮮市場たんと」開店）"
+      note: "HP代表者名に誤記あり（修正されていない）"
+
+  financial_analysis:
+    fiscal_year: "令和5年度（2023年4月1日〜2024年3月31日）第11期"
+    
+    bs_summary:
+      total_assets: 39643007
+      current_assets: 29634097
+      cash: 8785090
+      accounts_receivable: 18286107
+      inventory: 500000
+      fixed_assets: 10008910
+      goodwill: 10000000
+      total_liabilities: 26689569
+      current_liabilities: 9776488
+      long_term_debt: 15000000
+      officer_loans: 1913081
+      net_assets: 12953438
+      capital: 3000000
+      retained_earnings: 9953438
+
+    pl_summary:
+      total_revenue: 81142135
+      kokuhoren_income: 24567101
+      bento_sales: 42786934
+      consignment_income: 7794200
+      outside_employment_income: 5993900
+      cost_of_goods: 17445420
+      gross_profit: 63696715
+      selling_general_admin: 70207924
+      operating_loss: -6511209
+      ordinary_loss: -5458231
+      net_loss: -5529231
+
+    sga_breakdown:
+      officer_compensation: 18000000
+      salary_allowance: 37005526
+      bonus: 1074140
+      statutory_welfare: 1684321
+      note: "給与総額約5500万円に対し法定福利費168万円は異常に低い（通常15%で825万円相当）"
+
+    red_flags:
+      - item: "当期純損失550万円・営業損失651万円（赤字経営）"
+      - item: "役員報酬1800万円（月150万円）を計上しながら赤字"
+      - item: "法定福利費168万円が給与総額5500万円の約3%（通常15%必要）→社保未加入・過少申告の疑い"
+      - item: "役員報酬月150万円の社保会社負担は年230万円超→法定福利費168万円と整合しない"
+      - item: "営業権1000万円（のれん）→実質純資産は300万円程度に目減りする可能性"
+      - item: "消費税の未払計上が貸借対照表から確認できない"
+      - item: "弁当売上4278万円に対し原価率約43%（飲食業標準30〜35%より高い）"
+      - item: "定員15名（A型最低定員20名との乖離）"
+      - item: "有限会社たんとの財務不明（有限会社は決算公告義務なし）"
+      - item: "HPなし・送迎なし（2023年4月福山市資料より）"
+
+    structural_hypothesis: >
+      2020年コロナ禍に飲食業の打撃を受けた藤井剛がコンサルに唆されA型事業所を開設。
+      初年度は特定求職者雇用開発助成金（特困金）＋労働局補助でウハウハ。
+      助成金終了後に赤字転落。有限会社たんとの飲食事業と一体化した構造で、
+      利用者が弁当製造労働力として機能している可能性。
+      社保コスト回避のため週20時間未満設定の疑い（平均就労4〜5時間/日）。
+      役員報酬は計上するが実払いできず役員借入金として処理している可能性。
+      グループ合算では更に大きな赤字の可能性。
+
+    cfo_assessment: >
+      M&A対象として見た場合、営業権と国保連指定番号以外に価値なし。
+      デューデリジェンスで社保・消費税・法人間取引を指定で指摘される案件。
+      経営継続可能性に疑問。来期も同規模損失なら債務超過転落リスク。
+
+  puu_notes:
+    proximity: "Puuの自宅から最も近い事業所"
+    age: "藤井剛はPuuとほぼ同世代（推定51〜52歳）"
+    strategy: "明日はサビ管候補として面談しながらCFO目線で経営実態を確認する"
+
+cross_analysis:
+  common_patterns:
+    - "FC本部・コンサルに唆されて福祉参入した経営者が複数"
+    - "利用者主権より経営側の論理が先行する構造"
+    - "サビ管は専門責任だけ負わされ経営裁量なし"
+    - "補助金ビジネスとして設計された事業所群"
+  
+  puu_behavior_pattern:
+    - "全社に対して正直に「扱いにくい人材」「大学院受験予定」を開示"
+    - "外見が柔らかく見られ本質が伝わりにくい（あだ名：クマのプーさん）"
+    - "無意識の当事者ペーシングが面接で発動し柔らかく見せてしまう"
+    - "事前調査でFC構造・財務・法人関係を解剖してから面接に臨む"
+
+  research_value: >
+    今日の面接活動はPuuの裏目標「就労継続支援施設10年後0化」に向けた
+    フィールドワークとして機能。補助金ビジネス化した福祉の構造的問題の
+    実例収集として研究的価値がある。
+
+metadata:
+  tags:
+    - "就職活動"
+    - "サビ管"
+    - "就労継続支援A型"
+    - "就労継続支援B型"
+    - "FC構造分析"
+    - "財務分析"
+    - "フィールドワーク"
+    - "SoE研究"
+  session_quality: "高密度・研究的価値高"
+  timestamp: "2026-02-27"

@@ -1,0 +1,220 @@
+# ==========================================
+# VSCode Claude 引き継ぎ指示書
+# ==========================================
+# 作成日時: 2026-03-04T07:55:00+09:00
+# 作成元: Cowork セッション（Claude in Chrome 経由）
+# 作成者: 山内雄司（Yuji） + Claude（Cowork側）
+# 宛先: VSCode Claude（Claude Code）
+# ==========================================
+
+meta:
+  purpose: |
+    厚労省 社会保障審議会（障害者部会）第94回〜第141回の
+    議事録・資料PDF一括ダウンロードタスクの引き継ぎ。
+    Coworkセッションで「URL抽出」まで完了。
+    残りは「ローカルでのPDFダウンロード実行」。
+  safety_rules:
+    - "既存ファイルを上書きしない"
+    - "不明点はユーザーに確認してから実行"
+    - "ファイル削除は絶対に行わない"
+
+# ==========================================
+# プロジェクト構成
+# ==========================================
+project:
+  base_path: "C:\\Users\\USER\\Desktop\\cowork\\00_sauce\\01_mhlw_records\\01_Social Security Council"
+  source_url: "https://www.mhlw.go.jp/stf/shingi/shingi-hosho_126730_old2.html"
+  scope: "第94回〜第141回（全50回分）"
+
+  folder_structure:
+    description: |
+      50個のフォルダが作成済み。命名規則: YYYY_MM_DD_[回数]
+      番号なし回は _extra サフィックス。
+    example_folders:
+      - "2024_07_04_141"
+      - "2021_12_16_extra"
+      - "2019_06_24_94"
+
+  generated_files:
+    - file: "00_URL_index.md"
+      description: "全50回の議事録URL・資料URLをMarkdown表形式で記載"
+      status: "完成"
+
+    - file: "pdf_urls.txt"
+      description: |
+        全447件のPDF直リンク一覧（TSV形式: folder_name\tpdf_url）。
+        Chrome拡張経由でmhlw.go.jpから同一ドメインfetch()で抽出。
+        ※ Chromeのダウンロードフォルダに保存済み。
+        ※ 01_Social Security Council フォルダへのコピーが必要。
+      status: "Chrome DLフォルダにあり → 要コピー"
+      format: "TSV（タブ区切り）: フォルダ名<TAB>PDF_URL"
+      lines: 447
+
+    - file: "download_pdfs.py"
+      description: |
+        requests + BeautifulSoup でHTMLページからPDFリンクを抽出してDLするスクリプト。
+        ※ Cowork VM内ではmhlw.go.jpがプロキシでブロックされるため動作せず。
+        ※ ローカル実行専用。pdf_urls.txtがあれば下記のps1の方が簡便。
+      status: "完成（代替手段として保存）"
+      dependencies: "pip install requests beautifulsoup4"
+
+    - file: "download_all_pdfs.ps1"
+      description: |
+        PowerShellスクリプト。pdf_urls.txtを読み込み、
+        各PDFを対応フォルダにダウンロードする。
+        既存ファイルスキップ・リトライ・ログ出力対応。
+      status: "完成（推奨実行手段）"
+      usage: |
+        cd "C:\Users\USER\Desktop\cowork\00_sauce\01_mhlw_records\01_Social Security Council"
+        .\download_all_pdfs.ps1 -DryRun    # 確認のみ
+        .\download_all_pdfs.ps1             # 本番実行
+        .\download_all_pdfs.ps1 -StartFrom 100  # 途中再開
+
+    - file: "README_404_pages.md"
+      description: "404だった4回分の記録と代替取得方法のメモ"
+      status: "完成"
+
+    - file: "download_log.txt"
+      description: "Cowork VM内でのdry-run テストログ（参考）"
+      status: "参考情報"
+
+# ==========================================
+# 完了済みタスク
+# ==========================================
+completed:
+  - task: "厚労省ページへのアクセスと会議一覧データ抽出"
+    method: "Claude in Chrome拡張（同一ドメインfetch）"
+    session: "Cowork セッション1（VMクラッシュ前）"
+
+  - task: "50フォルダの作成"
+    session: "Cowork セッション1"
+
+  - task: "00_URL_index.md の作成"
+    session: "Cowork セッション1"
+
+  - task: "全50回分のPDFリンク抽出（Chrome拡張経由）"
+    method: |
+      mhlw.go.jp上でJavaScript fetch()を実行し、
+      各回の資料ページ・議事録ページからPDFリンクを一括抽出。
+      5件ずつ10バッチで処理。
+    result:
+      total_meetings: 50
+      meetings_with_pdfs: 46
+      meetings_with_404: 4
+      total_pdf_urls: 447
+    session: "Cowork セッション2（本セッション）"
+
+  - task: "pdf_urls.txt の生成・ダウンロード"
+    method: "Chrome上でBlob生成 → ブラウザダウンロード"
+    session: "Cowork セッション2"
+
+  - task: "download_all_pdfs.ps1 の作成"
+    session: "Cowork セッション2"
+
+  - task: "download_pdfs.py の作成（代替手段）"
+    session: "Cowork セッション2"
+
+# ==========================================
+# 未完了タスク（ここから対応）
+# ==========================================
+remaining:
+
+  - task: "pdf_urls.txt をプロジェクトフォルダにコピー"
+    priority: "HIGH"
+    detail: |
+      Chromeのダウンロードフォルダ（通常 C:\Users\USER\Downloads\）から
+      01_Social Security Council フォルダにコピーする。
+      ※ これがないとps1スクリプトが動かない。
+    command: |
+      copy "C:\Users\USER\Downloads\pdf_urls.txt" "C:\Users\USER\Desktop\cowork\00_sauce\01_mhlw_records\01_Social Security Council\"
+
+  - task: "PowerShellスクリプトでPDF一括ダウンロード実行"
+    priority: "HIGH"
+    detail: |
+      447件のPDFを各対応フォルダにダウンロードする。
+      まず -DryRun で確認後、本番実行。
+      所要時間目安: 447件 × 約1秒 = 約8分。
+    commands:
+      dry_run: |
+        cd "C:\Users\USER\Desktop\cowork\00_sauce\01_mhlw_records\01_Social Security Council"
+        .\download_all_pdfs.ps1 -DryRun
+      execute: |
+        .\download_all_pdfs.ps1
+    notes:
+      - "既存ファイルは自動スキップされるので中断→再開が安全"
+      - "download_log.txt に実行ログが出力される"
+
+  - task: "404ページ4回分のPDF取得"
+    priority: "MEDIUM"
+    detail: |
+      以下の4回は厚労省サイトからページが削除されており、PDFが取得できなかった。
+      国立国会図書館WARP（https://warp.da.ndl.go.jp/）等からの代替取得を検討。
+    affected_meetings:
+      - folder: "2022_05_16_129"
+        label: "第129回"
+        original_urls:
+          shiryou: "https://www.mhlw.go.jp/stf/shingi2/0000195428_00055.html"
+          gijiroku: "https://www.mhlw.go.jp/stf/shingi2/0000192817_00050.html"
+      - folder: "2021_04_23_108"
+        label: "第108回"
+        original_urls:
+          shiryou: "https://www.mhlw.go.jp/stf/shingi2/0000195428_00030.html"
+          gijiroku: "https://www.mhlw.go.jp/stf/shingi2/0000192817_00024.html"
+      - folder: "2020_01_17_98"
+        label: "第98回"
+        original_urls:
+          shiryou: "https://www.mhlw.go.jp/stf/shingi2/0000195428_00019.html"
+          gijiroku: "https://www.mhlw.go.jp/stf/shingi2/0000192817_00015.html"
+      - folder: "2019_12_16_97"
+        label: "第97回"
+        original_urls:
+          shiryou: "https://www.mhlw.go.jp/stf/shingi2/0000195428_00018.html"
+          gijiroku: "https://www.mhlw.go.jp/stf/shingi2/0000192817_00014.html"
+    recovery_options:
+      - "国立国会図書館WARP: https://warp.da.ndl.go.jp/ でURL検索"
+      - "Google: site:mhlw.go.jp 障害者部会 第129回 資料"
+      - "厚労省への直接問い合わせ"
+
+  - task: "ダウンロード結果の検証"
+    priority: "LOW"
+    detail: |
+      全フォルダにPDFが正しくダウンロードされたか確認する。
+      各フォルダのファイル数・合計サイズを集計し、
+      00_URL_index.md の情報と照合する。
+
+# ==========================================
+# 技術メモ
+# ==========================================
+technical_notes:
+  mhlw_access:
+    issue: "www.mhlw.go.jp は Cowork VM のプロキシでブロックされる"
+    workaround_1: "Chrome拡張経由でアクセス（今回採用）"
+    workaround_2: "ローカルでPython/PowerShellスクリプト実行"
+
+  pdf_url_pattern:
+    description: |
+      厚労省のPDF URLは以下のパターン:
+      https://www.mhlw.go.jp/content/XXXXXXXX/YYYYYYYYY.pdf
+      XXXXXXXX = 部署コード（12201000 等）
+      YYYYYYYYY = ファイルID（連番が多い）
+
+  vm_stability:
+    warning: "Cowork VMはVirtioFS/Plan9のバグで長時間タスクでクラッシュする可能性あり"
+    mitigation: "PDFダウンロードはローカル実行を推奨"
+
+# ==========================================
+# VSCode Claude への追加指示
+# ==========================================
+instructions_for_vscode_claude:
+  - |
+    このプロジェクトは山内雄司（Yuji）の研究資料収集の一環です。
+    障害福祉（就労支援）分野の制度研究に使用されます。
+  - |
+    ファイル操作時は必ず既存ファイルを保持してください。
+    新規作成時はタイムスタンプを付与してください。
+  - |
+    PowerShellスクリプトの実行はユーザーの明示的な指示がある場合のみ行ってください。
+    -DryRun を先に実行することを推奨してください。
+  - |
+    404ページの代替取得を行う場合は、WARPアーカイブの検索結果を
+    ユーザーに確認してから実行してください。

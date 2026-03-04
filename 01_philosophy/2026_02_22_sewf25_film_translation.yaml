@@ -1,0 +1,333 @@
+session_record:
+  metadata:
+    date: "2026-02-22"
+    source_title: "The AI dilemma: Can social enterprises innovate without compromising their values?"
+    source_url: "https://www.pioneerspost.com/videos/20260213/the-ai-dilemma-can-social-enterprises-innovate-without-compromising-their-values"
+    event: "Social Enterprise World Forum 2025 (SEWF25), Taipei, Taiwan"
+    produced_by: "Pioneers Post / Cadent"
+    narrator_host: "James Gauci（Cadent創設者、責任あるAIコンサルタント）"
+    translation_by: "Claude Sonnet 4.6"
+    file_name_suggestion: "2026_02_22_sewf25_film_translation.yaml"
+    target_folder: "01_philosophy/"
+
+  opening_narration: >
+    AIで動く義肢——思考で制御できる。自閉症の若者がよりよくコミュニケーションし、
+    周囲の人々を理解できるよう支援する技術。人々が新たな充実したキャリアを見つける
+    手助けをするシステム。これらはAIが約束するもののほんの一部であり、その喧噪は
+    耳をつんざくほどだ。世界最大手の企業たちが次々と飛び込んでいる今、
+    すぐに乗っかりたい誘惑にかられる。
+
+    しかし私たちは知っている。人と地球を考慮しないAIシステムは深刻な負の結果を
+    もたらしうると。エネルギーと水を消費し続けるデータセンター。
+    私たち自身の望まないバイアスを学習するアルゴリズム。
+    そしてこれらのツールを作っている企業が、必ずしも私たちの最善の利益を
+    考えているわけではないという、忍び寄る感覚。
+
+    世の中のためになることをしようとしている私たちにとって、これは袋小路だ。
+    害を与えることなく、この力を善のために使うにはどうすればいいか。
+    倫理的なAIを構築することは可能か。そうすることで競争に乗り遅れてしまわないか。
+    正しいことをすることの本当のリターンは何か。
+
+  context_taiwan: >
+    台湾はAIブームの震源地だ。Google、OpenAI、Microsoftが使うような世界最先端の
+    コンピューターチップの大部分が、まさにここで製造されている。
+    そして今年、台湾は社会的企業世界フォーラム（SEWF）の開催地となった。
+    50カ国から1,000人以上の代表者が集まる、世界最大規模の社会起業家の集いだ。
+    彼らはAIが自分たちのミッション追求を飛躍的に加速させる可能性を見出している。
+
+  interviews:
+
+    audrey_tang:
+      speaker: "唐鳳（Audrey Tang）"
+      role: "台湾駐外大使、初代デジタル担当大臣、TIME誌AI最重要人物"
+
+      q1:
+        question: >
+          あなたは「保守的アナキズム」、道家的なアプローチという哲学で有名ですね。
+          民主主義や自由といった価値観を守りながら、ボトムアップのイノベーションを可能にする。
+          AIの時代に入るにあたって、守るべきコアな保守的価値観は何だと思いますか？
+        answer: >
+          間違いなく、シビック・ケア（市民的ケア）です。私が話す多くのコミュニティが、
+          AIに望んでいるのは——いわゆる"human in the loop"ではなく、
+          "AI in the loop of communities"なんです。個々のコミュニティメンバーがAIを使うと、
+          たとえ表向きは良いことのためであっても、AIサイクルのスピードはどんどん速くなる。
+          そうなると"human in the loop of AI"、つまりハムスターが回し車に乗っている状態になってしまう。
+          ハムスターはきっととても興奮しているでしょう——ハムスターには運動が必要ですから。
+          でも、ハムスターには車輪がどこへ向かっているかをコントロールする力がない。
+          ハンドルを握る能力がまったくない。そしてコミュニティは空洞化していく危険がある。
+
+          だから"human in the loop of AI"ではなく、"AI in the loop of communities"にする必要がある。
+
+          多くのAIシステムは、功利主義的なロジックで訓練されています。
+          これはただ何らかの数値を最大化しようとするもので、どうやってそれを最大化するかは問わない。
+          それが寄生的なレコメンデーションアルゴリズムや、怒りによる分極化などにつながっている。
+
+          AIに適用される新しい倫理の流れが必要で、それがケア倫理です。
+          ケア倫理は非常に異なります。良いケア提供者は、特定の関係性に特化している。
+          一つのコミュニティ、一つの家族を世話する。
+          個人の達成だけでなく、人と人の間の健全さを気にかける。
+          実際、何かを最大化しようとはしない——"satisfies"、つまり人々がお互いの間で
+          十分に良い状態でいられることを確保しようとするんです。
+          AIシステムをケアの倫理で訓練することが、この1年間の私の焦点でした。
+
+        key_concepts:
+          - "human in the loop of AI（ハムスターと回し車）"
+          - "AI in the loop of communities（反転）"
+          - "功利主義的ロジック vs ケア倫理"
+          - "satisfies（十分な状態）"
+          - "シビック・ケア"
+
+      q2:
+        question: >
+          オープンソースのアイデアは、倫理的技術者と社会的企業の間の
+          より良い対話をどう促せるでしょうか？
+        answer: >
+          オープンソースであることは、ユーザーを植民地化しようとしない謙虚さでもある。
+          あなたはただ、未来の世代が好きな方向に舵を切れるくらい"十分に良い先祖"であればいい。
+          加速について話すだけ——アクセルを踏む——でも、AIを止める——ブレーキを踏む——でもなく、
+          ステアリングホイールについて話す必要がある。
+          ステアリングホイールとは、コミュニティが意味のある制御を持てるかどうかということです。
+
+          数万件の機械学習素材をキュレーションする必要があるなら、多くのコミュニティにはできない。
+          何百万ドルもの訓練コストが必要なら、誰もできない。
+          でも今、軽量モデルを使えば、誰でも平文でコード・オブ・コンダクトを共同作成できる。
+          新しいアテンションフリーの訓練メカニズムを使えば、大規模モデルを
+          訓練コストのほんの何千分の一で訓練できる。
+          だから先住民族の国々でさえ、今ついにハードウェアや太陽光パネルを含む
+          インフラ全体を所有して、私が"祖先の知性（ancestral intelligence）"と呼ぶものを
+          構築できるようになっている——彼らのために作られるだけでなく、彼らと共に作られるAIモデルを。
+
+        key_concepts:
+          - "ステアリングホイール（アクセルでもブレーキでもなく）"
+          - "軽量モデルによるコミュニティの自律"
+          - "祖先の知性（ancestral intelligence）"
+          - "十分に良い先祖"
+
+      q3_on_data_sovereignty:
+        context: "First Nations Economicsとの対話を受けて"
+        statement: >
+          ソーシャルメディアの収奪的な監視資本主義は、社会的絆をストリップマイニング
+          （露天掘り）することに基づいている。私を依存させてすべての自撮り写真を
+          海外のどこかのコンピューターセンターにアップロードさせようとする——
+          ほとんどの場合、許可なしに。
+
+          だから個人データをコンピューターに持っていくのではなく、
+          コンピューターをデータのある場所に持っていく必要がある。
+          これが今、社会全体が経験しているパラダイムシフトだと思います。
+          この依存的知性（addictive intelligence）ではなく、
+          補助的知性（assistive intelligence）が必要で、
+          シビックAIが市民の健全さを支援する必要がある。
+          そうでなければ、各個人が自分のロボット代理人をジムに送って
+          代わりに重量を持ち上げてもらうようなものになってしまう。
+
+        key_concepts:
+          - "strip mining the social fabric（社会的絆の露天掘り）"
+          - "bring compute to data（データのある場所にコンピューターを）"
+          - "addictive intelligence vs assistive intelligence"
+          - "シビックAI"
+
+      closing_statement: >
+        大手テックと政府はデフォルトで、個人からの定量的データの集約で動いている。
+        しかし社会起業家たちは理解している——それは分析の誤った単位だと。
+        コミュニティこそが、個人ではなく、社会の背骨を形成している。
+        コミュニティ間の関係性と関係的健全さこそが、市民的ケアの指標だ。
+
+        社会起業家たちは業界よりずっと前から理解していた——
+        個人の健全さなく、関係的健全さはないと。
+        社会起業家運動は、みんなが気づく手助けができる——
+        私たち、人民こそが、私たちが探し求めているスーパーインテリジェンスだと。
+        必要なのは、私たちの間の調整を解き放つことだけだ。
+
+        私たちは、すべてを見て、すべてをして、すべてを解決する機械の偶像を
+        構築する必要はない。それは偽りの偶像だ。
+
+        key_quote: "We, the people, are already the super intelligence we're looking for."
+
+    bionics:
+      speaker: "Ayesha Zulfiqar"
+      role: "Bionics共同創設者（パキスタン、医療系社会的企業）"
+      summary: >
+        世界の1億人が四肢障害を抱え、その80%が先進的義肢にアクセスできない。
+        AIと3Dスキャン技術で、スマホから義肢を注文できるシステムを開発。
+        データポリシーとAI倫理ポリシーで個人バイオメトリクスデータを保護。
+      key_point: "AIには人間の不平等を強化するリスクがある。倫理ポリシーが不可欠。"
+
+    mereka:
+      speaker: "Ambika Sangaran"
+      role: "Mereka共同創設者（マレーシア、雇用系社会的企業）"
+      summary: >
+        未就労者・低就労者向けの人材育成エコシステム。
+        LLMのバイアスは人間の本性に由来するが、構造・プロセス・システムに基づいて
+        チューニングすれば、人間より包括的になりうる可能性がある。
+        ただし技術人材の不足と、大規模向けソリューションが
+        取り残された層に合わない問題が課題。
+      key_point: >
+        技術知識とインパクトセクターの知識が協力してソリューションを構築する必要がある。
+        「どこでAIが入り、どこで人間が入るか」の設計が重要。
+
+    nikoline_arns:
+      speaker: "Nikoline Arns"
+      role: "オープンソース技術者、SEWFテックフォーグッドパネルホスト"
+      summary: >
+        社会的企業はシリコンバレーとの軍拡競争に感じているが、
+        オープンソース運動はすでに大企業のR&D予算に対抗できることを証明している。
+        共有することへの恐れ（コピーされる）は誤り——
+        ミッションを広げることがそもそもの目的のはず。
+      key_concepts:
+        - "オープンソース = ミッションの共有"
+        - "競争より協力"
+        - "シェアリングエコノミーの精神"
+      coffee_analogy: >
+        コーヒー1杯のために巨大ホテル全館のシステムを動かす必要はない。
+        目的に特化した小さなツールを使えばいい。
+        （大規模LLMではなく、軽量・分散型AIの推奨）
+
+    first_nations_economics:
+      speaker: "Shaun Cumming"
+      role: "First Nations Economics共同創設者（オーストラリア、先住民系経済コンサルタンシー）"
+      summary: >
+        過去の政府政策がコミュニティの亀裂と不信を生んできた。
+        子供の強制隔離（Stolen Generation）にデータが利用された歴史がある。
+        今日でも国勢調査で世帯人数を偽る家族がいる——データが武器になった恐れから。
+      principles:
+        - "フリー・プライアー・インフォームド・コンセント（自由・事前・情報に基づく同意）"
+        - "データはコミュニティのもの——所有しない"
+        - "使用データは6カ月後に削除しコミュニティに返還"
+      key_point: "なぜ情報を渡すのか——それが自分に不利に使われるかもしれないのに。"
+
+  closing_narration: >
+    今週話した多くの社会起業家たちは麻痺しているように見えた——
+    AIがインパクトを最大化できると分かっているが、
+    その害が利益を上回るのではないかと心配している。
+
+    しかし今週の会話から明らかになったことがある——これが唯一の二択ではない。
+    小規模AI、データ主権、オープンソースソフトウェア、
+    特定の目的のための特定のツール。これらが新たな選択肢として浮かび上がってきた。
+
+    そしてもう一つ明らかになったこと——協力の必要性だ。
+    社会起業家と倫理的技術者という二つのコミュニティが、
+    多くの場合同じ優先事項を持ちながら並行して動いているが、まだ完全につながっていない。
+
+    AIがもたらす未来を恐れている人は多い。
+    でも今、決断を下しているのは人間だ——この新しい技術の発展を導く決断を。
+    そして今、勇気を持って行動し、学び、分野を超えて協力し、構築し始める人たち——
+    彼らこそが、社会と環境に真の価値をもたらすAIシステムを設計・開発する人たちになる。
+
+  soe_resonance_notes:
+    note: "以下はYuji（Puu）による解釈メモ——登壇者発言とは分離"
+    connections:
+      - theme: "分析の単位（unit of analysis）"
+        audrey_quote: "big tech operates on aggregating quantitative data from individuals. But that is the wrong unit of analysis."
+        soe_connection: "個人の欠陥を測定するのではなく環境因子を見るICFアプローチと一致"
+
+      - theme: "コンピューターをデータのある場所に"
+        audrey_quote: "instead of bringing personal data to compute, we need to bring compute to data"
+        soe_connection: "当事者データのローカル処理 = 記録主権の技術的実装"
+
+      - theme: "satisfies（十分な状態）"
+        audrey_quote: "it's not trying to maximize anything, it's trying to satisfies"
+        soe_connection: "就労率・効率最大化ではなく、関係的健全さの閾値確保というSoE指標設計と一致"
+
+      - theme: "軽量・分散型AIの妥当性"
+        nikoline_quote: "コーヒー1杯のために巨大ホテル全館のシステムを動かす必要はない"
+        soe_connection: "Tier 1向け軽量ICAI（スマホ・PCでローカル処理完結）の思想的・技術的根拠"
+
+      - theme: "データ主権と記録主権"
+        first_nations: "Free, prior and informed consent / データはコミュニティのもの"
+        soe_connection: "MySupport.yaml構想 / Input Constitutional AIの人権的根拠"
+
+  gemini_qa_verification:
+    date: "2026-02-22"
+    verified_by: "Gemini（Google）"
+    note: "Claude要約への検証・補正・一次情報抽出"
+
+    Q1_technical_bullying:
+      result: "動画内に存在しない表現"
+      explanation: >
+        「技術的いじめ」はGeminiが前回の監査でYujiの戦術言語（vs_unethical）に
+        動画内容をマッピングした際の意訳。登壇者たちはあくまで
+        「エンパワーメント」「分散化」という文脈で語っている。
+
+    Q2_small_scale_ai:
+      audrey_tang_actual_references:
+        - "軽量モデル（lightweight model）"
+        - "プレーンテキストでの行動規範の共同作成（co-create a code of conduct in plain text）"
+        - "数千ドル規模の訓練予算"
+        - "先住民によるインフラ全体の所有（祖先の知能 / ancestral intelligence）"
+        timestamp: "00:15:12 - 00:15:35"
+      correction:
+        apotus_bloom_enclave: "これらはTangではなくナレーターが紹介したモデル名"
+      coffee_hotel_analogy:
+        speaker: "Nikoline Arns（分散型AI専門の女性技術者）"
+        not: "Audrey Tang"
+        actual_quote: >
+          コーヒー1杯のために、巨大ホテル全館のシステムを使い、
+          自分が昨夜飲み明かして二日酔いであることまで全室に知らせる必要はない。
+          ただコーヒーを淹れればいいだけだ。
+        timestamp: "00:21:14 - 00:21:51"
+      dependency_risk_tang:
+        quote: >
+          何万もの訓練素材のキュレーションや数百万ドルの訓練予算が必要になれば、
+          コミュニティには手が出せない（＝コントロール権を失う）
+        timestamp: "00:14:50 - 00:15:06"
+
+    Q3_data_sovereignty:
+      fpic_implementation:
+        - "オプトイン/オプトアウトの選択権"
+        - "データはコミュニティのものと規定"
+        - "使用データは6ヶ月後に削除しコミュニティに返還"
+      strip_mining_speaker: "Audrey Tang（First Nations事例直後のカット）"
+      forced_removal_case:
+        country: "オーストラリア"
+        event: "盗まれた世代（Stolen Generations）"
+        mechanism: "子供の強制隔離（forced removal of children）のテコとしてデータが使われた"
+
+    Q4_addictive_intelligence:
+      speaker: "Audrey Tang"
+      definition: >
+        「Assistive intelligence（支援的知能）」の対義語。
+        監視資本主義がユーザーを依存させ、許可なく個人データを
+        海外の計算センターに送る構造を指す。
+        timestamp: "00:19:48 - 00:20:01"
+      hamster_connection: >
+        回し車のハムスターは「運動が必要だから興奮している（＝依存状態）」が
+        「どこに向かっているかのコントロール権を全く持っていない」という
+        構造的無力さを表す。これがAddictive intelligenceの末路（コミュニティの空洞化）。
+
+    Q5_primary_sources_only:
+      note: "以下はGeminiによる一次情報抽出。解釈なし。"
+      data_sovereignty:
+        - speaker: "Audrey Tang"
+          quote_en: "instead of bringing personal data to compute, we need to bring compute to data"
+          quote_ja: "個人データを計算処理に持っていくのではなく、計算処理をデータ側に持ってくる必要がある"
+        - speaker: "First Nations Economics"
+          quote_en: "we don't own the data it's community's data"
+          quote_ja: "私たちがデータを所有するのではない、データはコミュニティのものだ"
+      process_alignment:
+        speaker: "Audrey Tang"
+        timestamp: "00:03:33 - 00:04:12"
+        quote_en: >
+          many AI systems are trained in what's called a utilitarianism logic
+          which means it just want to maximize some number without any scrutiny...
+          care ethics is very different... it cares about the health between people
+          not just the achievements of individuals...
+          it's not trying to maximize anything it's trying to satisfies
+        quote_ja: >
+          多くのAIは数字を最大化する功利主義で訓練されている…
+          ケアの倫理は異なる。個人の達成度ではなく、人々の間の健全性を気にかける。
+          何かを最大化するのではなく、満たす（十分である）ことを目的とする
+      local_ai:
+        - speaker: "Audrey Tang"
+          quote_en: >
+            indigenous nations they are now finally being able to own the entire infrastructure
+            including the hardware the solar panels and so on to do their ancestral intelligence
+          quote_ja: >
+            先住民たちは今、ハードウェアやソーラーパネルを含むインフラ全体を所有し、
+            彼らの「祖先の知能」を実行できるようになった
+        - speaker: "分散型AI専門家（Nikoline Arns）"
+          quote_en: >
+            using this like huge models with huge data centers with really big absorption of data
+            that you don't know what is going to happen to it for just doing one simple task
+          quote_ja: >
+            たった1つの単純なタスクをするために、データに何が起こるか分からないような
+            巨大なデータセンターを持つ巨大モデルを使うことへの懸念

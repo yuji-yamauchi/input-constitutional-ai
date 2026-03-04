@@ -1,0 +1,133 @@
+# ==========================================
+# Cowork セッション記録
+# タスク: 厚労省 社会保障審議会 議事録・資料ダウンロード
+# 記録日: 2026-03-04
+# ==========================================
+
+session_overview:
+  date: "2026-03-04"
+  platform: "Claude Desktop (Cowork beta)"
+  tools_used:
+    - "Claude in Chrome 拡張（Beta）"
+    - "Cowork VM環境（VirtioFS/Plan9）"
+  status: "中断（VMエラー発生）"
+  error: "RPC error -1: failed to ensure virtiofs mount: Plan9 mount failed: bad address"
+
+# ==========================================
+# タスク定義
+# ==========================================
+
+task:
+  description: |
+    厚労省の社会保障審議会（障害者部会）の議事録と資料を
+    一括ダウンロードし、回数・開催日ごとにフォルダ整理する
+  source_url: "https://www.mhlw.go.jp/stf/shingi/shingi-hosho_126730_old2.html"
+  target_path: "C:\\Users\\USER\\Desktop\\cowork\\00_sauce\\01_mhlw_records\\01_Social Security Council\\"
+  folder_naming_convention: "YYYY_MM_DD_[回数]"
+  example: "2024_07_04_141"
+
+# ==========================================
+# 進捗
+# ==========================================
+
+progress:
+  completed:
+    - step: "ページアクセス"
+      detail: |
+        web_fetchではwww.mhlw.go.jpがブロックされたため
+        Claude in Chrome拡張経由でアクセス成功
+    - step: "データ抽出"
+      detail: |
+        第94回〜第141回（全50回分）の会議一覧を取得
+        各回の開催日・議事録URL・資料URLをJSON形式で抽出
+    - step: "フォルダ構造作成"
+      detail: |
+        50フォルダを作成完了
+        番号なし回（2021_12_16, 2022_06_13）は_extraサフィックスで対応
+    - step: "URL一覧保存"
+      detail: |
+        00_URL_index.md として全回のURL一覧をMarkdownで保存
+        各回の議事録ページURL・資料ページURLを記載
+
+  not_completed:
+    - step: "PDF一括ダウンロード"
+      detail: |
+        各回の資料ページからPDFリンクを順次取得・ダウンロードする作業
+        ダウンロード開始直後にVMエラーで中断
+      estimated_files: "数百ファイル（各回に複数PDF）"
+
+  special_notes:
+    - "第99回は持ち回り開催のため議事録なし（資料のみ）"
+    - "番号なし回が2件あり（2021_12_16, 2022_06_13）"
+
+# ==========================================
+# フォルダ構造（作成済み）
+# ==========================================
+
+folder_structure:
+  root: "01_Social Security Council/"
+  index_file: "00_URL_index.md"
+  folders:
+    - "2019_06_24_94"
+    - "2019_10_25_95"
+    # ... 中間省略（全50フォルダ）
+    - "2024_03_05_140"
+    - "2024_07_04_141"
+  extra_folders:
+    - name: "2021_12_16_extra"
+      note: "番号なし回"
+    - name: "2022_06_13_extra"
+      note: "番号なし回"
+
+# ==========================================
+# エラー分析
+# ==========================================
+
+error_analysis:
+  error_message: "RPC error -1: failed to ensure virtiofs mount: Plan9 mount failed: bad address"
+  root_cause: |
+    Cowork VMのVirtioFS/Plan9ファイルシステム共有レイヤーが
+    アイドルまたは長時間稼働後にstaleになる既知バグ（Windows版）
+  github_issues:
+    - "https://github.com/anthropics/claude-code/issues/26554"
+    - "https://github.com/anthropics/claude-code/issues/27576"
+    - "https://github.com/anthropics/claude-code/issues/28890"
+    - "https://github.com/anthropics/claude-code/issues/29587"
+  workarounds:
+    - "Claude Desktopを完全終了→再起動（タスクトレイから）"
+    - "%APPDATA%\\Claude\\vm_bundles\\claudevm.bundle を削除して再ダウンロード強制"
+    - "PowerShell管理者権限でHypervisorPlatformが有効か確認"
+  assessment: |
+    Coworkはまだベータ段階。長時間タスクや大量ファイル操作は
+    VMリソース上限に達しやすい。Anthropic側の修正待ちの部分が大きい。
+
+# ==========================================
+# 再開時の手順
+# ==========================================
+
+resume_plan:
+  step_1: "Claude Desktop再起動"
+  step_2: "Coworkタブが表示されることを確認"
+  step_3: "Chrome拡張の再接続確認"
+  step_4: "00_URL_index.md を参照してダウンロード未完了の回を特定"
+  step_5: "各回の資料ページを開き、PDFリンクを取得→ダウンロード"
+  alternative: |
+    VMが不安定な場合は、Pythonスクリプト（requests + BeautifulSoup）で
+    ローカルから直接ダウンロードする方が確実。
+    00_URL_index.md のURL一覧をスクリプトに食わせる形で対応可能。
+
+# ==========================================
+# 所感
+# ==========================================
+
+observations:
+  cowork_strengths:
+    - "Chrome拡張経由でのページアクセス・データ抽出は非常に優秀"
+    - "フォルダ構造の自動作成・URL一覧のMarkdown生成もスムーズ"
+    - "web_fetchでブロックされるドメインもChrome経由で突破可能"
+    - "対話的にタスクを進められるUXは直感的"
+  cowork_limitations:
+    - "VM環境の安定性が不十分（VirtioFS/Plan9の既知バグ）"
+    - "長時間タスク・大量ファイル操作でクラッシュしやすい"
+    - "エラー復旧に完全再起動が必要（セッション状態が失われる）"
+    - "ベータ段階のため本番業務への依存はリスクあり"

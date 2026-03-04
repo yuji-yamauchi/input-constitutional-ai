@@ -1,0 +1,390 @@
+---
+# ==========================================
+# Hypnos Factor Script Review
+# ハルシネーション検証・修正・追記
+# ==========================================
+
+metadata:
+  reviewed_file: "2026_02_23_Hypnos_Factor_script_EN.md"
+  reviewer: "Claude Opus 4.6"
+  review_date: "2026-02-23"
+  target_folder: "99_daily_yamal/01_Claude/"
+  file_name_suggestion: "2026_02_23_Hypnos_Factor_review.yaml"
+  purpose: "スクリプトの学術的正確性検証・ハルシネーション特定・改善提案"
+
+# ==========================================
+# 1. ハルシネーション・事実誤認の検出
+# ==========================================
+
+hallucinations_and_errors:
+
+  error_1_obhi_reference_critical:
+    severity: "HIGH — 引用情報の混同"
+    location: "Section B1, line 88 + Key References"
+    script_states: >
+      "Sukhwinder Obhi's research showing that power priming 
+      significantly reduces mirror neuron system activity"
+      
+      Key Referencesでは:
+      Obhi, S. S., Hogeveen, J., & Pascual-Leone, A. (2014). 
+      Resonating with others... Journal of Experimental Psychology: General, 143(1), 7-16.
+    
+    actual_facts: >
+      2つの異なる論文が混同されている:
+      
+      (1) Obhi, Hogeveen, & Pascual-Leone (2011) — "Resonating with Others: 
+          The Effects of Self-Construal Type on Motor Cortical Output"
+          Journal of NEUROSCIENCE, 31(41), 14531-14535.
+          → self-construal（自己構成）がミラーニューロン活動に影響することを示した。
+          「権力」の実験ではない。
+      
+      (2) Hogeveen, Inzlicht, & Obhi (2014) — "Power changes how the brain 
+          responds to others."
+          Journal of Experimental Psychology: General, 143(2), 755-762.
+          → これが「権力プライミングがミラーニューロン活動を低下させる」研究。
+          著者順が異なる（HogeveenがFirst Author）。
+          巻号は143(2), 755-762（143(1), 7-16ではない）。
+    
+    correction_needed:
+      references_section: >
+        現在の記載を以下に修正:
+        
+        Hogeveen, J., Inzlicht, M., & Obhi, S. S. (2014). Power changes 
+        how the brain responds to others. Journal of Experimental Psychology: 
+        General, 143(2), 755-762.
+        
+        ※ Obhi, Hogeveen, & Pascual-Leone (2011)の論文は
+        self-construalに関するもので、権力に関するものではない。
+        引用する場合はsupplementaryとして。
+      
+      body_text: >
+        "Sukhwinder Obhi's research"の記述は正確だが、
+        正確にはHogeveen, Inzlicht, & Obhi (2014)として引用すべき。
+        ObhiはLast Author（PI）なので「Obhi's lab」とするのは慣行的に許容。
+
+  error_2_owen_description:
+    severity: "MEDIUM — 経歴の不正確な描写"
+    location: "Section A1, line 33"
+    script_states: >
+      "David Owen — a former British Foreign Secretary turned neuroscientist"
+    actual_facts: >
+      David Owen（Lord Owen）は元英国外務大臣（正確）だが、
+      「neuroscientist（神経科学者）に転向した」は不正確。
+      Owen自身は医師（trained doctor）であり、政治家引退後に
+      Hubris Syndromeの研究を行ったが、神経科学者ではない。
+      共著者のJonathan DavidsonがDuke大学の精神科医。
+      Owenの所属はHouse of Lords, London。
+    correction: >
+      "David Owen — a former British Foreign Secretary and trained physician"
+      または
+      "David Owen — a former British Foreign Secretary, himself a medical 
+      doctor by training"
+
+  error_3_publication_year_ambiguity:
+    severity: "LOW — 年号の曖昧さ"
+    location: "Section A1, line 33"
+    script_states: "In 2008, David Owen... published a landmark paper"
+    actual_facts: >
+      Owen & Davidson論文は2009年5月にBrain誌に掲載（132巻5号）。
+      2009年2月12日にオンライン先行公開。
+      Owenの著書 "In Sickness and in Power" (2008) が先行出版されており、
+      そちらが2008年かもしれないが、Brain論文は2009年。
+    correction: "In 2009" に修正するか、"In 2008, Owen published a book... 
+      followed by a landmark 2009 paper in Brain" と区別する。
+
+  error_4_epstein_documents_date:
+    severity: "LOW-MEDIUM — 日付の確認推奨"
+    location: "INTRO, line 21"
+    script_states: "In January 2024, additional documents from the Jeffrey Epstein case were unsealed."
+    verification_note: >
+      2024年1月のEpstein関連文書開封は事実だが、NotebookLM用スクリプトとして
+      国際聴衆に提示する場合、具体的日付の正確性は重要。
+      "In early 2024" とすれば安全。
+
+  error_5_piff_affiliation:
+    severity: "LOW"
+    location: "Section E2, line 203"
+    script_states: "Paul Piff (UC Irvine)"
+    actual_facts: >
+      Paul Piff の2012年PNAS論文時の所属はUC Berkeley。
+      その後UC Irvineに移動。スクリプトの文脈では論文時点の所属が
+      正確だが、「現所属」として記載するなら問題なし。
+      ただし厳密には "(then at UC Berkeley)" が正確。
+
+# ==========================================
+# 2. 学術的精度に関する懸念
+# ==========================================
+
+academic_precision_concerns:
+
+  concern_1_mirror_neuron_terminology:
+    location: "Section B1"
+    issue: >
+      "mirror neuron system activity" という表現は、
+      Hogeveen et al. (2014) の論文では "motor resonance" と
+      表現されている。ヒトにおける "mirror neuron" の存在自体は
+      直接的には証明されておらず、"motor resonance" または
+      "putative mirror system" が学術的に正確。
+    recommendation: >
+      "mirror neuron system" → "motor resonance (mirror system activity)"
+      に変更するか、少なくとも一度は "putative" を入れる。
+      NotebookLM用の一般向けスクリプトであれば現行でも許容範囲。
+
+  concern_2_hubris_symptoms_list:
+    location: "Section A1, lines 37-43"
+    issue: >
+      Owen & Davidson (2009) は14の症状を特定している。
+      スクリプトでは7つのみ列挙。これ自体は問題ないが、
+      「Owen identified a cluster of symptoms」の後にこの7つだけを
+      列挙すると、これが全リストと誤解される可能性がある。
+    recommendation: >
+      "Owen identified a cluster of 14 symptoms, including:" と明示。
+
+  concern_3_threshold_metaphor_precision:
+    location: "Section B2, Property 2"
+    issue: >
+      「閾値依存」という概念は強力だが、現時点で
+      Hypnos Factor の閾値を定量的に示す実証研究は存在しない。
+      スクリプト全体の文脈では理論的提案として明確だが、
+      「empirical evidence shows」(line 279) という表現は
+      Hypnos Factor自体の直接的実証ではなく、
+      構成要素（Obhi、Piff等）の実証に基づく推論であることを
+      明確にすべき。
+    recommendation: >
+      "the convergent empirical evidence from neuroscience and 
+      behavioural economics suggests that..." とする。
+
+  concern_4_piff_pretzel_detail:
+    location: "Section E2, line 204"
+    issue: >
+      「rigged Monopoly」実験の「pretzels」の詳細は
+      Piff et al. (2012) のPNAS論文ではなく、
+      Piffの後続の研究やTEDトーク等で言及されたもの。
+      PNAS論文自体は7つの研究で構成され、
+      Monopoly実験はStudy 7。
+    recommendation: >
+      "In a series of experiments, Piff and colleagues demonstrated..."
+      とし、特定の実験詳細は注記に移すか、
+      "(as described in Piff's public presentations)" と付記。
+
+# ==========================================
+# 3. 構造的・理論的観察
+# ==========================================
+
+structural_observations:
+
+  observation_1_three_factor_evolution_strength:
+    assessment: "理論的に非常に強い"
+    detail: >
+      Section DでのTwo-Factor → Three-Factor Modelの進化は、
+      スクリプト最大の理論的貢献。特にD3「第二の作動モード」
+      （既存規範で対処可能な問題をより深い問題に見せかける機能）は
+      オリジナルかつ実践的含意が極めて大きい。
+      
+      AI Hypnos Mediator概念（D4）は、Constitutional AI論議への
+      独自の貢献として国際的に通用する。
+
+  observation_2_scale_invariance_claim:
+    assessment: "要注意 — 強い主張"
+    detail: >
+      Scale Invariance（Property 3, Section F1）は理論的に
+      魅力的だが、「The mechanism is identical」（line 108）は
+      かなり強い主張。
+      
+      厳密には「structurally analogous」（構造的に類似）が
+      学術的に安全。同じメカニズムが異なるスケールで
+      作動するという主張は、フラクタル理論や複雑系科学の
+      文脈で支持を得られる可能性はあるが、
+      「identical」は反証されやすい。
+    recommendation: >
+      "The mechanism is structurally analogous" または
+      "The structural dynamics are isomorphic" に修正。
+
+  observation_3_accounting_metaphor_integration:
+    assessment: "SoEの核心的強みとして良く機能"
+    detail: >
+      Tobashi（簿外債務）メタファーとHypnos Factorの接続
+      （Section F2）は、SoE独自の言語でpower論を
+      福祉実践に着地させる点で極めて効果的。
+      「Hypnos Factor prevents the audit」という一文は
+      スクリプト全体の鍵となる。
+
+  observation_4_china_tribunal_reference:
+    assessment: "要検討 — センシティビティ"
+    location: "Section D1, line 156"
+    detail: >
+      中国トリビューナル（臓器強制摘出）への言及は、
+      理論的には Hypnos Factor の発見文脈として重要だが、
+      国際聴衆向けNotebookLMスクリプトでは:
+      (a) 政治的に極めてセンシティブ
+      (b) 中国系リスナーを遠ざけるリスク
+      (c) Hypnos Factor理論自体の学術的評価に
+          地政学的バイアスの疑いを招く可能性
+    recommendation: >
+      発見のコンテキストとして維持するなら
+      "allegations documented by the China Tribunal" と
+      慎重な表現にする。あるいは、発見過程の記述を
+      一般化し、具体的事例はsupplementary materialに移す。
+
+# ==========================================
+# 4. 追記提案
+# ==========================================
+
+suggested_additions:
+
+  addition_1_milgram_connection:
+    location: "Section E3 or new subsection"
+    rationale: >
+      Milgramの服従実験（1963）はHypnos Factor概念の
+      最も直接的な先行研究。「普通の人が構造的条件下で
+      有害な行為を行う」というテーゼはHypnosの核心。
+      参照がないのは学術的に不自然。
+    suggested_reference: >
+      Milgram, S. (1963). Behavioral Study of Obedience. 
+      Journal of Abnormal and Social Psychology, 67(4), 371-378.
+    script_integration: >
+      Section A2 or E3に一文追加:
+      "Stanley Milgram's obedience experiments (1963) demonstrated 
+      that structural conditions — not individual moral character — 
+      predict compliance with harmful instructions. The Hypnos Factor 
+      extends this insight from laboratory authority to structural 
+      power concentration."
+
+  addition_2_zimbardo_lucifer_effect:
+    location: "Section E3"
+    rationale: >
+      Zimbardo's Stanford Prison Experiment / Lucifer Effect (2007) は
+      「善人が構造的に悪行を行う」テーゼの代表的研究。
+      Hypnos Factorの「structural, not moral」の先行例として不可欠。
+    suggested_reference: >
+      Zimbardo, P. (2007). The Lucifer Effect: Understanding How Good 
+      People Turn Evil. Random House.
+    note: >
+      ただしStanford Prison Experimentには近年methodological criticisms
+      があるため（Reicher & Haslam, Le Texier 2019等）、
+      引用する場合は "despite methodological debates" と付記推奨。
+
+  addition_3_arendt_banality_of_evil:
+    location: "Section A2 or INTRO"
+    rationale: >
+      Hannah Arendtの「悪の陳腐さ」概念は、Hypnos Factorの
+      「sleep, not evil」テーゼの哲学的先行概念。
+      学術的文脈で言及しないのは不自然。
+    suggested_reference: >
+      Arendt, H. (1963). Eichmann in Jerusalem: A Report on the 
+      Banality of Evil. Viking Press.
+    script_integration: >
+      "Hannah Arendt's concept of 'the banality of evil' (1963) 
+      anticipated this insight at the philosophical level. The Hypnos 
+      Factor provides a structural-epidemiological mechanism for what 
+      Arendt observed as a moral-political phenomenon."
+
+  addition_4_explicit_soe_positioning:
+    location: "Key References - SoE Framework section"
+    rationale: >
+      現在のSoE引用は非常に曖昧。NotebookLM用とはいえ、
+      最低限の正式な位置づけが必要。
+    suggested_format: >
+      Yamauchi, Y. (forthcoming). Service of Empowerment (SoE): 
+      A Framework for Rights-Based Disability Employment Support. 
+      [Doctoral research in preparation, Japan College of Social Work]
+      
+      — Hypnos Factor: First conceptualized February 2026
+      — Input Constitutional AI: First proposed 2025
+
+  addition_5_glossary_supplement:
+    location: "Glossary table"
+    missing_terms:
+      - term: "Constitutional Space"
+        definition: >
+          SoEにおける安全な環境設計概念。支援者-当事者間の
+          権力非対称性を構造的に是正する空間。
+      - term: "Forced Correction Entry (強制修正仕訳)"
+        definition: >
+          社会の簿外債務を正しい勘定に戻す会計メタファー的操作。
+          本文Section F2で使用されているが、Glossaryに未記載。
+
+# ==========================================
+# 5. 表現・スタイルの改善提案
+# ==========================================
+
+style_suggestions:
+
+  suggestion_1_researcher_anonymity:
+    location: "Multiple sections (A2, D1, D3)"
+    current: "A researcher in Japan" / "the SoE researcher"
+    observation: >
+      NotebookLM用の公開スクリプトとして、研究者の匿名性は
+      意図的と思われるが、学術的信頼性の観点からは
+      著者を明示する方が強い。
+    options:
+      - "Maintain anonymity for privacy (current approach)"
+      - "Name the researcher: 'Yuji Yamauchi, a researcher in Japan...'"
+      - "Use institutional affiliation: 'A researcher at Japan College 
+         of Social Work...'"
+
+  suggestion_2_late_night_research_detail:
+    location: "Section A2, line 54"
+    current: "During a late-night research session in February 2026"
+    observation: >
+      この詳細は発見の物語性を高めるが、学術的文脈では
+      不要。NotebookLM用として聴衆エンゲージメントに有効なら維持。
+
+  suggestion_3_daughters_framing:
+    location: "INTRO"
+    observation: >
+      「娘がいる」という事実のフレーミングは強力だが、
+      暗黙の前提として「男性権力者は娘への共感を通じてのみ
+      女性の被害を認識すべき」という含意がある。
+      フェミニスト批評からは「女性の被害は女性自身の権利として
+      認識されるべきで、男性の家族関係を通じてではない」
+      という指摘がありうる。
+    recommendation: >
+      この批判を予期して、OUTROまたはSection Dで一文追加:
+      "The 'daughter test' is not the correct moral standard — 
+      exploitation should be recognised regardless of relational 
+      proximity. The point is precisely that even the most personal 
+      recognition circuits can be disabled by structural conditions."
+
+# ==========================================
+# 6. 総合評価
+# ==========================================
+
+overall_assessment:
+
+  theoretical_quality: "HIGH"
+  comment: >
+    Hypnos Factor概念は、Owen (2009) のHubris Syndromeを
+    道徳的帰属→構造的分析へ転換するという点で、
+    学術的に独立した貢献。特にThree-Factor Modelへの発展と
+    AI Hypnos Mediator概念は国際的に通用する新規性を持つ。
+
+  script_quality: "HIGH — NotebookLM用として非常に効果的"
+  comment_2: >
+    物語構造、理論展開、エビデンス引用のバランスが良い。
+    25-30分のオーディオとして適切な密度。
+    
+  critical_fixes_required:
+    - "Obhi et al. 引用の修正（最重要）"
+    - "Owen の経歴記述の修正"
+    - "Owen 論文の年号確認（2008→2009）"
+
+  recommended_but_optional:
+    - "Milgram / Arendt / Zimbardo への言及追加"
+    - "Scale Invariance の表現調整"
+    - "China Tribunal 言及のセンシティビティ検討"
+    - "daughters framing への自覚的注記"
+
+  soe_framework_consistency: "EXCELLENT"
+  comment_3: >
+    プロジェクト知識全体との整合性は極めて高い。
+    Tobashi概念、Input Constitutional AI、
+    Capability Approach × Limitarianism の二重介入、
+    記録主権 — すべてが一貫した理論体系として接続。
+    
+    SoE Declaration の "SoEは真実を提示しない、ゆれを示すだけ"
+    という原則とも矛盾しない。Hypnos Factorは「確率的認知変容」
+    として定義されており、決定論的断定を避けている。
+
+---
+# END OF REVIEW

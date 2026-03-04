@@ -32,6 +32,7 @@
   03_gemini/           # Geminiセッション記録
   04_VSClaude/         # Claude Code（VSCode）セッション記録
   05_NotebookLM/       # NotebookLMセッション記録
+  07_cowork/           # Coworkセッション記録
 01_philosophy/          # SoE哲学・存在論
 03_ai_rights/           # AI倫理・CRPD・データ主権
 09_research_proposal/   # 研究計画書
