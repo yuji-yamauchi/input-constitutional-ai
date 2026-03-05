@@ -1,0 +1,194 @@
+## Gemini向けハンドオフ: 論文ダウンロードワークフロー
+## 作成: 2026-03-04 by Claude Code (Opus 4.6)
+
+handoff_metadata:
+  date: "2026-03-04"
+  from: "Claude Code (Opus 4.6)"
+  to: "Gemini"
+  purpose: "学術論文の検索→ダウンロード連携フローの共有"
+
+## ============================================================
+## 背景: 今回の実績
+## ============================================================
+
+completed_work:
+  task: "Amanda Askell関連論文28件のバルクダウンロード"
+  result:
+    total: 28
+    success: 25
+    blocked_by_antivirus: 2  # ESET誤検知 (PDF/Phishing.A.Gen)
+    invalid_pdf: 1  # ai-plans.comがHTMLリダイレクト返却
+  source_files:
+    - path: "03_ai_rights/01_Constitutional AI/01_Amanda Askell/amanda_askell_papers.txt"
+      format: "arxiv_id\\tURL\\tタイトル"
+      count: 23
+    - path: "03_ai_rights/01_Constitutional AI/01_Amanda Askell/amanda_askell_scholar_extras.txt"
+      format: "scholar\\tURL\\tタイトル"
+      count: 5
+  output_dir: "03_ai_rights/01_Constitutional AI/01_Amanda Askell/papers/"
+
+## ============================================================
+## Geminiへの依頼: 役割分担
+## ============================================================
+
+role_division:
+  gemini:
+    - "キーワード・研究者名から論文を検索（Google Scholar等）"
+    - "PDFのURLを収集"
+    - "所定のTSVフォーマットでURLリストを作成"
+    - "検索結果の妥当性確認（被引用数・関連性など）"
+  claude_code:
+    - "URLリストからバルクダウンロード（Pythonスクリプト）"
+    - "ファイルの整理・リネーム・分類"
+    - "ダウンロード済みPDFの内容確認"
+  user_chrome_extension:
+    - "ブラウザ上での補助的な論文検索"
+    - "個別PDFの手動ダウンロード（ESET回避が必要な場合）"
+
+## ============================================================
+## URLリストのフォーマット仕様
+## ============================================================
+
+url_list_format:
+  file_extension: ".txt"
+  encoding: "UTF-8"
+  separator: "TAB (\\t)"
+  columns:
+    - name: "id_or_label"
+      description: "arxiv ID（例: 2212.08073）またはラベル（例: scholar）"
+      required: true
+    - name: "url"
+      description: "PDFの直接ダウンロードURL"
+      required: true
+    - name: "title"
+      description: "論文タイトル（ファイル名に使用される）"
+      required: true
+
+  examples:
+    arxiv: "2212.08073\thttps://arxiv.org/pdf/2212.08073\tConstitutional AI: Harmlessness from AI Feedback"
+    scholar: "scholar\thttps://proceedings.neurips.cc/paper_files/paper/2022/file/xxxxx.pdf\tTraining LMs to follow instructions"
+    other: "doi_10.1234\thttps://example.com/paper.pdf\tPaper Title Here"
+
+  naming_convention:
+    arxiv: "{arxiv_id}_{sanitized_title}.pdf"
+    scholar: "extra_{sanitized_title}.pdf"
+    other: "{id_or_label}_{sanitized_title}.pdf"
+
+  notes:
+    - "URLはPDFへの直リンクであること（HTMLページではなく）"
+    - "arxiv.orgの場合: https://arxiv.org/pdf/XXXX.XXXXX（末尾に.pdfなくてもOK）"
+    - "タイトル中の特殊文字（: / \\ ? * \" < > |）は自動的に除去される"
+    - "ファイル名は最大100文字に切り詰められる"
+
+## ============================================================
+## URL収集時の注意事項
+## ============================================================
+
+url_collection_guidelines:
+  preferred_sources:
+    - domain: "arxiv.org"
+      url_pattern: "https://arxiv.org/pdf/{id}"
+      reliability: "最も安定。直リンクで確実にPDFが取得できる"
+    - domain: "proceedings.neurips.cc"
+      url_pattern: "https://proceedings.neurips.cc/paper_files/paper/{year}/file/{hash}-Paper.pdf"
+      reliability: "安定。直リンク"
+    - domain: "proceedings.mlr.press"
+      url_pattern: "http://proceedings.mlr.press/v{vol}/{author}{year}a/{author}{year}a.pdf"
+      reliability: "安定"
+    - domain: "openreview.net"
+      url_pattern: "https://openreview.net/pdf?id={id}"
+      reliability: "概ね安定だがESETに誤検知される場合あり"
+
+  avoid:
+    - "HTMLページへのリンク（PDFではなくランディングページ）"
+    - "認証が必要なURL（IEEE Xplore有料論文など）"
+    - "リダイレクトが多段のURL（ai-plans.comなどミラーサイト）"
+    - "Google Scholar/Semantic ScholarのキャッシュURL"
+
+  eset_antivirus_note: |
+    ユーザー環境にESET Internet Securityが稼働中。
+    Pythonのurllib経由ダウンロード時に一部PDFが
+    「PDF/Phishing.A.Gen」として誤検知・削除される場合がある。
+    openreview.net等の一部ドメインで発生確認済み。
+    → arxiv.orgのURLを優先的に使用することで回避可能。
+
+## ============================================================
+## ファイル配置ルール
+## ============================================================
+
+file_placement:
+  base_repo: "c:\\Users\\USER\\Documents\\GitHub\\input-constitutional-ai"
+  patterns:
+    - topic: "Constitutional AI / AI Safety"
+      dir: "03_ai_rights/01_Constitutional AI/{researcher_name}/papers/"
+    - topic: "CRPD / 障害者権利"
+      dir: "03_ai_rights/"
+    - topic: "SoE理論関連"
+      dir: "01_philosophy/"
+    - topic: "研究計画書参考文献"
+      dir: "09_research_proposal/references/"
+    - topic: "厚労省資料"
+      dir: "外部（C:\\Users\\USER\\Desktop\\cowork\\00_sauce\\）"
+
+  url_list_placement: |
+    URLリストファイル自体は、対象フォルダと同階層か
+    00_daily_yamal/03_gemini/ に配置する。
+    Claude Codeがパスを指定してダウンロードスクリプトを実行する。
+
+## ============================================================
+## 連携手順（実際のフロー）
+## ============================================================
+
+workflow:
+  step_1:
+    actor: "Puu（ユーザー）"
+    action: "Geminiにキーワード・研究者名・テーマを伝える"
+    example: "Amanda Askellの主要論文を全部集めて"
+
+  step_2:
+    actor: "Gemini"
+    action: |
+      Google Scholar等で論文を検索し、
+      上記TSVフォーマットでURLリストを作成する。
+      ファイル名の提案も含める。
+    output: "{researcher_name}_papers.txt"
+
+  step_3:
+    actor: "Puu"
+    action: |
+      GeminiからのURLリストをリポジトリ内に保存し、
+      Claude Codeに「このURLでダウンロードして」と指示する。
+    note: "URLリストのパスとダウンロード先を伝えるだけでOK"
+
+  step_4:
+    actor: "Claude Code"
+    action: |
+      Pythonスクリプトを生成・実行してバルクダウンロード。
+      結果を報告（成功/失敗/スキップ件数）。
+
+  step_5:
+    actor: "Puu / Claude Code"
+    action: "ダウンロード結果確認、ESET誤検知があれば手動対応"
+
+## ============================================================
+## 今後の検索予定テーマ（参考）
+## ============================================================
+
+upcoming_research_topics:
+  - keyword: "Supported Employment evidence-based"
+    context: "IPS (Individual Placement and Support) エビデンス収集"
+  - keyword: "CRPD Article 27 implementation"
+    context: "障害者権利条約27条（就労）の各国実装状況"
+  - keyword: "Sheltered workshop transition"
+    context: "サムハル等、保護的就労からの移行モデル"
+  - keyword: "SoE Service of Empowerment"
+    context: "山内のSoE理論に関連する先行研究"
+  - keyword: "Constitutional AI alignment"
+    context: "Anthropicの憲法AI関連の最新論文"
+
+fire_culture_note: |
+  このワークフローは「問いの火を消さない」ための仕組みである。
+  研究者が着想したキーワードを即座にGeminiに投げ、
+  URLリストとしてClaude Codeに中継することで、
+  知的好奇心の火種が燃え尽きる前にエビデンスを手元に集める。
+  AI間連携による「記録と収集の自動化」の実践例。

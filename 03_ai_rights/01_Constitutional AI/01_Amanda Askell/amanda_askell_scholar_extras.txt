@@ -1,0 +1,5 @@
+scholar	https://openreview.net/pdf?id=uyTL5Bvosj	Beyond the imitation game [openreview]
+scholar	http://proceedings.mlr.press/v139/radford21a/radford21a.pdf	Learning transferable visual models (CLIP) [mlr.press]
+scholar	https://proceedings.neurips.cc/paper_files/paper/2020/file/1457c0d6bfcb4967418bfb8ac142f64a-Paper.pdf	Language models are few-shot learners (GPT-3) [neurips]
+scholar	https://proceedings.neurips.cc/paper_files/paper/2022/file/b1efde53be364a73914f58805a001731-Paper-Conference.pdf	Training LMs to follow instructions (InstructGPT) [neurips]
+scholar	https://ai-plans.com/pdfjs/pdfs/2212.08073v1_Constitutional_AI_Harmlessness_from_AI_Feedback.pdf	Constitutional AI: Harmlessness from AI feedback [ai-plans.com]

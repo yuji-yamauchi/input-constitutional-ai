@@ -9,7 +9,18 @@
       "Bash(git mv:*)",
       "Bash(ls:*)",
       "Bash(cmd //c \"dir /b /ad c:\\\\Users\\\\USER\\\\Documents\\\\GitHub\\\\input-constitutional-ai\\\\00_daily_yamal\")",
-      "Bash(python sort_downloads.py:*)"
+      "Bash(python sort_downloads.py:*)",
+      "Bash(python download_schema_therapy.py)",
+      "Bash(python -c \":*)",
+      "Bash(ffmpeg -y -i \"「無敵の人」を定義する.mp4\" -vf \"subtitles=muteki_subtitles.srt:force_style=''FontName=Yu Gothic UI,FontSize=22,PrimaryColour=&H00FFFFFF,OutlineColour=&H00000000,Outline=2,Shadow=1,MarginV=30''\" -c:a copy \"「無敵の人」を定義する_字幕付き.mp4\")",
+      "Bash(ffmpeg -y -i \"「無敵の人」を定義する.mp4\" -vf \"subtitles=muteki_subtitles.srt:force_style=''FontName=Yu Gothic UI,FontSize=18,PrimaryColour=&H00FFFFFF,OutlineColour=&H00000000,Outline=2,Shadow=1,MarginV=25,WrapStyle=2''\" -c:a copy \"「無敵の人」を定義する_字幕付き.mp4\")",
+      "Bash(python fix_srt.py)",
+      "Bash(ffmpeg -y -i \"「無敵の人」を定義する.mp4\" -vf \"subtitles=muteki_subtitles.srt:force_style=''FontName=Yu Gothic UI,FontSize=18,PrimaryColour=&H00FFFFFF,OutlineColour=&H00000000,Outline=2,Shadow=1,MarginV=20,WrapStyle=2''\" -c:a copy \"「無敵の人」を定義する_字幕付き.mp4\")",
+      "Bash(ffprobe -v quiet -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 \"/c/Users/USER/Downloads/障害福祉のプロへ：バイスティックの7原則.mp4\")",
+      "Bash(ffmpeg -y -i \"障害福祉のプロへ：バイスティックの7原則.mp4\" -vn -acodec pcm_s16le -ar 16000 -ac 1 \"biestek_audio.wav\")",
+      "Bash(python whisper_biestek.py)",
+      "Bash(python process_biestek.py)",
+      "Bash(ffmpeg -y -i \"障害福祉のプロへ：バイスティックの7原則.mp4\" -vf \"subtitles=biestek_subtitles.srt:force_style=''FontName=Yu Gothic UI,FontSize=18,PrimaryColour=&H00FFFFFF,OutlineColour=&H00000000,Outline=2,Shadow=1,MarginV=20,WrapStyle=2''\" -c:a copy \"障害福祉のプロへ：バイスティックの7原則_字幕付き.mp4\")"
     ]
   }
 }

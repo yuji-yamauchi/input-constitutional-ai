@@ -1,0 +1,8 @@
+tsv_01	https://www.researchgate.net/profile/Jeffrey-Young-2/publication/247501330_Schema_Therapy_for_Borderline_Personality_Disorder/links/541982050cf25ebee9888805/Schema-Therapy-for-Borderline-Personality-Disorder.pdf	Schema Therapy for Borderline Personality Disorder (Young)
+tsv_02	https://link.springer.com/content/pdf/10.1007/s10608-014-9617-5.pdf	Effectiveness of Group Schema Therapy for BPD
+tsv_03	https://www.cureus.com/articles/173434-the-effectiveness-of-schema-therapy-in-the-treatment-of-personality-disorders-a-systematic-review.pdf	Effectiveness of Schema Therapy for PD - Systematic Review
+tsv_05	https://econtent.hogrefe.com/doi/pdf/10.1027/0227-5910/a000767	Schema Therapy for Chronic Suicidality
+tsv_06	https://proceedings.med.ucla.edu/wp-content/uploads/2023/06/Clinical-Review-of-Schema-Therapy.pdf	Clinical Review of Schema Therapy and Its Application (UCLA)
+tsv_07	https://media.guilford.com/excerpts/young.pdf	Schema Therapy A Practitioners Guide Chapter 1 (Guilford)
+dr_21	https://www.davidpublisher.com/Public/uploads/Contribute/552e35ada5488.pdf	ASD Traits Affect Mental Health via Early Maladaptive Schemas (Ito)
+dr_22	https://kaken.nii.ac.jp/ja/file/KAKENHI-PROJECT-17H06559/17H06559seika.pdf	KAKEN 17H06559 Schema Therapy for Chronic Depression Japan (Ito)

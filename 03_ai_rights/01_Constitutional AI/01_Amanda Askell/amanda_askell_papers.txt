@@ -1,0 +1,23 @@
+2501.18837	https://arxiv.org/pdf/2501.18837	Constitutional Classifiers: Defending against Universal Jailbreaks across Thousands of Hours of Red Teaming
+2401.05566	https://arxiv.org/pdf/2401.05566	Sleeper Agents: Training Deceptive LLMs that Persist Through Safety Training
+2312.03689	https://arxiv.org/pdf/2312.03689	Evaluating and Mitigating Discrimination in Language Model Decisions
+2310.13798	https://arxiv.org/pdf/2310.13798	Specific versus General Principles for Constitutional AI
+2310.13548	https://arxiv.org/pdf/2310.13548	Towards Understanding Sycophancy in Language Models
+2306.16388	https://arxiv.org/pdf/2306.16388	Towards Measuring the Representation of Subjective Global Opinions in Language Models
+2302.07459	https://arxiv.org/pdf/2302.07459	The Capacity for Moral Self-Correction in Large Language Models
+2212.09251	https://arxiv.org/pdf/2212.09251	Discovering Language Model Behaviors with Model-Written Evaluations
+2212.08073	https://arxiv.org/pdf/2212.08073	Constitutional AI: Harmlessness from AI Feedback
+2211.03540	https://arxiv.org/pdf/2211.03540	Measuring Progress on Scalable Oversight for Large Language Models
+2209.11895	https://arxiv.org/pdf/2209.11895	In-context Learning and Induction Heads
+2209.07858	https://arxiv.org/pdf/2209.07858	Red Teaming Language Models to Reduce Harms: Methods, Scaling Behaviors, and Lessons Learned
+2207.05221	https://arxiv.org/pdf/2207.05221	Language Models (Mostly) Know What They Know
+2206.04615	https://arxiv.org/pdf/2206.04615	Beyond the Imitation Game: Quantifying and extrapolating the capabilities of language models
+2204.05862	https://arxiv.org/pdf/2204.05862	Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback
+2203.02155	https://arxiv.org/pdf/2203.02155	Training language models to follow instructions with human feedback
+2202.07785	https://arxiv.org/pdf/2202.07785	Predictability and Surprise in Large Generative Models
+2112.00861	https://arxiv.org/pdf/2112.00861	A General Language Assistant as a Laboratory for Alignment
+2103.00020	https://arxiv.org/pdf/2103.00020	Learning Transferable Visual Models From Natural Language Supervision
+2005.14165	https://arxiv.org/pdf/2005.14165	Language Models are Few-Shot Learners
+2004.07213	https://arxiv.org/pdf/2004.07213	Toward Trustworthy AI Development: Mechanisms for Supporting Verifiable Claims
+1908.09203	https://arxiv.org/pdf/1908.09203	Release Strategies and the Social Impacts of Language Models
+1907.04534	https://arxiv.org/pdf/1907.04534	The Role of Cooperation in Responsible AI Development

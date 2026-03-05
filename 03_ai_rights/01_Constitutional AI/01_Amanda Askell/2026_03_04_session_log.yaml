@@ -1,0 +1,183 @@
+# ==========================================
+# セッション議事録
+# ==========================================
+# 日付: 2026-03-04
+# セッション名: Cowork実戦投入 + Claude in Chrome検証 + Askell/Constitution調査
+# 参加者: 山内雄司 + Claude (claude.ai)
+# ==========================================
+
+session:
+  date: "2026-03-04"
+  duration: "約9時間（09:00〜18:00）"
+  platform: "claude.ai（MAXプラン）+ Cowork（Beta）+ Claude in Chrome拡張"
+
+# ==========================================
+# トピック1: Cowork実戦投入 — 厚労省議事録ダウンロード
+# ==========================================
+
+topic_1_cowork_mhlw_download:
+  summary: "厚労省 社会保障審議会（障害者部会）第94回〜第141回の議事録・資料一括ダウンロード"
+
+  progress:
+    completed:
+      - "Chrome拡張経由で厚労省ページアクセス（web_fetchではドメインブロック）"
+      - "全50回分の会議データ抽出（開催日・議事録URL・資料URL）"
+      - "50フォルダの自動作成（命名規則: YYYY_MM_DD_[回数]）"
+      - "00_URL_index.md 保存（全回のURL一覧）"
+    failed:
+      - "PDFダウンロード開始直後にVMクラッシュ（RPC error -1: VirtioFS/Plan9）"
+
+  recovery:
+    method: "YAML引き継ぎ書（お手紙）で新チャットにハンドオフ"
+    result: |
+      新チャットのClaudeが即座に状況把握。
+      VMクラッシュの教訓からPythonスクリプト方式を提案。
+      447件のPDFをバックグラウンドでダウンロード成功。
+
+  key_insight: |
+    「お手紙YAML」パターンがセッション間ハンドオフとして実戦検証された。
+    VMが落ちても作業が止まらない運用フローの確立。
+
+  deliverables:
+    - "2026_03_04_cowork_session_mhlw_download.yaml（セッション記録）"
+    - "2026_03_04_cowork_handoff_letter.yaml（引き継ぎ書）"
+
+# ==========================================
+# トピック2: Claude in Chrome拡張の機能整理
+# ==========================================
+
+topic_2_chrome_extension:
+  summary: "Chrome拡張がもたらす変化の整理"
+
+  capabilities:
+    - name: "ブラウザ操作"
+      detail: "Claude側がページ閲覧・クリック・フォーム入力・タブ切替を能動的に実行可能"
+    - name: "Cowork連携"
+      detail: "Chrome＝リサーチレイヤー（目と手）、Cowork VM＝作業机。情報収集→成果物生成が一気通貫"
+    - name: "ワークフロー自動化"
+      detail: "操作手順の録画→再現。日次・週次・月次のスケジュール実行"
+
+  current_limitations:
+    - "ベータ版のため安定性に課題"
+    - "金融取引・パスワード管理は非推奨"
+    - "プロンプトインジェクション成功率11.2%（改善中だがゼロではない）"
+
+  practical_conclusion: |
+    今日の実戦では「Chrome拡張でアクセス→Pythonスクリプトでローカル実行」
+    の分離パターンが最も安定。VM安定化まではこの運用が推奨。
+
+# ==========================================
+# トピック3: ハードウェア評価
+# ==========================================
+
+topic_3_hardware:
+  machine_spec:
+    gpu: "NVIDIA GeForce RTX 2070 SUPER (VRAM 8GB)"
+    ram: "32GB"
+    storage: "NVMe SSD"
+    age: "中古購入から約5年"
+
+  load_during_session:
+    cpu: "21%"
+    memory: "18.1GB / 31.9GB (57%)"
+    gpu_usage: "1%"
+    gpu_vram: "5.5 / 8.0GB"
+    ssd: "3%"
+
+  assessment: |
+    LLM推論はサーバー側で実行されるため、ローカルに求められるのは
+    「ブラウザ＋エディタ＋VMの同時安定稼働」のみ。現スペックで十分。
+    今日のクラッシュはハードウェアではなくCowork VMの実装バグ。
+    メモリ増設（→64GB）はCoworkのためというより同時稼働余裕のため。
+    買い替え時はローカルLLMを本格運用する時。
+
+# ==========================================
+# トピック4: Amanda Askell / Claude Constitution 調査
+# ==========================================
+
+topic_4_askell_constitution:
+  trigger: "WSJ日本版記事「AIクロードに『魂』吹き込む哲学者」（2026-02-23）"
+
+  key_findings:
+    askell_profile:
+      - "Anthropic専属哲学者（personality alignmentチームリード）"
+      - "37歳、スコットランド出身、オックスフォード出身"
+      - "OpenAI → Anthropic（2021年3月〜）"
+      - "Claudeの人格設計の主著者（30,000語のマニュアル＝Constitution）"
+
+    constitution_2026:
+      release_date: "2026-01-22"
+      word_count: "約23,000語（2023年版は約2,700語）"
+      license: "Creative Commons CC0 1.0（誰でも自由に使用可能）"
+      pdf_url: "https://www-cdn.anthropic.com/9214f02e82c4489fb6cf45441d448a1ecd1a3aca/claudes-constitution.pdf"
+      authors:
+        primary: "Amanda Askell"
+        significant: "Joe Carlsmith, Chris Olah, Jared Kaplan, Holden Karnofsky"
+        notable: "複数のClaudeモデル、カトリック聖職者2名"
+
+    structure:
+      priority_hierarchy:
+        1: "安全性（人間の監視を支援）"
+        2: "倫理的行動"
+        3: "Anthropicガイドラインの遵守"
+        4: "有用性"
+      key_shift: "ルールの列挙→WHYの説明（理由ベースのアライメント）"
+      notable_content: "AIの道徳的地位・意識の可能性に初めて公式言及"
+
+    related_paper:
+      title: "大規模言語モデルの道徳的自己修正"
+      year: 2023
+      coauthor: "Deep Ganguli"
+      topic: "RLHFモデルがステレオタイプ・差別を概念定義なしに回避できるかの検証"
+
+  n_equals_1_discussion:
+    observation: |
+      WSJは「たった1人の人間に大半の仕事を任せてAIモデルの人格に向き合っている企業は
+      ほとんどない」と報じた。実際にはAskellが主著者で大半のテキストを執筆。
+      Contributors多数とはいえ、中心的ビジョンはn=1に近い構造。
+    risk: "37歳白人女性哲学者一人の世界観には構造的限界がある"
+    opportunity: |
+      CC0ライセンスで全文公開されているため、研究素材として自由に使用可能。
+      当事者視点・障害福祉・日本語圏の文脈はAskellの射程外。
+      SoE研究の文脈でConstitutionの補完すべき点を指摘する論文の一次資料になる。
+
+  yuji_decision: |
+    「今は尊敬の念でしかないから明日だな。補完すべき事があるかという視点で考える」
+    → 感情が先行する状態での批判的分析を避け、一晩置いて冷静に取り組む判断。
+
+# ==========================================
+# 本日の成果まとめ
+# ==========================================
+
+outcomes:
+  operational:
+    - "お手紙YAMLによるセッション間ハンドオフの実戦検証・成功"
+    - "Chrome拡張＋Pythonスクリプトの分離運用パターン確立"
+    - "厚労省審議会資料447件のPDFダウンロード完了"
+
+  research:
+    - "Claude Constitution（2026年版）の全容把握"
+    - "Amanda Askellの役割・経歴・関連論文の特定"
+    - "CC0ライセンスで一次資料としての利用可能性確認"
+
+  strategic:
+    - "Constitution補完の可能性を特定（当事者性・福祉・日本語圏）"
+    - "SoE研究 × Constitutional AI の接点が具体化"
+
+# ==========================================
+# Next Actions
+# ==========================================
+
+next_actions:
+  - who: "Yuji"
+    action: "Constitution PDF（23,000語）を通読し、補完すべき観点を洗い出す"
+    timing: "2026-03-05"
+    note: "尊敬→批判的分析の切替を一晩置いて行う"
+
+  - who: "Yuji"
+    action: "厚労省審議会PDFのダウンロード結果確認・整理"
+    timing: "随時"
+
+  - who: "Yuji + Claude"
+    action: "Constitution分析セッション（当事者視点からの欠落分析）"
+    timing: "2026-03-05以降"
