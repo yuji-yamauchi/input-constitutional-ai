@@ -287,11 +287,11 @@ transcript:
   - speaker: "female_speaker"
     text: "私、山内さんに負けたんか。"
   - speaker: "male_speaker"
-    text: "いや違う違う違う。二ツ石さんに負けてんのよ。"
+    text: "いや違う違う違う。Fさんに負けてんのよ。"
   - speaker: "female_speaker"
-    text: "あー二ツ石さんね。"
+    text: "あーFさんね。"
   - speaker: "male_speaker"
-    text: "二ツ石さん悪い人じゃないよな。いい人よな。"
+    text: "Fさん悪い人じゃないよな。いい人よな。"
   - speaker: "female_speaker"
     text: "まあ悪い人じゃなかったらそれでいいと思うけどな。"
   - speaker: "male_speaker"
@@ -307,7 +307,7 @@ transcript:
   - speaker: "female_speaker"
     text: "あー、確かに。"
   - speaker: "male_speaker"
-    text: "あんまりな、えーっと。ただ、やっぱり篠原さんがどうすれば楽になるかっていう話だよな。"
+    text: "あんまりな、えーっと。ただ、やっぱりHさんがどうすれば楽になるかっていう話だよな。"
   - speaker: "female_speaker"
     text: "うーん、どうすれば楽になる？"
   - speaker: "male_speaker"
@@ -355,7 +355,7 @@ transcript:
   - speaker: "female_speaker"
     text: "みんな案外見てないもんなんですよ。"
   - speaker: "male_speaker"
-    text: "で、篠原さんがスルーっていうのはちょっと悲しかったかな。"
+    text: "で、Hさんがスルーっていうのはちょっと悲しかったかな。"
   - speaker: "female_speaker"
     text: "ごめんなさい。"
   - speaker: "female_speaker"
@@ -437,7 +437,7 @@ transcript:
   - speaker: "male_speaker"
     text: "楽ではないな。"
   - speaker: "female_speaker"
-    text: "松尾さんに言っといてほしい。もうちょっと女心わかりよな、あいつ。マジピーターパン。"
+    text: "Jさんに言っといてほしい。もうちょっと女心わかりよな、あいつ。マジピーターパン。"
   - speaker: "male_speaker"
     text: "いや、あの、多分女心分かる男ってそんなに数多くねえぞ。"
   - speaker: "female_speaker"
@@ -951,11 +951,11 @@ event_record:
 conversation_log:
   speakers:
     Y: "山内雄司 (Sherpa / 入院明け)"
-    P_Yamada: "山田刑事 (川内警察署 / 大阪府警)"
+    P_X1: "X1刑事 (X警察署 / 大阪府警)"
 
   dialogue_flow:
     # 1. 相手への気遣いと現状報告
-    - speaker: P_Yamada
+    - speaker: P_X1
       action: "安否確認"
       content: "脳出血で倒れたと聞いたが大丈夫か？ 仕事中か？"
       intent: "ビジネスライクな連絡ではなく、個人的な心配を含んだアプローチ。"
@@ -964,19 +964,19 @@ conversation_log:
       action: "状況説明"
       content: "2週間入院して先週退院した。記憶が少し飛んでいるが、会社は畳む準備中。"
       
-    # 2. 本題：被支援者D（サガラ）事件の裏側開示
-    - speaker: P_Yamada
+    # 2. 本題：被支援者D事件の裏側開示
+    - speaker: P_X1
       action: "情報開示 (Off-the-record)"
-      content: "被支援者Dの件、実は『G氏（ウエノ）』という男に対する別件捜査（大麻など）が富田林署で進んでいる。"
+      content: "被支援者Dの件、実は『G氏』という男に対する別件捜査（大麻など）がT署で進んでいる。"
       revelation: "被支援者Dが言っていた『G氏に監禁された』等の話が、実は警察内部でも裏付け捜査されていた。"
 
-    - speaker: P_Yamada
+    - speaker: P_X1
       action: "捜査終結の報告"
-      content: "うち（川内署）としての捜査は一旦完結させるが、それは『見捨てた』わけではなく、富田林署の方で本丸（G氏）をやっているからだ。"
+      content: "うち（川内署）としての捜査は一旦完結させるが、それは『見捨てた』わけではなく、T署の方で本丸（G氏）をやっているからだ。"
       intent: "山内氏に対し、『警察は何もしてないわけじゃない』という言い訳と、信頼維持のための説明。"
 
     # 3. 現場刑事の本音と共感
-    - speaker: P_Yamada
+    - speaker: P_X1
       action: "共感 (Empathy)"
       content: "被支援者Dも新しい彼氏（ゼネコン飛び職）ができて、G氏と縁が切れそうなら、それが一番いい。警察が介入してかき回すより、結果オーライならそれで済ませたい。"
       philosophy: "法的な白黒よりも、本人の平穏（実利）を優先する現場のリアリズム。"
@@ -990,7 +990,7 @@ conversation_log:
       action: "弱さの開示"
       content: "実は倒れたショックで、この件の詳細な記憶が飛んでいる。自分が何をしたか覚えていない。"
       
-    - speaker: P_Yamada
+    - speaker: P_X1
       action: "賞賛 (Acknowledgement)"
       content: "あなたは8月18日にわざわざ署まで来て、被支援者Dのために調書を残してくれた。あのおかげで捜査が動いたし、被支援者Dのブレーキにもなった。"
       validation: "山内氏の介入（Input Constitutional AIの実践）が、確実に警察を動かし、最悪の事態を防いだことを証明。"
@@ -1000,8 +1000,8 @@ strategic_analysis:
     - "脳出血後で記憶が曖昧だが、即座に状況を理解し、刑事の意図（安心させたい・感謝したい）を汲み取る。"
     - "『記憶がない』ことを正直に伝えつつ、それでも刑事との阿吽の呼吸で会話を成立させる。"
   police_bond:
-    - "山田刑事は、山内氏を『通報者』以上の『協力者』として扱っている。"
-    - "『上層部や縦割り（富田林署との管轄）』の壁を超えて、山内氏にだけは真実（実は捜査してる）を伝えておきたいという義理堅さ。"
+    - "X1刑事は、山内氏を『通報者』以上の『協力者』として扱っている。"
+    - "『上層部や縦割り（T署との管轄）』の壁を超えて、山内氏にだけは真実（実は捜査してる）を伝えておきたいという義理堅さ。"
   insight:
     - "現場の刑事もまた、組織の論理（事件にならないと動けない）と、目の前の悲劇（被支援者Dの境遇）の間で板挟みになっている。"
     - "山内氏のような『外部の遊撃手（Sherpa）』がいたからこそ、刑事も『公式には動けないが、裏で繋いでおく』という動きが取れた。"

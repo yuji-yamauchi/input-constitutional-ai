@@ -21,23 +21,23 @@ anonymization_mapping:
       replacement: "研究者Y"
     - original: "Yamauchi Yuji / yuji yamauchi"
       replacement: "Researcher Y"
-    - original: "山内継成"
+    - original: "[REDACTED]"
       replacement: "甥A"
-    - original: "山内龍一"
+    - original: "[REDACTED]"
       replacement: "甥B"
-    - original: "山内ノリコ"
+    - original: "[REDACTED]"
       replacement: "母N"
-    - original: "山内英司"
+    - original: "[REDACTED]"
       replacement: "父E（甥の父）/ 兄E（Puu視点）"
-    - original: "山内昌吉"
+    - original: "[REDACTED]"
       replacement: "祖父M"
-    - original: "山内美昌"
+    - original: "[REDACTED]"
       replacement: "長男S1"
-    - original: "山内景司"
+    - original: "[REDACTED]"
       replacement: "次男S2"
-    - original: "山内慎司"
+    - original: "[REDACTED]"
       replacement: "長兄C"
-    - original: "山内和成"
+    - original: "[REDACTED]"
       replacement: "双子W"
 
   locations:
@@ -70,7 +70,7 @@ anonymization_mapping:
 files_modified:
 
   critical:
-    - file: "00_daily_yamal/01_Cloude/2026_02_03_family_consultation_tsugusige.yaml"
+    - file: "00_daily_yamal/01_Cloude/2026_02_03_family_consultation_nephew_A.yaml"
       severity: "CRITICAL"
       changes:
         - "全家族名を匿名化ID（甥A, 甥B, 母N等）に置換"

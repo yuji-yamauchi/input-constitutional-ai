@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(source /c/Users/USER/Documents/GitHub/input-constitutional-ai/whisper-env/Scripts/activate)",
+      "Bash(whisper \"保護から権利へ：日本の障害者法.mp4\" --model medium --language ja --output_format srt --output_dir .)",
+      "Bash(python -c \":*)"
+    ]
+  }
+}

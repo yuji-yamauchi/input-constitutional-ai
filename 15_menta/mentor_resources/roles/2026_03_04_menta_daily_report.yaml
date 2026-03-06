@@ -1,0 +1,296 @@
+# ==========================================
+# MENTA日報 2026-03-04
+# ==========================================
+# 前日セッションからの継続
+# 松尾たかし成約後の成果物レビュー → 新規案件処理バッチ
+# ==========================================
+
+session:
+  date: "2026-03-04"
+  participants:
+    - 山内雄司（メンター）
+    - Claude（提案文起草・スクリーニング支援）
+  context:
+    previous_session: "2026-03-03（11案件提案＋松尾たかし成約＋成果物レビュー）"
+    active_contracts:
+      - name: "中島健吾"
+        status: "月額契約・継続中"
+        focus: "HOHOHO事業・自治体営業・BCP・法人設立準備"
+      - name: "松尾たかし"
+        status: "月額契約・新規成立"
+        focus: "医療×BCP・フリーランス事業設計"
+
+# ==========================================
+# 松尾たかし案件：成果物レビュー＋やりとり確認
+# ==========================================
+
+matsuo_review:
+  
+  status: "★5レビュー → 継続契約成立 → MENTAホーム掲載"
+  
+  conversation_highlights:
+    松尾さん発言:
+      - "3000円でここまで明確化してもらってありがたい。お金の問題ではない"
+      - "ぜひ山内さんに壁打ちしてもらいながら、私の副業をサポートしていただきたい"
+      - "LLMを使用しても難しい部分は月に2日ぐらいはサポートいただけるのでしょうか？"
+      - "本日はかなり勉強になり頭がパンパンです"
+    
+    山内さん発言:
+      - "多分松尾さんは特別なものは自分にはないって思ってたと思うんですけど、DX×AI時代には代替不可能なものがたくさんあるんですよね"
+      - "名称がわかりにくいですが継続的なサポートの場合こちらをお勧めしています"
+      - "GeminiとGPTはProプラン、ClaudeはMAXプランなのでそれだけで月額は2万円超えるので、調査や資料作成などだけでもお得とは思いますよ"
+  
+  soe_analysis:
+    key_observation: |
+      松尾さんが自発的に「LLMで自走＋月2日壁打ち」という構造を設計している。
+      HOWはLLMで自走、WHYの壁打ちだけメンターに頼る。
+      SoEの「卒業設計」がセッション初日から内蔵されている状態。
+    secretary_gpt_function: "秘書官・議事官ともに機能。松尾さんが秘書官に直接話しかけている"
+  
+  ownership_check:
+    growth_score: 5
+    honesty_score: 5
+    ownership_score: 5
+    note: "全スコア5/5。strong_matchの中でも最良のケース"
+
+# ==========================================
+# 新規案件処理バッチ（2026-03-04）
+# ==========================================
+
+proposals_batch:
+  
+  - id: 1
+    mentee: "長縄大貴"
+    category: "ビジネス / 会計・ファイナンス"
+    budget: "相談"
+    competitors: 3
+    judgment: "qualified_proposal"
+    proposal_type: "A〜D質問先行型"
+    key_rationale: "会計・ファイナンス＝税務3.5年＋IT経営15年の直球守備範囲"
+    status: "送信済み"
+  
+  - id: 2
+    mentee: "眞野誠生"
+    category: "プログラミング / インフラ・クラウド（AWS）"
+    budget: "相談"
+    competitors: 6
+    judgment: "mismatch"
+    proposal_type: "新ルール適用（mismatch→リダイレクト）"
+    key_rationale: "AWS技術指導＝HOW直球。守備範囲外"
+    status: "送信済み"
+  
+  - id: 3
+    mentee: "はにわさん"
+    category: "プログラミング / デザイン"
+    budget: "15,000円/月"
+    competitors: 8
+    judgment: "mismatch"
+    proposal_type: "新ルール適用"
+    key_rationale: "デザイン学習。テンプレ募集、情報ゼロ"
+    status: "送信済み"
+  
+  - id: 4
+    mentee: "Menter2Muratake"
+    category: "デザイン / ロゴ・イラスト"
+    budget: "相談（月額）"
+    competitors: 4
+    judgment: "qualified_proposal（strong寄り）"
+    proposal_type: "個別カスタマイズ（書き直し版）"
+    key_rationale: |
+      松尾パターンに類似。情報量が多く自分の言葉で書いている。
+      動物・古生物・幻獣のニッチ特化。美術系卒→異業種転々→ストレス退職→イラスト回帰。
+      「何度離れてもそこに戻ってきている。これは本物の軸」という言語化で踏み込み。
+      ビジネス設計（営業・税務・単価設定）が守備範囲。
+    initial_draft_issue: "テンプレ的な提案文→松尾パターン適用で書き直し"
+    mentor_observation: "ASD&ADHDの可能性（柱の不在）。ただし診断はこちらの領域ではない"
+    status: "送信済み（書き直し版）"
+  
+  - id: 5
+    mentee: "sam"
+    category: "プログラミング / サーバーサイド"
+    budget: "相談（単発）"
+    competitors: 0
+    judgment: "qualified_proposal（strong寄り）"
+    proposal_type: "個別カスタマイズ"
+    key_rationale: |
+      フリーランスエンジニア（Java/TS 5年）、単価天井が見えてきた。
+      Claude Code・Cursor活用中。SIer系主戦場。
+      法人化・副業・税制にも関心。
+      「発注者側として15年」の視点で差別化。
+      HOWは十分、WHYの壁打ち相手が必要な松尾・中島パターン。
+    status: "送信済み"
+  
+  - id: 6
+    mentee: "kayo TAKEU"
+    category: "デザイン / チラシ・パンフレット"
+    budget: "15,000円/月"
+    competitors: 0
+    judgment: "mismatch"
+    proposal_type: "新ルール適用"
+    key_rationale: "デザインレビュー＝HOW直球。「モチベートしてほしい」をWHY整理に接続したが本筋はデザイン添削"
+    bias_check: "解決志向バイアス（軽度）- 競合0人・15,000円/月に引っ張られる構造"
+    status: "送信済み"
+  
+  - id: 7
+    mentee: "k takashi"
+    category: "プログラミング / ノーコード"
+    budget: "不明"
+    competitors: 0
+    judgment: "qualified_proposal → 返信あり"
+    proposal_type: "A〜D質問先行 → 返信後に追加質問"
+    initial_info: "テンプレ募集、情報ゼロ"
+    reply_info:
+      business: "自社で職業紹介事業を運営（経営者）"
+      purpose: "職業紹介事業の管理システムをBubbleで構築したい"
+      tech_background: "PHP・DB実務経験あり、HTML/CSS理解あり"
+      constraint: "経営に専念、コード書く時間がない→ノーコードにシフト"
+      current_state: "Bubble触り始め、操作感・設計のお作法に苦戦"
+    follow_up_questions:
+      - "要件定義は固まっているか"
+      - "Bubbleで作ることは確定か"
+      - "外注ではなく自分で作りたい理由"
+      - "ISO27001/プライバシーマーク等の内部統制体制"
+    held_back_insights:
+      - "職業紹介事業は厚生労働大臣の許可が必要（許可取得済み前提）"
+      - "個人情報管理の許可要件とBubbleのデータ管理の整合性"
+      - "既製SaaS（PORTERS、HRBC等）の検討有無"
+      - "Lovableの方がBubbleより速い可能性"
+      - "Yujiの実績：ISO27001構築認証3回、ISO20000構築認証"
+    status: "追加質問送信済み・返信待ち"
+  
+  - id: 8
+    mentee: "tamaya"
+    category: "ビジネス / 会計・ファイナンス"
+    budget: "10,000円"
+    competitors: "不明"
+    judgment: "qualified_proposal（税務リスク修正）"
+    proposal_type: "個別対応（税理士法リスク回避版）"
+    key_rationale: |
+      freeeで確定申告、過去3年の売掛金消し込み未処理。
+      初稿で「売掛金消し込みのガイド」を提案→税理士法抵触リスクを山内氏が指摘。
+      具体的な仕訳指導＝税務業務＝税理士資格なしではアウト。
+      青色申告の取り消し要件にも該当しかねない深刻な問題。
+    correction:
+      initial_error: "税務3.5年の経験が活きると判断し、具体的仕訳指導を提案"
+      corrected_to: "freee窓口・LLMプロンプト指導・税理士相談への橋渡しに限定"
+      principle: "「できる」と「やっていい」は違う"
+    status: "送信済み（修正版）"
+  
+  - id: 9
+    mentee: "大橋里紗"
+    category: "デザイン / チラシ・パンフレット"
+    budget: "10,000円/月"
+    competitors: 5
+    judgment: "mismatch"
+    proposal_type: "新ルール適用"
+    key_rationale: "kayo TAKEUと同構造。デザイン学習テンプレ"
+    status: "送信済み"
+  
+  - id: 10
+    mentee: "Yazaki Rie"
+    category: "ビジネス / 起業・独立"
+    budget: "10,000円/月"
+    competitors: 0
+    judgment: "qualified_proposal"
+    proposal_type: "A〜D質問先行型"
+    key_rationale: "起業・独立カテゴリ＝直球守備範囲。競合0人。テンプレ募集・情報ゼロ"
+    status: "送信済み・返信待ち"
+  
+  - id: 11
+    mentee: "yuki watanabe"
+    category: "ライフスタイル / コーチング / ビジネス"
+    budget: "不明"
+    competitors: "不明"
+    judgment: "見送り"
+    key_rationale: |
+      赤信号2点：
+      1.「初回は無料相談でお願いします。複数人話してみて」
+        → メンターの時間と専門性をゼロ円で消費する構造
+      2.「人生計画」「コーチング」「ライフスタイル」
+        → メンタリングではなくライフコーチング領域
+        → 依存構造を作りやすい
+    status: "見送り（提案文なし）"
+
+# ==========================================
+# 本日の学び・原則更新
+# ==========================================
+
+learnings:
+  
+  monthly_contract_pattern:
+    title: "月額契約に至る人の共通構造"
+    factors:
+      - "生活がかかっている（趣味ではなく生計に直結）"
+      - "本業がある（副業・事業転換のリスク制約が明確）"
+      - "自分の中にコア資産を持っている（中島：除雪×歩行、松尾：急性期×ACLS）"
+      - "HOWは持っているがWHYの壁打ち相手が必要"
+    anti_pattern:
+      - "テンプレ募集＝切実さが見えない"
+      - "情報ゼロ＝具体的に踏み込めない→汎用提案→響かない"
+    proposal_key: "提案文に「あなた固有の情報」を織り込むこと"
+  
+  legal_risk_check:
+    title: "独占業務・非弁行為の線引き標準化"
+    principle: "「できる」と「やっていい」は違う"
+    checklist:
+      - scope: "税務の具体的仕訳指導"
+        law: "税理士法"
+        safe: "一般論の説明、プロンプト指導、専門家への橋渡し"
+        out: "個別具体的な仕訳判断・代行"
+      - scope: "法律相談・契約書レビュー"
+        law: "弁護士法"
+        safe: "一般的な制度説明、専門家紹介"
+        out: "個別案件への法的判断"
+      - scope: "労務・社会保険の手続き"
+        law: "社労士法"
+        safe: "制度概要の説明"
+        out: "具体的な届出・手続き代行"
+      - scope: "医療行為・診断"
+        law: "医師法"
+        safe: "一般的な健康情報"
+        out: "診断・処方・治療方針の判断"
+    trigger_case: "tamaya案件（freee売掛金消し込み）で初稿が税理士法に抵触するリスクを山内氏が指摘"
+  
+  proposal_quality_improvement:
+    title: "Muratake提案文の書き直しから得た教訓"
+    before: "テンプレ的なmismatch→リダイレクト提案"
+    after: "松尾パターン適用（相手固有の情報を織り込み、コア資産を名指しで認める）"
+    key_phrases:
+      - "何度離れてもそこに戻ってきている。これは本物の軸"
+      - "ここが今、一番の壁ではないでしょうか"
+      - "買い手の具体市場（出版・ゲーム・教育・グッズ）を提示"
+
+  見送り判断基準:
+    title: "yuki watanabe案件から得た見送り基準"
+    red_flags:
+      - "「初回無料」「複数人話してみて」→ メンターの時間を無料消費する構造"
+      - "「人生計画」「ライフコーチング」→ メンタリングではなく依存構造を作りやすい領域"
+      - "SoEの観点：自走ではなく依存を前提とした関係設計"
+
+# ==========================================
+# 案件統計
+# ==========================================
+
+statistics:
+  total_processed: 11
+  breakdown:
+    strong_match: 0
+    qualified_proposal: 5
+    mismatch: 4
+    見送り: 1
+    返信対応: 1
+  response_received: 1
+  active_contracts: 2
+  menta_home_featured: true
+  review_rating: "★5（松尾たかし）"
+
+# ==========================================
+# 次のアクション
+# ==========================================
+
+next_actions:
+  - "k takashi返信待ち（Bubble×職業紹介事業の追加質問）"
+  - "Yazaki Rie返信待ち（A〜D質問）"
+  - "松尾さん次回セッション：速度の速さリスク＋NotebookLM依存度の確認"
+  - "Muratake・sam・長縄大貴の返信監視"
+  - "提案スクリーニングに法的リスクチェック（独占業務）を標準組み込み"

@@ -1206,11 +1206,11 @@ event_record:
 conversation_log:
   speakers:
     Y: "山冁E��司 (Sherpa / 入院明け)"
-    P_Yamada: "山田刑亁E(川�E警察署 / 大阪府警)"
+    P_X1: "山田刑亁E(川�E警察署 / 大阪府警)"
 
   dialogue_flow:
     # 1. 相手への気遣ぁE��現状報呁E
-    - speaker: P_Yamada
+    - speaker: P_X1
       action: "安否確誁E
       content: "脳出血で倒れたと聞いたが大丈夫か！E仕事中か！E
       intent: "ビジネスライクな連絡ではなく、個人皁E��忁E�Eを含んだアプローチ、E
@@ -1220,18 +1220,18 @@ conversation_log:
       content: "2週間�E院して先週退院した。記�Eが少し飛んでぁE��が、会社は畳む準備中、E
       
     # 2. 本題：被支援者D�E�サガラ�E�事件の裏�E開示
-    - speaker: P_Yamada
+    - speaker: P_X1
       action: "惁E��開示 (Off-the-record)"
-      content: "被支援者Dの件、実�E『G氏�E�ウエノ）』とぁE��男に対する別件捜査�E�大麻など�E�が富田林署で進んでぁE��、E
+      content: "被支援者Dの件、実�E『G氏�E�ウエノ）』とぁE��男に対する別件捜査�E�大麻など�E�がT署で進んでぁE��、E
       revelation: "被支援者Dが言ってぁE��『G氏に監禁された』等�E話が、実�E警察�E部でも裏付け捜査されてぁE��、E
 
-    - speaker: P_Yamada
+    - speaker: P_X1
       action: "捜査終結�E報呁E
-      content: "ぁE���E�川�E署�E�としての捜査は一旦完結させるが、それ�E『見捨てた』わけではなく、富田林署の方で本丸�E�G氏�E�をめE��てぁE��からだ、E
+      content: "ぁE���E�川�E署�E�としての捜査は一旦完結させるが、それ�E『見捨てた』わけではなく、T署の方で本丸�E�G氏�E�をめE��てぁE��からだ、E
       intent: "山冁E��に対し、『警察�E何もしてなぁE��けじめE��ぁE��とぁE��言ぁE��と、信頼維持�Eための説明、E
 
     # 3. 現場刑事�E本音と共愁E
-    - speaker: P_Yamada
+    - speaker: P_X1
       action: "共愁E(Empathy)"
       content: "被支援者Dも新しい彼氏（ゼネコン飛�E職�E�ができて、G氏と縁が刁E��そうなら、それが一番ぁE��。警察が介�Eしてかき回すより、結果オーライならそれで済ませたぁE��E
       philosophy: "法的な白黒よりも、本人の平穏（実利�E�を優先する現場のリアリズム、E
@@ -1245,7 +1245,7 @@ conversation_log:
       action: "弱さ�E開示"
       content: "実�E倒れたショチE��で、この件の詳細な記�Eが飛んでぁE��。�E刁E��何をしたか覚えてぁE��ぁE��E
       
-    - speaker: P_Yamada
+    - speaker: P_X1
       action: "賞賁E(Acknowledgement)"
       content: "あなた�E8朁E8日にわざわざ署まで来て、被支援者Dのために調書を残してくれた。あのおかげで捜査が動ぁE��し、被支援者Dのブレーキにもなった、E
       validation: "山冁E���E介�E�E�Enput Constitutional AIの実践�E�が、確実に警察を動かし、最悪の事�Eを防ぁE��ことを証明、E
@@ -1255,8 +1255,8 @@ strategic_analysis:
     - "脳出血後で記�Eが曖昧だが、即座に状況を琁E��し、�E事�E意図�E�安忁E��せたぁE�E感謝したい�E�を汲み取る、E
     - "『記�EがなぁE��ことを正直に伝えつつ、それでも�E事との阿吽の呼吸で会話を�E立させる、E
   police_bond:
-    - "山田刑事�E、山冁E��を『通報老E��以上�E『協力老E��として扱ってぁE��、E
-    - "『上層部めE��割り（富田林署との管轁E��』�E壁を趁E��て、山冁E��にだけ�E真実（実�E捜査してる）を伝えておきたいとぁE��義琁E��E��、E
+    - "X1刑事�E、山冁E��を『通報老E��以上�E『協力老E��として扱ってぁE��、E
+    - "『上層部めE��割り（T署との管轁E��』�E壁を趁E��て、山冁E��にだけ�E真実（実�E捜査してる）を伝えておきたいとぁE��義琁E��E��、E
   insight:
     - "現場の刑事もまた、絁E���E論理�E�事件にならなぁE��動けなぁE��と、目の前�E悲劁E��被支援者Dの墁E���E��E間で板挟みになってぁE��、E
     - "山冁E���Eような『外部の遊撃手！Eherpa�E�』がぁE��からこそ、�E事も『�E式には動けなぁE��、裏で繋いでおく』とぁE��動きが取れた、E
@@ -2015,11 +2015,11 @@ transcript:
   - speaker: "female_speaker"
     text: "私、山冁E��んに負けたんか、E
   - speaker: "male_speaker"
-    text: "ぁE��違う違う違う。二ツ石さんに負けてん�Eよ、E
+    text: "ぁE��違う違う違う。Fさんに負けてん�Eよ、E
   - speaker: "female_speaker"
-    text: "あ�E二ツ石さんね、E
+    text: "あ�EFさんね、E
   - speaker: "male_speaker"
-    text: "二ツ石さん悪ぁE��じゃなぁE��な。いぁE��よな、E
+    text: "Fさん悪ぁE��じゃなぁE��な。いぁE��よな、E
   - speaker: "female_speaker"
     text: "まあ悪ぁE��じゃなかったらそれでぁE��と思うけどな、E
   - speaker: "male_speaker"
@@ -2035,7 +2035,7 @@ transcript:
   - speaker: "female_speaker"
     text: "あ�E、確かに、E
   - speaker: "male_speaker"
-    text: "あんまりな、えーっと。ただ、やっぱり篠原さんがどぁE��れ�E楽になるかってぁE��話だよな、E
+    text: "あんまりな、えーっと。ただ、やっぱりHさんがどぁE��れ�E楽になるかってぁE��話だよな、E
   - speaker: "female_speaker"
     text: "ぁE�Eん、どぁE��れ�E楽になる！E
   - speaker: "male_speaker"
@@ -2083,7 +2083,7 @@ transcript:
   - speaker: "female_speaker"
     text: "みんな案外見てなぁE��んなんですよ、E
   - speaker: "male_speaker"
-    text: "で、篠原さんがスルーってぁE��のはちめE��と悲しかったかな、E
+    text: "で、HさんがスルーってぁE��のはちめE��と悲しかったかな、E
   - speaker: "female_speaker"
     text: "ごめんなさい、E
   - speaker: "female_speaker"
@@ -2165,7 +2165,7 @@ transcript:
   - speaker: "male_speaker"
     text: "楽ではなぁE��、E
   - speaker: "female_speaker"
-    text: "松尾さんに言っとぁE��ほしい。もぁE��めE��と女忁E��かりよな、あぁE��。�Eジピ�Eターパン、E
+    text: "Jさんに言っとぁE��ほしい。もぁE��めE��と女忁E��かりよな、あぁE��。�Eジピ�Eターパン、E
   - speaker: "male_speaker"
     text: "ぁE��、あの、多�E女忁E�Eかる男ってそんなに数多くねえぞ、E
   - speaker: "female_speaker"

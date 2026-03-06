@@ -28,7 +28,7 @@ session_record:
       - "暖色系デザイン + BIZ UDGothic（ユニバーサルデザインフォント）"
       - "Gemini連携による画像素材生成（ロゴ・ヒーロービジュアル・カード画像）"
       - "お名前.comレンタルサーバーへのアップロード・公開確認"
-      - "DNS Aレコード設定（160.251.148.217）"
+      - "DNS Aレコード設定（[REDACTED]）"
       - "ネームサーバーRS切り替え + Microsoft 365 DNSレコード再登録"
       - "GitHub Actions FTPデプロイワークフロー作成"
       - "GitHub Secrets（FTP_PASSWORD）登録"
@@ -81,10 +81,10 @@ session_record:
 
     hosting:
       provider: "お名前.com レンタルサーバー（RSプラン）"
-      server_id: "rs2321383"
-      ftp_host: "www1103.onamae.ne.jp"
-      ftp_user: "rs2321383"
-      server_ip: "160.251.148.217"
+      server_id: "[REDACTED]"
+      ftp_host: "[REDACTED]"
+      ftp_user: "[REDACTED]"
+      server_ip: "[REDACTED]"
 
   # =================== ページ構成 ===================
   page_structure:
@@ -165,7 +165,7 @@ session_record:
         record:
           type: "A"
           host: "d-rel.jp"
-          value: "160.251.148.217"
+          value: "[REDACTED]"
         result: "http://d-rel.jp でサイト表示成功"
 
       step_2:

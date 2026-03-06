@@ -13,9 +13,9 @@ session_context:
   source_material:
     description: "Gemini により文字起こしされた支援・教育・家族を含む四者面談ログ"
     speakers:
-      A: "当事者（藤田）"
+      A: "当事者F"
       B: "支援員（山内）"
-      C: "教員（石井）"
+      C: "教員I"
       D: "親族（父）"
   user_intent:
     initial_misunderstanding: "話者整理・技術処理の依頼と誤認"

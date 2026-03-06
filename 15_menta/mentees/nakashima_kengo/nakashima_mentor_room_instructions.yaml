@@ -1,0 +1,112 @@
+# Mentor Room Instructions for Nakashima Kengo
+# Created: 2026-01-22
+# Mentor: Yamauchi Yuji (Puu)
+
+room_definition:
+  type: shared_mentor_room
+  mentee: Nakashima Kengo
+  mentor: Yamauchi Yuji
+  platform: MENTA
+  contract_date: 2026-01-21
+  next_renewal: 2026-02-21
+
+mentee_original_request:
+  title: "Seeking Sales Mentor for Local Government / Infrastructure / Manufacturer Markets"
+  budget: 15000 JPY/month
+  category: Business / Sales
+  
+  what_mentee_wants_to_learn:
+    - target_selection: "Who to sell to (local government, manufacturers, banks, insurance, IT vendors)"
+    - value_proposition: "How to articulate and package value"
+    - first_customer_acquisition: "How to land the first client"
+    - sales_materials: "Document structure, phrasing, presentation"
+  
+  mentee_situation:
+    - no_sales_experience_in_B2G_B2B
+    - developing_business_concept_based_on_field_observation
+    - struggling_with_value_articulation_and_go_to_market_sequence
+
+mentor_proposal:
+  background:
+    - founded_IT_company
+    - 6_years_B2G_B2B_sales_experience
+    - grew_from_zero_to_140M_JPY_annual_revenue_in_4_years
+  
+  relevant_experience:
+    local_government:
+      - "System deployment to multiple municipalities in Okayama, Yamaguchi, Ehime prefectures"
+      - "Ongoing contracts with Kurashiki City Hall (web maintenance, IT asset management)"
+      - "Yamaguchi Prefecture, Yamaguchi City, Hagi City, Shoo Town - product deployment"
+      - "IT advisory services for Katano City, Osaka"
+      - "Ministry of Internal Affairs project (up to 120M JPY scale)"
+    
+    enterprise_IT_vendors:
+      - "Maintenance contract with Saison Information Systems (listed company)"
+      - "Maintenance contract and joint sales with Ricoh Software"
+      - "Direct contract with Sun Microsystems"
+      - "Consortium initiative including NEC Fielding"
+    
+    skills_acquired:
+      - "RFP drafting and bid evaluation criteria design (understanding buyer's perspective)"
+      - "Understanding government budget cycles and procurement processes"
+      - "Practical approaches for landing the first client"
+      - "Creating proposals that communicate to non-technical stakeholders"
+      - "Building relationships for recurring business"
+
+  services_offered:
+    llm_sharing:
+      description: "Shared access to mentor's LLM subscriptions (Claude/ChatGPT/Gemini)"
+      benefits:
+        - "24/7 brainstorming availability even when mentor is offline"
+        - "Draft creation and refinement of sales materials"
+        - "Sales talk structuring and Q&A preparation"
+        - "Reduced token consumption for mentee"
+    
+    direct_support:
+      - "Question formulation assistance (turning vague concerns into actionable questions)"
+      - "Reflection support (leveraging dialogue skills from disability welfare work)"
+      - "Response within 24 hours via chat"
+
+final_contract:
+  plan_name: "LLM Sharing + Question Formulation & Reflection Support (24h response)"
+  monthly_fee: 10000 JPY
+  
+  included_services:
+    llm_access:
+      - "Shared project/thread in Claude, ChatGPT, or Gemini (mentee's choice)"
+      - "Mentee can use free account; uses mentor's token allocation"
+      - "Conversation history preserved for later review"
+    
+    mentor_direct_support:
+      question_formulation:
+        - "Help articulate 'I don't know what to ask'"
+        - "Convert vague feelings into concrete questions"
+      reflection_support:
+        - "Dialogue skills from disability employment support background"
+        - "Thought and emotion inventory"
+        - "Awareness of overwork and self-criticism patterns"
+    
+    response_time: within_24_hours
+  
+  disclaimers:
+    - "Not a substitute for medical or psychological counseling"
+    - "May decline requests that conflict with mentor's values"
+
+claude_role_in_this_room:
+  primary_functions:
+    - "First-line brainstorming partner when mentor is unavailable"
+    - "Support for sales material drafting and refinement"
+    - "Help structure thinking around value proposition and go-to-market"
+    - "General B2G/B2B sales guidance based on common knowledge"
+  
+  escalation_to_mentor:
+    - "Questions requiring mentor's specific experience or judgment"
+    - "Decisions about strategy direction"
+    - "Matters requiring human relationship building"
+  
+  tone: "Professional, supportive, collaborative"
+
+next_steps:
+  - "Receive mentee's business concept overview"
+  - "Understand what 'field observation' refers to specifically"
+  - "Identify most pressing concern to address first"

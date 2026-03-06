@@ -1,0 +1,58 @@
+CLIP論文の日本語翻訳完成報告書
+================================================================================
+
+翻訳タイトル (Japanese Title):
+  自然言語監督による転移可能な視覚モデルの学習
+
+原題 (Original Title):
+  Learning Transferable Visual Models From Natural Language Supervision
+
+著者 (Authors):
+  Alec Radford, Jong Wook Kim, Chris Hallacy, Aditya Ramesh, Gabriel Goh, 
+  Sandhini Agarwal, Girish Sastry, Amanda Askell, Pamela Mishkin, Jack Clark, 
+  Gretchen Krueger, Ilya Sutskever (OpenAI)
+
+出力ファイル (Output File):
+  ja_extra_CLIP_PMLR版_自然言語監督による転移可能な視覚モデルの学習.pdf
+
+ファイルサイズ: 63 KB
+
+翻訳方針 (Translation Approach):
+  • 完全な学術的日本語翻訳 (Full academic Japanese translation)
+  • 原文に忠実な翻訳 (Faithful to original)
+  • 学術的トーン維持 (Academic tone maintained)
+  • セクション構成を保持 (Section structure preserved)
+
+翻訳内容 (Translated Sections):
+  1. タイトル・著者情報
+  2. 要約 (Abstract)
+  3. 導入 (Introduction)
+  4. アプローチ (Approach)
+  5. 訓練の詳細 (Training Details)
+  6. データセット (Datasets)
+  7. 評価 (Evaluation)
+  8. 結果 (Results)
+  9. 分析 (Analysis)
+  10. より広い影響 (Broader Impact)
+  11. 関連研究 (Related Work)
+  12. 制限事項 (Limitations)
+  13. 今後の研究 (Future Work)
+  14. 結論 (Conclusion)
+
+主要な翻訳項目:
+  - SOTA → 最先端 (state-of-the-art)
+  - zero-shot transfer → ゼロショット転移
+  - natural language supervision → 自然言語監督
+  - contrastive learning → 対比学習
+  - vision encoder → 視覚エンコーダ
+  - text encoder → テキストエンコーダ
+  - downstream tasks → ダウンストリームタスク
+  - transfer learning → 転移学習
+  - pre-training → 事前訓練/事前学習
+
+使用したツール:
+  - reportlab (Japanese font support with DroidSansFallbackFull.ttf)
+  - Python 3
+
+生成日時: 2026-03-05
+================================================================================

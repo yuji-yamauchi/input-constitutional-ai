@@ -1,0 +1,433 @@
+# ==========================================
+# MENTA運営セッション記録
+# ==========================================
+meta:
+  date: "2026-02-23"
+  session_type: "提案作成・案件スクリーニング・研究インフラ整備"
+  previous_session: "2026-02-22-02-27-56-menta-session-proposals-screening-patterns.txt"
+  transcript: "本セッションのcompacted transcript参照"
+
+# ==========================================
+# 進行中案件ステータス
+# ==========================================
+active_cases:
+
+  krank:
+    status: "進行中"
+    update:
+      - "産業医面談: 2/24（火）13:15〜 実施予定"
+      - "ゲーム理論資料（Beyond Zero Sum）をNotebookLMで作成→提供済み"
+      - "資料の目的: 認知フレーム安定化（ゼロサム思考への移行予防）"
+      - "GPT書記官による議事録(2026_02_19_krank.md)で構造記録済み"
+    design_insight:
+      surface: "雑談中に出てきた教養コンテンツ"
+      middle: "産業医面談前の認知フレーム安定化"
+      deep: "ゼロサム思考への移行を構造的に予防する防波堤"
+    note: "INTJ-T特性を活用。理論で安心させる設計。確信犯リスク対応は維持"
+
+  nemurukun:
+    status: "離脱濃厚"
+    note: "前回予測通り。プラン購入なし"
+
+  osaki:
+    status: "離脱確定"
+    note: "前回予測通り。返信なし"
+
+  akihiko:
+    status: "返信あり→比較検討中"
+    response: "「他の方からの提案も含めて検討中です。ご契約の際はよろしくお願いします」"
+    tone: "丁寧・比較検討型"
+    action: "押さず待ち"
+
+  aiueo:
+    name_alias: "あいうえおかきくけこなにぬねの（いぬねこ）"
+    status: "返信あり→比較検討中"
+    response: "「ご連絡ありがとうございます。検討させて頂きます」"
+    initial_assessment: "名前から冷やかし・テスト投稿の可能性→返信はまとも"
+    action: "押さず待ち"
+
+# ==========================================
+# 本日の提案作成（16件）
+# ==========================================
+proposals:
+
+  # --- 1. Yuki Fujimori ---
+  - id: "yuki_fujimori"
+    title: "ビジネス/起業（ソロプレナー）"
+    category: "起業・独立"
+    judgment: "strong_match"
+    budget: "相談"
+    competitors: 3
+    key_signals:
+      - "ソロプレナー、デジタル商品EC"
+      - "優先順位の整理を求めている"
+      - "海外で活躍された方を希望"
+    proposal_features:
+      - "サン・マイクロシステムズNDA締結・英国OBE研究交流の経歴を記載"
+      - "ソロプレナーの最重要意思決定＝やらないことを決める"
+    note: "希望メンター条件「海外経験」に応える形で経歴開示"
+
+  # --- 2. 仲野将規 ---
+  - id: "nakano_masaki"
+    title: "プログラミング/フルスタック"
+    category: "プログラミング"
+    judgment: "qualified_proposal"
+    budget: "10,000円/月"
+    competitors: 7
+    key_signals:
+      - "進め方や計画の整理"
+      - "優先度や進行ステップ"
+    note: "youunさん・Hamuさんと同パターン"
+
+  # --- 3. Mickey4365 ---
+  - id: "mickey4365"
+    title: "個人開発アプリの伴走・設計レビュー"
+    category: "スマートフォンアプリ"
+    judgment: "qualified_proposal（Yuji判断で方針転換）"
+    budget: "1ヶ月/3万円〜"
+    competitors: 0
+    initial_assessment: "mismatch（技術指導は守備範囲外）"
+    yuji_override:
+      reasoning: |
+        ジョージア工科大学、ASD+ADHD、Cursorで未経験から個人開発、
+        4/1クラファン・5/4リリース。
+        ここまでできるのにMENTAに来ているのは、
+        技術の問題ではなく信頼できるパートナーの喪失が根にある。
+        半年前のAIツールと今のAIツールでは能力が違う。
+        「誰かに依存しないアプリ」を今のAIで再構築できる可能性。
+        リスタートの整理なら守備範囲。
+    proposal_features:
+      - "技術伴走はできないと明記"
+      - "知人エンジニア離脱後のリスタート設計を提案"
+      - "AIツールで自走体制を構築する視点"
+    n_count_note: "ASD+ADHD開示。n=6"
+
+  # --- 4. akihiko（44歳からリスタート） ---
+  - id: "akihiko"
+    title: "キャリア相談"
+    category: "その他"
+    judgment: "qualified_proposal（concern要素あり）"
+    budget: "相談"
+    competitors: 5
+    key_signals:
+      - "長い間メンタルの闘病"
+      - "44歳からリスタート"
+      - "病状安定・運動継続"
+      - "多才（D6ボイス、作曲、俳句、企画、シナリオ等）"
+      - "クラファン失敗経験"
+      - "上京準備中"
+    bias_alert: "救世主コンプレックスリスク。闘病＋リスタート＋多才＝過剰同一化の引力"
+    response_received: "比較検討中（丁寧な返信）"
+    n_count_note: "メンタル闘病歴。n=7"
+
+  # --- 5. Allen Ray ---
+  - id: "allen_ray"
+    title: "AIプロダクト開発/バイブコーディング"
+    category: "AIプロダクト開発"
+    judgment: "qualified_proposal"
+    budget: "相談"
+    competitors: 1
+    key_signals:
+      - "プログラミング経験ゼロ"
+      - "Claude Code / Cursorでプロダクト開発"
+      - "決済・サブスク・管理画面まで実装したい"
+      - "バイブコーディングでローンチ→売上"
+    proposal_features:
+      - "Lovable実体験に基づくフィードバック"
+      - "「作れることと売れることは別」を明記"
+      - "LLMでPoCを先に回す提案"
+
+  # --- 6. 緋桜 ---
+  - id: "hisakura"
+    title: "マーケティング/マーケティング戦略"
+    category: "マーケティング戦略"
+    judgment: "qualified_proposal"
+    budget: "相談"
+    competitors: 1
+    key_signals:
+      - "成果物やアウトプットのレビュー"
+      - "改善点やブラッシュアップの方向性"
+    correction_note: "初回ドラフトで「まだ決めていない」を主軸にしてしまい、Yujiに指摘された"
+
+  # --- 7. まやや ---
+  - id: "mayaya"
+    title: "進め方や計画について相談"
+    category: "その他"
+    judgment: "qualified_proposal"
+    budget: "10,000円/月"
+    competitors: 2
+    key_signals:
+      - "一人では判断が難しい"
+      - "客観的なサポート"
+      - "優先度や進行ステップ"
+
+  # --- 8. R's ty ---
+  - id: "rs_ty"
+    title: "占い/占星術 学習計画"
+    category: "占星術"
+    judgment: "qualified_proposal"
+    budget: "相談"
+    competitors: 3
+    key_signals:
+      - "インスタ＆スレッズでの集客→有料鑑定（10万円クラス）"
+      - "無料タロットから有料への導線"
+      - "プランを見に来ている（フォロー済み）"
+    proposal_features:
+      - "占いを「意思決定の伴走」と捉えているなら接続可能"
+      - "アセスメント手法としての占いの構造分析を提案文に統合"
+    yuji_insight: |
+      占いとSoEのアセスメントは構造的に同じ。
+      ①帰納的アセスメント（過去→現在のパターン推定）
+      ②演繹的推論（現在→未来の選択肢絞り込み）
+      ③分岐の選択（SoE＝本人に選ばせる / 占い＝ランダム性で1つに絞る）
+      ③の設計思想の違いが決定的。根拠の透明性が分かれ目。
+
+  # --- 9. manaaaa ---
+  - id: "manaaaa"
+    title: "デザイン/Webデザイン レビュー"
+    category: "Webデザイン"
+    judgment: "qualified_proposal"
+    budget: "相談"
+    competitors: 4
+    key_signals:
+      - "成果物やアウトプットのレビュー"
+      - "改善点やブラッシュアップの方向性"
+
+  # --- 10. uri oku ---
+  - id: "uri_oku"
+    title: "ビジネス/マネジメント"
+    category: "マネジメント"
+    judgment: "qualified_proposal"
+    budget: "相談"
+    competitors: 0
+    key_signals:
+      - "30代女性、美容系ビジネスで成長中"
+      - "モチベートしてほしい"
+      - "優先度や進行ステップ"
+    proposal_features:
+      - "モチベーター型の励ましはできないと明記"
+      - "youunさんと同じWHY不在パターンとして対応"
+
+  # --- 11. 迫好亮 ---
+  - id: "sako_yoshiaki"
+    title: "ビジネス/ビジネスコミュニケーション"
+    category: "ビジネスコミュニケーション"
+    judgment: "qualified_proposal"
+    budget: "相談"
+    competitors: 3
+    key_signals:
+      - "到達度と課題を整理"
+      - "目標達成に向けたステップ設計"
+
+  # --- 12. 喜多大作 ---
+  - id: "kita_daisaku"
+    title: "AI・機械学習/機械学習"
+    category: "機械学習"
+    judgment: "qualified_proposal"
+    budget: "相談"
+    competitors: 6
+    key_signals:
+      - "学習始めたばかり"
+      - "進め方を知りたい"
+      - "到達度と課題の整理"
+
+  # --- 13. 池田 ---
+  - id: "ikeda"
+    title: "プログラミング/ノーコード トラブル解決"
+    category: "ノーコード"
+    judgment: "qualified_proposal"
+    budget: "10,000円/月"
+    competitors: 7
+    key_signals:
+      - "課題やトラブルの原因整理"
+      - "解決までの方針"
+
+  # --- 14. yoshi 178 ---
+  - id: "yoshi_178"
+    title: "機械学習/生成AI 業務メール自動分類"
+    category: "機械学習"
+    judgment: "qualified_proposal（strong寄り）"
+    budget: "10,000円/月"
+    competitors: 1
+    key_signals:
+      - "業務メールのテキスト分類（業務レベル）"
+      - "ルールベース vs ML vs LLMの比較検討"
+      - "教師データの作り方、分類精度の実務基準"
+      - "Tableau実務経験あり"
+      - "コードではなく設計・判断基準のレビューを求めている"
+    proposal_features:
+      - "LLMでまずPoC→必要に応じてMLへ切り替えの提案"
+      - "運用コスト・メンテナンス性・組織に残せるかの視点"
+    note: "課題の解像度が非常に高い。WHYが明確なケース"
+
+  # --- 15. ikot ---
+  - id: "ikot"
+    title: "AI・機械学習 相談"
+    category: "プログラミング"
+    judgment: "qualified_proposal"
+    budget: "相談"
+    competitors: 5
+    key_signals:
+      - "まだ学習を始めていない"
+      - "何ができるのか、可能性を知りたい"
+      - "WHY以前の探索フェーズ"
+
+  # --- 16. kanatr ---
+  - id: "kanatr"
+    title: "ライティング 進め方や計画"
+    category: "ライティング"
+    judgment: "qualified_proposal"
+    budget: "10,000円/月"
+    competitors: 6
+    key_signals:
+      - "学習始めたばかり"
+      - "基礎や仕組みを理解したい"
+
+# ==========================================
+# 追加提案（本日分）
+# ==========================================
+additional_proposals:
+
+  - id: "saki"
+    title: "新しい働き方について"
+    category: "ライフスタイル/悩み相談"
+    judgment: "qualified_proposal（concern要素あり）"
+    budget: "相談（単発）"
+    competitors: 2
+    key_signals:
+      - "29歳女性、16歳から働いてきた"
+      - "去年11月退職、定着できない"
+      - "辞めないと心身に限界がくる繰り返し"
+      - "求人サイトにピンとこない"
+      - "代用が効く仕事より創っていく仕事を望む"
+    yuji_note: "少し怪しげな相談者"
+    concern: "定着困難→心身の限界→退職の繰り返し＝発達特性or適応障害圏の可能性"
+    n_count_note: "n=8の可能性"
+
+  - id: "aiueo"
+    title: "ビジネス/起業・独立"
+    category: "起業・独立"
+    judgment: "qualified_proposal（低期待値）"
+    budget: "10,000円/月"
+    competitors: 0
+    key_signals:
+      - "名前「あいうえおかきくけこなにぬねの」"
+      - "テスト投稿or冷やかしの可能性"
+      - "内容自体は標準的な起業相談"
+    response_received: "「検討させて頂きます」→まともな返信"
+
+# ==========================================
+# 累計統計
+# ==========================================
+statistics:
+  total_proposals_this_session: 18  # 16件＋追加2件
+  total_proposals_cumulative: "56件+"  # 前回36件＋本日18件＋前々回分
+  
+  judgment_distribution:
+    strong_match: 1          # yuki_fujimori
+    strong_leaning: 1        # yoshi_178
+    qualified_proposal: 12
+    qualified_with_concern: 3  # mickey4365, akihiko, saki
+    low_expectation: 1       # aiueo
+    mismatch_override: 0
+  
+  responses_received:
+    akihiko: "比較検討中"
+    aiueo: "検討中"
+
+  n_count_update:
+    current: "n=6〜8（mickey4365, akihiko, saki追加）"
+    confirmed: "ASD+ADHD(mickey4365), メンタル闘病(akihiko), 定着困難(saki)"
+    note: "MENTAのキャリア・起業カテゴリにおける精神的課題保持率の高さが継続的に確認"
+
+# ==========================================
+# 構造的洞察
+# ==========================================
+insights:
+
+  assessment_and_divination:
+    title: "占いとSoEアセスメントの構造的同一性"
+    discovery: |
+      占い・宗教カウンセリング・キャリアコンサルティング・SoEは
+      ①帰納的アセスメント（過去→現在のパターン推定）と
+      ②演繹的推論（現在→未来の選択肢絞り込み）を共有している。
+      ③分岐の選択で分かれる：
+        - 占い: ランダム性で1つに絞る→決断責任の外部化→依存構造
+        - SoE: 複数選択肢を提示し本人に選ばせる→主体性の保持
+      精度は①②で決まり、③は設計思想の違い。
+      根拠の透明性（「カードがそう出た」vs「発言パターンから推定した」）が
+      本人主権の度合いを決定する。
+    soe_implication: |
+      修士論文の理論フレームとして使える可能性。
+      「占い・宗教カウンセリング・キャリアコンサル・SoEは
+      ①②を共有しているが、③の設計思想で本人主権の度合いが分かれる」
+
+  krank_resource_design:
+    title: "クランクさんへのゲーム理論資料の3層設計"
+    structure:
+      surface: "雑談中に出てきた教養コンテンツ"
+      middle: "産業医面談前の認知フレーム安定化"
+      deep: "ゼロサム思考への移行を構造的に予防する防波堤"
+    method: |
+      GPTプロンプト設計→NotebookLM生成→Claude Markdown変換。
+      本人に「勉強しなさい」ではなく「面白い資料」として渡す。
+      INTJ-T特性（理論で武装したがる、構造を理解すると落ち着く）を活用。
+      支援シーケンス②（安全と温度の確保）段階での④（学習）素材。
+
+  machine_learning_bubble:
+    title: "「機械学習を学ぶ」バブルの構造"
+    observation: |
+      リスキリング文脈で「プログラミング」の次のバズワードが「AI・機械学習」。
+      構造は同じ。「プログラミングを学べば稼げる」→「機械学習を学べば稼げる」への置換。
+      市場現実: 数学＋Python＋ドメイン知識の三位一体が最低条件。
+      LLMの進化で従来MLの守備範囲がAPI一発で解決可能に。
+      yoshi178のようにWHYが明確なケースは設計支援として意味があるが、
+      「何ができるか知りたい」段階では羅針盤なしの航海。
+
+# ==========================================
+# DeepResearchプロンプト作成
+# ==========================================
+research_infrastructure:
+  title: "メンタリング技術の学術的エビデンス体系レポート"
+  purpose:
+    - "MENTAサービスの学術的裏付け（信頼性向上）"
+    - "メンタリング技術の自己研鑽・体系化"
+  scope:
+    - "メンタリングの定義と類型（mentoring/coaching/counseling/consultingの境界）"
+    - "メンタリング効果のメタ分析（Allen 2004, Eby 2008等）"
+    - "メンタリング関係の質と構造（Kram 1985フェーズモデル）"
+    - "アセスメント技法の統合（Big Five, HPI, 仮説駆動型）"
+    - "メンターコンピテンシーとバイアス管理（Schön 1983）"
+    - "テキストベース・非同期メンタリングの有効性"
+    - "主体性とエンパワメント（SDT, Zimmerman, Rappaport）"
+  output: "Markdown形式、APA 7th、50〜80ページ相当"
+  next_step: "GPT or Gemini DeepResearchに投入→初版をClaude相互監査"
+
+# ==========================================
+# 次回アクション
+# ==========================================
+next_actions:
+  immediate:
+    - "クランクさん: 産業医面談(2/24)後の報告待ち"
+    - "akihiko: 比較検討の結果待ち"
+    - "いぬねこ: 検討結果待ち"
+    - "提案18件: 返信待ち"
+  
+  short_term:
+    - "大学院合格発表: 2/25（あと2日）"
+    - "DeepResearchプロンプト投入→初版監査"
+    - "ChatGPT無料プラン＋グループチャット検証継続"
+  
+  medium_term:
+    - "Lovable導入判断"
+    - "SoE PoC設計（アセスメントアプリ）"
+    - "MENTA提案のコンバージョン率追跡"
+
+# ==========================================
+# 参照ファイル
+# ==========================================
+references:
+  - "2026_02_19_krank.md: クランクさんGPT書記官議事録"
+  - "Beyond_Zero_Sum_圧縮_.pdf: ゲーム理論資料（NotebookLM生成）"
+  - "beyond_zero_sum_summary.md: 上記のMarkdown要約（Claude作成）"
+  - "前回セッション: 2026-02-22-02-27-56-menta-session-proposals-screening-patterns.txt"

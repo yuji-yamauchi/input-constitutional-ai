@@ -31,7 +31,7 @@ properly_placed:
       status: "OK"
     - file: "2026_02_03_cl.md"
       status: "OK"
-    - file: "2026_02_03_family_consultation_tsugusige.yaml"
+    - file: "2026_02_03_family_consultation_nephew_A.yaml"
       status: "OK"
     - file: "2026_02_04_cl.yaml"
       note: "トランスナラティブ発見セッション。大規模（1000行超）"

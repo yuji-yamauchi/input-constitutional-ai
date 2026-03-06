@@ -1,0 +1,139 @@
+# 中島健吾 プロフィール
+# 作成日: 2026-01-23
+# 情報源: メンターシップセッション記録、性格分析
+
+basic_info:
+  name_ja: 中島 健吾
+  name_en: Nakashima Kengo
+  role: HOHOHOプロジェクト創業者
+  mentor: 山内 雄司（Yamauchi Yuji / Puu）
+  mentorship_platform: MENTA
+  contract_period: 2026-01-21 ~ 2026-02-21
+
+family_and_finance:
+  spouse: あり
+  dependents: 2名
+  housing: 持ち家（住宅ローン残債あり）
+  spouse_support_for_startup: あり
+  side_income_sustainability: 副業収入で生活費を賄える見込み
+  bookkeeping_knowledge: なし
+
+personality_analysis:
+  disclaimer: "AIによる観察メモ。臨床的・正式な評価ではない"
+
+  japanese_proficiency:
+    level: ネイティブ
+    notes: "ビジネス・専門領域での高度な運用が可能。抽象的な概念整理、行政・企業向け資料、交渉文面の調整を高精度に行える"
+
+  big_five:
+    openness:
+      rating: 高
+      notes: "新規アイデア創出、異分野横断、概念化・再構築を好む"
+    conscientiousness:
+      rating: やや高
+      notes: "テンプレ化、記録、ルーティン化を重視。構造と再現性を大切にする"
+    extraversion:
+      rating: やや低
+      notes: "少人数・深い対話を好む。場当たり的な社交は消耗しやすい"
+    agreeableness:
+      rating: 中程度
+      notes: "協調性は高いが、納得できない点は率直に指摘する"
+    neuroticism:
+      rating: やや高
+      notes: "将来不安や評価への敏感さがある一方、内省を通じて行動改善に転換できる"
+
+  mbti:
+    estimated_type: INTJ
+    secondary_element: INFJ要素あり
+    confidence: 中
+    notes: "長期ビジョン、構造設計、改善志向が強い。価値観へのこだわりと人への配慮も見られる"
+
+  hpi_proxy:
+    adjustment:
+      rating: やや低
+      notes: "プレッシャー下で不安を感じやすいが、言語化と仕組み化で回復できる"
+    ambition:
+      rating: 高
+      notes: "目標設定が明確で、社会的インパクトや成果にコミットする"
+    sociability:
+      rating: やや低
+      notes: "広い社交より、目的のある対話や信頼関係を重視"
+    interpersonal_sensitivity:
+      rating: やや高
+      notes: "相手の意図・感情を読み取り、翻訳・調整する力が高い"
+    prudence:
+      rating: やや高
+      notes: "計画性とリスク配慮がある。無謀な賭けは避ける傾向"
+    inquisitive:
+      rating: 高
+      notes: "問いを立て、仮説検証を回す探究心が非常に強い"
+    learning_approach:
+      rating: 高
+      notes: "継続学習、反復、アウトプット前提の学習設計が得意"
+
+strengths:
+  core_competencies:
+    - 構造化・言語化・再現性設計
+    - 改善志向と長期視点
+    - 専門と非専門の橋渡し
+    - 現場違和感を構造化し続ける持久力
+
+  optimal_positioning:
+    role: "翻訳者・右腕"
+    description: "構想を構造化し、伝わる形に落とすポジションで最大価値を発揮"
+
+  work_style_fit:
+    - 裁量があり、成果基準が明確な環境
+    - 深い集中と内省の時間を確保できる働き方（リモート、プロジェクト制）
+    - 補完パートナーとの協業（営業・表舞台は他者と分担）
+
+considerations:
+  accommodations:
+    - 役割定義の明確化
+    - 成果物ベースの評価
+    - 過度な同時多発タスクの回避
+
+  stress_factors:
+    - 曖昧な指示や政治的駆け引き
+    - 上司依存度が高い環境
+    - 場当たり的な社交の多い環境
+
+business_vision:
+  project_name: HOHOHO
+  mission: "「歩く」という行為を通じて、安全な社会インフラを次世代に継承する"
+
+  startup_model:
+    selected: "実地での調査サービス会社"
+    reason: "「歩く」「現地を見る」という原体験・強みと最も一致"
+    alternatives_considered:
+      - "仕組み（アプリ等）のメーカー会社"
+      - "公共向け土木事業者へのコンサル + アプリ"
+
+  growth_philosophy:
+    ipo_target: なし
+    expansion_strategy: 北陸発、段階的全国展開
+    approach: "無理をしない成長"
+
+  core_motivation: "「歩く」を仕事にしたい"
+
+current_phase:
+  status: "起業初期設計フェーズ"
+  previous_status: "起業を迷っている段階"
+  transition_date: 2026-01-22
+
+  poc_achievement:
+    location: 福井市
+    result: "1名×1時間/日×1か月で367件の異常検知"
+    learning: "行政は「発見数」より「判断可能性（優先順位付け）」を重視"
+
+mentorship_context:
+  original_request:
+    - ターゲット選定（誰に売るか）
+    - 価値の言語化・パッケージング
+    - 初期顧客獲得の方法
+    - 営業資料の構造・表現
+
+  current_challenges:
+    - B2G/B2B営業経験なし
+    - フィールド観察に基づく事業コンセプト開発中
+    - 価値の言語化と市場投入順序に苦戦

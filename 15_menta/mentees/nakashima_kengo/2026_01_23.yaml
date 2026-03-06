@@ -1,0 +1,101 @@
+session_handover:
+  title: "HOHOHO事業検討・戦略設計 引き継ぎ"
+
+  participants:
+    mentor:
+      name: "山内 雄司"
+      role: "メンター / B2G・B2B事業設計、政府調達経験者"
+    mentee:
+      name: "中島 健吾"
+      role: "起業検討者 / 現地観測・歩行・生活圏リサーチ起点"
+    ai_roles:
+      gijikan:
+        role: "議事官"
+        responsibility: "議事録・整理・構造化・研究指示"
+      hishokan:
+        role: "秘書官"
+        responsibility: "中島さんの行動最適化・リスクヘッジ・意思決定補助"
+
+  current_phase:
+    phase_name: "構想深化・立ち位置設計フェーズ"
+    description: >
+      事業アイデア自体の有無ではなく、
+      「どこで・誰に・どの文脈で価値が成立するか」を
+      壊さずに探る段階。
+
+  business_concept_summary:
+    working_name: "HOHOHO（仮）"
+    core_activity:
+      - "歩行・現地観測を起点とした生活圏・動線・安全の把握"
+      - "トリアージ（優先順位付け）"
+      - "予算連動型シミュレーション"
+      - "説明責任に耐えるレポーティング"
+    value_axes:
+      micro:
+        description: "生活習慣・歩行・日常行動の改善"
+      meso:
+        description: "通学路・地域動線・施設周辺の安全と運用"
+      macro:
+        description: "社会インフラ老朽化、事故・責任・予算配分"
+
+  strategic_recognition:
+    agreed_points:
+      - "正面BtoGは主戦場にしない"
+      - "BtoBまたはBtoBtoGが本線"
+      - "少額随意契約は『目的』ではなく『通行証』"
+      - "行政・地元大手はマネタイズ先ではなく正当性の増幅装置"
+      - "学生・大学・メディアは拒否されにくい入口"
+    risks:
+      - "現職との顧客競合・不義理認定"
+      - "NDA・秘密情報の持ち出しリスク"
+      - "事業を語りすぎることによる警戒"
+
+  recent_external_contact:
+    allconnect:
+      result: "社内検討に持ち帰り（ポジティブ）"
+      feedback:
+        - "歩行道路は優先順位が低く見えやすい"
+        - "学生（福井大学）との連携が有効"
+        - "移住者視点への高い共感"
+        - "新聞社は取り上げやすいテーマ"
+      positioning:
+        - "顧客候補ではなく横で見ている存在"
+        - "将来的な子会社・資本関係も選択肢"
+
+  negotiation_principles:
+    do:
+      - "売らない"
+      - "決めない"
+      - "質問から入る"
+      - "相手の責任・恐れ・判断材料を言語化させる"
+    dont:
+      - "事業名を前面に出す"
+      - "実績・機能の過剰説明"
+      - "契約・金額の話を初回で出す"
+
+  research_in_progress:
+    deepresearch:
+      topic: "ミクロ・メゾ・マクロ横断型事業の市場規模・近似事例"
+      regions:
+        - "日本"
+        - "ヨーロッパ（英語文献含む）"
+      outputs_expected:
+        - "市場規模（推定根拠付き）"
+        - "近似事例（B2B/B2G/B2BtoG/SIB）"
+        - "誰が支払うかの整理"
+        - "HOHOHO参入戦略示唆"
+      deliverable:
+        format: "Markdown（日本語、ダウンロード可）"
+
+  next_discussion_topics:
+    priority:
+      - "DeepResearch結果の読み解き"
+      - "最初の1案件の安全な入口設計"
+      - "学生×歩く×地域 をどう言語化するか"
+    optional:
+      - "SIB/社会起業家ドメインへの将来的接続可否"
+      - "ALLCONNECTとの関係深化シナリオ"
+
+  notes:
+    - "本セッション後半は圧縮モードに入っていたため、新チャットで精度回復推奨"
+    - "過去の議事録（Markdown）は別途保存済み前提"

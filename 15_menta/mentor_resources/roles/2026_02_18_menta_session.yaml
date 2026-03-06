@@ -1,0 +1,480 @@
+# ==========================================
+# MENTA セッション記録
+# ==========================================
+# 日付: 2026-02-18
+# セッション種別: MENTA提案文作成 + BizReach返信 + 運営議論
+# ==========================================
+
+session_metadata:
+  date: "2026-02-18"
+  session_id: "2026_02_18_menta_session"
+  mentor: "山内雄司"
+  platform: "MENTA / BizReach"
+  tools_used:
+    - "Claude Max (Opus)"
+    - "MENTA提案文テンプレート"
+    - "秘書官バイアス検出"
+  session_theme: "提案文量産体制の継続 + BizReach椿会返信確定 + コスト構造議論"
+
+# ==========================================
+# BizReach 合同会社椿会 返信確定
+# ==========================================
+
+bizreach_tsubakikai:
+  status: "送信済み"
+  
+  sent_content:
+    subject: "業務委託ベースでの関与提案"
+    key_points:
+      - "「令和9年度 完全工賃支給」への興味表明（共感→興味にトーンダウン修正済み）"
+      - "メールアドレスが明示されていたため直接連絡（BizReach外誘導の記録）"
+      - "大学院進学準備中、来年度再挑戦を視野"
+      - "脳出血経験により研究職志向を明示"
+    
+    deliverables_proposed:
+      - "アセスメントのシステム化（SoE）"
+      - "監査に耐えうる業務プロセス構築"
+      - "LLM（ChatGPT等）の活用"
+      - "高単価B型案件の獲得"
+    
+    contract_terms:
+      type: "業務委託契約"
+      location: "基本オンライン（リモートワーク）"
+      onsite: "月1〜2回"
+      positioning: "常駐管理者ではなく参謀"
+    
+    attachments:
+      - "天神会DX推進合意書（過去の業務委託契約の実績証明）"
+      - "実践記録"
+      - "研究計画概要"
+      - "職務経歴書"
+    
+  secretary_review:
+    warnings:
+      - type: "情報開示量"
+        note: "天神会合意書に個人名・法人名・住所・報酬額が記載。第6条秘密保持との関係はYuji判断でOK"
+      - type: "交通費未言及"
+        note: "北海道への月1-2回出向の交通費負担が未明示。面談で話す想定"
+      - type: "他社声がけの記述"
+        note: "「お声がけいただいている方々には同様のご提示」の事実確認済み"
+    
+    yuji_decision: "全てOK、送信"
+
+  reference_documents:
+    tenjinkai_agreement:
+      title: "DX推進及びWITHコロナ対策業務に関する合意書"
+      parties:
+        client: "社会福祉法人天神会"
+        contractor: "株式会社JUSPO"
+      date: "令和2年11月27日"
+      compensation:
+        ict_helpdesk: "月額10万円（税別）"
+        dx_promotion_initial: "月額15万円（税別）〜令和3年3月31日"
+        dx_promotion_after: "月額20万円（税別）〜令和3年4月1日以降"
+      scope:
+        - "ICTヘルプデスク業務（SLA基準）"
+        - "合理的配慮を伴うICT業務プロセス研究"
+        - "DX推進業務"
+
+# ==========================================
+# MENTA 提案文作成（12件）
+# ==========================================
+
+menta_proposals:
+
+  # --- 案件1: 黒木 ---
+  proposal_01:
+    mentee_name: "黒木"
+    category: "その他"
+    title: "相談できる方を探しています"
+    budget: "相談"
+    competitors: 4
+    deadline: "03/01"
+    status: "学習を始めたばかり / まだ決めていない"
+    consultation: "課題を整理し、効果的な解決策や進め方のアドバイスがほしい"
+    
+    matching_judgment: "strong_match"
+    judgment_reason: "課題整理・客観的サポート・まだ決めていない → アセスメント直球"
+    
+    proposal_structure:
+      - "課題が複数あるか優先順位が見えていない状態と理解"
+      - "できないこと：技術指導、答えの提示、ビデオ通話"
+      - "できること：状態の整理、判断基準の設計、構造化"
+      - "3,000円／2日間プラン提案"
+
+  # --- 案件2: まさご ---
+  proposal_02:
+    mentee_name: "まさご"
+    category: "起業・独立"
+    title: "【ビジネス：sns】進め方や計画について相談できる方を探しています"
+    budget: "10,000円/月"
+    competitors: 0  # 提案待ち
+    deadline: "03/01"
+    status: "学習中だがスキルアップしたい / 基礎や仕組みを理解したい"
+    skill: "SNS"
+    consultation: "進め方や計画を整理し、優先度や進行ステップについてアドバイスがほしい"
+    
+    matching_judgment: "qualified_proposal（clarification付き）"
+    judgment_reason: "SNS×起業の方向性が広い。A〜D確認質問。SNS運用技術指導は不可、WHY整理は可能"
+    
+    proposal_structure:
+      - "A〜D確認質問（運用代行/集客/メディア/整理中）"
+      - "できないこと：SNS運用技術指導"
+      - "できること：事業としての全体設計"
+      - "3,000円／2日間プラン提案"
+
+  # --- 案件3: クランク ---
+  proposal_03:
+    mentee_name: "クランク"
+    category: "その他"
+    title: "【現役SE限定】セキュリティへのキャリアチェンジ相談：Excelでの泥臭いデータ分析実績は評価されるか？"
+    budget: "相談（単発）"
+    competitors: 0  # 提案待ち
+    deadline: "03/02"
+    status: "SIerでSDE従事中、セキュリティエンジニアへの回帰・転身を目指す"
+    
+    matching_judgment: "qualified_proposal"
+    judgment_reason: "ISO27001を3法人で構築した実装側の視点。セキュリティの本質は技術ではなく法的組織構造"
+    
+    proposal_structure:
+      - "現役SEではないがISO27001構築3法人の実装側"
+      - "セキュリティの本質は法的組織構造と現場権力構造の把握"
+      - "Excel実績レビューは発注者視点でフィードバック可能"
+      - "3,000円／2日間プラン提案"
+    
+    response_received:
+      date: "2026-02-16"
+      content: "ぜひお願いしたく思います。課題整理アセスメント3,000円/2日間を購入させていただきたい"
+      status: "成約確定 → プラン購入依頼済み"
+
+  # --- 案件4: 稲福 ---
+  proposal_04:
+    mentee_name: "稲福"
+    category: "フルスタック"
+    title: "【ITエンジニアとしてのキャリア形成】相談内容を一緒に整理してくださる方を探しています"
+    budget: "10,000円（単発）"
+    competitors: 0  # 提案待ち
+    deadline: "02/24"
+    status: "転職活動中 / 市場価値を上げたい"
+    consultation: "現在の到達度と課題を整理し、目標達成に向けたステップを一緒に設計したい"
+    
+    matching_judgment: "strong_match"
+    judgment_reason: "タイトルが課題整理そのもの。IT企業15年経営の採用側視点＋上場企業IT子会社就職支援2件"
+    
+    proposal_structure:
+      - "できないこと：技術的スキル評価、コードレビュー"
+      - "できること：採用側視点の市場価値整理、戦略壁打ち"
+      - "上場企業IT子会社への就職支援実績2件"
+      - "予算10,000円に対し3,000円で相性確認を提案"
+    
+    additional_context: "障がい当事者を上場企業子会社のIT企業に就職させた実績が2件ある"
+
+  # --- 案件5: じん@起業家（採用プロトタイプレビュー） ---
+  proposal_05:
+    mentee_name: "じん@起業家"
+    category: "副業"
+    title: "【採用人事限定】採用プロトタイプの"ガチ"レビューにご協力いただける方を探しています"
+    budget: "10,000円（単発）"
+    competitors: 2
+    deadline: "03/02"
+    status: "中堅企業向け採用支援プロダクト開発中"
+    target: "従業員50名〜1000名規模の企業で採用に関わっている方"
+    
+    matching_judgment: "qualified_proposal"
+    judgment_reason: "人事コンサルではなく採用の裏側を知る人間。ネガティブスコアリングの視点が盲点"
+    
+    proposal_structure:
+      - "50名規模での採用経験あり（社長として直接採用）"
+      - "ネガティブスコアリングの知見提供"
+      - "見えにくい発達特性・PTSD等による行動困難性の構造分析"
+      - "ATS運用経験なし（NOCC認知非認知可視化ツールの運用経験はあり）"
+      - "ビデオ通話60分は不可、テキストベースでフィードバック"
+      - "3,000円／2日間プラン提案"
+
+  # --- 案件6: らいめ ---
+  proposal_06:
+    mentee_name: "らいめ"
+    category: "その他"
+    title: "SESからSier/自社開発企業への転職"
+    budget: "15,000円/月"
+    competitors: 4
+    deadline: "03/02"
+    status: "新卒SES入社2年目、実務1.5年、設計からテスト担当"
+    pain_points:
+      - "給料が安い"
+      - "やりがいがあまり感じられない"
+    request: "転職までの総合的なサポート"
+    
+    matching_judgment: "qualified_proposal"
+    judgment_reason: "SES構造の問題 vs IT業界全体 vs 本人適性の切り分けが必要"
+    
+    proposal_structure:
+      - "SES新卒の基準固定リスクを先に提示"
+      - "構造的問題の切り分けの必要性"
+      - "できないこと：技術面接対策、求人紹介"
+      - "できること：課題整理と精神的負担の可視化"
+      - "3,000円で相性確認→月額必要か自己判断"
+
+  # --- 案件7: ねむるくん ---
+  proposal_07:
+    mentee_name: "ねむるくん"
+    category: "起業・独立"
+    title: "【ビジネス / 起業・独立】学習計画を一緒に立ててくださる方を探しています"
+    budget: "15,000円/月"
+    competitors: 6
+    deadline: "03/03"
+    status:
+      age: 25
+      education: "大学中退"
+      condition: "パニック障害"
+      current: "就労継続支援A型に在籍"
+      income: "AIを活用した占いビジネスで月3万円"
+    past_attempts:
+      - "プログラミング：3ヶ月で収益0（少し楽しかった）"
+      - "Webライター：月1万円（文章苦手で継続できず）"
+      - "せどり：月1万円ほど"
+      - "ブログ：収益0"
+      - "占い：月5万円の時期もあり"
+      - "アダアフィ：合わなかった"
+    pain_point: "何が向いているか分からない / 継続できず収益が安定しない"
+    
+    matching_judgment: "strong_match（SoEフィールドとしても重要）"
+    judgment_reason: "A型在籍＋パニック障害＋大学中退＋副業遍歴 → 累積環境因子×職業準備性の構造"
+    
+    proposal_structure:
+      - "副業に何度も挑戦してきたこと自体を評価"
+      - "「何をやるか」の前に「なぜ続かないか」の構造整理"
+      - "A型事業所の管理者・サビ管経験を開示"
+      - "3,000円で相性確認→月額必要か自己判断"
+    
+    response_received:
+      date: "2026-02-18"
+      content: "ありがとうございます。ぜひ一度お話しさせてください"
+      status: "プラン購入依頼済み（ChatGPT共有チャット＋書記官・秘書官の説明込み）"
+    
+    secretary_alert:
+      type: "救世主コンプレックス・過剰同一化リスク"
+      level: "高"
+      reason: "A型在籍の当事者＋パニック障害＋大学中退 = 研究テーマど真ん中。過去の利用者像と重なる"
+      reminder: "メンティーであって利用者ではない。契約ベース、3,000円、2日間の枠を守る"
+
+  # --- 案件8: 足立 ---
+  proposal_08:
+    mentee_name: "足立"
+    category: "不明"
+    title: "募集詳細（タイトル不明）"
+    budget: "不明"
+    competitors: "不明"
+    status: "学習を始めたばかり / モチベートしてほしい"
+    consultation: "課題を整理し、効果的な解決策や進め方のアドバイスがほしい"
+    
+    matching_judgment: "qualified_proposal（concern要素あり）"
+    judgment_reason: "モチベーション＝WHY不在のサイン。モチベーター型ではないことを先に明示"
+    
+    proposal_structure:
+      - "モチベーター型ではないことを正直に開示"
+      - "モチベーションが続かない＝目的地不在のサイン"
+      - "励ましではなく判断基準の整理"
+      - "3,000円／2日間プラン提案"
+
+  # --- 案件9: ニーノタカヒロ ---
+  proposal_09:
+    mentee_name: "ニーノタカヒロ"
+    category: "就職・キャリア相談"
+    title: "【ビジネス / 就職・キャリア相談】について相談できる方を探しています"
+    budget: "15,000円/月"
+    competitors: 2
+    deadline: "03/04"
+    status: "業務委託業界歴25年、非IT系フリーランス事務所経営"
+    profile: "営業・接客・販売・技術職"
+    consultation: "学習の進め方を知りたい / 課題を整理し効果的な解決策がほしい"
+    
+    matching_judgment: "qualified_proposal（clarification付き）"
+    judgment_reason: "25年の実務経験をSoE的に構造化できる可能性。メンティーにしたい匂い"
+    
+    proposal_structure:
+      - "A〜D確認質問（転職/メンタリング事業構築/事業拡大/その他）"
+      - "できること：25年の経験の構造化と言語化、事業設計"
+      - "自身もMENTAで課題整理アセスメントを提供中であることを開示"
+      - "3,000円／2日間プラン提案"
+
+  # --- 案件10: みほ ---
+  proposal_10:
+    mentee_name: "みほ"
+    category: "デザイン / Webデザイン"
+    title: "【デザイン / Webデザイン】学習の進め方や案件の獲得方法、今後の計画についてご相談できる方を探しています"
+    budget: "相談"
+    competitors: 2
+    deadline: "03/04"
+    status: "学習を始めたばかり（デザイン本やYouTube）"
+    consultation: "基礎から案件獲得までの進め方・計画の整理"
+    
+    matching_judgment: "qualified_proposal"
+    judgment_reason: "技術指導は不可。発注者視点＋学習ロードマップ設計＋案件獲得戦略は守備範囲"
+    
+    proposal_structure:
+      - "できないこと：Webデザイン技術指導、添削"
+      - "できること：優先順位設計、案件獲得ステップ設計、発注者視点"
+      - "LLMで技術HOWは対応可能、「何を聞くか」の設計が重要"
+      - "動画URL含む"
+      - "3,000円／2日間プラン提案"
+
+  # --- 案件11: 二宮卓 ---
+  proposal_11:
+    mentee_name: "二宮卓"
+    category: "プログラミング"
+    title: "【ビジネス】進め方や計画について相談できる方を探しています"
+    budget: "20,000円/月"
+    competitors: 7
+    deadline: "03/03"
+    status: "学習を始めたばかり / 基礎や仕組みを理解したい"
+    consultation: "進め方や計画を整理し、優先度や進行ステップについてアドバイスがほしい"
+    
+    matching_judgment: "qualified_proposal"
+    judgment_reason: "カテゴリ「プログラミング」だがタイトル「ビジネス」。方向性不明、確認質問必要"
+    
+    proposal_structure:
+      - "A〜D確認質問（就職転職/プロダクト開発/事業独立/整理中）"
+      - "できないこと：プログラミング技術指導"
+      - "できること：全体像の設計、発注する側の視点"
+      - "動画URL含む"
+      - "3,000円／2日間プラン提案"
+
+  # --- 案件12: kaede& ---
+  proposal_12:
+    mentee_name: "kaede&"
+    category: "ライフスタイル"
+    title: "【ライフスタイル】進め方や計画について相談できる方を探しています"
+    budget: "～10,000円/月"
+    competitors: 6
+    deadline: "不明"
+    status: "学習を始めたばかり / 具体的な質問をしたい"
+    consultation: "進め方や計画を整理し、優先度や進行ステップについてアドバイスがほしい"
+    
+    matching_judgment: "qualified_proposal（clarification付き）"
+    judgment_reason: "ライフスタイルは領域が広すぎる。テーマ確認なしに提案すると的外れリスク"
+    
+    proposal_structure:
+      - "テーマ確認質問（何に取り組んでいるか、より良い成果とは何か）"
+      - "キャリアや働き方、事業設計に関わるテーマであれば対応可能"
+      - "マッチするかどうかを正直に判断する姿勢"
+
+  # --- 案件13: 久未健 ---
+  proposal_13:
+    mentee_name: "久未健"
+    category: "AI・機械学習 / 生成AIビジネス活用"
+    title: "【AI・機械学習 / 生成AIビジネス活用】目標達成まで伴走してくださる方を探しています"
+    budget: "不明"
+    competitors: "不明"
+    status: "学習を始めたばかり / 基礎や仕組みを理解したい"
+    consultation: "現在の到達度と課題を整理し、目標達成に向けたステップを一緒に設計したい"
+    
+    matching_judgment: "qualified_proposal（clarification付き）"
+    judgment_reason: "AI技術習得 vs 生成AIビジネス活用で対応が分かれる。A〜D確認質問"
+    
+    proposal_structure:
+      - "A〜D確認質問（技術習得/業務導入/事業立ち上げ/整理中）"
+      - "できないこと：AI/ML技術指導"
+      - "できること：LLM活用のビジネス設計、相互監査運用"
+      - "自身の日常的なClaude/GPT/Gemini活用を開示"
+      - "3,000円／2日間プラン提案"
+
+# ==========================================
+# 運営議論
+# ==========================================
+
+operational_discussions:
+
+  plan_display_analytics:
+    topic: "プラン表示回数の分析"
+    observation: "月初16-18回/日 → 後半4-8回/日に減少"
+    analysis: "表示回数減少自体はMENTA全体の波に連動。問題はコンバージョン"
+    conclusion: "アウトバウンド（募集案件への提案）が成約率高い。提案文を打ち続けるのが正しいアプローチ"
+
+  cost_structure:
+    topic: "LLMサブスクリプションのコスト構造"
+    current_costs:
+      claude_max: "$100/月（固定、研究インフラ）"
+      chatgpt_plus: "$20/月（メンティー向け共有チャット）"
+      gemini_advanced: "2,900円/月（伸びしろ注視中）"
+    total: "月2万円超"
+    
+    optimization_discussion:
+      - "ChatGPT無料プランのグループチャット機能で共有チャット代替可能か検証"
+      - "ChatGPT Plusを落としてLovableに回す案"
+      - "Geminiの伸びしろも捨てがたい"
+    
+    key_insight: "MENTAはついで。SoEのPoCを自力で作れるようになるのが主目的"
+    priority_order:
+      1: "Claude Max → SoE研究環境＋PoC構築基盤（固定）"
+      2: "MENTA → SoE実践フィールド（収益はおまけ）"
+      3: "Lovable → PoC自力構築の開発環境"
+
+  chatgpt_free_plan:
+    topic: "ChatGPT無料プランで共有チャットできるか"
+    finding: "2025年11月にグループチャット機能追加。無料プランでも利用可能。最大20人招待可能"
+    note: "従来の共有チャット（URL共有）とは異なる招待制。無料プランはメッセージ数制限あり"
+
+  mentee_health_observation:
+    topic: "疾病を抱えるメンティーの傾向"
+    observation: "ねむるくん（A型＋パニック障害）に限らず、疾病・障害を抱えた人がMENTAの起業・キャリアカテゴリに流れてきている"
+    analysis: "既存の就労支援やキャリアサービスでは拾えていない層"
+    implication: "SoEの研究フィールドとしてMENTAを選んだ判断の裏付け"
+
+# ==========================================
+# 添付書類確認（セッション中に参照）
+# ==========================================
+
+documents_reviewed:
+  - name: "職務経歴書V1_0.pdf"
+    content: "山内雄司の職務経歴書（IT・監査時代〜福祉時代）"
+  - name: "02志望理由_01.pdf"
+    content: "日本福祉大学大学院 志願理由書"
+  - name: "V9.pdf"
+    content: "研究計画書（日本福祉大学版）"
+  - name: "研究計画概要書_博士前期課程用.pdf"
+    content: "日本社会事業大学 研究計画概要書"
+  - name: "研究計画書.pdf"
+    content: "日本社会事業大学 研究計画書（修士課程）"
+  - name: "実践記録.pdf"
+    content: "実践記録（4つのコンピテンシー領域）"
+  - name: "天神会DX推進合意書.pdf"
+    content: "社会福祉法人天神会との業務委託合意書"
+
+# ==========================================
+# セッション成果サマリー
+# ==========================================
+
+session_summary:
+  proposals_created: 13  # 黒木、まさご、クランク、稲福、じん、らいめ、ねむるくん、足立、ニーノ、みほ、二宮、kaede&、久未健
+  responses_received: 2  # クランク（成約）、ねむるくん（購入依頼済み）
+  
+  key_achievements:
+    - "BizReach椿会への業務委託提案を確定・送信"
+    - "MENTA提案文13件作成（前回8件＋今回13件＝累計21件）"
+    - "クランクさん即成約"
+    - "ねむるくんからの返信→プラン購入依頼"
+    - "コスト構造の整理とLovable優先順位の明確化"
+  
+  ownership_check:
+    growth_score: 4  # 提案文のパターンが確立、自走に近い
+    honesty_score: 5  # コスト問題、疾病メンティーへの懸念を率直に共有
+    ownership_score: 4  # 提案の判断はYuji主導、Claude側は提案文作成に徹した
+
+# ==========================================
+# 次回アクション
+# ==========================================
+
+next_actions:
+  pending:
+    - "クランクさん：プラン購入確認後、アセスメント開始"
+    - "ねむるくん：プラン購入確認後、ChatGPT共有チャット設定"
+    - "各提案への返信確認（13件）"
+    - "椿会からの返信待ち"
+    - "ChatGPT無料プラン＋グループチャットでのメンタリング運用検証"
+    - "Lovable導入検討"
+  
+  strategic:
+    - "SoEのPoC開発環境の選定（Lovable検討中）"
+    - "ChatGPT Plus解約→無料プラン移行の検証"
+    - "2月25日 大学院合格発表"

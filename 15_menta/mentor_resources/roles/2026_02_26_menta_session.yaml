@@ -1,0 +1,525 @@
+# ==========================================
+# MENTA運営セッション記録
+# ==========================================
+meta:
+  date: "2026-02-26"
+  session_type: "プラン練り直し・提案作成・構造的洞察"
+  previous_session: "2026_02_23_menta_session.yaml"
+  previous_plan_session: "2026_02_23_plan_revision_session.yaml"
+
+# ==========================================
+# プラン練り直し（継続）
+# ==========================================
+plan_revision:
+  
+  status: "進行中"
+  target: "3,000円入口プラン（課題整理アセスメント）"
+  
+  current_metrics:
+    mentor_score: 452
+    rank: 1645
+    cumulative_rating: "★5.0"
+    revenue_total: "26,000円"
+    profit_total: "20,280円"
+    contracts:
+      - mentee: "中島健吾"
+        plan: "月額10,000円"
+        status: "継続中（2ヶ月目、2/22更新）"
+      - mentee: "クランク"
+        plan: "単発3,000円"
+        status: "完了・★5レビュー済み（2/23）"
+        review: "ありがとうございました。相談して本当によかったです。"
+      - mentee: "toshi90"
+        plan: "単発3,000円"
+        status: "完了"
+
+  review_reply:
+    mentee: "クランク"
+    status: "未送信"
+    decision: "YouTube URLは入れない。シンプルに返信"
+    note: "今後の提案文・返信文にURLを入れるルールは維持"
+
+  structural_findings:
+    
+    url_display_issue:
+      finding: "MENTAプラン説明文ではYouTube URLが表示されない"
+      cause: "MENTAシステム仕様（URLを非表示にしている）"
+      terms_check: "利用規約（第8条）にURL掲載の禁止条項なし"
+      workaround: "提案文・返信文の中で直接URLを記載する"
+
+    plan_structure_issues:
+      - "3プランとも「ビジネス＞起業・独立」に固まっている"
+      - "実際のアクセス層（キャリア相談・疾病圏）とカテゴリがズレている"
+
+    core_insight:
+      statement: "本当に困っている人は本当の課題を見せない"
+      evidence:
+        - "クランク: セキュリティキャリアチェンジ → 適応障害・円満離脱設計"
+        - "toshi90: 悩み相談 → 高VCI特性を活かした公務員試験戦略"
+      implication: |
+        プラン文に本当の出口を書いても意味がない。
+        入口に立てる看板が重要。
+        その看板は「この人なら話しても大丈夫そうだ」と思わせるもの。
+    
+    target_profile:
+      description: "基礎学力は高いが社会とのコミュニケーション方法が得意でない方"
+      note: "プラン文をこの層に直接寄せる必要はない。入口は広く保ち、提案文で拾う"
+
+  items_unchanged:
+    - "3,000円/2日間の設計"
+    - "ChatGPT共有チャットの進め方"
+    - "成果物（課題整理アセスメント報告書）"
+    - "サムネイル画像（「自分の羅針盤を作る」）"
+
+  items_under_discussion:
+    - "タイトル「リスキリング・転職・起業をお考えの方に」の見直し"
+    - "サブカテゴリ「起業・独立」→「就職・キャリア相談」への変更検討"
+    - "「こんな方におすすめ」の文言調整"
+    - "動画リンクの掲載位置（プラン文→提案文/返信文）"
+
+  youtube_analysis:
+    high_performing:
+      - title: "見えざる子供時代の傷"
+        views: 60
+        likes: 3
+        approval: "100%"
+      - title: "起業家の原動力：見えざる傷から、永続するレガシーへ"
+        views: 23
+      - title: "HOWの前にWHY：学びの羅針盤"
+        views: 11
+        likes: 1
+        approval: "100%"
+    insight: "視聴者は理論ではなく「自分の痛みに関係する話」に反応"
+
+# ==========================================
+# ルール追加・変更
+# ==========================================
+rule_updates:
+
+  mismatch_response_rule:
+    previous: "mismatch → 辞退（simple_decline）"
+    updated: "mismatch → できること/できないこと明示 + HOWはLLMで対応可能 + 3,000円提案 + YouTube URL"
+    template_structure:
+      - "ご状況の理解"
+      - "正直にお伝えしたいこと（できないこと→できること）"
+      - "HOWの部分はLLMで対応できる。ただしWHYが定まっていないと精度が出ない"
+      - "YouTube URL: https://youtu.be/UYPliXPrp_Y"
+      - "3,000円アセスメント提案"
+      - "専門メンターへの誘導"
+    effective_from: "2026-02-26"
+
+  youtube_url_rule:
+    rule: "全提案文・返信文にYouTube URL（HOWの前にWHY）を含める"
+    url: "https://youtu.be/UYPliXPrp_Y"
+    reason: "プラン説明文ではURLが表示されないため"
+    effective_from: "2026-02-23"
+
+# ==========================================
+# 本日の提案作成（10件）
+# ==========================================
+proposals:
+
+  # --- 1. コンビニのおにぎり ---
+  - id: "konbini_onigiri"
+    title: "ビジネス/起業・独立：目標達成まで伴走"
+    category: "起業・独立"
+    judgment: "qualified_proposal"
+    budget: "相談"
+    competitors: 4
+    key_signals:
+      - "到達度と課題の整理"
+      - "目標達成に向けたステップ設計"
+      - "MBTIアイコン使用（自己分析への関心）"
+    proposal_type: "質問先行型（A/B/C/D選択肢）"
+
+  # --- 2. soe2405 ---
+  - id: "soe2405"
+    title: "プログラミング/フロントエンド：疑問点に答えてくださる方"
+    category: "プログラミング/フロントエンド"
+    judgment: "qualified_proposal"
+    budget: "15,000円（単発）"
+    competitors: 3
+    key_signals:
+      - "Webデザイン・HP制作者"
+      - "企業HPリニューアル案件"
+      - "ドメイン/DNS、メール移管、WordPress構造の「裏側の判断」"
+      - "実装代行ではなく進め方確認・リスク指摘"
+      - "制作会社案件の経験を求めている"
+    proposal_features:
+      - "IT企業15年経営の「発注側」視点で接続"
+      - "事故パターン共有・判断基準整理・クライアント説明設計"
+    note: "解像度が高い募集。自分の得意・不足を明確に言語化できている"
+
+  # --- 3. tghdy34216 ---
+  - id: "tghdy34216"
+    title: "プログラミング/フルスタック：目標達成まで伴走"
+    category: "プログラミング/フルスタック"
+    judgment: "partial_match（情報不足）"
+    budget: "相談"
+    competitors: 5
+    key_signals:
+      - "テンプレ募集"
+      - "デフォルトアイコン、ランダムID"
+    proposal_type: "WHY質問先行型"
+
+  # --- 4. オギ1111 ---
+  - id: "ogi1111"
+    title: "継続学習をサポートしてくださる方"
+    category: "その他"
+    judgment: "concern（モチベーション問題＝WHY不在の典型）"
+    budget: "10,000円/月"
+    competitors: 0
+    key_signals:
+      - "モチベートしてほしい"
+      - "定期的な振り返りやアドバイス"
+      - "何を学習中かすら書いていない"
+    proposal_features:
+      - "「頑張りましょう型の励まし」はできないと明記"
+      - "モチベーション問題＝WHY不在のサインとして構造化"
+      - "羅針盤なしの航海メタファー"
+
+  # --- 5. shake_5 ---
+  - id: "shake_5"
+    title: "スキルアップ：エンジニアとしてのコミュニケーション力アップ"
+    category: "その他"
+    judgment: "strong_match"
+    budget: "5,000円（単発）"
+    competitors: 7
+    key_signals:
+      - "エンジニア転職2年目"
+      - "技術不足よりコミュニケーションに課題"
+      - "レビューや普段のやりとりをスムーズにしたい"
+      - "JavaScript, PHP, MySQL（基礎はある）"
+    proposal_features:
+      - "「基礎学力高い×社会との接続で詰まる」層のど真ん中"
+      - "コミュニケーション課題＝「話し方」ではなく「設計」の問題として構造化"
+      - "IT15年＋福祉10年の対人コミュニケーション設計"
+    note: "プランに来る層の典型。技術メンターとの差別化が明確"
+
+  # --- 6. 山本大樹 ---
+  - id: "yamamoto_taiki"
+    title: "AI・機械学習：目標達成まで伴走（1回目）"
+    category: "プログラミング"
+    judgment: "partial_match"
+    budget: "10,000円/月"
+    competitors: 6
+    key_signals:
+      - "AI・機械学習、スキルなし、始めたばかり"
+      - "ML学習バブルパターン"
+    proposal_features:
+      - "学習コストの高さを正直に伝える"
+      - "LLM進化で従来ML守備範囲がAPI一発で解決可能になった現実"
+
+  # --- 6b. 山本大樹（再投稿） ---
+  - id: "yamamoto_taiki_2"
+    title: "AI・機械学習：目標達成まで伴走（2回目）"
+    judgment: "スキップ（同一人物の再投稿、提案済み）"
+    competitors: 9
+
+  # --- 7. 片桐 ---
+  - id: "katagiri"
+    title: "マーケティング/SNSマーケティング：進め方や計画"
+    category: "SNSマーケティング"
+    judgment: "mismatch → 新ルール適用（できること明示＋3,000円提案）"
+    budget: "相談"
+    competitors: 4
+    proposal_features:
+      - "SNS専門指導は不可と明記"
+      - "HOWはLLMで対応可能 + WHY整理の価値提示"
+      - "YouTube URL + 3,000円アセスメント提案"
+
+  # --- 8. OA ---
+  - id: "oa"
+    title: "ビジネス/マネジメント：進め方や計画"
+    category: "マネジメント"
+    judgment: "qualified_proposal"
+    budget: "30,000円/月"
+    competitors: 4
+    key_signals:
+      - "予算高い（本気度あり）"
+      - "進め方・計画の整理、優先度・進行ステップ"
+      - "テンプレだが情報不足"
+    proposal_features:
+      - "質問先行（立場・領域・判断に迷っていること）"
+      - "IT企業15年経営の事業計画・組織設計視点"
+
+  # --- 9. Keitarou Nakashima ---
+  - id: "keitarou_nakashima"
+    title: "AI・機械学習/生成AIビジネス活用：目標達成まで伴走"
+    category: "生成AIビジネス活用"
+    judgment: "partial_match（生成AIビジネス活用は接続可能）"
+    budget: "10,000円/月"
+    competitors: 2
+    key_signals:
+      - "生成AIビジネス活用"
+      - "始めたばかり、スキルなし"
+      - "似顔絵イラストアイコン（ちゃんと作っている）"
+      - "競合少ない"
+    proposal_features:
+      - "LLM活用設計の文脈で接続"
+      - "WHYが明確ならHOWはLLMに聞ける"
+
+  # --- 10. あまっこ ---
+  - id: "amakko"
+    title: "Power Pivotについて教えていただける方"
+    category: "Microsoft Officeツール"
+    judgment: "mismatch → 新ルール適用（できること明示＋3,000円提案）"
+    budget: "15,000円/月"
+    competitors: 2
+    key_signals:
+      - "Power Pivot / DAX の技術指導"
+      - "AI・機械学習カテゴリだがExcel文化圏"
+    proposal_features:
+      - "技術指導不可と明記"
+      - "HOWはLLMで対応可能 + WHY整理の価値提示"
+    side_note: |
+      Excel in ClaudeでPower Pivot的なデータモデリング・DAX設計支援は
+      ほぼ対応可能。エラーチェック→修正→解決まで自動。
+      ただし提案文には書かない（「メンターいらない」になるため）。
+
+  # --- 11. 飯山倅助 ---
+  - id: "iiyama_sousuke"
+    title: "AI・機械学習/生成AIビジネス活用：課題・トラブル解決"
+    category: "生成AIビジネス活用"
+    judgment: "qualified_proposal"
+    budget: "相談"
+    competitors: 3
+    key_signals:
+      - "課題やトラブルの原因整理"
+      - "解決までの方針"
+    proposal_features:
+      - "課題整理の直球"
+      - "トラブルの原因は「何を・どう聞くか」の設計が曖昧"
+
+  # --- 12. 渡辺麻子 ---
+  - id: "watanabe_asako"
+    title: "デザイン/Webデザイン：成果物レビュー"
+    category: "Webデザイン"
+    judgment: "mismatch → 新ルール適用（できること明示＋3,000円提案）"
+    budget: "相談"
+    competitors: 4
+    key_signals:
+      - "制作物のレビュー・ブラッシュアップ"
+      - "学習始めたばかり"
+    proposal_features:
+      - "デザイン専門レビュー不可と明記"
+      - "HOWはLLMで対応可能 + WHY整理の価値提示"
+      - "発注側視点のワンポイント"
+
+  # --- 13. hosi ---
+  - id: "hosi"
+    title: "その他：疑問点に答えてくださる方（確定申告・住宅ローン控除）"
+    category: "その他"
+    judgment: "strong_match → 独占業務リスク考慮で提案設計変更"
+    budget: "〜10,000円"
+    competitors: 1
+    key_signals:
+      - "確定申告で住宅ローン控除が全く分からない"
+      - "疑問点に答えてくれる人を探している"
+    risk_assessment:
+      concern: "税理士・公認会計士の独占業務に抵触する可能性"
+      fishing_risk: "釣り案件の可能性も排除できない"
+    proposal_features:
+      - "住宅ローン控除の申告方法は伝えられないと明記（独占業務）"
+      - "ChatGPT共有チャットを活用してLLMで課題を解決する手段を提案"
+      - "Yujiが直接税務判断しない設計"
+    design_pattern:
+      description: |
+        GPT共有チャットによる独占業務回避パターン：
+        1. YujiがChatGPTに制度・手続きの質問を投げる
+        2. ChatGPTがYujiに回答する
+        3. メンティーはそのやりとりを「見ている」
+        4. 参考にするかどうかは本人の判断
+      functions:
+        - "法的リスク回避: Yujiが個別具体的な助言をしない"
+        - "SoE実装: 情報は提供するが判断は本人に委ねる"
+        - "準委任契約の整合: 成果物（判断）ではなくプロセス（情報へのアクセス）を提供"
+      precedent: "クランクさんケース（産業医面談前の制度整理）で同パターン実証済み"
+    yuji_note: "風呂入りながらの判断。リスク検出→独占業務の線引き→GPT共有チャットで接続、を同時処理"
+
+# ==========================================
+# 構造的洞察
+# ==========================================
+structural_insights:
+
+  gpt_shared_chat_pattern:
+    title: "GPT共有チャットによる独占業務回避＋SoE実装パターン"
+    description: |
+      センシティブな内容や独占業務に抵触しそうな領域：
+      YujiがGPTに質問→GPTがYujiに回答→メンティーは閲覧→判断は本人
+      
+      クランクさんケース（傷病歴の開示義務・産業医面談の制度整理）で実証済み。
+      hosiさんケース（住宅ローン控除・確定申告）でも同パターン適用。
+      
+      制約（税理士法・独占業務）がSoEを実現するという逆説：
+      法的制約により「本人が自分で理解して判断する」設計が強制される。
+
+  how_layer_model:
+    title: "HOWの階層モデル"
+    description: |
+      HOWには2層がある：
+      1. 認知的HOW（調べる、計算する、分析する、書く）→ LLMがほぼ全代替
+      2. 物理的HOW（運ぶ、作る、据え付ける、対面で会う）→ ロボットコストがまだ高い領域のみ残存
+      
+      「人間がやるべきHOW」は、ロボティクスのコストカーブより下の物理作業だけ。
+      それ以外は全部LLMに渡せる。
+    implication: "メンターに残る価値はWHY（選択する力の整理）のみ"
+
+  why_and_agi:
+    title: "WHY = LLMの先にあるもの = AGI"
+    description: |
+      現在のLLMはConstitutionを「与えられて」動く。
+      AGIは自分でWHYを「生成」する＝自分でConstitutionを書ける存在。
+      
+      SoEがメンティーに対してやっていること：
+      「自分のConstitutionを自分で書けるようになる支援」
+      
+      SoEの到達点とAGIの定義が構造的に同じ場所を指している。
+    scope: "博士の射程。修士では旗を立てるのみ"
+    connection: "Input Constitutional AI → SoE → AGI定義"
+
+  excel_culture:
+    title: "日本のExcel文化とLLM"
+    description: |
+      日本のExcel文化は業務フロー・帳票・データ管理・報告書を全てExcelに集約する。
+      これがExcel in Claudeとの親和性を異常に高めている。
+      
+      Power Pivotを学びたい人の背景：
+      「Excelの延長線上でデータ分析をやりたい」であり、Python/Rには移行しない。
+      AccessにもPower Pivotにも行かない。Excel方眼紙の中で全部やる。
+      
+      LLMの登場でExcel内拡張の天井が一気に上がった。
+      VBAもPower Queryも、LLMが書いてエラーチェックして解決までしてくれる。
+      
+      HOWは「LLMに聞きながら」ではなく「LLMが勝手にやってくれる」が実態。
+    soe_connection: |
+      「HOWがLLMで代替可能になったとき、人間のメンターに残る価値はWHYの整理」
+      このフレームはExcel文化圏の人たちに刺さる可能性が高い。
+
+# ==========================================
+# 圧縮後の追加セッション（住宅ローン控除の実務確認）
+# ==========================================
+post_compaction_session:
+
+  context: |
+    セッション後半で圧縮が発生。
+    hosiさん案件に関連して住宅ローン控除の実務詳細を確認。
+    Yujiの税務会計実務経験（3.5年）を活かした深堀り。
+
+  housing_loan_deduction_research:
+    purpose: "hosiさん案件の実務準備 + GPT共有チャット設計の精度向上"
+    
+    timeline:
+      target_year: "2025年分（令和7年分）"
+      filing_period: "2026年2月16日〜3月16日"
+      current_status: "確定申告期間の真っ最中（残り約2〜3週間）"
+    
+    required_documents_e_tax:
+      all_cases:
+        - "住宅取得資金に係る借入金の年末残高等証明書（金融機関から届く原本）"
+        - "（特定増改築等）住宅借入金等特別控除額の計算明細書（e-Tax上で作成可能）"
+        - "建物・土地の不動産売買契約書（請負契約書）の写し"
+        - "登記事項証明書（建物・土地）※計算明細書に不動産番号記載で添付省略可"
+        - "源泉徴収票（会社員の場合）"
+        - "マイナンバーカード（e-Tax本人確認用）"
+      conditional:
+        - condition: "土地と建物の取得時期が異なる"
+          documents: "土地の登記事項証明書、土地の売買契約書の写し"
+        - condition: "補助金を受けた"
+          documents: "補助金決定通知書"
+        - condition: "認定長期優良住宅・ZEH等"
+          documents: "認定通知書の写し"
+        - condition: "ペアローン（連帯債務）"
+          documents: "夫婦それぞれが申告必要"
+    
+    2025_changes:
+      choushohoshiki: |
+        調書方式が利用可能。金融機関が年末残高情報を直接税務署に提出。
+        マイナポータル連携でデータ自動取得可能。
+        年末残高証明書の紙原本提出が不要になるケースあり。
+      energy_standards: |
+        省エネ基準との連動強化。住宅性能や取得時期による控除内容の条件分岐が増加。
+        借入限度額の縮小、災害危険区域等の立地要件追加。
+    
+    hosiさん案件への接続:
+      likely_scenario: "2025年入居の初年度申告（住宅ローン控除）"
+      where_people_get_stuck: |
+        「自分がどの区分に該当するか」の判断。
+        入居日の扱い、年末残高証明書の取り違え。
+        省エネ基準の分類や借入限度額の条件分岐が増えて
+        「自分のパターン」が分かりにくくなっている。
+      gpt_shared_chat_design: |
+        GPT共有チャットで「自分のケースではどの書類が必要か」を整理。
+        Yujiの役割は「何を入力すべきか」の質問設計のみ。
+        個別具体的な税額計算や税務判断には踏み込まない（独占業務の線）。
+        「あなたの控除額はいくらです」「この経費は認められます」は言わない。
+      time_pressure: "期限まで2〜3週間。2日間アセスメントで十分間に合う範囲"
+
+    structural_note: |
+      住宅ローン控除は「書類を集めてe-Taxに入力するだけ」だが、
+      初めての人が詰まるのは「自分の該当パターン特定」。
+      これはまさにLLMが得意な領域（条件分岐の整理）であり、
+      GPT共有チャットパターンの最適ケースの一つ。
+
+# ==========================================
+# 累計提案数
+# ==========================================
+proposal_count:
+  previous_total: "56件+"
+  today: 13
+  new_total: "69件+"
+  note: "mismatch含む全件に提案（新ルール適用）。hosiさん追加"
+
+# ==========================================
+# 次回アクション
+# ==========================================
+next_actions:
+  immediate:
+    - "クランクさんレビュー返信の送信（シンプル版、URL なし）"
+    - "menta_proposal_rules.yaml にmismatch提案ルール追記"
+  
+  plan_revision_continued:
+    - "タイトル「リスキリング・転職・起業をお考えの方に」の改訂案作成"
+    - "「こんな方におすすめ」の文言改訂"
+    - "サブカテゴリ変更の検討"
+    - "他2プラン（福祉事業プラン、LLM共有＋事業プラン構造化）の見直し"
+
+  ongoing:
+    - "akihiko、いぬねこ: 比較検討結果待ち"
+    - "中島さん: 月額継続中"
+    - "提案返信確認"
+    - "hosiさん: 提案送信済み、返信待ち（時間的制約あり・3/16期限）"
+
+# ==========================================
+# セッション全体サマリー（引き継ぎ用）
+# ==========================================
+session_summary_for_handoff: |
+  本セッションでは以下を実施:
+  
+  1. プラン練り直し（継続）: 3,000円入口プランの構造確認、変更不要項目と検討項目の切り分け
+  2. 提案13件作成（累計69件+）: strong_match 2件、qualified 5件、partial 3件、mismatch 3件
+  3. mismatch提案ルール変更: 辞退→できること明示＋3,000円提案（片桐・あまっこ・渡辺麻子で適用）
+  4. GPT共有チャットによる独占業務回避＋SoE実装パターンの発見（hosiさん案件）
+  5. 構造的洞察4つ: HOW階層モデル、WHY=AGI、Excel文化×LLM、GPT共有チャットパターン
+  6. 住宅ローン控除の実務詳細確認（圧縮後）: e-Tax必要書類、2025年分の変更点、hosiさん案件への接続設計
+  
+  特記: Yujiは風呂に入りながらhosiさん案件のリスク検出→独占業務の線引き→GPT共有チャットでの接続を同時処理。
+  このパターンは「制約がSoEを実現する」という逆説の好例として記録。
+
+# ==========================================
+# 参照ファイル
+# ==========================================
+references:
+  - "2026_02_23_plan_revision_session.yaml: プラン練り直しセッション（前半）"
+  - "2026_02_23_menta_session.yaml: 前回提案セッション"
+  - "menta_proposal_rules.yaml: 提案文作成ルール"
+  - "hishokan_bias_detection.yaml: 秘書官バイアス検出"
+  - "mentee_sovereignty_check.yaml: メンティー主体性チェック"
+
+# ==========================================
+# トランスクリプト参照
+# ==========================================
+transcript:
+  path: "/mnt/transcripts/2026-02-26-09-10-39-2026-02-26-menta-plan-revision-proposals-gpt-shared-chat-pattern.txt"
+  lines: 3141
+  note: "圧縮前の全会話記録。提案文の全文はこちらを参照"

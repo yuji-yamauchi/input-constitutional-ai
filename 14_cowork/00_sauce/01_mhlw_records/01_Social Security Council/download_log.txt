@@ -1,0 +1,29 @@
+2026-03-04 07:42:05,664 [INFO] ============================================================
+2026-03-04 07:42:05,665 [INFO] 厚労省 社会保障審議会（障害者部会）PDF一括ダウンロード
+2026-03-04 07:42:05,666 [INFO] ============================================================
+2026-03-04 07:42:05,670 [INFO] 全 50 件の会議データを読み込みました
+2026-03-04 07:42:05,671 [INFO] 処理対象: 0〜1 (2 件)
+2026-03-04 07:42:05,672 [INFO] *** DRY RUN モード（ダウンロードは行いません）***
+2026-03-04 07:42:05,673 [INFO] 
+--- [1/50] 第141回 (2024_07_04_141) ---
+2026-03-04 07:42:05,675 [INFO]   [議事録] https://www.mhlw.go.jp/stf/newpage_42373.html
+2026-03-04 07:42:06,683 [WARNING]   取得失敗 (attempt 1/3): https://www.mhlw.go.jp/stf/newpage_42373.html -> HTTPSConnectionPool(host='www.mhlw.go.jp', port=443): Max retries exceeded with url: /stf/newpage_42373.html (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
+2026-03-04 07:42:11,692 [WARNING]   取得失敗 (attempt 2/3): https://www.mhlw.go.jp/stf/newpage_42373.html -> HTTPSConnectionPool(host='www.mhlw.go.jp', port=443): Max retries exceeded with url: /stf/newpage_42373.html (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
+2026-03-04 07:42:16,700 [WARNING]   取得失敗 (attempt 3/3): https://www.mhlw.go.jp/stf/newpage_42373.html -> HTTPSConnectionPool(host='www.mhlw.go.jp', port=443): Max retries exceeded with url: /stf/newpage_42373.html (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
+2026-03-04 07:42:16,702 [ERROR]   ページ取得失敗: https://www.mhlw.go.jp/stf/newpage_42373.html
+2026-03-04 07:42:16,706 [INFO] 
+--- [2/50] 第140回 (2024_03_05_140) ---
+2026-03-04 07:42:16,709 [INFO]   [議事録] https://www.mhlw.go.jp/stf/newpage_39187.html
+2026-03-04 07:42:17,713 [WARNING]   取得失敗 (attempt 1/3): https://www.mhlw.go.jp/stf/newpage_39187.html -> HTTPSConnectionPool(host='www.mhlw.go.jp', port=443): Max retries exceeded with url: /stf/newpage_39187.html (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
+2026-03-04 07:42:22,722 [WARNING]   取得失敗 (attempt 2/3): https://www.mhlw.go.jp/stf/newpage_39187.html -> HTTPSConnectionPool(host='www.mhlw.go.jp', port=443): Max retries exceeded with url: /stf/newpage_39187.html (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
+2026-03-04 07:42:27,728 [WARNING]   取得失敗 (attempt 3/3): https://www.mhlw.go.jp/stf/newpage_39187.html -> HTTPSConnectionPool(host='www.mhlw.go.jp', port=443): Max retries exceeded with url: /stf/newpage_39187.html (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
+2026-03-04 07:42:27,729 [ERROR]   ページ取得失敗: https://www.mhlw.go.jp/stf/newpage_39187.html
+2026-03-04 07:42:27,730 [INFO] 
+============================================================
+2026-03-04 07:42:27,731 [INFO] 完了！
+2026-03-04 07:42:27,732 [INFO]   検出PDF総数: 0
+2026-03-04 07:42:27,733 [INFO]   ダウンロード: 0
+2026-03-04 07:42:27,733 [INFO]   スキップ（既存）: 0
+2026-03-04 07:42:27,734 [INFO]   失敗: 2
+2026-03-04 07:42:27,735 [INFO]   ログファイル: /sessions/focused-quirky-hopper/mnt/cowork/00_sauce/01_mhlw_records/01_Social Security Council/download_log.txt
+2026-03-04 07:42:27,735 [INFO] ============================================================

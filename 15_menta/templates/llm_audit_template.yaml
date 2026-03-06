@@ -1,0 +1,39 @@
+# LLM出力監査テンプレート
+# GPT発散 → Gemini/Claude監査 → 人間統合 のプロセス用
+
+llm_audit:
+  meta:
+    date: "YYYY-MM-DD"
+    subject: ""
+    original_source: "GPT DeepResearch / ChatGPT / Other"
+    auditor: "Gemini / Claude"
+
+  fact_check:
+    grade: ""  # A/B/C/D
+    verified_facts: []
+    unverified_claims: []
+    errors_found: []
+
+  logic_check:
+    grade: ""  # A/B/C/D
+    sound_arguments: []
+    logical_gaps: []
+    wishful_thinking: []  # 希望的観測の検出
+
+  context_fit:
+    grade: ""  # A/B/C/D
+    applicable_points: []
+    context_mismatches: []
+    japan_specific_issues: []
+
+  strategic_assessment:
+    viable_options: []
+    rejected_options:
+      - option: ""
+        rejection_reason: ""
+    recommended_direction: ""
+
+  human_decision:
+    final_judgment: ""
+    rationale: ""
+    next_steps: []

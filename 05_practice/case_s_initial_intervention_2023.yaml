@@ -31,12 +31,12 @@ anonymization_key:
     F: "Sの友人F（薬物関連）"
   organizations:
     Y_office: "就労継続支援事業所（山内運営）"
-    K_city_hall: "K市役所（笠岡市）"
+    K_city_hall: "K市役所"
     D_center: "依存症対策センター"
-    K_university: "K大学（京都大学・摂食障害研究）"
+    K_university: "K大学（摂食障害研究）"
   locations:
-    O_city: "O市（大阪）"
-    K_city: "K市（笠岡市）"
+    O_city: "O市"
+    K_city: "K市"
 
 # ============================================
 # 当事者プロファイル
@@ -59,7 +59,7 @@ subject_profile:
     - "中学時代に不登校"
     - "高校中退"
     - "元風俗従事"
-    - "両親は大手企業（積水ハウス）勤務経験"
+    - "両親は大手企業勤務経験"
     - "両親への尊敬と認められたい願望"
 
   psychological_assessment:
@@ -145,7 +145,7 @@ timeline:
       support_plan_outline:
         phase_1:
           duration: "3ヶ月"
-          location: "笠岡市"
+          location: "K市"
           content:
             - "地元の人間関係からの強制離脱"
             - "薬物ルートの遮断"
@@ -154,7 +154,7 @@ timeline:
         phase_2:
           duration: "その後"
           content:
-            - "大阪での継続支援への移行"
+            - "O市での継続支援への移行"
             - "K大学の摂食障害プログラム活用検討"
 
     phone_call_with_s:
@@ -194,7 +194,7 @@ practitioner_knowledge:
   intervention_strategy:
     environment_change:
       rationale: "地元の人間関係・薬物ルートからの強制離脱"
-      method: "県外（笠岡）での3ヶ月アセスメント"
+      method: "県外（K市）での3ヶ月アセスメント"
 
     administrative_cooperation:
       rationale: |

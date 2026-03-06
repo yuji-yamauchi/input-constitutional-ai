@@ -1,0 +1,33 @@
+# セッション引き継ぎテンプレート
+# 使用方法: メンティーフォルダにコピーして日付を入れて使用
+
+session_handover:
+  meta:
+    date: "YYYY-MM-DD"
+    mentee: ""
+    project: ""
+    session_number: 1
+
+  context:
+    current_phase: ""
+    key_challenges: []
+
+  session_summary:
+    topics_covered: []
+    key_decisions: []
+    mentee_insights: []
+
+  action_items:
+    mentee:
+      - item: ""
+        deadline: ""
+    mentor:
+      - item: ""
+        deadline: ""
+
+  next_session:
+    scheduled: ""
+    agenda: []
+
+  notes: |
+    自由記述

@@ -1,0 +1,127 @@
+session_metadata:
+  date: "2026-03-05"
+  session_type: "NotebookLM動画処理・YouTube準備・環境整備"
+  duration: "約1時間"
+  key_achievements:
+    - "Whisper GPU化（CPU版→CUDA版PyTorch導入）"
+    - "NotebookLM動画の字幕生成（SRT）"
+    - "16文字改行対応の字幕付き動画作成"
+    - "YouTube説明文の作成"
+    - "PII匿名化（14ファイル、前セッション継続）"
+    - "LibreOfficeロックファイル削除（8ファイル）"
+
+# ============================================
+# 作業詳細
+# ============================================
+tasks:
+
+  pii_anonymization:
+    status: "完了（前セッションからの継続）"
+    files_modified: 14
+    key_actions:
+      - "05_practice/: ケースファイルの実名→匿名化"
+      - "00_daily_yamal/: セッション記録内のPII除去"
+      - "2026_02_17_anonymization_report.yaml: 逆匿名化キーの除去（重要）"
+      - "ファイル名変更: tsugusige→nephew_A"
+    remaining_issue: "2026_01_05_ge.yaml のエンコーディング破損部分にPII断片が残る可能性"
+
+  lock_file_cleanup:
+    status: "完了"
+    files_deleted: 8
+    location: "cowork/ および cowork/cowork/"
+    cause: "LibreOffice強制終了時の残留ファイル"
+
+  whisper_gpu_setup:
+    status: "完了"
+    before: "PyTorch 2.9.1+cpu（CPU処理、10分超）"
+    after: "PyTorch 2.6.0+cu124（GPU処理、1-2分）"
+    gpu: "NVIDIA GeForce RTX 2070 SUPER"
+    action: "pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124"
+    impact: "今後のWhisper処理が大幅高速化"
+
+  subtitle_generation:
+    status: "完了"
+    input: "C:/Users/USER/Downloads/障害の進化：個人の問題から社会の課題へ.mp4"
+    source: "NotebookLM Audio Overview（障害福祉法制度変遷の講義）"
+    duration: "9分35秒"
+    model: "whisper medium（GPU）"
+    outputs:
+      srt: "障害の進化：個人の問題から社会の課題へ.srt"
+      srt_wrapped: "障害の進化：個人の問題から社会の課題へ_wrapped.srt"
+      video: "障害の進化：個人の問題から社会の課題へ_字幕付き.mp4"
+    line_wrap:
+      max_chars: 16
+      logic: "句読点・助詞の後で改行、句読点が行頭に来ない処理"
+
+  youtube_description:
+    status: "完了"
+    output: "C:/Users/USER/Downloads/障害の進化_youtube_description.txt"
+    content:
+      - "タイトル・概要文"
+      - "タイムスタンプ（16区間）"
+      - "キーワード・対象者"
+      - "関連リンク（d-rel.jp, Ko-fi: soeframework）"
+      - "ハッシュタグ16個"
+
+# ============================================
+# 環境・設定の議論
+# ============================================
+environment_discussion:
+
+  vscode_vs_cowork:
+    conclusion: "VSCode常駐のClaude Codeで大半の作業が完結"
+    cowork_advantage: "PowerPoint作成はCoworkが優位"
+    desktop_folder: "ワーキングディレクトリにDesktopを指定すればCoworkとほぼ同等"
+    downloads_folder: "既に指定済み → ダウンロードファイルの移動も直接可能"
+
+  tool_division:
+    claude_code_vscode:
+      - "コード・YAML・HTML"
+      - "ファイル管理・Git操作"
+      - "Whisper字幕生成"
+      - "ffmpeg動画処理"
+    cowork:
+      - "PowerPoint・Excel（ビジュアル重要）"
+
+# ============================================
+# 技術メモ
+# ============================================
+technical_notes:
+
+  whisper_env:
+    path: "whisper-env/"
+    python: "3.10"
+    pytorch: "2.6.0+cu124"
+    whisper: "openai-whisper 20250625"
+    ffmpeg: "/c/ffmpeg/ffmpeg-master-latest-win64-gpl-shared/bin/ffmpeg"
+
+  subtitle_workflow:
+    step_1: "whisper --model medium --language ja --output_format srt"
+    step_2: "Python script で16文字改行処理"
+    step_3: "ffmpeg -vf subtitles=... でハードサブ焼付"
+    font_style: "FontSize=24, 白文字, 黒アウトライン, MarginV=30"
+
+# ============================================
+# 次のアクション
+# ============================================
+next_actions:
+  immediate:
+    - "字幕付き動画の確認（16文字改行の見栄え）"
+    - "YouTube動画アップロード"
+  short_term:
+    - "他のNotebookLM動画の字幕化（同ワークフロー適用）"
+    - "2026_01_05_ge.yaml のエンコーディング破損対応検討"
+  medium_term:
+    - "サービス管理責任者 就職活動（4社面接中）"
+    - "2027年度 大学院修士課程 再出願準備"
+
+metadata:
+  created_by: "Claude Code (Opus 4.6)"
+  created_at: "2026-03-05"
+
+fire_culture_note: |
+  WhisperのGPU化は小さな一歩だが、
+  今後のNotebookLM→YouTube字幕付き動画の量産体制を確立した。
+  「記録されなかった問いは燃え尽きたものと見なされる」
+  ― 音声を文字に変え、字幕として定着させる。
+  これもまた火文化圏の実践である。

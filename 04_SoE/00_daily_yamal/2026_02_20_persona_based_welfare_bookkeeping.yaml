@@ -138,7 +138,7 @@ persona_definition:
 nocc_first_assessment:
 
   puu_input_08:
-    content: "NOCC_今田さん職員用_20220303.pdf をアップロード"
+    content: "NOCC_I氏職員用_20220303.pdf をアップロード"
     label: "入所時のNOCC評価"
 
   claude_response_08:
@@ -179,7 +179,7 @@ nocc_first_assessment:
 nocc_second_assessment:
 
   puu_input_10:
-    content: "NOCC_今田さん職員用_20221129.pdf をアップロード"
+    content: "NOCC_I氏職員用_20221129.pdf をアップロード"
     label: "8ヶ月後のNOCC評価"
 
   claude_response_10:
@@ -236,12 +236,12 @@ support_strategy:
 chat_log_analysis:
 
   puu_input_12:
-    content: "20220718今田さんチャットログ.xlsx をアップロード"
+    content: "20220718I氏チャットログ.xlsx をアップロード"
     structure: |
       3シート構成（Google Chat）：
       - Sheet1: メインチャット
-      - 今田さんオンラインスペース: 事業所全体
-      - 今田さん個別チャット: Yujiとの直接やりとり
+      - I氏オンラインスペース: 事業所全体
+      - I氏個別チャット: Yujiとの直接やりとり
 
   claude_response_12:
     key_observations: |
@@ -265,7 +265,7 @@ chat_log_analysis:
 case_record_analysis:
 
   puu_input_13:
-    content: "ケース記録__今田美羽様_2022年度.pdf をアップロード"
+    content: "ケース記録__I氏様_2022年度.pdf をアップロード"
     label: "スタッフのケース記録（2022年9月〜10月）"
 
   claude_response_13:
@@ -293,7 +293,7 @@ case_record_analysis:
 self_harm_record_analysis:
 
   puu_input_14:
-    content: "自傷行為記録_今田さん20221107_.xlsx をアップロード"
+    content: "自傷行為記録_I氏20221107_.xlsx をアップロード"
     structure: "複数シート、日次データ、リスカ・OD・過食・遁走・希死念慮を記録"
 
   claude_response_14:
@@ -318,8 +318,8 @@ line_log_and_screenshot_analysis:
 
   puu_input_15:
     content: |
-      今田さんスクショ.pdf（LINEスクリーンショット）
-      今田さんLINEログ.xlsx（8600行超のチャットログ）
+      I氏スクショ.pdf（LINEスクリーンショット）
+      I氏LINEログ.xlsx（8600行超のチャットログ）
     label: "危機介入の生記録"
 
   claude_response_15:

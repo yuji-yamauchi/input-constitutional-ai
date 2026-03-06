@@ -175,7 +175,7 @@ case_s:
           actor: "大阪依存症センター"
           action: "「全部任せろ」「山内に頼るな」"
         - date: "2023-04月〜"
-          actor: "八尾市保健所"
+          actor: "Y市保健所"
           action: "「依存症センターからの依頼がないと動けない」"
         - period: "1ヶ月以上"
           result: "何も進まない"
@@ -261,21 +261,21 @@ case_s:
             - "大阪府経営革新計画申請書"
       
       concurrent_initiatives:
-        - "京都大学大学院「摂食障害の衝動性神経基盤研究」参加予定"
+        - "K大学大学院「摂食障害の衝動性神経基盤研究」参加予定"
         - "TICC TIサポーター講座受講（本人・家族）"
 
     phase_6b_kyoto_university_coordination:
       date: "2023-08-01"
       source_document: "/mnt/user-data/uploads/Re__摂食障害の認知行動療法介入研究につきまして.pdf"
       parties:
-        researcher: "野田智美（京都大学大学院医学研究科）"
+        researcher: "N教授（K大学大学院医学研究科）"
         coordinator: "山内雄司"
-        participant: "S氏知佳"
-      email_cc: "知佳 S氏、S氏 加津栄（本人と母親）"
+        participant: "S氏"
+      email_cc: "S氏、S氏母（本人と母親）"
       transparency_design:
         purpose: "第三者介入による検証可能性の確保"
         methods:
-          - "京都大学という第三者機関の介入"
+          - "K大学という第三者機関の介入"
           - "母親を全メールのCcに入れる"
           - "本人にも同時送信"
           - "日付入りメールで記録保全"
@@ -287,12 +287,12 @@ case_s:
       
       police_report:
         date: "2023-08-18"
-        location: "河内警察署 刑事課暴力犯係"
+        location: "X警察署 刑事課暴力犯係"
         attendees: "本人と山内"
         officers:
-          supervisor: "山田刑事"
-          primary: "石川刑事"
-        contact: "TEL:072-956-1234 内線:382"
+          supervisor: "X1刑事"
+          primary: "X2刑事"
+        contact: "[REDACTED]"
         police_advice:
           - "一時的に大阪を離れる方が良い（報復の対策も含めて）"
           - "仮に元カレが違法行為をしていた事実が本当だとしても逮捕等できるまでは半年から一年はかかる"
@@ -306,13 +306,13 @@ case_s:
         start_date: "2023-08-21"
         location: "当法人が管理する退避場所"
         duration: "最長1ヶ月程度"
-        agreement: "本人及びご家族に合意済み、河内警察署も有効と意見"
+        agreement: "本人及びご家族に合意済み、X警察署も有効と意見"
         monthly_cost: "1万円（税込）/月（光熱費・ペット2匹引き受け含む）"
       
       service_type_change:
         original: "在宅利用"
         changed_to: "通所利用"
-        reason: "河内警察署からの助言による"
+        reason: "X警察署からの助言による"
       
       主訴_at_time:
         本人:
@@ -344,7 +344,7 @@ case_s:
             role: "他のコミュニティの帰属の代替として重要"
       
       document_submitted_to_city:
-        recipient: "東大阪市役所窓口"
+        recipient: "H市役所窓口"
         submitted_by: "母親"
         contents:
           - "警察出頭済みの事実"
@@ -357,7 +357,7 @@ case_s:
 
     phase_8_city_response:
       date: "2023-08-22"
-      event: "東大阪市役所からの電話（大野職員）"
+      event: "H市役所からの電話（O職員）"
       gap_between_preparation_and_response:
         準備完了事項:
           - "警察出頭済み（8/18）"
@@ -559,17 +559,17 @@ integrated_timeline:
         event: "阻害因子対応計画案（SoE思想起点文書）"
     august:
       - date: "08-01"
-        event: "京都大学野田先生とメール（本人・母親をCcに入れて透明性確保）"
+        event: "K大学N教授とメール（本人・母親をCcに入れて透明性確保）"
       - date: "08-04"
         event: "リワーク計画案作成（5ヶ月の成果：違法薬物・アルコール抑制達成）"
       - date: "08-18"
-        event: "河内警察署に本人と出頭（山田刑事・石川刑事と継続的情報共有を約束）"
+        event: "X警察署に本人と出頭（X1刑事・X2刑事と継続的情報共有を約束）"
       - date: "08-20"
-        event: "直近支援計画案作成（警察担当者名・連絡先記載）、母親が東大阪市役所窓口に提出"
+        event: "直近支援計画案作成（警察担当者名・連絡先記載）、母親がH市役所窓口に提出"
       - date: "08-21"
         event: "退避施設入居開始"
       - date: "08-22"
-        event: "東大阪市役所との電話（大野職員）→「すぐに決定できない」"
+        event: "H市役所との電話（O職員）→「すぐに決定できない」"
     september:
       - date: "09-12"
         event: "服部先生への依頼書（TIC共同検証事業準備）"
@@ -721,7 +721,7 @@ evidence_design_philosophy:
       practice: "警察に同行して出頭"
       reason: "公的機関を介入させる"
     third_party_institutions:
-      practice: "京都大学との連携（メールに本人・母親をCc）"
+      practice: "K大学との連携（メールに本人・母親をCc）"
       reason: "権威ある第三者による検証可能性"
     contact_minimization:
       practice: "「お母さんを窓口に」と依頼"
@@ -765,7 +765,7 @@ evidence_design_philosophy:
     core_value: "善意を信じてもらうのではなく、構造的に検証可能な形で証拠を残す"
 
 # ============================================
-# PART 4: 東大阪市役所との電話記録
+# PART 4: H市役所との電話記録
 # ============================================
 
 higashiosaka_city_call_record:
@@ -775,11 +775,11 @@ higashiosaka_city_call_record:
     source_file: "/mnt/user-data/uploads/2023_08_22_higasioosakacity.txt"
     format: "電話会議書き起こし"
     participants:
-      - name: "大野（もち子さん）"
-        role: "東大阪市役所職員（調査員）"
+      - name: "O職員"
+        role: "H市役所職員（調査員）"
       - name: "山内雄司（玄野武宏）"
         role: "コーリングサポ笠岡 管理者"
-    backup_contact: "ミキ（東大阪市役所職員）"
+    backup_contact: "M職員（H市役所職員）"
   
   context:
     days_since_police_report: 4
@@ -788,7 +788,7 @@ higashiosaka_city_call_record:
   
   situation_at_time_of_call:
     s_current_location: "岡山県笠岡市（実家）"
-    resident_registration: "東大阪市"
+    resident_registration: "H市"
     transportation: "父親が送迎対応"
     yamauchi_role: "親子関係の調整役（致命的にならないようキャッチボールの間に入る）"
     family_relationship_status: "コーリングサポが間に入ることで致命的にはなっていない"
@@ -803,7 +803,7 @@ higashiosaka_city_call_record:
     structural_issue: "医療側が親への情報隠蔽を指示しつつ、ドラッグ使用中の彼氏との同棲を容認"
   
   administrative_jurisdiction_problem:
-    issue: "福祉サービス決定の管轄（東大阪市 vs 笠岡市）"
+    issue: "福祉サービス決定の管轄（H市 vs 笠岡市）"
     kasaoka_city_rules:
       self_plan: "原則禁止"
       consultation_support: "必須"
@@ -815,7 +815,7 @@ higashiosaka_city_call_record:
     action_plan:
       - "笠岡市の認定担当者と木曜日に打ち合わせ"
       - "笠岡市で決定が難しいか確認"
-      - "東大阪市・笠岡市の両市で協議"
+      - "H市・笠岡市の両市で協議"
       - "どちらの市で決定が望ましいか判断"
   
   yamauchi_assessment:
@@ -900,13 +900,13 @@ documents_verified:
     - path: "/mnt/user-data/uploads/阻害因子対応計画案_20230512_.docx"
       content: "5/12版計画案（SoE思想起点）"
     - path: "/mnt/user-data/uploads/Re__摂食障害の認知行動療法介入研究につきまして.pdf"
-      content: "京都大学野田先生とのメール（8/1、本人・母親Cc）"
+      content: "K大学N教授とのメール（8/1、本人・母親Cc）"
     - path: "/mnt/user-data/uploads/リワーク計画案_20230512_-2.pdf"
       content: "8/4付リワーク計画案"
     - path: "/mnt/user-data/uploads/リワーク計画案_20230820_.pdf"
       content: "8/20付直近支援計画案（警察出頭・退避計画）"
     - path: "/mnt/user-data/uploads/2023_08_22_higasioosakacity.txt"
-      content: "東大阪市役所との電話記録（8/22）"
+      content: "H市役所との電話記録（8/22）"
   
   tic_project:
     - path: "/mnt/user-data/uploads/③服部先生依頼内容.pdf"
@@ -915,7 +915,7 @@ documents_verified:
       content: "TIC共同検証事業合意書案"
 
 session_outcome:
-  recorded: "S氏ケース6ヶ月間の全介入記録、TIC共同検証事業準備、東大阪市役所との管轄調整、ケース終結まで"
+  recorded: "S氏ケース6ヶ月間の全介入記録、TIC共同検証事業準備、H市役所との管轄調整、ケース終結まで"
   soe_relevance: "制度的阻害因子の実証的記録として、SoE理論の経験的基盤を構成"
   historical_significance: "脳出血直前の準備完了状態が、「制度が担うべき負荷の個人への集中」の帰結を示す"
   evidence_design: "「おっさん支援員と若い女性当事者」という構図への構造的対抗としての文書化戦略"

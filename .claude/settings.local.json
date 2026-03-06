@@ -20,7 +20,9 @@
       "Bash(ffmpeg -y -i \"障害福祉のプロへ：バイスティックの7原則.mp4\" -vn -acodec pcm_s16le -ar 16000 -ac 1 \"biestek_audio.wav\")",
       "Bash(python whisper_biestek.py)",
       "Bash(python process_biestek.py)",
-      "Bash(ffmpeg -y -i \"障害福祉のプロへ：バイスティックの7原則.mp4\" -vf \"subtitles=biestek_subtitles.srt:force_style=''FontName=Yu Gothic UI,FontSize=18,PrimaryColour=&H00FFFFFF,OutlineColour=&H00000000,Outline=2,Shadow=1,MarginV=20,WrapStyle=2''\" -c:a copy \"障害福祉のプロへ：バイスティックの7原則_字幕付き.mp4\")"
+      "Bash(ffmpeg -y -i \"障害福祉のプロへ：バイスティックの7原則.mp4\" -vf \"subtitles=biestek_subtitles.srt:force_style=''FontName=Yu Gothic UI,FontSize=18,PrimaryColour=&H00FFFFFF,OutlineColour=&H00000000,Outline=2,Shadow=1,MarginV=20,WrapStyle=2''\" -c:a copy \"障害福祉のプロへ：バイスティックの7原則_字幕付き.mp4\")",
+      "Bash(source \"/c/Users/USER/Documents/GitHub/input-constitutional-ai/whisper-env/Scripts/activate\")",
+      "Bash(python -c \"import torch; print\\(''PyTorch:'', torch.__version__\\); print\\(''CUDA available:'', torch.cuda.is_available\\(\\)\\); print\\(''CUDA version:'', torch.version.cuda if torch.cuda.is_available\\(\\) else ''N/A''\\)\")"
     ]
   }
 }

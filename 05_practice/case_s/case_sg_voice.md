@@ -104,7 +104,7 @@ tags: ["voicelog", "transcript", "consultation"]
 失礼します。
 
 ---
-title: "20230324_面談記録_山内・讃良"
+title: "20230324_面談記録_山内・S氏"
 date: 2023-03-24
 time: "Daytime"
 format: "Face-to-Face"
@@ -114,8 +114,8 @@ speakers:
     role: "支援者・男性（山内氏）"
   - id: "B"
     name: "サン"
-    role: "当事者・女性（讃良氏）"
+    role: "当事者・女性（S氏氏）"
   - id: "C"
     name: "イーダ"
-    role: "当事者・女性（今田氏・予備）"
+    role: "当事者・女性（I氏・予備）"
 tags: ["meeting", "transcript", "voicelog", "counseling"]
