@@ -3,7 +3,9 @@
     "allow": [
       "Bash(source /c/Users/USER/Documents/GitHub/input-constitutional-ai/whisper-env/Scripts/activate)",
       "Bash(whisper \"保護から権利へ：日本の障害者法.mp4\" --model medium --language ja --output_format srt --output_dir .)",
-      "Bash(python -c \":*)"
+      "Bash(python -c \":*)",
+      "Bash(curl -L -o \"Jensen-Campbell_2002_Agreeableness_peer_relations.pdf\" \"https://www.researchgate.net/profile/Lauri-Jensen-Campbell/publication/222402434_Agreeableness_extraversion_and_peer_relations_in_early_adolescence_Winning_friends_and_deflecting_aggression/links/0c7adb56114a60f64402636a/Agreeableness-extraversion-and-peer-relations-in-early-adolescence-Winning-friends-and-deflecting-aggression.pdf\")",
+      "Bash(curl -L -o \"Komarraju_2011_Big_Five_academic_achievement.pdf\" \"https://www.researchgate.net/profile/Meera-Komarraju/publication/251713506_The_Big_Five_personality_traits_learning_styles_and_academic_achievement/links/5567322308aeab77721ff213/The-Big-Five-personality-traits-learning-styles-and-academic-achievement.pdf\")"
     ]
   }
 }

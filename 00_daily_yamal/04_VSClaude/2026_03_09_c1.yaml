@@ -1,0 +1,114 @@
+session_metadata:
+  date: "2026-03-09"
+  session_type: "研究資料整理・Skill構築・動画処理"
+  time_check: "12:08 JST"
+
+key_achievements:
+  - "NOCC関連論文PDF12件のダウンロード試行（J-STAGE 2件成功、ResearchGate 7件はCloudflare bot検知でブロック）"
+  - "障害者権利条約：福祉専門職のためのガイド（MP4）の字幕パイプライン完了"
+  - "Claude Skills PDFガイド（33p）の読了・要約"
+  - "subtitle-pipeline Skill作成（Whisper→修正→ラッピング→ffmpeg→説明文→Markdown）"
+  - "daily-report Skill作成（日報YAML自動生成）"
+  - "合理的配慮NotebookLMソース資料の作成（375行）"
+
+files_created:
+  downloads:
+    - filename: "障害者権利条約：福祉専門職のためのガイド_字幕付き.mp4"
+      type: "MP4"
+      purpose: "YouTube用字幕付き動画"
+    - filename: "障害者権利条約：福祉専門職のためのガイド_wrapped.srt"
+      type: "SRT"
+      purpose: "16字×2行ラッピング済み字幕（128ブロック）"
+    - filename: "障害者権利条約_youtube_description.txt"
+      type: "TXT"
+      purpose: "YouTube説明欄案（13チャプター）"
+    - filename: "20221017_木浦さん山内①_transcript.txt"
+      type: "TXT"
+      purpose: "2022年会話録音の文字起こし（5分21秒）"
+    - filename: "20221017_木浦さん山内①.srt"
+      type: "SRT"
+      purpose: "同上SRT形式"
+  repo:
+    - path: "00_daily_yamal/08_youtube/2026_03_08_障害者権利条約_福祉専門職のためのガイド.md"
+      purpose: "動画内容Markdown（CRPD解説、SoE接続付き）"
+    - path: "00_daily_yamal/05_NotebookLM/reasonable_accommodation_welfare_services_2026_03_09.md"
+      purpose: "合理的配慮NotebookLMソース（375行、8章構成）"
+    - path: "00_daily_yamal/03_gemini/2026_03_07_ge1.yaml"
+      purpose: "Gemini日報（サビ管テレワーク戦略設計）"
+    - path: "02_social_system/06_NOCC/Kunizato_2008_Cloninger_BigFive.pdf"
+      purpose: "NOCC指標関連論文（国里ら 2008）"
+    - path: "02_social_system/06_NOCC/Nishikawa_2015_Grit-S_Japanese.pdf"
+      purpose: "NOCC指標関連論文（西川ら 2015 Grit-S）"
+    - path: "03_ai_rights/claude/The-Complete-Guide-to-Building-Skill-for-Claude.pdf"
+      purpose: "Anthropic公式Skills構築ガイド（33ページ）"
+    - path: ".claude/skills/subtitle-pipeline/"
+      purpose: "字幕パイプラインSkill（SKILL.md + scripts 2本 + references 2本）"
+    - path: ".claude/skills/daily-report/"
+      purpose: "日報YAML自動生成Skill"
+
+ai_sessions:
+  claude_code:
+    - "NOCC論文PDFダウンロード（12件試行→2件成功、10件要手動DL）"
+    - "障害者権利条約動画の字幕パイプライン（Whisper→7修正→128ブロック→ffmpeg→説明文→MD）"
+    - "2022年木浦氏会話録音の文字起こし（5:21、85セグメント）"
+    - "Claude Skills PDFガイド読了・Puu向け要約"
+    - "subtitle-pipeline Skill構築（福祉用語辞書42エントリ含む）"
+    - "daily-report Skill構築"
+  gemini:
+    - "サビ管テレワーク戦略設計（前日分、本日保存）"
+
+key_insights:
+  skill_architecture:
+    statement: "毎日繰り返すプロセスはSkill化で自動化できる"
+    implications:
+      - "字幕パイプラインは完全にパターン化されており、福祉用語辞書の成長で精度が上がる"
+      - "日報作成も定型プロセスとしてSkill化可能"
+      - "将来的にICAI支援記録テンプレートもSkillとして配布可能"
+  welfare_dictionary:
+    statement: "5本の動画処理で蓄積した42パターンの福祉用語Whisper誤認識辞書"
+    implications:
+      - "動画ごとに辞書が成長する累積的資産"
+      - "防守法→防止法、韓国→勧告、パタナリズム→パターナリズム等のパターン"
+  nocc_literature:
+    statement: "ResearchGateはCloudflare bot検知でcurlダウンロード不可"
+    implications:
+      - "学術論文のプログラマティックDLには限界がある"
+      - "J-STAGEは直接DL可能（日本の学術プラットフォームの利点）"
+
+next_actions:
+  immediate:
+    - "NOCC論文の残り10件を手動ダウンロード（ResearchGate等）"
+    - "合理的配慮NotebookLM動画の生成・字幕処理"
+  short_term:
+    - "Skill化の次候補検討（NotebookLMソース作成パイプライン）"
+    - "就職活動：面接準備"
+  medium_term:
+    - "2027年度大学院博士課程出願準備"
+    - "SoE理論の国際発信強化"
+
+git_activity:
+  commits_today: 0
+  uncommitted_changes:
+    - ".claude/settings.json（変更）"
+  untracked_new:
+    - ".claude/skills/（subtitle-pipeline + daily-report）"
+    - "00_daily_yamal/03_gemini/2026_03_07_ge1.yaml"
+    - "00_daily_yamal/05_NotebookLM/（3ファイル）"
+    - "00_daily_yamal/08_youtube/（動画Markdown群）"
+    - "02_social_system/05_虐待防止法/"
+    - "02_social_system/06_NOCC/"
+    - "03_ai_rights/claude/"
+
+metadata:
+  created_by: "Claude Opus 4.6"
+  created_at: "2026-03-09T12:10:00+09:00"
+  skill_used: "daily-report v1.0.0"
+
+fire_culture_note: |
+  本日はSkill構築という新しい段階に入った日。
+  毎日繰り返していた字幕パイプラインと日報作成を、
+  再利用可能な知識として構造化した。
+  福祉用語辞書は42エントリに成長し、
+  動画を処理するたびに精度が上がる累積的資産となった。
+  「記録されなかった問いは燃え尽きたものと見なされる」——
+  プロセス自体を記録し構造化することで、問いの再燃可能性が高まった。

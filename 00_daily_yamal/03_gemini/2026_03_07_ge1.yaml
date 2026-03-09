@@ -1,0 +1,47 @@
+context:
+  user: 山内 雄司 (52歳 / 参謀 / 博士課程出願予定)
+  status: 就職活動中 (サビ管・管理者候補)
+  qualifications:
+    - サービス管理責任者（実践研修修了済み / 完全体）
+    - 実務経験：2年以上（継続中）
+
+audit_and_architecture:
+  latest_regulations_2024:
+    telework_allowance:
+      status: "厚生労働省告示（vol.1237等）により公式容認"
+      conditions:
+        - "ICT活用によるリアルタイム連携"
+        - "事故発生時の緊急対応体制の整備"
+        - "運営規定へのテレワーク条項の追加"
+      strategic_value: "コアタイム出勤＋在宅事務のハイブリッド運用による、研究時間の捻出と事務コストの最適化。"
+
+    dual_role_patterns:
+      pattern_1_multi_function: "同一敷地内/近接2事業所の兼務（定員合計60名迄）"
+      pattern_2_manager_hybrid: "管理者（リモート可）＋サビ管（コアタイム出勤）の多重配置"
+      risk_hedge: "常勤換算の按分および自治体（岡山市）ローカルルールへの事前合意が必要。"
+
+  negotiation_protocols:
+    vs_management:
+      strategy: "ROI（投資対効果）によるマウント"
+      logic: |
+        「実践研修修了済み」という希少インフラを提供。
+        2年間のOJT待機コストと研修送り出しリスクをゼロ化。
+        報酬減算（個別支援計画未作成等）をフォレンジック監査で封殺。
+    vs_bureaucracy:
+      strategy: "情報非対称性の利用"
+      logic: |
+        「最新の厚労省通知に基づき、テレワークを活用した次世代型サビ管モデルを実装する」
+        行政監査に対し、実測（ログ・証跡）に基づいた完璧なエビデンスを提示。
+
+strategic_targets_2026:
+  primary_goal: "日本社会事業大学大学院 博士課程との両立"
+  practice_record_v3_1:
+    focus: "サビ管としての2年間の実務（HOW）を学術言語に翻訳"
+    theory: "ICAI（Input Constitutional AI）による支援の連結決算"
+  work_style_design:
+    core_time: "午前〜昼過ぎ（現場のAudit / 多職種連携 / アセスメント）"
+    remote_time: "夕方以降（計画作成 / 博士課程の研究 / フォレンジック分析）"
+
+next_action:
+  - "特定の応募先（A型・B型・移行等）に合わせた、ハイブリッド勤務提案書の作成"
+  - "岡山市の運営規定サンプルに合わせた、テレワーク運用ルールのドラフト化"

@@ -1,0 +1,253 @@
+# ============================================================
+# 虐待防止法関連 法律・ガイドライン・行政資料 URL一覧
+# ============================================================
+# 作成日: 2025-03-07
+# 作成者: Claude Opus 4.6
+# 目的: 虐待防止に関する法令・行政資料の体系的整理
+# 注意: URLは2025年3月時点のもの。行政サイトの改編により
+#       リンク切れが発生する可能性あり。定期的な確認推奨。
+# ============================================================
+
+# ==========================================
+# 1. 法律本文（e-Gov法令検索）
+# ==========================================
+laws:
+  - category: "障害者虐待防止法"
+    formal_name: "障害者虐待の防止、障害者の養護者に対する支援等に関する法律"
+    enacted: "2011-06-24"
+    enforced: "2012-10-01"
+    law_number: "平成23年法律第79号"
+    urls:
+      e_gov_law: "https://laws.e-gov.go.jp/law/423AC1000000079"
+      e_gov_enforcement_order: "https://elaws.e-gov.go.jp/document?lawid=424M60000100132"
+
+  - category: "高齢者虐待防止法"
+    formal_name: "高齢者虐待の防止、高齢者の養護者に対する支援等に関する法律"
+    enacted: "2005-11-09"
+    enforced: "2006-04-01"
+    law_number: "平成17年法律第124号"
+    urls:
+      e_gov_law: "https://laws.e-gov.go.jp/law/417AC1000000124"
+
+  - category: "児童虐待防止法"
+    formal_name: "児童虐待の防止等に関する法律"
+    enacted: "2000-05-24"
+    enforced: "2000-11-20"
+    law_number: "平成12年法律第82号"
+    urls:
+      e_gov_law: "https://laws.e-gov.go.jp/law/412AC1000000082"
+
+  - category: "DV防止法"
+    formal_name: "配偶者からの暴力の防止及び被害者の保護等に関する法律"
+    enacted: "2001-04-13"
+    enforced: "2001-10-13"
+    law_number: "平成13年法律第31号"
+    urls:
+      e_gov_law: "https://laws.e-gov.go.jp/law/413AC0100000031"
+
+# ==========================================
+# 2. 厚労省ポータルページ（総合案内）
+# ==========================================
+ministry_portals:
+  - category: "障害者虐待防止"
+    ministry: "厚生労働省"
+    description: "障害者虐待防止法の概要・法令・通知・研修資料等の総合ページ"
+    urls:
+      main_portal: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/shougaishahukushi/gyakutaiboushi/index.html"
+      notices_and_materials: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/shougaishahukushi/gyakutaiboushi/tsuuchi.html"
+
+  - category: "高齢者虐待防止"
+    ministry: "厚生労働省"
+    description: "高齢者虐待防止の基本・国マニュアル・通知等の総合ページ"
+    urls:
+      main_portal: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000200478_00003.html"
+      basic_overview: "https://www.mhlw.go.jp/file/06-Seisakujouhou-12300000-Roukenkyoku/1.pdf"
+
+  - category: "児童虐待防止"
+    ministry: "こども家庭庁（令和5年4月〜）"
+    note: "令和5年3月以前の情報は厚労省サイトに掲載"
+    urls:
+      cfa_main_portal: "https://www.cfa.go.jp/policies/jidougyakutai"
+      cfa_laws_guidelines: "https://www.cfa.go.jp/policies/jidougyakutai/hourei-tsuuchi"
+      mhlw_legacy_laws: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kodomo/kodomo_kosodate/dv/hourei.html"
+      mhlw_legacy_amendment: "https://www.mhlw.go.jp/bunya/kodomo/dv-boushikaisei.html"
+      mhlw_legacy_law_text: "https://www.mhlw.go.jp/bunya/kodomo/dv22/01.html"
+
+# ==========================================
+# 3. ガイドライン・マニュアル（手引き）
+# ==========================================
+guidelines_and_manuals:
+
+  # --- 障害者虐待防止 ---
+  disability_abuse_prevention:
+    - title: "障害者福祉施設等における障害者虐待の防止と対応の手引き"
+      subtitle: "施設・事業所従事者向けマニュアル"
+      issued_by: "厚生労働省 社会・援護局 障害保健福祉部"
+      last_revised: "令和6年7月"
+      url: "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/7692b729-5944-45ee-bbd8-f0283126b7db/0a23426e/20241101_policies_shougaijishien_shisaku_guideline_tebiki_18.pdf"
+      note: "こども家庭庁サイトにも掲載"
+
+    - title: "市町村・都道府県における障害者虐待の防止と対応の手引き"
+      subtitle: "自治体向けマニュアル"
+      issued_by: "厚生労働省"
+      last_revised: "令和6年7月"
+      url: "※厚労省通知・関連資料等ページからダウンロード"
+      portal: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/shougaishahukushi/gyakutaiboushi/tsuuchi.html"
+
+    - title: "障害者虐待防止法に関するQ&A"
+      issued_by: "厚生労働省 障害保健福祉部"
+      last_revised: "令和3年12月24日一部改正"
+      url: "※厚労省通知・関連資料等ページからダウンロード"
+      portal: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/shougaishahukushi/gyakutaiboushi/tsuuchi.html"
+
+    - title: "障害者虐待防止及び身体拘束等の適正化に向けた体制整備等の取組事例集"
+      issued_by: "厚生労働省"
+      issued_date: "令和4年3月"
+      url: "※厚労省通知・関連資料等ページからダウンロード"
+      portal: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/shougaishahukushi/gyakutaiboushi/tsuuchi.html"
+
+    - title: "身体的拘束等の適正化の推進（障害福祉分野）"
+      issued_by: "厚生労働省 障害福祉課"
+      description: "令和6年度報酬改定に伴う身体拘束適正化の推進資料"
+      url: "https://www.mhlw.go.jp/content/001141646.pdf"
+
+  # --- 高齢者虐待防止 ---
+  elder_abuse_prevention:
+    - title: "市町村・都道府県における高齢者虐待への対応と養護者支援について"
+      subtitle: "国マニュアル"
+      issued_by: "厚生労働省 老健局"
+      last_revised: "令和6年度改訂"
+      portal: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000200478_00003.html"
+
+    - title: "高齢者虐待防止の基本"
+      issued_by: "厚生労働省"
+      description: "高齢者虐待防止法の概要・虐待類型・対応フロー等"
+      url: "https://www.mhlw.go.jp/content/12304250/001225719.pdf"
+
+    - title: "介護施設・事業所等で働く方々への身体拘束廃止・防止の手引き"
+      issued_by: "厚生労働省"
+      last_revised: "令和6年3月"
+      url: "https://www.mhlw.go.jp/content/12300000/001248430.pdf"
+      note: "令和5年度老人保健健康増進等事業による調査研究事業の成果物"
+
+    - title: "身体拘束ゼロへの手引き"
+      issued_by: "厚生労働省 身体拘束ゼロ作戦推進会議"
+      original_issued: "平成13年3月"
+      description: "身体拘束の定義・11項目の具体例・3要件（切迫性・非代替性・一時性）等"
+      note: "各種マニュアルで引用される基礎文書"
+
+  # --- 児童虐待防止 ---
+  child_abuse_prevention:
+    - title: "子ども虐待対応の手引き"
+      issued_by: "厚生労働省"
+      last_revised: "平成25年8月改正"
+      url: "https://www.mhlw.go.jp/bunya/kodomo/dv12/01.html"
+      note: "各章別ページ。第1章〜第14章で構成"
+
+    - title: "児童虐待に係る法令・指針等一覧"
+      issued_by: "こども家庭庁"
+      description: "改正児童福祉法関係通知・ガイドライン等"
+      url: "https://www.cfa.go.jp/policies/jidougyakutai/hourei-tsuuchi"
+
+    - title: "児童虐待に関する法令・指針等一覧（厚労省レガシー）"
+      issued_by: "厚生労働省"
+      description: "令和5年3月以前の通知・指針等"
+      url: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kodomo/kodomo_kosodate/dv/hourei.html"
+
+# ==========================================
+# 4. 統計・調査報告
+# ==========================================
+statistics_and_reports:
+  - category: "障害者虐待"
+    title: "障害者虐待の防止、障害者の養護者に対する支援等に関する法律に基づく対応状況等に関する調査結果"
+    issued_by: "厚生労働省"
+    frequency: "毎年度公表"
+    portal: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/shougaishahukushi/gyakutaiboushi/index.html"
+
+  - category: "高齢者虐待"
+    title: "高齢者虐待防止法に基づく対応状況等に関する調査結果"
+    issued_by: "厚生労働省 老健局"
+    frequency: "毎年度公表"
+    portal: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000200478_00003.html"
+
+  - category: "児童虐待"
+    title: "児童虐待等要保護事例の検証に関する専門委員会報告"
+    issued_by: "こども家庭庁"
+    frequency: "毎年度公表"
+    portal: "https://www.cfa.go.jp/policies/jidougyakutai"
+
+# ==========================================
+# 5. 関連する重要法令・制度
+# ==========================================
+related_laws_and_systems:
+  - title: "障害者総合支援法"
+    formal_name: "障害者の日常生活及び社会生活を総合的に支援するための法律"
+    relevance: "障害福祉サービス事業所の運営基準に虐待防止措置を規定"
+    e_gov: "https://laws.e-gov.go.jp/law/417AC0000000123"
+
+  - title: "障害者差別解消法"
+    formal_name: "障害を理由とする差別の解消の推進に関する法律"
+    relevance: "合理的配慮の不提供も権利侵害の一形態"
+    e_gov: "https://laws.e-gov.go.jp/law/425AC0000000065"
+
+  - title: "障害者権利条約（CRPD）"
+    formal_name: "障害者の権利に関する条約"
+    relevance: "第16条に搾取・暴力・虐待からの自由を規定"
+    url: "https://www.mofa.go.jp/mofaj/gaiko/jinken/index_shogaisha.html"
+
+  - title: "精神保健福祉法"
+    formal_name: "精神保健及び精神障害者福祉に関する法律"
+    relevance: "2024年改正で精神科病院における虐待防止を追加（2026年4月施行）"
+    e_gov: "https://laws.e-gov.go.jp/law/325AC0100000123"
+
+  - title: "成年後見制度"
+    relevance: "虐待防止と権利擁護の連携制度。高齢者虐待防止法第28条に利用促進義務"
+    url: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000202622.html"
+
+# ==========================================
+# 6. 研修・啓発資料
+# ==========================================
+training_and_awareness:
+  - title: "障害者虐待防止・権利擁護指導者養成研修"
+    issued_by: "厚生労働省"
+    description: "都道府県研修の講師向け指導者養成研修。講義資料・動画を公開"
+    portal: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/shougaishahukushi/gyakutaiboushi/index.html"
+    note: "資料・動画の無断使用禁止、SNS投稿不可"
+
+  - title: "障害者虐待防止の手引き（チェックリスト）・研修ガイドブック"
+    issued_by: "全国社会福祉協議会"
+    description: "施設・事業所向けチェックリストと研修プログラム"
+    url: "https://www.shakyo.or.jp/download/shougai_guide/index.html"
+
+  - title: "職場内虐待防止法研修用冊子"
+    issued_by: "厚生労働省"
+    description: "使用者による虐待防止のための研修教材"
+    portal: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/shougaishahukushi/gyakutaiboushi/tsuuchi.html"
+
+# ==========================================
+# 7. SoE研究との接続メモ
+# ==========================================
+soe_research_connection:
+  note: >
+    虐待防止法制は、SoEフレームワークにおける
+    「搾取構造の可視化」の法的基盤を提供する。
+    特に以下の接点が重要:
+  connections:
+    - point: "障害者虐待防止法の経済的虐待（第2条）"
+      soe_relevance: "就労支援における工賃搾取・不当処分の法的定義"
+    - point: "身体拘束の適正化（3要件: 切迫性・非代替性・一時性）"
+      soe_relevance: "行動制限の正当化プロセス → Input Constitutional AIの判断基準モデル"
+    - point: "通報義務と早期発見（法第16条等）"
+      soe_relevance: "構造的搾取の早期検知システムとしてのSoEプラットフォーム"
+    - point: "虐待防止委員会の義務化（令和4年度〜）"
+      soe_relevance: "組織レベルのガバナンス構造 → SoE監査機能との対応"
+
+# ============================================================
+# metadata
+# ============================================================
+metadata:
+  target_folder: "99_daily_yamal/01_Claude/"
+  file_name_suggestion: "abuse_prevention_laws_guidelines_urls.yaml"
+  reason: "虐待防止法関連の行政資料URL体系整理"
+  created_at: "2025-03-07"
+  created_by: "Claude Opus 4.6"
