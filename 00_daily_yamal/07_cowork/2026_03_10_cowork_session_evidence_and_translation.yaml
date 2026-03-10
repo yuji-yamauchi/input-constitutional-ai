@@ -1,0 +1,270 @@
+# ==========================================
+# Cowork セッション記録
+# タスク: Anthropicスキルガイド和訳 + SoEエビデンスレビュー構造化
+# 記録日: 2026-03-10
+# ==========================================
+
+session_overview:
+  date: "2026-03-10"
+  platform: "Claude Desktop (Cowork beta)"
+  model: "claude-opus-4-6"
+  tools_used:
+    - "Read / Write / Edit（ファイル操作）"
+    - "WebSearch / WebFetch（情報検索）"
+    - "Bash（フォルダ作成・ダウンロード試行）"
+    - "Agent（サブエージェント: 検証・並列作成）"
+  status: "完了（PDF直接収集は環境制約で代替対応）"
+  session_continuity: "前セッション（2026-03-09）からのコンテキスト引き継ぎ"
+
+# ==========================================
+# タスク1: Anthropicスキルガイド和訳
+# ==========================================
+
+task_1:
+  description: |
+    Anthropic公式PDF "The Complete Guide to Building Skills for Claude"
+    （全29ページ）の日本語全訳をMarkdownで作成
+  source:
+    url: "https://resources.anthropic.com/hubfs/The-Complete-Guide-to-Building-Skill-for-Claude.pdf"
+    pages: 29
+    file_size: "561KB"
+  output:
+    path: "00_daily_yamal/05_NotebookLM/anthropic_skills_guide_ja_2026_03_09.md"
+    format: "Markdown（技術用語は原語併記）"
+
+  content_structure:
+    - chapter: "はじめに"
+      original: "Introduction"
+      pages: "p.3"
+    - chapter: "第1章 基礎知識"
+      original: "Fundamentals"
+      pages: "p.4-6"
+      key_concepts:
+        - "SKILL.mdファイル構造"
+        - "段階的開示（Progressive Disclosure）3レベル"
+        - "構成可能性・移植性"
+        - "MCP + スキルの連携パターン"
+    - chapter: "第2章 計画と設計"
+      original: "Planning and Design"
+      pages: "p.7-13"
+      key_concepts:
+        - "3つのユースケースカテゴリ"
+        - "YAMLフロントマター仕様"
+        - "descriptionフィールドの書き方"
+        - "成功基準の定義方法"
+    - chapter: "第3章 テストと反復"
+      original: "Testing and Iteration"
+      pages: "p.14-17"
+      key_concepts:
+        - "トリガーテスト / 機能テスト / パフォーマンス比較"
+        - "skill-creatorスキルの活用法"
+        - "フィードバックに基づく反復サイクル"
+    - chapter: "第4章 配布と共有"
+      original: "Distribution and Sharing"
+      pages: "p.18-20"
+      key_concepts:
+        - "配布モデル（個人 / 組織 / API）"
+        - "オープン標準としてのスキル仕様"
+        - "GitHubでのホスティング推奨"
+    - chapter: "第5章 パターンとトラブルシューティング"
+      original: "Patterns and troubleshooting"
+      pages: "p.21-27"
+      key_concepts:
+        - "5つの設計パターン"
+        - "問題先行型 vs ツール先行型"
+        - "トラブルシューティングチェックリスト"
+    - chapter: "第6章 リソースと参考資料"
+      original: "Resources and references"
+      pages: "p.28-29"
+
+  verification:
+    method: "サブエージェント（haiku）による原文比較検証"
+    results:
+      章構成の網羅性: "合格 — 全6章+はじめに完全網羅"
+      技術用語の正確性: "合格 — 原語併記で統一"
+      コード例の転記: "合格 — 完全一致"
+      重要概念の網羅: "合格 — パターン・ユースケース・TSすべて含む"
+      誤訳の有無: "合格 — 明らかな誤訳なし"
+    note: "Reference A（Quick checklist）は画像ページのため省略"
+
+# ==========================================
+# タスク2: SoEエビデンスレビュー構造化
+# ==========================================
+
+task_2:
+  description: |
+    04_SoE/01_evidence_reviews 配下に、認知・非認知エビデンスを持つ
+    メソッドごとのフォルダを作成し、エビデンスソース一覧を整備
+
+  scope:
+    intervention_methods: 12
+    assessment_methods: 4
+    total_folders_created: 16
+    existing_folders_preserved: "01_base〜08_CRC（変更なし）"
+
+  intervention_methods:
+    - id: "10"
+      name: "IPS_Individual_Placement_and_Support"
+      cognitive_evidence: "認知強化+IPS併用効果、職場定着の認知予測因子"
+      noncognitive_evidence: "自己効力感、希望（Hope Scale）、社会機能改善"
+      key_sources_count: 6
+    - id: "11"
+      name: "CBT_Cognitive_Behavioral_Therapy"
+      cognitive_evidence: "認知再構成、自動思考の修正、実行機能改善"
+      noncognitive_evidence: "自尊感情、対処能力、復職動機、ストレス耐性"
+      key_sources_count: 5
+    - id: "12"
+      name: "SST_Social_Skills_Training"
+      cognitive_evidence: "社会認知、視点取得能力、問題解決スキル"
+      noncognitive_evidence: "社会的自信、コミュニケーション、対人関係"
+      key_sources_count: 5
+    - id: "13"
+      name: "SE_Supported_Employment"
+      cognitive_evidence: "認知訓練+SE統合効果（MORES研究）"
+      noncognitive_evidence: "QoL、自己決定、経済的自立"
+      key_sources_count: 5
+    - id: "14"
+      name: "Job_Coaching"
+      cognitive_evidence: "ワーキングメモリ向上、手続き記憶の外部支援"
+      noncognitive_evidence: "自律性、経済的自立、職場帰属感"
+      key_sources_count: 5
+    - id: "15"
+      name: "ACT_Acceptance_Commitment_Therapy"
+      cognitive_evidence: "認知的脱フュージョン、注意の柔軟性"
+      noncognitive_evidence: "心理的柔軟性、価値に沿った行動、受容"
+      key_sources_count: 5
+    - id: "16"
+      name: "MI_Motivational_Interviewing"
+      cognitive_evidence: "意思決定バランス、認知的不協和の活用"
+      noncognitive_evidence: "内発的動機、変化準備性、自己決定"
+      key_sources_count: 5
+    - id: "17"
+      name: "WRAP_Wellness_Recovery_Action_Plan"
+      cognitive_evidence: "自己モニタリング、パターン認識、計画立案"
+      noncognitive_evidence: "希望、リカバリー志向、自己権利擁護"
+      key_sources_count: 5
+    - id: "18"
+      name: "DBT_Dialectical_Behavior_Therapy"
+      cognitive_evidence: "苦痛耐性、マインドフルネス認知"
+      noncognitive_evidence: "感情調整、対人関係有効性"
+      key_sources_count: 5
+    - id: "19"
+      name: "ABA_Applied_Behavior_Analysis"
+      cognitive_evidence: "課題分析、系統的教授法、般化訓練"
+      noncognitive_evidence: "目標設定、適応行動、自己管理"
+      key_sources_count: 5
+    - id: "20"
+      name: "Mindfulness_Based_Interventions"
+      cognitive_evidence: "実行機能改善（g=0.15-0.23）、注意制御"
+      noncognitive_evidence: "ウェルビーイング、ストレス低減、レジリエンス"
+      key_sources_count: 6
+    - id: "21"
+      name: "Vocational_Rehabilitation"
+      cognitive_evidence: "全般認知・記憶・実行機能が転帰予測因子"
+      noncognitive_evidence: "動機づけ、社会的支援、自己決定"
+      key_sources_count: 5
+
+  assessment_methods:
+    - id: "30"
+      name: "CHC_Cognitive_Assessment"
+      description: "Cattell-Horn-Carroll認知能力理論（Gf, Gwm等）"
+    - id: "31"
+      name: "Grit_NonCognitive_Measures"
+      description: "Duckworthグリット尺度、Credéメタ分析（88研究）"
+    - id: "32"
+      name: "Self_Efficacy_Measures"
+      description: "Bandura自己効力感理論、GSEスケール"
+    - id: "33"
+      name: "Growth_Mindset"
+      description: "Dweck成長マインドセット、Yeager大規模RCT"
+
+  deliverables:
+    per_folder: "sources.md（エビデンスソース一覧）"
+    format: |
+      各sources.mdに含まれる情報:
+      - 認知的エビデンスの概要（日本語）
+      - 非認知的エビデンスの概要（日本語）
+      - 主要文献テーブル（著者・年・タイトル・URL/DOI・アクセス種別）
+      - SoEフレームワークとの関連（会計メタファー・LLM測定との接続）
+
+  pdf_collection:
+    attempted: true
+    result: "環境制約により直接ダウンロード不可"
+    error: "プロキシ制限（blocked-by-allowlist）— pmc.ncbi.nlm.nih.gov等がブロック"
+    alternative: |
+      sources.mdにオープンアクセスPDFの直接URLを記載。
+      ユーザーのローカル環境からURLを開いてダウンロード可能。
+    recommendation: |
+      ローカルPCでPythonスクリプト（requests + os）を使い、
+      sources.mdからURLを抽出して一括ダウンロードするのが最も効率的。
+
+# ==========================================
+# タスク3（前セッションからの引き継ぎ確認）
+# ==========================================
+
+task_0_carryover:
+  description: "NotebookLM用 合理的配慮スクリプト（前セッションで完了）"
+  output: "00_daily_yamal/05_NotebookLM/reasonable_accommodation_welfare_services_2026_03_09.md"
+  status: "完了・検証済み"
+  verification: "5カテゴリのハルシネーションチェック全項目合格"
+
+# ==========================================
+# 補足: Anthropicスキルガイドの研究的示唆
+# ==========================================
+
+research_implications:
+  description: |
+    Anthropicスキルガイドは、SoEプロジェクトのスキル化に直接活用可能。
+    特にNotebookLMスクリプト生成やSoE整合性チェックを
+    SKILL.md形式でパッケージ化することで再利用性が向上する。
+
+  potential_skills:
+    - name: "soe-evidence-review"
+      purpose: "メソッド別エビデンスレビューの自動生成"
+      trigger: "ユーザーが特定の介入手法のエビデンスを求めた時"
+    - name: "notebooklm-script-generator"
+      purpose: "NotebookLM用教育スクリプトの自動生成"
+      trigger: "ユーザーがNotebookLM用台本を作成したい時"
+    - name: "soe-consistency-checker"
+      purpose: "SoE理論構造の整合性チェック"
+      trigger: "新しい概念追加時のハレーション検知"
+
+  loop_feature_note: |
+    Claude Code v1.0.33（2026-03-07）で /loop コマンドが追加。
+    定期実行によるSoE整合性監視やYAML構造チェックの自動化に活用可能。
+
+# ==========================================
+# 環境・制約メモ
+# ==========================================
+
+environment_notes:
+  cowork_stability: "本セッションではVMエラーなし。安定稼働。"
+  context_compaction: |
+    前セッションからのコンテキスト引き継ぎが発生（コンテキスト圧縮）。
+    サマリーから復元して作業を継続。
+  proxy_restriction: |
+    Cowork VM環境のプロキシ（localhost:3128）が
+    pmc.ncbi.nlm.nih.gov, files.eric.ed.gov 等をブロック。
+    curl/wgetによるPDF直接ダウンロードは不可。
+    WebSearch/WebFetchによる情報取得は可能。
+
+# ==========================================
+# 次回アクション
+# ==========================================
+
+next_actions:
+  - action: "ローカル環境からPDF一括ダウンロード"
+    priority: "高"
+    method: |
+      各フォルダのsources.mdからURLを抽出し、
+      Pythonスクリプトで自動ダウンロード
+  - action: "SoEスキル化の検討"
+    priority: "中"
+    method: |
+      anthropic_skills_guide_ja を参考に、
+      NotebookLMスクリプト生成をSKILL.md形式に変換
+  - action: "エビデンスレビューの内容充実"
+    priority: "中"
+    method: |
+      各メソッドのsources.md内の文献を精読し、
+      認知・非認知エビデンスの詳細レビューを追記
