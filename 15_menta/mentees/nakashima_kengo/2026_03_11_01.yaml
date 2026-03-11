@@ -1,0 +1,121 @@
+meeting:
+  topic: HOHOHO構想ディスカッション
+  participants:
+    - 山内雄司
+    - 中島健吾
+    - ChatGPT
+
+summary:
+  core_concept: >
+    HOHOHOは「歩行 + ナラティブ + 感情 + 視覚情報」を都市データとして蓄積し、
+    AI解析と行政政策に活用できる市民参加型都市センサーネットワークの可能性を持つ。
+
+structure:
+  data_generation:
+    elements:
+      - walking
+      - visual_information
+      - narrative
+      - emotion
+    result: urban_experience_data
+
+  processing:
+    - AI_analysis
+    - evidence_generation
+
+  usage:
+    - municipal_policy
+    - infrastructure_analysis
+    - disaster_resilience
+    - tourism_information
+
+comparison:
+  google_model:
+    characteristics:
+      - automated_data
+      - sensors
+      - streetview_imagery
+  hohoho_model:
+    characteristics:
+      - human_experience
+      - narrative_data
+      - emotional_context
+      - citizen_participation
+
+data_architecture:
+  principle: 民間データ主体
+  flow:
+    - hohoho_app
+    - user_opt_in
+    - private_database
+    - anonymization
+    - administrative_use
+  benefits:
+    - avoid_government_system_constraints
+    - bypass_domestic_server_requirement
+    - continuous_data_accumulation
+
+cultural_positioning:
+  western_model:
+    concept: surveillance
+    tools:
+      - security_cameras
+      - centralized_monitoring
+  japanese_model:
+    concept: community_support
+    approach:
+      - neighborhood_watch
+      - citizen_observation
+      - shared_information
+
+product_strategy:
+  entry_layer:
+    - local_tourism
+    - walking_logs
+    - community_narratives
+  growth_layer:
+    - citizen_data_collection
+    - urban_data_generation
+  advanced_layer:
+    - infrastructure_monitoring
+    - disaster_prevention
+    - business_continuity_planning
+
+industry_academic_structure:
+  hohoho_role: citizen_data_platform
+  university_role: evidence_and_research
+  government_role: policy_application
+  companies_role: service_development
+
+ai_integration:
+  data_types:
+    - photos
+    - voice
+    - text
+    - emotion_tags
+    - location
+  technology:
+    - multimodal_ai
+  concept:
+    human: sensor
+    ai: inference_engine
+
+research_topics:
+  fields_to_investigate:
+    - participatory_sensing
+    - citizen_sensing
+    - volunteered_geographic_information
+    - civic_tech
+  key_question: >
+    「歩行 + ナラティブ + 感情 + 都市データ」の統合モデルが
+    欧米研究・プロダクトとして既に存在するか。
+
+mentor_notes:
+  - 行政案件では説明可能なエビデンスが最重要
+  - 上流工程（事業設計・仕様設計）理解が必要
+  - HOHOHOの主導権を守るため構造理解が重要
+
+provisional_conclusion: >
+  HOHOHOは単なる観光アプリではなく、
+  市民参加型都市センサーネットワークとして
+  都市データ基盤へ発展する可能性がある。

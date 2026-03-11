@@ -1,0 +1,130 @@
+session_metadata:
+  date: "2026-03-10"
+  session_type: "動画字幕パイプライン一括処理・品質改善"
+  duration: "長時間セッション（前日夜から継続）"
+  key_achievements:
+    - "制度編6本の動画を字幕パイプラインで一括処理"
+    - "welfare_dictionary.json を47→54エントリに拡充"
+    - "字幕ラッピング基準を16文字→14文字×2行に変更"
+    - "YouTube説明欄・コンテンツMD・SoE接続を全動画に作成"
+    - "NotebookLM用MENTAロールMD作成"
+    - "YouTube再生リスト（基礎編・制度編）の説明文作成"
+
+video_processing:
+  pipeline: "Whisper GPU → 辞書自動修正 → 手動修正 → SRT 14×2ラッピング → ffmpeg hardsub → YouTube説明欄 → コンテンツMD"
+  videos_processed:
+    - title: "日本の障がい・難病制度の概要"
+      segments: 118
+      fixes: 17
+      dictionary_matches: 0
+      output_size: "17MB"
+      key_fixes: "頭球→等級, 異常費→医療費, 気象性→希少性"
+
+    - title: "設計図を読み解く：身体障害者手帳ガイド"
+      segments: 75
+      fixes: 30
+      dictionary_matches: 1
+      output_size: "14MB"
+      key_fixes: "投球票→等級表, 処券→所見, 手頂→手帳, 球→級(9箇所)"
+
+    - title: "知的障害を理解する：療育手帳ガイド"
+      segments: 41
+      fixes: 11
+      dictionary_matches: 0
+      output_size: "14MB"
+      key_fixes: "領域手帳→療育手帳(5), w市→WHO, 精神部屋→精神薄弱"
+
+    - title: "精神障害者手帳：等級判定ガイド"
+      segments: 98
+      fixes: 14
+      dictionary_matches: 1
+      output_size: "13MB"
+      key_fixes: "登急→等級, 点瓶→天秤, 高熱費→光熱費"
+
+    - title: "発達障害と福祉制度：新人支援員ガイド"
+      segments: 127
+      fixes: 22
+      dictionary_matches: 2
+      output_size: "17MB"
+      key_fixes: "登休/登急→等級(6), 地平スペクトラム症→自閉スペクトラム症, 多様平→多様性"
+
+    - title: "日本の障がい・難病制度解説（2）"
+      segments: 45
+      fixes: 5
+      dictionary_matches: 0
+      output_size: "14MB"
+      key_fixes: "革新→核心, 精神保険福祉法→精神保健福祉法, 医療費除税→医療費助成"
+      note: "元版（118seg）の凝縮版。非常にクリーンな文字起こし"
+
+  totals:
+    videos: 6
+    total_segments: 504
+    total_fixes: 99
+    total_dictionary_matches: 4
+    average_fix_rate: "19.6%（99fixes/504seg）"
+
+welfare_dictionary_update:
+  before: 47
+  after: 54
+  new_entries:
+    - "精神保険及び → 精神保健及び"
+    - "保険福祉手帳 → 保健福祉手帳"
+    - "領域手帳 → 療育手帳"
+    - "革新ですね → 核心ですね"
+    - "革新に → 核心に"
+    - "高熱費 → 光熱費"
+  recurring_patterns:
+    - "等級系: 投球/登休/登急/頭球→等級、球→級（複数動画で一貫）"
+    - "精神保険→精神保健（2動画で出現）"
+
+quality_improvement:
+  issue: "FontSize=24 × 16文字で1280x720動画の左右が切れる"
+  decision: "14文字×2行に変更（ユーザー選択）"
+  status: "動画(2)で適用済み。残り5本は未再レンダリング"
+  future_standard: "14文字×2行 + FontSize=24"
+
+other_work:
+  - task: "YouTube再生リスト説明文"
+    detail: "基礎編（9本）・制度編の説明文をフォーマット統一、NotebookLM注意書き追加"
+
+  - task: "NotebookLM用MENTAロールMD作成"
+    detail: "5つのYAMLロール定義を1つのMarkdownに統合"
+    output: "Downloads/menta_roles_for_notebooklm.md"
+
+  - task: "note.com自動化検討"
+    conclusion: "API非公開のため半自動化（生成→コピペ）が最適"
+
+files_created:
+  repo:
+    - "00_daily_yamal/08_youtube/2026_03_10_発達障害と福祉制度ガイド.md"
+    - "00_daily_yamal/08_youtube/2026_03_10_日本の障がい難病制度解説2.md"
+  downloads:
+    - "6動画 × 4ファイル（.srt, _wrapped.srt, _字幕付き.mp4, _youtube_description.txt）"
+    - "menta_roles_for_notebooklm.md"
+
+files_modified:
+  - ".claude/skills/subtitle-pipeline/references/welfare_dictionary.json (47→54)"
+
+next_actions:
+  immediate:
+    - "残り5本の動画を14文字×2行で再ラッピング＆再レンダリング"
+    - "YouTube動画アップロード（6本）"
+  short_term:
+    - "辞書に等級系パターンを追加検討（投球/登休/登急/頭球→等級）"
+    - "fix_and_wrap.pyスクリプトにmax_chars=14をデフォルト化"
+    - "note.com復活記事の公開"
+  ongoing:
+    - "制度編シリーズの拡充"
+    - "welfare_dictionary.jsonの継続的拡充"
+
+metadata:
+  created_by: "Claude Opus 4.6"
+  created_at: "2026-03-10T19:25:00+09:00"
+  token_note: "長時間セッション。コンテキスト圧縮1回発生"
+
+fire_culture_note: |
+  6本の動画を1セッションで処理——制度編シリーズの基盤が一日で整った。
+  504セグメント中99箇所の修正。Whisperの等級系誤認識（投球/登休/登急/頭球）は
+  福祉用語のAI音声認識における構造的課題を示している。
+  辞書の累積的拡充（47→54）は、処理を重ねるほど精度が上がる仕組み。
+  14文字×2行への変更は、品質管理の自然な進化。

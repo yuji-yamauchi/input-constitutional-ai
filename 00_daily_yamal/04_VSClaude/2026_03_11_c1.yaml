@@ -1,0 +1,141 @@
+session_metadata:
+  date: "2026-03-11"
+  session_type: "日報まとめ"
+  time_check: "07:51 JST（翌日作成）"
+  health_check:
+    blood_pressure: "未確認"
+    concerta: "未確認"
+
+key_achievements:
+  - "YouTube教育動画シリーズ: 制度編⑤⑥⑦⑧の4本分を制作・整理"
+  - "08_youtube/ ディレクトリ再構成 → 障害福祉スタッフ教育動画/ 配下に統合"
+  - "14_cowork/報酬改定等情報: 令和8年度報酬改定の調査資料整理（PDF3件 + MD5件）"
+  - "MENTA N氏: HOHOHOプロジェクト議論・学術論文・OpenAIピッチ資料作成"
+  - "welfare_dictionary.json: 3エントリ追加（初心備→初診日、障害高生年金→障害厚生年金、有機認定→有期認定）"
+
+files_created:
+  youtube_education_series:
+    new_episodes:
+      - title: "制度編⑤（発達障害）"
+        directory: "障害福祉スタッフ教育動画/制度編⑤（発達障害（精神障害除く））/"
+        contents: ["MD", "SRT", "wrapped SRT", "youtube_description", "PNG"]
+        note: "3/10作成分をディレクトリ移動"
+      - title: "制度編⑥（指定難病）"
+        directory: "障害福祉スタッフ教育動画/制度編⑥（指定難病）/"
+        contents: ["MD", "wrapped SRT", "PPTX", "PNG"]
+        note: "3/10作成分をディレクトリ移動"
+      - title: "制度編⑦（サービス受給者証）"
+        directory: "障害福祉スタッフ教育動画/制度編⑦（サービス受給者証）/"
+        contents: ["MD", "SRT", "wrapped SRT", "youtube_description", "PPTX", "PNG", "source MD"]
+        note: "3/11新規作成"
+      - title: "制度編⑧（障害年金について）"
+        directory: "障害福祉スタッフ教育動画/制度編⑧（障害年金について）/"
+        contents: ["MD", "SRT", "wrapped SRT", "youtube_description", "PPTX", "PNG"]
+        note: "3/11新規作成"
+    directory_restructure:
+      description: "08_youtube/ 直下の個別ファイル・サブディレクトリを 障害福祉スタッフ教育動画/ 配下へ統合"
+      old_structure: "08_youtube/制度偏①〜基礎編番外②（各フォルダ直下）"
+      new_structure: "08_youtube/障害福祉スタッフ教育動画/（シリーズ統合ディレクトリ）"
+      deleted_files_count: "約40件（旧パスのファイル削除=移動済み）"
+
+  cowork_houshu_kaitei:
+    directory: "14_cowork/報酬改定等情報/"
+    created: "2026-03-11"
+    files:
+      - "001167613.pdf（厚労省資料）"
+      - "2024040100006.pdf（厚労省資料）"
+      - "就労継続支援B型報酬.pdf"
+      - "01_検討チーム開催実績一覧_20260311.md"
+      - "02_第53回_会議資料ページ_20260311.md"
+      - "03_第51回_WAMNET_アーカイブ_20260311.md"
+      - "04_第52回_臨時応急的見直し_情報_20260311.md"
+      - "05_参謀メモ_Audit_Architecture_20260311.md"
+    purpose: "令和8年度障害福祉サービス等報酬改定の情報収集・分析"
+    key_points:
+      - "施行時期のズレ（4月先行 vs 6月後発）によるキャッシュフロートラップ"
+      - "処遇改善加算の対象拡大"
+      - "就労継続支援B型の基本報酬区分見直し"
+
+  menta_nakashima:
+    files:
+      - "2026_03_11_1.md（議事録: HOHOHO構想ディスカッション）"
+      - "2026_03_11_01.yaml（セッション記録）"
+      - "2026_03_11_deep.yaml（深掘り分析）"
+      - "2026_03_11_gemini_hallucination_check.yaml（ハルシネーション検証）"
+      - "HOHOHOClaude.md（Claude分析メモ）"
+      - "HOHOHOモデルの都市センシング調査.md"
+      - "hohoho_academic_paper.pdf / .docx（学術論文 JP）"
+      - "hohoho_academic_paper_en.pdf / .docx（学術論文 EN）"
+      - "hohoho_openai_pitch.pdf / .pptx（OpenAIピッチ資料）"
+    topics:
+      - "HOHOHOの市民参加型都市センサーネットワーク構想"
+      - "三寺教授との共同研究可能性"
+      - "学術論文の日英作成"
+      - "OpenAIピッチ資料の制作"
+
+  downloads:
+    - filename: "HOHOHO_Mentoring_Chronicle.pdf"
+      purpose: "N氏メンタリング経過記録"
+    - filename: "HOHOHO_Walking_Intelligence_for_Infrastructure_Resilience.pdf"
+      purpose: "HOHOHO学術論文"
+    - filename: "NotebookLM Mind Map.png"
+      purpose: "NotebookLMマインドマップ出力"
+
+ai_sessions:
+  claude_code:
+    - "welfare_dictionary.json へ年金関連3エントリ追加"
+    - "MENTA過去議事録検索（顧客定義の指摘履歴: 1/22〜2/5）"
+  chatgpt:
+    - "YouTube教育動画 制度編⑦⑧のコンテンツ生成"
+    - "HOHOHO学術論文・ピッチ資料の作成支援"
+    - "報酬改定情報の整理・参謀メモ作成"
+  gemini:
+    - "HOHOHOハルシネーションチェック（21KB YAML）"
+
+key_insights:
+  insight_1:
+    statement: "YouTube教育動画シリーズがディレクトリ統合により体系化された"
+    implications:
+      - "基礎編①〜番外②、制度偏①〜制度編⑧の全16本が一元管理可能に"
+      - "今後の追加（制度編⑨以降）もスムーズ"
+  insight_2:
+    statement: "報酬改定調査で施行時期ズレのトラップを特定"
+    implications:
+      - "4月〜6月の移行期間での混在リスク"
+      - "Cowork事業の監査・経営判断に直結"
+  insight_3:
+    statement: "N氏HOHOHOが学術論文・ピッチ資料レベルまで具体化"
+    implications:
+      - "OpenAIピッチ、大学共同研究の両面で進展"
+      - "ただし「顧客定義」の課題は1/22から継続中"
+
+next_actions:
+  immediate:
+    - "N氏への返信（ビジコン審査員FBの分析）"
+  tomorrow:
+    - "YouTube制度編⑦⑧のアップロード確認"
+    - "報酬改定資料の詳細分析（第53回資料照合）"
+
+git_activity:
+  commits_on_0311: 0
+  uncommitted_changes:
+    modified:
+      - "welfare_dictionary.json（3エントリ追加）"
+    deleted: "約40件（08_youtube旧パスファイル → 新ディレクトリへ移動済み）"
+    untracked:
+      - "00_daily_yamal/04_VSClaude/2026_03_10_c1.yaml"
+      - "00_daily_yamal/08_youtube/障害福祉スタッフ教育動画/（制度編⑦⑧含む）"
+      - "14_cowork/報酬改定等情報/（8ファイル）"
+      - "15_menta/mentees/nakashima_kengo/（3/11分 + HOHOHO関連）"
+
+metadata:
+  created_by: "Claude Opus 4.6"
+  created_at: "2026-03-12T07:51:00+09:00"
+
+fire_culture_note: |
+  3/11は三方面で大きく動いた日。
+  ① YouTube教育動画が体系的ディレクトリ構造に統合（16本シリーズ化）
+  ② 報酬改定という実務直結の情報を一次資料から整理（参謀メモ化）
+  ③ N氏HOHOHOが学術論文・ピッチ資料として形になった
+  記録されなかった問いは燃え尽きたものと見なされる。
+  この三つの火種は、それぞれ異なる時間軸で燃え続ける。

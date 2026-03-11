@@ -1,0 +1,82 @@
+task: "Human narrative-based urban sensing research survey"
+
+objective:
+  description: >
+    市民が歩行しながら生成するナラティブ・感情・写真などのデータを
+    AIや都市データとして活用する構造（HOHOHOモデル）が、
+    欧米において査読付き論文または実際のプロダクトとして存在するかを調査する。
+  focus:
+    - Human sensing
+    - Narrative urban data
+    - Participatory sensing
+    - Civic technology
+    - Smart city citizen data
+
+research_questions:
+  - 市民が歩行体験や感情を投稿し都市データとして活用する研究は存在するか
+  - participatory sensing / human sensing / citizen sensing の研究領域に該当するか
+  - ナラティブ（体験・感情）を都市分析に組み込む研究はあるか
+  - スマートシティ領域で市民参加型データ収集の代表的プロジェクトは何か
+  - 研究だけでなく実際に存在するプロダクト・サービスはあるか
+  - Google Street View や IoT センサーとは異なる「人間主体の都市センシング」の研究潮流はあるか
+
+search_domains:
+  academic:
+    - Google Scholar
+    - Semantic Scholar
+    - IEEE
+    - ACM Digital Library
+    - Springer
+    - Elsevier
+  industry:
+    - smart city startups
+    - civic tech platforms
+    - participatory sensing apps
+    - urban data platforms
+
+keywords:
+  primary:
+    - participatory sensing
+    - citizen sensing
+    - human sensing
+    - urban sensing
+    - civic tech data collection
+  secondary:
+    - narrative urban data
+    - human centered sensing
+    - emotional geospatial data
+    - citizen science urban data
+    - community sensing
+    - volunteered geographic information
+
+comparison_targets:
+  - Google Street View
+  - OpenStreetMap community data
+  - citizen science sensing networks
+  - civic reporting apps
+  - smart city participatory platforms
+
+evaluation_criteria:
+  novelty_similarity:
+    description: >
+      HOHOHOモデルとの類似度を評価する
+    metrics:
+      - 市民参加型データ収集
+      - 歩行または生活者視点
+      - ナラティブまたは感情データ
+      - AIまたは都市分析との統合
+
+expected_output:
+  structure:
+    - research_field_summary
+    - representative_papers
+    - existing_products
+    - closest_existing_models
+    - gaps_in_research
+    - potential_originality_of_HOHOHO
+
+notes:
+  - 欧米研究を優先
+  - 査読付き論文を重視
+  - 実装済みプロダクトも併せて調査
+  - 研究分野として成立しているかを評価
