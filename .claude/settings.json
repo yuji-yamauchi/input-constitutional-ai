@@ -8,7 +8,15 @@
       "Bash(curl -L -o \"Komarraju_2011_Big_Five_academic_achievement.pdf\" \"https://www.researchgate.net/profile/Meera-Komarraju/publication/251713506_The_Big_Five_personality_traits_learning_styles_and_academic_achievement/links/5567322308aeab77721ff213/The-Big-Five-personality-traits-learning-styles-and-academic-achievement.pdf\")",
       "Bash(/c/ffmpeg/ffmpeg-master-latest-win64-gpl-shared/bin/ffmpeg -y -i \"C:\\\\Users\\\\USER\\\\Downloads\\\\合理的配慮：新人職員ガイド.mp4\" -vf \"subtitles=''C\\\\:\\\\Users\\\\USER\\\\Downloads\\\\temp_sub.srt'':force_style=''FontSize=24,PrimaryColour=&H00FFFFFF,OutlineColour=&H00000000,Outline=2,Shadow=1,MarginV=30''\" -c:a copy \"C:\\\\Users\\\\USER\\\\Downloads\\\\合理的配慮：新人職員ガイド_字幕付き.mp4\")",
       "Bash(/c/ffmpeg/ffmpeg-master-latest-win64-gpl-shared/bin/ffmpeg -y -i \"C:\\\\Users\\\\USER\\\\Downloads\\\\合理的配慮：新人職員ガイド.mp4\" -vf \"subtitles=''C\\\\:/Users/USER/temp_sub.srt'':force_style=''FontSize=24,PrimaryColour=&H00FFFFFF,OutlineColour=&H00000000,Outline=2,Shadow=1,MarginV=30''\" -c:a copy \"C:\\\\Users\\\\USER\\\\Downloads\\\\合理的配慮：新人職員ガイド_字幕付き.mp4\")",
-      "Bash(source whisper-env/Scripts/activate)"
+      "Bash(source whisper-env/Scripts/activate)",
+      "WebSearch",
+      "Bash(curl -sL -o \"内閣府_人工知能基本計画_2025.pdf\" \"https://www8.cao.go.jp/cstp/ai/ai_plan/aiplan_20251223.pdf\" -w \"AI基本計画: %{http_code} %{size_download}\\\\n\")",
+      "Bash(curl -sL -o \"内閣府_人工知能基本計画_概要_2025.pdf\" \"https://www8.cao.go.jp/cstp/ai/ai_plan/aiplan_g_20251223.pdf\" -w \"AI基本計画概要: %{http_code} %{size_download}\\\\n\")",
+      "Bash(curl -sL -o \"MLIT_道路メンテナンス年報_2025.pdf\" \"https://www.mlit.go.jp/road/sisaku/yobohozen/pdf/r06/r06_08maint.pdf\" -w \"道路メンテ年報: %{http_code} %{size_download}\\\\n\")",
+      "Bash(curl -sL -o \"デジタル庁_生成AI調達ガイドライン.pdf\" \"https://www.digital.go.jp/assets/contents/node/basic_page/field_ref_resources/e2a06143-ed29-4f1d-9c31-0f06fca67afc/80419aea/20250527_resources_standard_guidelines_guideline_01.pdf\" -w \"生成AI調達GL: %{http_code} %{size_download}\\\\n\")",
+      "Bash(curl -sL -o \"内閣官房_防災DX推進_2025.pdf\" \"https://www.cas.go.jp/jp/seisaku/bousaichou_preparation/kaigi/dai4/siryou1-2.pdf\" -w \"防災DX: %{http_code} %{size_download}\\\\n\")",
+      "Bash(curl -sL -o \"内閣府_インフラ老朽化対策_経済財政諮問.pdf\" \"https://www5.cao.go.jp/keizai-shimon/kaigi/special/reform/wg6/20250411/shiryou1-2.pdf\" -w \"インフラ老朽化: %{http_code} %{size_download}\\\\n\")",
+      "Bash(curl -sL -o \"METI_AI事業者ガイドラインv1.1.pdf\" \"https://www.meti.go.jp/shingikai/mono_info_service/ai_shakai_jisso/pdf/20250328_2.pdf\" -w \"%{http_code} %{size_download}\\\\n\" --connect-timeout 30 --max-time 120 -H \"User-Agent: Mozilla/5.0\")"
     ],
     "additionalDirectories": [
       "C:\\"

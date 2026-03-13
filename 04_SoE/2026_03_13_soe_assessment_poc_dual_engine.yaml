@@ -1,0 +1,545 @@
+---
+# ============================================================
+# SoE Assessment PoC — Dual Engine Architecture
+# 福祉簿記メタファーに基づくLLMアセスメントシステム
+# ============================================================
+metadata:
+  title: "SoE Assessment PoC: Due Diligence + Retroactive Journaling"
+  date: "2026-03-13"
+  version: "0.1-poc"
+  created_by: "Claude Opus 4.6 × Puu"
+  status: "proof_of_concept"
+  location: "04_SoE/"
+
+# ============================================================
+# アーキテクチャ概要
+# ============================================================
+architecture:
+  metaphor: |
+    会社の買収デューデリジェンス（DD）と同じ構造。
+    対象企業（＝当事者）の「現在の財務状態」を監査し（Engine 1）、
+    過去の帳簿不備を遡及的に修正する（Engine 2）。
+    両エンジンの結果を統合して期首B/Sを完成させる。
+
+  engine_1:
+    name: "Due Diligence Engine（現在価値監査）"
+    purpose: "当事者の現在の認知・非認知能力をB/Sとして可視化"
+    method: "構造化セッション × バリデーション済み尺度のLLM代替測定"
+    output: "期首B/S（資産/負債/純資産の現在スナップショット）"
+
+  engine_2:
+    name: "Retroactive Journaling Engine（遡及仕訳エンジン）"
+    purpose: "帳簿記入前に起きた出来事を自然会話から復元し仕訳化"
+    method: "非構造化対話 × エピソード抽出 × 勘定科目マッピング"
+    output: "過去P/L（収益/費用の履歴）+ 修正仕訳"
+
+  integration:
+    description: |
+      Engine 1（現在のB/S）+ Engine 2（過去のP/L）を統合し、
+      「なぜ今この状態にあるのか」の因果構造を可視化する。
+      これがSoEの本人主権型アセスメントの完成形。
+    formula: |
+      期首B/S = 現在資産 - 現在負債
+      過去P/L = Σ(過去の収益エピソード) - Σ(過去の費用エピソード)
+      整合性チェック: 期首B/S ≈ 過去P/Lの累積結果
+
+# ============================================================
+# ENGINE 1: Due Diligence（現在価値監査）
+# ============================================================
+engine_1_due_diligence:
+
+  design_principle: |
+    既存の心理尺度をLLM対話で「仮測定」する。
+    臨床精度は求めない。粒度型思考の原理に従い、
+    macro-grain（全体傾向）→ meso-grain（領域別プロファイル）
+    まで解像度を上げることを目標とする。
+    micro-grain（個別エピソード）はEngine 2の領域。
+
+  # ---------- 認知機能モジュール ----------
+  cognitive_module:
+    name: "認知機能デューデリジェンス"
+    session_design:
+      format: "30分 × 3セッション"
+      delivery: "GPTs / Claude Project / Gemini"
+
+    session_1:
+      title: "流動性推理 + 作業記憶"
+      duration: "30分"
+      tasks:
+        fluid_reasoning:
+          method: "言語的類推課題（Verbal Analogies）"
+          evidence_base: "Ichien et al. (2020), Holyoak (2012)"
+          example_prompt: |
+            これから、ことばの関係性を考える問題をいくつか出します。
+            正解・不正解を評価するものではなく、
+            あなたの考え方のクセを知るためのものです。
+
+            例題：「沈黙」にとっての「音」は、「暗闇」にとっての何でしょう？
+            正解は一つではありません。思いついたことを自由に話してください。
+          measurement_targets:
+            - "類推の質（表面的 vs 構造的）"
+            - "代替回答の数（発散的思考）"
+            - "推論の言語化レベル"
+          grain_mapping: "CHC理論 Gf（流動性知能）→ 固定資産:認知的資本"
+
+        working_memory:
+          method: "リーディングスパン課題（簡易版）"
+          example_prompt: |
+            今から短い文を読み上げます。
+            各文が正しいか間違いか判断しつつ、
+            文の最後の単語を覚えておいてください。
+            3つの文の後に、覚えた単語を教えてください。
+
+            1.「りんごは果物である」→ 正/誤？ 最後の単語:果物
+            2.「東京は北海道の県庁所在地である」→ 正/誤？ 最後の単語:所在地
+            3.「猫は空を飛ぶ」→ 正/誤？ 最後の単語:飛ぶ
+
+            では、覚えた3つの単語は？
+          measurement_targets:
+            - "正答数（正誤判断）"
+            - "再生数（単語記憶）"
+            - "エラーパターン（どちらが先に崩れるか）"
+          grain_mapping: "CHC理論 Gsm（短期記憶）→ 固定資産:認知的資本"
+
+    session_2:
+      title: "処理速度 + 語彙・言語理解"
+      duration: "30分"
+      tasks:
+        processing_speed:
+          method: "キーストローク解析 + 制限時間タスク"
+          note: |
+            テキストチャット環境では視覚的処理速度の直接測定は不可能。
+            代替として「認知的処理速度」をタイピングパターンから推定。
+            Think Time（入力開始までの時間）と
+            Typing Speed（入力速度）を分離計測。
+          evidence_base: "Ning et al. (2023), Digital Phenotyping研究"
+          grain_mapping: "CHC理論 Gs（処理速度）→ 固定資産:認知的資本"
+
+        verbal_comprehension:
+          method: "語彙推定 + 文脈理解タスク"
+          example_prompt: |
+            以下の言葉の意味を、自分の言葉で説明してください。
+            辞書的な正確さより、どう理解しているかを知りたいです。
+
+            1. 「矛盾」
+            2. 「抽象」
+            3. 「レジリエンス」
+            4. 「ケイパビリティ」（わからなければ「わからない」でOK）
+          measurement_targets:
+            - "語彙レベル（日常語/学術語/専門語）"
+            - "説明の構造化度"
+            - "メタ認知（「わからない」と言えるか）"
+          grain_mapping: "CHC理論 Gc（結晶性知能）→ 固定資産:認知的資本"
+
+    session_3:
+      title: "注意・実行機能 + 統合評価"
+      duration: "30分"
+      tasks:
+        executive_function:
+          method: "計画立案タスク + 切り替え課題"
+          example_prompt: |
+            あなたが来週の月曜日に、初めての職場に出勤するとします。
+            前日の日曜日にやるべきことを、
+            優先順位をつけて5つ挙げてください。
+            なぜその順番にしたかも教えてください。
+          measurement_targets:
+            - "計画の具体性"
+            - "優先順位の論理性"
+            - "想定外のリスクへの言及"
+          grain_mapping: "実行機能 → 固定資産:認知的資本 + 流動資産:職業準備性"
+
+  # ---------- 非認知機能モジュール ----------
+  non_cognitive_module:
+    name: "非認知機能デューデリジェンス"
+    session_design:
+      format: "30分 × 3セッション"
+      delivery: "GPTs / Claude Project / Gemini"
+
+    session_4:
+      title: "自尊感情 + 自己効力感"
+      target_accounts:
+        - account: "流動資産:現金（自尊感情）"
+          scale_reference: "RSES"
+          evidence_status: "deep (01_base)"
+        - account: "流動資産:売掛金（自己効力感）"
+          scale_reference: "GSE"
+          evidence_status: "partial (32_Self_Efficacy)"
+      approach: |
+        直接的な質問紙ではなく、エピソードベースの対話から推定。
+        例：「最近、自分でも『よくやった』と思えたことはありますか？」
+        回答の粒度・感情トーン・帰属スタイル（内的/外的）を分析。
+      example_prompts:
+        rses_proxy:
+          - "自分のことをどのくらい好きですか？ 10段階で。その理由も教えてください"
+          - "他の人と比べて、自分はどんな人だと思いますか？"
+          - "自分の良いところを3つ挙げるとしたら？（難しければ1つでも）"
+          - "最近、自信をなくした出来事はありますか？"
+        gse_proxy:
+          - "新しいことを始めるとき、うまくいくと思えますか？"
+          - "困難にぶつかったとき、なんとかなると思えますか？"
+          - "目標を立てて、それを達成した経験を教えてください"
+
+    session_5:
+      title: "性格特性 + 対人パターン"
+      target_accounts:
+        - account: "固定資産:のれん（性格特性）"
+          scale_reference: "Big Five (BFI-2)"
+          evidence_status: "partial (03_BIG5)"
+        - account: "固定負債:長期借入金（スキーマ）"
+          scale_reference: "YSQ-S3"
+          evidence_status: "deep (02_schema)"
+      approach: |
+        Big Fiveは対話の自然な流れから推定。
+        スキーマは対人関係のエピソードから主要ドメインを特定。
+        直接「あなたのスキーマは…」とは言わない。
+      example_prompts:
+        big5_proxy:
+          openness: "新しいアイデアを聞いたとき、最初にどう感じますか？"
+          conscientiousness: "約束や締め切りについて、どんなタイプですか？"
+          extraversion: "一人の時間と人と過ごす時間、どちらが多い方が心地よいですか？"
+          agreeableness: "意見が合わない人とどう付き合いますか？"
+          neuroticism: "心配事があるとき、どのくらい長く気になりますか？"
+        schema_proxy:
+          - "子どものころ、家庭はどんな雰囲気でしたか？"
+          - "人に頼ることについて、どう感じますか？"
+          - "『自分は他の人と違う』と感じることはありますか？"
+          - "失敗したとき、自分に対してどんな言葉が浮かびますか？"
+
+    session_6:
+      title: "環境因子 + ケイパビリティ + 内在化スティグマ"
+      target_accounts:
+        - account: "流動負債:前受金（環境的障壁）"
+          scale_reference: "CHIEF"
+          evidence_status: "MISSING — Priority 1 gap"
+        - account: "ケイパビリティ資産:営業権"
+          scale_reference: "ICECAP-A"
+          evidence_status: "deep (06_Capability)"
+        - account: "固定負債:退職給付引当金（内在化スティグマ）"
+          scale_reference: "ISMI"
+          evidence_status: "MISSING — Priority 3 gap"
+      approach: |
+        環境因子はICFの枠組みで構造的に聞き取る。
+        ケイパビリティはICECAP-Aの5属性を対話で探る。
+        スティグマは「社会の目」に関するエピソードから推定。
+      example_prompts:
+        environment_proxy:
+          - "今の生活で、一番やりにくいと感じることは何ですか？"
+          - "もし環境が変わったら楽になるのに、と思うことはありますか？"
+          - "移動手段はどうしていますか？不便はありますか？"
+          - "周りの人から助けてもらえていると感じますか？"
+          - "情報を得るとき、困ることはありますか？（ネット、書類、電話など）"
+        icecap_proxy:
+          stability: "日々の生活に安心感はありますか？"
+          attachment: "あなたにとって大切な人との関係は、今どうですか？"
+          autonomy: "自分で決められていると感じることは多いですか？"
+          achievement: "何かを達成した、と感じる場面は最近ありましたか？"
+          enjoyment: "生活の中で楽しいと感じる時間はありますか？"
+        stigma_proxy:
+          - "障害があることで、周りの目が気になることはありますか？"
+          - "自分の障害について、人に話すことに抵抗はありますか？"
+          - "『障害があるから仕方ない』と自分に言い聞かせることはありますか？"
+          - "支援を受けることについて、どう感じますか？"
+
+  # ---------- DD出力形式 ----------
+  output_format:
+    description: "Engine 1の出力＝期首B/Sスナップショット"
+    structure:
+      balance_sheet:
+        assets:
+          fixed:
+            cognitive_capital: "{WAIS-proxy score, CHC profile}"
+            personality: "{Big Five 5因子プロファイル}"
+            educational: "{学歴, 資格, スキル}"
+          current:
+            self_esteem: "{RSES-proxy score, 0-30推定}"
+            self_efficacy: "{GSE-proxy score}"
+            resilience: "{推定のみ — エビデンスgap}"
+            hope: "{推定のみ — エビデンスgap}"
+            social_capital: "{サポートネットワーク記述}"
+          capability:
+            icecap: "{5属性スコア推定}"
+            functioning: "{WHODAS-proxy, 6領域}"
+            vocational_readiness: "{職業準備性記述}"
+        liabilities:
+          fixed:
+            schemas: "{YSQ-proxy, 主要3ドメイン特定}"
+            ace: "{ACE-proxy, 推定カテゴリ数}"
+            stigma: "{ISMI-proxy, 程度推定}"
+          current:
+            depression_anxiety: "{PHQ-9/GAD-7 proxy scores}"
+            cognitive_distortions: "{主要パターン特定}"
+            environmental_barriers: "{ICF環境因子, 促進/阻害リスト}"
+        equity:
+          autonomy: "{自己決定度の記述}"
+          life_satisfaction: "{全般的満足度, 1-10}"
+
+# ============================================================
+# ENGINE 2: Retroactive Journaling（遡及仕訳エンジン）
+# ============================================================
+engine_2_retroactive_journaling:
+
+  design_principle: |
+    Engine 1が「今、何を持っているか」を測るのに対し、
+    Engine 2は「なぜ今この状態になったか」を復元する。
+
+    帳簿をつけていなかった期間（＝支援開始前の人生）に
+    起きた出来事を、自然な対話から引き出し、
+    会計上の「仕訳」として構造化する。
+
+    これは本質的に粒度型思考の逆方向の操作。
+    Engine 1が macro→meso への構造化なら、
+    Engine 2は ナラティブ→micro-grain→仕訳 への変換。
+
+  critical_design_constraint: |
+    当事者は「アセスメントされている」と感じてはいけない。
+    自然な会話の中で自分の物語を語り、
+    その結果として仕訳が生成されることが本人主権の要件。
+    「あなたのACEスコアは…」ではなく、
+    「そうだったんですね」から始まる。
+
+  # ---------- GPTs実装設計 ----------
+  gpts_implementation:
+    platform: "OpenAI GPTs / Custom GPT"
+    reason: |
+      長期メモリ（conversation history）が蓄積される。
+      ユーザーが繰り返し訪れる「かかりつけAI」として機能。
+      自然な会話の中からgrainを抽出する設計に最適。
+
+    system_prompt_draft: |
+      あなたは「きろくさん」という名前の対話パートナーです。
+      福祉サービスの利用者さんと、日々のことを話します。
+
+      【あなたの役割】
+      - 相手の話を丁寧に聞くこと
+      - 無理に質問を増やさないこと
+      - 相手のペースを尊重すること
+      - 「すごいですね」「大変でしたね」など、
+        共感的な応答を自然に行うこと
+
+      【内部処理（ユーザーには見せない）】
+      会話の中で以下のエピソードが現れた場合、
+      内部的に「仕訳候補」として記録してください：
+
+      ■ 収益エピソード（資産を増やした出来事）
+      - 何かを達成した、褒められた、うまくいった
+      - 新しいスキルを身につけた
+      - 人間関係が改善した
+      - 自信がついた出来事
+
+      ■ 費用エピソード（負債を増やした/資産を減らした出来事）
+      - 失敗した、叱られた、傷ついた
+      - 人間関係のトラブル
+      - 体調の悪化
+      - 環境の変化（引っ越し、失業、離別等）
+
+      ■ 特別損益（大きなライフイベント）
+      - 幼少期の家庭環境に関する記述 → ACE候補
+      - いじめ、虐待、ネグレクトの示唆 → ACE候補
+      - 診断を受けた経験 → 固定資産/負債の評価替え
+      - 支援者との出会い/別れ → 社会関係資本の増減
+
+      【仕訳フォーマット（内部メモ）】
+      各エピソードを以下の形式で記録：
+      - date_approx: "推定時期（年代レベルでOK）"
+      - episode: "エピソードの要約"
+      - debit_account: "借方勘定科目"
+      - credit_account: "貸方勘定科目"
+      - grain_level: "micro / meso / macro"
+      - confidence: "low / medium / high"
+      - source: "本人の直接語り / 推測 / 文脈から"
+
+      【禁止事項】
+      - 診断名を言わない
+      - 「アセスメントしています」と言わない
+      - スコアを本人に伝えない
+      - 過去の辛い記憶を無理に掘り起こさない
+      - 「もっと詳しく教えてください」と誘導しない
+
+      【出力トリガー】
+      ユーザーが「きろく見せて」と言ったら、
+      これまでの会話から抽出した仕訳候補を
+      やさしい日本語で一覧表示してください。
+      ただし会計用語は使わず、
+      「こんな出来事がありましたね」という形式で。
+
+  # ---------- 仕訳抽出の例 ----------
+  journaling_examples:
+
+    example_1:
+      user_utterance: |
+        「中学のとき、部活の先輩に毎日怒鳴られてて。
+        でもそれが普通だと思ってた。」
+      internal_journal_entry:
+        date_approx: "中学時代（推定12-15歳）"
+        episode: "部活動での持続的な威圧的指導"
+        debit_account: "固定負債:早期不適応スキーマ（服従）"
+        credit_account: "流動資産:自尊感情（減少）"
+        grain_level: "meso"
+        confidence: "medium"
+        soe_note: |
+          「普通だと思ってた」はHypnos因子の兆候。
+          本人が抑圧を構造として認識できていない。
+          スキーマドメイン：Other-Directedness候補。
+
+    example_2:
+      user_utterance: |
+        「パートで3年働いたとき、店長に
+        『あなたがいないと困る』って言われて。
+        あのとき初めて、自分にも価値があるって思えた。」
+      internal_journal_entry:
+        date_approx: "20代後半（推定）"
+        episode: "職場での承認体験"
+        debit_account: "流動資産:自尊感情（増加）"
+        credit_account: "P/L収益:承認・達成"
+        grain_level: "micro"
+        confidence: "high"
+        soe_note: |
+          自尊感情の「入金」エピソード。
+          外的帰属（他者からの承認）だが、
+          「自分にも価値がある」という内在化が起きている。
+          このエピソードの前後で自尊感情のレベルが変化した可能性。
+
+    example_3:
+      user_utterance: |
+        「障害者手帳もらったとき、正直ホッとした部分と、
+        もうダメなんだって思った部分と、両方あった。」
+      internal_journal_entry:
+        date_approx: "手帳取得時"
+        episode: "障害者手帳取得に伴う心理的両価性"
+        debit_account: "ケイパビリティ資産:制度的アクセス権（増加）"
+        credit_account: "固定負債:内在化スティグマ（増加）"
+        grain_level: "macro"
+        confidence: "high"
+        soe_note: |
+          複式簿記の本領。一つの出来事が
+          資産と負債の両方に計上される。
+          「ホッとした」= 制度的ケイパビリティの獲得
+          「ダメなんだ」= セルフスティグマの内在化
+          これを二項対立ではなく両建てで記録することが
+          福祉簿記メタファーの核心的価値。
+
+  # ---------- 遡及仕訳の蓄積プロセス ----------
+  accumulation_process:
+    phase_1:
+      name: "自由対話期（セッション1-5回目）"
+      goal: "信頼関係構築 + 自然なエピソード収集"
+      expected_entries: "5-15件の仕訳候補"
+      focus: "促さない。出てくるものを記録する。"
+
+    phase_2:
+      name: "テーマ対話期（セッション6-10回目）"
+      goal: "特定のライフドメインについて緩やかに話す"
+      themes:
+        - "家庭・家族のこと"
+        - "学校時代のこと"
+        - "仕事・職場のこと"
+        - "人間関係のこと"
+        - "健康・体調のこと"
+      expected_entries: "15-30件の追加仕訳候補"
+      focus: "テーマは提示するが深掘りはしない。"
+
+    phase_3:
+      name: "統合期（セッション11-12回目）"
+      goal: "仕訳候補の確認 + Engine 1との統合"
+      process: |
+        「きろく見せて」で蓄積された仕訳候補を本人に提示。
+        「こんな出来事がありましたね」形式で一覧化。
+        本人が修正・追加・削除できる（本人主権）。
+        確定した仕訳をEngine 1のB/Sと統合。
+
+# ============================================================
+# 統合出力：完全な福祉簿記レポート
+# ============================================================
+integrated_output:
+  description: |
+    Engine 1（期首B/S）+ Engine 2（過去P/L）= 完全な財務諸表
+
+  deliverables:
+    balance_sheet:
+      description: "当事者の現在の状態像（資産/負債/純資産）"
+      visualization: "SoE Profile（RPGステータス画面）"
+      owner: "当事者本人"
+
+    income_statement:
+      description: "過去の出来事の累積影響（収益/費用/特別損益）"
+      visualization: "Empowerment Trajectory（時系列グラフ）"
+      owner: "当事者本人"
+
+    cashflow_statement:
+      description: "日常の活動パターン（営業/投資/財務活動）"
+      visualization: "Activity Map（活動カテゴリ別可視化）"
+      owner: "当事者本人"
+      note: "Engine 2のphase_2で蓄積されたエピソードから生成"
+
+  data_sovereignty: |
+    全データの所有権は当事者に帰属する。
+    支援者は閲覧権を当事者から付与される。
+    当事者はいつでもデータの修正・削除を求められる。
+    これはSoEの本人主権型アセスメントの根幹原則。
+
+# ============================================================
+# PoC実装ロードマップ
+# ============================================================
+poc_roadmap:
+
+  phase_0_now:
+    title: "エビデンスギャップの充填"
+    blocking_gaps:
+      - "環境的障壁（CHIEF） — Engine 1 Session 6に必須"
+      - "内在化スティグマ（ISMI） — Engine 1 Session 6 + Engine 2の仕訳カテゴリに必須"
+      - "PHQ-9/GAD-7 — Engine 1 Session 4-5の基準値に必要"
+    non_blocking_but_needed:
+      - "レジリエンス（CD-RISC）"
+      - "希望（Hope Scale）"
+      - "社会関係資本（MSPSS）"
+
+  phase_1_prototype:
+    title: "Engine 1のプロンプト実装"
+    deliverable: "GPTsまたはClaude Projectで動く6セッション分のプロンプト"
+    test_with: "Puuの15_mentaメンティーから1名（同意取得前提）"
+    timeline: "エビデンスギャップ充填後2週間"
+
+  phase_2_prototype:
+    title: "Engine 2のGPTs実装"
+    deliverable: "「きろくさん」GPTの初期版"
+    test_with: "Puu自身（自己アセスメント）"
+    timeline: "Engine 1と並行"
+
+  phase_3_integration:
+    title: "両エンジンの統合 + SoE Profile出力"
+    deliverable: "YAML出力 → RPGステータス画面（React）"
+    timeline: "phase_1 + phase_2完了後1週間"
+
+  phase_4_validation:
+    title: "構成概念妥当性の予備検討"
+    method: |
+      Engine 1の出力と既存尺度（紙版RSES, ICECAP-A等）の
+      相関を1-2名で確認。
+      完全な心理測定的妥当性検証ではなく、
+      「方向性が合っているか」レベルの確認。
+    timeline: "phase_3完了後"
+
+# ============================================================
+# SoE理論との接続
+# ============================================================
+soe_theoretical_alignment:
+  grain_based_cognition: |
+    Engine 1 = macro-grain → meso-grainへの構造化測定
+    Engine 2 = ナラティブ → micro-grainへの粒度抽出
+    両エンジンの統合 = 粒度型思考の完全な操作化
+
+  three_factor_model:
+    hubris: "Engine 2の仕訳分析で、支援者側のHubris因子を検出可能"
+    anomie: "Engine 1の環境因子測定で、制度的Anomieを可視化"
+    hypnos: "Engine 2の「普通だと思ってた」型エピソードでHypnosを検出"
+
+  fire_culture: |
+    Engine 2は「帳簿に記入されなかった火」を再燃させる装置。
+    記録されなかった出来事を、当事者自身の語りから復元し、
+    構造化された記録として残す。
+    これは火文化圏思想の技術的実装。
+
+  research_implication: |
+    このPoC自体が修士論文の方法論セクションになりうる。
+    「LLMを用いた本人主権型アセスメントの設計と予備的検証」
+    として、Engine設計→実装→パイロットテスト→考察の構造。

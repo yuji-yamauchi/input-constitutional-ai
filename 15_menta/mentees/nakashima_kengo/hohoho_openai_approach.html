@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HOHOHO × ChatGPT — OpenAIパートナーシップ提案書</title>
+<style>
+  :root {
+    --oai-green: #10a37f;
+    --oai-dark: #202123;
+    --oai-light: #e8f5f0;
+    --fukui-blue: #4a9bd9;
+    --fukui-light: #e8f4fd;
+    --univ-purple: #6b4c9a;
+    --univ-light: #f0ebf5;
+    --accent: #e8943a;
+    --accent-light: #fdf3e8;
+    --dark: #1a1a1a;
+    --gray: #555;
+    --light: #f8f8f8;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', 'Hiragino Sans', 'Noto Sans JP', sans-serif;
+    color: var(--dark);
+    line-height: 1.8;
+    background: #fff;
+  }
+
+  /* Cover */
+  .cover {
+    background: var(--oai-dark);
+    color: white;
+    padding: 80px 40px 60px;
+    text-align: center;
+    position: relative;
+  }
+  .cover .badge {
+    display: inline-block;
+    border: 2px solid var(--oai-green);
+    color: var(--oai-green);
+    padding: 6px 20px;
+    border-radius: 30px;
+    font-size: 0.85em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+  }
+  .cover h1 {
+    font-size: 2.6em;
+    margin-bottom: 12px;
+    background: linear-gradient(135deg, #fff 0%, var(--oai-green) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .cover .tagline {
+    font-size: 1.3em;
+    opacity: 0.8;
+    margin-bottom: 30px;
+  }
+  .cover .partners {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .cover .partner-chip {
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 0.95em;
+  }
+  .cover .date { margin-top: 30px; opacity: 0.5; font-size: 0.85em; }
+
+  .container { max-width: 900px; margin: 0 auto; padding: 0 24px; }
+
+  section { padding: 50px 0; border-bottom: 1px solid #eee; }
+  section:last-of-type { border-bottom: none; }
+  section h2 {
+    font-size: 1.6em;
+    margin-bottom: 8px;
+    color: var(--oai-dark);
+  }
+  section .section-sub {
+    color: var(--gray);
+    font-size: 0.95em;
+    margin-bottom: 25px;
+  }
+
+  /* Executive summary */
+  .exec-summary {
+    background: var(--oai-light);
+    border-radius: 12px;
+    padding: 30px;
+    margin: 20px 0;
+    border-left: 4px solid var(--oai-green);
+  }
+  .exec-summary h3 { color: var(--oai-green); margin-bottom: 10px; }
+
+  /* Key stat */
+  .stat-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+    margin: 25px 0;
+  }
+  .stat-box {
+    background: var(--light);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+  }
+  .stat-box .num {
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--oai-green);
+  }
+  .stat-box .label { font-size: 0.85em; color: var(--gray); margin-top: 4px; }
+
+  /* Scheme diagram */
+  .scheme {
+    background: var(--light);
+    border-radius: 12px;
+    padding: 30px;
+    margin: 25px 0;
+  }
+  .scheme-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-top: 20px;
+  }
+  .scheme-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    border-top: 3px solid var(--gray);
+  }
+  .scheme-card.oai { border-top-color: var(--oai-green); }
+  .scheme-card.fukui { border-top-color: var(--fukui-blue); }
+  .scheme-card.univ { border-top-color: var(--univ-purple); }
+  .scheme-card.nk { border-top-color: var(--accent); }
+  .scheme-card h4 { font-size: 1em; margin-bottom: 6px; }
+  .scheme-card ul { padding-left: 18px; font-size: 0.9em; }
+  .scheme-card li { margin-bottom: 3px; }
+
+  /* Flow */
+  .flow-vertical {
+    margin: 25px auto;
+    max-width: 600px;
+  }
+  .flow-step {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    margin-bottom: 0;
+    padding: 16px 0;
+    position: relative;
+  }
+  .flow-step:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    left: 19px;
+    top: 52px;
+    bottom: -4px;
+    width: 2px;
+    background: #ddd;
+  }
+  .flow-num {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+    flex-shrink: 0;
+    font-size: 0.9em;
+  }
+  .flow-num.oai { background: var(--oai-green); }
+  .flow-num.accent { background: var(--accent); }
+  .flow-num.fukui { background: var(--fukui-blue); }
+  .flow-num.univ { background: var(--univ-purple); }
+  .flow-content h4 { font-size: 1em; margin-bottom: 2px; }
+  .flow-content p { font-size: 0.9em; color: var(--gray); }
+
+  /* Table */
+  .clean-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 0.95em;
+  }
+  .clean-table th {
+    text-align: left;
+    padding: 10px 14px;
+    background: var(--oai-dark);
+    color: white;
+    font-weight: 600;
+  }
+  .clean-table td {
+    padding: 10px 14px;
+    border-bottom: 1px solid #eee;
+    vertical-align: top;
+  }
+  .clean-table tbody tr:hover { background: #f9f9f9; }
+
+  /* Highlight box */
+  .highlight {
+    background: var(--accent-light);
+    border-left: 4px solid var(--accent);
+    padding: 16px 20px;
+    border-radius: 0 8px 8px 0;
+    margin: 16px 0;
+    font-size: 0.95em;
+  }
+
+  .oai-box {
+    background: var(--oai-light);
+    border-left: 4px solid var(--oai-green);
+    padding: 16px 20px;
+    border-radius: 0 8px 8px 0;
+    margin: 16px 0;
+  }
+
+  /* Pitch script */
+  .pitch-box {
+    background: var(--oai-dark);
+    color: #e0e0e0;
+    border-radius: 12px;
+    padding: 30px;
+    margin: 20px 0;
+    font-size: 1.05em;
+    line-height: 2;
+  }
+  .pitch-box strong { color: var(--oai-green); }
+  .pitch-box em { color: var(--accent); font-style: normal; }
+
+  /* Two col text */
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 20px 0; }
+
+  /* Appendix */
+  .appendix { background: var(--light); padding: 30px; border-radius: 12px; margin: 20px 0; }
+  .appendix h3 { margin-bottom: 12px; }
+
+  footer {
+    background: var(--oai-dark);
+    color: rgba(255,255,255,0.6);
+    padding: 30px;
+    text-align: center;
+    font-size: 0.85em;
+  }
+
+  @media (max-width: 768px) {
+    .scheme-grid, .two-col { grid-template-columns: 1fr; }
+    .cover h1 { font-size: 1.8em; }
+    .stat-row { grid-template-columns: 1fr 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- COVER -->
+<div class="cover">
+  <div class="badge">PARTNERSHIP PROPOSAL</div>
+  <h1>HOHOHO &times; ChatGPT</h1>
+  <div class="tagline">
+    市民の「歩く」体験をAIで都市知能に変換する<br>
+    世界初の市民参加型都市センシングパートナーシップ
+  </div>
+  <div class="partners">
+    <div class="partner-chip">OpenAI / ChatGPT</div>
+    <div class="partner-chip">福井市</div>
+    <div class="partner-chip">福井工業大学</div>
+    <div class="partner-chip">HOHOHO Project</div>
+  </div>
+  <div class="date">2026年3月 | 提案者: HOHOHO Project / N.K.</div>
+</div>
+
+<div class="container">
+
+<!-- Exec Summary -->
+<section>
+  <h2>エグゼクティブサマリー</h2>
+
+  <div class="exec-summary">
+    <h3>提案の核心</h3>
+    <p>
+      <strong>ChatGPTのマルチモーダルUI</strong>（音声・画像・テキストの同時入力）を、
+      市民が街を歩きながら都市の違和感を報告する<strong>データ収集フロントエンド</strong>として活用する。
+      市民は特別なアプリを必要とせず、ChatGPTに「話しかけるだけ」で
+      都市インフラの異常・危険・快適さを記録できる。
+    </p>
+    <p style="margin-top: 12px;">
+      このデータを大学が科学的に分析し、自治体の予防保全計画のエビデンスとして活用する。
+      <strong>「ChatGPTが都市を守る」</strong>という新しいナラティブを、
+      福井市という実証フィールドで世界に先駆けて実現する。
+    </p>
+  </div>
+
+  <div class="stat-row">
+    <div class="stat-box">
+      <div class="num">375件</div>
+      <div class="label">福井市での実証検知数</div>
+    </div>
+    <div class="stat-box">
+      <div class="num">3,000億</div>
+      <div class="label">国交付金（年間/円）</div>
+    </div>
+    <div class="stat-box">
+      <div class="num">21</div>
+      <div class="label">横須賀モデル参加自治体</div>
+    </div>
+    <div class="stat-box">
+      <div class="num">$50M</div>
+      <div class="label">People-First AI Fund</div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY OpenAI -->
+<section>
+  <h2>1. なぜChatGPTなのか</h2>
+  <div class="section-sub">他のAIでは実現できない3つの理由</div>
+
+  <table class="clean-table">
+    <thead>
+      <tr>
+        <th style="width:30%">ChatGPTの強み</th>
+        <th style="width:40%">HOHOHOへの応用</th>
+        <th style="width:30%">競合AIとの差</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>マルチモーダル入力UI</strong><br>音声 + 画像 + テキストを<br>同時処理</td>
+        <td>
+          市民が歩きながら：<br>
+          &bull; 「この歩道、段差がひどい」と<strong>声で</strong>報告<br>
+          &bull; 危険箇所を<strong>写真で</strong>撮影<br>
+          &bull; GPSで位置を<strong>自動記録</strong><br>
+          → 3つを同時に処理し構造化データに変換
+        </td>
+        <td>
+          Claude: テキスト特化、音声UIなし<br>
+          Gemini: マルチモーダルだが市民UIとして未成熟<br>
+          <strong>ChatGPTのみが「話しかけるだけ」を実現</strong>
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Advanced Voice Mode</strong><br>232ms応答遅延<br>（人間の会話レベル）</td>
+        <td>
+          歩行中のリアルタイム対話：<br>
+          &bull; 「今何が気になりましたか？」<br>
+          &bull; 「もう少し詳しく教えてください」<br>
+          → 歩行インタビューをAIが自動実施
+        </td>
+        <td>
+          学術的に確立された「Walking Interview」手法を<br>
+          AIが無人で実行する<strong>世界初の試み</strong>
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Custom GPTs + Memory</strong><br>専用アシスタント構築<br>長期記憶</td>
+        <td>
+          「HOHOHO GPT」を構築：<br>
+          &bull; 福井市のインフラ情報をプリセット<br>
+          &bull; 過去の報告履歴をMemoryで蓄積<br>
+          &bull; 市民ごとの歩行パターンを学習
+        </td>
+        <td>
+          Gemini Gems: 機能制限あり<br>
+          Claude Projects: 音声対話なし<br>
+          <strong>ChatGPT GPTsが最も柔軟</strong>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="highlight">
+    <strong>核心的洞察:</strong>
+    ChatGPTのUI性能は「チャットボット」としてではなく、
+    <strong>世界最大の市民センサーネットワークの入力デバイス</strong>として再定義できる。
+    スマートフォン + ChatGPT = 歩行型IoTセンサー。
+    専用アプリの開発コスト・普及コストをゼロにできる。
+  </div>
+</section>
+
+<!-- WHY NOW -->
+<section>
+  <h2>2. なぜ今なのか — タイミングの必然性</h2>
+  <div class="section-sub">5つの潮流が同時に交差している</div>
+
+  <div class="flow-vertical">
+    <div class="flow-step">
+      <div class="flow-num oai">1</div>
+      <div class="flow-content">
+        <h4>OpenAI Japan本格始動（2025〜）</h4>
+        <p>東京オフィス設立（長崎忠雄社長）。SoftBankとのJV「SB OAI Japan」設立。デジタル庁との戦略提携。日本市場での成功事例を渇望している。</p>
+      </div>
+    </div>
+    <div class="flow-step">
+      <div class="flow-num fukui">2</div>
+      <div class="flow-content">
+        <h4>福井市都市計画MP改定（2025）</h4>
+        <p>20年計画のビジョン「<strong>歩きつながる</strong>まち」が確定。DX推進・市民協働・歩行者空間整備が明文化。HOHOHOの位置づけが政策的に裏付けられた。</p>
+      </div>
+    </div>
+    <div class="flow-step">
+      <div class="flow-num univ">3</div>
+      <div class="flow-content">
+        <h4>福井工業大学 三寺教授の関心表明</h4>
+        <p>「共同研究として進めたい」意向。行政コミュニケーションデザイン研究の実績。2026年3月30日に面談予定。</p>
+      </div>
+    </div>
+    <div class="flow-step">
+      <div class="flow-num oai">4</div>
+      <div class="flow-content">
+        <h4>Realtime API 70%値下げ（2025〜2026）</h4>
+        <p>音声入力 $100/M tokens → $32/M tokens。歩行中の常時音声センシングが経済的に現実的に。OpenAIは音声ユースケースの拡大を推進中。</p>
+      </div>
+    </div>
+    <div class="flow-step">
+      <div class="flow-num accent">5</div>
+      <div class="flow-content">
+        <h4>横須賀モデルの「次」が空白</h4>
+        <p>横須賀市は「庁内業務効率化」で成功（職員80%が生産性向上を報告）。しかし「市民向けサービス」への展開はまだない。HOHOHOは「横須賀の次」= <strong>市民向けAI活用の先行事例</strong>になれる。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SCHEME -->
+<section>
+  <h2>3. パートナーシップスキーム</h2>
+  <div class="section-sub">4者の役割と相互価値</div>
+
+  <div class="scheme">
+    <div style="text-align: center; font-size: 1.1em; margin-bottom: 15px;">
+      <strong>HOHOHO Civic Sensing Consortium（仮称）</strong>
+    </div>
+    <div class="scheme-grid">
+      <div class="scheme-card nk">
+        <h4 style="color: var(--accent);">HOHOHO Project（中島）</h4>
+        <ul>
+          <li><strong>提供:</strong> 現場運営・市民コミュニティ構築・実証データ</li>
+          <li><strong>強み:</strong> 375件の実証、福井の地域ネットワーク、歩行調査ノウハウ</li>
+          <li><strong>得るもの:</strong> 技術基盤・学術的裏付け・行政接続</li>
+        </ul>
+      </div>
+      <div class="scheme-card oai">
+        <h4 style="color: var(--oai-green);">OpenAI / ChatGPT</h4>
+        <ul>
+          <li><strong>提供:</strong> ChatGPT API・Custom GPTs基盤・技術支援</li>
+          <li><strong>強み:</strong> マルチモーダルUI・音声処理・LLM翻訳能力</li>
+          <li><strong>得るもの:</strong> 市民向けAI活用の先行事例・日本自治体市場への入口</li>
+        </ul>
+      </div>
+      <div class="scheme-card univ">
+        <h4 style="color: var(--univ-purple);">福井工業大学（三寺研究室）</h4>
+        <ul>
+          <li><strong>提供:</strong> 学術的分析・エビデンス生成・論文発表</li>
+          <li><strong>強み:</strong> 都市計画・交通研究・行政案件連携実績</li>
+          <li><strong>得るもの:</strong> 最先端AI×市民科学の研究テーマ・外部資金</li>
+        </ul>
+      </div>
+      <div class="scheme-card fukui">
+        <h4 style="color: var(--fukui-blue);">福井市</h4>
+        <ul>
+          <li><strong>提供:</strong> 実証フィールド・政策ニーズ・行政データ</li>
+          <li><strong>強み:</strong> 「歩きつながる」MP・DX推進方針・市民協働の枠組み</li>
+          <li><strong>得るもの:</strong> MP進行管理ツール・国交付金獲得の根拠・先進自治体ブランド</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="oai-box">
+    <strong>OpenAIにとっての戦略的価値:</strong><br>
+    &bull; 横須賀モデル（庁内効率化）→ <strong>福井モデル（市民サービス）</strong>への進化ストーリー<br>
+    &bull; 「ChatGPTが都市を守る」= <strong>社会的インパクトの可視化</strong><br>
+    &bull; 産学官連携の成功事例 = <strong>日本の他自治体への横展開</strong>のテンプレート<br>
+    &bull; People-First AI Fundの理念「<strong>community innovation</strong>」との直接的整合
+  </div>
+</section>
+
+<!-- WHAT WE ASK -->
+<section>
+  <h2>4. OpenAIへの要望事項</h2>
+  <div class="section-sub">段階的なパートナーシップ深化</div>
+
+  <table class="clean-table">
+    <thead>
+      <tr>
+        <th>段階</th>
+        <th>要望内容</th>
+        <th>OpenAI側の負担感</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Level 1</strong><br>即時可能</td>
+        <td>
+          &bull; ChatGPT API クレジット提供（研究目的）<br>
+          &bull; Custom GPTs（HOHOHO GPT）構築支援<br>
+          &bull; OpenAI Japan担当者とのミーティング設定
+        </td>
+        <td>低<br>既存プログラムの範囲内</td>
+      </tr>
+      <tr>
+        <td><strong>Level 2</strong><br>実証段階</td>
+        <td>
+          &bull; Realtime API の研究用ディスカウント<br>
+          &bull; 技術的アドバイザリー（音声＋画像処理の最適化）<br>
+          &bull; OpenAI Japan公式ブログでの事例紹介
+        </td>
+        <td>中<br>技術支援リソースが必要</td>
+      </tr>
+      <tr>
+        <td><strong>Level 3</strong><br>本格連携</td>
+        <td>
+          &bull; People-First AI Fund への共同申請<br>
+          &bull; 「ChatGPT for Cities」パイロットとしての公式認定<br>
+          &bull; 横須賀市自治体ネットワーク（21市）への接続
+        </td>
+        <td>高<br>組織的コミットメントが必要</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="highlight">
+    <strong>推奨アプローチ:</strong>
+    Level 1 から始め、実証データを積み上げながら段階的に深化させる。
+    いきなりLevel 3を求めない。
+    まずは「OpenAI Japanの担当者との30分のミーティング」を目標にする。
+  </div>
+</section>
+
+<!-- TECHNICAL ARCHITECTURE -->
+<section>
+  <h2>5. 技術アーキテクチャ概要</h2>
+  <div class="section-sub">ChatGPTのマルチモーダル機能を活用したデータ収集フロー</div>
+
+  <div class="scheme" style="font-size: 0.95em;">
+    <h3 style="margin-bottom: 15px;">市民の歩行体験 → 都市知能データへの変換パイプライン</h3>
+
+    <table class="clean-table" style="margin: 0;">
+      <thead>
+        <tr>
+          <th>ステップ</th>
+          <th>市民の行動</th>
+          <th>ChatGPTの処理</th>
+          <th>生成データ</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>1. 発見</strong></td>
+          <td>歩行中に違和感を感じる<br>（危険、不便、快適、発見）</td>
+          <td>—</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td><strong>2. 報告</strong></td>
+          <td>ChatGPTに声で報告<br>「この歩道、段差がすごい」</td>
+          <td>Advanced Voice Mode<br>リアルタイム音声認識<br>感情トーン分析</td>
+          <td>テキスト + 感情スコア<br>+ タイムスタンプ</td>
+        </tr>
+        <tr>
+          <td><strong>3. 撮影</strong></td>
+          <td>ChatGPTが促して撮影<br>「写真を撮ってもらえますか？」</td>
+          <td>Vision API<br>画像内の異常検知<br>（ひび割れ、段差、破損）</td>
+          <td>画像 + 異常分類<br>+ 重篤度スコア</td>
+        </tr>
+        <tr>
+          <td><strong>4. 深掘り</strong></td>
+          <td>対話で詳細を聞き出す<br>「夜もこの道を通りますか？」</td>
+          <td>Walking Interview<br>コンテキスト抽出<br>ナラティブ構造化</td>
+          <td>構造化ナラティブ<br>+ 利用頻度 + 時間帯</td>
+        </tr>
+        <tr>
+          <td><strong>5. 記録</strong></td>
+          <td>歩行を続ける</td>
+          <td>GPSログ + 全データ統合<br>YAML/JSON出力</td>
+          <td>地理空間データセット<br>（即座に分析可能）</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="oai-box">
+    <strong>技術的差別化:</strong>
+    既存の市民報告アプリ（SeeClickFix、FixMyStreet、千葉レポ等）は
+    「フォーム入力」型。HOHOHOは<strong>「対話」型</strong>。
+    ChatGPTの自然言語対話能力により、市民から<strong>10倍豊かなナラティブデータ</strong>を取得できる。
+    これは世界の査読論文で確認された6つの研究ギャップのうち、
+    <strong>「ナラティブデータ×AI処理」の空白を埋める初の実装</strong>となる。
+  </div>
+</section>
+
+<!-- MARKET CONTEXT -->
+<section>
+  <h2>6. 市場コンテキスト — なぜOpenAIにとって価値があるか</h2>
+
+  <div class="two-col">
+    <div>
+      <h3 style="margin-bottom: 10px;">OpenAI Japan の現在の展開</h3>
+      <ul style="padding-left: 18px; font-size: 0.95em;">
+        <li><strong>東京オフィス</strong> — 長崎忠雄社長（元AWS Japan社長）</li>
+        <li><strong>SB OAI Japan GK</strong> — SoftBankとのJV（2025年11月）</li>
+        <li><strong>デジタル庁</strong> — 戦略提携（FY2026〜）</li>
+        <li><strong>横須賀市</strong> — 21自治体ネットワーク</li>
+        <li><strong>エンタープライズ</strong> — ダイキン、楽天、TOYOTA Connected</li>
+      </ul>
+      <br>
+      <div class="highlight">
+        <strong>空白:</strong> エンタープライズと中央省庁は押さえた。
+        だが「<strong>地方自治体 × 市民サービス</strong>」はまだない。
+        HOHOHOはこの空白を埋める。
+      </div>
+    </div>
+    <div>
+      <h3 style="margin-bottom: 10px;">競合不在の領域</h3>
+      <table class="clean-table" style="font-size: 0.9em;">
+        <thead><tr><th>AI企業</th><th>都市・市民領域での状況</th></tr></thead>
+        <tbody>
+          <tr><td>Google</td><td>地図データは豊富だが市民参加型UIなし</td></tr>
+          <tr><td>Microsoft</td><td>インフラ層に強いが市民接点が弱い</td></tr>
+          <tr><td>Anthropic</td><td>音声UIなし。市民UIとして不適</td></tr>
+          <tr><td>Meta</td><td>Mapillary（画像）はあるがナラティブなし</td></tr>
+          <tr><td><strong>OpenAI</strong></td><td><strong>唯一、音声+画像+対話の統合UIを持つ</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ACADEMIC POSITIONING -->
+<section>
+  <h2>7. 学術的裏付け — 世界初の交差領域</h2>
+  <div class="section-sub">6つの確立された研究分野の未開拓の交差点に位置する</div>
+
+  <p>独立した研究サーベイ（査読論文・商用製品の包括的調査）により、
+  HOHOHOの4要素（市民参加 × 歩行視点 × ナラティブ/感情 × AI統合）を
+  <strong>すべて満たす既存モデルは世界に存在しない</strong>ことが確認されている。</p>
+
+  <table class="clean-table">
+    <thead>
+      <tr><th>最も近い既存モデル</th><th>不足要素</th><th>HOHOHOとの差</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Walk21 Walkability App（15カ国）</td>
+        <td>AI統合が弱い</td>
+        <td>HOHOHOはLLMで自動構造化</td>
+      </tr>
+      <tr>
+        <td>Emotional Maps（チェコ・2,117人参加）</td>
+        <td>歩行特化でない、AI弱い</td>
+        <td>HOHOHOは歩行+リアルタイムAI</td>
+      </tr>
+      <tr>
+        <td>Project Sidewalk（35都市・110万ラベル）</td>
+        <td>バーチャル歩行、ナラティブなし</td>
+        <td>HOHOHOは実歩行+感情データ</td>
+      </tr>
+      <tr>
+        <td>GoodCityLife / Happy Maps</td>
+        <td>受動的SNSマイニング</td>
+        <td>HOHOHOは能動的市民参加</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="oai-box">
+    <strong>OpenAIへのアピールポイント:</strong>
+    ChatGPTが「世界初のAI統合型市民都市センシングシステム」の中核技術として
+    査読論文に記載される可能性がある。これはGPT-5のマルチモーダル能力の
+    <strong>学術的ショーケース</strong>として極めて価値が高い。
+  </div>
+</section>
+
+<!-- BUDGET -->
+<section>
+  <h2>8. 概算コスト構造</h2>
+  <div class="section-sub">OpenAI API利用料の試算（Phase 1 実証段階）</div>
+
+  <table class="clean-table">
+    <thead>
+      <tr><th>項目</th><th>仕様</th><th>月額概算</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>音声入力（Realtime API）</td>
+        <td>1日10人 × 10分/人 × 30日<br>= 3,000分/月</td>
+        <td>約$180 (入力)<br>+ $720 (出力)<br>= <strong>約$900</strong></td>
+      </tr>
+      <tr>
+        <td>画像分析（Vision）</td>
+        <td>1日50枚 × 30日 = 1,500枚/月</td>
+        <td>約<strong>$50</strong></td>
+      </tr>
+      <tr>
+        <td>テキスト処理（構造化・分類）</td>
+        <td>GPT-4o-mini 利用</td>
+        <td>約<strong>$30</strong></td>
+      </tr>
+      <tr style="background: var(--oai-light); font-weight: bold;">
+        <td>合計</td>
+        <td>—</td>
+        <td>約 <strong>$980/月</strong><br>（約15万円/月）</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="highlight">
+    <strong>費用対効果:</strong>
+    従来の市民意識調査（アンケート方式）は1回あたり数百万円。
+    HOHOHOは月15万円で<strong>常時稼働の市民フィードバック基盤</strong>を提供。
+    APIクレジットの研究用提供がOpenAIから得られれば、この負担はさらに軽減される。
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section>
+  <h2>9. 提案タイムライン</h2>
+
+  <table class="clean-table">
+    <thead>
+      <tr><th>時期</th><th>マイルストーン</th><th>必要なアクション</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>2026年3月</strong></td>
+        <td>三寺教授面談（3/30）<br>産学連携の枠組み合意</td>
+        <td>本提案書の完成<br>大学研究テーマの整理</td>
+      </tr>
+      <tr>
+        <td><strong>2026年4月</strong></td>
+        <td>OpenAI Japanへの初回コンタクト</td>
+        <td>提案書送付<br>紹介ルートの確保</td>
+      </tr>
+      <tr>
+        <td><strong>2026年5〜6月</strong></td>
+        <td>HOHOHO GPT プロトタイプ構築<br>小規模実証（市民10名）</td>
+        <td>Custom GPT開発<br>API利用開始</td>
+      </tr>
+      <tr>
+        <td><strong>2026年7〜9月</strong></td>
+        <td>福井市での中規模実証<br>データ分析 + 論文投稿準備</td>
+        <td>大学との共同分析<br>福井市との調整</td>
+      </tr>
+      <tr>
+        <td><strong>2026年10月〜</strong></td>
+        <td>People-First AI Fund 申請<br>横須賀ネットワークへの接続</td>
+        <td>成果レポート作成<br>OpenAIとの関係深化</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- APPROACH STRATEGY -->
+<section>
+  <h2>10. OpenAI Japanへのアプローチ戦略</h2>
+  <div class="section-sub">ただ提案書を送るだけでは届かない。接点の作り方。</div>
+
+  <div class="two-col">
+    <div>
+      <h3>直接ルート</h3>
+      <ul style="padding-left: 18px; font-size: 0.95em;">
+        <li><strong>OpenAI Japan公式</strong> — partnerships@openai.com</li>
+        <li><strong>長崎忠雄氏</strong>（LinkedIn経由）— 元AWS Japan社長、産業用途に関心</li>
+        <li><strong>横須賀市AI担当</strong> — 自治体ネットワーク経由の紹介</li>
+        <li><strong>デジタル庁</strong> — OpenAIとの戦略提携チーム</li>
+      </ul>
+    </div>
+    <div>
+      <h3>間接ルート（推奨）</h3>
+      <ul style="padding-left: 18px; font-size: 0.95em;">
+        <li><strong>SoftBank</strong> — SB OAI Japan経由。福井信金がSoftBank系に繋がるか？</li>
+        <li><strong>福井県デジタル推進課</strong> — 県から国、国からOpenAIへのルート</li>
+        <li><strong>学会発表</strong> — ACM CHI/UbiCompでの発表 → OpenAI Researchの目に</li>
+        <li><strong>ALL CONNECT（3/18訪問予定）</strong> — IT企業ネットワーク</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="highlight">
+    <strong>最も現実的な初手:</strong>
+    3/30の三寺教授面談で<strong>産学連携の枠組みを固めた上で</strong>、
+    「福井工業大学 × 福井市 × HOHOHO」の3者連名で
+    OpenAI Japanにアプローチする。
+    個人プロジェクトではなく<strong>産学官連携</strong>として接触することで、
+    相手の本気度が変わる。
+  </div>
+</section>
+
+<!-- APPENDIX -->
+<section>
+  <h2>付録</h2>
+
+  <div class="appendix">
+    <h3>A. People-First AI Fund について</h3>
+    <p style="font-size: 0.95em;">
+      OpenAI Foundationが運営する<strong>$50M（約75億円）</strong>の助成金プログラム。<br>
+      Wave 1: $40.5M を208の米国NPOに無制限助成。<br>
+      Wave 2: $9.5M を理事会選定の組織に助成。<br>
+      重点分野: <strong>AIリテラシー、アクセス拡大、サービス提供、ヘルスケア、コミュニティ主導の研究</strong><br>
+      HOHOHOは「コミュニティ主導の研究」「アクセス拡大」に該当。<br>
+      <em>※現在は米国NPOが対象。国際展開の可能性をOpenAI Japanに確認する。</em>
+    </p>
+  </div>
+
+  <div class="appendix">
+    <h3>B. 横須賀市モデルの概要</h3>
+    <p style="font-size: 0.95em;">
+      2023年〜: 全庁的にChatGPTを導入。<br>
+      成果: <strong>職員の80%が生産性向上を報告</strong>。<br>
+      波及: 21の地方自治体がベストプラクティス共有ネットワークを形成。<br>
+      限界: 庁内業務効率化にとどまり、<strong>市民向けサービスへの展開は未実施</strong>。<br>
+      → HOHOHOは「横須賀の次」= 市民向けChatGPT活用の先行事例となる。
+    </p>
+  </div>
+
+  <div class="appendix">
+    <h3>C. 参考文献（学術的根拠）</h3>
+    <ul style="font-size: 0.85em; padding-left: 18px;">
+      <li>Burke, Estrin et al. (2006) "Participatory Sensing" — ACM SenSys</li>
+      <li>Evans & Jones (2011) "Walking Interview" — Applied Geography</li>
+      <li>Resch et al. (2015) "Urban Emotions" — GIS技術センサー×人間センサー統合</li>
+      <li>Quercia et al. (2014) "The Shortest Path to Happiness" — ACM Hypertext</li>
+      <li>Saha et al. (2019) "Project Sidewalk" — ACM CHI（35都市・110万ラベル）</li>
+      <li>Fu (2024) "NLP×都市計画" — Journal of the American Planning Association</li>
+      <li>Jiang et al. (2025) "Urban Sentiment Maps" — Environment and Planning B</li>
+    </ul>
+  </div>
+</section>
+
+</div>
+
+<footer>
+  HOHOHO &times; ChatGPT パートナーシップ提案書（日本語版）<br>
+  作成: Claude Opus 4.6 | 2026-03-12<br>
+  本資料はメンタリング目的で作成。正式提出前に内容の精査・更新を推奨。
+</footer>
+
+</body>
+</html>

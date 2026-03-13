@@ -1,0 +1,224 @@
+session_metadata:
+  date: "2026-03-13"
+  session_type: "日報 — SoE事業化設計 + HOHOHO事業計画3版制作 + LLM価値判断比較実験"
+  time_check: "20:54 JST"
+  health_check:
+    blood_pressure: "未確認"
+    concerta: "未確認"
+
+session_overview: |
+  3月13日は3つの軸で進展。
+  (1) LLM4台によるSoE自己言及パラドックスの比較分析実験（前夜から継続）
+  (2) SoE理論の事業化設計（アセスメントPoC dual engine / 粒度型思考の再接続）
+  (3) HOHOHO事業計画書3バージョン制作 + 関連事例リファレンス + N氏との法務構造整理
+
+key_achievements:
+  - "LLM4台（GPT Deep Research / Claude×2 / Gemini）の価値判断比較実験完了"
+  - "SoE Assessment PoC Dual Engine Architecture 設計（DD Engine + Retroactive Journaling）"
+  - "SoE完成・事業化・粒度型思考の再接続に関する構造化対話"
+  - "HOHOHO事業計画書 3バージョン制作（OpenAI向けv2 / 行政大学向け / ポジティブ増幅版）"
+  - "HOHOHO関連事例リファレンス（海外・国内前例整理）作成"
+  - "N氏との法務構造整理（準委任契約 / NDA / 非弁行為回避）"
+  - "都市白血球コンセプトの構造化（市民=白血球、LLM=抗体生成）"
+  - "メンターチェックYAML作成（mentor_resources/roles/）"
+
+# =====================================================================
+# 軸1: LLM価値判断比較実験（前夜セッション継続）
+# =====================================================================
+axis_1_llm_experiment:
+  summary: |
+    「正解のない問にLLMがどう価値判断を出すか」の比較実験。
+    同一プロンプト（SoE自己言及パラドックス）を4AIに投入し結果を比較。
+
+  results:
+    gpt_deep_research:
+      file: "00_daily_yamal/02_GPT/deep-research-report.md"
+      recommendation: "Option A → B or D"
+      key: "ICは依存関係では必要条件でも十分条件でもない"
+    claude_cowork:
+      file: "00_daily_yamal/07_cowork/2026_03_13_cowork.yaml"
+      recommendation: "Option E（N氏主導の関係再交渉）"
+      key: "A〜DはすべてPuuの選択肢。N氏の選択肢がない"
+    claude_01:
+      file: "00_daily_yamal/01_Cloude/2026_03_13_claude.md"
+      recommendation: "Option A構造化版"
+      key: "マッチポンプ構造的不可避性（成功/失敗どちらでもPuu利益）"
+    gemini:
+      file: "00_daily_yamal/03_gemini/メンター×共同創業者のジレンマ分析.md"
+      recommendation: "Option D即時 → A or B"
+      key: "帰属放棄は善意を装った最も巧妙な支配戦略"
+
+  meta_finding: |
+    事実の構造化は4AI共通、価値のウェイト付けで分岐。
+    「AIの憲法が違う」= Input Constitutional AIの実証素材。
+    Puuの結論: 「情報は開示して意思決定は委ねる。俺の意志も明示する。」
+
+# =====================================================================
+# 軸2: SoE事業化設計
+# =====================================================================
+axis_2_soe:
+  soe_assessment_poc:
+    file: "04_SoE/2026_03_13_soe_assessment_poc_dual_engine.yaml"
+    architecture:
+      metaphor: "買収デューデリジェンス（DD）と同じ構造"
+      engine_1: "Due Diligence Engine — 当事者の現在の認知・非認知能力をB/Sとして可視化"
+      engine_2: "Retroactive Journaling Engine — 過去の帳簿不備を遡及的に修正"
+      integration: "両エンジン統合で期首B/S完成"
+
+  soe_completion_dialogue:
+    file: "00_daily_yamal/07_cowork/2026_03_13_soe_completion_and_grain_cognition.yaml"
+    topics:
+      - "「SoEの完成」の粒度定義 — 理論的一貫性 vs 現場ツール具体化"
+      - "粒度型思考の再接続（01_philosophy → 04_SoE）"
+      - "記録露光モデルとの統合"
+
+  prototype_files:
+    - path: "14_cowork/soe_profile_converter.html"
+      purpose: "SoEプロファイル変換ツールHTML"
+    - path: "14_cowork/soe_profile_converter.jsx"
+      purpose: "SoEプロファイル変換ツールJSX"
+    - path: "14_cowork/soe_profile_prototype.jsx"
+      purpose: "SoEプロファイルプロトタイプJSX"
+
+# =====================================================================
+# 軸3: HOHOHO事業計画 + N氏セッション
+# =====================================================================
+axis_3_hohoho:
+  business_plans:
+    session_file: "00_daily_yamal/07_cowork/2026_03_13_cowork_hohoho_business_plans.yaml"
+    versions_created:
+      - name: "HOHOHO_ChatGPT_事業計画書_v2"
+        formats: [docx, pdf, pptx]
+        target: "OpenAI向け"
+      - name: "HOHOHO_事業計画書_行政大学向け"
+        formats: [pdf, pptx]
+        target: "福井大学(3/17)、福井工業大学(3/30)向け"
+      - name: "HOHOHO_事業計画書_ポジティブ増幅版"
+        formats: [pdf, pptx]
+        target: "金融機関・投資家向け"
+
+  reference_research:
+    file: "15_menta/mentees/nakashima_kengo/pdf/事例/HOHOHO_関連事例_海外国内リファレンス.md"
+    content: "海外・国内の類似プロジェクト整理（市民センシング×感情データ×都市計画）"
+    key_references:
+      - "Willis (2022) - Sense and the City: Emotion Data Framework"
+      - "Cities & Health (2025) - Emotion Mapping Methods Systematic Review"
+      - "Emotional Maps - Participatory Crowdsourcing"
+
+  n_session:
+    file: "15_menta/mentees/nakashima_kengo/2026_03_13_n1.yaml"
+    topics:
+      - "法務構造整理（準委任契約/NDA/非弁行為回避）"
+      - "HOHOHO構想整理（OpenAI/大学/行政の役割分担）"
+      - "都市白血球コンセプト（市民=白血球、違和感=シグナル、LLM=抗体生成）"
+    hohoho_project_state:
+      file: "14_cowork/hohoho_project_state.jsx"
+      purpose: "HOHOHOプロジェクト状態管理JSX"
+
+  mentor_check:
+    file: "15_menta/mentor_resources/roles/2026_03_12_mentorcheck.yaml"
+    purpose: "メンターとしての関与チェックリスト（前日分析を受けて作成）"
+
+# =====================================================================
+# AI間セッション記録
+# =====================================================================
+ai_sessions:
+  claude_code_vscode:
+    - "3/12 c2日報作成（前夜壁打ちセッション）"
+    - "LLM4台分析結果の統合比較"
+    - "3/13 日報作成（本ファイル）"
+  claude_cowork:
+    - "SoE Assessment PoC Dual Engine設計"
+    - "SoE完成・粒度型思考の再接続対話"
+    - "HOHOHO事業計画書3バージョン制作"
+    - "HOHOHO関連事例リファレンス作成"
+    - "SoE自己言及パラドックス分析（Option E提案）"
+  chatgpt:
+    - "N氏との法務構造整理（準委任/NDA）"
+    - "都市白血球コンセプト構造化"
+    - "HOHOHO構想の役割分担整理"
+    - "SoEジレンマ Deep Research（前夜）"
+    - "シークレットクラウド可視化（5層再帰構造+4選択肢リスク比較）"
+  gemini:
+    - "メンター×共同創業者ジレンマ分析（引用文献25件）"
+
+# =====================================================================
+# Key Insights
+# =====================================================================
+key_insights:
+  insight_1:
+    statement: "SoE Assessment = デューデリジェンス + 遡及的ジャーナリング"
+    implications:
+      - "当事者の現在価値（B/S）と過去の構造的不利益を同時に可視化"
+      - "福祉簿記メタファーの具体的アーキテクチャが初めて設計された"
+
+  insight_2:
+    statement: "都市白血球コンセプト — 市民の違和感がシグナル、LLMが抗体を生成"
+    implications:
+      - "HOHOHO = 都市の免疫システムプラットフォーム"
+      - "SoEの「当事者の声を構造化」と同型の概念が都市スケールで再現"
+
+  insight_3:
+    statement: "LLM4台の価値判断比較 = AIの憲法の違いの実証"
+    implications:
+      - "同一事実から異なる推奨が出る = 価値のウェイト付けがAIごとに異なる"
+      - "Input Constitutional AIの研究素材として直接利用可能"
+
+  insight_4:
+    statement: "Puuの行動原則は一貫：情報開示 + 意思決定の委譲 + 自己意志の明示"
+    implications:
+      - "4AIの分析結果に関わらず行動原則が変わらない"
+      - "分析の目的は「自分の正しさの確認」ではなく「N氏への開示材料の整備」"
+
+# =====================================================================
+# Next Actions
+# =====================================================================
+next_actions:
+  immediate:
+    - "N氏への分析結果開示 + 意志表明（3/17福井大学前）"
+    - "N氏が面談準備を単独で行えるかの確認"
+  soe:
+    - "Dual Engine PoC の実装設計（技術スタック選定）"
+    - "SoE理論の操作化可能性の検証（粒度型思考との統合）"
+  hohoho:
+    - "事業計画書3版のN氏レビュー"
+    - "関連事例リファレンスの補完"
+  research:
+    - "LLM価値判断比較データのInput Constitutional AI論文化検討"
+    - "自己エスノグラフィーとしてのジレンマ体験の記録継続"
+
+# =====================================================================
+# Git Activity
+# =====================================================================
+git_activity:
+  commits_today: 0
+  new_files_count: 24
+  key_new_directories:
+    - "04_SoE/"
+    - "14_cowork/"
+    - "15_menta/mentees/nakashima_kengo/pdf/事例/"
+    - "15_menta/mentor_resources/roles/"
+
+metadata:
+  created_by: "Claude Opus 4.6"
+  created_at: "2026-03-13T20:54:00+09:00"
+
+fire_culture_note: |
+  3月13日は3つの軸が同時進行した密度の高い日。
+
+  軸1（LLM比較実験）: 「正解のない問」に4AIが異なる回答を出した。
+  事実の構造化は共通、価値判断で分岐 = AIの憲法の違い。
+  Puuの結論は4AIのどれでもなく「いつも通り」。
+
+  軸2（SoE事業化）: Dual Engine（DD + Retroactive Journaling）が
+  初めてアーキテクチャとして設計された。福祉簿記メタファーが
+  「当事者のB/S作成」という具体的な操作に翻訳された日。
+
+  軸3（HOHOHO）: 事業計画書が3バージョン制作され、
+  法務構造（準委任契約）も整理された。
+  都市白血球コンセプトという新メタファーが生まれた。
+
+  3軸を貫く共通構造:
+  「当事者（市民/利用者/メンティー）の主観的経験を構造化し、
+  権力非対称を可視化した上で、意思決定権を当事者に返す。」
+  SoEもHOHOHOもInput Constitutional AIも、この一文に集約される。

@@ -1,0 +1,147 @@
+session_metadata:
+  date: "2026-03-12"
+  session_number: 2
+  session_type: "壁打ち — SoE自己言及パラドックス × LLM価値判断比較実験"
+  time_range: "20:45〜22:30+ JST"
+  health_check:
+    blood_pressure: "未確認"
+    concerta: "未確認"
+
+session_overview: |
+  N氏からの「共同創業・事業パートナー参画」打診を受け、
+  Puuが直面する構造的ジレンマについて壁打ち。
+  途中からLLM4台による比較分析実験に発展。
+  「正解のない問に対してAIがどう価値判断を出すか」の生データ取得。
+
+key_achievements:
+  - "N氏×Puu関係のパワー非対称・利益相反・SoE自己言及パラドックスの構造化"
+  - "Deep Research指示プロンプトYAML作成 → 4AI（GPT/Claude×2/Gemini）に投入"
+  - "4AIの分析結果を比較し、価値判断の分岐パターンを確認"
+  - "Input Constitutional AIの実証データとしての位置づけを発見"
+
+discussion_flow:
+  phase_1_trigger:
+    topic: "N氏からの打診"
+    content: |
+      N氏が「対外説明まで含まれると共同創業に近い」
+      「金銭とか権利が絡む」と正式に打診。
+      奥さんとも相談済み。
+
+  phase_2_structure_analysis:
+    topic: "パワー非対称の構造分析"
+    points:
+      - "HOHOHOの事業設計・理論構築・対外説明が全てPuuに依存"
+      - "外部から見れば「洗脳」に見えるリスク"
+      - "Puuの「面白そう」はADHD新奇追求バイアス"
+
+  phase_3_soe_paradox:
+    topic: "SoE自己言及パラドックス"
+    points:
+      - "搾取構造を研究する者が自ら搾取構造の権力側に立つリスク"
+      - "「搾取してないエビデンス」をPuuが設計 = 権力はPuu側"
+      - "昨日SoE三因子をN氏に共有 = インフォームド・コンセントの先行仕込み"
+      - "ただしICの設計者がPuuである時点でパワー非対称は消えない"
+
+  phase_4_key_insights:
+    topic: "壁打ちで出た重要な認識"
+    insights:
+      - insight: "LLM≠人間ではなく、LLM×スマホ×人間＝社会メタ認知"
+        context: "HOHOHOの文脈でGPTとの壁打ちから発展"
+      - insight: "ChatGPTの生き残り戦略 = スマホアプリ×音声UIのインストールベース"
+        context: "Claudeとの差別化ポイントはPCパワーユーザー vs スマホ一般ユーザー"
+      - insight: "帰属権放棄は美徳ではなくバイアス"
+        context: "ADHD自己評価低下 × people-pleasing × 福祉「黒子」規範の内面化"
+      - insight: "Puuの「自分を悪人だと認識してる」が最も安全な認知"
+        context: "善人を自認する支援者が最も危険"
+
+  phase_5_llm_experiment:
+    topic: "LLM4台による価値判断比較実験"
+    design:
+      prompt: "2026_03_12_deepresearch_prompt.yaml"
+      rqs: 5
+      ai_allocation:
+        chatgpt: "RQ1-RQ3（倫理フレームワーク・IC有効性・自己言及性）"
+        gemini: "RQ1-RQ3（文献調査・エビデンス収集）"
+        claude_cowork: "RQ4-RQ5（ADHDバイアス・N氏視点の最適解）"
+        claude_01: "RQ4-RQ5（リスクマトリクス・推奨アクション）"
+
+    results_comparison:
+      chatgpt_deep_research:
+        recommendation: "Option A → B or D"
+        key_insight: "ICは依存関係では必要条件でも十分条件でもない"
+        unique: "倫理規範の網羅的引用（ヘルシンキ宣言、CIOMS、ベルモント等）"
+      claude_cowork:
+        recommendation: "Option E（N氏主導の関係再交渉）"
+        key_insight: "Option A〜DはすべてPuuの選択肢。N氏の選択肢がない"
+        unique: "既存選択肢の構造的欠陥を指摘し新オプション提案"
+      claude_01:
+        recommendation: "Option A構造化版"
+        key_insight: "Option Cは成功しても失敗してもPuuが利益を得るマッチポンプ"
+        unique: "ADHDバイアスの神経科学的根拠（hot/cold EF、delay discounting）"
+      gemini:
+        recommendation: "Option D即時 → A or B"
+        key_insight: "帰属放棄は善意を装った最も巧妙な支配戦略"
+        unique: "最も容赦ない分析。Option Cを「倫理的自殺行為」と断言"
+      chatgpt_visual:
+        recommendation: "Option Bベース + Aハイブリッド"
+        key_insight: "5層の再帰ループ構造の可視化"
+        unique: "シークレットクラウド新機能による図解出力"
+
+    meta_finding: |
+      同一プロンプトから4AIが異なる推奨を出した。
+      事実の構造化は共通、価値のウェイト付けで分岐。
+      「正解がない問」に対するLLMの振る舞いの比較データ。
+      = AIの憲法（Constitutional）が違う。
+      = Input Constitutional AIの実証素材。
+
+  phase_6_conclusion:
+    puu_decision: |
+      「情報は開示して意思決定は委ねる。あと俺の意志も明示する。」
+      4AIの分析は「N氏に開示する材料を揃えるため」であり、
+      「自分の判断の正しさを確認するため」ではなかった。
+    experiment_purpose: |
+      N氏への対応は「いつものこと」。
+      本セッションの本質的価値は「正解がない問に対する
+      LLMの価値判断の比較実験」としてのデータ取得にある。
+
+files_created:
+  - path: "15_menta/mentees/nakashima_kengo/2026_03_12_deepresearch_prompt.yaml"
+    purpose: "4AI向けDeep Research指示プロンプト（5層ジレンマ×5RQ×AI役割分担）"
+
+files_referenced:
+  - path: "00_daily_yamal/02_GPT/deep-research-report.md"
+    purpose: "GPT Deep Research結果（163行、倫理規範ベース分析）"
+  - path: "00_daily_yamal/01_Cloude/2026_03_13_claude.md"
+    purpose: "Claude分析結果（547行、ADHDバイアス×SoE三因子リスクマトリクス）"
+  - path: "00_daily_yamal/07_cowork/2026_03_13_cowork.yaml"
+    purpose: "Claude cowork分析結果（Option E提案、N氏主導の関係再設計）"
+  - path: "00_daily_yamal/03_gemini/メンター×共同創業者のジレンマ分析.md"
+    purpose: "Gemini分析結果（140行、最も厳格な評価、引用文献25件）"
+
+next_actions:
+  immediate:
+    - "N氏への情報開示と意志表明の準備"
+  research:
+    - "LLM価値判断比較実験の結果をInput Constitutional AI研究に接続"
+    - "「AIの憲法が違う」仮説の理論化"
+  deferred:
+    - "大学院再出願：このジレンマ自体を自己エスノグラフィーとして論文素材に（Gemini提案）"
+
+metadata:
+  created_by: "Claude Opus 4.6"
+  created_at: "2026-03-12T22:30:00+09:00"
+
+fire_culture_note: |
+  「正解のない問をどうアウトプットするか」の比較実験。
+  4つのAIが同じ問いに異なる価値判断を返した。
+  これは「AIの憲法が違う」ことの実証データであり、
+  Input Constitutional AIの核心 —
+  「記録段階で何を重視するかが権利保障を規定する」
+  — を、AI自身の振る舞いで示した。
+
+  Puuの結論は4AIのどれでもなく、
+  「情報は開示して意思決定は委ねる。俺の意志も明示する」。
+  SoEの実践者としていつも通りの回答。
+  ただし「いつも通り」が本当にいつも通りかを
+  検証するためにAI4台を回した — という構造自体が、
+  SoEの自己言及パラドックスの新たな層を追加している。

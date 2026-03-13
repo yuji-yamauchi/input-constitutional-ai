@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HOHOHO x 福井市都市計画マスタープラン 整合性分析</title>
+<style>
+  :root {
+    --fukui-blue: #4a9bd9;
+    --fukui-sky: #e8f4fd;
+    --hohoho-orange: #e8943a;
+    --hohoho-light: #fdf3e8;
+    --match-green: #2d8f4e;
+    --match-light: #e8f5ec;
+    --biz-purple: #6b4c9a;
+    --biz-light: #f0ebf5;
+    --dark: #2c2c2c;
+    --gray: #666;
+    --light-gray: #f5f5f5;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', 'Hiragino Sans', 'Noto Sans JP', sans-serif;
+    color: var(--dark);
+    line-height: 1.7;
+    background: #fafafa;
+  }
+
+  /* Hero */
+  .hero {
+    background: linear-gradient(135deg, var(--fukui-blue) 0%, #2d6fa0 50%, var(--hohoho-orange) 100%);
+    color: white;
+    padding: 80px 40px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '歩 歩 歩';
+    position: absolute;
+    font-size: 200px;
+    opacity: 0.05;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    letter-spacing: 40px;
+  }
+  .hero h1 { font-size: 2.4em; margin-bottom: 10px; letter-spacing: 2px; }
+  .hero .subtitle { font-size: 1.3em; opacity: 0.9; margin-bottom: 30px; }
+  .hero .vision-quote {
+    background: rgba(255,255,255,0.15);
+    display: inline-block;
+    padding: 15px 40px;
+    border-radius: 8px;
+    font-size: 1.5em;
+    font-weight: bold;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255,255,255,0.3);
+  }
+  .hero .date { margin-top: 20px; opacity: 0.7; font-size: 0.9em; }
+
+  /* Container */
+  .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+  /* Section */
+  section { padding: 60px 0; }
+  section h2 {
+    font-size: 1.8em;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid;
+  }
+
+  /* Verdict banner */
+  .verdict {
+    background: linear-gradient(135deg, var(--match-green), #1a6b33);
+    color: white;
+    padding: 40px;
+    border-radius: 12px;
+    margin: 40px 0;
+    text-align: center;
+  }
+  .verdict h2 { color: white; border: none; font-size: 1.6em; }
+  .verdict .score { font-size: 4em; font-weight: bold; margin: 10px 0; }
+  .verdict p { font-size: 1.1em; opacity: 0.9; max-width: 700px; margin: 0 auto; }
+
+  /* Two column layout */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin: 20px 0;
+  }
+
+  /* Card */
+  .card {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    border-left: 4px solid var(--gray);
+  }
+  .card.fukui { border-left-color: var(--fukui-blue); }
+  .card.hohoho { border-left-color: var(--hohoho-orange); }
+  .card.match { border-left-color: var(--match-green); }
+  .card.biz { border-left-color: var(--biz-purple); }
+  .card h3 { margin-bottom: 12px; font-size: 1.2em; }
+  .card ul { padding-left: 20px; }
+  .card li { margin-bottom: 6px; }
+
+  /* Tag */
+  .tag {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+  .tag.fukui { background: var(--fukui-sky); color: var(--fukui-blue); }
+  .tag.hohoho { background: var(--hohoho-light); color: var(--hohoho-orange); }
+  .tag.match { background: var(--match-light); color: var(--match-green); }
+  .tag.biz { background: var(--biz-light); color: var(--biz-purple); }
+
+  /* Alignment table */
+  .alignment-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  }
+  .alignment-table th {
+    padding: 14px 16px;
+    text-align: left;
+    font-weight: bold;
+  }
+  .alignment-table td {
+    padding: 14px 16px;
+    border-top: 1px solid #eee;
+    vertical-align: top;
+  }
+  .alignment-table thead th:nth-child(1) { background: var(--fukui-blue); color: white; width: 35%; }
+  .alignment-table thead th:nth-child(2) { background: var(--hohoho-orange); color: white; width: 35%; }
+  .alignment-table thead th:nth-child(3) { background: var(--match-green); color: white; width: 30%; }
+  .alignment-table tbody tr:hover { background: #f8f8f8; }
+
+  /* Match level indicator */
+  .match-level {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .match-dots {
+    display: flex;
+    gap: 3px;
+  }
+  .match-dots span {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ddd;
+  }
+  .match-dots span.active { background: var(--match-green); }
+
+  /* Flow diagram */
+  .flow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 30px 0;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  }
+  .flow-item {
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    min-width: 120px;
+  }
+  .flow-arrow {
+    font-size: 1.5em;
+    color: var(--gray);
+  }
+  .flow-item.citizen { background: #e3f2fd; color: #1565c0; }
+  .flow-item.hohoho-f { background: var(--hohoho-light); color: var(--hohoho-orange); }
+  .flow-item.univ { background: #f3e5f5; color: #7b1fa2; }
+  .flow-item.gov { background: var(--match-light); color: var(--match-green); }
+  .flow-item.fund { background: #fff3e0; color: #e65100; }
+
+  /* Biz opportunity cards */
+  .biz-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+  }
+  .biz-card {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    border-top: 4px solid var(--biz-purple);
+    position: relative;
+  }
+  .biz-card .phase {
+    position: absolute;
+    top: -12px;
+    right: 20px;
+    background: var(--biz-purple);
+    color: white;
+    padding: 4px 14px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    font-weight: bold;
+  }
+  .biz-card h4 { font-size: 1.1em; margin-bottom: 8px; color: var(--biz-purple); }
+  .biz-card .target { color: var(--gray); font-size: 0.9em; margin-bottom: 8px; }
+  .biz-card .mp-ref {
+    background: var(--fukui-sky);
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 0.85em;
+    margin-top: 10px;
+    color: var(--fukui-blue);
+  }
+
+  /* Quote */
+  .quote-block {
+    background: var(--fukui-sky);
+    border-left: 4px solid var(--fukui-blue);
+    padding: 20px 25px;
+    margin: 20px 0;
+    border-radius: 0 8px 8px 0;
+    font-size: 1.05em;
+  }
+  .quote-block cite {
+    display: block;
+    margin-top: 8px;
+    font-size: 0.85em;
+    color: var(--gray);
+    font-style: normal;
+  }
+
+  /* Risk section */
+  .risk-card {
+    background: #fff8e1;
+    border-left: 4px solid #f9a825;
+    padding: 20px 25px;
+    border-radius: 0 8px 8px 0;
+    margin: 15px 0;
+  }
+  .risk-card h4 { color: #f57f17; margin-bottom: 5px; }
+
+  /* Footer */
+  footer {
+    background: var(--dark);
+    color: white;
+    padding: 30px;
+    text-align: center;
+    font-size: 0.9em;
+    opacity: 0.8;
+  }
+
+  /* keyword highlight */
+  .hl-walk { background: #fff9c4; padding: 1px 4px; border-radius: 3px; font-weight: bold; }
+  .hl-dx { background: #e1f5fe; padding: 1px 4px; border-radius: 3px; font-weight: bold; }
+  .hl-citizen { background: #e8f5e9; padding: 1px 4px; border-radius: 3px; font-weight: bold; }
+
+  @media (max-width: 768px) {
+    .two-col { grid-template-columns: 1fr; }
+    .hero h1 { font-size: 1.6em; }
+    .hero .vision-quote { font-size: 1.1em; padding: 10px 20px; }
+    .flow { flex-direction: column; }
+    .flow-arrow { transform: rotate(90deg); }
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>HOHOHO &times; 福井市都市計画マスタープラン</h1>
+  <div class="subtitle">整合性分析 &amp; 事業化ポテンシャルマップ</div>
+  <div class="vision-quote">
+    暮らしの楽しさを実感できる<br>「歩きつながる」まち
+  </div>
+  <div class="date">
+    福井市都市計画マスタープラン 2025 &mdash; 目標年次: 令和27年<br>
+    分析日: 2026-03-12 | 作成: Claude Opus 4.6 for MENTA
+  </div>
+</div>
+
+<div class="container">
+
+<!-- VERDICT -->
+<div class="verdict">
+  <h2>総合整合度</h2>
+  <div class="score">極めて高い</div>
+  <p>
+    福井市都市計画MPのビジョン「<strong>歩きつながる</strong>」まちは、
+    HOHOHO（<strong>歩歩歩</strong>）プロジェクトと名称・理念・政策手段の
+    3レベルで直接的に整合する。偶然の一致ではなく、
+    HOHOHOが福井市の都市計画を<strong>実装するツール</strong>として
+    位置づけ可能であることを意味する。
+  </p>
+</div>
+
+<!-- Section 1: ビジョン一致 -->
+<section>
+  <h2 style="border-color: var(--match-green);">1. ビジョンレベルの一致</h2>
+
+  <div class="two-col">
+    <div class="card fukui">
+      <h3><span class="tag fukui">福井市MP</span> 都市づくりの理念</h3>
+      <p>過度に自動車に依存した生活から脱却し、人の行動の基本である<span class="hl-walk">「歩く」視点</span>から、人・まち・自然・文化が相互につながり、暮らしの楽しさを実感できる都市づくりに取り組みます。</p>
+      <br>
+      <p><strong>将来都市像:</strong></p>
+      <ul>
+        <li>自然環境との共生・調和を基本とした都市</li>
+        <li>地域を支える拠点のネットワークにより暮らしを結ぶ都市</li>
+      </ul>
+    </div>
+    <div class="card hohoho">
+      <h3><span class="tag hohoho">HOHOHO</span> プロジェクト定義</h3>
+      <p>市民の日常生活で感じる<span class="hl-walk">都市の違和感</span>を集め、LLMで都市課題に翻訳し、大学の研究と自治体政策へ接続する<strong>市民参加型都市センシングシステム</strong>。</p>
+      <br>
+      <p><strong>中核価値:</strong></p>
+      <ul>
+        <li>歩行型インフラ点検サービス</li>
+        <li>生活者視点のリスクマネジメント</li>
+        <li>都市を「状態」ではなく「人間の体験」で観測</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="quote-block">
+    <strong>発見:</strong> 福井市MPの基本理念に「歩く」が<strong>14回以上</strong>登場する（概要版8ページ中）。
+    これは単なるキーワードではなく、20年計画の<strong>構造原理</strong>である。
+    HOHOHOが「歩行」を事業の核に据えていることは、この構造原理と直接接続する。
+    <cite>福井市都市計画マスタープラン 2025 概要版より分析</cite>
+  </div>
+</section>
+
+<!-- Section 2: 4つの視点との対応 -->
+<section>
+  <h2 style="border-color: var(--fukui-blue);">2. 福井市MP「4つの視点」との対応マッピング</h2>
+
+  <p>福井市MPは都市づくりの課題を「活力」「生活」「交流」「潤い」の4視点で解決する。各視点とHOHOHOの接点を整理する。</p>
+
+  <table class="alignment-table">
+    <thead>
+      <tr>
+        <th>福井市MP 政策方針</th>
+        <th>HOHOHO 対応機能</th>
+        <th>整合度</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <span class="tag fukui">活力</span>
+          <strong>多様な拠点づくり</strong><br>
+          にぎわい交流の拠点づくり、回遊性と魅力の向上
+        </td>
+        <td>
+          歩行データによる回遊性・にぎわい度の可視化。<br>
+          市民の「快適」「発見」シグナルが拠点評価指標になる。
+        </td>
+        <td>
+          <div class="match-level">
+            <div class="match-dots">
+              <span class="active"></span>
+              <span class="active"></span>
+              <span class="active"></span>
+              <span class="active"></span>
+              <span></span>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span class="tag fukui">生活</span>
+          <strong>身近な生活空間づくり</strong><br>
+          安全・安心なまちづくり、防災都市づくり、歩行者空間の整備
+        </td>
+        <td>
+          歩行中の「危険」「不安」シグナルがインフラ異常の早期検知に。<br>
+          通学路・避難路の安全性を市民体験から評価。<br>
+          <strong>375件の実証データ</strong>が存在。
+        </td>
+        <td>
+          <div class="match-level">
+            <div class="match-dots">
+              <span class="active"></span>
+              <span class="active"></span>
+              <span class="active"></span>
+              <span class="active"></span>
+              <span class="active"></span>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span class="tag fukui">交流</span>
+          <strong>移動の骨格づくり</strong><br>
+          自動車依存からの転換、歩行者・自転車利用空間の整備改善、<br>
+          「ほこみち」制度、歩きたくなる空間づくり
+        </td>
+        <td>
+          歩行体験データで「歩きたくなる道」を客観評価。<br>
+          自動車→歩行転換の効果測定。<br>
+          ほこみち制度のPDCA検証データ提供。
+        </td>
+        <td>
+          <div class="match-level">
+            <div class="match-dots">
+              <span class="active"></span>
+              <span class="active"></span>
+              <span class="active"></span>
+              <span class="active"></span>
+              <span class="active"></span>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span class="tag fukui">潤い</span>
+          <strong>水と緑の空間づくり</strong><br>
+          景観形成、心に残る美しい風景都市づくり
+        </td>
+        <td>
+          歩行中の「快適」「発見」シグナルで景観体験を定量化。<br>
+          季節変化の縦断モニタリング。
+        </td>
+        <td>
+          <div class="match-level">
+            <div class="match-dots">
+              <span class="active"></span>
+              <span class="active"></span>
+              <span class="active"></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span class="tag fukui">全体共通</span>
+          <strong>DXによる都市づくりの推進</strong><br>
+          AI・IoT・ビッグデータの積極活用、リアルとバーチャルのハイブリッド化
+        </td>
+        <td>
+          HOHOHOそのものがDX実装。<br>
+          市民の歩行体験 → LLM翻訳 → エビデンス生成の<br>
+          <strong>まちづくりDXパイプライン</strong>。
+        </td>
+        <td>
+          <div class="match-level">
+            <div class="match-dots">
+              <span class="active"></span>
+              <span class="active"></span>
+              <span class="active"></span>
+              <span class="active"></span>
+              <span class="active"></span>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span class="tag fukui">全体共通</span>
+          <strong>市民と行政の協働による都市づくり</strong><br>
+          市民参画のまちづくり、「できることから始めよう」
+        </td>
+        <td>
+          HOHOHOの本質は<span class="hl-citizen">市民参加型</span>。<br>
+          「歩くだけで都市づくりに貢献」は最もハードルの低い市民参画。
+        </td>
+        <td>
+          <div class="match-level">
+            <div class="match-dots">
+              <span class="active"></span>
+              <span class="active"></span>
+              <span class="active"></span>
+              <span class="active"></span>
+              <span class="active"></span>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span class="tag fukui">第4章</span>
+          <strong>PDCAサイクルによる進行管理</strong><br>
+          概ね5年ごとの評価・検証。市民意識調査等の活用。
+        </td>
+        <td>
+          HOHOHO = 常時稼働するPDCA検証装置。<br>
+          5年周期の調査を<strong>リアルタイム市民フィードバック</strong>に置換。
+        </td>
+        <td>
+          <div class="match-level">
+            <div class="match-dots">
+              <span class="active"></span>
+              <span class="active"></span>
+              <span class="active"></span>
+              <span class="active"></span>
+              <span></span>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- Section 3: キラーフレーズ -->
+<section>
+  <h2 style="border-color: var(--hohoho-orange);">3. MP本文からの「キラーフレーズ」抽出</h2>
+  <p>HOHOHOの提案書で直接引用できる福井市MPの記述を抽出。</p>
+
+  <div class="quote-block">
+    「<span class="hl-walk">歩く</span>」視点に立ったまちづくりの実現に向けて、魅力やにぎわいのある歩行者空間の整備を推進します。
+    <cite>分野別構想 第2節 歩行者空間の整備方針 (1)</cite>
+  </div>
+
+  <div class="quote-block">
+    これまでの自動車優先の道路整備から<span class="hl-walk">歩行者や自転車利用の視点に重点</span>を置き、地域住民や道路管理者等の関係主体と連携しながら整備を進めます。
+    <cite>概要版 p.5 移動の骨格づくり</cite>
+  </div>
+
+  <div class="quote-block">
+    <span class="hl-dx">AI・IoT等の技術革新によるデジタル化の進展</span> &mdash; あらゆる分野においてまちづくりDXを推進するとともに、リアルとバーチャルをハイブリッド化することで、都市空間における体験や活動をより豊かに、効果的にしていく取組も進めていきます。
+    <cite>概要版 p.7 第4章 DXによる都市づくりの推進</cite>
+  </div>
+
+  <div class="quote-block">
+    <span class="hl-citizen">市民や事業者がみんなで</span>…近くの公園や河川の美化活動など身近なまちづくりは、地域住民や事業者、まちづくり団体等が協力しながら取り組みます。<br>
+    <strong>できることから始めよう！ 市民参画のまちづくり</strong>
+    <cite>概要版 p.7 市民と行政の協働による都市づくり</cite>
+  </div>
+
+  <div class="quote-block">
+    歩道等において、常設オープンカフェ等の設置やイベント等が実施できる、<span class="hl-walk">歩きたくなる道路空間づくり</span>を促進します。
+    <cite>概要版 p.5 / 分野別構想 p.14「ほこみち」制度</cite>
+  </div>
+
+  <div class="quote-block">
+    市民の安全で快適な暮らしを支える道路の整備と<strong>適切な維持管理</strong>を図ります。
+    <cite>分野別構想 第2節 交通体系整備の方針 (1)</cite>
+  </div>
+</section>
+
+<!-- Section 4: 事業化フロー -->
+<section>
+  <h2 style="border-color: var(--biz-purple);">4. 事業化フロー &mdash; 福井市MPを根拠にした価値提案</h2>
+
+  <p>HOHOHOを「福井市MPの実装ツール」として位置づけた場合の事業フロー:</p>
+
+  <div class="flow">
+    <div class="flow-item citizen">市民<br><small>歩行体験</small></div>
+    <span class="flow-arrow">&rarr;</span>
+    <div class="flow-item hohoho-f">HOHOHO<br><small>データ収集</small></div>
+    <span class="flow-arrow">&rarr;</span>
+    <div class="flow-item hohoho-f">LLM翻訳<br><small>課題抽出</small></div>
+    <span class="flow-arrow">&rarr;</span>
+    <div class="flow-item univ">大学研究<br><small>エビデンス化</small></div>
+    <span class="flow-arrow">&rarr;</span>
+    <div class="flow-item gov">福井市MP<br><small>PDCA検証</small></div>
+    <span class="flow-arrow">&rarr;</span>
+    <div class="flow-item fund">国交付金<br><small>年間3,000億</small></div>
+  </div>
+
+  <div class="biz-grid">
+    <div class="biz-card">
+      <span class="phase">Phase 1 即時</span>
+      <h4>歩行空間安全性評価サービス</h4>
+      <div class="target">対象: 都市政策課 / 危機管理課</div>
+      <ul>
+        <li>通学路・避難路の歩行安全性を市民体験データで評価</li>
+        <li>375件の実証データを初期エビデンスとして活用</li>
+        <li>道路法42条（維持修繕義務）への適合を支援</li>
+      </ul>
+      <div class="mp-ref">MP根拠: 安全・安心なまちづくり / 歩行者空間の確保 / 防災都市づくり</div>
+    </div>
+
+    <div class="biz-card">
+      <span class="phase">Phase 1 即時</span>
+      <h4>MP進行管理の市民フィードバック基盤</h4>
+      <div class="target">対象: 都市戦略部 / 総合政策課</div>
+      <ul>
+        <li>5年周期の市民意識調査をリアルタイム化</li>
+        <li>「4つの視点」ごとの達成度を歩行体験データで計測</li>
+        <li>PDCA「Check」フェーズのDXツール</li>
+      </ul>
+      <div class="mp-ref">MP根拠: PDCAサイクルによる進行管理 / DXによる都市づくり</div>
+    </div>
+
+    <div class="biz-card">
+      <span class="phase">Phase 2 研究連携</span>
+      <h4>「歩きたくなる度」定量評価研究</h4>
+      <div class="target">対象: 福井工業大学 三寺研究室 / 都市政策課</div>
+      <ul>
+        <li>歩行ナラティブデータ &times; LLM &times; 空間分析</li>
+        <li>「ほこみち」制度の効果測定手法を共同開発</li>
+        <li>学術論文 + 行政施策レポートの両面成果</li>
+      </ul>
+      <div class="mp-ref">MP根拠: 歩きたくなる歩行者空間づくりの推進 / 「ほこみち」制度</div>
+    </div>
+
+    <div class="biz-card">
+      <span class="phase">Phase 2 研究連携</span>
+      <h4>インフラ予防保全エビデンス生成</h4>
+      <div class="target">対象: 建設部 / 道路課 / 財政課</div>
+      <ul>
+        <li>歩行観測データ → 予防保全計画の根拠資料</li>
+        <li>国交付金（年間約3,000億円）獲得の競争優位</li>
+        <li>「出費 → 投資」の転換ロジック</li>
+      </ul>
+      <div class="mp-ref">MP根拠: 道路の整備と適切な維持管理 / 既存ストックの有効活用</div>
+    </div>
+
+    <div class="biz-card">
+      <span class="phase">Phase 3 拡張</span>
+      <h4>市民参加型まちづくりDXプラットフォーム</h4>
+      <div class="target">対象: まちづくり推進課 / 市民協働課</div>
+      <ul>
+        <li>「歩くだけで都市づくりに貢献」 = 最もハードルの低い市民参画</li>
+        <li>ポジティブ体験（快適・発見）もネガティブ（危険・不安）も収集</li>
+        <li>にぎわい・回遊性の可視化ダッシュボード</li>
+      </ul>
+      <div class="mp-ref">MP根拠: 市民と行政の協働 / 「できることから始めよう」</div>
+    </div>
+
+    <div class="biz-card">
+      <span class="phase">Phase 3 拡張</span>
+      <h4>Fukuiモデル全国横展開</h4>
+      <div class="target">対象: 人口3万人以下の自治体 / 国交省</div>
+      <ul>
+        <li>福井での実証 → 全国の「歩く視点のまちづくり」自治体へ</li>
+        <li>SIB（成果連動型民間委託）での導入モデル</li>
+        <li>自治体DXの先進事例として国の表彰対象に</li>
+      </ul>
+      <div class="mp-ref">MP根拠: 福井市MPの理念が全国の都市計画MP改定の潮流と一致</div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 5: 行政担当者向けピッチ -->
+<section>
+  <h2 style="border-color: var(--match-green);">5. 行政担当者向け 1分ピッチ案</h2>
+
+  <div class="card match" style="max-width: 800px; margin: 0 auto; padding: 35px;">
+    <p style="font-size: 1.15em; line-height: 1.9;">
+      福井市都市計画マスタープランのビジョンは<br>
+      <strong>「暮らしの楽しさを実感できる『歩きつながる』まち」</strong>です。<br><br>
+      HOHOHOは、この<strong>「歩く」を科学する</strong>プロジェクトです。<br><br>
+      市民が日常の歩行で感じる違和感&mdash;危険、不便、でも快適や発見も&mdash;<br>
+      これをAIで都市課題に翻訳し、<strong>マスタープランの進捗を<br>リアルタイムで「Check」できるツール</strong>にします。<br><br>
+      すでに福井市内で<strong>375件のインフラ異常を検知した実証データ</strong>があります。<br><br>
+      福井工業大学との共同研究でエビデンスを固めれば、<br>
+      国の交付金獲得でも<strong>他の自治体に先行できる根拠</strong>になります。<br><br>
+      マスタープランの「DX推進」「市民協働」「歩行者空間整備」<br>
+      この3つの政策を<strong>1つのツールで同時に前進</strong>させる。<br>
+      それがHOHOHOです。
+    </p>
+  </div>
+</section>
+
+<!-- Section 6: リスクと注意 -->
+<section>
+  <h2 style="border-color: #f9a825;">6. リスクと注意点</h2>
+
+  <div class="risk-card">
+    <h4>顧客定義の曖昧さ（1/22から継続課題）</h4>
+    <p>「行政」は一枚岩ではない。都市政策課、危機管理課、建設部、財政課、それぞれ予算・KPI・決裁ラインが異なる。<strong>最初の1課</strong>を決めてから横展開するべき。横軸に刺す前に縦を刺す。</p>
+  </div>
+
+  <div class="risk-card">
+    <h4>「ビジョン一致」と「予算化」は別の問題</h4>
+    <p>MPのビジョンとHOHOHOが整合することは事実だが、行政の予算化には「どの事業費項目から出すか」が必要。研究費なのか、委託費なのか、システム利用料なのか。お金の出口を設計しないと「素晴らしいけど予算がない」で終わる。</p>
+  </div>
+
+  <div class="risk-card">
+    <h4>三寺教授面談（3/30）がキーイベント</h4>
+    <p>大学研究としてのフレーミングが固まれば、行政への提案が「民間サービス営業」から「産学官連携提案」に格上げされる。逆に言えば、3/30までに提案の骨格を固める必要がある。</p>
+  </div>
+</section>
+
+</div>
+
+<footer>
+  HOHOHO &times; 福井市都市計画マスタープラン 整合性分析<br>
+  作成: Claude Opus 4.6 | MENTA メンタリング資料 | 2026-03-12<br>
+  出典: 福井市都市計画マスタープラン 2025（福井市）/ HOHOHO プロジェクト議事録
+</footer>
+
+</body>
+</html>

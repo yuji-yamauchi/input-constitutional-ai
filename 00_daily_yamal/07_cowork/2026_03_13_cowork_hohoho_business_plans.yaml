@@ -1,0 +1,369 @@
+# =====================================================================
+# HOHOHO事業計画書作成セッション — 日報
+# =====================================================================
+session:
+  title: "HOHOHO事業計画書 × 3バージョン制作 + 前例調査（OpenAI向け / 行政・大学向け / ポジティブ増幅版）"
+  date: "2026-03-13"
+  time_range: "afternoon - 22:00+ JST"
+  created_by: "Claude Opus 4.6 (Cowork mode)"
+  session_type: "document_generation"
+  requester: "yuji (Puu)"
+  beneficiary: "中島 健吾 (Nakashima Kengo)"
+
+# =====================================================================
+# 前提作業：ディレクトリ全資料の精読
+# =====================================================================
+source_materials_read:
+  directory: "/mnt/nakashima_kengo/"
+  files_analyzed:
+    - path: "HOHOHOモデルの都市センシング調査.md"
+      type: "academic_survey"
+      key_insight: "6ドメイン統合モデルとしての世界初ポジショニング"
+
+    - path: "都市の課題解決に向けた新たな市場機会.md"
+      type: "market_analysis"
+      key_insight: "Strava/FixMyStreet/BID/SIB金融モデルの統合"
+
+    - path: "HOHOHO_ChatGPT_approach_ja.md"
+      type: "existing_proposal_v1"
+      key_insight: "学術寄りの300行提案書、v2の出発点"
+
+    - path: "nakashima_kengo_profile.yaml"
+      type: "profile"
+      key_insight: "INTJ、翻訳者・右腕、歩くを仕事にしたい"
+
+    - path: "pdf/福井市都市計画MP_概要版.pdf"
+      type: "policy_document"
+      pages: 12
+      key_insight: "基本理念「暮らしの楽しさを実感できる『歩きつながる』まち」"
+
+    - type: "national_policy_pdfs"
+      count: 8
+      read_via: "subagent"
+      policies:
+        - "インフラ長寿命化R6（国交省）"
+        - "自治体DX推進v5（総務省）"
+        - "AI基本計画2025（内閣府）"
+        - "生成AI調達GL（デジタル庁）"
+        - "防災DXP推進（内閣府）"
+        - "ほこみち制度"
+        - "その他関連資料"
+
+# =====================================================================
+# 成果物 1: OpenAI/ChatGPT向け事業計画書
+# =====================================================================
+deliverable_1:
+  filename: "HOHOHO_ChatGPT_事業計画書_v2.pptx"
+  format: "PowerPoint (.pptx)"
+  location: "/mnt/nakashima_kengo/"
+  target_audience: "OpenAI Japan"
+  slides: 10
+  design_palette: "Midnight Infrastructure（深紺 × 赤アクセント × ティール × ゴールド）"
+  version_history:
+    v1_docx:
+      status: "completed"
+      user_feedback: "ちょっと甘いな — 社会実験の構造と中間組織の強調が不足"
+    v2_pptx:
+      status: "completed"
+      improvements:
+        - "Slide 3: 社会実験の構造的必然性（商業/研究/社会実験の3列比較）を新設"
+        - "Slide 4: 中間組織モデル（行政/HOHOHO/民間の3層構造）を新設"
+        - "QA後にSlide 2のカード間隔とSlide 9のテキストオーバーフローを修正"
+
+  slide_structure:
+    - slide: 1
+      title: "HOHOHO × ChatGPT 事業計画書"
+      content: "タイトル + タグライン + 市場規模"
+    - slide: 2
+      title: "問題提起：日本のインフラが壊れていく"
+      content: "75%/68-84%/70% 統計カード + 行政のパラドックス"
+    - slide: 3
+      title: "なぜ「社会実験」なのか — 構造的必然性"
+      content: "商業サービス vs 研究プロジェクト vs 社会実験（3列比較）"
+      note: "ユーザーフィードバック「甘い」への直接対応"
+    - slide: 4
+      title: "中間組織モデル"
+      content: "行政/HOHOHO中間組織/民間企業の3層 + OpenAIにとっての意味"
+      note: "ユーザーフィードバック「甘い」への直接対応"
+    - slide: 5
+      title: "なぜChatGPTなのか"
+      content: "iPhone 67%/LINE的UI/GPTsカスタム + ChatGPT vs Claude比較表"
+    - slide: 6
+      title: "福井市都市計画MPとの完全合致"
+      content: "活力/生活/交流/潤い 4柱 + QRコードストーリー"
+    - slide: 7
+      title: "GPTs「ほほほボタン」"
+      content: "記号/音声/写真/組合せの4入力方法"
+    - slide: 8
+      title: "5つの国策が追い風"
+      content: "5政策の一覧と接続ポイント"
+    - slide: 9
+      title: "OpenAIが得るもの"
+      content: "4つの価値提案（感情データ/1,741自治体/社会インフラAI/デジタル庁連携）"
+    - slide: 10
+      title: "クロージング"
+      content: "「福井のおばあちゃん」ナラティブ"
+
+  key_arguments_for_openai:
+    - "日本人のiPhone普及率67% → ChatGPTが唯一のマルチモーダルAIアプリ"
+    - "X（旧Twitter）6,700万人による「刷り込み」効果 → 学習コストゼロ"
+    - "GPTsカスタムで「ほほほボタン」専用アプリ化 → 開発コスト最小"
+    - "中間組織が情報管理主体 → 政府データ規制を回避してOpenAIにデータ提供"
+    - "全国1,741自治体にQRコード設置 → OpenAIのロゴが公共空間に"
+    - "BtoB市場ではClaudeと消耗戦。市民タッチポイントはChatGPT独占領域"
+
+# =====================================================================
+# 成果物 2: 行政・大学向け事業計画書
+# =====================================================================
+deliverable_2:
+  filename: "HOHOHO_事業計画書_行政大学向け.pptx"
+  format: "PowerPoint (.pptx)"
+  location: "/mnt/nakashima_kengo/"
+  target_audience: "福井市（行政） / 福井工業大学（学術パートナー）"
+  slides: 11
+  design_palette: "Civic Trust（深紺 × テラコッタ × 市民グリーン × ティール × ゴールド）"
+  status: "completed"
+
+  slide_structure:
+    - slide: 1
+      title: "HOHOHO 事業計画書"
+      content: "PoC実績（367件/44倍）即座提示 + 行政・大学向けタグ"
+    - slide: 2
+      title: "日本のインフラが静かに壊れていく"
+      content: "統計カード + 国家賠償法第2条のジレンマ構造"
+    - slide: 3
+      title: "なぜ「社会実験」なのか — 行政が動ける唯一の入り口"
+      content: "商業/研究/社会実験の3列比較（構造的ハードル論）"
+    - slide: 4
+      title: "中間組織モデル — 責任の構造設計"
+      content: "行政（福井市）/ HOHOHO中間組織 / 大学の三者構造"
+      note: "OpenAI版と異なり「大学」を第三極に配置"
+    - slide: 5
+      title: "HOHOHOの仕組み — 歩くがデータになる"
+      content: "4ステップフロー（市民→AI→中間組織→行政）+ PoC実績"
+    - slide: 6
+      title: "福井市都市計画MPとの完全合致"
+      content: "活力/生活/交流/潤い + 「計画」→「実行」変換"
+    - slide: 7
+      title: "5つの国策が追い風になる"
+      content: "5政策一覧（国交省/総務省/内閣府/デジタル庁）"
+    - slide: 8
+      title: "ロングテールビジネスの本質 — 行動変容"
+      content: "BtoB LLM = レッドオーシャン vs HOHOHO = ブルーオーシャン"
+      note: "「ググる → チャッピーに聞く」行動変容ビジョンを含む"
+    - slide: 9
+      title: "三層の収益モデル"
+      content: "Phase 1 委託費 → Phase 2 SaaS → Phase 3 補助金/SIB"
+    - slide: 10
+      title: "行政・大学へのお願い"
+      content: "左右2列（行政5項目/大学5項目）+ 3年タイムライン"
+    - slide: 11
+      title: "クロージング"
+      content: "「福井のおばあちゃん」ナラティブ"
+
+  key_arguments_for_gov_univ:
+    - "社会実験形式 → 調達手続き不要（協力金ベース）で行政参加のハードルを下げる"
+    - "中間組織がデータ管理 → 行政は「使う」が「持たない」→ 管理瑕疵責任を回避"
+    - "大学は第三極 → 査読論文による信頼担保 + リアルワールドデータで教育機会"
+    - "PoC実績（1人×1時間/日×1ヶ月 = 367件）→ 年間LINE通報の44倍の効率"
+    - "福井市都市計画MP「歩きつながる」との理念的合致"
+    - "5つの国策（インフラ長寿命化/DX/AI基本計画/生成AI調達GL/防災DX）が追い風"
+    - "収益モデル：1自治体あたり年間最大2,000万円 × 1,741自治体 = 最大348億円市場"
+
+  tone_difference_from_openai_version:
+    openai: "テクノロジーの興奮、市場機会、データ獲得のストーリー"
+    gov_univ: "信頼性、公共性、責任設計、制度的整合性を前面に"
+
+# =====================================================================
+# 成果物 3: ポジティブ増幅版（ナラティブ転換）
+# =====================================================================
+deliverable_3:
+  filename: "HOHOHO_事業計画書_ポジティブ増幅版.pptx"
+  format: "PowerPoint (.pptx)"
+  location: "/mnt/nakashima_kengo/"
+  target_audience: "全般（市民・行政・研究者向け共通ナラティブ）"
+  slides: 11
+  design_palette: "Warm Civic（深紺 × 桜ピンク × 市民グリーン × スカイブルー × ゴールド × 暖色ホワイト）"
+  status: "completed"
+
+  narrative_reframe:
+    before: "壊れているところを探す（ネガティブ最小化）"
+    after: "愛されているところを見つける（ポジティブ増幅）"
+    core_question_shift: "「どこが壊れている？」→「どこが愛されている？」"
+    two_layer_value:
+      layer_1: "ポジティブ増幅（主）— 市民の感情・愛着データが都市を育てる"
+      layer_2: "ネガティブ検出（副産物）— 歩く過程でインフラ異常も自然に収集"
+    virtuous_cycle: "楽しいから歩く → 歩くからデータ → データがまちを良くする → もっと歩きたくなる"
+
+  slide_structure:
+    - slide: 1
+      title: "HOHOHO — まちを歩いて、まちを育てる"
+      content: "タイトル + ポジティブ増幅タグライン"
+    - slide: 2
+      title: "視点の転換 — 壊れている → 愛されている"
+      content: "Old Frame vs New Frame 2列比較（赤→緑への転換構造）"
+    - slide: 3
+      title: "市民の感情がデータになる"
+      content: "🌸桜/💧小川/😨暗い道/☕喫茶店 — 4感情行 + カラータグ"
+      note: "絵文字はLibreOfficeでは?表示。PowerPointで正常描画"
+    - slide: 4
+      title: "二層の価値構造"
+      content: "Layer 1 ポジティブ増幅(主) / Layer 2 ネガティブ検出(副産物)"
+    - slide: 5
+      title: "HOHOHOの仕組み"
+      content: "感情記録 → AI分析 → 中間組織 → 行政フィードバック"
+    - slide: 6
+      title: "福井市都市計画MPとの完全合致"
+      content: "活力/生活/交流/潤い（ポジティブ文脈で再解釈）"
+    - slide: 7
+      title: "PoC実績"
+      content: "367件/44倍 + 歩行データの感情的側面を強調"
+    - slide: 8
+      title: "5つの国策 + ウェルビーイング指標"
+      content: "5政策一覧 + 内閣府ウェルビーイング指標を追加（防災DXPに代替）"
+    - slide: 9
+      title: "好循環のデザイン"
+      content: "循環図 + 「ググる→チャッピーに聞く/教える」行動変容"
+    - slide: 10
+      title: "社会実験のお願い"
+      content: "行政・大学・市民それぞれへの具体的依頼"
+    - slide: 11
+      title: "クロージング"
+      content: "「この小川、きれいやねぇ」（ネガティブ版「溝が危ない」からの転換）"
+
+  user_request_context: |
+    ユーザーが「全体の文脈がネガティブを最小化するってなってるけど、
+    ポジティブを増幅するってナラティブで作成できないかな？
+    市民目線の観光おすすめスポットとか、こんな小川の流れがなごむとか、
+    ここに桜を植えましたとか」と依頼。
+    これにより、完全に新しいナラティブ構造で再構築。
+
+# =====================================================================
+# 成果物 4: 前例調査リファレンス
+# =====================================================================
+deliverable_4:
+  filename: "HOHOHO_関連事例_海外国内リファレンス.md"
+  format: "Markdown"
+  location: "/mnt/事例/"
+  full_path: "C:\\Users\\USER\\Documents\\GitHub\\input-constitutional-ai\\15_menta\\mentees\\nakashima_kengo\\pdf\\事例"
+  status: "completed"
+
+  research_scope:
+    searches_conducted: 8
+    sources_identified: "30+"
+    categories: 10
+    categories_list:
+      - "市民センシング × 感情データ（Emotional Cartography, MIT Urban Sensing）"
+      - "FixMyStreet系（mySociety, SeeClickFix）"
+      - "Strava Metro × 都市計画"
+      - "AI × 歩行評価（CityWalks, Mapillary）"
+      - "日本国内事例（千葉市ちばレポ, 会津若松スマートシティ等）"
+      - "データ信託 / 中間組織モデル（Sidewalk Toronto, Stanford TDI, UK ODI）"
+      - "SIB（社会的インパクト投資）"
+      - "AI × 市民参加（Decidim, Pol.is, vTaiwan）"
+      - "Happiness Mapping / 主観的ウェルビーイング"
+      - "ChatGPT × 公共サービス"
+
+  deliverables_within:
+    - "各ソースのURL・概要・HOHOHO接続点"
+    - "関連度評価（★1〜5）"
+    - "優先ダウンロードPDF一覧（15件、★★★★以上）"
+    - "HOHOHO差別化ポジショニング表"
+
+  pdf_download_status:
+    attempted: 7
+    blocked_by: "egress proxy（spia.princeton.edu, urban.org, frontiersin.org等）"
+    resolution: "URLをMarkdownに記載 → ユーザーに手動ダウンロードを依頼"
+    manual_download_required: true
+    priority_pdfs_count: 15
+
+# =====================================================================
+# 追加情報メモ（ユーザーから記憶依頼）
+# =====================================================================
+context_memo:
+  topic: "ロングテール戦略と行動変容ビジョン"
+  recorded_at: "2026-03-13T20:00+09:00"
+  content: |
+    BtoB市場のLLMはレッドオーシャン（OpenAI/Google/Anthropic/Metaの兆円投資）。
+    HOHOHOはBtoG+BtoCのブルーオーシャンをロングテールビジネスとして狙う。
+    目指す行動変容：
+      現在: 「Chromeでググる」（Googleが動詞化した世界）
+      目標: 「チャッピーに聞く」（ChatGPTが日常動詞化する世界）
+    日本人の携帯の中で、検索行動そのものをAI対話に置き換える。
+    これはSlide 8（行政・大学向け版）に反映済み。
+  strategic_implication: |
+    この行動変容ビジョンは、OpenAIに対しては
+    「日本市場でのChatGPT普及の実証フィールド」として訴求できる。
+    行政に対しては「市民の日常に溶け込むインフラ」として訴求できる。
+    両面の活用が可能。
+
+# =====================================================================
+# 技術メモ
+# =====================================================================
+technical_notes:
+  tools_used:
+    - "pptxgenjs (npm) — PPTX生成"
+    - "LibreOffice soffice — PDF変換"
+    - "pdftoppm — スライド画像化"
+    - "subagent — Visual QA（各バージョン）"
+  qa_process:
+    openai_version:
+      issues_found:
+        - "Slide 2: 統計カード間隔が狭すぎ（<0.3"）"
+        - "Slide 9: テキストオーバーフロー（Row 4がボックス外にはみ出し）"
+      fixes_applied: true
+      re_verified: true
+    gov_univ_version:
+      issues_found:
+        - "Slide 3: 下部テキストとカードの間隔不足"
+        - "Slide 6: 4柱カード間隔が狭い（<0.2"）"
+      fixes_applied: true
+      re_verified: true
+    positive_version:
+      issues_found:
+        - "Slide 3: 絵文字がLibreOffice PDF変換時に「?」表示"
+      note: "LibreOfficeの制限。PowerPointでは正常描画"
+      fixes_applied: false
+      reason: "LibreOffice固有の制限のため修正不要"
+
+# =====================================================================
+# SoE研究との接続メモ
+# =====================================================================
+soe_research_connection:
+  relevance: |
+    HOHOHO事業計画書の作成は、SoE研究の「実装フィールド」としての
+    中島プロジェクトを前進させるための実務的支援。
+    ただし、2026_03_13_cowork.yamlで分析した通り、
+    Puuの知的貢献の帰属明文化が未完了であることに留意。
+  structural_observations:
+    - observation: "中間組織モデルの「責任の構造設計」は、SoEの準委任契約論と構造的に同型"
+      note: "行政のジレンマ（知った=過失）は、福祉の「善意の構造的支配」と同じ構造パターン"
+    - observation: "「社会実験」という形式選択自体が、SoEの「制度的入り口設計」と同型"
+      note: "商業でも研究でもない第三の形式 = 既存制度の隙間を突く構造設計"
+    - observation: "「ググる→チャッピーに聞く」行動変容は、SoEの「本人主権」と接続可能"
+      note: |
+        市民が自分の感情・体験をAIに伝え、それが公共の意思決定に反映される構造は
+        「本人主権型アセスメント」の都市インフラ版と解釈できる。
+        ただし、これを明示的にSoE理論と接続するかは慎重な検討が必要。
+  caution: |
+    事業計画書の作成支援が「メンター契約の射程」を超えている可能性は
+    既に前回セッション（2026_03_13_cowork.yaml）で分析済み。
+    本セッションの作業は、その自覚の上で実施されたもの。
+
+# =====================================================================
+# ナラティブ転換の理論的メモ
+# =====================================================================
+narrative_evolution:
+  observation: |
+    3バージョンの制作過程で、HOHOHOの本質的価値が段階的に明確化された。
+    v1(OpenAI向け): インフラ×AI×データの技術訴求
+    v2(行政・大学向け): 制度設計×責任構造×公共性の訴求
+    v3(ポジティブ増幅): 市民の感情×ウェルビーイング×好循環の訴求
+    最終的に「壊れているを見つける」→「愛されているを見つける」への転換は、
+    HOHOHOの最も本質的な再定義となった。
+  soe_parallel: |
+    この転換は、SoE研究における「欠損モデル（何ができないか）」から
+    「ケイパビリティモデル（何ができるか）」への転換と構造的に同型。
+    HOHOHOのポジティブ増幅ナラティブは、都市インフラ版の
+    ケイパビリティ・アプローチと位置づけ可能。
+    ただし、この接続を論文で用いるには更なる理論的精緻化が必要。

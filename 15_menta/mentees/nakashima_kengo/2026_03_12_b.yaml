@@ -1,0 +1,178 @@
+handover_context:
+
+  project:
+    name: HOHOHO
+    type: urban_intelligence_project
+
+  participants:
+    - name: 山内雄司
+      role: theory_research
+    - name: 中島健吾
+      role: implementation_startup
+    - name: ChatGPT
+      role: discussion_support
+
+  project_definition: >
+    市民の歩行体験・違和感・感情・ナラティブを収集し、
+    LLMによって構造化して都市知能データへ変換する
+    Human Sensor型都市観測システム。
+
+  core_architecture:
+
+    data_source:
+      - citizen_observation
+      - walking_experience
+      - narrative_input
+      - infrastructure_anomaly
+
+    processing:
+      - llm_structuring
+      - sentiment_analysis
+      - narrative_clustering
+
+    output:
+      - urban_intelligence
+      - infrastructure_insight
+      - civic_signal
+
+  novelty:
+
+    human_sensor_model: >
+      IoTセンサーではなく
+      市民の主観観測を都市センサーとして活用。
+
+    narrative_llm_integration: >
+      市民ナラティブをLLMで構造化し
+     都市知能データへ変換。
+
+    urban_meta_cognition: >
+      個人ではなく地域社会レベルの
+      メタ認知構造を形成。
+
+  development_strategy:
+
+    phase1_lightweight:
+      description: >
+        市民参加前に観察者（中島または委託）による
+        インフラ異常観測モデル。
+
+      flow:
+        - walking_observation
+        - anomaly_record
+        - dataset_creation
+        - municipal_feedback
+
+    phase2_llm_model:
+      description: >
+        LLM解析を導入し
+        ナラティブ都市観測モデルへ拡張。
+
+    phase3_citizen_network:
+      description: >
+        市民参加型Human Sensorネットワーク。
+
+  platform_strategy:
+
+    notion:
+      usage:
+        - internal_thinking
+        - hypothesis_management
+
+    github:
+      usage:
+        - concept_publication
+        - research_connection
+        - protocol_management
+
+  openai_strategy:
+
+    reasoning: >
+      テック企業は新規性評価が中心のため
+      HOHOHO概念はアカデミアより先に
+      OpenAIなどAI研究コミュニティへ提示する可能性。
+
+    order:
+      - openai
+      - research_institutions
+      - government
+
+  urban_planning_alignment:
+
+    city_reference:
+      - fukui_city_master_plan
+
+    key_point:
+      concept: pedestrian_perspective
+
+    interpretation: >
+      HOHOHOは都市計画の
+      市民観測実装ツールとして機能。
+
+  ethical_design:
+
+    risks:
+      - surveillance_misinterpretation
+      - sentiment_misclassification
+
+    required:
+      - opt_in
+      - anonymization
+      - aggregated_analysis
+
+  soe_research:
+
+    name: SoE
+
+    meanings:
+
+      service_of_empowerment:
+        definition: >
+          当事者の主体性・自律性を高める福祉サービス。
+
+      service_of_exploitation:
+        definition: >
+          制度給付構造により
+          当事者依存を生む搾取型サービス。
+
+    research_question: >
+      福祉サービスは
+      エンパワメントなのか
+      それとも制度搾取なのか。
+
+  social_factor_model:
+
+    anomie_factor:
+      cause: wealth_deficiency
+      effect:
+        - norm_collapse
+        - lower_class_identity
+        - cognitive_stop
+
+    hubris_factor:
+      cause: wealth_excess
+      effect:
+        - rule_transcendence
+        - power_deviation
+
+    hypnos_factor:
+      meaning: social_sleep
+      effect:
+        - indifference
+        - system_blindness
+        - law_failure
+
+  current_decision:
+
+    hohoho_strategy: >
+      キャッシュ優先による
+      HOHOHOスケールダウンは行わない。
+
+    approach:
+      - vision_large
+      - implementation_gradual
+
+  upcoming_events:
+
+    - ALLCONNECT_meeting
+    - university_research_possibility
+    - openai_connection_exploration
