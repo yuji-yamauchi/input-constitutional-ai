@@ -117,9 +117,30 @@ SRTの内容からタイムスタンプ付きの説明文を生成する。
 - Whisper修正記録
 - SoE理論との接続表
 
-保存先: `00_daily_yamal/08_youtube/YYYY_MM_DD_タイトル.md`
+保存先: `16_youtube/{チャンネル}/{シリーズ}/{動画名}/YYYY_MM_DD_タイトル.md`
 
 **Expected output**: Markdownファイル（GitHub repo内）
+
+### Step 7: 成果物を動画フォルダへ移動
+
+字幕付き動画完成後、動画・音声ファイル以外のテキスト系成果物を
+対応する `16_youtube/` 配下の動画フォルダへ移動する。
+
+**移動対象**:
+- `.md` — 台本・Content Markdown
+- `.srt` / `_wrapped.srt` — 字幕ファイル
+- `_youtube_description.txt` — YouTube説明文
+- `.pptx` — スライド資料
+- `.png` / `.webp` — サムネイル画像
+
+**移動しないもの**（Downloadsに残すか別管理）:
+- `.mp4` — 元動画・字幕付き動画
+- `.mp3` / `.wav` — 音声ファイル
+
+**移動先の決定ルール**:
+- 日本語教育動画 → `16_youtube/01_d-rel_ja/障害福祉スタッフ教育動画/{シリーズ名}/`
+- 英語SoEコンテンツ → `16_youtube/02_Soe_en/{トピック名}/`
+- フォルダが存在しない場合は作成する
 
 ## Examples
 
@@ -133,9 +154,10 @@ Actions:
 3. 16字×2行ラッピング (128 blocks)
 4. ffmpeg焼き込み → 字幕付き.mp4
 5. YouTube説明文 → _youtube_description.txt
-6. Content Markdown → 00_daily_yamal/08_youtube/
+6. Content Markdown → 16_youtube/01_d-rel_ja/障害福祉スタッフ教育動画/{動画名}/
+7. .md, .srt, .txt を動画フォルダへ移動
 
-Result: 3ファイル出力（字幕付きMP4、説明文TXT、Markdown）
+Result: 字幕付きMP4（Downloads）+ テキスト成果物（16_youtube/配下の動画フォルダ）
 
 ## Troubleshooting
 

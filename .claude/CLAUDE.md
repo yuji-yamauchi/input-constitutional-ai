@@ -55,6 +55,7 @@
   07_cowork/           # Coworkセッション記録
   09_note/             # note記事ドラフト
 01_philosophy/          # SoE哲学・存在論
+02_social_system/       # 制度・法律・エビデンス（厚労省記録、CRC、IPO分類等）
 03_ai_rights/           # AI倫理・CRPD・データ主権
 04_SoE/                 # SoE理論・PoC設計・アセスメント
 09_research_proposal/   # 研究計画書
@@ -64,6 +65,9 @@
 14_disability_welfare_services/  # 障害福祉サービス資料・申請書類・教材
 15_menta/               # MENTAメンタリング記録
   mentees/nakashima_kengo/  # N氏 HOHOHO事業関連
+16_youtube/              # YouTubeコンテンツ管理
+  01_d-rel_ja/           # 日本語チャンネル（障害福祉スタッフ教育動画）
+  02_Soe_en/             # 英語チャンネル（SoE理論）
 outputs/                # AI間共有ファイル
 ```
 
