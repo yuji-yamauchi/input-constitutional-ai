@@ -1,0 +1,118 @@
+meeting:
+  project: HOHOHO
+  date: 2026-03-15
+  participants:
+    - 山内雄司
+    - Kengo Nakajima
+    - ChatGPT
+
+progress_summary:
+  milestone:
+    - フロントエンドUI完成
+    - HOHOHO GPTs作成
+    - Supabase DB接続
+    - Vercelで共有可能な状態まで公開
+
+shared_links:
+  frontend_ui:
+    url: https://hohoho-hazel.vercel.app
+    description: 市民投稿用UIプロトタイプ
+  gpts:
+    url: https://chatgpt.com/g/g-69b62971fb788191be14645d0cfa5cd0-hohoho
+    description: 都市ナラティブ生成用GPTs
+
+ui_features:
+  input_flow:
+    - 写真アップロード
+    - ナラティブ入力（200文字）
+    - 感情タグ選択
+    - 位置情報（オプトイン）
+    - AI追加質問
+  design_goal:
+    - 歩く → 感じる → 言語化 → AI補助
+    - 言語化が苦手な人でも参加可能
+
+database:
+  platform: Supabase
+  type: PostgreSQL
+  purpose:
+    - 投稿データ保存
+    - 感情タグ
+    - 位置情報
+    - AI生成ナラティブ
+  advantages:
+    - Postgresベース
+    - API自動生成
+    - GIS対応（PostGIS）
+    - PoCに適したサブスクDB
+
+development_tools:
+  claude_max_plan:
+    cost: 約100USD/月
+    yen_estimate: 約15000〜17000円
+  tools_used:
+    - Claude Code
+    - Excel in Claude
+    - VSCode Claude integration
+    - GitHub管理
+    - Python / HTML生成
+    - Whisper（音声文字起こし）
+    - Cowork（ローカルファイル整理）
+    - Chrome操作による情報収集
+
+ai_role_structure:
+  development_ai:
+    model: Claude
+    role: 開発・コード生成・作業支援
+  user_facing_ai:
+    model: GPT
+    role: 市民インターフェース
+  reasoning:
+    - GPTは一般ユーザー層に広く普及
+    - SNS利用層（Xなど）との親和性が高い
+
+architecture_current:
+  layers:
+    - フロントUI（Vercel）
+    - GPTsナラティブ生成
+    - Supabaseデータ保存
+
+remaining_poc_tasks:
+  - 感情ヒートマップ（Emotion Map）
+  - 中間組織向けダッシュボード
+  - ナラティブ共有ページ
+
+business_structure:
+  citizen_layer:
+    cost: free
+    features:
+      - 投稿
+      - ナラティブ閲覧
+  public_map:
+    cost: free
+    features:
+      - 匿名化感情マップ
+  intermediary_dashboard:
+    cost: paid
+    users:
+      - NPO
+      - 研究機関
+      - 自治体
+    features:
+      - 感情分析
+      - 認知バイアス分析
+      - CSVエクスポート
+      - 政策参考レポート
+
+concept_direction:
+  project_identity:
+    - 都市ナラティブプラットフォーム
+    - 都市心理マップ
+    - 共助型セーフティネット
+  philosophy:
+    - 監視ではなく違和感共有
+    - 市民ナラティブから都市理解
+
+status:
+  development_stage: Prototype → PoC移行段階
+  comment: 1日で主要プロトタイプ構築完了

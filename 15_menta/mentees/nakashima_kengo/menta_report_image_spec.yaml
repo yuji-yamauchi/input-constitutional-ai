@@ -1,0 +1,110 @@
+image_spec:
+  purpose: "MENTA実績報告 - 相談内容セクション用画像"
+  target_audience: "MENTAで新規メンティーを探している起業志望者"
+  tone: "プロフェッショナルだが親しみやすい。信頼感重視"
+
+  canvas:
+    width: 1200
+    height: 800
+    background: "#FFFFFF"
+    format: PNG
+    note: "MENTA投稿欄は横幅が広いため、横長レイアウト推奨"
+
+  layout:
+    header:
+      label_badge:
+        text: "CONSULTATION"
+        background: "#e8f4f8"
+        text_color: "#2d8fba"
+        position: center_top
+        font_size: 14
+        style: rounded_pill
+      title:
+        text: "ご相談時の状況"
+        font_size: 28
+        font_weight: bold
+        color: "#1a1a2e"
+      accent_line:
+        type: gradient
+        colors: ["#2d8fba", "#6dd5ed", "#2d8fba"]
+        thickness: 3
+
+    main_content:
+      type: "2x2_grid"
+      description: "4つの課題カードを均等配置"
+      card_style:
+        background: "#fff5f5"
+        left_border:
+          color: "#e74c3c"
+          width: 5
+        corner_radius: 10
+        shadow: "soft (2px 4px 10px rgba(0,0,0,0.06))"
+        padding: 20
+
+      cards:
+        - number: 1
+          number_style:
+            shape: circle
+            background: "#e74c3c"
+            text_color: white
+            size: 30
+          title: "顧客が定まらない"
+          title_color: "#c0392b"
+          title_size: 18
+          title_weight: bold
+          body: "行政? 製造業? 金融? IT?\n誰に売ればいいかわからない"
+          body_color: "#555555"
+          body_size: 13
+
+        - number: 2
+          title: "価値の言語化ができない"
+          body: "現場の体験はあるが\nビジネス言語に変換できない"
+
+        - number: 3
+          title: "営業資料がない"
+          body: "事業計画書・提案書の\n作り方・構成がわからない"
+
+        - number: 4
+          title: "最初の1件が取れない"
+          body: "B2G/B2B営業経験ゼロ\nどこからアプローチすべきか"
+
+    footer:
+      type: "profile_summary_bar"
+      background: "#f0f7ff"
+      corner_radius: 14
+      icon:
+        shape: circle
+        background: "#2d8fba"
+        text: "P"
+        text_color: white
+        size: 50
+      heading:
+        text: "メンティーの状況"
+        font_size: 16
+        font_weight: bold
+        color: "#1a1a2e"
+      tags:
+        style: rounded_pill
+        background: "#d6eaf8"
+        text_color: "#2471a3"
+        font_size: 11
+        items:
+          - "地方在住"
+          - "起業準備中"
+          - "B2G/B2B経験なし"
+          - "現場観察力◎"
+          - "PoC実績あり(367件収集済)"
+
+  design_notes:
+    - "数字の赤丸は視線誘導の役割。4つの課題が一目で把握できること"
+    - "背景色は淡い赤系(#fff5f5)で「課題・困りごと」を視覚的に伝える"
+    - "下部のタグバーは「こういう人なら助けられる」のシグナル"
+    - "全体的に余白を十分取り、MENTAの投稿欄で縮小されても読めるサイズ感"
+    - "フォントは太めのゴシック体推奨（游ゴシック Bold / Noto Sans JP Bold）"
+    - "Canva / Figma / PowerPoint いずれでも再現可能な設計"
+
+  production_tool_options:
+    canva: "テンプレートなしで新規作成。1200x800カスタムサイズ"
+    figma: "Auto Layoutで4カードグリッド"
+    powerpoint: "スライドサイズをカスタム(1200x800px)に設定"
+    python_pillow: "generate_menta_images.pyをベースに高解像度化"

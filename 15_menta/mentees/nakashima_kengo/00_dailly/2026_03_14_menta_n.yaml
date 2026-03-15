@@ -1,0 +1,388 @@
+meeting:
+  title: HOHOHO-P チャット議論ログ
+  date: 2026-03-14
+  participants:
+    - 山内雄司
+    - Kengo Nakajima
+    - ChatGPT
+
+summary:
+  main_topics:
+    - HOHOHO構想と都市データ化
+    - AIコンサル企業（フクイト）との面談報告
+    - 起業準備（法人・ドメイン・設立日）
+    - 地域プロジェクトとしての学生活用
+    - 士業×AIビジネスの市場背景
+    - 起業家の営業行動（提案書・資料の重要性）
+
+timeline:
+
+  - topic: HOHOHO構想の基本議論
+    key_points:
+      - HOHOHOは事業体というより理念・コンセプトとして位置付ける可能性
+      - FUTまちづくりセンターが中間組織として機能する案
+      - 学生を巻き込むことで家族や地域に波及する構造
+      - 市民の感情や違和感を都市データとして収集するHuman Sensor構想
+      - 絵文字UIや音声UIによる入力の可能性
+    remarks:
+      山内:
+        - 社会起業家的なファシリテーター役割が存在する
+        - HOHOHOは理念として扱う案
+      中島:
+        - 中間組織とHOHOHOの関係性の整理が必要
+      ChatGPT:
+        - 感情データを都市データとして扱う構造はユニーク
+
+  - topic: AIと士業の関係
+    key_points:
+      - AIは士業の独占業務には直接介入できない
+      - 文書生成・調査・フォーマット作成などはAIが担える
+      - 最終判断や交渉は士業が担当するモデル
+    remarks:
+      山内:
+        - フォーマット生成はLLMで十分対応可能
+        - 示談交渉などの法的交渉は避けるべき
+      ChatGPT:
+        - AI + 士業監修モデルが現在のLegalTechの主流
+
+  - topic: フクイト代表との面談
+    key_points:
+      - フクイトはAI導入コンサルに近いポジション
+      - サービス内容はまだ具体化していない
+      - DX入口から法務サービスにつなげる構想
+    remarks:
+      中島:
+        - 学生の企業職業体験を入口にDX提案するアイデアを提示
+        - 採用・学生定着とDXを結びつける話で盛り上がった
+      ChatGPT:
+        - 地方ではDXより人材課題が入口として有効
+
+  - topic: ALL CONNECTとの接触
+    key_points:
+      - 創業日について質問される
+      - 進捗確認または本気度確認のニュアンス
+    remarks:
+      中島:
+        - クリエイター業でキャッシュを作る予定と説明
+        - 創業日は一応確定していると回答
+      ChatGPT:
+        - 地方ではプロジェクト進行確認としてよくある質問
+
+  - topic: 起業準備
+    key_points:
+      - 法人名・ドメイン確保は早めに行うべき
+      - Gmailより独自ドメインメールの方が信頼性が高い
+    remarks:
+      中島:
+        - hohoho.jp ドメイン取得済み
+      山内:
+        - 起業家は仲介なしでOpenAIへ直接アプローチする方が良い
+
+  - topic: 起業日（吉日）
+    key_points:
+      - 日本では会社設立日に縁起を考慮することがある
+      - 一粒万倍日や天赦日などが人気
+
+  - topic: 起業家営業の基本
+    key_points:
+      - 担当者レベルは資料や提案書がないと動かない
+      - 起業家側が具体的な提案を持ち込む必要がある
+    remarks:
+      山内:
+        - 良い学びの機会になった
+      中島:
+        - 同意
+
+  - topic: 学生活用・地域調査
+    key_points:
+      - 京大生協などでアルバイト募集が可能
+      - 月数万円程度で学生調査プロジェクトが実施できる
+      - 地域情報誌の制作事例を共有
+    remarks:
+      山内:
+        - 障害特性を持つ学生が編集長を務めた地域情報誌を紹介
+        - Noteなどのオンライン媒体で地域コンテンツ制作の可能性
+
+insights:
+  startup_strategy:
+    - 地方では人脈形成と小さな協業からプロジェクトが生まれる
+    - AIプロジェクトは社会実験型になる可能性が高い
+    - HOHOHOは会社よりプロジェクトとして先行している
+
+next_actions:
+  - HOHOHO構想の深掘り（前例・論文・海外事例調査）
+  - 行政・大学との社会実験可能性検討
+  - 学生プロジェクトの設計
+  - 法人設立タイミング検討
+
+meeting:
+  project: HOHOHO
+  date: 2026-03-14
+  participants:
+    - 山内雄司
+    - Kengo Nakajima
+    - ChatGPT
+
+discussion_summary:
+
+  concept:
+    description: >
+      市民が街を歩いて感じた体験（写真・短いナラティブ）を投稿し、
+      LLMが物語化・構造化することで都市ナラティブデータを生成する。
+    core_flow:
+      - 歩く
+      - 感じる
+      - 投稿（写真＋ナラティブ）
+      - LLM解析
+      - 都市ナラティブ生成
+      - 都市データ蓄積
+
+  design_philosophy:
+    front_side:
+      - ポジティブな街の物語
+      - 市民参加型ナラティブ
+      - 地域魅力の発信
+    back_side:
+      - 都市データ収集
+      - 認知バイアス解析
+      - 政策参考データ
+
+  administrative_strategy:
+    key_points:
+      - 行政はネガティブ問題の直接認知を避けたい傾向
+      - 「魅力発信」「市民参加」の形でプロジェクト設計
+      - ネガティブ情報は「トリアージ参考データ」として扱う
+    policy_frame:
+      - EBPM補助データとして説明可能
+      - 会計検査院への説明資料にも応用可能
+
+  academic_connection:
+    partner_candidate:
+      - 三寺教授
+    research_relation:
+      - 社会実験
+      - 人の感じ方の研究
+      - 都市空間と行動の関係
+    positioning:
+      - HOHOHOは社会実験の拡張版
+
+  technology:
+    components:
+      ui:
+        - スマホ投稿UI
+        - GPTs
+      input_data:
+        - 写真
+        - ナラティブ
+        - GPS（任意）
+        - 感情
+      ai_processing:
+        - ナラティブ生成
+        - 認知バイアス解析
+        - データ構造化
+      storage:
+        - 投稿データ
+        - 都市ナラティブ
+        - 位置情報
+        - 感情タグ
+
+  narrative_processing:
+    analysis:
+      - sentiment_analysis
+      - bias_detection
+      - credibility_scoring
+    goal:
+      - 認知バイアスを補正
+      - フリーライダーや悪意データの検出
+      - 政策判断の参考データ生成
+
+  poc_plan:
+    type: PoC（概念実証）
+    area: 福井駅周辺
+    duration: 約1ヶ月
+    participants: 50〜100人
+    validation_points:
+      - 市民が投稿するか
+      - ナラティブ生成の価値
+      - 都市データとして活用可能か
+    expected_outputs:
+      - 都市ナラティブマップ
+      - 社会実験レポート
+      - 政策参考データ
+
+  roles:
+    nakajima:
+      - UI設計
+      - UX設計
+      - 資料デザイン
+    yamauchi:
+      - 主訴からのニーズ整理
+      - 構造化
+      - 行政・研究翻訳
+    chatgpt:
+      - 技術整理
+      - LLM概念解説
+      - システム設計補助
+
+insight:
+  - HOHOHOはSNSではなく都市ナラティブプラットフォーム
+  - ビッグデータではなく「Narrative Data」
+  - LLMは断片体験を物語化する装置
+  - 福祉現場のケースワーク思考と都市データ設計は相性が良い
+
+next_steps:
+  - HOHOHOコンセプト図作成
+  - PoC設計書作成
+  - プロトタイプUI作成
+  - 三寺教授との連携検討
+  - OpenAI実証実験相談
+
+meeting:
+  project: HOHOHO
+  date: 2026-03-14
+  participants:
+    - 山内雄司
+    - Kengo Nakajima
+    - ChatGPT
+
+discussion_summary:
+
+  concept:
+    description: >
+      市民が街を歩いて感じた体験（写真・短いナラティブ）を投稿し、
+      LLMが物語化・構造化することで都市ナラティブデータを生成する。
+    core_flow:
+      - 歩く
+      - 感じる
+      - 投稿（写真＋ナラティブ）
+      - LLM解析
+      - 都市ナラティブ生成
+      - 都市データ蓄積
+
+  design_philosophy:
+    front_side:
+      - ポジティブな街の物語
+      - 市民参加型ナラティブ
+      - 地域魅力の発信
+    back_side:
+      - 都市データ収集
+      - 認知バイアス解析
+      - 政策参考データ
+
+  administrative_strategy:
+    key_points:
+      - 行政はネガティブ問題の直接認知を避けたい傾向
+      - 「魅力発信」「市民参加」の形でプロジェクト設計
+      - ネガティブ情報は「トリアージ参考データ」として扱う
+    policy_frame:
+      - EBPM補助データとして説明可能
+      - 会計検査院への説明資料にも応用可能
+
+  academic_connection:
+    partner_candidate:
+      - 三寺教授
+    research_relation:
+      - 社会実験
+      - 人の感じ方の研究
+      - 都市空間と行動の関係
+    positioning:
+      - HOHOHOは社会実験の拡張版
+
+  technology:
+    components:
+      ui:
+        - スマホ投稿UI
+        - GPTs
+      input_data:
+        - 写真
+        - ナラティブ
+        - GPS（任意）
+        - 感情
+      ai_processing:
+        - ナラティブ生成
+        - 認知バイアス解析
+        - データ構造化
+      storage:
+        - 投稿データ
+        - 都市ナラティブ
+        - 位置情報
+        - 感情タグ
+
+  narrative_processing:
+    analysis:
+      - sentiment_analysis
+      - bias_detection
+      - credibility_scoring
+    goal:
+      - 認知バイアスを補正
+      - フリーライダーや悪意データの検出
+      - 政策判断の参考データ生成
+
+  poc_plan:
+    type: PoC（概念実証）
+    area: 福井駅周辺
+    duration: 約1ヶ月
+    participants: 50〜100人
+    validation_points:
+      - 市民が投稿するか
+      - ナラティブ生成の価値
+      - 都市データとして活用可能か
+    expected_outputs:
+      - 都市ナラティブマップ
+      - 社会実験レポート
+      - 政策参考データ
+
+  roles:
+    nakajima:
+      - UI設計
+      - UX設計
+      - 資料デザイン
+    yamauchi:
+      - 主訴からのニーズ整理
+      - 構造化
+      - 行政・研究翻訳
+    chatgpt:
+      - 技術整理
+      - LLM概念解説
+      - システム設計補助
+
+insight:
+  - HOHOHOはSNSではなく都市ナラティブプラットフォーム
+  - ビッグデータではなく「Narrative Data」
+  - LLMは断片体験を物語化する装置
+  - 福祉現場のケースワーク思考と都市データ設計は相性が良い
+
+next_steps:
+  - HOHOHOコンセプト図作成
+  - PoC設計書作成
+  - プロトタイプUI作成
+  - 三寺教授との連携検討
+  - OpenAI実証実験相談
+
+raw_layer:
+  - 市民ナラティブ
+  - 感情
+  - 投稿場所
+
+analysis_layer:
+  - LLMによる認知バイアス推定
+  - 信頼度スコア
+  - 感情分類
+
+visualization_layer:
+  - 地図上ヒートマップ
+  - 認知バイアス分布
+  - 感情グラデーション
+
+city_layer:
+  - 物理都市
+  - インフラ
+
+data_layer:
+  - センサー
+  - 統計
+
+HOHOHO_layer:
+  - 市民ナラティブ
+  - 感情
+  - 認知バイアス

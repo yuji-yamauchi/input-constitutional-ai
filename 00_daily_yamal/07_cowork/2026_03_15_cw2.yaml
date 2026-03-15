@@ -1,0 +1,203 @@
+session_metadata:
+  date: "2026-03-15"
+  session_id: "cw2"
+  session_type: "SoE Profile Converter 開発"
+  ai: "Claude Opus 4.6 (Cowork)"
+  duration_estimate: "約90分"
+  continuation: "前セッション（context compaction後の復帰）"
+  cognitive_state:
+    focus: "アプリ開発（小さく作る）"
+    motivation_source: "Claude Codeで何かアプリつくりたい"
+    note: "スコープ修正後の集中フェーズ。理論拡張なし、実装に専念"
+
+# ============================================================
+# セッション概要
+# ============================================================
+summary: |
+  前セッションで収集した4つのLLMアセスメントYAMLを
+  SoE Profile（RPG可視化）に変換するコンバーターを実装した。
+  「動機に対して作ろうとするものが大きすぎた」という反省から
+  スコープを絞り、小さく動くものを完成させた。
+
+# ============================================================
+# 投入データ（4つのアセスメントYAML）
+# ============================================================
+input_data:
+  1_gemini_mentee:
+    source: "Gemini"
+    target: "Mentee N-shi"
+    date: "2026-02-10"
+    structure: "big_five.openness.level / hpi_proxy.adjustment.level"
+    mbti: "INTP"
+
+  2_claude_puu:
+    source: "Claude Opus 4.5"
+    target: "Puu"
+    date: "2026-02-05"
+    structure: "big_five.openness.rating / hpi_proxy.adjustment.rating"
+    mbti: "ENTP"
+    note: "最も詳細。additional_observations含む"
+
+  3_gpt_puu:
+    source: "ChatGPT"
+    target: "Puu"
+    date: "2026-03-13"
+    structure: "big_five.openness.level / hpi_proxy.adjustment.level"
+    mbti: "ENTP"
+    note: "簡潔で構造的"
+
+  4_gpt_mentee:
+    source: "Gemini (Mentee GPT)"
+    target: "Mentee N-shi"
+    date: "2026-02-16"
+    structure: "big_five.openness.level / hpi_proxy.adjustment.level"
+    mbti: "INTJ/INTP"
+    note: "情緒安定度が高く評価されている"
+
+# ============================================================
+# 開発成果物
+# ============================================================
+deliverables:
+  1_jsx_file:
+    path: "soe_profile_converter.jsx"
+    lines: 815
+    description: "React JSXコンポーネント版（Claude Code / Vite用）"
+    status: "完成"
+
+  2_html_file:
+    path: "soe_profile_converter.html"
+    lines: "約500"
+    description: "スタンドアロンHTML版（ブラウザでダブルクリック起動）"
+    status: "完成"
+    tech_stack:
+      - "React 18 (CDN)"
+      - "Babel Standalone (ブラウザ内JSXトランスパイル)"
+      - "インラインCSS（依存ゼロ）"
+
+# ============================================================
+# アーキテクチャ設計
+# ============================================================
+architecture:
+  normalization_layer:
+    purpose: "4つのLLMの異なるYAML構造を共通スキーマに変換"
+    handled_formats:
+      - "rating: '高' (Claude形式)"
+      - "level: '高' (ChatGPT/Gemini形式)"
+      - "直接文字列 (フラット形式)"
+    level_map:
+      非常に高: 90
+      高: 80
+      やや高: 65
+      中程度: 50
+      やや低: 35
+      低: 20
+
+  mapping_layer:
+    purpose: "Big Five + HPI → RPG Core Stats への加重平均変換"
+    formulas:
+      STR: "Ambition×0.6 + Conscientiousness×0.4"
+      INT: "Openness×0.5 + Inquisitive×0.3 + Learning×0.2"
+      MEN: "Neuroticism反転×0.5 + Adjustment×0.5"
+      DEX: "Prudence×0.5 + Conscientiousness×0.3 + InterpersonalSensitivity×0.2"
+      VIT: "Adjustment×0.4 + Conscientiousness×0.4 + Neuroticism反転×0.2"
+      CHR: "Extraversion×0.4 + Agreeableness×0.3 + Sociability×0.3"
+    design_principle: |
+      加重平均の係数は恣意的であるが、完全に公開されている。
+      Mappingタブで全計算式を当事者が検証可能。
+      これがInput Constitutional AIの原理的立場。
+
+  skill_generation:
+    method: "HPI/BF上位スコアから自動でUR/SRスキルカード生成"
+    top_skill: "UR（最高スコア特性）"
+    second_skill: "SR（次点スコア特性）"
+
+  environment_mapping:
+    method: "employment_considerations → ICF環境因子への自動分類"
+    facilitators: "strengths"
+    barriers: "challenges / accommodations"
+
+# ============================================================
+# SoE理論との整合
+# ============================================================
+soe_alignment:
+  input_constitutional_ai:
+    implementation: "Mappingタブで変換ロジックを完全公開"
+    principle: "ブラックボックスな評価は構造的搾取の温床"
+
+  本人主権:
+    implementation: "「このプロファイルデータの所有者はあなた自身です」表示"
+
+  llm_as_gauge:
+    implementation: "Cross-LLM Compareモードで同一人物のLLM間差異を可視化"
+    insight: |
+      同一人物に対するLLM間の評価差異は、
+      LLMが「測定装置（gauge）」として持つ固有のバイアスを反映。
+      差異自体がメタデータであり、複数観測の重ね合わせとして解釈すべき。
+
+  grain_based_cognition:
+    implementation: "特性にmacro/meso/microのgrain levelタグ付与"
+
+  capability_approach:
+    implementation: "Environmentタブの促進因子/阻害因子可視化"
+
+# ============================================================
+# 技術的課題と解決
+# ============================================================
+issues_and_fixes:
+  1_jsx_browser_error:
+    problem: "JSXファイルをブラウザで直接開けない（file:///プロトコルエラー）"
+    cause: "JSXはReactのビルドツールが必要。ブラウザは生JSXを理解しない"
+    fix: "React + Babel StandaloneをCDNから読み込むスタンドアロンHTML版を作成"
+
+  2_cowork_file_path:
+    problem: "computer:///sessions/... リンクがVM内パスのためWindows側で到達不能"
+    learning: "Coworkの選択フォルダに保存してWindows側から直接開く方がユーザー体験が良い"
+
+# ============================================================
+# 次のステップ
+# ============================================================
+next_actions:
+  immediate:
+    - "HTMLファイルをブラウザで開いて動作確認"
+    - "4プロファイル切替の動作チェック"
+    - "Cross-LLM Compareモードの視覚確認"
+
+  short_term:
+    - "YAML直接ペースト機能の追加（現在はハードコード）"
+    - "メンティー本人にプロファイルを見せてフィードバック取得"
+    - "N-shiアドバイザリー契約でのSoEデモとして使用可能"
+
+  medium_term:
+    - "Claude Code (VSCode) でVite化してGitHub Pages公開"
+    - "YAML入力 → リアルタイム変換の動的版"
+    - "Dual Engine (Due Diligence + Retroactive Journaling) との接続"
+
+# ============================================================
+# スコープ管理の振り返り
+# ============================================================
+scope_reflection:
+  original_motivation: "Claude Codeで何かアプリつくりたい"
+  scope_creep_risk: |
+    前セッションで Dual Engine Architecture まで設計が膨らんだが、
+    「動機に対して作ろうとするものが大きすぎた」と自己修正。
+    既存YAMLデータ → 可視化コンバーターに収束させた。
+  result: |
+    815行のJSX + スタンドアロンHTML。
+    小さいが「LLM対話→構造化データ→RPG可視化」の
+    パイプラインが一つ動く形になった。
+  soe_demo_value: |
+    事業化デモとしての最小単位が成立。
+    「LLMとの対話からこういうプロファイルが出る」を
+    N-shiやアカデミアに見せられる状態。
+
+metadata:
+  created_by: "Claude Opus 4.6 (Cowork)"
+  created_at: "2026-03-15T23:00:00+09:00"
+
+fire_culture_note: |
+  「小さく作って動かす」ことの価値を再確認したセッション。
+  SoEの理論的美しさを追求するあまりスコープが膨張する癖（新奇追求バイアス）に
+  対して、「今日動くもの」を作ることで歯止めをかけた。
+  4つのLLMの評価差異を重ね合わせとして可視化するアイデアは、
+  gauge理論の実装として理論的にも筋が通っている。
+  次はこれを「人に見せて反応をもらう」フェーズ。

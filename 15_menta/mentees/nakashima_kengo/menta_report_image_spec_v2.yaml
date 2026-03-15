@@ -1,0 +1,236 @@
+image_spec:
+  version: 2
+  purpose: "MENTA実績報告 - 相談内容セクション用画像（ビジュアル強化版）"
+  target_audience: "MENTAで新規メンティーを探している起業志望者"
+  tone: "プロフェッショナルだが視覚的に引き込む。一目で状況が伝わる"
+
+  canvas:
+    width: 1200
+    height: 900
+    background: "#FFFFFF"
+    format: PNG
+
+  layout:
+    header:
+      label_badge:
+        text: "CONSULTATION"
+        background: "#e8f4f8"
+        text_color: "#2d8fba"
+        font_size: 14
+        style: rounded_pill
+      title:
+        text: "ご相談時の状況"
+        font_size: 28
+        font_weight: bold
+        color: "#1a1a2e"
+      accent_line:
+        type: gradient
+        colors: ["#2d8fba", "#6dd5ed", "#2d8fba"]
+        thickness: 3
+
+    main_content:
+      type: "2x2_grid"
+      card_style:
+        background: "#fff5f5"
+        left_border:
+          color: "#e74c3c"
+          width: 5
+        corner_radius: 12
+        shadow: "0 3px 12px rgba(0,0,0,0.08)"
+        padding: 24
+        min_height: 200
+
+      cards:
+
+        - number: 1
+          number_style:
+            shape: circle
+            background: "#e74c3c"
+            text_color: white
+            size: 30
+          title: "顧客が定まらない"
+          title_color: "#c0392b"
+          title_size: 18
+          title_weight: bold
+          body: "行政? 製造業? 金融? IT?\n誰に売ればいいかわからない"
+          body_color: "#555555"
+          body_size: 13
+
+          visual:
+            type: icon_composition
+            position: bottom_right_of_card
+            opacity: 0.85
+            description: |
+              カード右下に配置。
+              中央にターゲットマーク（二重円＋十字線）をグレー(#ddd)で描画。
+              そこから4方向に矢印が発散（↗↘↙↖）。
+              矢印の色はそれぞれ異なる薄色（#f8a5a5, #a5c8f8, #a5f8c8, #f8d8a5）。
+              矢印の先端に小さなラベル: 「行政」「製造」「金融」「IT」をフォントサイズ9で配置。
+              全体サイズ: 120x100px程度。
+            meaning: "ターゲットが定まらず矢印が四散している状態"
+            canva_hint: "Elements > Lines & Shapes > Arrow を4つ配置。中心にTarget iconを置く"
+            figma_hint: "Ellipse + Line で十字ターゲット。ArrowでN/S/E/W方向に発散"
+            svg_sketch: |
+              <!-- ターゲット中心 -->
+              <circle cx="60" cy="50" r="20" stroke="#ddd" stroke-width="2" fill="none"/>
+              <circle cx="60" cy="50" r="10" stroke="#ddd" stroke-width="2" fill="none"/>
+              <line x1="60" y1="25" x2="60" y2="75" stroke="#ddd" stroke-width="1"/>
+              <line x1="35" y1="50" x2="85" y2="50" stroke="#ddd" stroke-width="1"/>
+              <!-- 発散矢印 -->
+              <line x1="60" y1="50" x2="100" y2="15" stroke="#f8a5a5" stroke-width="2" marker-end="arrowhead"/>
+              <line x1="60" y1="50" x2="100" y2="85" stroke="#a5c8f8" stroke-width="2" marker-end="arrowhead"/>
+              <line x1="60" y1="50" x2="20" y2="85" stroke="#a5f8c8" stroke-width="2" marker-end="arrowhead"/>
+              <line x1="60" y1="50" x2="20" y2="15" stroke="#f8d8a5" stroke-width="2" marker-end="arrowhead"/>
+              <!-- ラベル -->
+              <text x="102" y="12" font-size="9" fill="#999">行政</text>
+              <text x="102" y="90" font-size="9" fill="#999">製造</text>
+              <text x="2" y="90" font-size="9" fill="#999">金融</text>
+              <text x="6" y="12" font-size="9" fill="#999">IT</text>
+
+        - number: 2
+          title: "価値の言語化ができない"
+          title_color: "#c0392b"
+          title_size: 18
+          title_weight: bold
+          body: "現場の体験はあるが\nビジネス言語に変換できない"
+          body_color: "#555555"
+          body_size: 13
+
+          visual:
+            type: icon_composition
+            position: bottom_right_of_card
+            opacity: 0.85
+            description: |
+              左側に「体験」を表す人物シルエットアイコン（#f8a5a5）。
+              中央に変換矢印「→」だが途切れている（破線矢印、#ddd）。
+              右側に吹き出しアイコン。中身は「...」（言葉が出ない状態）。
+              吹き出しの枠は点線(#ccc)。中の「...」は#bbb。
+              全体サイズ: 140x80px程度。
+            meaning: "体験→言語への変換パイプラインが詰まっている"
+            canva_hint: "人物icon + 破線Arrow + Speech bubble(点線)に「...」"
+            figma_hint: "Person silhouette + dashed arrow + rounded rect with tail"
+            svg_sketch: |
+              <!-- 人物 -->
+              <circle cx="20" cy="25" r="10" fill="#f8a5a5"/>
+              <rect x="12" y="38" width="16" height="25" rx="4" fill="#f8a5a5"/>
+              <!-- 破線矢印 -->
+              <line x1="42" y1="40" x2="80" y2="40" stroke="#ccc" stroke-width="2" stroke-dasharray="6,4"/>
+              <polygon points="78,34 90,40 78,46" fill="#ccc"/>
+              <!-- 吹き出し -->
+              <rect x="95" y="20" width="45" height="35" rx="8" stroke="#ccc" stroke-width="2" stroke-dasharray="4,3" fill="#fafafa"/>
+              <polygon points="95,42 88,50 100,45" fill="#fafafa" stroke="#ccc" stroke-width="1"/>
+              <text x="110" y="42" font-size="14" fill="#bbb" text-anchor="middle">...</text>
+
+        - number: 3
+          title: "営業資料がない"
+          title_color: "#c0392b"
+          title_size: 18
+          title_weight: bold
+          body: "事業計画書・提案書の\n作り方・構成がわからない"
+          body_color: "#555555"
+          body_size: 13
+
+          visual:
+            type: icon_composition
+            position: bottom_right_of_card
+            opacity: 0.85
+            description: |
+              3枚の書類アイコンが重なって配置（少しずつずらす）。
+              全て白紙状態（罫線だけ薄く#eee）。
+              書類の上に大きく「?」マーク（#e74c3c, 半透明0.3）。
+              全体サイズ: 100x90px程度。
+            meaning: "書類はあるべきだが中身が空の状態"
+            canva_hint: "Document icon x3（重ねて配置）+ 大きな?テキスト"
+            figma_hint: "Rounded rect with header bar x3 stacked + ? overlay"
+            svg_sketch: |
+              <!-- 書類3枚（奥から手前） -->
+              <rect x="30" y="5" width="55" height="70" rx="4" fill="white" stroke="#ddd" stroke-width="1.5"/>
+              <line x1="40" y1="20" x2="75" y2="20" stroke="#eee" stroke-width="1.5"/>
+              <line x1="40" y1="30" x2="75" y2="30" stroke="#eee" stroke-width="1.5"/>
+              <line x1="40" y1="40" x2="65" y2="40" stroke="#eee" stroke-width="1.5"/>
+              <rect x="20" y="12" width="55" height="70" rx="4" fill="white" stroke="#ddd" stroke-width="1.5"/>
+              <line x1="30" y1="27" x2="65" y2="27" stroke="#eee" stroke-width="1.5"/>
+              <line x1="30" y1="37" x2="65" y2="37" stroke="#eee" stroke-width="1.5"/>
+              <rect x="10" y="19" width="55" height="70" rx="4" fill="white" stroke="#ddd" stroke-width="1.5"/>
+              <line x1="20" y1="34" x2="55" y2="34" stroke="#eee" stroke-width="1.5"/>
+              <line x1="20" y1="44" x2="55" y2="44" stroke="#eee" stroke-width="1.5"/>
+              <!-- ? マーク -->
+              <text x="45" y="70" font-size="36" fill="#e74c3c" fill-opacity="0.3" text-anchor="middle" font-weight="bold">?</text>
+
+        - number: 4
+          title: "最初の1件が取れない"
+          title_color: "#c0392b"
+          title_size: 18
+          title_weight: bold
+          body: "B2G/B2B営業経験ゼロ\nどこからアプローチすべきか"
+          body_color: "#555555"
+          body_size: 13
+
+          visual:
+            type: icon_composition
+            position: bottom_right_of_card
+            opacity: 0.85
+            description: |
+              3つのドアが横に並ぶ（#ddd枠、白塗り）。
+              全てのドアに鍵マーク（南京錠アイコン、#ccc）。
+              ドアの前に小さな人物シルエット（#f8a5a5）が立っている。
+              人物の頭上に「?」（#e74c3c, small）。
+              全体サイズ: 130x90px程度。
+            meaning: "入口がどれかわからず、全部閉まっているように見える"
+            canva_hint: "Door icon x3 + Lock icon on each + Person silhouette"
+            figma_hint: "3 rectangles with arch top (door shape) + padlock + person"
+            svg_sketch: |
+              <!-- ドア3つ -->
+              <rect x="10" y="20" width="28" height="55" rx="3" fill="white" stroke="#ccc" stroke-width="1.5"/>
+              <circle x="32" cy="50" r="2" fill="#ccc"/>
+              <rect x="48" y="20" width="28" height="55" rx="3" fill="white" stroke="#ccc" stroke-width="1.5"/>
+              <circle cx="70" cy="50" r="2" fill="#ccc"/>
+              <rect x="86" y="20" width="28" height="55" rx="3" fill="white" stroke="#ccc" stroke-width="1.5"/>
+              <circle cx="108" cy="50" r="2" fill="#ccc"/>
+              <!-- 南京錠（簡易） -->
+              <rect x="18" y="30" width="12" height="10" rx="2" fill="#ddd"/>
+              <path d="M20,30 Q24,22 28,30" stroke="#ddd" stroke-width="2" fill="none"/>
+              <rect x="56" y="30" width="12" height="10" rx="2" fill="#ddd"/>
+              <path d="M58,30 Q62,22 66,30" stroke="#ddd" stroke-width="2" fill="none"/>
+              <rect x="94" y="30" width="12" height="10" rx="2" fill="#ddd"/>
+              <path d="M96,30 Q100,22 104,30" stroke="#ddd" stroke-width="2" fill="none"/>
+              <!-- 人物 -->
+              <circle cx="62" cy="82" r="5" fill="#f8a5a5"/>
+              <rect x="58" y="88" width="8" height="10" rx="2" fill="#f8a5a5"/>
+              <text x="62" y="78" font-size="10" fill="#e74c3c" text-anchor="middle">?</text>
+
+    footer:
+      type: "profile_summary_bar"
+      background: "#f0f7ff"
+      corner_radius: 14
+      padding: 24
+      icon:
+        shape: circle
+        background: "#2d8fba"
+        text: "P"
+        text_color: white
+        size: 50
+      heading:
+        text: "メンティーの状況"
+        font_size: 16
+        font_weight: bold
+        color: "#1a1a2e"
+      tags:
+        style: rounded_pill
+        background: "#d6eaf8"
+        text_color: "#2471a3"
+        font_size: 11
+        items:
+          - "地方在住"
+          - "起業準備中"
+          - "B2G/B2B経験なし"
+          - "現場観察力◎"
+          - "PoC実績あり(367件収集済)"
+
+  design_notes:
+    - "各カードのビジュアルは右下に配置し、テキストと干渉しないようにする"
+    - "ビジュアルのopacityは0.8〜0.9。主張しすぎず、でも目に入る程度"
+    - "色はカードの赤系トーン(#f8a5a5, #fcc)と灰色(#ccc, #ddd)のみ。多色使いしない"
+    - "svg_sketchはあくまで参考。Canva/Figmaではアイコン素材を活用したほうが早い"
+    - "4つのビジュアルが「困っている状態」を統一トーンで表現すること"
+    - "Canvaなら Elements > Icons で類似アイコンを検索して配置が最速"

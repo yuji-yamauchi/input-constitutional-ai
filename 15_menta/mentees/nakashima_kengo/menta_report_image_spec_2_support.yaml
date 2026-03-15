@@ -1,0 +1,119 @@
+image_spec:
+  purpose: "MENTA実績報告 - 対応した内容セクション用画像"
+  target_audience: "MENTAで新規メンティーを探している起業志望者"
+
+  canvas:
+    width: 1200
+    height: 900
+    background: "#FFFFFF"
+    format: PNG
+
+  layout:
+    header:
+      label_badge:
+        text: "SUPPORT"
+        background: "#e8f8e8"
+        text_color: "#27ae60"
+        position: center_top
+        font_size: 14
+        style: rounded_pill
+      title:
+        text: "対応した内容"
+        font_size: 28
+        font_weight: bold
+        color: "#1a1a2e"
+      subtitle:
+        text: "3ヶ月間の支援内容（2026年1月〜3月）"
+        font_size: 13
+        color: "#888888"
+      accent_line:
+        type: gradient
+        colors: ["#27ae60", "#6dd5a0", "#27ae60"]
+        thickness: 3
+
+    main_content:
+      type: "vertical_timeline"
+      description: "左に縦ラインと丸ドット、右にカード。5ステップ"
+      timeline_line:
+        color_gradient: ["#27ae60", "#2d8fba"]
+        width: 4
+        position: left_60px
+      dot_style:
+        shape: circle
+        border_color: "#27ae60"
+        border_width: 3
+        fill: white
+        size: 16
+
+      cards:
+        card_style:
+          background: "#fafffe"
+          border: "1px solid #e0f0e8"
+          corner_radius: 10
+          shadow: "soft"
+          padding: 18
+
+        items:
+          - number: 1
+            number_style:
+              shape: circle
+              background: "#27ae60"
+              text_color: white
+              size: 28
+            title: "事業構想の構造化"
+            title_color: "#1a1a2e"
+            title_size: 17
+            title_weight: bold
+            body: "現場観察データ(367件)を起点に事業コンセプトを整理。「誰のどの課題を解くか」へ再定義"
+            body_color: "#555555"
+            body_size: 12
+
+          - number: 2
+            title: "事業計画書・提案書の作成支援"
+            body: "読み手別に複数バージョン作成。LLM活用の資料作成ワークフローも共有"
+
+          - number: 3
+            title: "B2G営業戦略の設計"
+            body: "学生・大学・メディアを入口とした関係構築ルート設計。企業面談→社内検討へ"
+
+          - number: 4
+            title: "法務・契約の整理"
+            body: "NDA、準委任契約 vs 請負契約、士業独占業務の範囲など起業の法務基盤を整理"
+
+          - number: 5
+            title: "ビジネスモデルの事実検証"
+            body: "DeepResearchによる監査。構造的リスク特定と戦略軌道修正を実行"
+
+    footer:
+      type: "llm_support_bar"
+      background: "#f0f4ff"
+      corner_radius: 14
+      heading:
+        text: "24時間支援体制（LLM共有）"
+        font_size: 16
+        font_weight: bold
+        color: "#2d5fba"
+      icons:
+        style: circle
+        size: 44
+        background: "#2d5fba"
+        text_color: white
+        font_size: 16
+        items:
+          - label: "C"
+            caption: "Claude"
+          - label: "G"
+            caption: "ChatGPT"
+          - label: "Ge"
+            caption: "Gemini"
+          - label: "M"
+            caption: "メンター"
+        caption_color: "#444444"
+        caption_size: 11
+        spacing: 140
+
+  design_notes:
+    - "タイムライン形式で「順序立てて支援した」印象を与える"
+    - "緑系統で「解決・前進」のトーンを維持"
+    - "LLM共有バーは差別化ポイント。他のメンターにはない体制を視覚化"
+    - "各カードの本文は1〜2行に収める。詳細はMarkdownテキスト側で補完"

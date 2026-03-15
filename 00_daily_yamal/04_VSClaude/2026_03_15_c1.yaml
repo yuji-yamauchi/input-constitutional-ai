@@ -1,0 +1,185 @@
+session_metadata:
+  date: "2026-03-15"
+  session_type: "総合日報 — Git整備・研究戦略転換・SoE Profile Converter開発"
+  time_range: "14:00〜19:00 JST"
+  model: "Claude Opus 4.6 (VSCode)"
+  related_sessions:
+    - "00_daily_yamal/07_cowork/2026_03_15_cw1.yaml"
+    - "00_daily_yamal/07_cowork/2026_03_15_cw2.yaml"
+
+# ============================================================
+# 総合日報 2026-03-15（サビ管開始前日）
+# ============================================================
+
+daily_summary:
+  headline: "Git履歴修正・研究戦略の転換点・SoE Profile Converter完成"
+  ai_sessions:
+    vsclaude:
+      time: "14:00〜19:00"
+      focus: "Git大容量ファイル対応、日報作成、push完了"
+    cowork_cw1:
+      time: "推定午前〜15:30"
+      focus: "研究戦略・アイデンティティ再構築・N氏契約変更"
+    cowork_cw2:
+      time: "推定15:30〜"
+      focus: "SoE Profile Converter開発（JSX + HTML）"
+
+# ============================================================
+# セッション1: VSClaude（14:00〜19:00）
+# ============================================================
+
+vsclaude_session:
+  key_achievements:
+    - "3/14総合日報作成（2026_03_14_c1.yaml）"
+    - "MLIT_点検支援技術カタログ.pdf（110MB）をgit履歴から除去"
+    - ".gitignoreに大容量PDF追加"
+    - "git filter-branch → stash → push 完了（1019オブジェクト）"
+    - "3/15日報作成（本ファイル）"
+
+  git_operations:
+    problem: "110MB PDFがGitHub 100MB制限でpush失敗"
+    solution:
+      - "git stash → filter-branch（未push 3コミットからPDF除去）→ stash pop"
+      - ".gitignore追加（ローカルにはファイル残存）"
+      - "git add -A → commit → push成功"
+    lesson: "大容量ファイルはコミット前に.gitignoreへ追加すべき"
+
+# ============================================================
+# セッション2: Cowork cw1（研究戦略・アイデンティティ再構築）
+# ============================================================
+
+cowork_cw1_summary:
+  session_type: "研究戦略の転換点"
+  cognitive_state: "OE過負荷気味（国際情勢ノイズ + サビ管前日 + 研究再構築）"
+
+  key_decisions:
+    共同創業: "拒否確定（SoE自己言及パラドックス回避）"
+    N氏契約:
+      from: "MENTAメンタリング（月1万円）"
+      to: "アドバイザリー契約（月3万円）"
+      意義: "関係性の実態に名義を合わせた。研究プロセスのマネタイズ"
+      開示方針: "N氏に構図を開示する（誠実さではなく認知コスト削減の構造的動機）"
+    海外アカデミア: "目的ではなく武器調達先。就労継続支援事業者の撲滅のための旗"
+    福祉村回避: "日本の社会福祉学では横断型論文が査読者の射程外 → 公衆衛生学・障害学・HCI国際文脈へ"
+
+  research_identity:
+    label: "当事者性を持つ制度設計研究者"
+    三重の当事者性: ["脳出血経験者", "ADHD当事者", "両耳難聴当事者"]
+    三層の独自性:
+      認識論: "三重の当事者性＋10年100名10事業所の実務"
+      方法論: "SoE複式簿記、Input Constitutional AI、Human-Orchestrated AI Swarm"
+      実装力: "IT企業1.4億、自力PoC、CI/CD"
+    研究の根: "「絶対的不幸をなくす」— 原体験: 目黒区幼児虐待事件（2018年）"
+
+  二正面作戦:
+    国内: "SoEアセスメントPoC → note・YouTube日本語・厚労省審議会資料"
+    国際: "英語論文化 → SocArXiv → FAccT/ASSETS/DSC → 英国PhD直接出願"
+    synergy: "国内実践が国際論文の独自性、国際評価が大学院再出願と政策影響力"
+
+# ============================================================
+# セッション3: Cowork cw2（SoE Profile Converter開発）
+# ============================================================
+
+cowork_cw2_summary:
+  session_type: "アプリ開発（小さく作る）"
+
+  deliverables:
+    jsx_file:
+      name: "soe_profile_converter.jsx"
+      lines: 815
+      status: "完成"
+    html_file:
+      name: "soe_profile_converter.html"
+      lines: "約500"
+      status: "完成（ブラウザでダブルクリック起動）"
+
+  architecture:
+    normalization: "4つのLLMの異なるYAML構造 → 共通スキーマに変換"
+    mapping: "Big Five + HPI → RPG Core Stats（STR/INT/MEN/DEX/VIT/CHR）"
+    skill_generation: "上位スコアからUR/SRスキルカード自動生成"
+    environment_mapping: "employment_considerations → ICF環境因子"
+
+  input_data:
+    - "Gemini → Mentee N-shi"
+    - "Claude Opus 4.5 → Puu"
+    - "ChatGPT → Puu"
+    - "Gemini → Mentee N-shi（2回目）"
+
+  soe_alignment:
+    input_constitutional_ai: "Mappingタブで変換ロジック完全公開"
+    本人主権: "データ所有者は本人という表示"
+    llm_as_gauge: "Cross-LLM Compareで同一人物のLLM間差異を可視化"
+
+  scope_reflection: |
+    「動機に対して作ろうとするものが大きすぎた」→ 自己修正。
+    既存YAMLデータ → 可視化コンバーターに収束。
+    小さいが「LLM対話→構造化データ→RPG可視化」パイプラインが一つ動く形に。
+
+# ============================================================
+# 本日の全体像
+# ============================================================
+
+day_narrative: |
+  サビ管初出勤前日。3つの並行セッションで異なる層の作業を実施。
+
+  1. Git整備（VSClaude）: 昨日の大規模再構成の後始末。
+     110MB PDFの履歴除去 → push成功。インフラ整備完了。
+
+  2. 研究戦略の転換（Cowork cw1）: 本日最重要のセッション。
+     「海外アカデミアは目的ではなく武器」という再定義。
+     N氏との関係をアドバイザリー契約に格上げし、研究プロセスのマネタイズとして位置づけ。
+     「絶対的不幸をなくす」が研究の根であり、目黒区事件が原体験。
+
+  3. 実装（Cowork cw2）: 理論を語るだけでなく動くものを作った。
+     SoE Profile Converter — 4つのLLMアセスメントをRPG可視化に変換。
+     Input Constitutional AIの原理（変換ロジックの完全公開）を体現。
+
+# ============================================================
+# 明日（2026-03-16）
+# ============================================================
+
+tomorrow:
+  event: "サビ管初出勤"
+  contract_type: "業務委託"
+  schedule: "週3出勤・週2在宅"
+  positioning: "収入＋フィールドアクセス（つなぎと認識）"
+  注意: "体調管理優先。コンサータのタイミング調整"
+
+# ============================================================
+# 未処理タスク
+# ============================================================
+
+pending_tasks:
+  immediate:
+    - "SoE Profile Converter HTMLの動作確認"
+    - "N氏にアドバイザリー契約の構図開示"
+  short_term:
+    - "英語学習の開始・継続"
+    - "SoE Assessment PoCプロトタイプ実装"
+    - "「絶対的不幸」の学術的定義の精密化"
+    - "SoEコンセプトペーパー英語執筆 → SocArXiv"
+  medium_term:
+    - "FAccT/ASSETS/DSCワークショップ投稿"
+    - "2027年度 海外大学院出願準備"
+
+# ============================================================
+
+metadata:
+  created_by: "Claude Opus 4.6 (VSCode)"
+  created_at: "2026-03-15T19:00:00+09:00"
+  includes_sessions:
+    - "VSClaude: 本セッション（c1）"
+    - "Cowork: 2026_03_15_cw1.yaml（研究戦略）"
+    - "Cowork: 2026_03_15_cw2.yaml（SoE Profile Converter）"
+
+fire_culture_note: |
+  サビ管前日に、研究のroot（「絶対的不幸をなくす」）が言語化され、
+  二正面作戦（国内実践×国際論文）の構造が確定した。
+
+  同時に、理論の拡散を抑えて「小さく動くもの」を完成させた。
+  SoE Profile Converterは815行の小さなアプリだが、
+  Input Constitutional AIの原理実装として一貫している。
+
+  明日から現場に入る。「型を整えてから現場に入る」——
+  二日間でインフラ整備・研究戦略・実装を一巡させた。
+  Ne発散の日ではなく、Ti収束の日だった。

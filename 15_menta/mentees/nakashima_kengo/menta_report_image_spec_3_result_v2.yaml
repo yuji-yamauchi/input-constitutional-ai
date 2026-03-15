@@ -1,0 +1,192 @@
+image_spec:
+  version: 2
+  purpose: "MENTA実績報告 - 最終結果セクション用画像（ビジュアル強化版）"
+  target_audience: "MENTAで新規メンティーを探している起業志望者"
+  tone: "達成感・変化のインパクト。数字とビジュアルで一目で伝わる"
+
+  canvas:
+    width: 1200
+    height: 850
+    background: "#FFFFFF"
+    format: PNG
+    font: "Noto Sans JP Bold / 游ゴシック Bold（日本語）、Helvetica Neue（英数字）"
+
+  layout:
+    header:
+      label_badge:
+        text: "RESULT"
+        background: "#fef3e2"
+        text_color: "#e67e22"
+        font_size: 14
+        style: rounded_pill
+      title:
+        text: "3ヶ月後の変化"
+        font_size: 28
+        font_weight: bold
+        color: "#1a1a2e"
+      accent_line:
+        type: gradient
+        colors: ["#e67e22", "#f5b041", "#e67e22"]
+        thickness: 3
+
+    main_content:
+      type: "before_after_comparison"
+
+      before_box:
+        background: "#fdf2f2"
+        border: "1px solid #f5c6cb"
+        corner_radius: 14
+        shadow: "0 3px 12px rgba(0,0,0,0.06)"
+        label:
+          text: "BEFORE"
+          color: "#c0392b"
+          font_size: 14
+          font_weight: bold
+        items:
+          marker: "×"
+          marker_color: "#e74c3c"
+          text_color: "#444444"
+          text_size: 14
+          line_height: 36
+          list:
+            - "顧客が定まらない"
+            - "事業計画書がない"
+            - "営業経験ゼロ"
+            - "法務知識なし"
+            - "一人で構想を抱えている"
+
+        visual:
+          type: mood_illustration
+          position: bottom_of_box
+          description: |
+            BEFORE箱の下部に小さなイラスト要素:
+            霧がかった風景（グレーのグラデーション円/楕円を3〜4個重ねる）。
+            その中に一人の人物シルエット（#ccc）が立っている。
+            人物の頭上に「?」（#e74c3c, 薄め）。
+            全体トーン: グレー系で「不確実・孤独」を表現。
+          meaning: "霧の中で一人で立っている状態"
+
+      arrow:
+        type: visual_arrow
+        description: |
+          単純な「>>>」ではなく、変容を示すビジュアル矢印。
+          左側が灰色/赤系から始まり、右に向かって緑系にグラデーションする太い矢印。
+          矢印の中に小さく「3 months」と入れる。
+        colors:
+          start: "#e74c3c"
+          middle: "#f5b041"
+          end: "#27ae60"
+        text_inside: "3 months"
+        text_color: white
+        text_size: 10
+
+      after_box:
+        background: "#f0faf0"
+        border: "1px solid #c3e6c3"
+        corner_radius: 14
+        shadow: "0 3px 12px rgba(0,0,0,0.06)"
+        label:
+          text: "AFTER"
+          color: "#27ae60"
+          font_size: 14
+          font_weight: bold
+        items:
+          marker: "✓"
+          marker_color: "#27ae60"
+          text_color: "#444444"
+          text_size: 14
+          line_height: 36
+          list:
+            - "顧客セグメント明確化"
+            - "読み手別の事業計画書完成"
+            - "企業面談→社内検討へ"
+            - "契約・法務の基盤整備"
+            - "AI秘書官＋メンター体制確立"
+
+        visual:
+          type: mood_illustration
+          position: bottom_of_box
+          description: |
+            AFTER箱の下部に小さなイラスト要素:
+            晴れた空（薄い青のグラデーション背景）。
+            人物シルエット（#27ae60）が前を向いて歩いている。
+            人物の前方に道（2本の収束する線）が伸びている。
+            道の先にフラッグ（小さな旗アイコン、#f5b041）。
+            全体トーン: 緑/青系で「明確な方向性」を表現。
+          meaning: "道が見え、旗に向かって歩き出した状態"
+
+    metrics:
+      type: "3_column_kpi"
+      card_style:
+        background: "#fffbf0"
+        border: "1px solid #fce4b0"
+        corner_radius: 12
+        shadow: "0 2px 8px rgba(0,0,0,0.05)"
+        padding: 24
+
+      items:
+        - number: "5"
+          unit: "種"
+          number_color: "#e67e22"
+          number_size: 40
+          unit_color: "#888888"
+          unit_size: 16
+          label: "事業計画書・提案資料"
+          label_color: "#555555"
+          label_size: 12
+          visual:
+            type: mini_icon
+            description: "書類が5枚扇状に広がるアイコン"
+            color: "#fce4b0"
+            position: behind_number
+
+        - number: "1"
+          unit: "社"
+          label: "企業面談→社内検討"
+          visual:
+            type: mini_icon
+            description: "ビル/企業アイコンにチェックマーク"
+            color: "#fce4b0"
+
+        - number: "24"
+          unit: "h"
+          label: "LLM共有の支援体制"
+          visual:
+            type: mini_icon
+            description: "時計アイコンの中に循環矢印（24時間稼働）"
+            color: "#fce4b0"
+
+    footer:
+      type: "next_phase_bar"
+      background: "linear-gradient(135deg, #1a1a2e, #2d3561)"
+      corner_radius: 14
+      padding: 24
+
+      heading:
+        text: "Next Phase"
+        color: "#f5b041"
+        font_size: 17
+        font_weight: bold
+
+      lines:
+        color: "#cccccc"
+        font_size: 13
+        items:
+          - "メンタリング → アドバイザリー契約へ移行"
+          - "PoC設計・社会実験・行政連携フェーズへ"
+
+      visual:
+        description: |
+          右側にロケットアイコン（打ち上げの暗示）。
+          ロケットの下に小さな炎/煙エフェクト。
+          色: オレンジ(#f5b041) + 白。
+          控えめなサイズ。バーの右端に配置。
+        meaning: "ここから本格始動"
+
+  design_notes:
+    - "BEFORE/AFTERのムードイラストが最大の差別化ポイント。霧→晴天の対比で感情に訴える"
+    - "中央矢印のグラデーション（赤→黄→緑）は変容の過程を視覚化する重要要素"
+    - "KPI数字は大きく表示（40px以上）。数字の背後に薄いアイコンを敷いて奥行きを出す"
+    - "Next Phaseバーのロケットは小さめ。本文（メンタリング→アドバイザリー）が主役"
+    - "全体として「暗い→明るい」の流れが左から右に感じられるレイアウト"
+    - "フォントは必ず Noto Sans JP Bold を使用すること（文字化け防止）"

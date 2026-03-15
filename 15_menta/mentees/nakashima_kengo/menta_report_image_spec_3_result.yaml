@@ -1,0 +1,138 @@
+image_spec:
+  purpose: "MENTA実績報告 - 最終結果セクション用画像"
+  target_audience: "MENTAで新規メンティーを探している起業志望者"
+
+  canvas:
+    width: 1200
+    height: 800
+    background: "#FFFFFF"
+    format: PNG
+
+  layout:
+    header:
+      label_badge:
+        text: "RESULT"
+        background: "#fef3e2"
+        text_color: "#e67e22"
+        position: center_top
+        font_size: 14
+        style: rounded_pill
+      title:
+        text: "3ヶ月後の変化"
+        font_size: 28
+        font_weight: bold
+        color: "#1a1a2e"
+      accent_line:
+        type: gradient
+        colors: ["#e67e22", "#f5b041", "#e67e22"]
+        thickness: 3
+
+    main_content:
+      type: "before_after_comparison"
+      description: "左にBEFORE、中央に矢印、右にAFTER。対比で変化を可視化"
+
+      before_box:
+        background: "#fdf2f2"
+        border: "1px solid #f5c6cb"
+        corner_radius: 14
+        shadow: "soft"
+        label:
+          text: "BEFORE"
+          color: "#c0392b"
+          font_size: 14
+          font_weight: bold
+        items:
+          marker: "×"
+          marker_color: "#e74c3c"
+          marker_size: 16
+          text_color: "#444444"
+          text_size: 14
+          line_height: 36
+          list:
+            - "顧客が定まらない"
+            - "事業計画書がない"
+            - "営業経験ゼロ"
+            - "法務知識なし"
+            - "一人で構想を抱えている"
+
+      arrow:
+        text: ">>>"
+        color: "#e67e22"
+        font_size: 36
+        position: center
+
+      after_box:
+        background: "#f0faf0"
+        border: "1px solid #c3e6c3"
+        corner_radius: 14
+        shadow: "soft"
+        label:
+          text: "AFTER"
+          color: "#27ae60"
+          font_size: 14
+          font_weight: bold
+        items:
+          marker: "✓"
+          marker_color: "#27ae60"
+          marker_size: 16
+          text_color: "#444444"
+          text_size: 14
+          line_height: 36
+          list:
+            - "顧客セグメント明確化"
+            - "読み手別の事業計画書完成"
+            - "企業面談→社内検討へ"
+            - "契約・法務の基盤整備"
+            - "AI秘書官＋メンター体制確立"
+
+    metrics:
+      type: "3_column_kpi"
+      description: "数値インパクトを3つ並べる"
+      card_style:
+        background: "#fffbf0"
+        border: "1px solid #fce4b0"
+        corner_radius: 12
+        shadow: "soft"
+        padding: 20
+
+      items:
+        - number: "5"
+          unit: "種"
+          number_color: "#e67e22"
+          number_size: 36
+          unit_color: "#888888"
+          unit_size: 14
+          label: "事業計画書・提案資料"
+          label_color: "#555555"
+          label_size: 12
+
+        - number: "1"
+          unit: "社"
+          label: "企業面談→社内検討"
+
+        - number: "24"
+          unit: "h"
+          label: "LLM共有の支援体制"
+
+    footer:
+      type: "next_phase_bar"
+      background: "#1a1a2e"
+      corner_radius: 14
+      heading:
+        text: "Next Phase"
+        color: "#f5b041"
+        font_size: 17
+        font_weight: bold
+      lines:
+        color: "#cccccc"
+        font_size: 13
+        items:
+          - "メンタリング → アドバイザリー契約へ移行"
+          - "PoC設計・社会実験・行政連携フェーズへ"
+
+  design_notes:
+    - "BEFORE/AFTERの対比で「変化の大きさ」を一目で伝える"
+    - "数値KPIは3つに絞る。多すぎると散漫になる"
+    - "Next Phaseバーは暗色背景で「ここからが本番」の予感を演出"
+    - "矢印(>>>)はオレンジで「進行・成長」を示す"
+    - "BEFORE赤系 → AFTER緑系の色コントラストが重要"
