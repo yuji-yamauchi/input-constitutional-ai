@@ -16,7 +16,18 @@
       "Bash(curl -sL -o \"デジタル庁_生成AI調達ガイドライン.pdf\" \"https://www.digital.go.jp/assets/contents/node/basic_page/field_ref_resources/e2a06143-ed29-4f1d-9c31-0f06fca67afc/80419aea/20250527_resources_standard_guidelines_guideline_01.pdf\" -w \"生成AI調達GL: %{http_code} %{size_download}\\\\n\")",
       "Bash(curl -sL -o \"内閣官房_防災DX推進_2025.pdf\" \"https://www.cas.go.jp/jp/seisaku/bousaichou_preparation/kaigi/dai4/siryou1-2.pdf\" -w \"防災DX: %{http_code} %{size_download}\\\\n\")",
       "Bash(curl -sL -o \"内閣府_インフラ老朽化対策_経済財政諮問.pdf\" \"https://www5.cao.go.jp/keizai-shimon/kaigi/special/reform/wg6/20250411/shiryou1-2.pdf\" -w \"インフラ老朽化: %{http_code} %{size_download}\\\\n\")",
-      "Bash(curl -sL -o \"METI_AI事業者ガイドラインv1.1.pdf\" \"https://www.meti.go.jp/shingikai/mono_info_service/ai_shakai_jisso/pdf/20250328_2.pdf\" -w \"%{http_code} %{size_download}\\\\n\" --connect-timeout 30 --max-time 120 -H \"User-Agent: Mozilla/5.0\")"
+      "Bash(curl -sL -o \"METI_AI事業者ガイドラインv1.1.pdf\" \"https://www.meti.go.jp/shingikai/mono_info_service/ai_shakai_jisso/pdf/20250328_2.pdf\" -w \"%{http_code} %{size_download}\\\\n\" --connect-timeout 30 --max-time 120 -H \"User-Agent: Mozilla/5.0\")",
+      "Bash(source ~/whisper-env/Scripts/activate)",
+      "Bash(python \"c:/Users/USER/Documents/GitHub/input-constitutional-ai/.claude/skills/subtitle-pipeline/scripts/fix_and_wrap.py\" \"新人支援員のための自立支援医療制度ガイド.srt\" --fixes '{\"\"減速1割\"\": \"\"原則1割\"\", \"\"高性医療\"\": \"\"更生医療\"\", \"\"おけね\"\": \"\"お金\"\", \"\"精度\"\": \"\"制度\"\", \"\"受誤負担\"\": \"\"自己負担\"\", \"\"通識\"\": \"\"知識\"\", \"\"弱らげて\"\": \"\"和らげて\"\"}')",
+      "Bash(cp \"新人支援員のための自立支援医療制度ガイド_wrapped.srt\" \"subtitle_temp.srt\")",
+      "Bash(/c/ffmpeg/ffmpeg-master-latest-win64-gpl-shared/bin/ffmpeg -y -i \"新人支援員のための自立支援医療制度ガイド.mp4\" -vf \"subtitles=''subtitle_temp.srt'':force_style=''FontSize=24,PrimaryColour=&H00FFFFFF,OutlineColour=&H00000000,Outline=2,Shadow=1,MarginV=30''\" -c:a copy \"新人支援員のための自立支援医療制度ガイド_字幕付き.mp4\")",
+      "Bash(DEST=\"c:/Users/USER/Documents/GitHub/input-constitutional-ai/16_youtube/01_d-rel_ja/障害福祉スタッフ教育動画/制度編⑨（自立支援医療制度）/\")",
+      "Bash(mv \"C:/Users/USER/Downloads/新人支援員のための自立支援医療制度ガイド.srt\" \"$DEST\")",
+      "Bash(mv \"C:/Users/USER/Downloads/新人支援員のための自立支援医療制度ガイド_wrapped.srt\" \"$DEST\")",
+      "Bash(mv \"C:/Users/USER/Downloads/新人支援員のための自立支援医療制度ガイド_youtube_description.txt\" \"$DEST\")",
+      "Bash(mv \"C:/Users/USER/Downloads/subtitle_temp.srt\" \"$DEST\")",
+      "Bash(rm -f \"$DEST/subtitle_temp.srt\")",
+      "Bash(find c:/Users/USER/Documents/GitHub/input-constitutional-ai/00_daily_yamal -newer c:/Users/USER/Documents/GitHub/input-constitutional-ai/00_daily_yamal -name *.yaml -o -name *.yml -o -name *.md)"
     ],
     "additionalDirectories": [
       "C:\\"

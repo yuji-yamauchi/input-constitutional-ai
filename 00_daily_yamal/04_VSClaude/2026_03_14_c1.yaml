@@ -1,0 +1,222 @@
+session_metadata:
+  date: "2026-03-14"
+  session_type: "総合日報 — リポジトリ再構成・字幕パイプライン・コンテンツ制作"
+  time_range: "16:00〜20:00 JST（推定）"
+  model: "Claude Opus 4.6 (VSCode)"
+  related_sessions:
+    - "00_daily_yamal/07_cowork/2026_03_14_cw1.yaml"
+
+# ============================================================
+# 総合日報 2026-03-14
+# ============================================================
+
+daily_summary:
+  headline: "リポジトリ大規模再構成 + 制度編⑨字幕パイプライン完走 + AI役割分担の明確化"
+  ai_sessions:
+    cowork:
+      time: "15:26〜16:00"
+      focus: "NotebookLM自動化検証・スキル親和性評価"
+    vsclaude:
+      time: "16:00〜20:00（推定）"
+      focus: "リポジトリ再構成・台本作成・字幕パイプライン・SKILL更新"
+
+# ============================================================
+# セッション1: Cowork（15:26〜16:00）
+# ============================================================
+
+cowork_session:
+  key_achievements:
+    - "NotebookLM Chrome自動化テスト → ファイルアップロード失敗、手動運用が最適と結論"
+    - "VSClaudeスキル3本のCowork適性評価"
+    - "Cowork能力マップ整理（できること/できないこと）"
+  insights:
+    - "editorialスキルはCowork◎、subtitle-pipelineはVSClaude専用×、daily-reportは△"
+    - "NotebookLMは手動の出力装置として位置づけ確定"
+
+# ============================================================
+# セッション2: VSClaude（16:00〜20:00）
+# ============================================================
+
+vsclaude_session:
+  key_achievements:
+    # --- リポジトリ再構成 ---
+    - category: "フォルダ再構成"
+      items:
+        - "16_yotube → 16_youtube リネーム"
+        - "02_social_system 配下整理（evidence_reviews統合）"
+        - "03_ai_rights サブフォルダ規則統一（01-07, 99_puu_concepts）"
+        - "04_SoE/01_evidence_reviews → 02_social_system/evidence_reviews へ移動（22フォルダ+PDF）"
+        - "03_ai_rights/epstein_case_study → 03_ai_rights/07_epstein_case_study"
+        - "03_ai_rights/schema_therapy, 06_NOCC → 02_social_system/evidence_reviews/"
+        - "01_mhlw_records を 01_障害者福祉/ 02_障害児福祉/ 03_その他/ に3分割"
+        - "17_child/ フォルダ作成（01_haruaki, 02_keiji, 03_chisato）"
+
+    # --- 字幕パイプライン ---
+    - category: "制度編⑨ 自立支援医療制度"
+      items:
+        - "台本作成: source_自立支援医療制度.md（193行）"
+        - "NotebookLM音声生成: 6分15秒の動画取得"
+        - "Whisper GPU書き起こし: 75セグメント"
+        - "エラー修正: 14件（辞書0件 + 動画固有14件）"
+        - "16字×2行ラッピング: 101ブロック"
+        - "ffmpeg字幕焼き込み完了"
+        - "YouTube説明文作成"
+        - "Content Markdown作成（SoE接続表含む）"
+        - "成果物を16_youtube/配下の動画フォルダへ移動"
+
+    # --- スキル・ルール更新 ---
+    - category: "SKILL.md更新"
+      items:
+        - "台本作成ルール追加（制度解説のみ、感想・チャンネル登録はYouTube説明文へ）"
+        - "Step 7追加（テキスト成果物の動画フォルダ移動）"
+        - "Step 6保存先を16_youtube/配下に変更"
+        - "福祉用語辞書に5件追加（計63エントリ）"
+
+    # --- その他 ---
+    - category: "その他"
+      items:
+        - "VSCode拡張インストール案内（YAML, GitLens）"
+        - "GitHub Claude統合 vs VSCode Claude Code の比較説明"
+        - "Claude Codeメモリシステムの階層説明"
+
+# ============================================================
+# 台本作成ルール（新規確立）
+# ============================================================
+
+new_rule_established:
+  name: "NotebookLM台本作成ルール"
+  trigger: "NotebookLMが感想・チャンネル登録を弾くことを発見"
+  rule: |
+    台本には制度解説・表・FAQ・一次ソースのみ含める。
+    Puuの感想・SoE接続・チャンネル登録・ハッシュタグは
+    YouTube説明文（Step 5）に入れる。
+  saved_to: ".claude/skills/subtitle-pipeline/SKILL.md"
+
+# ============================================================
+# 福祉用語辞書更新
+# ============================================================
+
+welfare_dictionary_updates:
+  new_entries:
+    - { wrong: "高性医療", correct: "更生医療" }
+    - { wrong: "受誤負担", correct: "自己負担" }
+    - { wrong: "減速1割", correct: "原則1割" }
+    - { wrong: "通識", correct: "知識" }
+    - { wrong: "おけね", correct: "お金" }
+  total_entries: 63
+
+# ============================================================
+# AI役割分担（本日確定版）
+# ============================================================
+
+ai_role_matrix:
+  台本作成_制度解説MD:
+    primary: "VSClaude"
+    secondary: "Cowork"
+    note: "一次ソース調査はCowork、構造化はどちらでも可"
+  NotebookLM音声生成:
+    primary: "Puu手動"
+    note: "Chrome自動化は困難と検証済み"
+  字幕パイプライン_Whisper以降:
+    primary: "VSClaude専用"
+    note: "CUDA/ffmpegはローカルGPU依存"
+  記事生成_note_Kofi_LinkedIn:
+    primary: "Cowork"
+    note: "editorialスキルとの親和性◎"
+  Git操作_日報:
+    primary: "VSClaude"
+  壁打ち_理論探索:
+    primary: "ChatGPT"
+
+# ============================================================
+# Gitステータス
+# ============================================================
+
+git_status:
+  uncommitted_changes:
+    modified:
+      - ".claude/settings.json"
+      - ".claude/skills/subtitle-pipeline/SKILL.md"
+      - ".claude/skills/subtitle-pipeline/references/welfare_dictionary.json"
+    deleted: "15_menta/mentees/nakashima_kengo/ 配下34ファイル（00_dailly/へ移動済み）"
+    untracked:
+      - "00_daily_yamal/07_cowork/2026_03_14_cw1.yaml"
+      - "15_menta/mentees/nakashima_kengo/00_dailly/"
+      - "15_menta/mentees/nakashima_kengo/SIIPvol_1_最終(圧縮).pdf"
+      - "16_youtube/01_d-rel_ja/障害福祉スタッフ教育動画/制度編⑨（自立支援医療制度）/"
+  note: "コミット未実施。大量のフォルダ再構成を含む"
+
+# ============================================================
+# Downloads成果物
+# ============================================================
+
+downloads_artifacts:
+  - "新人支援員のための自立支援医療制度ガイド.mp4（元動画）"
+  - "新人支援員のための自立支援医療制度ガイド_字幕付き.mp4（字幕焼込済）"
+  - "自立支援医療で医療費を1割に.m4a（NotebookLM音声）"
+  - "Self-Reliance_Medical_Blueprint.pptx（スライド資料）"
+
+# ============================================================
+# 明後日（2026-03-16）への準備
+# ============================================================
+
+upcoming:
+  "2026-03-16":
+    event: "サビ管初出勤"
+    conditions: "週5日・7h/日・週2在宅・30万/月"
+    note: "つなぎと認識。中期目標は2027年度大学院再出願"
+
+# ============================================================
+# 未処理タスク
+# ============================================================
+
+pending_tasks:
+  - "git commit（フォルダ再構成 + 字幕パイプライン + SKILL更新）"
+  - "17_child/ の具体的コンテンツ方針決定"
+  - "SoE理論作業への復帰"
+  - "note記事ルール定義"
+  - "N氏への返答（共同創業打診への判断）"
+
+key_insights:
+  insight_1:
+    statement: "NotebookLMは台本の感想・CTA部分を自動除去する → 台本は制度解説に徹するべき"
+    implications:
+      - "台本と説明文の役割分離が明確化"
+      - "SKILL.mdにルールとして恒久化済み"
+  insight_2:
+    statement: "リポジトリ再構成により02_social_system/03_ai_rightsの境界が明確化"
+    implications:
+      - "エビデンス系 → 02_social_system/evidence_reviews/"
+      - "AI倫理・CRPD → 03_ai_rights/"
+      - "Puuの造語・概念 → 03_ai_rights/99_puu_concepts/"
+  insight_3:
+    statement: "Cowork検証により全AI間の役割分担が実運用レベルで確定"
+    implications:
+      - "VSClaude: CLI・字幕・Git・日報"
+      - "Cowork: 調査・記事生成・台本作成"
+      - "Human-Orchestrated AI Swarmの運用精度向上"
+
+next_actions:
+  immediate:
+    - "git commit（本日の変更全体）"
+  short_term:
+    - "制度編⑩以降の台本候補選定"
+    - "17_child/ コンテンツ設計"
+  medium_term:
+    - "SoE理論作業再開"
+    - "2027年度大学院出願準備"
+
+metadata:
+  created_by: "Claude Opus 4.6 (VSCode)"
+  created_at: "2026-03-14T20:00:00+09:00"
+  includes_sessions:
+    - "Cowork: 2026_03_14_cw1.yaml"
+    - "VSClaude: 本セッション（c1）"
+
+fire_culture_note: |
+  サビ管初出勤2日前。リポジトリの構造整理と字幕パイプラインの完走——
+  「型」を整えてから現場に入る。これはPuuの認知特性そのもの。
+  Ne発散で広げた構造をTiで整理し、明後日からの実務に備える。
+
+  NotebookLMの「感想を弾く」挙動は、むしろ制度解説の純度を上げた。
+  制約が品質を生むのは、SoEの構造設計と同じ原理である。

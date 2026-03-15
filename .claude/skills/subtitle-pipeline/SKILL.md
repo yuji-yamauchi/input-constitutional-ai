@@ -28,6 +28,26 @@ NotebookLM Audio Overview等のMP4動画を、字幕付きYouTube動画に変換
 - ffmpeg: `/c/ffmpeg/ffmpeg-master-latest-win64-gpl-shared/bin/ffmpeg`
 - GPU: CUDA対応GPU（RTX 2070 SUPER等）
 
+## 台本作成ルール（NotebookLMに投げるMarkdown）
+
+NotebookLMは台本の内容を要約・再構成して音声を生成する。
+以下のルールで台本を作成すること。
+
+**含めるもの（NotebookLMが音声化する）**:
+- 制度・法律の客観的解説
+- 表・一覧・フロー図
+- 現場のFAQ
+- 一次ソース（法令名、URL、審議会回数）
+
+**含めないもの（NotebookLMが弾くため）**:
+- Puuの感想・研究者視点のコメント
+- SoE理論との接続
+- チャンネル登録・高評価の呼びかけ
+- ハッシュタグ
+
+**感想・チャンネル登録はYouTube説明文（Step 5）に入れる。**
+台本はあくまで制度解説と一次ソースに徹する。
+
 ## Instructions
 
 ### Step 1: Whisper GPU書き起こし

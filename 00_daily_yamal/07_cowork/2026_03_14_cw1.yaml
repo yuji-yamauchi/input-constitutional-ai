@@ -1,0 +1,122 @@
+session_metadata:
+  date: "2026-03-14"
+  session_type: "Cowork能力検証・NotebookLM自動化テスト"
+  time_range: "15:26〜16:00 JST"
+  model: "Claude Opus 4.6 (Cowork)"
+
+key_achievements:
+  - "プロジェクト全フォルダ構造の俯瞰確認（17フォルダ）"
+  - "NotebookLM自動化テスト実施 → Chrome操作の限界を特定"
+  - "VSClaude用スキル3本の内容を読み込み・Cowork適性を評価"
+  - "Cowork能力マップの整理（できること/できないこと）"
+  - "14_cowork → 14_disability_welfare_services のリネーム検知確認"
+
+notebooklm_automation_test:
+  purpose: "Cowork + Claude in Chrome で NotebookLM Audio Overview 生成を自動化できるか検証"
+  source_file: "outputs/cowork_test_notebooklm_prompt.md"
+  results:
+    notebooklm_access: "成功"
+    new_notebook_creation: "成功"
+    file_upload_via_file_input: "失敗（Not allowed エラー）"
+    text_paste_via_javascript: "不安定（反映後タイムアウト）"
+    screenshot_capture: "不安定（NotebookLMが重い、頻繁にタイムアウト）"
+    audio_overview_generation: "未到達"
+  conclusion: |
+    NotebookLMはページが重く、Chrome拡張との相性が悪い。
+    完全自動化は現時点で困難。手動運用が安定。
+  recommended_pipeline: |
+    Claude（一次ソース調査・構造化）
+      → Markdown出力
+        → Puu手動でNotebookLMにソース投入
+          → NotebookLM（音声解説生成）
+            → Whisper → SRT → YouTube
+
+vsclaude_skills_review:
+  daily_report:
+    cowork_compatibility: "△"
+    reason: "PowerShell/find前提。ファイルシステム参照は可能だがCLI操作はVSClaude向き"
+  editorial:
+    cowork_compatibility: "◎"
+    reason: "テキスト生成中心。記事構成・生成・秘匿化チェックまでCoworkで完結可能"
+  subtitle_pipeline:
+    cowork_compatibility: "×"
+    reason: "CUDA/ffmpeg/Pythonローカル実行前提。VSClaude専用"
+    update_noted: "台本作成ルール追加、Step 7（成果物移動）追加、保存先が16_youtube/配下に変更"
+
+cowork_capability_map:
+  confirmed_working:
+    - "ファイル読み書き（リポジトリ内全ファイル）"
+    - "Web検索・一次ソース調査（WebSearch/WebFetch）"
+    - "ドキュメント生成（docx/pptx/xlsx/pdf）"
+    - "Chrome操作（軽いサイト）"
+    - "コード実行（Bash/Python、VM内）"
+    - "テキスト生成（記事・研究文書・英語論文）"
+    - "構造分析（YAML/MD解析・統合）"
+    - "スケジュールタスク設定"
+    - "ファイルシステム変更のリアルタイム検知"
+  conditional:
+    - "Chrome自動化（重いサイトはタイムアウトリスク）"
+    - "ファイルアップロード（サイト依存）"
+    - "Outlook Web操作（未検証、Chrome経由で可能性あり）"
+  not_possible:
+    - "ローカルGPU利用（Whisper/CUDA）"
+    - "ffmpeg実行（ローカルバイナリ依存）"
+    - "Git操作（VSClaude領域）"
+    - "ネイティブダイアログ操作（ファイル選択等）"
+  mcp_registry:
+    outlook_connector: "個人向け直接接続なし。Gleanはエンタープライズ向け"
+
+session_memory_discussion:
+  within_session: "会話履歴は保持される"
+  across_sessions: "リセットされる"
+  persistent_sources:
+    - ".claude/CLAUDE.md（毎セッション読み込み）"
+    - ".claude/rules/（同上）"
+    - "ファイルシステムに保存したもの"
+
+key_insights:
+  insight_1:
+    statement: "NotebookLMの自動化はChrome操作では困難。一次ソース調査→構造化がCoworkの適切な役割"
+    implications:
+      - "Coworkは調査・生成の上流工程に特化すべき"
+      - "NotebookLMは手動の出力装置として位置づける"
+  insight_2:
+    statement: "editorialスキルはCoworkと高い親和性がある"
+    implications:
+      - "note/Ko-fi/LinkedIn記事生成をCoworkで実行可能"
+      - "VSClaudeからの移植または参照利用を検討"
+  insight_3:
+    statement: "subtitle-pipelineに台本作成ルールとStep 7が追加された"
+    implications:
+      - "台本作成（制度解説MD）はCoworkでも担当可能"
+      - "Whisper以降のパイプラインはVSClaude専用のまま"
+
+ai_role_clarification:
+  vsclaude: "CLI操作・字幕パイプライン・Git・日報・ファイル管理"
+  cowork: "一次ソース調査・ドキュメント生成・editorial・Chrome操作・台本作成"
+  chatgpt: "壁打ち・理論探索・批判的検討"
+  gemini: "文献調査・画像生成"
+  notebooklm: "音声解説生成（手動運用）"
+
+next_actions:
+  immediate:
+    - "editorialスキルのCowork側活用方針を決定"
+    - "subtitle-pipeline台本作成部分のCowork担当範囲を確定"
+  future:
+    - "一次ソース調査の実運用テスト（テーマ未定）"
+    - "Outlook Web操作の検証（必要時）"
+
+folder_changes_detected:
+  - from: "14_cowork"
+    to: "14_disability_welfare_services"
+    status: "CLAUDE.md更新はVSClaudeに委任済み"
+
+metadata:
+  created_by: "Claude Opus 4.6 (Cowork)"
+  created_at: "2026-03-14T16:00:00+09:00"
+
+fire_culture_note: |
+  Coworkの能力境界を実験的に確認したセッション。
+  NotebookLM自動化の失敗は、逆に各AIの適切な役割分担を明確にした。
+  「できないこと」を知ることで「できること」の精度が上がる——
+  これは SoE における支援構造の可視化と同じ原理である。
